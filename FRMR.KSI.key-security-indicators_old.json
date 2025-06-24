@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "FedRAMP.schema.json",
+  "info": {
+    "name": "Key Security Indicators",
+    "short_name": "KSI",
+    "current_release": "25.05A",
+    "types": ["FRR", "FRD", "KSI"],
+    "releases": [
+      {
+        "id": "25.05A",
+        "published_date": "2025-05-30",
+        "description": "Initial release of Key Security Indicators",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-16",
+                "designator": "20xP1",
+                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+              }
+            },
+            "specific_release": "20x.KSI.P1.25.05A",
+            "is_optional": false,
+            "comment": "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources."
+          }
+        },
+        "related_rfcs": [
+          {
+            "start_date": "2025-04-24",
+            "end_date": "2025-05-24",
+            "id": "0006",
+            "url": "https://www.fedramp.gov/rfcs/0006/",
+            "discussion_url": "https://github.com/FedRAMP/community/discussions/3",
+            "short_name": "rfc-0006-key-security-indicators",
+            "full_name": "FedRAMP RFC-0006: 20x Phase One Key Security Indicators"
+          }
+        ]
+      }
+    ],
+    "front_matter": {
+      "authority": [
+        {
+          "reference": "OMB Circular A-130",
+          "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf",
+          "description": "Appendix I states \"Agencies may also develop overlays for specific types of information or communities of interest (e.g., all web-based applications, all health care-related systems) as part of the security control selection process. Overlays provide a specification of security or privacy controls, control enhancements, supplemental guidance, and other supporting information as part of the tailoring process, that is intended to complement (and further refine) security control baselines. The overlay may be more stringent or less stringent than the original security control baseline and can be applied to multiple information systems.\""
+        },
+        {
+          "reference": "NIST SP 800-53B",
+          "reference_url": "https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final",
+          "description": "Section 2.5 states \"As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that—if properly designed, developed, and implemented—produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.\" This section later states \"Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.\""
+        },
+        {
+          "reference": "NIST SP 800-53A",
+          "reference_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+          "description": "Section 3.5 states \"When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.\""
+        },
+        {
+          "reference": "FedRAMP Authorization Act (44 USC § 3609 (a) (1))",
+          "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
+          "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC § 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
+          "delegation": "These responsibilities are delegated to the FedRAMP Director",
+          "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+        }
+      ],
+      "purpose": "Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.",
+      "expected_outcomes": [
+        "Cloud service providers following commercial security best practices will be able to meet and validate FedRAMP security requirements with the application of simple changes and automated capabilities",
+        "Third-party independent assessors will have a simpler framework to assess security and implementation decisions based on engineering decisions in context",
+        "Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based authorization to operate decisions based on their planned use case"
+      ]
+    }
+  },
+  "FRD": {
+    "KSI": [
+      {
+        "id": "FRD-KSI-01",
+        "term": "Regularly",
+        "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements."
+      }
+    ]
+  },
+  "FRR": {
+    "KSI": {
+      "base": {
+        "application": "These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.",
+        "id": "FRR-KSI",
+        "requirements": [
+          {
+            "id": "FRR-KSI-01",
+            "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.",
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_rules": ["FRR-MAS-01"]
+          },
+          {
+            "id": "FRR-KSI-02",
+            "statement": "All parties SHOULD follow FedRAMP's best practices and technical assistance on assessing Key Security Indicators where applicable.",
+            "affects": ["Providers", "Agencies", "3PAOs"],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-KSI-03",
+            "statement": "All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.",
+            "affects": ["Providers", "Agencies", "3PAOs"],
+            "primary_key_word": "SHOULD",
+            "is_interim": true
+          }
+        ]
+      }
+    }
+  },
+  "KSI": {
+    "CNA": {
+      "id": "KSI-CNA",
+      "name": "Cloud Native Architecture",
+      "indicator": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
+      "requirements": [
+        {
+          "id": "KSI-CNA-01",
+          "statement": "Configure ALL information resources to limit inbound and outbound traffic",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-02",
+          "statement": "Design systems to minimize the attack surface and minimize lateral movement if compromised",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-03",
+          "statement": "Use logical networking and related capabilities to enforce traffic flow controls",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-04",
+          "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-05",
+          "statement": "Have denial of service protection",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-06",
+          "statement": "Design systems for high availability and rapid recovery",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CNA-07",
+          "statement": "Ensure cloud-native information resources are implemented based on host provider's best practices and documented guidance",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    },
+    "SVC": {
+      "id": "KSI-SVC",
+      "name": "Service Configuration",
+      "indicator": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
+      "requirements": [
+        {
+          "id": "KSI-SVC-01",
+          "statement": "Harden and review network and system configurations",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-SVC-02",
+          "statement": "Encrypt or otherwise secure network traffic",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-SVC-03",
+          "statement": "Encrypt all federal and sensitive information at rest",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-SVC-04",
+          "statement": "Manage configuration centrally",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-SVC-05",
+          "statement": "Enforce system and information resource integrity through cryptographic means",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-SVC-06",
+          "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
+        },
+        {
+          "id": "KSI-SVC-07",
+          "statement": "Use a consistent, risk-informed approach for applying security patches",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    },
+    "IAM": {
+      "id": "KSI-IAM",
+      "name": "Identity and Access Management",
+      "indicator": "A secure cloud service offering will use modern identity management principles to control access to information resources.",
+      "requirements": [
+        {
+          "id": "KSI-IAM-01",
+          "statement": "Use centrally managed authentication and authorization",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-IAM-02",
+          "statement": "Control access based on roles and cloud-native functions",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-IAM-03",
+          "statement": "Enforce minimum password and authentication requirements",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-IAM-04",
+          "statement": "Manage and protect privileged accounts",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-IAM-05",
+          "statement": "_Regularly_ review and validate access",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
+        }
+      ]
+    },
+    "AUD": {
+      "id": "KSI-AUD",
+      "name": "Audit Logging",
+      "indicator": "A secure cloud service offering will maintain detailed audit logs of system and user activity.",
+      "requirements": [
+        {
+          "id": "KSI-AUD-01",
+          "statement": "Enable and configure detailed audit logging",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-AUD-02",
+          "statement": "Protect audit logs from tampering and deletion",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-AUD-03",
+          "statement": "Monitor audit logs for suspicious activity",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-AUD-04",
+          "statement": "Retain audit logs according to requirements",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    },
+    "CMT": {
+      "id": "KSI-CMT",
+      "name": "Configuration Management",
+      "indicator": "A secure cloud service offering will use configuration management best practices to maintain system security.",
+      "requirements": [
+        {
+          "id": "KSI-CMT-01",
+          "statement": "Use infrastructure-as-code to deploy and manage infrastructure",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CMT-02",
+          "statement": "Track and document configuration changes",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CMT-03",
+          "statement": "Review and validate configuration changes",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-CMT-04",
+          "statement": "Use configuration management for all system components",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    },
+    "MON": {
+      "id": "KSI-MON",
+      "name": "Continuous Monitoring",
+      "indicator": "A secure cloud service offering will continuously monitor system health and security.",
+      "requirements": [
+        {
+          "id": "KSI-MON-01",
+          "statement": "Monitor system performance and availability",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-MON-02",
+          "statement": "Monitor security events and alerts",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-MON-03",
+          "statement": "Use automated monitoring tools",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-MON-04",
+          "statement": "_Regularly_ review monitoring data",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
+        }
+      ]
+    },
+    "VLN": {
+      "id": "KSI-VLN",
+      "name": "Vulnerability Management",
+      "indicator": "A secure cloud service offering will actively manage and remediate vulnerabilities.",
+      "requirements": [
+        {
+          "id": "KSI-VLN-01",
+          "statement": "_Regularly_ scan for vulnerabilities",
+          "applied_impact_levels": ["Low"],
+          "referenced_fr": ["FRD-KSI-01"]
+        },
+        {
+          "id": "KSI-VLN-02",
+          "statement": "Track and remediate identified vulnerabilities",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-VLN-03",
+          "statement": "Use automated vulnerability scanning tools",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-VLN-04",
+          "statement": "Maintain vulnerability management program",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    },
+    "INC": {
+      "id": "KSI-INC",
+      "name": "Incident Reporting",
+      "indicator": "A secure cloud service offering will have procedures in place to report and respond to security incidents.",
+      "requirements": [
+        {
+          "id": "KSI-INC-01",
+          "statement": "Maintain incident response procedures",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-INC-02",
+          "statement": "Report security incidents promptly",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-INC-03",
+          "statement": "Document and track incident responses",
+          "applied_impact_levels": ["Low"]
+        },
+        {
+          "id": "KSI-INC-04",
+          "statement": "Review and update incident response procedures",
+          "applied_impact_levels": ["Low"]
+        }
+      ]
+    }
+  }
+}

@@ -103,9 +103,13 @@
 #### {{id}}
 > {{statement}}.
 
-      {{/each}}
-    {{/with}}
-  {{/each}}
+#### Controls
+{{#each controls}}
+- {{ control_id }} {{ title }}
+{{/each}}
+{{/each}}
+{{/with}}
+{{/each}}
 {{/if}}
 
 
