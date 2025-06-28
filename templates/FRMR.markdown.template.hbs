@@ -103,13 +103,18 @@
 #### {{id}}
 > {{statement}}.
 
-#### Controls
-{{#each controls}}
+        {{#if controls}}
+          {{#if @root.showControls}}
+##### Controls
+
+            {{#each controls}}
 - {{ control_id }} {{ title }}
-{{/each}}
-{{/each}}
-{{/with}}
-{{/each}}
+            {{/each}}
+          {{/if}}
+        {{/if}}
+      {{/each}}
+    {{/with}}
+  {{/each}}
 {{/if}}
 
 
