@@ -1,16 +1,16 @@
 # FedRAMP Key Security Indicators
 
-- **Release:** 25.05A
-- **Published:** 2025-05-30  
+- **Release:** 25.05C
+- **Published:** 2025-06-28  
 - **Designator:** KSI
-- **Description:** Initial release of Key Security Indicators
+- **Description:** Key Security Indicators in this release are unchanged from previously releases. 25.05C adds mappings for each KSI to underlying SP 800-53 controls.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-16** for **20xP1**. 
+  - This release is effective **2025-06-01** for **20xP1**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
   - For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized third-party information resources.    
 
@@ -82,13 +82,6 @@ Modern cloud services use automated or code-driven configuration management and 
 - at-2 Literacy Training and Awareness
 - at-3 Role-based Training
 - sr-11.1 Anti-counterfeit Training
-#### KSI-CED-10
-> (Proposed) Ensure staff are familiar with relevant policies and procedures.
-
-#### Controls
-- cp-3 Contingency Training
-- ir-2 Incident Response Training
-- ps-6 Access Agreements
 ### KSI-CMT: Change Management
 
 **A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.**
@@ -176,203 +169,12 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### Controls
 #### KSI-CNA-07
-> Ensure cloud-native information resources are implemented based on host provider’s best practices and documented guidance.
+> Ensure cloud-native information resources are implemented based on host provider&#x27;s best practices and documented guidance.
 
 #### Controls
 - ac-17.3 Managed Access Control Points
 - cm-2 Baseline Configuration
 - pl-10 Baseline Selection
-### KSI-EXC: Excluded Controls
-
-**These controls are excluded from the FedRAMP 20x baseline**
-
-#### KSI-EXC
-> The control is stupid.
-
-#### Controls
-- ia-8.4 Use of Defined Profiles
-- pl-11 Baseline Tailoring
-- ra-3 Risk Assessment
-#### KSI-EXC-01
-> The control is implemented by the Agency.
-
-#### Controls
-- ac-8 System Use Notification
-- ac-22 Publicly Accessible Content
-- ca-6 Authorization
-- cm-2.7 Configure Systems and Components for High-risk Areas
-- ia-2.12 Acceptance of PIV Credentials
-- ia-8.1 Acceptance of PIV Credentials from Other Agencies
-- ia-8.2 Acceptance of External Authenticators
-- ra-2 Security Categorization
-- sa-4.10 Use of Approved PIV Products
-#### KSI-EXC-02
-> The control does not apply to cloud services.
-
-#### Controls
-- ac-11 Device Lock
-- ac-11.1 Pattern-hiding Displays
-- ac-17.4 Privileged Commands and Access
-- ac-18 Wireless Access
-- ac-18.1 Authentication and Encryption
-- ac-18.3 Disable Wireless Networking
-- ac-19 Access Control for Mobile Devices
-- ac-19.5 Full Device or Container-based Encryption
-- cm-2.7 Configure Systems and Components for High-risk Areas
-- cm-7.2 Prevent Program Execution
-- cm-11 User-installed Software
-- cp-6.1 Separation from Primary Site
-- cp-6.3 Accessibility
-- cp-7 Alternate Processing Site
-- cp-7.1 Separation from Primary Site
-- cp-7.2 Accessibility
-- cp-7.3 Priority of Service
-- cp-8 Telecommunications Services
-- cp-8.1 Priority of Service Provisions
-- cp-8.2 Single Points of Failure
-- ma-1 Policy and Procedures
-- ma-2 Controlled Maintenance
-- ma-2.1 Record Content
-- ma-2.2 Automated Maintenance Activities
-- ma-3 Maintenance Tools
-- ma-3.1 Inspect Tools
-- ma-3.2 Inspect Media
-- ma-3.3 Prevent Unauthorized Removal
-- ma-3.4 Restricted Tool Use
-- ma-3.5 Execution with Privilege
-- ma-3.6 Software Updates and Patches
-- ma-4 Nonlocal Maintenance
-- ma-4.1 Logging and Review
-- ma-4.2 Document Nonlocal Maintenance
-- ma-4.3 Comparable Security and Sanitization
-- ma-4.4 Authentication and Separation of Maintenance Sessions
-- ma-4.5 Approvals and Notifications
-- ma-4.6 Cryptographic Protection
-- ma-4.7 Disconnect Verification
-- ma-5 Maintenance Personnel
-- ma-5.1 Individuals Without Appropriate Access
-- ma-5.2 Security Clearances for Classified Systems
-- ma-5.3 Citizenship Requirements for Classified Systems
-- ma-5.4 Foreign Nationals
-- ma-5.5 Non-system Maintenance
-- ma-6 Timely Maintenance
-- ma-6.1 Preventive Maintenance
-- ma-6.2 Predictive Maintenance
-- ma-6.3 Automated Support for Predictive Maintenance
-- ma-7 Field Maintenance
-- mp-1 Policy and Procedures
-- mp-2 Media Access
-- mp-2.1 Automated Restricted Access
-- mp-2.2 Cryptographic Protection
-- mp-3 Media Marking
-- mp-4 Media Storage
-- mp-4.1 Cryptographic Protection
-- mp-4.2 Automated Restricted Access
-- mp-5 Media Transport
-- mp-5.1 Protection Outside of Controlled Areas
-- mp-5.2 Documentation of Activities
-- mp-5.3 Custodians
-- mp-5.4 Cryptographic Protection
-- mp-6 Media Sanitization
-- mp-6.1 Review, Approve, Track, Document, and Verify
-- mp-6.2 Equipment Testing
-- mp-6.3 Nondestructive Techniques
-- mp-6.4 Controlled Unclassified Information
-- mp-6.5 Classified Information
-- mp-6.6 Media Destruction
-- mp-6.7 Dual Authorization
-- mp-6.8 Remote Purging or Wiping of Information
-- mp-7 Media Use
-- mp-7.1 Prohibit Use Without Owner
-- mp-7.2 Prohibit Use of Sanitization-resistant Media
-- mp-8 Media Downgrading
-- mp-8.1 Documentation of Process
-- mp-8.2 Equipment Testing
-- mp-8.3 Controlled Unclassified Information
-- mp-8.4 Classified Information
-- pe-1 Policy and Procedures
-- pe-2 Physical Access Authorizations
-- pe-2.1 Access by Position or Role
-- pe-2.2 Two Forms of Identification
-- pe-2.3 Restrict Unescorted Access
-- pe-3 Physical Access Control
-- pe-3.1 System Access
-- pe-3.2 Facility and Systems
-- pe-3.3 Continuous Guards
-- pe-3.4 Lockable Casings
-- pe-3.5 Tamper Protection
-- pe-3.6 Facility Penetration Testing
-- pe-3.7 Physical Barriers
-- pe-3.8 Access Control Vestibules
-- pe-4 Access Control for Transmission
-- pe-5 Access Control for Output Devices
-- pe-5.1 Access to Output by Authorized Individuals
-- pe-5.2 Link to Individual Identity
-- pe-5.3 Marking Output Devices
-- pe-6 Monitoring Physical Access
-- pe-6.1 Intrusion Alarms and Surveillance Equipment
-- pe-6.2 Automated Intrusion Recognition and Responses
-- pe-6.3 Video Surveillance
-- pe-6.4 Monitoring Physical Access to Systems
-- pe-7 Visitor Control
-- pe-8 Visitor Access Records
-- pe-8.1 Automated Records Maintenance and Review
-- pe-8.2 Physical Access Records
-- pe-8.3 Limit Personally Identifiable Information Elements
-- pe-9 Power Equipment and Cabling
-- pe-9.1 Redundant Cabling
-- pe-9.2 Automatic Voltage Controls
-- pe-10 Emergency Shutoff
-- pe-10.1 Accidental and Unauthorized Activation
-- pe-11 Emergency Power
-- pe-11.1 Alternate Power Supply — Minimal Operational Capability
-- pe-11.2 Alternate Power Supply — Self-contained
-- pe-12 Emergency Lighting
-- pe-12.1 Essential Mission and Business Functions
-- pe-13 Fire Protection
-- pe-13.1 Detection Systems — Automatic Activation and Notification
-- pe-13.2 Suppression Systems — Automatic Activation and Notification
-- pe-13.3 Automatic Fire Suppression
-- pe-13.4 Inspections
-- pe-14 Environmental Controls
-- pe-14.1 Automatic Controls
-- pe-14.2 Monitoring with Alarms and Notifications
-- pe-15 Water Damage Protection
-- pe-15.1 Automation Support
-- pe-16 Delivery and Removal
-- pe-17 Alternate Work Site
-- pe-18 Location of System Components
-- pe-18.1 Facility Site
-- pe-19 Information Leakage
-- pe-19.1 National Emissions Policies and Procedures
-- pe-20 Asset Monitoring and Tracking
-- pe-21 Electromagnetic Pulse Protection
-- pe-22 Component Marking
-- pe-23 Facility Location
-- sc-15 Collaborative Computing Devices and Applications
-- sc-15.1 Physical or Logical Disconnect
-- sc-15.2 Blocking Inbound and Outbound Communications Traffic
-- sc-15.3 Disabling and Removal in Secure Work Areas
-- sc-15.4 Explicitly Indicate Current Participants
-- sr-11.2 Configuration Control for Component Service and Repair
-- sr-12 Component Disposal
-### KSI-FRR-KSI: KSI General Provisions
-
-**FedRAMP Key Security Indicators (KSIs) summarize the capabilities that satisfy FedRAMP security requirements aligned to NIST SP 800-53. Each Key Security Indicator includes critical security capabilities that must be met and validated. These capabilities are designed to provide a concrete approach to evaluating cloud security risks that can often be derived automatically from technical configurations.**
-
-#### KSI-KGP-01
-> Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope..
-
-#### Controls
-- ca-2 Control Assessments
-#### KSI-KGP-02
-> All parties SHOULD follow FedRAMP’s best practices and technical assistance on assessing Key Security Indicators where applicable..
-
-#### Controls
-#### KSI-KGP-03
-> (INTERIM RULE) All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1..
-
-#### Controls
 ### KSI-IAM: Identity and Access Management
 
 **A secure cloud service offering will protect user data, control access, and apply zero trust principles.**
@@ -395,7 +197,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ac-3 Access Enforcement
 - ia-2.1 Multi-factor Authentication to Privileged Accounts
 - ia-2.2 Multi-factor Authentication to Non-privileged Accounts
-- ia-2.8 Access to Accounts — Replay Resistant
+- ia-2.8 Access to Accounts Replay Resistant
 - ia-5.1 Password-based Authentication
 - ia-5.2 Public Key-based Authentication
 - ia-5.6 Protection of Authenticators
@@ -488,15 +290,6 @@ Modern cloud services use automated or code-driven configuration management and 
 - ac-7 Unsuccessful Logon Attempts
 - ps-4 Personnel Termination
 - ps-8 Personnel Sanctions
-#### KSI-IAM-10
-> Manage system authenticators securely including verifying the identity of the individual, group, role, service, or device receiving the authenticator.
-
-#### Controls
-- ia-5 Authenticator Management
-- ia-12 Identity Proofing
-- ia-12.2 Identity Evidence
-- ia-12.3 Identity Evidence Validation and Verification
-- ia-12.5 Address Confirmation
 ### KSI-INR: Incident Reporting
 
 **A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
@@ -588,20 +381,6 @@ Modern cloud services use automated or code-driven configuration management and 
 
 #### Controls
 - ca-5 Plan of Action and Milestones
-#### KSI-MLA-10
-> Maintain a centralized list of event types that must be logged and update the list periodically and in response to relevant events..
-
-#### Controls
-- ac-6.9 Log Use of Privileged Functions
-- au-2 Event Logging
-- au-3.1 Additional Audit Information
-- au-12 Audit Record Generation
-#### KSI-MLA-11
-> Employee independent auditors to assess the organizations compliance with policies and procedures.
-
-#### Controls
-- ca-2.1 Independent Assessors
-- ca-7.1 Independent Assessment
 ### KSI-PIY: Policy and Inventory
 
 **A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.**
@@ -610,7 +389,7 @@ Modern cloud services use automated or code-driven configuration management and 
 > Have an up-to-date information resource inventory or code defining all deployed assets, software, and services.
 
 #### Controls
-- cm-7.5 Authorized Software — Allow-by-exception
+- cm-7.5 Authorized Software Allow-by-exception
 - cm-8 System Component Inventory
 - cm-8.1 Updates During Installation and Removal
 - cm-12 Information Location
