@@ -313,13 +313,15 @@
           "id": "FRA-ADS-04",
           "applies_to": "FRR-ADS-04",
           "statement": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access _authorization data_ or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
-          "referenced_fr": ["FRD-ALL-15"]
+          "referenced_fr": ["FRD-ALL-15"],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "FRA-ADS-05",
           "applies_to": "FRR-ADS-05",
           "statement": "This is not a license to exclude accurate risk information, but specifics that would _likely_ lead to compromise should be abstracted. A breach of confidentiality with _authorization data_ should be anticipated by a secure cloud service provider.",
           "referenced_fr": ["FRD-ALL-04"],
+          "impact": { "low": true, "moderate": true, "high": true },
           "examples": [
             {
               "id": "Examples of unnecessary sensitive information in _authorization data_",

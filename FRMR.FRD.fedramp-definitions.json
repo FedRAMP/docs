@@ -5,7 +5,7 @@
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
     "current_release": "25.10A",
-    "types": ["FRR"],
+    "types": ["FRD"],
     "releases": [
       {
         "id": "25.10A",
@@ -20,9 +20,7 @@
                 "designator": "20x"
               }
             },
-            "comments": [
-              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
-            ]
+            "comment": "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
           },
           "Rev5": {
             "timeline": {
@@ -31,9 +29,7 @@
                 "designator": "R5.FRD.WR"
               }
             },
-            "comments": [
-              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
-            ]
+            "comment": "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
           }
         }
       },
@@ -50,9 +46,7 @@
                 "designator": "20x"
               }
             },
-            "comments": [
-              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
-            ]
+            "comment": "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
           },
           "Rev5": {
             "timeline": {
@@ -61,9 +55,7 @@
                 "designator": "R5.FRD.WR"
               }
             },
-            "comments": [
-              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
-            ]
+            "comment": "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
           }
         }
       }

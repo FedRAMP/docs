@@ -1,7 +1,6 @@
-{
+{"$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "FedRAMP.schema.json",
   "info": {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "FedRAMP.schema.json",
     "name": "Minimum Assessment Standard",
     "short_name": "MAS",
     "current_release": "25.06B",
@@ -78,16 +77,20 @@
         "public_comment": true,
         "effective": {
           "20x": {
-            "pilot": "2025-05-30",
-            "comments": [
-              "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
-            ]
+            "timeline" : {
+              "pilot":{
+                "start_date": "2025-05-30"
+              }
+            },
+            "comment": "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
           },
           "Rev5": {
-            "closed_beta": "2025-06-30",
-            "comments": [
-              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
-            ]
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-06-30"
+              }
+            },
+            "comment": "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
           }
         },
         "related_rfcs": [

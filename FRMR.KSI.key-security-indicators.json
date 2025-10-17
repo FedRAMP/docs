@@ -580,7 +580,8 @@
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
             }
-          ]
+          ],
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "KSI-IAM-04",
