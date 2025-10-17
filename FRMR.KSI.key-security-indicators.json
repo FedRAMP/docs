@@ -4,9 +4,28 @@
   "info": {
     "name": "Key Security Indicators",
     "short_name": "KSI",
-    "current_release": "25.05D",
+    "current_release": "25.10A",
     "types": ["FRR", "KSI"],
     "releases": [
+      {
+        "id": "25.10A",
+        "published_date": "2025-10-17",
+        "description": "Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-01",
+                "designator": "20x Phase One Pilot"
+              }
+            },
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+            ]
+          }
+        }
+      },
       {
         "id": "25.05D",
         "published_date": "2025-08-24",
@@ -1746,7 +1765,7 @@
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "_Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured",
+          "statement": "_Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured",
           "referenced_fr": ["FRD-ALL-07", "FRD-ALL-01"],
           "applied_impact_levels": ["Low"],
           "controls": [

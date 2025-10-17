@@ -10,12 +10,23 @@ See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and str
 
 | Markdown | PDF | Description | Version | Published Date |
 |-----------|---|-------------|---------|----------------|
-| [Vulnerability Detection and Response Standard (VDR)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.VDR.vulnerability-detection-and-response.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.VDR.vulnerability-detection-and-response.pdf) | This update moves the remediation table from FRR-VDR-TF-HI-07 to FRR-VDR-TF-HI-08, adds a clarification on application to Rev5, and fixes a few minor typos. No actual breaking/modifying changes were made to content. | 25.09B | 2025-09-11 |
-| [FedRAMP Definitions (FRD)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.FRD.fedramp-definitions.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.FRD.fedramp-definitions.pdf) | Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard. | 25.09A | 2025-09-10 |
-| [Authorization Data Sharing Standard (ADS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ADS.authorization-data-sharing.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.ADS.authorization-data-sharing.pdf) | Initial release of the Authorization Data Sharing Standard | 25.08A | 2025-08-24 |
-| [Significant Change Notification Requirements (SCN)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.SCN.significant-change-notifications.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.SCN.significant-change-notifications.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL). | 25.06B | 2025-08-24 |
-| [Minimum Assessment Standard (MAS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MAS.minimum-assessment-standard.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.MAS.minimum-assessment-standard.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL). | 25.06B | 2025-08-24 |
-| [Key Security Indicators (KSI)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.KSI.key-security-indicators.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.KSI.key-security-indicators.pdf) | Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL). | 25.05D | 2025-08-24 |
+| [Authorization Data Sharing Standard (ADS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ADS.authorization-data-sharing.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.ADS.authorization-data-sharing.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
+| [Significant Change Notification Requirements (SCN)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.SCN.significant-change-notifications.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.SCN.significant-change-notifications.pdf) | minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
+| [FedRAMP Definitions (FRD)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.FRD.fedramp-definitions.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.FRD.fedramp-definitions.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes. | 25.10A | 2025-10-17 |
+| [Minimum Assessment Standard (MAS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MAS.minimum-assessment-standard.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.MAS.minimum-assessment-standard.pdf) | minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
+| [Vulnerability Detection and Response Standard (VDR)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.VDR.vulnerability-detection-and-response.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.VDR.vulnerability-detection-and-response.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
+| [Key Security Indicators (KSI)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.KSI.key-security-indicators.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.KSI.key-security-indicators.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
+
+In addition, simplified combined documents for each impact level are available as follows:
+
+| Markdown | PDF | Impact Level |
+| -- | -- | -- |
+| [All Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ALL.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.ALL.combined.pdf) | All |
+| [Low Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.LOW.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.LOW.combined.pdf) | Low |
+| [Moderate Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MOD.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.MOD.combined.pdf) | Moderate |
+| [High Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.HIGH.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.HIGH.combined.pdf) | High |
+
+
 ---
 
 ## Folders
@@ -81,5 +92,4 @@ cd markdown
   - Removed `is_tentantive` from JSON files to avoid confusion
   - Removed `is_interim` from JSON files to avoid confusion
   - Removed `comment` field from releases and replaced with `comments` array in JSON files
-  - 
   

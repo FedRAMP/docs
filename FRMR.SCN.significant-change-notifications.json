@@ -4,9 +4,40 @@
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
-    "current_release": "25.06B",
+    "current_release": "25.10A",
     "types": ["FRR", "FRA"],
     "releases": [
+      {
+        "id": "25.10A",
+        "published_date": "2025-10-17",
+        "description": "minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-17",
+                "designator": "20x Phase One Pilot"
+              }
+            },
+            "comments": [
+              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-07",
+                "designator": "Rev5 Closed Beta"
+              }
+            },
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.",
+              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
+          }
+        }
+      },
       {
         "id": "25.06B",
         "published_date": "2025-08-24",
@@ -412,10 +443,10 @@
               ],
               "examples": [
                 "The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)",
-                "Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)",
+                "Increasing the security categorization of a service within the offering that actively handles _federal customer data_ (does NOT include impact change of entire offering - see impact categorization change)",
                 "Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)",
-                "Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations",
-                "Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)"
+                "Datacenter migration where large amounts of _federal customer data_ is moved across boundaries different from normal day-to-day operations",
+                "Adding a new AI-based capability that impacts _federal customer data_ in a different way than existing services or capabilities (such as integrating a new third-party service or training on _federal customer data_)"
               ]
             }
           ]
@@ -438,7 +469,7 @@
                 "Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service",
                 "Changing cryptographic modules where the new module meets the same standards and characteristics of the former",
                 "Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)",
-                "Adding models to existing approved AI services without exposing federal information to new services"
+                "Adding models to existing approved AI services without exposing _federal customer data_ to new services"
               ]
             }
           ]

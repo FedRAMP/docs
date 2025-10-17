@@ -98,6 +98,10 @@ The following FedRAMP documentation guidelines apply to this document:
       {{#each requirements}}
 
 #### {{this.id}}
+{{#if impact}}
+{{!-- this is super messy but ok for now --}}
+_Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+{{/if}}
 
 > {{this.statement}}
         {{#if following_information}}

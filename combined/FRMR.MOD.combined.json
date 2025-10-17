@@ -10,7 +10,7 @@
     "releases": [
       {
         "id": "Untracked",
-        "published_date": "2025-10-07",
+        "published_date": "2025-10-17",
         "description": "FedRAMP 20x All Impact Requirements"
       }
     ]
@@ -832,7 +832,7 @@
         "requirements": [
           {
             "id": "FRR-MAS-01",
-            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.",
+            "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal customer data_ or _likely_ to impact the confidentiality, integrity, or availability of _federal customer data_ _handled_ by the _cloud service offering_.",
             "affects": [
               "Providers"
             ],
@@ -868,7 +868,7 @@
           },
           {
             "id": "FRR-MAS-03",
-            "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal information_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
+            "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal customer data_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": [
               "Providers"
             ],
@@ -886,7 +886,7 @@
           },
           {
             "id": "FRR-MAS-04",
-            "statement": "Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.",
+            "statement": "Providers MUST include metadata (including metadata about _federal customer data_), ONLY IF _FRR-MAS-01_ APPLIES.",
             "affects": [
               "Providers"
             ],
@@ -1274,7 +1274,7 @@
         "requirements": [
           {
             "id": "FRR-VDR-AY-01",
-            "statement": "If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and *persistently*.",
+            "statement": "If it is not possible to _fully mitigate_ or _remediate_ _detected vulnerabilities_, providers SHOULD instead _partially mitigate vulnerabilities_ _promptly_, progressively, and _persistently_.",
             "affects": [
               "Providers"
             ],
@@ -1450,14 +1450,14 @@
               "Provider's internally assigned tracking identifier",
               "Time and source of the detection",
               "Time of completed evaluation",
-              "Is it an *internet-reachable vulnerability* or not?",
-              "Is it a *likely exploitable vulnerability* or not?",
-              "Historically and currently estimated *potential adverse impact* of exploitation",
-              "Time and level of each completed and evaluated reduction in *potential adverse impact*",
-              "Estimated time and target level of next reduction in *potential adverse impact*",
-              "Is it currently or is it likely to become an *overdue vulnerability* or not? If so, explain.",
-              "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *vulnerability*",
-              "Final disposition of the *vulnerability*"
+              "Is it an _internet-reachable vulnerability_ or not?",
+              "Is it a _likely exploitable vulnerability_ or not?",
+              "Historically and currently estimated _potential adverse impact_ of exploitation",
+              "Time and level of each completed and evaluated reduction in _potential adverse impact_",
+              "Estimated time and target level of next reduction in _potential adverse impact_",
+              "Is it currently or is it likely to become an _overdue vulnerability_ or not? If so, explain.",
+              "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their _federal customer data_ within the _cloud service offering_ resulting from the _vulnerability_",
+              "Final disposition of the _vulnerability_"
             ],
             "affects": [
               "Providers"
@@ -1479,11 +1479,11 @@
               "Provider's internally assigned tracking identifier",
               "Time and source of the detection",
               "Time of completed evaluation",
-              "Is it an *internet-reachable vulnerability* or not?",
-              "Is it a *likely exploitable vulnerability* or not?",
-              "Currently estimated *potential adverse impact* of exploitation",
-              "Explanation of why this is an *accepted vulnerability*",
-              "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their *federal information* within the *cloud service offering* resulting from the *accepted vulnerability*"
+              "Is it an _internet-reachable vulnerability_ or not?",
+              "Is it a _likely exploitable vulnerability_ or not?",
+              "Currently estimated _potential adverse impact_ of exploitation",
+              "Explanation of why this is an _accepted vulnerability_",
+              "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their _federal customer data_ within the _cloud service offering_ resulting from the _accepted vulnerability_"
             ],
             "affects": [
               "Providers"
@@ -1764,7 +1764,7 @@
           },
           {
             "id": "FRR-VDR-TF-MO-08",
-            "statement": "Providers SHOULD *mitigate* or *remediate* remaining *vulnerabilities* during routine operations as determined necessary by the provider.",
+            "statement": "Providers SHOULD _mitigate_ or _remediate_ remaining _vulnerabilities_ during routine operations as determined necessary by the provider.",
             "affects": [
               "Providers"
             ],
@@ -1791,7 +1791,7 @@
           {
             "id": "FRR-VDR-AG-01",
             "statement": "Agencies SHOULD review the information provided in vulnerability reports at appropriate and reasonable intervals commensurate with the expectations and risk posture indicated by their Authorization to Operate, and SHOULD use automated processing and filtering of machine readable information from cloud service providers.",
-            "note": "FedRAMP recommends that agencies only review *overdue* and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization.",
+            "note": "FedRAMP recommends that agencies only review _overdue_ and _accepted vulnerabilities_ with a _potential adverse impact_ of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, _accepted vulnerabilities_ generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization.",
             "affects": [
               "Agencies"
             ],
@@ -1807,7 +1807,7 @@
           },
           {
             "id": "FRR-VDR-AG-02",
-            "statement": "Agencies SHOULD use *vulnerability* information reported by the Provider to maintain Plans of Action & Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with *accepted vulnerabilities* that put agency information systems at risk).",
+            "statement": "Agencies SHOULD use _vulnerability_ information reported by the Provider to maintain Plans of Action & Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with _accepted vulnerabilities_ that put agency information systems at risk).",
             "affects": [
               "Agencies"
             ],
@@ -1840,7 +1840,7 @@
           },
           {
             "id": "FRR-VDR-AG-04",
-            "statement": "Agencies MUST inform FedRAMP after requesting any additional *vulnerability* information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
+            "statement": "Agencies MUST inform FedRAMP after requesting any additional _vulnerability_ information or materials from a cloud service provider beyond those required by this policy by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
             "note": "This is an OMB policy; agencies are required to notify FedRAMP in OMB Memorandum M-24-15 section IV (a).",
             "affects": [
               "Agencies"
@@ -1915,11 +1915,12 @@
     "ALL": [
       {
         "id": "FRD-ALL-01",
-        "term": "Federal Information",
-        "definition": "Has the meaning from OMB Circular A-130 and any successor documents. As of Apr 2025, this means \"information created, collected, processed, maintained, disseminated, disclosed, or disposed of by or for the federal government, in any medium or form.\"",
-        "note": "This typically does not include information that a cloud service provider produces outside of a government contract or agreement. Review FedRAMP's Technical Assistance and consult qualified legal experts for additional assistance identifying federal information.",
-        "reference": "OMB Circular A-130",
-        "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
+        "term": "Federal Customer Data",
+        "definition": "All electronic information, content, and materials that an _agency_ or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.",
+        "note": "In the context of FedRAMP authorization, \"federal customer data\" ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific _agencies_ may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the _agency_; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.",
+        "referenced_fr": [
+          "FRD-ALL-19"
+        ]
       },
       {
         "id": "FRD-ALL-02",
@@ -2047,7 +2048,7 @@
       },
       {
         "id": "FRD-ALL-17",
-        "term": "Machine-readable",
+        "term": "Machine-Readable",
         "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"_machine-readable_\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
         "reference": "44 U.S. Code § 3502 (18)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"
@@ -2112,7 +2113,7 @@
       },
       {
         "id": "FRD-ALL-24",
-        "term": "Internet-reachable Vulnerability (IRV)",
+        "term": "Internet-Reachable Vulnerability (IRV)",
         "definition": "A _vulnerability_ in a machine-based _information resource_ that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based _information resources_ that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.",
         "notes": [
           "The opposite of this is a \"Not Internet-reachable Vulnerability\" (NIRV).",
@@ -2200,7 +2201,7 @@
       {
         "id": "FRD-ALL-32",
         "term": "Catastrophic Adverse Effect",
-        "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal information_ stored within the _cloud service offering_.",
+        "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would _likely_: (i) result in a severe degradation in the availability or performance of services within the _cloud service offering_ for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the _federal customer data_ stored within the _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -2209,7 +2210,7 @@
       {
         "id": "FRD-ALL-33",
         "term": "Serious Adverse Effect",
-        "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal information_ stored within the _cloud service offering_.",
+        "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the _cloud service offering_, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the _federal customer data_ stored within the _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -2218,7 +2219,7 @@
       {
         "id": "FRD-ALL-34",
         "term": "Limited Adverse Effect",
-        "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal information_ stored within the _cloud service offering_ by only a few relevant users.",
+        "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the _cloud service offering_ for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the _federal customer data_ stored within the _cloud service offering_ by only a few relevant users.",
         "referenced_fr": [
           "FRD-ALL-01",
           "FRD-ALL-06"
@@ -2234,7 +2235,7 @@
       },
       {
         "id": "FRD-ALL-36",
-        "term": "Potential adverse impact (of vulnerability exploitation)",
+        "term": "Potential Adverse Impact (of vulnerability exploitation)",
         "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
         "referenced_fr": [
           "FRD-ALL-04",
@@ -2245,7 +2246,7 @@
       {
         "id": "FRD-ALL-37",
         "term": "Promptly",
-        "definition": "Without unnecessary delay.",
+        "definition": "Without Unnecessary Delay.",
         "note": "The use of _promptly_ in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a _cloud service offering_.",
         "referenced_fr": [
           "FRD-ALL-37",
@@ -2381,10 +2382,10 @@
               ],
               "examples": [
                 "The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)",
-                "Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)",
+                "Increasing the security categorization of a service within the offering that actively handles _federal customer data_ (does NOT include impact change of entire offering - see impact categorization change)",
                 "Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)",
-                "Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations",
-                "Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)"
+                "Datacenter migration where large amounts of _federal customer data_ is moved across boundaries different from normal day-to-day operations",
+                "Adding a new AI-based capability that impacts _federal customer data_ in a different way than existing services or capabilities (such as integrating a new third-party service or training on _federal customer data_)"
               ]
             }
           ]
@@ -2411,7 +2412,7 @@
                 "Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service",
                 "Changing cryptographic modules where the new module meets the same standards and characteristics of the former",
                 "Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)",
-                "Adding models to existing approved AI services without exposing federal information to new services"
+                "Adding models to existing approved AI services without exposing _federal customer data_ to new services"
               ]
             }
           ]
@@ -4347,7 +4348,7 @@
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "_Regularly_ confirm that services handling _federal information_ or are likely to impact the confidentiality, integrity, or availability of _federal information_ are FedRAMP authorized and securely configured",
+          "statement": "_Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured",
           "referenced_fr": [
             "FRD-ALL-07",
             "FRD-ALL-01"

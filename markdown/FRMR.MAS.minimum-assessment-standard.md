@@ -1,23 +1,22 @@
 # FedRAMP Minimum Assessment Standard
 
-- **Release:** 25.06B
-- **Published:** 2025-08-24  
+- **Release:** 25.10A
+- **Published:** 2025-10-17  
 - **Designator:** MAS
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
+- **Description:** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-17** for **20xP1**. 
+  - This release is effective **2025-06-17** for **20x Phase One Pilot**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - Minimum Assessment Standard is primarily documented and validated in KSI-PIY and KSI-TPR.  
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-07-30** for **R5.MAS.B1** _(tentatively)_. 
-  - These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1).
-  - Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.  
+  - This release is effective **2025-07-30** for **Rev5 Closed Beta**. 
+  - These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta.
+  - Providers MUST participate in the MAS Closed Beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
 
 
 ### Documentation Guidelines
@@ -40,7 +39,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 ### Expected Outcomes
 
 - Boundaries will include the minimum number of components to make authorization and assessment easier
-- Cloud service providers will define clear boundaries for security and assessment of offerings based on the direct risk to federal information
+- Cloud service providers will define clear boundaries for security and assessment of offerings based on the direct risk to federal customer data
 - Third-party independent assessors will have a simple well documented approach to assess security and implementation decisions
 - Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based Authorization to Operate decisions based on their planned use case
 
@@ -54,22 +53,27 @@ Application boundaries that are defined too broadly complicate the assessment pr
 **These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.**
 
 #### FRR-MAS-01
+_Applies to:_ Low, Moderate, High
 
-> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal information_ or _likely_ to impact the confidentiality, integrity, or availability of _federal information_ _handled_ by the _cloud service offering_.
+> Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal customer data_ or _likely_ to impact the confidentiality, integrity, or availability of _federal customer data_ _handled_ by the _cloud service offering_.
 
 #### FRR-MAS-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include the configuration and usage of _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-03
+_Applies to:_ Low, Moderate, High
 
-> Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal information_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
+> Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal customer data_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-04
+_Applies to:_ Low, Moderate, High
 
-> Providers MUST include metadata (including metadata about _federal information_), ONLY IF _FRR-MAS-01_ APPLIES.
+> Providers MUST include metadata (including metadata about _federal customer data_), ONLY IF _FRR-MAS-01_ APPLIES.
 
 #### FRR-MAS-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.
 
@@ -80,6 +84,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-MAS-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.
 
@@ -90,26 +95,32 @@ Application boundaries that are defined too broadly complicate the assessment pr
 **These rules provide general guidance on the application of this standard.**
 
 #### FRR-MAS-AY-01
+_Applies to:_ Low, Moderate, High
 
 > Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-02
+_Applies to:_ Low, Moderate, High
 
 > Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.
 
 #### FRR-MAS-AY-03
+_Applies to:_ Low, Moderate, High
 
 > _Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).
 
 #### FRR-MAS-AY-04
+_Applies to:_ Low, Moderate, High
 
 > _Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).
 
 #### FRR-MAS-AY-05
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Standard as needed.
 
 #### FRR-MAS-AY-06
+_Applies to:_ Low, Moderate, High
 
 > All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.
 

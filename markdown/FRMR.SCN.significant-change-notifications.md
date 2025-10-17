@@ -1,23 +1,22 @@
 # FedRAMP Significant Change Notification Requirements
 
-- **Release:** 25.06B
-- **Published:** 2025-08-24  
+- **Release:** 25.10A
+- **Published:** 2025-10-17  
 - **Designator:** SCN
-- **Description:** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
+- **Description:** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-17** for **20xP1**. 
+  - This release is effective **2025-06-17** for **20x Phase One Pilot**. 
   - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
-  - Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard.  
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-07-07** for **R5.SCN.B1** _(tentatively)_. 
-  - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).
-  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.  
+  - This release is effective **2025-07-07** for **Rev5 Closed Beta**. 
+  - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.
+  - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
 
 
 ### Documentation Guidelines
@@ -59,38 +58,47 @@ These categories, and the resulting requirements, apply only to significant chan
 **These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability**
 
 #### FRR-SCN-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.
 
 #### FRR-SCN-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.
 
 #### FRR-SCN-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.
 
 #### FRR-SCN-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST maintain auditable records of these activities and make them available to all necessary parties.
 
 #### FRR-SCN-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.
 
 #### FRR-SCN-06
+_Applies to:_ Low, Moderate, High
 
 > All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on _significant change_ assessment and notification where applicable.
 
 #### FRR-SCN-07
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.
 
 #### FRR-SCN-08
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.
 
 #### FRR-SCN-09
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST include at least the following information in Significant Change Notifications:
 > 1. Service Offering FedRAMP ID
@@ -105,6 +113,7 @@ These categories, and the resulting requirements, apply only to significant chan
 > 1. Name and title of approver
 
 #### FRR-SCN-10
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY include additional relevant information in Significant Change Notifications.
 
@@ -115,10 +124,12 @@ These categories, and the resulting requirements, apply only to significant chan
 **These exceptions MAY override some or all of the FedRAMP requirements for this standard.**
 
 #### FRR-SCN-EX-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY be required to delay _significant changes_ beyond the standard Significant Change Notification period and/or submit _significant changes_ for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.
 
 #### FRR-SCN-EX-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.
 
@@ -129,6 +140,7 @@ These categories, and the resulting requirements, apply only to significant chan
 **These requirements apply ONLY to _significant changes_ of type _routine recurring_.**
 
 #### FRR-SCN-RR-01
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
 
@@ -139,6 +151,7 @@ These categories, and the resulting requirements, apply only to significant chan
 **These requirements apply ONLY to _significant changes_ of type _adaptive_.**
 
 #### FRR-SCN-AD-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within ten business days after finishing _adaptive_ changes, also including the following information:
 > 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
@@ -150,23 +163,28 @@ These categories, and the resulting requirements, apply only to significant chan
 **These requirements apply ONLY to _significant changes_ of type _transformative_.**
 
 #### FRR-SCN-TF-01
+_Applies to:_ Low, Moderate, High
 
 > Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.
 
 #### FRR-SCN-TF-02
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-03
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.
 
 #### FRR-SCN-TF-04
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after finishing _transformative_ changes, also including the following information:
 > 1. Updates to all previously sent information
 
 #### FRR-SCN-TF-05
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after completing the verification, assessment, and/or validation of _transformative_ changes, also including the following information:
 > 1. Updates to all previously sent information
@@ -174,10 +192,12 @@ These categories, and the resulting requirements, apply only to significant chan
 > 1. Copy of the security assessment report (if applicable)
 
 #### FRR-SCN-TF-06
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.
 
 #### FRR-SCN-TF-07
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
 
@@ -188,6 +208,7 @@ These categories, and the resulting requirements, apply only to significant chan
 **These requirements apply ONLY to _significant changes_ of type _impact categorization_.**
 
 #### FRR-SCN-IM-01
+_Applies to:_ Low, Moderate, High
 
 > Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.
 
@@ -280,10 +301,10 @@ Key Tests:
 Examples:
 
 - The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)
-- Increasing the security categorization of a service within the offering that actively handles federal information (does NOT include impact change of entire offering - see impact categorization change)
+- Increasing the security categorization of a service within the offering that actively handles _federal customer data_ (does NOT include impact change of entire offering - see impact categorization change)
 - Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)
-- Datacenter migration where large amounts of federal information is moved across boundaries different from normal day-to-day operations
-- Adding a new AI-based capability that impacts federal information in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal information)
+- Datacenter migration where large amounts of _federal customer data_ is moved across boundaries different from normal day-to-day operations
+- Adding a new AI-based capability that impacts _federal customer data_ in a different way than existing services or capabilities (such as integrating a new third-party service or training on _federal customer data_)
           
 
 ---   
@@ -309,7 +330,7 @@ Examples:
 - Deploying larger than normal incremental feature improvements in code or libraries that are the work of multiple weeks of development efforts but are not considered a major new service
 - Changing cryptographic modules where the new module meets the same standards and characteristics of the former
 - Replacing a like-for-like component where some security plan or procedure adjustments are required (e.g., scanning tool or managed database swap)
-- Adding models to existing approved AI services without exposing federal information to new services
+- Adding models to existing approved AI services without exposing _federal customer data_ to new services
           
 
 ---   
