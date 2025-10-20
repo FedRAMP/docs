@@ -1,7 +1,7 @@
 # FedRAMP FedRAMP 20x All Impact Requirements
 
 - **Release:** Untracked
-- **Published:** 2025-10-17  
+- **Published:** 2025-10-20  
 - **Designator:** FRMR-ALL
 - **Description:** FedRAMP 20x All Impact Requirements
 

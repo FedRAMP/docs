@@ -10,7 +10,7 @@
     "releases": [
       {
         "id": "Untracked",
-        "published_date": "2025-10-17",
+        "published_date": "2025-10-20",
         "description": "FedRAMP 20x All Impact Requirements"
       }
     ]
@@ -2270,6 +2270,11 @@
           "id": "FRA-ADS-04",
           "applies_to": "FRR-ADS-04",
           "statement": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access _authorization data_ or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "referenced_fr": [
             "FRD-ALL-15"
           ]
@@ -2278,6 +2283,11 @@
           "id": "FRA-ADS-05",
           "applies_to": "FRR-ADS-05",
           "statement": "This is not a license to exclude accurate risk information, but specifics that would _likely_ lead to compromise should be abstracted. A breach of confidentiality with _authorization data_ should be anticipated by a secure cloud service provider.",
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "referenced_fr": [
             "FRD-ALL-04"
           ],
@@ -2310,7 +2320,12 @@
         {
           "id": "FRA-SCN-03",
           "applies_to": "FRR-SCN-03",
-          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change."
+          "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change.",
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "FRA-SCN-RR",
@@ -2321,6 +2336,11 @@
             "FRD-ALL-08",
             "FRD-ALL-07"
           ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "examples": [
             {
               "id": "Ongoing operations",
@@ -2356,6 +2376,11 @@
           "id": "FRA-SCN-TF",
           "applies_to": "FRR-SCN-TF",
           "statement": "Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.",
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "examples": [
             {
               "id": "Transformative changes",
@@ -2378,6 +2403,11 @@
           "id": "FRA-SCN-AD",
           "applies_to": "FRR-SCN-AD",
           "statement": "Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.\n\nIn general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.",
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "referenced_fr": [
             "FRD-ALL-10",
             "FRD-ALL-08",
@@ -2411,11 +2441,21 @@
         {
           "id": "FRA-VDR-01",
           "applies_to": "FRR-VDR-08",
+          "impact": {
+            "low": true,
+            "moderate": false,
+            "high": false
+          },
           "statement": "FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload. The simplest way to prevent exploitation of internet-reachable vulnerabilities is to intercept, inspect, filter, sanitize, reject, or otherwise deflect triggering payloads before they are processed by the vulnerable resource; once this prevention is in place the vulnerability should no longer be considered an internet-reachable vulnerability.\n\nA classic example of an internet-reachable vulnerability on systems that are not typically internet-accessible is SQL injection (https://en.wikipedia.org/wiki/SQL_injection), where an application stack behind a load balancer and firewall with no ability to route traffic to or from the internet can receive a payload indirectly from the internet that triggers the manipulation or compromise of data in a database that can only be accessed by an authorized connection from the application server on a private network.\n\nAnother simple example is the infamous Log4Shell (https://en.wikipedia.org/wiki/Log4Shell) vulnerability from 2021, where exploitation was possible via vulnerable internet-reachable resources deep in the application stack that were often not internet-accessible themselves."
         },
         {
           "id": "FRA-VDR-02",
           "applies_to": "FRR-VDR-07",
+          "impact": {
+            "low": true,
+            "moderate": false,
+            "high": false
+          },
           "statement": "The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.\n\nThe proof, ultimately, is in the pudding - providers who regularly evaluate vulnerabilities as not likely exploitable without careful consideration are more likely to suffer from an adverse impact where the root cause was an exploited vulnerability that was improperly evaluated. If done recklessly or deliberately, such actions will have a potential adverse impact on a provider's FedRAMP authorization."
         }
       ]
@@ -2945,7 +2985,12 @@
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "KSI-IAM-04",
