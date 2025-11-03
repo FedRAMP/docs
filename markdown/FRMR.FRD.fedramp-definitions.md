@@ -1,9 +1,9 @@
 # FedRAMP FedRAMP Definitions
 
-- **Release:** 25.10A
-- **Published:** 2025-10-17  
+- **Release:** 25.11A
+- **Published:** 2025-11-08  
 - **Designator:** FRD
-- **Description:** Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.
+- **Description:** Added FRD-ALL-40 (definition of incident) to support the 20x Incident Communications Procedures.
 
 ## Front Matter
 

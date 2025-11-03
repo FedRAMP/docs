@@ -5,10 +5,10 @@
     "name": "Standard",
     "short_name": "TLA",
     "current_release": "25.00A",
-    "types": ["FRR", "FRD", "FRA"],
+    "types": ["FRR", "FRA"],
     "releases": [
       {
-        "id": "25.06A",
+        "id": "25.00A",
         "published_date": "2025-00-00",
         "description": "Initial release of Standard",
         "public_comment": true,
@@ -17,23 +17,19 @@
             "timeline": {
               "pilot": {
                 "start_date": "2025-00-00",
-                "designator": "20x",
-                "comment": "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
+                "designator": "20x"
               }
             },
-            "specific_release": "20x.TLA.P1.25.00A",
-            "comment": ""
+            "comments": [""]
           },
           "Rev5": {
             "timeline": {
               "closed_beta": {
                 "start_date": "2025-00-00",
-                "designator": "R5.TLA.B1",
-                "comment": ""
+                "designator": "Rev5 Beta"
               }
             },
-            "specific_release": "R5.TLA.B1.25.00A",
-            "comment": ""
+            "comments": [""]
           }
         },
         "related_rfcs": [
@@ -65,43 +61,24 @@
         }
       ],
       "purpose": "",
-      "expected_outcomes": [
-        "",
-        "",
-        ""
-      ]
+      "expected_outcomes": ["", "", ""]
     }
-  },
-  "FRD": {
-    "TLA": [
-      {
-        "id": "FRD-TLA-00",
-        "term": "",
-        "definition": "",
-        "reference": "",
-        "reference_url": "",
-        "referenced_fr": ["FRD-TLA-00"],
-        "note": ""
-      }
-    ]
   },
   "FRR": {
     "TLA": {
       "base": {
         "id": "FRR-TLA",
-        "application": "These requirements apply ALWAYS to ALL CHANGEME based on current Effective Date(s) and Overall Applicability",
+        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "referenced_fr": ["FRD-TLA-00"],
         "requirements": [
           {
             "id": "FRR-TLA-00",
             "statement": "",
+            "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "following_information": [
-              "",
-              ""
-            ]
+            "following_information": ["", ""]
           }
         ]
       },
@@ -112,6 +89,7 @@
           {
             "id": "FRR-TLA-EX-01",
             "statement": "",
+            "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
@@ -127,6 +105,7 @@
           {
             "id": "FRR-TLA-LL-00",
             "statement": "",
+            "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
@@ -149,19 +128,10 @@
           "examples": [
             {
               "id": "example description",
-              "key_tests": [
-                "",
-                "",
-                ""
-              ],
-              "examples": [
-                "",
-                "",
-                "",
-                ""
-              ]
-            }  
-          ]        
+              "key_tests": ["", "", ""],
+              "examples": ["", "", "", ""]
+            }
+          ]
         }
       ]
     }

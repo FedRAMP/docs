@@ -4,13 +4,12 @@
     "short_name": "FRMR-ALL",
     "current_release": "Untracked",
     "types": [
-      "FRR",
-      "KSI"
+      "FRR"
     ],
     "releases": [
       {
         "id": "Untracked",
-        "published_date": "2025-10-20",
+        "published_date": "2025-11-03",
         "description": "FedRAMP 20x All Impact Requirements"
       }
     ]
@@ -821,6 +820,172 @@
               "moderate": true,
               "high": true
             }
+          }
+        ]
+      }
+    },
+    "ICP": {
+      "base": {
+        "id": "FRR-ICP",
+        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-ICP-01",
+            "statement": "Providers MUST responsibly report _incidents_ to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-02",
+            "statement": "Providers MUST responsibly report _incidents_ to all _agency_ customers within 1 hour of identification using the _incident_ communications points of contact provided by each _agency_ customer.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-ICP-03",
+            "statement": "Providers MUST responsibly report _incidents_ to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. ",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-04",
+            "statement": "Providers MUST update _all necessary parties_, including at least FedRAMP, CISA (if applicable), and all _agency_ customers, at least once per calendar day until the _incident_ is resolved and recovery is complete.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-18",
+              "FRD-ALL-19",
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-05",
+            "statement": "Providers MUST make _incident_ report information available in their secure FedRAMP repository (such as USDA Connect) or _trust center_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ICP-06",
+            "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-04",
+              "FRD-ALL-18"
+            ]
+          },
+          {
+            "id": "FRR-ICP-07",
+            "statement": "Providers MUST provide a final report once the _incident_ is resolved and recovery is complete that describes at least:",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ],
+            "following_information": [
+              "What occurred",
+              "Root cause",
+              "Response",
+              "Lessons learned",
+              "Changes needed"
+            ]
+          },
+          {
+            "id": "FRR-ICP-08",
+            "statement": "Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-18"
+            ]
+          },
+          {
+            "id": "FRR-ICP-09",
+            "statement": "Providers SHOULD make _incident_ report information available in consistent human-readable and _machine-readable_ formats.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-17"
+            ]
           }
         ]
       }
@@ -2244,6 +2409,78 @@
               "moderate": true,
               "high": true
             }
+          }
+        ]
+      }
+    },
+    "UCM": {
+      "base": {
+        "id": "FRR-UCM",
+        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-UCM-01",
+            "statement": "Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules have been validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
+          },
+          {
+            "id": "FRR-UCM-02",
+            "statement": "Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when such modules are available.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-UCM-03",
+            "statement": "Providers SHOULD use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+            "impact": {
+              "low": false,
+              "moderate": true,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
+          },
+          {
+            "id": "FRR-UCM-04",
+            "statement": "Providers MUST use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+            "impact": {
+              "low": false,
+              "moderate": false,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
           }
         ]
       }

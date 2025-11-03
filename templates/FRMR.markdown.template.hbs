@@ -46,11 +46,13 @@ The following FedRAMP documentation guidelines apply to this document:
 
 {{info.front_matter.purpose}}
 
+{{#if info.front_matter.expected_outcomes}}
 ### Expected Outcomes
 
-{{#each info.front_matter.expected_outcomes}}
+  {{#each info.front_matter.expected_outcomes}}
 - {{this}}
-{{/each}}
+  {{/each}}
+{{/if}}
 
 {{/if}}
 ---

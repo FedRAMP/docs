@@ -1,7 +1,7 @@
 # FedRAMP FedRAMP 20x All Impact Requirements
 
 - **Release:** Untracked
-- **Published:** 2025-10-20  
+- **Published:** 2025-11-03  
 - **Designator:** FRMR-ALL
 - **Description:** FedRAMP 20x All Impact Requirements
 
@@ -515,6 +515,63 @@ _Applies to:_ Low, Moderate, High
 ---   
 
 
+### FRR-ICP
+
+**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-ICP-01
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST responsibly report _incidents_ to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.
+
+#### FRR-ICP-02
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST responsibly report _incidents_ to all _agency_ customers within 1 hour of identification using the _incident_ communications points of contact provided by each _agency_ customer.
+
+#### FRR-ICP-03
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST responsibly report _incidents_ to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. 
+
+#### FRR-ICP-04
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST update _all necessary parties_, including at least FedRAMP, CISA (if applicable), and all _agency_ customers, at least once per calendar day until the _incident_ is resolved and recovery is complete.
+
+#### FRR-ICP-05
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST make _incident_ report information available in their secure FedRAMP repository (such as USDA Connect) or _trust center_.
+
+#### FRR-ICP-06
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.
+
+#### FRR-ICP-07
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST provide a final report once the _incident_ is resolved and recovery is complete that describes at least:
+> 1. What occurred
+> 1. Root cause
+> 1. Response
+> 1. Lessons learned
+> 1. Changes needed
+
+#### FRR-ICP-08
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).
+
+#### FRR-ICP-09
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD make _incident_ report information available in consistent human-readable and _machine-readable_ formats.
+
+---   
+
+
 ### FRR-MAS
 
 **These requirements apply ALWAYS to ALL FedRAMP authorizations based on the Effective Date(s) and Overall Applicability.**
@@ -903,6 +960,23 @@ _Applies to:_ Low, Moderate, High
 _Applies to:_ Low, Moderate, High
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
+
+---   
+
+
+### FRR-UCM
+
+**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-UCM-01
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules have been validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.
+
+#### FRR-UCM-02
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when such modules are available.
 
 ---   
 

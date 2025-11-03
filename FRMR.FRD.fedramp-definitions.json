@@ -4,9 +4,39 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.10A",
+    "current_release": "25.11A",
     "types": ["FRD"],
     "releases": [
+      {
+        "id": "25.11A",
+        "published_date": "2025-11-08",
+        "description": "Added FRD-ALL-40 (definition of incident) to support the 20x Incident Communications Procedures.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-06-01",
+                "designator": "20x Phase One Pilot"
+              }
+            },
+            "comments": [
+              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "wide_release": {
+                "start_date": "2025-06-01",
+                "designator": "Rev5 Balance Improvement Releases"
+              }
+            },
+            "comments": [
+              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release."
+            ]
+          }
+        }
+      },
       {
         "id": "25.10A",
         "published_date": "2025-10-17",
