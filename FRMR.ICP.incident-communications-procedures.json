@@ -36,7 +36,7 @@
     "ICP": {
       "base": {
         "id": "FRR-ICP",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "requirements": [
           {
             "id": "FRR-ICP-01",
@@ -93,7 +93,13 @@
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-ALL-40"],
-            "following_information": ["What occurred", "Root cause", "Response", "Lessons learned", "Changes needed"]
+            "following_information": [
+              "What occurred",
+              "Root cause",
+              "Response",
+              "Lessons learned",
+              "Changes needed"
+            ]
           },
           {
             "id": "FRR-ICP-08",

@@ -211,10 +211,28 @@
 
 > **Drift**: Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.
 
+#### FRD-ALL-40
+
+> **Incident**: Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is &quot;an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].&quot;
+>
+>  _[Reference: 44 USC § 3552 (b)(2)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552)_
+
+#### FRD-ALL-41
+
+> **Top-level administrative account**: The most privileged account with the highest level of access within a _cloud service offering_ for a customer organization, typically with complete control over all aspects of the _cloud service offering_, including managing resources, users, access, privileges, and the account itself.
+>
+>  _Note: Any references to _top-level administrative accounts_ in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign _top-level administrative account_ privileges._
+
+#### FRD-ALL-42
+
+> **Privileged account**: An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.
+>
+>  _Note: Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_._
 
 
 
-## Requirements
+
+## Requirements and Recommendations
 
 ### FRR-ADS
 
@@ -517,7 +535,7 @@ _Applies to:_ Low, Moderate, High
 
 ### FRR-ICP
 
-**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-ICP-01
 _Applies to:_ Low, Moderate, High
@@ -952,6 +970,65 @@ _Applies to:_ Low, Moderate, High
 ---   
 
 
+### FRR-RSC
+
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-RSC-01
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.
+>
+>  _Note: This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_._
+
+#### FRR-RSC-02
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.
+
+#### FRR-RSC-03
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.
+
+#### FRR-RSC-04
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.
+
+#### FRR-RSC-05
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.
+
+#### FRR-RSC-06
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.
+
+#### FRR-RSC-07
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.
+
+#### FRR-RSC-08
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.
+
+#### FRR-RSC-09
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD make recommended secure configuration guidance available publicly.
+
+#### FRR-RSC-10
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.
+
+---   
+
+
 ### FRR-KSI
 
 **These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.**
@@ -976,7 +1053,7 @@ _Applies to:_ Low, Moderate, High
 
 ### FRR-UCM
 
-**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-UCM-01
 _Applies to:_ Low, Moderate, High

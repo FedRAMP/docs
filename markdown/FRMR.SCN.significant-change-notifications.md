@@ -51,7 +51,7 @@ These categories, and the resulting requirements, apply only to significant chan
 ---
 
 
-## Requirements
+## Requirements and Recommendations
 
 ### FRR-SCN
 

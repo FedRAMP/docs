@@ -41,7 +41,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ---
 
 
-## Requirements
+## Requirements and Recommendations
 
 ### FRR-KSI
 

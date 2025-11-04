@@ -39,11 +39,11 @@ FedRAMP recommends that cloud service providers seeking FedRAMP authorization at
 ---
 
 
-## Requirements
+## Requirements and Recommendations
 
 ### FRR-UCM
 
-**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-UCM-01
 _Applies to:_ Low, Moderate, High

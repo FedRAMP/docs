@@ -68,7 +68,7 @@
     "TLA": {
       "base": {
         "id": "FRR-TLA",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "referenced_fr": ["FRD-TLA-00"],
         "requirements": [
           {

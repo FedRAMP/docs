@@ -827,7 +827,7 @@
     "ICP": {
       "base": {
         "id": "FRR-ICP",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "requirements": [
           {
             "id": "FRR-ICP-01",
@@ -2036,6 +2036,176 @@
         ]
       }
     },
+    "RSC": {
+      "base": {
+        "id": "FRR-RSC",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "referenced_fr": [
+          "FRD-RSC-00"
+        ],
+        "requirements": [
+          {
+            "id": "FRR-RSC-01",
+            "statement": "Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-06"
+            ],
+            "note": "This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_."
+          },
+          {
+            "id": "FRR-RSC-02",
+            "statement": "Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41"
+            ]
+          },
+          {
+            "id": "FRR-RSC-03",
+            "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-04",
+            "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-05",
+            "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-06",
+            "statement": "Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-17"
+            ]
+          },
+          {
+            "id": "FRR-RSC-07",
+            "statement": "Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-RSC-08",
+            "statement": "Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-17"
+            ]
+          },
+          {
+            "id": "FRR-RSC-09",
+            "statement": "Providers SHOULD make recommended secure configuration guidance available publicly.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-RSC-10",
+            "statement": "Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          }
+        ]
+      }
+    },
     "KSI": {
       "base": {
         "application": "These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.",
@@ -2094,7 +2264,7 @@
     "UCM": {
       "base": {
         "id": "FRR-UCM",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "requirements": [
           {
             "id": "FRR-UCM-01",
@@ -2507,6 +2677,28 @@
         "referenced_fr": [
           "FRD-ALL-02"
         ]
+      },
+      {
+        "id": "FRD-ALL-40",
+        "term": "Incident",
+        "definition": "Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is \"an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].\"",
+        "reference": "44 USC § 3552 (b)(2)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552"
+      },
+      {
+        "id": "FRD-ALL-41",
+        "term": "Top-level administrative account",
+        "definition": "The most privileged account with the highest level of access within a _cloud service offering_ for a customer organization, typically with complete control over all aspects of the _cloud service offering_, including managing resources, users, access, privileges, and the account itself.",
+        "note": "Any references to _top-level administrative accounts_ in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign _top-level administrative account_ privileges.",
+        "referenced_fr": [
+          "FRD-ALL-06"
+        ]
+      },
+      {
+        "id": "FRD-ALL-42",
+        "term": "Privileged account",
+        "definition": "An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.",
+        "note": "Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_."
       }
     ]
   },

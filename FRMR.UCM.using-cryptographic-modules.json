@@ -36,7 +36,7 @@
     "UCM": {
       "base": {
         "id": "FRR-UCM",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "requirements": [
           {
             "id": "FRR-UCM-01",

@@ -37,11 +37,11 @@ The only notable change from the default Rev5 Incident Communications Procedures
 ---
 
 
-## Requirements
+## Requirements and Recommendations
 
 ### FRR-ICP
 
-**These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
 
 #### FRR-ICP-01
 _Applies to:_ Low, Moderate, High
