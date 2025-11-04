@@ -48,22 +48,22 @@ FedRAMP recommends that cloud service providers seeking FedRAMP authorization at
 #### FRR-UCM-01
 _Applies to:_ Low, Moderate, High
 
-> Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules have been validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.
+> Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules are validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.
 
 #### FRR-UCM-02
 _Applies to:_ Low, Moderate, High
 
-> Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when such modules are available.
+> Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.
 
 #### FRR-UCM-03
 _Applies to:_ Moderate
 
-> Providers SHOULD use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.
+> Providers SHOULD use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.
 
 #### FRR-UCM-04
 _Applies to:_ High
 
-> Providers MUST use cryptographic modules or update streams of cryptographic modules validated under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.
+> Providers MUST use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.
 
 ---   
 

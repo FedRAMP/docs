@@ -70,7 +70,7 @@ bun run scripts/combine-frmr-json.ts
 ```sh
 bun run watch
 ```
-(watches for changes and regenerates markdown)
+(watches for changes and regenerates markdown, good for debugging)
 
 **Generate Updated TOC:**
 
@@ -84,6 +84,12 @@ bun run scripts/generate-table-of-docs.ts
 ```sh
 cd markdown
 ../tools/scripts/update-pdfs.sh
+```
+
+**Do All The Things:**
+
+```
+bun run all
 ```
 
 # Broader Changes / Notes
