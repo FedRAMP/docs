@@ -1,7 +1,7 @@
 # FedRAMP FedRAMP 20x All Impact Requirements
 
 - **Release:** Untracked
-- **Published:** 2025-11-04  
+- **Published:** 2025-11-05  
 - **Designator:** FRMR-ALL
 - **Description:** FedRAMP 20x All Impact Requirements
 
@@ -228,6 +228,14 @@
 > **Privileged account**: An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.
 >
 >  _Note: Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_._
+
+#### FRD-ALL-43
+
+> **Ongoing Authorization Report**: A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
+
+#### FRD-ALL-44
+
+> **Quarterly Review**: A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
 
 
 
@@ -1024,17 +1032,17 @@ _Applies to:_ Low, Moderate, High
 **These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.**
 
 #### FRR-KSI-01
-_Applies to:_ Low, Moderate, High
+_Applies to:_ Low, Moderate
 
 > Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
 
 #### FRR-KSI-02
-_Applies to:_ Low, Moderate, High
+_Applies to:_ Low, Moderate
 
 > All parties SHOULD follow FedRAMP&#x27;s best practices and technical assistance on assessing Key Security Indicators where applicable.
 
 #### FRR-KSI-03
-_Applies to:_ Low, Moderate, High
+_Applies to:_ Low, Moderate
 
 > All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.
 
@@ -1058,97 +1066,413 @@ _Applies to:_ Low, Moderate, High
 ---   
 
 
+### FRR-CCM
+
+**These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.**
+
+#### FRR-CCM-01
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST make an _Ongoing Authorization Report_ available to _all necessary parties_ every 3 months, in a consistent format that is human readable, covering the entire period since the previous summary; this report MUST include high-level summaries of at least the following information:
+> 1. Changes to _authorization data_
+> 1. Planned changes to _authorization data_ during at least the next 3 months
+> 1. _Accepted vulnerabilities
+> 1. _Transformative_ changes
+> 1. Updated recommendations or best practices for security, configuration, usage, or similar aspects of the _cloud service offering_
+
+#### FRR-CCM-02
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD establish a regular 3 month cycle for _Ongoing Authorization Reports_ that is spread out from the beginning, middle, or end of each quarter.
+>
+>  _Note: This recommendation is intended to discourage hundreds of cloud service providers from releasing their _Ongoing Authorization Reports_ during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle._
+
+#### FRR-CCM-03
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST publicly include the target date for their next _Ongoing Authorization Report_ with the _authorization data_ required by FRR-ADS-01.
+
+#### FRR-CCM-04
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST establish and share an asynchronous mechanism for _all necessary parties_ to provide feedback or ask questions about each _Ongoing Authorization Report_.
+
+#### FRR-CCM-05
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST maintain an anonymized and desensitized summary of the feedback, questions, and answers about each _Ongoing Authorization Report_ as an addendum to the _Ongoing Authorization Report_.
+>
+>  _Note: This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from _agencies_ and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter._
+
+#### FRR-CCM-06
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST NOT irresponsibly disclose sensitive information in an _Ongoing Authorization Report_ that would _likely_ have an adverse effect on the _cloud service offering_.
+
+#### FRR-CCM-07
+_Applies to:_ Low, Moderate, High
+
+> Providers MAY responsibly share some or all of the information an _Ongoing Authorization Report_ publicly or with other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.
+
+---   
+
+### FRR-CCM-QR
+
+**These requirements and recommendations apply to providers hosting synchronous _Quarterly Reviews_ with all agencies.**
+
+#### FRR-CCM-QR-01
+_Applies to:_ Low
+
+> Providers SHOULD host a synchronous _Quarterly Review_ every 3 months, open to _all necessary parties_, to review aspects of the most recent _Ongoing Authorization Reports_ that the provider determines are of the most relevance to _agencies_; providers who do not host _Quarterly Reviews_ MUST clearly state this and explain this decision in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07
+
+#### FRR-CCM-QR-03
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD regularly schedule _Quarterly Reviews_ to occur at least 3 business days after releasing an _Ongoing Authorization Report_ AND within 10 business days of such release.
+
+#### FRR-CCM-QR-04
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST NOT irresponsibly disclose sensitive information in a _Quarterly Review_ that would _likely_ have an adverse effect on the _cloud service offering_.
+
+#### FRR-CCM-QR-05
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST include either a registration link or a downloadable calendar file with meeting information for _Quarterly Reviews_ in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07.
+
+#### FRR-CCM-QR-06
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST publicly include the target date for their next _Quarterly Review_ with the _authorization data_ required by FRR-ADS-01.
+
+#### FRR-CCM-QR-07
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD include additional information in _Quarterly Reviews_ that the provider determines are of interest, use, or otherwise relevant to _agencies_.
+
+#### FRR-CCM-QR-08
+_Applies to:_ Low, Moderate, High
+
+> Providers MUST NOT invite third parties to attend _Quarterly Reviews_ intended for _agencies_ unless it is of specific relevance.
+>
+>  _Note: This is because _agencies_ are less likely to actively participate in meetings with third parties; the cloud service provider&#x27;s independent assessor should be considered relevant by default._
+
+#### FRR-CCM-QR-09
+_Applies to:_ Low, Moderate, High
+
+> Providers SHOULD record or transcribe _Quarterly Reviews_ and make such available to _all necessary parties_ with other _authorization data_ required by FRR-ADS-06 and FRR-ADS07.
+
+#### FRR-CCM-QR-10
+_Applies to:_ Low, Moderate, High
+
+> Providers MAY responsibly share recordings or transcriptions of _Quarterly Reviews_ with the public or other parties ONLY if the provider removes all _agency_ information (comments, questions, names, etc.) AND determines sharing will NOT _likely_ have an adverse effect on the _cloud service offering_.
+
+#### FRR-CCM-QR-11
+_Applies to:_ Low, Moderate, High
+
+> Providers MAY responsibly share content prepared for a _Quarterly Review_ with the public or other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.
+
+---   
+
+### FRR-CCM-AG
+
+**This section includes requirements and recommendations for _agencies_ who are using FedRAMP Authorized cloud services based on statute and policy directives from OMB that apply to _agencies_.**
+
+#### FRR-CCM-AG-01
+_Applies to:_ Low, Moderate, High
+
+> Agencies MUST review each _Ongoing Authorization Report_ to understand how changes to the _cloud service offering_ may impact the previously agreed-upon risk tolerance documented in the _agency&#x27;s_ Authorization to Operate of a federal information system that includes the _cloud service offering_ in its boundary.
+>
+>  _Note: This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15._
+
+#### FRR-CCM-AG-02
+_Applies to:_ Low, Moderate, High
+
+> Agencies SHOULD consider the Security Category noted in their Authorization to Operate of the federal information system that includes the _cloud service offering_ in its boundary and assign appropriate information security resources for reviewing _Ongoing Authorization Reports_, attending _Quarterly Reviews_, and other ongoing _authorization data_.
+
+#### FRR-CCM-AG-04
+_Applies to:_ Low, Moderate, High
+
+> Agencies SHOULD formally notify the provider if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to remove the _cloud service offering_ from operation.
+
+#### FRR-CCM-AG-05
+_Applies to:_ Low, Moderate, High
+
+> Agencies MUST notify FedRAMP by sending a notification to info@fedramp.gov if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to stop operation of the _cloud service offering_.
+>
+>  _Note: Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)._
+
+#### FRR-CCM-AG-06
+_Applies to:_ Low, Moderate, High
+
+> Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about _authorization data_.
+>
+>  _Note: This is a statory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization._
+
+#### FRR-CCM-AG-07
+_Applies to:_ Low, Moderate, High
+
+> Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those required in this policy by sending a notification to info@fedramp.gov.
+>
+>  _Note: Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)._
+
+---   
+
+
 
 
 
 ## Key Security Indicators
+### KSI-AFR: Authorization by FedRAMP
+
+**A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.**
+
+#### KSI-AFR-01
+
+_Applies to:_ Low, Moderate
+
+> Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-02
+
+_Applies to:_ Low, Moderate
+
+> Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-03
+
+_Applies to:_ Low, Moderate
+
+> Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-04
+
+_Applies to:_ Low, Moderate
+
+> Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-05
+
+_Applies to:_ Low, Moderate
+
+> Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-06
+
+_Applies to:_ Low, Moderate
+
+> Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-07
+
+_Applies to:_ Low, Moderate
+
+> Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-08
+
+_Applies to:_ Low, Moderate
+
+> Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-09
+
+_Applies to:_ Low, Moderate
+
+> Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-10
+
+_Applies to:_ Low, Moderate
+
+> Integrate FedRAMP’s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations..
+
+#### KSI-AFR-11
+
+_Applies to:_ Low, Moderate
+
+> Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules policy and persistently address all related requirements and recommendations..
+
 ### KSI-CED: Cybersecurity Education
 
 **A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.**
 
 #### KSI-CED-01
-> Ensure all employees receive security awareness training.
+
+_Applies to:_ Low, Moderate
+
+> Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics..
 
 #### KSI-CED-02
-> Require role-specific training for high risk roles, including at least roles with privileged access.
+
+_Applies to:_ Low, Moderate
+
+> Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access..
+
+#### KSI-CED-03
+
+_Applies to:_ Low, Moderate
+
+> Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software..
+
+#### KSI-CED-04
+
+_Applies to:_ Low, Moderate
+
+> Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery..
 
 ### KSI-CMT: Change Management
 
 **A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.**
 
 #### KSI-CMT-01
-> Log and monitor system modifications.
+
+_Applies to:_ Low, Moderate
+
+> Log and monitor modifications to the cloud service offering..
 
 #### KSI-CMT-02
+
+_Applies to:_ Low, Moderate
+
 > Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible.
 
 #### KSI-CMT-03
-> Implement automated testing and validation of changes prior to deployment.
+
+_Applies to:_ Low, Moderate
+
+> Automate persistent testing and validation of changes throughout deployment..
 
 #### KSI-CMT-04
-> Have a documented change management procedure.
+
+_Applies to:_ Low, Moderate
+
+> Always follow a documented change management procedure..
 
 #### KSI-CMT-05
-> Evaluate the risk and potential impact of any change.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-05 (SCN).
 
 ### KSI-CNA: Cloud Native Architecture
 
 **A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.**
 
 #### KSI-CNA-01
-> Configure ALL _information resources_ to limit inbound and outbound traffic.
+
+_Applies to:_ Low, Moderate
+
+> Configure all machine-based information resources to limit inbound and outbound network traffic..
 
 #### KSI-CNA-02
+
+_Applies to:_ Low, Moderate
+
 > Design systems to minimize the attack surface and minimize lateral movement if compromised.
 
 #### KSI-CNA-03
+
+_Applies to:_ Low, Moderate
+
 > Use logical networking and related capabilities to enforce traffic flow controls.
 
 #### KSI-CNA-04
+
+_Applies to:_ Low, Moderate
+
 > Use immutable infrastructure with strictly defined functionality and privileges by default.
 
 #### KSI-CNA-05
-> Have denial of service protection.
+
+_Applies to:_ Low, Moderate
+
+> Protect against denial of service attacks and other unwanted activity..
 
 #### KSI-CNA-06
+
+_Applies to:_ Low, Moderate
+
 > Design systems for high availability and rapid recovery.
 
 #### KSI-CNA-07
+
+_Applies to:_ Low, Moderate
+
 > Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance.
+
+#### KSI-CNA-08
+
+_Applies to:_ Moderate
+
+> Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state..
 
 ### KSI-IAM: Identity and Access Management
 
 **A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.**
 
 #### KSI-IAM-01
+
+_Applies to:_ Low, Moderate
+
 > Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.
 
 #### KSI-IAM-02
+
+_Applies to:_ Low, Moderate
+
 > Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.
 
 #### KSI-IAM-03
+
+_Applies to:_ Low, Moderate
+
 > Enforce appropriately secure authentication methods for non-user accounts and services.
 
 #### KSI-IAM-04
+
+_Applies to:_ Low, Moderate
+
 > Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.
 
 #### KSI-IAM-05
-> Apply zero trust design principles.
+
+_Applies to:_ Low, Moderate
+
+> Configure identity and access management with measures that always verify each user or device can only access the resources they need..
 
 #### KSI-IAM-06
+
+_Applies to:_ Low, Moderate
+
 > Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity.
 
-### KSI-INR: Incident Reporting
+#### KSI-IAM-07
+
+_Applies to:_ Low, Moderate
+
+> Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation..
+
+### KSI-INR: Incident Response
 
 **A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.**
 
 #### KSI-INR-01
-> Report incidents according to FedRAMP requirements and cloud service provider policies.
+
+_Applies to:_ Low, Moderate
+
+> Always follow a documented incident response procedure..
 
 #### KSI-INR-02
+
+_Applies to:_ Low, Moderate
+
 > Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
 
 #### KSI-INR-03
+
+_Applies to:_ Low, Moderate
+
 > Generate after action reports and _regularly_ incorporate lessons learned into operations.
 
 ### KSI-MLA: Monitoring, Logging, and Auditing
@@ -1156,62 +1480,131 @@ _Applies to:_ Low, Moderate, High
 **A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.**
 
 #### KSI-MLA-01
+
+_Applies to:_ Low, Moderate
+
 > Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.
 
 #### KSI-MLA-02
+
+_Applies to:_ Low, Moderate
+
 > _Regularly_ review and audit logs.
 
 #### KSI-MLA-03
-> Rapidly detect and remediate or mitigate vulnerabilities.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-04 (VDR).
 
 #### KSI-MLA-04
-> Perform authenticated vulnerability scanning on _information resources_.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-04 (VDR).
 
 #### KSI-MLA-05
+
+_Applies to:_ Low, Moderate
+
 > Perform Infrastructure as Code and configuration evaluation and testing.
 
 #### KSI-MLA-06
-> Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-04 (VDR).
+
+#### KSI-MLA-07
+
+_Applies to:_ Low, Moderate
+
+> Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so..
+
+#### KSI-MLA-08
+
+_Applies to:_ Moderate
+
+> Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity..
 
 ### KSI-PIY: Policy and Inventory
 
 **A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.**
 
 #### KSI-PIY-01
-> Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services.
+
+_Applies to:_ Low, Moderate
+
+> Use authoritative sources to automatically maintain real-time inventories of all information resources.
 
 #### KSI-PIY-02
-> Have policies outlining the security objectives of all _information resources_.
+
+_Applies to:_ Low, Moderate
+
+> Document the security objectives and requirements for each information resource or set of information resources..
 
 #### KSI-PIY-03
+
+_Applies to:_ Low, Moderate
+
 > Maintain a vulnerability disclosure program.
 
 #### KSI-PIY-04
-> Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles.
+
+_Applies to:_ Low, Moderate
+
+> Monitor the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles..
 
 #### KSI-PIY-05
+
+_Applies to:_ Low, Moderate
+
 > Document methods used to evaluate _information resource_ implementations.
 
 #### KSI-PIY-06
-> Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering.
+
+_Applies to:_ Low, Moderate
+
+> Monitor the effectiveness of the organization’s investments in achieving security objectives..
 
 #### KSI-PIY-07
+
+_Applies to:_ Low, Moderate
+
 > Document risk management decisions for software supply chain security.
+
+#### KSI-PIY-08
+
+_Applies to:_ Low, Moderate
+
+> Regularly measure executive support for achieving the organization’s security objectives..
 
 ### KSI-RPL: Recovery Planning
 
 **A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.**
 
 #### KSI-RPL-01
+
+_Applies to:_ Low, Moderate
+
 > Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
 
 #### KSI-RPL-02
+
+_Applies to:_ Low, Moderate
+
 > Develop and maintain a recovery plan that aligns with the defined recovery objectives.
 
 #### KSI-RPL-03
+
+_Applies to:_ Low, Moderate
+
 > Perform system backups aligned with recovery objectives.
 
 #### KSI-RPL-04
+
+_Applies to:_ Low, Moderate
+
 > _Regularly_ test the capability to recover from incidents and contingencies.
 
 ### KSI-SVC: Service Configuration
@@ -1219,40 +1612,91 @@ _Applies to:_ Low, Moderate, High
 **A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.**
 
 #### KSI-SVC-01
-> Harden and review network and system configurations.
+
+_Applies to:_ Low, Moderate
+
+> Implement improvements based on persistent evaluation of information resources for opportunities to improve security..
 
 #### KSI-SVC-02
+
+_Applies to:_ Low, Moderate
+
 > Encrypt or otherwise secure network traffic.
 
 #### KSI-SVC-03
-> Encrypt all federal and sensitive information at rest.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-11 (UCM).
 
 #### KSI-SVC-04
-> Manage configuration centrally.
+
+_Applies to:_ Low, Moderate
+
+> Manage configuration of machine-based information resources using automation..
 
 #### KSI-SVC-05
-> Enforce system and _information resource_ integrity through cryptographic means.
+
+_Applies to:_ Low, Moderate
+
+> Use cryptographic methods to validate the integrity of machine-based information resources..
 
 #### KSI-SVC-06
-> Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates.
+
+_Applies to:_ Low, Moderate
+
+> Automate management, protection, and regular rotation of digital keys, certificates, and other secrets..
 
 #### KSI-SVC-07
+
+_Applies to:_ Low, Moderate
+
 > Use a consistent, risk-informed approach for applying security patches.
+
+#### KSI-SVC-08
+
+_Applies to:_ Moderate
+
+> Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of federal customer data during operations..
+
+#### KSI-SVC-09
+
+_Applies to:_ Moderate
+
+> Persistently validate the authenticity and integrity of communications between machine-based information resources using automation..
+
+#### KSI-SVC-10
+
+_Applies to:_ Moderate
+
+> Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage..
 
 ### KSI-TPR: Third-Party Information Resources
 
 **A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.**
 
 #### KSI-TPR-01
-> Identify all _third-party information resources_.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-01 (MAS).
 
 #### KSI-TPR-02
-> _Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured.
+
+_Applies to:_ Low, Moderate
+
+> Superseded by KSI-AFR-01 (MAS).
 
 #### KSI-TPR-03
+
+_Applies to:_ Low, Moderate
+
 > Identify and prioritize mitigation of potential supply chain risks.
 
 #### KSI-TPR-04
+
+_Applies to:_ Low, Moderate
+
 > Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services.
 
 
