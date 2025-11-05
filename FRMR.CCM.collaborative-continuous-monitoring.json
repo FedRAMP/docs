@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "FedRAMP.schema.json",
+  "info": {
+    "name": "Standard",
+    "short_name": "CCM",
+    "current_release": "25.00A DRAFT",
+    "types": ["FRR"],
+    "releases": [
+      {
+        "id": "25.00A DRAFT",
+        "published_date": "2025-00-00",
+        "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Collaborative Continuous Monitoring Standard (CCM) after public comment.",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-00-00",
+                "designator": "20x"
+              }
+            },
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations.",
+              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
+              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-00-00",
+                "designator": "Rev5 Closed Beta"
+              }
+            },
+            "comments": [
+              "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
+              "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
+            ]
+          }
+        },
+        "related_rfcs": [
+          {
+            "start_date": "2025-09-15",
+            "end_date": "2025-00-00",
+            "id": "0016",
+            "url": "https://www.fedramp.gov/rfcs/0016/",
+            "discussion_url": "https://github.com/FedRAMP/community/discussions/87",
+            "short_name": "rfc-0016-collaborative-continuous-monitoring",
+            "full_name": "FedRAMP RFC-0016: Collaborative Continuous Monitoring Standard"
+          }
+        ]
+      }
+    ],
+    "front_matter": {
+      "authority": [
+        {
+          "reference": "OMB Circular A-130: Managing Information as a Strategic Resource",
+          "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf",
+          "description": "section 4 (c) states that agencies SHALL \"conduct and document security and privacy control assessments prior to the operation of an information system, and periodically thereafter, consistent with the frequency defined in the agency information security continuous monitoring (ISCM) and privacy continuous monitoring (PCM) strategies and the agency risk tolerance\""
+        },
+        {
+          "reference": "The FedRAMP Authorization Act (44 USC § 3609 (a)(1))",
+          "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
+          "description": "directs the Administrator of the General Services Administration to \"develop, coordinate, and implement a process … including, as appropriate, oversight of continuous monitoring of cloud computing products and services\""
+        }
+      ],
+      "purpose": "Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.\n\nThe concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.",
+      "expected_outcomes": [
+        "Cloud service providers will operate their services and share additional information with agency customers to ensure they can meet their responsibilities and obligations for safely and securely operating the service",
+        "Federal agencies will have streamlined access to the information they actually need to make ongoing security and authorization decisions while having support from government-wide policies that demonstrate the different responsibilities and obligations for operating cloud services"
+      ]
+    }
+  },
+  "FRR": {
+    "CCM": {
+      "base": {
+        "id": "FRR-CCM",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-CCM-01",
+            "statement": "Providers MUST make an _Ongoing Authorization Report_ available to _all necessary parties_ every 3 months, in a consistent format that is human readable, covering the entire period since the previous summary; this report MUST include high-level summaries of at least the following information:",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-18",
+              "FRD-ALL-15",
+              "FRD-ALL-31",
+              "FRD-ALL-11",
+              "FRD-ALL-06"
+            ],
+            "following_information": [
+              "Changes to _authorization data_",
+              "Planned changes to _authorization data_ during at least the next 3 months",
+              "_Accepted vulnerabilities",
+              "_Transformative_ changes",
+              "Updated recommendations or best practices for security, configuration, usage, or similar aspects of the _cloud service offering_"
+            ]
+          },
+          {
+            "id": "FRR-CCM-02",
+            "statement": "Providers SHOULD establish a regular 3 month cycle for _Ongoing Authorization Reports_ that is spread out from the beginning, middle, or end of each quarter.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": ["FRD-ALL-43"],
+            "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their _Ongoing Authorization Reports_ during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle."
+          },
+          {
+            "id": "FRR-CCM-03",
+            "statement": "Providers MUST publicly include the target date for their next _Ongoing Authorization Report_ with the _authorization data_ required by FRR-ADS-01.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-15"]
+          },
+          {
+            "id": "FRR-CCM-04",
+            "statement": "Providers MUST establish and share an asynchronous mechanism for _all necessary parties_ to provide feedback or ask questions about each _Ongoing Authorization Report_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-18", "FRD-ALL-44"]
+          },
+          {
+            "id": "FRR-CCM-05",
+            "statement": "Providers MUST maintain an anonymized and desensitized summary of the feedback, questions, and answers about each _Ongoing Authorization Report_ as an addendum to the _Ongoing Authorization Report_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-19"],
+            "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from _agencies_ and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter."
+          },
+          {
+            "id": "FRR-CCM-06",
+            "statement": "Providers MUST NOT irresponsibly disclose sensitive information in an _Ongoing Authorization Report_ that would _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-04", "FRD-ALL-06"]
+          },
+          {
+            "id": "FRR-CCM-07",
+            "statement": "Providers MAY responsibly share some or all of the information an _Ongoing Authorization Report_ publicly or with other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-04", "FRD-ALL-06"]
+          }
+        ]
+      },
+      "quarterly_reviews": {
+        "application": "These requirements and recommendations apply to providers hosting synchronous _Quarterly Reviews_ with all agencies.",
+        "id": "FRR-CCM-QR",
+        "referenced_fr": ["FRD-ALL-44"],
+        "requirements": [
+          {
+            "id": "FRR-CCM-QR-01",
+            "statement": "Providers SHOULD host a synchronous _Quarterly Review_ every 3 months, open to _all necessary parties_, to review aspects of the most recent _Ongoing Authorization Reports_ that the provider determines are of the most relevance to _agencies_; providers who do not host _Quarterly Reviews_ MUST clearly state this and explain this decision in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07",
+            "impact": { "low": true, "moderate": false, "high": false },
+            "affects": ["Providers"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-18", "FRD-ALL-19", "FRD-ALL-15", "FRR-ADS-06", "FRR-ADS-07"]
+          },
+          {
+            "id": "FRR-CCM-QR-02",
+            "statement": "Providers MUST host a synchronous _Quarterly Review_ every 3 months, open to _all necessary parties_, to review aspects of the most recent _Ongoing Authorization Reports_ that the provider determines are of the most relevance to _agencies_.",
+            "impact": { "low": false, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-18", "FRD-ALL-19"]
+          },
+          {
+            "id": "FRR-CCM-QR-03",
+            "statement": "Providers SHOULD regularly schedule _Quarterly Reviews_ to occur at least 3 business days after releasing an _Ongoing Authorization Report_ AND within 10 business days of such release.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-43"]
+          },
+          {
+            "id": "FRR-CCM-QR-04",
+            "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a _Quarterly Review_ that would _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-04", "FRD-ALL-06"]
+          },
+          {
+            "id": "FRR-CCM-QR-05",
+            "statement": "Providers MUST include either a registration link or a downloadable calendar file with meeting information for _Quarterly Reviews_ in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-15", "FRD-ALL-18"]
+          },
+          {
+            "id": "FRR-CCM-QR-06",
+            "statement": "Providers MUST publicly include the target date for their next _Quarterly Review_ with the _authorization data_ required by FRR-ADS-01.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-15", "FRR-ADS-01"]
+          },
+          {
+            "id": "FRR-CCM-QR-07",
+            "statement": "Providers SHOULD include additional information in _Quarterly Reviews_ that the provider determines are of interest, use, or otherwise relevant to _agencies_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-19"]
+          },
+          {
+            "id": "FRR-CCM-QR-08",
+            "statement": "Providers MUST NOT invite third parties to attend _Quarterly Reviews_ intended for _agencies_ unless it is of specific relevance.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-19"],
+            "note": "This is because _agencies_ are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default."
+          },
+          {
+            "id": "FRR-CCM-QR-09",
+            "statement": "Providers SHOULD record or transcribe _Quarterly Reviews_ and make such available to _all necessary parties_ with other _authorization data_ required by FRR-ADS-06 and FRR-ADS07.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-18", "FRD-ALL-15", "FRR-ADS-06", "FRR-ADS-07"]
+          },
+          {
+            "id": "FRR-CCM-QR-10",
+            "statement": "Providers MAY responsibly share recordings or transcriptions of _Quarterly Reviews_ with the public or other parties ONLY if the provider removes all _agency_ information (comments, questions, names, etc.) AND determines sharing will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MAY",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-19", "FRD-ALL-04", "FRD-ALL-06"]
+          },
+          {
+            "id": "FRR-CCM-QR-11",
+            "statement": "Providers MAY responsibly share content prepared for a _Quarterly Review_ with the public or other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Providers"],
+            "primary_key_word": "MAY",
+            "referenced_fr": ["FRD-ALL-44", "FRD-ALL-04", "FRD-ALL-06"]
+          }
+        ]
+      },
+      "agencies": {
+        "application": "This section includes requirements and recommendations for _agencies_ who are using FedRAMP Authorized cloud services based on statute and policy directives from OMB that apply to _agencies_.",
+        "id": "FRR-CCM-AG",
+        "referenced_fr": ["FRD-ALL-19"],
+        "requirements": [
+          {
+            "id": "FRR-CCM-AG-01",
+            "statement": "Agencies MUST review each _Ongoing Authorization Report_ to understand how changes to the _cloud service offering_ may impact the previously agreed-upon risk tolerance documented in the _agency's_ Authorization to Operate of a federal information system that includes the _cloud service offering_ in its boundary.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "MUST",
+            "referenced_fr": ["FRD-ALL-43", "FRD-ALL-06", "FRD-ALL-19"],
+            "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15."
+          },
+          {
+            "id": "FRR-CCM-AG-02",
+            "statement": "Agencies SHOULD consider the Security Category noted in their Authorization to Operate of the federal information system that includes the _cloud service offering_ in its boundary and assign appropriate information security resources for reviewing _Ongoing Authorization Reports_, attending _Quarterly Reviews_, and other ongoing _authorization data_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-03",
+            "statement": "Agencies SHOULD designate a senior information security official to review _Ongoing Authorization Reports_ and represent the agency at _Quarterly Reviews_ for _cloud service offerings_ included in agency information systems with a Security Category of High.",
+            "impact": { "low": false, "moderate": false, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-06",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-04",
+            "statement": "Agencies SHOULD formally notify the provider if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to remove the _cloud service offering_ from operation.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-05",
+            "statement": "Agencies MUST notify FedRAMP by sending a notification to info@fedramp.gov if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to stop operation of the _cloud service offering_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRD-ALL-06"
+            ],
+            "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
+          },
+          {
+            "id": "FRR-CCM-AG-06",
+            "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about _authorization data_.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": ["FRD-ALL-15"],
+            "note": "This is a statory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization."
+          },
+          {
+            "id": "FRR-CCM-AG-07",
+            "statement": "Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those required in this policy by sending a notification to info@fedramp.gov.",
+            "impact": { "low": true, "moderate": true, "high": true },
+            "affects": ["Agencies"],
+            "primary_key_word": "MUST",
+            "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
+          }
+        ]
+      }
+    }
+  }
+}

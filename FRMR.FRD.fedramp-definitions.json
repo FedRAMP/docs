@@ -10,7 +10,7 @@
       {
         "id": "25.11A",
         "published_date": "2025-11-08",
-        "description": "Added FRD-ALL-40 through FRD-ALL-42 to support updates to various standards.",
+        "description": "Added FRD-ALL-40 through FRD-ALL-44 to support updates to various standards.",
         "public_comment": false,
         "effective": {
           "20x": {
@@ -413,6 +413,18 @@
         "term": "Privileged account",
         "definition": "An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.",
         "note": "Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_."
+      },
+      {
+        "id": "FRD-ALL-43",
+        "term": "Ongoing Authorization Report",
+        "definition": "A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.",
+        "referenced_fr": ["FRD-ALL-07"]
+      },
+      {
+        "id": "FRD-ALL-44",
+        "term": "Quarterly Review",
+        "definition": "A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.",
+        "referenced_fr": ["FRD-ALL-07"]
       }
     ]
   }

@@ -3,7 +3,7 @@
 - **Release:** 25.11A
 - **Published:** 2025-11-08  
 - **Designator:** FRD
-- **Description:** Added FRD-ALL-40 through FRD-ALL-42 to support updates to various standards.
+- **Description:** Added FRD-ALL-40 through FRD-ALL-44 to support updates to various standards.
 
 ## Front Matter
 
@@ -260,6 +260,14 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 > **Privileged account**: An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.
 >
 >  _Note: Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_._
+
+#### FRD-ALL-43
+
+> **Ongoing Authorization Report**: A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
+
+#### FRD-ALL-44
+
+> **Quarterly Review**: A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
 
 
 
