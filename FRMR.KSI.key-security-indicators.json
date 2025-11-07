@@ -223,18 +223,21 @@
       "requirements": [
         {
           "id": "KSI-AFR-01",
+          "name": "Minimum Assessment",
           "statement": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-02",
+          "name": "Key Security Indicators",
           "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-03",
+          "name": "Authorization Data Sharing",
           "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": [
@@ -278,6 +281,7 @@
         },
         {
           "id": "KSI-AFR-04",
+          "name": "Vulnerability Detection and Response",
           "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": [
@@ -445,37 +449,43 @@
         },
         {
           "id": "KSI-AFR-05",
+          "name": "Significant Change Notification",
           "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-06",
+          "name": "Collaborative Continuous Monitoring",
           "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-07",
+          "name": "Recommended Secure Configuration",
           "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-08",
+          "name": "Security Inbox",
           "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-09",
+          "name": "Persistent Validation and Assessment",
           "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
         {
           "id": "KSI-AFR-10",
-          "statement": "Integrate FedRAMP\u2019s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
+          "name": "Incident Communications Procedures",
+          "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },
@@ -494,6 +504,7 @@
       "requirements": [
         {
           "id": "KSI-CED-01",
+          "name": "General Security Training",
           "statement": "Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
           "impact": { "low": true, "moderate": true },
           "controls": [
@@ -525,6 +536,7 @@
         },
         {
           "id": "KSI-CED-02",
+          "name": "High Risk Security Training",
           "statement": "Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access.",
           "impact": { "low": true, "moderate": true },
           "controls": [
@@ -548,6 +560,7 @@
         },
         {
           "id": "KSI-CED-03",
+          "name": "Secure Software Development Training",
           "statement": "Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software.",
           "impact": { "low": true, "moderate": true },
           "controls": [
@@ -567,6 +580,7 @@
         },
         {
           "id": "KSI-CED-04",
+          "name": "Incident Response and Disaster Recovery Training",
           "statement": "Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.",
           "impact": { "low": true, "moderate": true },
           "controls": []
@@ -581,6 +595,7 @@
       "requirements": [
         {
           "id": "KSI-CMT-01",
+          "name": "Change Monitoring",
           "statement": "Log and monitor modifications to the cloud service offering.",
           "impact": {
             "low": true,
