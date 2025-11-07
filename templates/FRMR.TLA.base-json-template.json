@@ -9,14 +9,14 @@
     "releases": [
       {
         "id": "25.00A",
-        "published_date": "2025-00-00",
+        "published_date": "1900-01-01",
         "description": "Initial release of Standard",
         "public_comment": true,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-00-00",
+                "start_date": "1900-01-01",
                 "designator": "20x"
               }
             },
@@ -25,7 +25,7 @@
           "Rev5": {
             "timeline": {
               "closed_beta": {
-                "start_date": "2025-00-00",
+                "start_date": "1900-01-01",
                 "designator": "Rev5 Beta"
               }
             },
@@ -34,8 +34,8 @@
         },
         "related_rfcs": [
           {
-            "start_date": "2025-00-00",
-            "end_date": "2025-00-00",
+            "start_date": "1900-01-01",
+            "end_date": "1900-01-01",
             "id": "0000",
             "url": "https://www.fedramp.gov/rfcs/0000/",
             "discussion_url": "https://github.com/FedRAMP/community/discussions/00",

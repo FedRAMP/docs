@@ -1,7 +1,7 @@
 # FedRAMP Standard
 
 - **Release:** 25.00A DRAFT
-- **Published:** 2025-00-00  
+- **Published:** 1900-01-01  
 - **Designator:** CCM
 - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Collaborative Continuous Monitoring Standard (CCM) after public comment.
 
@@ -10,13 +10,13 @@
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-00-00** for **20x**. 
+  - This release is effective **1900-01-01** for **20x**. 
   - This policy applies to all FedRAMP 20x authorizations.
   - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
   - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-00-00** for **Rev5 Closed Beta**. 
+  - This release is effective **1900-01-01** for **Rev5 Closed Beta**. 
   - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
   - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
 

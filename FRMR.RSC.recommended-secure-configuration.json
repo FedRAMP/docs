@@ -9,14 +9,14 @@
     "releases": [
       {
         "id": "25.00A DRAFT",
-        "published_date": "2025-00-00",
+        "published_date": "1900-01-01",
         "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Recommended Secure Configuration Standard (RSC) after public comment.",
         "public_comment": true,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-00-00",
+                "start_date": "1900-01-01",
                 "designator": "20x"
               }
             },
@@ -41,7 +41,7 @@
         "related_rfcs": [
           {
             "start_date": "2025-09-10",
-            "end_date": "2025-00-00",
+            "end_date": "1900-01-01",
             "id": "0015",
             "url": "https://www.fedramp.gov/rfcs/0015/",
             "discussion_url": "https://github.com/FedRAMP/community/discussions/84",

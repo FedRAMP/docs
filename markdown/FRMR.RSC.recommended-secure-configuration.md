@@ -1,7 +1,7 @@
 # FedRAMP Recommended Secure Configuration Standard
 
 - **Release:** 25.00A DRAFT
-- **Published:** 2025-00-00  
+- **Published:** 1900-01-01  
 - **Designator:** RSC
 - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Recommended Secure Configuration Standard (RSC) after public comment.
 
@@ -10,7 +10,7 @@
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-00-00** for **20x**. 
+  - This release is effective **1900-01-01** for **20x**. 
   - This policy applies to all FedRAMP 20x authorizations.
 
 - **FedRAMP Rev5**:
