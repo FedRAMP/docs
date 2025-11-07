@@ -288,8 +288,48 @@
                     "type": "string",
                     "pattern": "^KSI-[A-Z]{3}-\\d{2}$"
                   },
+                  "name": {
+                    "type": "string"
+                  },
                   "statement": {
                     "type": "string"
+                  },
+                  "controls": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "control_id",
+                        "title"
+                      ],
+                      "properties": {
+                        "control_id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "impact": {
+                    "type": "object",
+                    "required": [
+                      "low",
+                      "moderate",
+                      "high"
+                    ],
+                    "properties": {
+                      "low": {
+                        "type": "boolean"
+                      },
+                      "moderate": {
+                        "type": "boolean"
+                      },
+                      "high": {
+                        "type": "boolean"
+                      }
+                    }
                   }
                 }
               }
