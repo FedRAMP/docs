@@ -46,13 +46,11 @@ The following FedRAMP documentation guidelines apply to this document:
 
 {{info.front_matter.purpose}}
 
-{{#if info.front_matter.expected_outcomes}}
 ### Expected Outcomes
 
-  {{#each info.front_matter.expected_outcomes}}
+{{#each info.front_matter.expected_outcomes}}
 - {{this}}
-  {{/each}}
-{{/if}}
+{{/each}}
 
 {{/if}}
 ---
@@ -90,7 +88,7 @@ The following FedRAMP documentation guidelines apply to this document:
 
 {{!-- Requirements section (FRR) --}}
 {{#if FRR}}
-## Requirements and Recommendations
+## Requirements
 
   {{#each FRR}}
     {{#each this}}    
@@ -149,12 +147,6 @@ _Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if 
 
       {{#each requirements}}
 #### {{id}}
-
-{{#if impact}}
-{{!-- this is super messy but ok for now --}}
-_Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
-{{/if}}
-
 > {{statement}}.
 
         {{#if controls}}
