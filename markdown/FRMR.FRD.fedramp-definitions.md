@@ -1,9 +1,9 @@
 # FedRAMP FedRAMP Definitions
 
-- **Release:** 25.10A
-- **Published:** 2025-10-17  
+- **Release:** 25.11A
+- **Published:** 2025-11-08  
 - **Designator:** FRD
-- **Description:** Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.
+- **Description:** Added FRD-ALL-40 through FRD-ALL-44 to support updates to various standards.
 
 ## Front Matter
 
@@ -242,6 +242,32 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 #### FRD-ALL-39
 
 > **Drift**: Changes to _information resources_ that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.
+
+#### FRD-ALL-40
+
+> **Incident**: Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is &quot;an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].&quot;
+>
+>  _[Reference: 44 USC § 3552 (b)(2)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552)_
+
+#### FRD-ALL-41
+
+> **Top-level administrative account**: The most privileged account with the highest level of access within a _cloud service offering_ for a customer organization, typically with complete control over all aspects of the _cloud service offering_, including managing resources, users, access, privileges, and the account itself.
+>
+>  _Note: Any references to _top-level administrative accounts_ in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign _top-level administrative account_ privileges._
+
+#### FRD-ALL-42
+
+> **Privileged account**: An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.
+>
+>  _Note: Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_._
+
+#### FRD-ALL-43
+
+> **Ongoing Authorization Report**: A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
+
+#### FRD-ALL-44
+
+> **Quarterly Review**: A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
 
 
 

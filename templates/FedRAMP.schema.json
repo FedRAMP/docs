@@ -97,11 +97,6 @@
         },
         "front_matter": {
           "type": "object",
-          "required": [
-            "authority",
-            "purpose",
-            "expected_outcomes"
-          ],
           "required": ["purpose"],
           "properties": {
             "authority": {

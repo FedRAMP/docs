@@ -69,11 +69,19 @@ async function convertFRMRToMarkdown(
       const outputFileName = baseName.startsWith("FRMR-")
         ? baseName.substring(5) + ".md"
         : baseName + ".md";
-      const outputFilePath = path.join(
-        __dirname,
-        "../../markdown",
-        outputFileName
-      );
+
+      // Determine if the file is from the combined directory
+      const isFromCombined = jsonFilePath.includes("/combined/");
+      const outputDir = isFromCombined
+        ? path.join(__dirname, "../../markdown/combined")
+        : path.join(__dirname, "../../markdown");
+
+      // Create the combined directory if it doesn't exist
+      if (isFromCombined) {
+        await fs.ensureDir(outputDir);
+      }
+
+      const outputFilePath = path.join(outputDir, outputFileName);
 
       await convertFRMRToMarkdown(
         jsonFilePath,

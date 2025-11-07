@@ -4,13 +4,12 @@
     "short_name": "FRMR-ALL",
     "current_release": "Untracked",
     "types": [
-      "FRR",
-      "KSI"
+      "FRR"
     ],
     "releases": [
       {
         "id": "Untracked",
-        "published_date": "2025-10-20",
+        "published_date": "2025-11-05",
         "description": "FedRAMP 20x All Impact Requirements"
       }
     ]
@@ -821,6 +820,172 @@
               "moderate": true,
               "high": true
             }
+          }
+        ]
+      }
+    },
+    "ICP": {
+      "base": {
+        "id": "FRR-ICP",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-ICP-01",
+            "statement": "Providers MUST responsibly report _incidents_ to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-02",
+            "statement": "Providers MUST responsibly report _incidents_ to all _agency_ customers within 1 hour of identification using the _incident_ communications points of contact provided by each _agency_ customer.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-ICP-03",
+            "statement": "Providers MUST responsibly report _incidents_ to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. ",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-04",
+            "statement": "Providers MUST update _all necessary parties_, including at least FedRAMP, CISA (if applicable), and all _agency_ customers, at least once per calendar day until the _incident_ is resolved and recovery is complete.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-18",
+              "FRD-ALL-19",
+              "FRD-ALL-40"
+            ]
+          },
+          {
+            "id": "FRR-ICP-05",
+            "statement": "Providers MUST make _incident_ report information available in their secure FedRAMP repository (such as USDA Connect) or _trust center_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-16"
+            ]
+          },
+          {
+            "id": "FRR-ICP-06",
+            "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-04",
+              "FRD-ALL-18"
+            ]
+          },
+          {
+            "id": "FRR-ICP-07",
+            "statement": "Providers MUST provide a final report once the _incident_ is resolved and recovery is complete that describes at least:",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-40"
+            ],
+            "following_information": [
+              "What occurred",
+              "Root cause",
+              "Response",
+              "Lessons learned",
+              "Changes needed"
+            ]
+          },
+          {
+            "id": "FRR-ICP-08",
+            "statement": "Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-18"
+            ]
+          },
+          {
+            "id": "FRR-ICP-09",
+            "statement": "Providers SHOULD make _incident_ report information available in consistent human-readable and _machine-readable_ formats.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-40",
+              "FRD-ALL-17"
+            ]
           }
         ]
       }
@@ -2193,6 +2358,176 @@
         ]
       }
     },
+    "RSC": {
+      "base": {
+        "id": "FRR-RSC",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "referenced_fr": [
+          "FRD-RSC-00"
+        ],
+        "requirements": [
+          {
+            "id": "FRR-RSC-01",
+            "statement": "Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-06"
+            ],
+            "note": "This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_."
+          },
+          {
+            "id": "FRR-RSC-02",
+            "statement": "Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41"
+            ]
+          },
+          {
+            "id": "FRR-RSC-03",
+            "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-04",
+            "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-05",
+            "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          },
+          {
+            "id": "FRR-RSC-06",
+            "statement": "Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-17"
+            ]
+          },
+          {
+            "id": "FRR-RSC-07",
+            "statement": "Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-RSC-08",
+            "statement": "Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-17"
+            ]
+          },
+          {
+            "id": "FRR-RSC-09",
+            "statement": "Providers SHOULD make recommended secure configuration guidance available publicly.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-RSC-10",
+            "statement": "Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-41",
+              "FRD-ALL-42"
+            ]
+          }
+        ]
+      }
+    },
     "KSI": {
       "base": {
         "application": "These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.",
@@ -2211,8 +2546,7 @@
             ],
             "impact": {
               "low": true,
-              "moderate": true,
-              "high": true
+              "moderate": true
             }
           },
           {
@@ -2226,8 +2560,7 @@
             "primary_key_word": "SHOULD",
             "impact": {
               "low": true,
-              "moderate": true,
-              "high": true
+              "moderate": true
             }
           },
           {
@@ -2241,9 +2574,568 @@
             "primary_key_word": "SHOULD",
             "impact": {
               "low": true,
+              "moderate": true
+            }
+          }
+        ]
+      }
+    },
+    "UCM": {
+      "base": {
+        "id": "FRR-UCM",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-UCM-01",
+            "statement": "Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules are validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.",
+            "impact": {
+              "low": true,
               "moderate": true,
               "high": true
-            }
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
+          },
+          {
+            "id": "FRR-UCM-02",
+            "statement": "Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-UCM-03",
+            "statement": "Providers SHOULD use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+            "impact": {
+              "low": false,
+              "moderate": true,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
+          },
+          {
+            "id": "FRR-UCM-04",
+            "statement": "Providers MUST use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+            "impact": {
+              "low": false,
+              "moderate": false,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-01"
+            ]
+          }
+        ]
+      }
+    },
+    "CCM": {
+      "base": {
+        "id": "FRR-CCM",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-CCM-01",
+            "statement": "Providers MUST make an _Ongoing Authorization Report_ available to _all necessary parties_ every 3 months, in a consistent format that is human readable, covering the entire period since the previous summary; this report MUST include high-level summaries of at least the following information:",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-18",
+              "FRD-ALL-15",
+              "FRD-ALL-31",
+              "FRD-ALL-11",
+              "FRD-ALL-06"
+            ],
+            "following_information": [
+              "Changes to _authorization data_",
+              "Planned changes to _authorization data_ during at least the next 3 months",
+              "_Accepted vulnerabilities",
+              "_Transformative_ changes",
+              "Updated recommendations or best practices for security, configuration, usage, or similar aspects of the _cloud service offering_"
+            ]
+          },
+          {
+            "id": "FRR-CCM-02",
+            "statement": "Providers SHOULD establish a regular 3 month cycle for _Ongoing Authorization Reports_ that is spread out from the beginning, middle, or end of each quarter.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-43"
+            ],
+            "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their _Ongoing Authorization Reports_ during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle."
+          },
+          {
+            "id": "FRR-CCM-03",
+            "statement": "Providers MUST publicly include the target date for their next _Ongoing Authorization Report_ with the _authorization data_ required by FRR-ADS-01.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-CCM-04",
+            "statement": "Providers MUST establish and share an asynchronous mechanism for _all necessary parties_ to provide feedback or ask questions about each _Ongoing Authorization Report_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-18",
+              "FRD-ALL-44"
+            ]
+          },
+          {
+            "id": "FRR-CCM-05",
+            "statement": "Providers MUST maintain an anonymized and desensitized summary of the feedback, questions, and answers about each _Ongoing Authorization Report_ as an addendum to the _Ongoing Authorization Report_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-19"
+            ],
+            "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from _agencies_ and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter."
+          },
+          {
+            "id": "FRR-CCM-06",
+            "statement": "Providers MUST NOT irresponsibly disclose sensitive information in an _Ongoing Authorization Report_ that would _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-CCM-07",
+            "statement": "Providers MAY responsibly share some or all of the information an _Ongoing Authorization Report_ publicly or with other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          }
+        ]
+      },
+      "quarterly_reviews": {
+        "application": "These requirements and recommendations apply to providers hosting synchronous _Quarterly Reviews_ with all agencies.",
+        "id": "FRR-CCM-QR",
+        "referenced_fr": [
+          "FRD-ALL-44"
+        ],
+        "requirements": [
+          {
+            "id": "FRR-CCM-QR-01",
+            "statement": "Providers SHOULD host a synchronous _Quarterly Review_ every 3 months, open to _all necessary parties_, to review aspects of the most recent _Ongoing Authorization Reports_ that the provider determines are of the most relevance to _agencies_; providers who do not host _Quarterly Reviews_ MUST clearly state this and explain this decision in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07",
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-18",
+              "FRD-ALL-19",
+              "FRD-ALL-15",
+              "FRR-ADS-06",
+              "FRR-ADS-07"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-02",
+            "statement": "Providers MUST host a synchronous _Quarterly Review_ every 3 months, open to _all necessary parties_, to review aspects of the most recent _Ongoing Authorization Reports_ that the provider determines are of the most relevance to _agencies_.",
+            "impact": {
+              "low": false,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-18",
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-03",
+            "statement": "Providers SHOULD regularly schedule _Quarterly Reviews_ to occur at least 3 business days after releasing an _Ongoing Authorization Report_ AND within 10 business days of such release.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-43"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-04",
+            "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a _Quarterly Review_ that would _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-05",
+            "statement": "Providers MUST include either a registration link or a downloadable calendar file with meeting information for _Quarterly Reviews_ in the _authorization data_ available to all _necessary parties_ required by FRR-ADS-06 and FRR-ADS-07.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRD-ALL-18"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-06",
+            "statement": "Providers MUST publicly include the target date for their next _Quarterly Review_ with the _authorization data_ required by FRR-ADS-01.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRR-ADS-01"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-07",
+            "statement": "Providers SHOULD include additional information in _Quarterly Reviews_ that the provider determines are of interest, use, or otherwise relevant to _agencies_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-19"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-08",
+            "statement": "Providers MUST NOT invite third parties to attend _Quarterly Reviews_ intended for _agencies_ unless it is of specific relevance.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-19"
+            ],
+            "note": "This is because _agencies_ are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default."
+          },
+          {
+            "id": "FRR-CCM-QR-09",
+            "statement": "Providers SHOULD record or transcribe _Quarterly Reviews_ and make such available to _all necessary parties_ with other _authorization data_ required by FRR-ADS-06 and FRR-ADS07.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-18",
+              "FRD-ALL-15",
+              "FRR-ADS-06",
+              "FRR-ADS-07"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-10",
+            "statement": "Providers MAY responsibly share recordings or transcriptions of _Quarterly Reviews_ with the public or other parties ONLY if the provider removes all _agency_ information (comments, questions, names, etc.) AND determines sharing will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MAY",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-19",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-CCM-QR-11",
+            "statement": "Providers MAY responsibly share content prepared for a _Quarterly Review_ with the public or other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MAY",
+            "referenced_fr": [
+              "FRD-ALL-44",
+              "FRD-ALL-04",
+              "FRD-ALL-06"
+            ]
+          }
+        ]
+      },
+      "agencies": {
+        "application": "This section includes requirements and recommendations for _agencies_ who are using FedRAMP Authorized cloud services based on statute and policy directives from OMB that apply to _agencies_.",
+        "id": "FRR-CCM-AG",
+        "referenced_fr": [
+          "FRD-ALL-19"
+        ],
+        "requirements": [
+          {
+            "id": "FRR-CCM-AG-01",
+            "statement": "Agencies MUST review each _Ongoing Authorization Report_ to understand how changes to the _cloud service offering_ may impact the previously agreed-upon risk tolerance documented in the _agency's_ Authorization to Operate of a federal information system that includes the _cloud service offering_ in its boundary.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-06",
+              "FRD-ALL-19"
+            ],
+            "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15."
+          },
+          {
+            "id": "FRR-CCM-AG-02",
+            "statement": "Agencies SHOULD consider the Security Category noted in their Authorization to Operate of the federal information system that includes the _cloud service offering_ in its boundary and assign appropriate information security resources for reviewing _Ongoing Authorization Reports_, attending _Quarterly Reviews_, and other ongoing _authorization data_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-06",
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-03",
+            "statement": "Agencies SHOULD designate a senior information security official to review _Ongoing Authorization Reports_ and represent the agency at _Quarterly Reviews_ for _cloud service offerings_ included in agency information systems with a Security Category of High.",
+            "impact": {
+              "low": false,
+              "moderate": false,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-06",
+              "FRD-ALL-15"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-04",
+            "statement": "Agencies SHOULD formally notify the provider if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to remove the _cloud service offering_ from operation.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "SHOULD",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRD-ALL-06"
+            ]
+          },
+          {
+            "id": "FRR-CCM-AG-05",
+            "statement": "Agencies MUST notify FedRAMP by sending a notification to info@fedramp.gov if the information presented in an _Ongoing Authorization Report_, _Quarterly Review_, or other ongoing _authorization data_ causes significant concerns that may lead the _agency_ to stop operation of the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "MUST",
+            "referenced_fr": [
+              "FRD-ALL-43",
+              "FRD-ALL-44",
+              "FRD-ALL-15",
+              "FRD-ALL-06"
+            ],
+            "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
+          },
+          {
+            "id": "FRR-CCM-AG-06",
+            "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about _authorization data_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "MUST NOT",
+            "referenced_fr": [
+              "FRD-ALL-15"
+            ],
+            "note": "This is a statory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization."
+          },
+          {
+            "id": "FRR-CCM-AG-07",
+            "statement": "Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those required in this policy by sending a notification to info@fedramp.gov.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Agencies"
+            ],
+            "primary_key_word": "MUST",
+            "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
           }
         ]
       }
@@ -2608,6 +3500,44 @@
         "referenced_fr": [
           "FRD-ALL-02"
         ]
+      },
+      {
+        "id": "FRD-ALL-40",
+        "term": "Incident",
+        "definition": "Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is \"an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].\"",
+        "reference": "44 USC § 3552 (b)(2)",
+        "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552"
+      },
+      {
+        "id": "FRD-ALL-41",
+        "term": "Top-level administrative account",
+        "definition": "The most privileged account with the highest level of access within a _cloud service offering_ for a customer organization, typically with complete control over all aspects of the _cloud service offering_, including managing resources, users, access, privileges, and the account itself.",
+        "note": "Any references to _top-level administrative accounts_ in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign _top-level administrative account_ privileges.",
+        "referenced_fr": [
+          "FRD-ALL-06"
+        ]
+      },
+      {
+        "id": "FRD-ALL-42",
+        "term": "Privileged account",
+        "definition": "An account with elevated privileges that enables administrative functions over some aspect of the _cloud service offering_ that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.",
+        "note": "Any references to _privileged accounts_ in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to _privileged accounts_."
+      },
+      {
+        "id": "FRD-ALL-43",
+        "term": "Ongoing Authorization Report",
+        "definition": "A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.",
+        "referenced_fr": [
+          "FRD-ALL-07"
+        ]
+      },
+      {
+        "id": "FRD-ALL-44",
+        "term": "Quarterly Review",
+        "definition": "A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.",
+        "referenced_fr": [
+          "FRD-ALL-07"
+        ]
       }
     ]
   },
@@ -2816,20 +3746,322 @@
     }
   },
   "KSI": {
+    "AFR": {
+      "id": "KSI-AFR",
+      "name": "Authorization by FedRAMP",
+      "indicator": "A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.",
+      "requirements": [
+        {
+          "id": "KSI-AFR-01",
+          "statement": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-02",
+          "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-03",
+          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "ac-3",
+              "title": "Access Enforcement"
+            },
+            {
+              "control_id": "ac-4",
+              "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "au-2",
+              "title": "Event Logging"
+            },
+            {
+              "control_id": "au-3",
+              "title": "Content of Audit Records"
+            },
+            {
+              "control_id": "au-6",
+              "title": "Audit Record Review, Analysis, and Reporting"
+            },
+            {
+              "control_id": "ca-2",
+              "title": "Control Assessments"
+            },
+            {
+              "control_id": "ir-4",
+              "title": "Incident Handling"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            }
+          ]
+        },
+        {
+          "id": "KSI-AFR-04",
+          "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "ca-2",
+              "title": "Control Assessments"
+            },
+            {
+              "control_id": "ca-7",
+              "title": "Continuous Monitoring"
+            },
+            {
+              "control_id": "ca-7.6",
+              "title": "Automation Support for Monitoring"
+            },
+            {
+              "control_id": "ir-1",
+              "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ir-4",
+              "title": "Incident Handling"
+            },
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "ir-5",
+              "title": "Incident Monitoring"
+            },
+            {
+              "control_id": "ir-5.1",
+              "title": "Automated Tracking, Data Collection, and Analysis"
+            },
+            {
+              "control_id": "ir-6",
+              "title": "Incident Reporting"
+            },
+            {
+              "control_id": "ir-6.1",
+              "title": "Automated Reporting"
+            },
+            {
+              "control_id": "ir-6.2",
+              "title": "Vulnerabilities Related to Incidents"
+            },
+            {
+              "control_id": "pm-3",
+              "title": "Information Security and Privacy Resources"
+            },
+            {
+              "control_id": "pm-5",
+              "title": "System Inventory"
+            },
+            {
+              "control_id": "pm-31",
+              "title": "Continuous Monitoring Strategy"
+            },
+            {
+              "control_id": "ra-2",
+              "title": "Security Categorization"
+            },
+            {
+              "control_id": "ra-2.1",
+              "title": "Impact-level Prioritization"
+            },
+            {
+              "control_id": "ra-3",
+              "title": "Risk Assessment"
+            },
+            {
+              "control_id": "ra-3.3",
+              "title": "Dynamic Threat Awareness"
+            },
+            {
+              "control_id": "ra-5",
+              "title": "Vulnerability Monitoring and Scanning"
+            },
+            {
+              "control_id": "ra-5.2",
+              "title": "Update Vulnerabilities to Be Scanned"
+            },
+            {
+              "control_id": "ra-5.3",
+              "title": "Breadth and Depth of Coverage"
+            },
+            {
+              "control_id": "ra-5.4",
+              "title": "Discoverable Information"
+            },
+            {
+              "control_id": "ra-5.5",
+              "title": "Privileged Access"
+            },
+            {
+              "control_id": "ra-5.6",
+              "title": "Automated Trend Analyses"
+            },
+            {
+              "control_id": "ra-5.7",
+              "title": "Automated Detection and Notification of Unauthorized Components"
+            },
+            {
+              "control_id": "ra-5.11",
+              "title": "Public Disclosure Program"
+            },
+            {
+              "control_id": "ra-9",
+              "title": "Criticality Analysis"
+            },
+            {
+              "control_id": "ra-10",
+              "title": "Threat Hunting"
+            },
+            {
+              "control_id": "si-2",
+              "title": "Flaw Remediation"
+            },
+            {
+              "control_id": "si-2.1",
+              "title": "Central Management"
+            },
+            {
+              "control_id": "si-2.2",
+              "title": "Automated Flaw Remediation Status"
+            },
+            {
+              "control_id": "si-2.4",
+              "title": "Automated Patch Management Tools"
+            },
+            {
+              "control_id": "si-2.5",
+              "title": "Automatic Software and Firmware Updates"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            },
+            {
+              "control_id": "si-3.1",
+              "title": "Central Management"
+            },
+            {
+              "control_id": "si-3.2",
+              "title": "Automatic Updates"
+            },
+            {
+              "control_id": "si-4",
+              "title": "System Monitoring"
+            },
+            {
+              "control_id": "si-4.2",
+              "title": "Automated Tools and Mechanisms for Real-time Analysis"
+            },
+            {
+              "control_id": "si-4.3",
+              "title": "Automated Tool and Mechanism Integration"
+            },
+            {
+              "control_id": "si-4.7",
+              "title": "Automated Response to Suspicious Events"
+            }
+          ]
+        },
+        {
+          "id": "KSI-AFR-05",
+          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-06",
+          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-07",
+          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-08",
+          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-09",
+          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-10",
+          "statement": "Integrate FedRAMP’s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        {
+          "id": "KSI-AFR-11",
+          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules policy and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        }
+      ]
+    },
     "CED": {
       "id": "KSI-CED",
       "name": "Cybersecurity Education",
       "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.",
-      "referenced_fr": [
-        "FRD-ALL-07"
-      ],
       "requirements": [
         {
           "id": "KSI-CED-01",
-          "statement": "Ensure all employees receive security awareness training",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "at-2",
@@ -2844,26 +4076,34 @@
               "title": "Social Engineering and Mining"
             },
             {
+              "control_id": "at-3.5",
+              "title": "Processing Personally Identifiable Information"
+            },
+            {
               "control_id": "at-4",
               "title": "Training Records"
+            },
+            {
+              "control_id": "ir-2.3",
+              "title": "Breach"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CED-02",
-          "statement": "Require role-specific training for high risk roles, including at least roles with privileged access",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "at-2",
               "title": "Literacy Training and Awareness"
+            },
+            {
+              "control_id": "at-2.3",
+              "title": "Social Engineering and Mining"
             },
             {
               "control_id": "at-3",
@@ -2873,13 +4113,42 @@
               "control_id": "sr-11.1",
               "title": "Anti-counterfeit Training"
             }
-          ],
+          ]
+        },
+        {
+          "id": "KSI-CED-03",
+          "statement": "Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software.",
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "cp-3",
+              "title": "Contingency Training"
+            },
+            {
+              "control_id": "ir-2",
+              "title": "Incident Response Training"
+            },
+            {
+              "control_id": "ps-6",
+              "title": "Access Agreements"
+            }
+          ]
+        },
+        {
+          "id": "KSI-CED-04",
+          "statement": "Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-07"
       ]
     },
     "CMT": {
@@ -2889,10 +4158,11 @@
       "requirements": [
         {
           "id": "KSI-CMT-01",
-          "statement": "Log and monitor system modifications",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Log and monitor modifications to the cloud service offering.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "au-2",
@@ -2903,6 +4173,10 @@
               "title": "Configuration Change Control"
             },
             {
+              "control_id": "cm-3.2",
+              "title": "Testing, Validation, and Documentation of Changes"
+            },
+            {
               "control_id": "cm-4.2",
               "title": "Verification of Controls"
             },
@@ -2911,22 +4185,22 @@
               "title": "Configuration Settings"
             },
             {
+              "control_id": "cm-8.3",
+              "title": "Automated Unauthorized Component Detection"
+            },
+            {
               "control_id": "ma-2",
               "title": "Controlled Maintenance"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CMT-02",
           "statement": "Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-2",
@@ -2956,19 +4230,15 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CMT-03",
-          "statement": "Implement automated testing and validation of changes prior to deployment",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Automate persistent testing and validation of changes throughout deployment.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-3",
@@ -2979,26 +4249,30 @@
               "title": "Testing, Validation, and Documentation of Changes"
             },
             {
+              "control_id": "cm-4.2",
+              "title": "Verification of Controls"
+            },
+            {
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CMT-04",
-          "statement": "Have a documented change management procedure",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Always follow a documented change management procedure.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-3",
               "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-3.2",
+              "title": "Testing, Validation, and Documentation of Changes"
             },
             {
               "control_id": "cm-3.4",
@@ -3016,19 +4290,15 @@
               "control_id": "cm-9",
               "title": "Configuration Management Plan"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CMT-05",
-          "statement": "Evaluate the risk and potential impact of any change",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-05 (SCN)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-7.4",
@@ -3043,15 +4313,14 @@
               "title": "Impact Analyses"
             },
             {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         }
       ]
     },
@@ -3059,19 +4328,14 @@
       "id": "KSI-CNA",
       "name": "Cloud Native Architecture",
       "indicator": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
-      "referenced_fr": [
-        "FRD-ALL-06"
-      ],
       "requirements": [
         {
           "id": "KSI-CNA-01",
-          "statement": "Configure ALL _information resources_ to limit inbound and outbound traffic",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Configure all machine-based information resources to limit inbound and outbound network traffic.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-17.3",
@@ -3080,43 +4344,102 @@
             {
               "control_id": "ca-9",
               "title": "Internal System Connections"
+            },
+            {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "sc-7.5",
+              "title": "Deny by Default — Allow by Exception"
+            },
+            {
+              "control_id": "si-8",
+              "title": "Spam Protection"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-CNA-02",
           "statement": "Design systems to minimize the attack surface and minimize lateral movement if compromised",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-17.3",
               "title": "Managed Access Control Points"
             },
             {
+              "control_id": "ac-18.1",
+              "title": "Authentication and Encryption"
+            },
+            {
+              "control_id": "ac-18.3",
+              "title": "Disable Wireless Networking"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
               "control_id": "ca-9",
               "title": "Internal System Connections"
+            },
+            {
+              "control_id": "sc-7.3",
+              "title": "Access Points"
+            },
+            {
+              "control_id": "sc-7.4",
+              "title": "External Telecommunications Services"
+            },
+            {
+              "control_id": "sc-7.5",
+              "title": "Deny by Default — Allow by Exception"
+            },
+            {
+              "control_id": "sc-7.8",
+              "title": "Route Traffic to Authenticated Proxy Servers"
+            },
+            {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            },
+            {
+              "control_id": "sc-10",
+              "title": "Network Disconnect"
+            },
+            {
+              "control_id": "si-10",
+              "title": "Information Input Validation"
+            },
+            {
+              "control_id": "si-11",
+              "title": "Error Handling"
+            },
+            {
+              "control_id": "si-16",
+              "title": "Memory Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CNA-03",
           "statement": "Use logical networking and related capabilities to enforce traffic flow controls",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
+            {
+              "control_id": "ac-12",
+              "title": "Session Termination"
+            },
             {
               "control_id": "ac-17.3",
               "title": "Managed Access Control Points"
@@ -3126,22 +4449,34 @@
               "title": "Internal System Connections"
             },
             {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
               "control_id": "sc-7",
               "title": "Boundary Protection"
+            },
+            {
+              "control_id": "sc-7.7",
+              "title": "Split Tunneling for Remote Devices"
+            },
+            {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            },
+            {
+              "control_id": "sc-10",
+              "title": "Network Disconnect"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CNA-04",
           "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-2",
@@ -3151,53 +4486,46 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CNA-05",
-          "statement": "Have denial of service protection",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Protect against denial of service attacks and other unwanted activity.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "sc-5",
               "title": "Denial-of-service Protection"
+            },
+            {
+              "control_id": "si-8",
+              "title": "Spam Protection"
+            },
+            {
+              "control_id": "si-8.2",
+              "title": "Automatic Updates"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-CNA-06",
           "statement": "Design systems for high availability and rapid recovery",
-          "applied_impact_levels": [
-            "Low"
-          ],
-          "controls": [],
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": []
         },
         {
           "id": "KSI-CNA-07",
           "statement": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-17.3",
@@ -3212,28 +4540,45 @@
               "title": "Baseline Selection"
             }
           ],
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
+        },
+        {
+          "id": "KSI-CNA-08",
+          "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state.",
           "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "low": false,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "ca-2.1",
+              "title": "Independent Assessors"
+            },
+            {
+              "control_id": "ca-7.1",
+              "title": "Independent Assessment"
+            }
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06"
       ]
     },
     "IAM": {
       "id": "KSI-IAM",
       "name": "Identity and Access Management",
       "indicator": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
-      "referenced_fr": [
-        "FRD-ALL-06"
-      ],
       "requirements": [
         {
           "id": "KSI-IAM-01",
           "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2",
@@ -3256,22 +4601,26 @@
               "title": "Access to Accounts — Replay Resistant"
             },
             {
+              "control_id": "ia-5",
+              "title": "Authenticator Management"
+            },
+            {
               "control_id": "ia-8",
               "title": "Identification and Authentication (Non-organizational Users)"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-IAM-02",
           "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2",
@@ -3291,7 +4640,7 @@
             },
             {
               "control_id": "ia-2.8",
-              "title": "Access to Accounts Replay Resistant"
+              "title": "Access to Accounts — Replay Resistant"
             },
             {
               "control_id": "ia-5.1",
@@ -3308,28 +4657,36 @@
             {
               "control_id": "ia-6",
               "title": "Authentication Feedback"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-IAM-03",
           "statement": "Enforce appropriately secure authentication methods for non-user accounts and services",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2",
               "title": "Account Management"
             },
             {
+              "control_id": "ac-2.2",
+              "title": "Automated Temporary and Emergency Account Management"
+            },
+            {
               "control_id": "ac-4",
               "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "ac-6.5",
+              "title": "Privileged Accounts"
             },
             {
               "control_id": "ia-3",
@@ -3338,24 +4695,28 @@
             {
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ra-5.5",
+              "title": "Privileged Access"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-IAM-04",
           "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2",
               "title": "Account Management"
+            },
+            {
+              "control_id": "ac-2.1",
+              "title": "Automated System Account Management"
             },
             {
               "control_id": "ac-2.2",
@@ -3422,6 +4783,14 @@
               "title": "Remote Access"
             },
             {
+              "control_id": "ac-17.4",
+              "title": "Privileged Commands and Access"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
               "control_id": "au-9.4",
               "title": "Access by Subset of Privileged Users"
             },
@@ -3432,6 +4801,14 @@
             {
               "control_id": "cm-7",
               "title": "Least Functionality"
+            },
+            {
+              "control_id": "cm-7.2",
+              "title": "Prevent Program Execution"
+            },
+            {
+              "control_id": "cm-7.5",
+              "title": "Authorized Software — Allow-by-exception"
             },
             {
               "control_id": "cm-9",
@@ -3474,22 +4851,30 @@
               "title": "Position Descriptions"
             },
             {
+              "control_id": "ra-5.5",
+              "title": "Privileged Access"
+            },
+            {
+              "control_id": "sc-2",
+              "title": "Separation of System and User Functionality"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
+            },
+            {
               "control_id": "sc-39",
               "title": "Process Isolation"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-IAM-05",
-          "statement": "Apply zero trust design principles",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Configure identity and access management with measures that always verify each user or device can only access the resources they need.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2.5",
@@ -3544,6 +4929,10 @@
               "title": "Limits on Authorized Use"
             },
             {
+              "control_id": "cm-2.7",
+              "title": "Configure Systems and Components for High-risk Areas"
+            },
+            {
               "control_id": "cm-9",
               "title": "Configuration Management Plan"
             },
@@ -3566,6 +4955,10 @@
             {
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ia-5.6",
+              "title": "Protection of Authenticators"
             },
             {
               "control_id": "ia-11",
@@ -3592,6 +4985,10 @@
               "title": "Access Agreements"
             },
             {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
               "control_id": "sc-20",
               "title": "Secure Name/Address Resolution Service (Authoritative Source)"
             },
@@ -3604,6 +5001,10 @@
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
             },
             {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
+            },
+            {
               "control_id": "sc-39",
               "title": "Process Isolation"
             },
@@ -3611,19 +5012,15 @@
               "control_id": "si-3",
               "title": "Malicious Code Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-IAM-06",
           "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2",
@@ -3653,29 +5050,71 @@
               "control_id": "ps-8",
               "title": "Personnel Sanctions"
             }
-          ],
+          ]
+        },
+        {
+          "id": "KSI-IAM-07",
+          "statement": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "ac-2.2",
+              "title": "Automated Temporary and Emergency Account Management"
+            },
+            {
+              "control_id": "ac-2.3",
+              "title": "Disable Accounts"
+            },
+            {
+              "control_id": "ac-2.13",
+              "title": "Disable Accounts for High-risk Individuals"
+            },
+            {
+              "control_id": "ac-6.7",
+              "title": "Review of User Privileges"
+            },
+            {
+              "control_id": "ia-4.4",
+              "title": "Identify User Status"
+            },
+            {
+              "control_id": "ia-12",
+              "title": "Identity Proofing"
+            },
+            {
+              "control_id": "ia-12.2",
+              "title": "Identity Evidence"
+            },
+            {
+              "control_id": "ia-12.3",
+              "title": "Identity Evidence Validation and Verification"
+            },
+            {
+              "control_id": "ia-12.5",
+              "title": "Address Confirmation"
+            }
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06"
       ]
     },
     "INR": {
       "id": "KSI-INR",
-      "name": "Incident Reporting",
+      "name": "Incident Response",
       "indicator": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
-      "referenced_fr": [
-        "FRD-ALL-06"
-      ],
       "requirements": [
         {
           "id": "KSI-INR-01",
-          "statement": "Report incidents according to FedRAMP requirements and cloud service provider policies",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Always follow a documented incident response procedure.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ir-4",
@@ -3694,6 +5133,10 @@
               "title": "Automated Reporting"
             },
             {
+              "control_id": "ir-6.3",
+              "title": "Supply Chain Coordination"
+            },
+            {
               "control_id": "ir-7",
               "title": "Incident Response Assistance"
             },
@@ -3704,20 +5147,24 @@
             {
               "control_id": "ir-8",
               "title": "Incident Response Plan"
+            },
+            {
+              "control_id": "ir-8.1",
+              "title": "Breaches"
+            },
+            {
+              "control_id": "si-4.5",
+              "title": "System-generated Alerts"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-INR-02",
           "statement": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ir-3",
@@ -3739,22 +5186,15 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-INR-03",
           "statement": "Generate after action reports and _regularly_ incorporate lessons learned into operations",
-          "referenced_fr": [
-            "FRD-ALL-07"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ir-3",
@@ -3773,29 +5213,36 @@
               "title": "Incident Response Plan"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06"
       ]
     },
     "MLA": {
       "id": "KSI-MLA",
       "name": "Monitoring, Logging, and Auditing",
       "indicator": "A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.",
-      "referenced_fr": [
-        "FRD-ALL-06"
-      ],
       "requirements": [
         {
           "id": "KSI-MLA-01",
           "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
+            {
+              "control_id": "ac-17.1",
+              "title": "Monitoring and Control"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
             {
               "control_id": "au-2",
               "title": "Event Logging"
@@ -3843,23 +5290,32 @@
             {
               "control_id": "au-11",
               "title": "Audit Record Retention"
+            },
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "si-4.2",
+              "title": "Automated Tools and Mechanisms for Real-time Analysis"
+            },
+            {
+              "control_id": "si-4.4",
+              "title": "Inbound and Outbound Communications Traffic"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-MLA-02",
           "statement": "_Regularly_ review and audit logs",
-          "referenced_fr": [
-            "FRD-ALL-07"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2.4",
@@ -3878,26 +5334,37 @@
               "title": "Audit Record Review, Analysis, and Reporting"
             },
             {
+              "control_id": "au-6.1",
+              "title": "Automated Process Integration"
+            },
+            {
               "control_id": "si-4",
               "title": "System Monitoring"
+            },
+            {
+              "control_id": "si-4.4",
+              "title": "Inbound and Outbound Communications Traffic"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ]
         },
         {
           "id": "KSI-MLA-03",
-          "statement": "Rapidly detect and remediate or mitigate vulnerabilities",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-04 (VDR)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "au-5",
               "title": "Response to Audit Logging Process Failures"
+            },
+            {
+              "control_id": "ca-5",
+              "title": "Plan of Action and Milestones"
             },
             {
               "control_id": "ca-7",
@@ -3920,25 +5387,38 @@
               "title": "Flaw Remediation"
             },
             {
+              "control_id": "si-2.2",
+              "title": "Automated Flaw Remediation Status"
+            },
+            {
+              "control_id": "si-3",
+              "title": "Malicious Code Protection"
+            },
+            {
               "control_id": "si-5",
               "title": "Security Alerts, Advisories, and Directives"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
+            },
+            {
+              "control_id": "si-10",
+              "title": "Information Input Validation"
+            },
+            {
+              "control_id": "si-11",
+              "title": "Error Handling"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-MLA-04",
-          "statement": "Perform authenticated vulnerability scanning on _information resources_",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-04 (VDR)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-7",
@@ -3953,18 +5433,17 @@
               "title": "Malicious Code Protection"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-MLA-05",
           "statement": "Perform Infrastructure as Code and configuration evaluation and testing",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-7",
@@ -3977,56 +5456,116 @@
             {
               "control_id": "cm-6",
               "title": "Configuration Settings"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-MLA-06",
-          "statement": "Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-04 (VDR)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-5",
               "title": "Plan of Action and Milestones"
             }
-          ],
+          ]
+        },
+        {
+          "id": "KSI-MLA-07",
+          "statement": "Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.",
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "ac-2.4",
+              "title": "Automated Audit Actions"
+            },
+            {
+              "control_id": "ac-6.9",
+              "title": "Log Use of Privileged Functions"
+            },
+            {
+              "control_id": "ac-17.1",
+              "title": "Monitoring and Control"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
+              "control_id": "au-2",
+              "title": "Event Logging"
+            },
+            {
+              "control_id": "au-7.1",
+              "title": "Automatic Processing"
+            },
+            {
+              "control_id": "au-12",
+              "title": "Audit Record Generation"
+            },
+            {
+              "control_id": "si-4.4",
+              "title": "Inbound and Outbound Communications Traffic"
+            },
+            {
+              "control_id": "si-4.5",
+              "title": "System-generated Alerts"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
+            }
+          ]
+        },
+        {
+          "id": "KSI-MLA-08",
+          "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "si-11",
+              "title": "Error Handling"
+            }
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06"
       ]
     },
     "PIY": {
       "id": "KSI-PIY",
       "name": "Policy and Inventory",
       "indicator": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
-      "referenced_fr": [
-        "FRD-ALL-06",
-        "FRD-ALL-02"
-      ],
       "requirements": [
         {
           "id": "KSI-PIY-01",
-          "statement": "Have an up-to-date _information resource_ inventory or code defining all deployed assets, software, and services",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Use authoritative sources to automatically maintain real-time inventories of all information resources",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
+              "control_id": "cm-2.2",
+              "title": "Automation Support for Accuracy and Currency"
+            },
+            {
               "control_id": "cm-7.5",
-              "title": "Authorized Software Allow-by-exception"
+              "title": "Authorized Software — Allow-by-exception"
             },
             {
               "control_id": "cm-8",
@@ -4049,25 +5588,25 @@
               "title": "Identify Critical Assets"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-PIY-02",
-          "statement": "Have policies outlining the security objectives of all _information resources_",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Document the security objectives and requirements for each information resource or set of information resources.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-1",
               "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ac-21",
+              "title": "Information Sharing"
             },
             {
               "control_id": "at-1",
@@ -4082,6 +5621,10 @@
               "title": "Policy and Procedures"
             },
             {
+              "control_id": "ca-2",
+              "title": "Control Assessments"
+            },
+            {
               "control_id": "cm-1",
               "title": "Policy and Procedures"
             },
@@ -4092,6 +5635,10 @@
             {
               "control_id": "cp-2.1",
               "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-2.8",
+              "title": "Identify Critical Assets"
             },
             {
               "control_id": "cp-4.1",
@@ -4142,6 +5689,10 @@
               "title": "Policy and Procedures"
             },
             {
+              "control_id": "ra-9",
+              "title": "Criticality Analysis"
+            },
+            {
               "control_id": "sa-1",
               "title": "Policy and Procedures"
             },
@@ -4170,78 +5721,109 @@
               "title": "Component Authenticity"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-PIY-03",
           "statement": "Maintain a vulnerability disclosure program",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ra-5.11",
               "title": "Public Disclosure Program"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-PIY-04",
-          "statement": "Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Monitor the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-5",
               "title": "Separation of Duties"
             },
             {
+              "control_id": "au-3.3",
+              "title": "Limit Personally Identifiable Information Elements"
+            },
+            {
+              "control_id": "cm-3.4",
+              "title": "Security and Privacy Representatives"
+            },
+            {
+              "control_id": "pl-8",
+              "title": "Security and Privacy Architectures"
+            },
+            {
+              "control_id": "pm-7",
+              "title": "Enterprise Architecture"
+            },
+            {
               "control_id": "sa-3",
               "title": "System Development Life Cycle"
+            },
+            {
+              "control_id": "sa-8",
+              "title": "Security and Privacy Engineering Principles"
+            },
+            {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
+              "control_id": "sc-18",
+              "title": "Mobile Code"
+            },
+            {
+              "control_id": "si-10",
+              "title": "Information Input Validation"
+            },
+            {
+              "control_id": "si-11",
+              "title": "Error Handling"
+            },
+            {
+              "control_id": "si-16",
+              "title": "Memory Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-PIY-05",
           "statement": "Document methods used to evaluate _information resource_ implementations",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
-          "controls": [],
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": [],
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-PIY-06",
-          "statement": "Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Monitor the effectiveness of the organization’s investments in achieving security objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-5",
               "title": "Separation of Duties"
+            },
+            {
+              "control_id": "ca-2",
+              "title": "Control Assessments"
             },
             {
               "control_id": "cp-2.1",
@@ -4256,6 +5838,10 @@
               "title": "Coordination with Related Plans"
             },
             {
+              "control_id": "pm-3",
+              "title": "Information Security and Privacy Resources"
+            },
+            {
               "control_id": "sa-2",
               "title": "Allocation of Resources"
             },
@@ -4267,47 +5853,53 @@
               "control_id": "sr-2.1",
               "title": "Establish SCRM Team"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-PIY-07",
           "statement": "Document risk management decisions for software supply chain security",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-7.4",
               "title": "Risk Monitoring"
+            },
+            {
+              "control_id": "sc-18",
+              "title": "Mobile Code"
             }
-          ],
+          ]
+        },
+        {
+          "id": "KSI-PIY-08",
+          "statement": "Regularly measure executive support for achieving the organization’s security objectives.",
           "impact": {
             "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "moderate": true
+          },
+          "controls": []
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-02"
       ]
     },
     "RPL": {
       "id": "KSI-RPL",
       "name": "Recovery Planning",
       "indicator": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
-      "referenced_fr": [
-        "FRD-ALL-06"
-      ],
       "requirements": [
         {
           "id": "KSI-RPL-01",
           "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cp-2.3",
@@ -4317,49 +5909,89 @@
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-RPL-02",
           "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cp-2",
               "title": "Contingency Plan"
             },
             {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
               "control_id": "cp-2.3",
               "title": "Resume Mission and Business Functions"
+            },
+            {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
             },
             {
               "control_id": "cp-6",
               "title": "Alternate Storage Site"
             },
             {
+              "control_id": "cp-6.1",
+              "title": "Separation from Primary Site"
+            },
+            {
+              "control_id": "cp-6.3",
+              "title": "Accessibility"
+            },
+            {
+              "control_id": "cp-7",
+              "title": "Alternate Processing Site"
+            },
+            {
+              "control_id": "cp-7.1",
+              "title": "Separation from Primary Site"
+            },
+            {
+              "control_id": "cp-7.2",
+              "title": "Accessibility"
+            },
+            {
+              "control_id": "cp-7.3",
+              "title": "Priority of Service"
+            },
+            {
+              "control_id": "cp-8",
+              "title": "Telecommunications Services"
+            },
+            {
+              "control_id": "cp-8.1",
+              "title": "Priority of Service Provisions"
+            },
+            {
+              "control_id": "cp-8.2",
+              "title": "Single Points of Failure"
+            },
+            {
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
+            },
+            {
+              "control_id": "cp-10.2",
+              "title": "Transaction Recovery"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-RPL-03",
           "statement": "Perform system backups aligned with recovery objectives",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-2.3",
@@ -4385,30 +6017,39 @@
               "control_id": "si-12",
               "title": "Information Management and Retention"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-RPL-04",
           "statement": "_Regularly_ test the capability to recover from incidents and contingencies",
-          "referenced_fr": [
-            "FRD-ALL-07"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
+            {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-2.3",
+              "title": "Resume Mission and Business Functions"
+            },
             {
               "control_id": "cp-4",
               "title": "Contingency Plan Testing"
             },
             {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
               "control_id": "cp-6",
               "title": "Alternate Storage Site"
+            },
+            {
+              "control_id": "cp-6.1",
+              "title": "Separation from Primary Site"
             },
             {
               "control_id": "cp-9.1",
@@ -4421,36 +6062,49 @@
             {
               "control_id": "ir-3",
               "title": "Incident Response Testing"
+            },
+            {
+              "control_id": "ir-3.2",
+              "title": "Coordination with Related Plans"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06"
       ]
     },
     "SVC": {
       "id": "KSI-SVC",
       "name": "Service Configuration",
       "indicator": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
-      "referenced_fr": [
-        "FRD-ALL-06",
-        "FRD-ALL-02",
-        "FRD-ALL-05"
-      ],
       "requirements": [
         {
           "id": "KSI-SVC-01",
-          "statement": "Harden and review network and system configurations",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Implement improvements based on persistent evaluation of information resources for opportunities to improve security.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
+            {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "cm-12.1",
+              "title": "Automated Tools to Support Information Location"
+            },
             {
               "control_id": "ma-2",
               "title": "Controlled Maintenance"
+            },
+            {
+              "control_id": "pl-8",
+              "title": "Security and Privacy Architectures"
             },
             {
               "control_id": "sc-7",
@@ -4461,6 +6115,10 @@
               "title": "Process Isolation"
             },
             {
+              "control_id": "si-2.2",
+              "title": "Automated Flaw Remediation Status"
+            },
+            {
               "control_id": "si-4",
               "title": "System Monitoring"
             },
@@ -4468,19 +6126,15 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-SVC-02",
           "statement": "Encrypt or otherwise secure network traffic",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-1",
@@ -4492,6 +6146,14 @@
             },
             {
               "control_id": "cp-9.8",
+              "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            },
+            {
+              "control_id": "sc-8.1",
               "title": "Cryptographic Protection"
             },
             {
@@ -4509,24 +6171,32 @@
             {
               "control_id": "sc-22",
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-SVC-03",
-          "statement": "Encrypt all federal and sensitive information at rest",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-11 (UCM)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
+            {
+              "control_id": "ac-19.5",
+              "title": "Full Device or Container-based Encryption"
+            },
             {
               "control_id": "ac-20.2",
               "title": "Portable Storage Devices — Restricted Use"
+            },
+            {
+              "control_id": "ac-21",
+              "title": "Information Sharing"
             },
             {
               "control_id": "cm-12",
@@ -4539,20 +6209,24 @@
             {
               "control_id": "sc-13",
               "title": "Cryptographic Protection"
+            },
+            {
+              "control_id": "sc-28",
+              "title": "Protection of Information at Rest"
+            },
+            {
+              "control_id": "sc-28.1",
+              "title": "Cryptographic Protection"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-SVC-04",
-          "statement": "Manage configuration centrally",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Manage configuration of machine-based information resources using automation.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2.4",
@@ -4575,6 +6249,14 @@
               "title": "Configuration Settings"
             },
             {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "pl-9",
+              "title": "Central Management"
+            },
+            {
               "control_id": "pl-10",
               "title": "Baseline Selection"
             },
@@ -4590,22 +6272,15 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-SVC-05",
-          "statement": "Enforce system and _information resource_ integrity through cryptographic means",
-          "referenced_fr": [
-            "FRD-ALL-02"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Use cryptographic methods to validate the integrity of machine-based information resources.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cm-2.2",
@@ -4620,25 +6295,33 @@
               "title": "Cryptographic Protection"
             },
             {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
+            },
+            {
+              "control_id": "si-7",
+              "title": "Software, Firmware, and Information Integrity"
+            },
+            {
+              "control_id": "si-7.1",
+              "title": "Integrity Checks"
+            },
+            {
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-02"
+          ]
         },
         {
           "id": "KSI-SVC-06",
-          "statement": "Use automated key management systems to manage, protect, and _regularly_ rotate digital keys and certificates",
-          "referenced_fr": [
-            "FRD-ALL-07"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-17.2",
@@ -4655,20 +6338,23 @@
             {
               "control_id": "sc-12",
               "title": "Cryptographic Key Establishment and Management"
+            },
+            {
+              "control_id": "sc-17",
+              "title": "Public Key Infrastructure Certificates"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-07"
+          ]
         },
         {
           "id": "KSI-SVC-07",
           "statement": "Use a consistent, risk-informed approach for applying security patches",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-7.4",
@@ -4682,33 +6368,77 @@
               "control_id": "ra-7",
               "title": "Risk Response"
             }
-          ],
+          ]
+        },
+        {
+          "id": "KSI-SVC-08",
+          "statement": "Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of federal customer data during operations.",
           "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+            "low": false,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-09",
+          "statement": "Persistently validate the authenticity and integrity of communications between machine-based information resources using automation.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
+            },
+            {
+              "control_id": "si-7.1",
+              "title": "Integrity Checks"
+            }
+          ]
+        },
+        {
+          "id": "KSI-SVC-10",
+          "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": [
+            {
+              "control_id": "si-12.3",
+              "title": "Information Disposal"
+            },
+            {
+              "control_id": "si-18.4",
+              "title": "Individual Requests"
+            }
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-02",
+        "FRD-ALL-05"
       ]
     },
     "TPR": {
       "id": "KSI-TPR",
       "name": "Third-Party Information Resources",
       "indicator": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
-      "referenced_fr": [
-        "FRD-ALL-06",
-        "FRD-ALL-05"
-      ],
       "requirements": [
         {
           "id": "KSI-TPR-01",
-          "statement": "Identify all _third-party information resources_",
-          "referenced_fr": [
-            "FRD-ALL-05"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-3",
@@ -4721,24 +6451,23 @@
             {
               "control_id": "ps-7",
               "title": "External Personnel Security"
+            },
+            {
+              "control_id": "sa-4.9",
+              "title": "Functions, Ports, Protocols, and Services in Use"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-05"
+          ]
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "_Regularly_ confirm that services handling _federal customer data_ or are likely to impact the confidentiality, integrity, or availability of _federal customer data_ are FedRAMP authorized and securely configured",
-          "referenced_fr": [
-            "FRD-ALL-07",
-            "FRD-ALL-01"
-          ],
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "statement": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-21",
@@ -4765,22 +6494,50 @@
               "title": "Acquisition Process"
             },
             {
+              "control_id": "sa-4.1",
+              "title": "Functional Properties of Controls"
+            },
+            {
+              "control_id": "sa-4.2",
+              "title": "Design and Implementation Information for Controls"
+            },
+            {
+              "control_id": "sa-4.9",
+              "title": "Functions, Ports, Protocols, and Services in Use"
+            },
+            {
               "control_id": "sa-9",
               "title": "External System Services"
+            },
+            {
+              "control_id": "sa-9.2",
+              "title": "Identification of Functions, Ports, Protocols, and Services"
+            },
+            {
+              "control_id": "sa-10",
+              "title": "Developer Configuration Management"
+            },
+            {
+              "control_id": "sa-11",
+              "title": "Developer Testing and Evaluation"
+            },
+            {
+              "control_id": "sa-15",
+              "title": "Development Process, Standards, and Tools"
             }
           ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          "referenced_fr": [
+            "FRD-ALL-07",
+            "FRD-ALL-01"
+          ]
         },
         {
           "id": "KSI-TPR-03",
           "statement": "Identify and prioritize mitigation of potential supply chain risks",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-20",
@@ -4795,26 +6552,42 @@
               "title": "External System Services"
             },
             {
+              "control_id": "sa-10",
+              "title": "Developer Configuration Management"
+            },
+            {
+              "control_id": "sa-11",
+              "title": "Developer Testing and Evaluation"
+            },
+            {
+              "control_id": "sa-15.3",
+              "title": "Criticality Analysis"
+            },
+            {
               "control_id": "sa-22",
               "title": "Unsupported System Components"
             },
             {
+              "control_id": "si-7.1",
+              "title": "Integrity Checks"
+            },
+            {
               "control_id": "sr-5",
               "title": "Acquisition Strategies, Tools, and Methods"
+            },
+            {
+              "control_id": "sr-6",
+              "title": "Supplier Assessments and Reviews"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         },
         {
           "id": "KSI-TPR-04",
           "statement": "Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services",
-          "applied_impact_levels": [
-            "Low"
-          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-20",
@@ -4849,16 +6622,19 @@
               "title": "Acquisition Strategies, Tools, and Methods"
             },
             {
+              "control_id": "sr-6",
+              "title": "Supplier Assessments and Reviews"
+            },
+            {
               "control_id": "sr-8",
               "title": "Notification Agreements"
             }
-          ],
-          "impact": {
-            "low": true,
-            "moderate": true,
-            "high": true
-          }
+          ]
         }
+      ],
+      "referenced_fr": [
+        "FRD-ALL-06",
+        "FRD-ALL-05"
       ]
     }
   }
