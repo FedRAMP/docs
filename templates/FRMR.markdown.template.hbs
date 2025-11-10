@@ -148,14 +148,39 @@ _Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if 
 **{{indicator}}**
 
       {{#each requirements}}
+{{#if name}}      
+#### {{id}}: {{name}}
+{{else}}
 #### {{id}}
+{{/if}}
 
 {{#if impact}}
 {{!-- this is super messy but ok for now --}}
 _Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
 {{/if}}
+{{#if retired}}
+_This KSI ID is retired but may be reassigned in the future._
+{{/if}}
 
-> {{statement}}.
+{{#if statement}}
+> {{statement}}
+{{/if}}
+{{#if following_information}}
+          {{#each following_information}}
+> 1. {{this}}
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
+      {{#if notes}}
+>
+>  _Notes:_
+        {{#each notes}}
+>  - _{{this}}_
+        {{/each}}
+      {{/if}}  
 
         {{#if controls}}
           {{#if @root.showControls}}

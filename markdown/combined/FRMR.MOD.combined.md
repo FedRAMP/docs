@@ -1241,67 +1241,67 @@ _Applies to:_ Low, Moderate, High
 
 _Applies to:_ Low, Moderate
 
-> Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations..
+> Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-02
 
 _Applies to:_ Low, Moderate
 
-> Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations..
+> Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-03
 
 _Applies to:_ Low, Moderate
 
-> Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations..
+> Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-04
 
 _Applies to:_ Low, Moderate
 
-> Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations..
+> Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-05
 
 _Applies to:_ Low, Moderate
 
-> Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations..
+> Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-06
 
 _Applies to:_ Low, Moderate
 
-> Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations..
+> Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-07
 
 _Applies to:_ Low, Moderate
 
-> Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations..
+> Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-08
 
 _Applies to:_ Low, Moderate
 
-> Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations..
+> Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-09
 
 _Applies to:_ Low, Moderate
 
-> Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations..
+> Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-10
 
 _Applies to:_ Low, Moderate
 
-> Integrate FedRAMP’s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations..
+> Integrate FedRAMP’s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.
 
 #### KSI-AFR-11
 
 _Applies to:_ Low, Moderate
 
-> Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules policy and persistently address all related requirements and recommendations..
+> Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules policy and persistently address all related requirements and recommendations.
 
 ### KSI-CED: Cybersecurity Education
 
@@ -1311,25 +1311,25 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics..
+> Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics.
 
 #### KSI-CED-02
 
 _Applies to:_ Low, Moderate
 
-> Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access..
+> Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access.
 
 #### KSI-CED-03
 
 _Applies to:_ Low, Moderate
 
-> Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software..
+> Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software.
 
 #### KSI-CED-04
 
 _Applies to:_ Low, Moderate
 
-> Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery..
+> Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.
 
 ### KSI-CMT: Change Management
 
@@ -1339,31 +1339,31 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Log and monitor modifications to the cloud service offering..
+> Log and monitor modifications to the cloud service offering.
 
 #### KSI-CMT-02
 
 _Applies to:_ Low, Moderate
 
-> Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible.
+> Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible
 
 #### KSI-CMT-03
 
 _Applies to:_ Low, Moderate
 
-> Automate persistent testing and validation of changes throughout deployment..
+> Automate persistent testing and validation of changes throughout deployment.
 
 #### KSI-CMT-04
 
 _Applies to:_ Low, Moderate
 
-> Always follow a documented change management procedure..
+> Always follow a documented change management procedure.
 
 #### KSI-CMT-05
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-05 (SCN).
+> Superseded by KSI-AFR-05 (SCN)
 
 ### KSI-CNA: Cloud Native Architecture
 
@@ -1373,49 +1373,49 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Configure all machine-based information resources to limit inbound and outbound network traffic..
+> Configure all machine-based information resources to limit inbound and outbound network traffic.
 
 #### KSI-CNA-02
 
 _Applies to:_ Low, Moderate
 
-> Design systems to minimize the attack surface and minimize lateral movement if compromised.
+> Design systems to minimize the attack surface and minimize lateral movement if compromised
 
 #### KSI-CNA-03
 
 _Applies to:_ Low, Moderate
 
-> Use logical networking and related capabilities to enforce traffic flow controls.
+> Use logical networking and related capabilities to enforce traffic flow controls
 
 #### KSI-CNA-04
 
 _Applies to:_ Low, Moderate
 
-> Use immutable infrastructure with strictly defined functionality and privileges by default.
+> Use immutable infrastructure with strictly defined functionality and privileges by default
 
 #### KSI-CNA-05
 
 _Applies to:_ Low, Moderate
 
-> Protect against denial of service attacks and other unwanted activity..
+> Protect against denial of service attacks and other unwanted activity.
 
 #### KSI-CNA-06
 
 _Applies to:_ Low, Moderate
 
-> Design systems for high availability and rapid recovery.
+> Design systems for high availability and rapid recovery
 
 #### KSI-CNA-07
 
 _Applies to:_ Low, Moderate
 
-> Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance.
+> Ensure cloud-native _information resources_ are implemented based on host provider&#x27;s best practices and documented guidance
 
 #### KSI-CNA-08
 
 _Applies to:_ Moderate
 
-> Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state..
+> Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state.
 
 ### KSI-IAM: Identity and Access Management
 
@@ -1425,43 +1425,43 @@ _Applies to:_ Moderate
 
 _Applies to:_ Low, Moderate
 
-> Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.
+> Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication
 
 #### KSI-IAM-02
 
 _Applies to:_ Low, Moderate
 
-> Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.
+> Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA
 
 #### KSI-IAM-03
 
 _Applies to:_ Low, Moderate
 
-> Enforce appropriately secure authentication methods for non-user accounts and services.
+> Enforce appropriately secure authentication methods for non-user accounts and services
 
 #### KSI-IAM-04
 
 _Applies to:_ Low, Moderate
 
-> Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.
+> Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services
 
 #### KSI-IAM-05
 
 _Applies to:_ Low, Moderate
 
-> Configure identity and access management with measures that always verify each user or device can only access the resources they need..
+> Configure identity and access management with measures that always verify each user or device can only access the resources they need.
 
 #### KSI-IAM-06
 
 _Applies to:_ Low, Moderate
 
-> Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity.
+> Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity
 
 #### KSI-IAM-07
 
 _Applies to:_ Low, Moderate
 
-> Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation..
+> Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.
 
 ### KSI-INR: Incident Response
 
@@ -1471,19 +1471,19 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Always follow a documented incident response procedure..
+> Always follow a documented incident response procedure.
 
 #### KSI-INR-02
 
 _Applies to:_ Low, Moderate
 
-> Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.
+> Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities
 
 #### KSI-INR-03
 
 _Applies to:_ Low, Moderate
 
-> Generate after action reports and _regularly_ incorporate lessons learned into operations.
+> Generate after action reports and _regularly_ incorporate lessons learned into operations
 
 ### KSI-MLA: Monitoring, Logging, and Auditing
 
@@ -1493,49 +1493,49 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.
+> Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes
 
 #### KSI-MLA-02
 
 _Applies to:_ Low, Moderate
 
-> _Regularly_ review and audit logs.
+> _Regularly_ review and audit logs
 
 #### KSI-MLA-03
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-04 (VDR).
+> Superseded by KSI-AFR-04 (VDR)
 
 #### KSI-MLA-04
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-04 (VDR).
+> Superseded by KSI-AFR-04 (VDR)
 
 #### KSI-MLA-05
 
 _Applies to:_ Low, Moderate
 
-> Perform Infrastructure as Code and configuration evaluation and testing.
+> Perform Infrastructure as Code and configuration evaluation and testing
 
 #### KSI-MLA-06
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-04 (VDR).
+> Superseded by KSI-AFR-04 (VDR)
 
 #### KSI-MLA-07
 
 _Applies to:_ Low, Moderate
 
-> Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so..
+> Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.
 
 #### KSI-MLA-08
 
 _Applies to:_ Moderate
 
-> Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity..
+> Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity.
 
 ### KSI-PIY: Policy and Inventory
 
@@ -1545,49 +1545,49 @@ _Applies to:_ Moderate
 
 _Applies to:_ Low, Moderate
 
-> Use authoritative sources to automatically maintain real-time inventories of all information resources.
+> Use authoritative sources to automatically maintain real-time inventories of all information resources
 
 #### KSI-PIY-02
 
 _Applies to:_ Low, Moderate
 
-> Document the security objectives and requirements for each information resource or set of information resources..
+> Document the security objectives and requirements for each information resource or set of information resources.
 
 #### KSI-PIY-03
 
 _Applies to:_ Low, Moderate
 
-> Maintain a vulnerability disclosure program.
+> Maintain a vulnerability disclosure program
 
 #### KSI-PIY-04
 
 _Applies to:_ Low, Moderate
 
-> Monitor the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles..
+> Monitor the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles.
 
 #### KSI-PIY-05
 
 _Applies to:_ Low, Moderate
 
-> Document methods used to evaluate _information resource_ implementations.
+> Document methods used to evaluate _information resource_ implementations
 
 #### KSI-PIY-06
 
 _Applies to:_ Low, Moderate
 
-> Monitor the effectiveness of the organization’s investments in achieving security objectives..
+> Monitor the effectiveness of the organization’s investments in achieving security objectives.
 
 #### KSI-PIY-07
 
 _Applies to:_ Low, Moderate
 
-> Document risk management decisions for software supply chain security.
+> Document risk management decisions for software supply chain security
 
 #### KSI-PIY-08
 
 _Applies to:_ Low, Moderate
 
-> Regularly measure executive support for achieving the organization’s security objectives..
+> Regularly measure executive support for achieving the organization’s security objectives.
 
 ### KSI-RPL: Recovery Planning
 
@@ -1597,25 +1597,25 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
+> Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)
 
 #### KSI-RPL-02
 
 _Applies to:_ Low, Moderate
 
-> Develop and maintain a recovery plan that aligns with the defined recovery objectives.
+> Develop and maintain a recovery plan that aligns with the defined recovery objectives
 
 #### KSI-RPL-03
 
 _Applies to:_ Low, Moderate
 
-> Perform system backups aligned with recovery objectives.
+> Perform system backups aligned with recovery objectives
 
 #### KSI-RPL-04
 
 _Applies to:_ Low, Moderate
 
-> _Regularly_ test the capability to recover from incidents and contingencies.
+> _Regularly_ test the capability to recover from incidents and contingencies
 
 ### KSI-SVC: Service Configuration
 
@@ -1625,61 +1625,61 @@ _Applies to:_ Low, Moderate
 
 _Applies to:_ Low, Moderate
 
-> Implement improvements based on persistent evaluation of information resources for opportunities to improve security..
+> Implement improvements based on persistent evaluation of information resources for opportunities to improve security.
 
 #### KSI-SVC-02
 
 _Applies to:_ Low, Moderate
 
-> Encrypt or otherwise secure network traffic.
+> Encrypt or otherwise secure network traffic
 
 #### KSI-SVC-03
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-11 (UCM).
+> Superseded by KSI-AFR-11 (UCM)
 
 #### KSI-SVC-04
 
 _Applies to:_ Low, Moderate
 
-> Manage configuration of machine-based information resources using automation..
+> Manage configuration of machine-based information resources using automation.
 
 #### KSI-SVC-05
 
 _Applies to:_ Low, Moderate
 
-> Use cryptographic methods to validate the integrity of machine-based information resources..
+> Use cryptographic methods to validate the integrity of machine-based information resources.
 
 #### KSI-SVC-06
 
 _Applies to:_ Low, Moderate
 
-> Automate management, protection, and regular rotation of digital keys, certificates, and other secrets..
+> Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.
 
 #### KSI-SVC-07
 
 _Applies to:_ Low, Moderate
 
-> Use a consistent, risk-informed approach for applying security patches.
+> Use a consistent, risk-informed approach for applying security patches
 
 #### KSI-SVC-08
 
 _Applies to:_ Moderate
 
-> Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of federal customer data during operations..
+> Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of federal customer data during operations.
 
 #### KSI-SVC-09
 
 _Applies to:_ Moderate
 
-> Persistently validate the authenticity and integrity of communications between machine-based information resources using automation..
+> Persistently validate the authenticity and integrity of communications between machine-based information resources using automation.
 
 #### KSI-SVC-10
 
 _Applies to:_ Moderate
 
-> Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage..
+> Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage.
 
 ### KSI-TPR: Third-Party Information Resources
 
@@ -1689,25 +1689,25 @@ _Applies to:_ Moderate
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-01 (MAS).
+> Superseded by KSI-AFR-01 (MAS)
 
 #### KSI-TPR-02
 
 _Applies to:_ Low, Moderate
 
-> Superseded by KSI-AFR-01 (MAS).
+> Superseded by KSI-AFR-01 (MAS)
 
 #### KSI-TPR-03
 
 _Applies to:_ Low, Moderate
 
-> Identify and prioritize mitigation of potential supply chain risks.
+> Identify and prioritize mitigation of potential supply chain risks
 
 #### KSI-TPR-04
 
 _Applies to:_ Low, Moderate
 
-> Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services.
+> Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services
 
 
 

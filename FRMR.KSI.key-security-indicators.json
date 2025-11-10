@@ -191,25 +191,27 @@
         "requirements": [
           {
             "id": "FRR-KSI-01",
-            "statement": "Cloud service providers MUST apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
+            "statement": "Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
             "affects": ["Providers"],
-            "primary_key_word": "MUST",
+            "primary_key_word": "SHOULD",
             "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"],
             "impact": { "low": true, "moderate": true }
           },
           {
             "id": "FRR-KSI-02",
-            "statement": "All parties SHOULD follow FedRAMP's best practices and technical assistance on assessing Key Security Indicators where applicable.",
-            "affects": ["Providers", "Agencies", "3PAOs"],
-            "primary_key_word": "SHOULD",
-            "impact": { "low": true, "moderate": true }
-          },
-          {
-            "id": "FRR-KSI-03",
-            "statement": "All parties SHOULD continuously monitor and review materials in the FedRAMP 20x Phase One (20xP1) pilot requirements and the 20x Community Working Group. Additional details, interim best practices and technical assistance, answers to common questions, and more will be provided asynchronously during 20xP1.",
-            "affects": ["Providers", "Agencies", "3PAOs"],
-            "primary_key_word": "SHOULD",
-            "impact": { "low": true, "moderate": true }
+            "statement": "Providers MUST maintain simple high-level summaries of at least the following for each Key Security Indicator:",
+            "following_information": [
+              "Goals for how it will be implemented and validated, including clear pass/fail criteria and traceability",
+              "The consolidated _information resources_ that will be validated (this should include consolidated summaries such as \"all employees with privileged access that are members of the Admin group\")",
+              "The machine-based processes for validation and the _persistent_ cycle on which they will be performed (or an explanation of why this doesn't apply)",
+              "The non-machine-based processes for validation and the _persistent_ cycle on which they will be performed (or an explanation of why this doesn't apply)",
+              "Current implementation status",
+              "Any clarifications or responses to the assessment summary"
+            ],
+            "affects": ["Providers"],
+            "primary_key_word": "MUST",
+            "impact": { "low": true, "moderate": true },
+            "referenced_fr": ["FRD-ALL-01", "FRD-ALL-38"]
           }
         ]
       }
@@ -230,7 +232,7 @@
         },
         {
           "id": "KSI-AFR-02",
-          "name": "Security Goals",
+          "name": "Key Security Indicators (KSI)",
           "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
@@ -532,7 +534,7 @@
         },
         {
           "id": "KSI-AFR-07",
-          "name": "Guidance for Secure Configuration",
+          "name": "Recommended Secure Configuration (RSC)",
           "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
@@ -553,7 +555,7 @@
         },
         {
           "id": "KSI-AFR-10",
-          "name": "Incident Communications (ICP)",
+          "name": "Incident Communications Procedures(ICP)",
           "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
@@ -770,7 +772,7 @@
         },
         {
           "id": "KSI-CMT-04",
-          "name":  "Change Management Procedure",
+          "name": "Change Management Procedure",
           "statement": "Always follow a documented change management procedure.",
           "impact": {
             "low": true,
@@ -805,12 +807,10 @@
         },
         {
           "id": "KSI-CMT-05",
-          "statement": "Superseded by KSI-AFR-05 (SCN)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": []
+          "statement": "",
+          "note": "Superseded by KSI-AFR-05 (SCN)",
+          "retired": true,
+          "referenced_fr": ["KSI-AFR-05"]
         }
       ]
     },
@@ -854,7 +854,7 @@
         {
           "id": "KSI-CNA-02",
           "name": "Minimize the Attack Surface",
-          "statement": "Design systems to minimize the attack surface and minimize lateral movement if compromised",
+          "statement": "Design systems to minimize the attack surface and minimize lateral movement if compromised.",
           "impact": {
             "low": true,
             "moderate": true
@@ -921,7 +921,7 @@
         {
           "id": "KSI-CNA-03",
           "name": "Enforce Traffic Flow",
-          "statement": "Use logical networking and related capabilities to enforce traffic flow controls",
+          "statement": "Use logical networking and related capabilities to enforce traffic flow controls.",
           "impact": {
             "low": true,
             "moderate": true
@@ -964,7 +964,7 @@
         {
           "id": "KSI-CNA-04",
           "name": "Immutable Infrastructure",
-          "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default",
+          "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1006,7 +1006,7 @@
         {
           "id": "KSI-CNA-06",
           "name": "High Availability",
-          "statement": "Design systems for high availability and rapid recovery",
+          "statement": "Design systems for high availability and rapid recovery.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1016,7 +1016,7 @@
         {
           "id": "KSI-CNA-07",
           "name": "Best Practices",
-          "statement": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance",
+          "statement": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1064,7 +1064,7 @@
         {
           "id": "KSI-IAM-01",
           "name": "Phishing-Resistant MFA",
-          "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication",
+          "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1107,7 +1107,7 @@
         {
           "id": "KSI-IAM-02",
           "name": "Passwordless Authentication",
-          "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA",
+          "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1158,7 +1158,7 @@
         {
           "id": "KSI-IAM-03",
           "name": "Non-User Accounts",
-          "statement": "Enforce appropriately secure authentication methods for non-user accounts and services",
+          "statement": "Enforce appropriately secure authentication methods for non-user accounts and services.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1197,7 +1197,7 @@
         {
           "id": "KSI-IAM-04",
           "name": "Just-in-Time Authorization",
-          "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services",
+          "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1653,7 +1653,7 @@
         {
           "id": "KSI-INR-02",
           "name": "Incident Logging",
-          "statement": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities",
+          "statement": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1684,7 +1684,7 @@
         {
           "id": "KSI-INR-03",
           "name": "Incident After Action Reports",
-          "statement": "Generate after action reports and _regularly_ incorporate lessons learned into operations",
+          "statement": "Generate after action reports and _regularly_ incorporate lessons learned into operations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1720,7 +1720,7 @@
         {
           "id": "KSI-MLA-01",
           "name": "Security Information and Event Management (SIEM)",
-          "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes",
+          "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1803,7 +1803,7 @@
         {
           "id": "KSI-MLA-02",
           "name": "Audit Logging",
-          "statement": "_Regularly_ review and audit logs",
+          "statement": "_Regularly_ review and audit logs.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1842,40 +1842,22 @@
         },
         {
           "id": "KSI-MLA-03",
-          "statement": "Superseded by KSI-AFR-04 (VDR)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": []
+          "statement": "",
+          "note": "Superseded by KSI-AFR-04 (VDR)",
+          "retired": true,
+          "referenced_fr": ["KSI-AFR-04"]
         },
         {
           "id": "KSI-MLA-04",
-          "statement": "Superseded by KSI-AFR-04 (VDR)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": [
-            {
-              "control_id": "ca-7",
-              "title": "Continuous Monitoring"
-            },
-            {
-              "control_id": "ra-5",
-              "title": "Vulnerability Monitoring and Scanning"
-            },
-            {
-              "control_id": "si-3",
-              "title": "Malicious Code Protection"
-            }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          "statement": "",
+          "note": "Superseded by KSI-AFR-04 (VDR)",
+          "retired": true,
+          "referenced_fr": ["KSI-AFR-04"]
         },
         {
           "id": "KSI-MLA-05",
           "name": "Infrastructure as Code",
-          "statement": "Perform Infrastructure as Code and configuration evaluation and testing",
+          "statement": "Perform Infrastructure as Code and configuration evaluation and testing.",
           "impact": {
             "low": true,
             "moderate": true
@@ -1901,17 +1883,10 @@
         },
         {
           "id": "KSI-MLA-06",
-          "statement": "Superseded by KSI-AFR-04 (VDR)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": [
-            {
-              "control_id": "ca-5",
-              "title": "Plan of Action and Milestones"
-            }
-          ]
+          "statement": "",
+          "note": "Superseded by KSI-AFR-04 (VDR)",
+          "referenced_fr": ["KSI-AFR-04"],
+          "retired": true
         },
         {
           "id": "KSI-MLA-07",
@@ -1984,7 +1959,7 @@
         {
           "id": "KSI-PIY-01",
           "name": "Automated Inventory",
-          "statement": "Use authoritative sources to automatically maintain real-time inventories of all information resources",
+          "statement": "Use authoritative sources to automatically maintain real-time inventories of all information resources.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2156,7 +2131,7 @@
         {
           "id": "KSI-PIY-03",
           "name": "Vulnerability Disclosure Program",
-          "statement": "Maintain a vulnerability disclosure program",
+          "statement": "Maintain a vulnerability disclosure program.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2230,7 +2205,7 @@
         {
           "id": "KSI-PIY-05",
           "name": "Evaluate Implementations",
-          "statement": "Document methods used to evaluate _information resource_ implementations",
+          "statement": "Document methods used to evaluate _information resource_ implementations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2288,7 +2263,7 @@
         {
           "id": "KSI-PIY-07",
           "name": "Supply Chain Risk Management",
-          "statement": "Document risk management decisions for software supply chain security",
+          "statement": "Document risk management decisions for software supply chain security.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2322,7 +2297,7 @@
         {
           "id": "KSI-RPL-01",
           "name": "Recovery Objectives",
-          "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
+          "statement": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
           "impact": {
             "low": true,
             "moderate": true
@@ -2341,7 +2316,7 @@
         {
           "id": "KSI-RPL-02",
           "name": "Recovery Plan",
-          "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
+          "statement": "Develop and maintain a recovery plan that aligns with the defined recovery objectives.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2416,7 +2391,7 @@
         {
           "id": "KSI-RPL-03",
           "name": "System Backups",
-          "statement": "Perform system backups aligned with recovery objectives",
+          "statement": "Perform system backups aligned with recovery objectives.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2451,7 +2426,7 @@
         {
           "id": "KSI-RPL-04",
           "name": "Recovery Testing",
-          "statement": "_Regularly_ test the capability to recover from incidents and contingencies",
+          "statement": "_Regularly_ test the capability to recover from incidents and contingencies.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2558,7 +2533,7 @@
         {
           "id": "KSI-SVC-02",
           "name": "Network Encryption",
-          "statement": "Encrypt or otherwise secure network traffic",
+          "statement": "Encrypt or otherwise secure network traffic.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2608,45 +2583,10 @@
         },
         {
           "id": "KSI-SVC-03",
-          "statement": "Superseded by KSI-AFR-11 (UCM)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": [
-            {
-              "control_id": "ac-19.5",
-              "title": "Full Device or Container-based Encryption"
-            },
-            {
-              "control_id": "ac-20.2",
-              "title": "Portable Storage Devices \u2014 Restricted Use"
-            },
-            {
-              "control_id": "ac-21",
-              "title": "Information Sharing"
-            },
-            {
-              "control_id": "cm-12",
-              "title": "Information Location"
-            },
-            {
-              "control_id": "cp-9.8",
-              "title": "Cryptographic Protection"
-            },
-            {
-              "control_id": "sc-13",
-              "title": "Cryptographic Protection"
-            },
-            {
-              "control_id": "sc-28",
-              "title": "Protection of Information at Rest"
-            },
-            {
-              "control_id": "sc-28.1",
-              "title": "Cryptographic Protection"
-            }
-          ]
+          "retired": true,
+          "statement": "",
+          "note": "Superseded by KSI-AFR-11 (UCM)",
+          "referenced_fr": ["KSI-AFR-11"]
         },
         {
           "id": "KSI-SVC-04",
@@ -2778,7 +2718,7 @@
         {
           "id": "KSI-SVC-07",
           "name": "Patching",
-          "statement": "Use a consistent, risk-informed approach for applying security patches",
+          "statement": "Use a consistent, risk-informed approach for applying security patches.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2801,7 +2741,7 @@
         {
           "id": "KSI-SVC-08",
           "name": "Shared Resources",
-          "statement": "Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of federal customer data during operations.",
+          "statement": "Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of _federal customer data_ during operations.",
           "impact": { "low": false, "moderate": true },
           "controls": [
             {
@@ -2813,7 +2753,7 @@
         {
           "id": "KSI-SVC-09",
           "name": "Communication Integrity",
-          "statement": "Persistently validate the authenticity and integrity of communications between machine-based information resources using automation.",
+          "statement": "Persistently validate the authenticity and integrity of communications between _machine-based_ _information resources_ using automation.",
           "impact": { "low": false, "moderate": true },
           "controls": [
             {
@@ -2852,102 +2792,22 @@
       "requirements": [
         {
           "id": "KSI-TPR-01",
-          "statement": "Superseded by KSI-AFR-01 (MAS)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": [
-            {
-              "control_id": "ca-3",
-              "title": "Information Exchange"
-            },
-            {
-              "control_id": "cm-10",
-              "title": "Software Usage Restrictions"
-            },
-            {
-              "control_id": "ps-7",
-              "title": "External Personnel Security"
-            },
-            {
-              "control_id": "sa-4.9",
-              "title": "Functions, Ports, Protocols, and Services in Use"
-            }
-          ],
-          "referenced_fr": ["FRD-ALL-05"]
+          "retired": true,
+          "statement": "",
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "referenced_fr": ["KSI-AFR-01"]
         },
         {
           "id": "KSI-TPR-02",
-          "statement": "Superseded by KSI-AFR-01 (MAS)",
-          "impact": {
-            "low": true,
-            "moderate": true
-          },
-          "controls": [
-            {
-              "control_id": "ac-21",
-              "title": "Information Sharing"
-            },
-            {
-              "control_id": "ca-3",
-              "title": "Information Exchange"
-            },
-            {
-              "control_id": "cm-12",
-              "title": "Information Location"
-            },
-            {
-              "control_id": "ps-7",
-              "title": "External Personnel Security"
-            },
-            {
-              "control_id": "sa-2",
-              "title": "Allocation of Resources"
-            },
-            {
-              "control_id": "sa-4",
-              "title": "Acquisition Process"
-            },
-            {
-              "control_id": "sa-4.1",
-              "title": "Functional Properties of Controls"
-            },
-            {
-              "control_id": "sa-4.2",
-              "title": "Design and Implementation Information for Controls"
-            },
-            {
-              "control_id": "sa-4.9",
-              "title": "Functions, Ports, Protocols, and Services in Use"
-            },
-            {
-              "control_id": "sa-9",
-              "title": "External System Services"
-            },
-            {
-              "control_id": "sa-9.2",
-              "title": "Identification of Functions, Ports, Protocols, and Services"
-            },
-            {
-              "control_id": "sa-10",
-              "title": "Developer Configuration Management"
-            },
-            {
-              "control_id": "sa-11",
-              "title": "Developer Testing and Evaluation"
-            },
-            {
-              "control_id": "sa-15",
-              "title": "Development Process, Standards, and Tools"
-            }
-          ],
-          "referenced_fr": ["FRD-ALL-07", "FRD-ALL-01"]
+          "retired": true,
+          "statement": "",
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "referenced_fr": ["KSI-AFR-01"]
         },
         {
           "id": "KSI-TPR-03",
           "name": "Supply Chain Risk Management",
-          "statement": "Identify and prioritize mitigation of potential supply chain risks",
+          "statement": "Identify and prioritize mitigation of potential supply chain risks.",
           "impact": {
             "low": true,
             "moderate": true
@@ -2998,7 +2858,7 @@
         {
           "id": "KSI-TPR-04",
           "name": "Supply Chain Risk Monitoring",
-          "statement": "Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services",
+          "statement": "Automatically monitor third party software _information resources_ for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
           "impact": {
             "low": true,
             "moderate": true
