@@ -1,20 +1,22 @@
 # FedRAMP Significant Change Notification Requirements
 
-- **Release:** 25.10A
-- **Published:** 2025-10-17  
+- **Release:** 25.11A DRAFT
+- **Published:** 1900-01-01  
 - **Designator:** SCN
-- **Description:** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
+- **Description:** Renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards. THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.
 
 ## Front Matter
 
 ### Effective Date(s) & Overall Applicability
 
 - **FedRAMP 20x**:
-  - This release is effective **2025-06-17** for **20x Phase One Pilot**. 
-  - These requirements apply to all participants in the FedRAMP 20x Phase One pilot.
+  - This release is effective **1900-01-01** for **20x**. 
+  - This policy applies to all FedRAMP 20x authorizations.
+  - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
+  - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
 
 - **FedRAMP Rev5**:
-  - This release is effective **2025-07-07** for **Rev5 Closed Beta**. 
+  - This release is effective **2025-07-07** for **Rev5 Beta**. 
   - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.
   - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
 
@@ -158,32 +160,32 @@ _Applies to:_ Low, Moderate, High
 
 ---   
 
-### FRR-SCN-TF
+### FRR-SCN-TR
 
 **These requirements apply ONLY to _significant changes_ of type _transformative_.**
 
-#### FRR-SCN-TF-01
+#### FRR-SCN-TR-01
 _Applies to:_ Low, Moderate, High
 
 > Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.
 
-#### FRR-SCN-TF-02
+#### FRR-SCN-TR-02
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.
 
-#### FRR-SCN-TF-03
+#### FRR-SCN-TR-03
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.
 
-#### FRR-SCN-TF-04
+#### FRR-SCN-TR-04
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after finishing _transformative_ changes, also including the following information:
 > 1. Updates to all previously sent information
 
-#### FRR-SCN-TF-05
+#### FRR-SCN-TR-05
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST notify all necessary parties within 5 business days after completing the verification, assessment, and/or validation of _transformative_ changes, also including the following information:
@@ -191,12 +193,12 @@ _Applies to:_ Low, Moderate, High
 > 1. Summary of any new risks identified and/or POA&amp;Ms resulting from the change (if applicable)
 > 1. Copy of the security assessment report (if applicable)
 
-#### FRR-SCN-TF-06
+#### FRR-SCN-TR-06
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.
 
-#### FRR-SCN-TF-07
+#### FRR-SCN-TR-07
 _Applies to:_ Low, Moderate, High
 
 > Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.
@@ -286,7 +288,7 @@ Examples:
 ---   
     
 
-#### FRA-SCN-TF
+#### FRA-SCN-TR
 
 Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.
 

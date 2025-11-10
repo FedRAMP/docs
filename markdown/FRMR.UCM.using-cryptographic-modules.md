@@ -12,6 +12,8 @@
 - **FedRAMP 20x**:
   - This release is effective **2025-11-01** for **20x**. 
   - This policy applies to all FedRAMP 20x authorizations.
+  - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
+  - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
 
 - **FedRAMP Rev5**:
   - This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP&#x27;s Policy for Cryptographic Module Selection and Use.

@@ -20,7 +20,11 @@
                 "designator": "20x"
               }
             },
-            "comments": ["This policy applies to all FedRAMP 20x authorizations."]
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations.",
+              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
+              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
+            ]
           },
           "Rev5": {
             "comments": ["This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP's Policy for Cryptographic Module Selection and Use."]

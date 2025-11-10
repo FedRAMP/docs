@@ -4,9 +4,42 @@
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
-    "current_release": "25.10A",
+    "current_release": "25.11A DRAFT",
     "types": ["FRR", "FRA"],
     "releases": [
+      {
+        "id": "25.11A DRAFT",
+        "published_date": "1900-01-01",
+        "description": "Renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with \"timeframe\" rulesets in other FedRAMP standards. THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.",
+        "public_comment": false,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "1900-01-01",
+                "designator": "20x"
+              }
+            },
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations.",
+              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
+              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
+            ]
+          },
+          "Rev5": {
+            "timeline": {
+              "closed_beta": {
+                "start_date": "2025-07-07",
+                "designator": "Rev5 Beta"
+              }
+            },
+            "comments": [
+              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.",
+              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
+            ]
+          }
+        }
+      },
       {
         "id": "25.10A",
         "published_date": "2025-10-17",
@@ -296,11 +329,11 @@
       },
       "transformative": {
         "application": "These requirements apply ONLY to _significant changes_ of type _transformative_.",
-        "id": "FRR-SCN-TF",
+        "id": "FRR-SCN-TR",
         "referenced_fr": ["FRD-ALL-08", "FRD-ALL-11"],
         "requirements": [
           {
-            "id": "FRR-SCN-TF-01",
+            "id": "FRR-SCN-TR-01",
             "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
@@ -308,7 +341,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-02",
+            "id": "FRR-SCN-TR-02",
             "statement": "Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -316,7 +349,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-03",
+            "id": "FRR-SCN-TR-03",
             "statement": "Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -324,7 +357,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-04",
+            "id": "FRR-SCN-TR-04",
             "statement": "Providers MUST notify all necessary parties within 5 business days after finishing _transformative_ changes, also including the following information:",
             "following_information": [
               "Updates to all previously sent information"
@@ -335,7 +368,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-05",
+            "id": "FRR-SCN-TR-05",
             "statement": "Providers MUST notify all necessary parties within 5 business days after completing the verification, assessment, and/or validation of _transformative_ changes, also including the following information:",
             "following_information": [
               "Updates to all previously sent information",
@@ -348,7 +381,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-06",
+            "id": "FRR-SCN-TR-06",
             "statement": "Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -356,7 +389,7 @@
             "impact": { "low": true, "moderate": true, "high": true }
           },
           {
-            "id": "FRR-SCN-TF-07",
+            "id": "FRR-SCN-TR-07",
             "statement": "Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -392,7 +425,7 @@
           "id": "FRA-SCN-03",
           "applies_to": "FRR-SCN-03",
           "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change.",
-            "impact": { "low": true, "moderate": true, "high": true }
+          "impact": { "low": true, "moderate": true, "high": true }
         },
         {
           "id": "FRA-SCN-RR",
@@ -432,10 +465,10 @@
           ]
         },
         {
-          "id": "FRA-SCN-TF",
-          "applies_to": "FRR-SCN-TF",
+          "id": "FRA-SCN-TR",
+          "applies_to": "FRR-SCN-TR",
           "statement": "Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.",
-            "impact": { "low": true, "moderate": true, "high": true },
+          "impact": { "low": true, "moderate": true, "high": true },
           "examples": [
             {
               "id": "Transformative changes",
