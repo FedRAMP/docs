@@ -1,4 +1,4 @@
-# FedRAMP FedRAMP 20x All Impact Requirements
+# FedRAMP 20x All Impact Requirements
 
 - **Release:** Untracked
 - **Published:** 2025-11-05  

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Standard",
+    "name": "Continuous Collaborative Monitoring Standard",
     "short_name": "CCM",
     "current_release": "25.00A DRAFT",
     "types": ["FRR"],

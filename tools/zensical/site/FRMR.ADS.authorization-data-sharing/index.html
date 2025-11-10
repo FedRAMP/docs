@@ -1,0 +1,1733 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An experiment FedRAMP Documentation site.">
+      
+      
+        <meta name="author" content="pete@fedramp.gov">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../FRMR.CCM.collaborative-continuous-monitoring/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.5">
+    
+    
+      
+        <title>Authorization Data Sharing Standard - FedRAMP Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1357c24d.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <style>:root{}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#authorization-data-sharing-standard" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FedRAMP Documentation" class="md-header__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FedRAMP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authorization Data Sharing Standard
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FedRAMP Documentation" class="md-nav__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    FedRAMP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Data Sharing Standard
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Data Sharing Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements and Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements and Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-10
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-AC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-TC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-EX
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-EX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ex-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-EX-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.CCM.collaborative-continuous-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.FRD.fedramp-definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.ICP.incident-communications-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Communications Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators-with-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.MAS.minimum-assessment-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minimum Assessment Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.RSC.recommended-secure-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommended Secure Configuration Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.SCN.significant-change-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Significant Change Notification Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.UCM.using-cryptographic-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Cryptographic Modules Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.VDR.vulnerability-detection-and-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vulnerability Detection and Response Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements and Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements and Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-10
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-AC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ac-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-AC-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-TC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-tc-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-TC-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-EX
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ADS-EX">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-ads-ex-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ADS-EX-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="authorization-data-sharing-standard">Authorization Data Sharing Standard<a class="headerlink" href="#authorization-data-sharing-standard" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Release:</strong> 25.10A</li>
+<li><strong>Published:</strong> 2025-10-17  </li>
+<li><strong>Designator:</strong> ADS</li>
+<li><strong>Description:</strong> Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.</li>
+</ul>
+<h2 id="front-matter">Front Matter<a class="headerlink" href="#front-matter" title="Permanent link">&para;</a></h2>
+<h3 id="effective-dates-overall-applicability">Effective Date(s) &amp; Overall Applicability<a class="headerlink" href="#effective-dates-overall-applicability" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>FedRAMP 20x</strong>:</li>
+<li>This release is effective <strong>2025-09-01</strong> for <strong>20x Phase One Pilot</strong>. </li>
+<li>
+<p>These requirements and recommendations apply to all participants in the FedRAMP 20x Phase One pilot.</p>
+</li>
+<li>
+<p><strong>FedRAMP Rev5</strong>:</p>
+</li>
+<li>This release is effective <strong>2025-09-01</strong> for <strong>Rev5 Closed Beta</strong>. </li>
+<li>Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at <a href="https://www.fedramp.gov/community/">https://www.fedramp.gov/community/</a> to follow this process.</li>
+<li>Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.</li>
+</ul>
+<h3 id="documentation-guidelines">Documentation Guidelines<a class="headerlink" href="#documentation-guidelines" title="Permanent link">&para;</a></h3>
+<p>The following FedRAMP documentation guidelines apply to this document:</p>
+<ul>
+<li>The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/rfc2119">IETF RFC 2119</a>.</li>
+<li>FedRAMP-specific terms defined in <a href="https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md">FRD-ALL (FedRAMP Definitions)</a> are italicized throughout this document for reference.</li>
+</ul>
+<h2 id="background-authority">Background &amp; Authority<a class="headerlink" href="#background-authority" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609">44 USC § 3609 (a)(8)</a> The FedRAMP Authorization Act directs the Administrator of the General Services Administration to &quot;provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...&quot;</li>
+<li><a href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf">OMB Memorandum M-24-15 on Modernizing FedRAMP</a> Section 6 states that &quot;In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs&#x27; commercial customer base.&quot;</li>
+</ul>
+<h3 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h3>
+<p>Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.</p>
+<p>This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not <em>federal customer data</em> in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.</p>
+<p>The FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.</p>
+<p>At the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.</p>
+<p><em>* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government.</em></p>
+<h3 id="expected-outcomes">Expected Outcomes<a class="headerlink" href="#expected-outcomes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cloud service providers will be able to manage authorization data in the same platforms used for commercial customers, reusing data as appropriate</li>
+<li>Federal agencies will be able to access necessary authorization data via API or other automated mechanisms integrated into agency authorization systems to simplify the burden of review and continuous monitoring</li>
+<li>Trust center providers and GRC automation tool providers will develop innovative solutions and improvements to ensure standardized automated data sharing and validation within the FedRAMP ecosystem</li>
+</ul>
+<hr />
+<h2 id="requirements-and-recommendations">Requirements and Recommendations<a class="headerlink" href="#requirements-and-recommendations" title="Permanent link">&para;</a></h2>
+<h3 id="frr-ads">FRR-ADS<a class="headerlink" href="#frr-ads" title="Permanent link">&para;</a></h3>
+<p><strong>These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.</strong></p>
+<h4 id="frr-ads-01">FRR-ADS-01<a class="headerlink" href="#frr-ads-01" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST publicly share up-to-date information about the <em>cloud service offering</em> in both human-readable and <em>machine-readable</em> formats, including at least:
+1. Direct link to the FedRAMP Marketplace for the offering
+1. Service Model
+1. Deployment Model
+1. Business Category
+1. UEI Number
+1. Contact Information
+1. Overall Service Description
+1. Detailed list of specific services and their impact levels (see FRR-ADS-03)
+1. Summary of customer responsibilities and secure configuration guidance
+1. Process for accessing information in the <em>trust center</em> (if applicable)
+1. Availability status and recent disruptions for the <em>trust center</em> (if applicable)
+1. Customer support information for the <em>trust center</em> (if applicable)</p>
+</blockquote>
+<h4 id="frr-ads-02">FRR-ADS-02<a class="headerlink" href="#frr-ads-02" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST use automation to ensure information remains consistent between human-readable and <em>machine-readable</em> formats when <em>authorization data</em> is provided in both formats; Providers SHOULD generate human-readable and <em>machine-readable</em> data from the same source at the same time OR generate human-readable formats directly from <em>machine-readable</em> data.</p>
+</blockquote>
+<h4 id="frr-ads-03">FRR-ADS-03<a class="headerlink" href="#frr-ads-03" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST share a detailed list of specific services and their impact levels that are included in the <em>cloud service offering</em> using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying <em>authorization data</em>.</p>
+</blockquote>
+<h4 id="frr-ads-04">FRR-ADS-04<a class="headerlink" href="#frr-ads-04" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST share <em>authorization data</em> with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. </p>
+</blockquote>
+<h4 id="frr-ads-05">FRR-ADS-05<a class="headerlink" href="#frr-ads-05" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST provide sufficient information in <em>authorization data</em> to support authorization decisions but SHOULD NOT include sensitive information that would <em>likely</em> enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the <em>cloud service offering</em>. </p>
+</blockquote>
+<h4 id="frr-ads-06">FRR-ADS-06<a class="headerlink" href="#frr-ads-06" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers of FedRAMP Rev5 Authorized <em>cloud service offerings</em> MUST share <em>authorization data</em> via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible <em>trust center</em>.</p>
+</blockquote>
+<h4 id="frr-ads-07">FRR-ADS-07<a class="headerlink" href="#frr-ads-07" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers of FedRAMP 20x Authorized <em>cloud service offerings</em> MUST use a FedRAMP-compatible <em>trust center</em> to store and share <em>authorization data</em> with all necessary parties.</p>
+</blockquote>
+<h4 id="frr-ads-08">FRR-ADS-08<a class="headerlink" href="#frr-ads-08" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST notify all necessary parties when migrating to a <em>trust center</em> and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the <em>trust center</em> to obtain <em>authorization data</em>.</p>
+</blockquote>
+<h4 id="frr-ads-09">FRR-ADS-09<a class="headerlink" href="#frr-ads-09" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST make historical versions of <em>authorization data</em> available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.</p>
+</blockquote>
+<h4 id="frr-ads-10">FRR-ADS-10<a class="headerlink" href="#frr-ads-10" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers SHOULD follow FedRAMP’s best practices and technical assistance for sharing <em>authorization data</em> where applicable.</p>
+</blockquote>
+<hr />
+<h3 id="frr-ads-ac">FRR-ADS-AC<a class="headerlink" href="#frr-ads-ac" title="Permanent link">&para;</a></h3>
+<p><strong>These requirements for managing access apply to cloud service providers who establish FedRAMP-compatible <em>trust centers</em> for storing and sharing <em>authorization data</em>.</strong></p>
+<h4 id="frr-ads-ac-01">FRR-ADS-AC-01<a class="headerlink" href="#frr-ads-ac-01" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to <em>authorization data</em> stored in the <em>trust center</em>.</p>
+</blockquote>
+<h4 id="frr-ads-ac-02">FRR-ADS-AC-02<a class="headerlink" href="#frr-ads-ac-02" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers SHOULD share at least the <em>authorization package</em> with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  </p>
+</blockquote>
+<hr />
+<h3 id="frr-ads-tc">FRR-ADS-TC<a class="headerlink" href="#frr-ads-tc" title="Permanent link">&para;</a></h3>
+<p><strong>These requirements apply to FedRAMP-compatible <em>trust centers</em> used to store and share <em>authorization data</em>.</strong></p>
+<h4 id="frr-ads-tc-01">FRR-ADS-TC-01<a class="headerlink" href="#frr-ads-tc-01" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> MUST be included as an <em>information resource</em> included in the <em>cloud service offering</em> for assessment if FRR-MAS-01 applies. </p>
+</blockquote>
+<h4 id="frr-ads-tc-02">FRR-ADS-TC-02<a class="headerlink" href="#frr-ads-tc-02" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> SHOULD make <em>authorization data</em> available to view and download in both human-readable and <em>machine-readable</em> formats</p>
+</blockquote>
+<h4 id="frr-ads-tc-03">FRR-ADS-TC-03<a class="headerlink" href="#frr-ads-tc-03" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> MUST provide documented programmatic access to all <em>authorization data</em>, including programmatic access to human-readable materials.</p>
+</blockquote>
+<h4 id="frr-ads-tc-04">FRR-ADS-TC-04<a class="headerlink" href="#frr-ads-tc-04" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> SHOULD include features that encourage all necessary parties to provision and manage access to <em>authorization data</em> for their users and services directly.</p>
+</blockquote>
+<h4 id="frr-ads-tc-05">FRR-ADS-TC-05<a class="headerlink" href="#frr-ads-tc-05" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> MUST maintain an inventory and history of federal agency users or systems with access to <em>authorization data</em> and MUST make this information available to FedRAMP without interruption. </p>
+</blockquote>
+<h4 id="frr-ads-tc-06">FRR-ADS-TC-06<a class="headerlink" href="#frr-ads-tc-06" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> MUST log access to <em>authorization data</em> and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.</p>
+</blockquote>
+<h4 id="frr-ads-tc-07">FRR-ADS-TC-07<a class="headerlink" href="#frr-ads-tc-07" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p><em>Trust centers</em> SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.</p>
+</blockquote>
+<hr />
+<h3 id="frr-ads-ex">FRR-ADS-EX<a class="headerlink" href="#frr-ads-ex" title="Permanent link">&para;</a></h3>
+<p><strong>These exceptions MAY override some or all of the FedRAMP requirements for this standard.</strong></p>
+<h4 id="frr-ads-ex-01">FRR-ADS-EX-01<a class="headerlink" href="#frr-ads-ex-01" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers of FedRAMP Rev5 Authorized <em>cloud service offerings</em> at FedRAMP High using a legacy self-managed repository for <em>authorization data</em> MAY ignore the requirements in this standard until future notice.</p>
+</blockquote>
+<hr />
+<h1 id="technical-assistance">Technical assistance<a class="headerlink" href="#technical-assistance" title="Permanent link">&para;</a></h1>
+<h3 id="fra-ads">FRA-ADS<a class="headerlink" href="#fra-ads" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP <em>authorization data</em> Sharing Standard.</p>
+<p><strong>Disclaimer:</strong> Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.</p>
+<hr />
+<h4 id="fra-ads-04">FRA-ADS-04<a class="headerlink" href="#fra-ads-04" title="Permanent link">&para;</a></h4>
+<p>&quot;Without interruption&quot; means that parties should not have to request manual approval each time they need to access <em>authorization data</em> or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.</p>
+<hr />
+<h4 id="fra-ads-05">FRA-ADS-05<a class="headerlink" href="#fra-ads-05" title="Permanent link">&para;</a></h4>
+<p>This is not a license to exclude accurate risk information, but specifics that would <em>likely</em> lead to compromise should be abstracted. A breach of confidentiality with <em>authorization data</em> should be anticipated by a secure cloud service provider.</p>
+<h5 id="examples-of-unnecessary-sensitive-information-in-authorization-data">Examples of unnecessary sensitive information in <em>authorization data</em><a class="headerlink" href="#examples-of-unnecessary-sensitive-information-in-authorization-data" title="Permanent link">&para;</a></h5>
+<p>Key Tests:</p>
+<ul>
+<li>Passwords, API keys, access credentials, etc.</li>
+<li>Excessive detail about methodology that exposes weaknesses</li>
+<li>Personally identifiable information about employees</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>DON&#x27;T: &quot;In an emergency, an administrator with physical access to a system can log in using &quot;secretadmin&quot; with the password &quot;pleasewutno&quot;&quot; DO: &quot;In an emergency, administrators with physical access can log in directly.&quot;</li>
+<li>DON&#x27;T: &quot;All backup MFA credentials are stored in a SuperSafe Series 9000 safe in the CEOs office.&quot; DO: &quot;All backup MFA credentials are stored in a UL Class 350 safe in a secure location with limited access.&quot;</li>
+<li>DON&#x27;T: &quot;During an incident, the incident response team lead by Jim Smith (555-0505) will open a channel at the conference line (555-0101 #97808 passcode 99731)...&quot; DO: &quot;During an incident, the incident response team will coordinate over secure channels.&quot;</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: FedRAMP Docs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                FedRAMP Docs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../FRMR.CCM.collaborative-continuous-monitoring/" class="md-footer__link md-footer__link--next" aria-label="Next: Standard">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Standard
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1193bd74.min.js"></script>
+      
+    
+  </body>
+</html>

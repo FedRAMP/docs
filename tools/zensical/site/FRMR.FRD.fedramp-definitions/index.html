@@ -1,0 +1,2173 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An experiment FedRAMP Documentation site.">
+      
+      
+        <meta name="author" content="pete@fedramp.gov">
+      
+      
+      
+        <link rel="prev" href="../FRMR.CCM.collaborative-continuous-monitoring/">
+      
+      
+        <link rel="next" href="../FRMR.ICP.incident-communications-procedures/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.5">
+    
+    
+      
+        <title>FedRAMP Definitions - FedRAMP Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1357c24d.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <style>:root{}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fedramp-definitions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FedRAMP Documentation" class="md-header__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FedRAMP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FedRAMP Definitions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FedRAMP Documentation" class="md-nav__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    FedRAMP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.ADS.authorization-data-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Data Sharing Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.CCM.collaborative-continuous-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Definitions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-17
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-18
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-19
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-20
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-22
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-24
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-26
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-27
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-28
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-29
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-30
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-31
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-33
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-34
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-35
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-36
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-37
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-38
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-39
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-41
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-42
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-43
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-44
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.ICP.incident-communications-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Communications Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators-with-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.MAS.minimum-assessment-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minimum Assessment Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.RSC.recommended-secure-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommended Secure Configuration Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.SCN.significant-change-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Significant Change Notification Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.UCM.using-cryptographic-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Cryptographic Modules Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.VDR.vulnerability-detection-and-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vulnerability Detection and Response Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-15
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-17
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-18
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-19
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-20
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-22
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-24
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-26
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-27
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-28
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-29
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-30
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-31
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-33
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-34
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-35
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-36
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-37
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-38
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-39
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-40
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-41
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-42
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-43
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frd-all-44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRD-ALL-44
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="fedramp-definitions">FedRAMP Definitions<a class="headerlink" href="#fedramp-definitions" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Release:</strong> 25.11A</li>
+<li><strong>Published:</strong> 2025-11-08  </li>
+<li><strong>Designator:</strong> FRD</li>
+<li><strong>Description:</strong> Added FRD-ALL-40 through FRD-ALL-44 to support updates to various standards.</li>
+</ul>
+<h2 id="front-matter">Front Matter<a class="headerlink" href="#front-matter" title="Permanent link">&para;</a></h2>
+<h3 id="effective-dates-overall-applicability">Effective Date(s) &amp; Overall Applicability<a class="headerlink" href="#effective-dates-overall-applicability" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>FedRAMP 20x</strong>:</li>
+<li>This release is effective <strong>2025-06-01</strong> for <strong>20x Phase One Pilot</strong>. </li>
+<li>
+<p>These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials.</p>
+</li>
+<li>
+<p><strong>FedRAMP Rev5</strong>:</p>
+</li>
+<li>This release is effective <strong>2025-06-01</strong> for <strong>Rev5 Balance Improvement Releases</strong>. </li>
+<li>These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release.</li>
+</ul>
+<h3 id="documentation-guidelines">Documentation Guidelines<a class="headerlink" href="#documentation-guidelines" title="Permanent link">&para;</a></h3>
+<p>The following FedRAMP documentation guidelines apply to this document:</p>
+<ul>
+<li>The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/rfc2119">IETF RFC 2119</a>.</li>
+<li>FedRAMP-specific terms defined in <a href="https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md">FRD-ALL (FedRAMP Definitions)</a> are italicized throughout this document for reference.</li>
+</ul>
+<h2 id="background-authority">Background &amp; Authority<a class="headerlink" href="#background-authority" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609">FedRAMP Authorization Act (44 USC § 3608)</a> requires that the Administrator of the General Services Administration shall &quot;establish a Government- wide program that provides a standardized, reusable approach to security assessment and authorization for cloud computing products and services that process unclassified information used by agencies&quot;</li>
+</ul>
+<h3 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h3>
+<p>This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.</p>
+<h3 id="expected-outcomes">Expected Outcomes<a class="headerlink" href="#expected-outcomes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>All stakeholders will have a common understanding of key terms used in FedRAMP standards.</li>
+</ul>
+<hr />
+<h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
+<h4 id="frd-all-01">FRD-ALL-01<a class="headerlink" href="#frd-all-01" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Federal Customer Data</strong>: All electronic information, content, and materials that an <em>agency</em> or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.</p>
+<p><em>Note: In the context of FedRAMP authorization, &quot;federal customer data&quot; ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific _agencies</em> may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the <em>agency</em>; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data._</p>
+</blockquote>
+<h4 id="frd-all-02">FRD-ALL-02<a class="headerlink" href="#frd-all-02" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Information Resource</strong>: Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;</p>
+<p><em>Note: This applies to any aspect of the _cloud service offering</em>, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code._</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502">Reference: 44 USC § 3502 (6)</a></em></p>
+</blockquote>
+<h4 id="frd-all-03">FRD-ALL-03<a class="headerlink" href="#frd-all-03" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Handle</strong>: Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.</p>
+</blockquote>
+<h4 id="frd-all-04">FRD-ALL-04<a class="headerlink" href="#frd-all-04" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Likely</strong>: A reasonable degree of probability based on context.</p>
+</blockquote>
+<h4 id="frd-all-05">FRD-ALL-05<a class="headerlink" href="#frd-all-05" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Third-party Information Resource</strong>: Any <em>information resource</em> that is not entirely included in the assessment for the <em>cloud service offering</em> seeking authorization.</p>
+</blockquote>
+<h4 id="frd-all-06">FRD-ALL-06<a class="headerlink" href="#frd-all-06" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Cloud Service Offering</strong>: A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.</p>
+</blockquote>
+<h4 id="frd-all-07">FRD-ALL-07<a class="headerlink" href="#frd-all-07" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Regularly</strong>: Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.</p>
+</blockquote>
+<h4 id="frd-all-08">FRD-ALL-08<a class="headerlink" href="#frd-all-08" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Significant change</strong>: Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is <em>likely</em> to substantively affect the security or privacy posture of a system.&quot;</p>
+<p><em><a href="https://csrc.nist.gov/pubs/sp/800/37/r2/final">Reference: NIST SP 800-37 Rev. 2</a></em></p>
+</blockquote>
+<h4 id="frd-all-09">FRD-ALL-09<a class="headerlink" href="#frd-all-09" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Routine Recurring</strong>: The type of <em>significant change</em> that <em>regularly</em> and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.</p>
+</blockquote>
+<h4 id="frd-all-10">FRD-ALL-10<a class="headerlink" href="#frd-all-10" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Adaptive</strong>: The type of <em>significant change</em> that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.</p>
+<p><em>Note: Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.</em></p>
+</blockquote>
+<h4 id="frd-all-11">FRD-ALL-11<a class="headerlink" href="#frd-all-11" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Transformative</strong>: The type of <em>significant change</em> that introduces substantive potential security risks that are <em>likely</em> to affect existing risk determinations and must be assessed in depth.</p>
+<p><em>Note: Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.</em></p>
+</blockquote>
+<h4 id="frd-all-12">FRD-ALL-12<a class="headerlink" href="#frd-all-12" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Impact Categorization</strong>: The type of <em>significant change</em> that is <em>likely</em> to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).</p>
+</blockquote>
+<h4 id="frd-all-13">FRD-ALL-13<a class="headerlink" href="#frd-all-13" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Interim Requirement</strong>: A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will <em>likely</em> be replaced, updated, or removed prior to the formal wide release of the requirement.</p>
+</blockquote>
+<h4 id="frd-all-14">FRD-ALL-14<a class="headerlink" href="#frd-all-14" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Authorization Package</strong>: Has meaning from 44 USC § 3607 (b)(8) which is &quot;the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.&quot;</p>
+<p><em>Note: In FedRAMP documentation, _authorization package</em> always refers to a FedRAMP <em>authorization package</em> unless otherwise specified._</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607">Reference: 44 USC § 3607 (b)(8)</a></em></p>
+</blockquote>
+<h4 id="frd-all-15">FRD-ALL-15<a class="headerlink" href="#frd-all-15" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Authorization data</strong>: The collective information required by FedRAMP for initial and ongoing assessment and authorization of a <em>cloud service offering</em>, including the <em>authorization package</em>. </p>
+<p><em>Note: In FedRAMP documentation, _authorization data</em> always refers to FedRAMP <em>authorization data</em> unless otherwise specified._</p>
+</blockquote>
+<h4 id="frd-all-16">FRD-ALL-16<a class="headerlink" href="#frd-all-16" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Trust Center</strong>: A secure repository or service used by cloud service providers to store and share <em>authorization data</em>. <em>Trust centers</em> are the complete and definitive source for <em>authorization data</em> and must meet the requirements outlined in the FedRAMP <em>authorization data</em> Sharing Standard to be FedRAMP-compatible.</p>
+<p><em>Note: In FedRAMP documentation, all references to _trust centers</em> indicate FedRAMP-compatible <em>trust centers</em> unless otherwise specified._</p>
+</blockquote>
+<h4 id="frd-all-17">FRD-ALL-17<a class="headerlink" href="#frd-all-17" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Machine-Readable</strong>: Has the meaning from 44 U.S. Code § 3502 (18) which is &quot;the term &quot;<em>machine-readable</em>&quot;, when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost&quot;</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502">Reference: 44 U.S. Code § 3502 (18)</a></em></p>
+</blockquote>
+<h4 id="frd-all-18">FRD-ALL-18<a class="headerlink" href="#frd-all-18" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>All Necessary Parties</strong>: All entities whose interests are affected directly by activity related to a specific <em>cloud service offering</em> in the context of a FedRAMP authorization. This always includes FedRAMP and any <em>agency</em> customer who is operating the <em>cloud service offering</em>, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential <em>agency</em> customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.</p>
+</blockquote>
+<h4 id="frd-all-19">FRD-ALL-19<a class="headerlink" href="#frd-all-19" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Agency</strong>: Has the meaning given in 44 U.S. Code § 3502 (1), which is &quot;any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.&quot;</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502">Reference: 44 U.S. Code § 3502 (1)</a></em></p>
+</blockquote>
+<h4 id="frd-all-20">FRD-ALL-20<a class="headerlink" href="#frd-all-20" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Vulnerability</strong>: Has the meaning given to &quot;security vulnerability&quot; in 6 USC § 650 (25), which is &quot;any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.&quot; This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650">Reference: 6 USC § 650 (25)</a></em></p>
+</blockquote>
+<h4 id="frd-all-21">FRD-ALL-21<a class="headerlink" href="#frd-all-21" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Vulnerability Detection</strong>: The systematic process of discovering and identifying security vulnerabilities in <em>information resources</em> through assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other capabilities. This process includes the initial discovery of a <em>vulnerability&#x27;s</em> existence and the determination of affected <em>information resources</em> within a <em>cloud service offering.</em></p>
+<p><em>Note: This definition applies to other forms such as &quot;detect vulnerabilities&quot; or simply &quot;detection&quot; / &quot;detected&quot; used in FedRAMP materials.</em></p>
+</blockquote>
+<h4 id="frd-all-22">FRD-ALL-22<a class="headerlink" href="#frd-all-22" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Vulnerability Response</strong>: The systematic process of tracking, evaluating, mitigating, monitoring, remediating, assessing exploitation, reporting, and otherwise managing <em>detected vulnerabilities</em>.</p>
+<p><em>Note: This definition applies to other forms such as &quot;respond to vulnerabilities&quot; or simply &quot;response&quot; / &quot;responded&quot; used in FedRAMP materials.</em></p>
+</blockquote>
+<h4 id="frd-all-23">FRD-ALL-23<a class="headerlink" href="#frd-all-23" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Likely Exploitable Vulnerability (LEV)</strong>: A vulnerability that is not <em>fully mitigated</em>, AND is reachable by a <em>likely</em> threat actor, AND a <em>likely</em> threat actor with knowledge of the <em>vulnerability</em> would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the <em>cloud service offering</em> by exploiting the <em>vulnerability</em>.</p>
+<p><em>Notes:</em>
+ - <em>The opposite of this is a &quot;Not Likely Exploitable Vulnerability&quot; (NLEV).</em>
+ - <em>At the absolute minimum, any _vulnerability</em> that an automated unauthenticated system can exploit over the internet is a <em>likely exploitable vulnerability</em>._</p>
+</blockquote>
+<h4 id="frd-all-24">FRD-ALL-24<a class="headerlink" href="#frd-all-24" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Internet-Reachable Vulnerability (IRV)</strong>: A <em>vulnerability</em> in a machine-based <em>information resource</em> that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based <em>information resources</em> that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.</p>
+<p><em>Notes:</em>
+ - <em>The opposite of this is a &quot;Not Internet-reachable Vulnerability&quot; (NIRV).</em>
+ - <em>Internet-reachability applies only to the specific vulnerable machine-based _information resources</em> processing the payload; please review the relevant FedRAMP technical assistance on <em>internet-reachable vulnerabilities</em> for examples._</p>
+</blockquote>
+<h4 id="frd-all-25">FRD-ALL-25<a class="headerlink" href="#frd-all-25" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Known Exploited Vulnerability (KEV)</strong>: Has the meaning given in CISA Binding Operational Directive 22-01, which is any <em>vulnerability</em> identified in CISA&#x27;s Known Exploited Vulnerabilities catalog.</p>
+<p><em><a href="https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities">Reference: CISA BOD 22-01</a></em></p>
+</blockquote>
+<h4 id="frd-all-26">FRD-ALL-26<a class="headerlink" href="#frd-all-26" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Remediated Vulnerability</strong>: A <em>vulnerability</em> that has been neutralized or eliminated and is no longer <em>detected</em>.</p>
+</blockquote>
+<h4 id="frd-all-27">FRD-ALL-27<a class="headerlink" href="#frd-all-27" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Partially Mitigated Vulnerability</strong>: A <em>vulnerability</em> where the likelihood or <em>potential adverse impact</em> of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the <em>vulnerability</em> is still <em>detected</em>.</p>
+</blockquote>
+<h4 id="frd-all-28">FRD-ALL-28<a class="headerlink" href="#frd-all-28" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Fully Mitigated Vulnerability</strong>: A <em>vulnerability</em> where the likelihood of exploitation or <em>potential adverse impact</em> of exploitation has been reduced from the original evaluation until either are negligible, but the <em>vulnerability</em> is still <em>detected</em>.</p>
+</blockquote>
+<h4 id="frd-all-29">FRD-ALL-29<a class="headerlink" href="#frd-all-29" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>False Positive Vulnerability</strong>: A <em>detected vulnerability</em> that is not actually present in an exploitable state in the <em>information resource</em>; this includes situations where vulnerable software or code exist on an machine-based <em>information resource</em> but are not loaded, running, or otherwise in an operating state required for exploitation.</p>
+<p><em>Note: This only applies if the _vulnerability</em> is not and was not present; a <em>remediated vulnerability</em> or a <em>fully mitigated vulnerability</em> cannot also be a <em>false positive vulnerability</em>._</p>
+</blockquote>
+<h4 id="frd-all-30">FRD-ALL-30<a class="headerlink" href="#frd-all-30" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Overdue Vulnerability</strong>: A <em>vulnerability</em> that the provider intends to <em>fully mitigate</em> or <em>remediate</em> but has not or will not do so within the time frames recommended or required by FedRAMP.</p>
+</blockquote>
+<h4 id="frd-all-31">FRD-ALL-31<a class="headerlink" href="#frd-all-31" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Accepted Vulnerability</strong>: A <em>vulnerability</em> that the provider does not intend to <em>fully mitigate</em> or <em>remediate</em>, OR that has not or will not be <em>fully mitigated</em> or <em>remediated</em> within the maximum overdue period recommended or required by FedRAMP.</p>
+</blockquote>
+<h4 id="frd-all-32">FRD-ALL-32<a class="headerlink" href="#frd-all-32" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Catastrophic Adverse Effect</strong>: A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would <em>likely</em>: (i) result in a severe degradation in the availability or performance of services within the <em>cloud service offering</em> for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the <em>federal customer data</em> stored within the <em>cloud service offering</em>.</p>
+</blockquote>
+<h4 id="frd-all-33">FRD-ALL-33<a class="headerlink" href="#frd-all-33" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Serious Adverse Effect</strong>: A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the <em>cloud service offering</em>, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the <em>federal customer data</em> stored within the <em>cloud service offering</em>.</p>
+</blockquote>
+<h4 id="frd-all-34">FRD-ALL-34<a class="headerlink" href="#frd-all-34" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Limited Adverse Effect</strong>: A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the <em>cloud service offering</em> for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the <em>federal customer data</em> stored within the <em>cloud service offering</em> by only a few relevant users.</p>
+</blockquote>
+<h4 id="frd-all-35">FRD-ALL-35<a class="headerlink" href="#frd-all-35" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Negligible Adverse Effect</strong>: A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the <em>cloud service offering</em>; OR (ii) result in degradation of the availability or performance of services within the <em>cloud service offering</em> for only a few relevant users.</p>
+</blockquote>
+<h4 id="frd-all-36">FRD-ALL-36<a class="headerlink" href="#frd-all-36" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Potential Adverse Impact (of vulnerability exploitation)</strong>: The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that <em>likely</em> could result if a threat actor exploits a <em>vulnerability</em> in the <em>cloud service offering</em>; as estimated following FedRAMP recommendations and requirements.</p>
+</blockquote>
+<h4 id="frd-all-37">FRD-ALL-37<a class="headerlink" href="#frd-all-37" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Promptly</strong>: Without Unnecessary Delay.</p>
+<p><em>Note: The use of _promptly</em> in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a <em>cloud service offering</em>._</p>
+</blockquote>
+<h4 id="frd-all-38">FRD-ALL-38<a class="headerlink" href="#frd-all-38" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Persistently</strong>: Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. </p>
+<p><em>Note: The use of _persistently</em> indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of &quot;continuous&quot; in federal information security policies._</p>
+</blockquote>
+<h4 id="frd-all-39">FRD-ALL-39<a class="headerlink" href="#frd-all-39" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Drift</strong>: Changes to <em>information resources</em> that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.</p>
+</blockquote>
+<h4 id="frd-all-40">FRD-ALL-40<a class="headerlink" href="#frd-all-40" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Incident</strong>: Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is &quot;an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].&quot;</p>
+<p><em><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552">Reference: 44 USC § 3552 (b)(2)</a></em></p>
+</blockquote>
+<h4 id="frd-all-41">FRD-ALL-41<a class="headerlink" href="#frd-all-41" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Top-level administrative account</strong>: The most privileged account with the highest level of access within a <em>cloud service offering</em> for a customer organization, typically with complete control over all aspects of the <em>cloud service offering</em>, including managing resources, users, access, privileges, and the account itself.</p>
+<p><em>Note: Any references to _top-level administrative accounts</em> in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign <em>top-level administrative account</em> privileges._</p>
+</blockquote>
+<h4 id="frd-all-42">FRD-ALL-42<a class="headerlink" href="#frd-all-42" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Privileged account</strong>: An account with elevated privileges that enables administrative functions over some aspect of the <em>cloud service offering</em> that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.</p>
+<p><em>Note: Any references to _privileged accounts</em> in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to <em>privileged accounts</em>._</p>
+</blockquote>
+<h4 id="frd-all-43">FRD-ALL-43<a class="headerlink" href="#frd-all-43" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Ongoing Authorization Report</strong>: A <em>regular</em> report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.</p>
+</blockquote>
+<h4 id="frd-all-44">FRD-ALL-44<a class="headerlink" href="#frd-all-44" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Quarterly Review</strong>: A <em>regular</em> synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../FRMR.CCM.collaborative-continuous-monitoring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Standard">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Standard
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../FRMR.ICP.incident-communications-procedures/" class="md-footer__link md-footer__link--next" aria-label="Next: Incident Communications Procedures">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Incident Communications Procedures
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1193bd74.min.js"></script>
+      
+    
+  </body>
+</html>

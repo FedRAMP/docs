@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An experiment FedRAMP Documentation site.">
+      
+      
+        <meta name="author" content="pete@fedramp.gov">
+      
+      
+      
+        <link rel="prev" href="../FRMR.FRD.fedramp-definitions/">
+      
+      
+        <link rel="next" href="../FRMR.KSI.key-security-indicators-with-controls/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.5">
+    
+    
+      
+        <title>Incident Communications Procedures - FedRAMP Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1357c24d.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <style>:root{}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#incident-communications-procedures" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FedRAMP Documentation" class="md-header__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FedRAMP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Incident Communications Procedures
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FedRAMP Documentation" class="md-nav__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    FedRAMP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.ADS.authorization-data-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Data Sharing Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.CCM.collaborative-continuous-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.FRD.fedramp-definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FedRAMP Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Communications Procedures
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Communications Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements and Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements and Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ICP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators-with-controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.KSI.key-security-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.MAS.minimum-assessment-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minimum Assessment Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.RSC.recommended-secure-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommended Secure Configuration Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.SCN.significant-change-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Significant Change Notification Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.UCM.using-cryptographic-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Cryptographic Modules Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRMR.VDR.vulnerability-detection-and-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vulnerability Detection and Response Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#front-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Front Matter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Front Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-dates-overall-applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Date(s) &amp; Overall Applicability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background &amp; Authority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Background &amp; Authority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements and Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements and Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FRR-ICP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-01
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-02
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-03
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-04
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-08
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frr-icp-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FRR-ICP-09
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="incident-communications-procedures">Incident Communications Procedures<a class="headerlink" href="#incident-communications-procedures" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Release:</strong> 25.11A</li>
+<li><strong>Published:</strong> 2025-11-08  </li>
+<li><strong>Designator:</strong> ICP</li>
+<li><strong>Description:</strong> Initial release of simplified 20x version of this existing FedRAMP policy.</li>
+</ul>
+<h2 id="front-matter">Front Matter<a class="headerlink" href="#front-matter" title="Permanent link">&para;</a></h2>
+<h3 id="effective-dates-overall-applicability">Effective Date(s) &amp; Overall Applicability<a class="headerlink" href="#effective-dates-overall-applicability" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>FedRAMP 20x</strong>:</li>
+<li>This release is effective <strong>2025-11-01</strong> for <strong>20x</strong>. </li>
+<li>
+<p>This policy applies to all FedRAMP 20x authorizations.</p>
+</li>
+<li>
+<p><strong>FedRAMP Rev5</strong>:</p>
+</li>
+<li>This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP&#x27;s Incident Communications Procedures.</li>
+</ul>
+<h3 id="documentation-guidelines">Documentation Guidelines<a class="headerlink" href="#documentation-guidelines" title="Permanent link">&para;</a></h3>
+<p>The following FedRAMP documentation guidelines apply to this document:</p>
+<ul>
+<li>The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://datatracker.ietf.org/doc/html/rfc2119">IETF RFC 2119</a>.</li>
+<li>FedRAMP-specific terms defined in <a href="https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md">FRD-ALL (FedRAMP Definitions)</a> are italicized throughout this document for reference.</li>
+</ul>
+<h2 id="background-authority">Background &amp; Authority<a class="headerlink" href="#background-authority" title="Permanent link">&para;</a></h2>
+<h3 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h3>
+<p>This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (<a href="https://www.fedramp.gov/resources/documents/CSP_Incident_Communications_Procedures.pdf">https://www.fedramp.gov/resources/documents/CSP_Incident_Communications_Procedures.pdf</a>) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.</p>
+<p>The only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.</p>
+<hr />
+<h2 id="requirements-and-recommendations">Requirements and Recommendations<a class="headerlink" href="#requirements-and-recommendations" title="Permanent link">&para;</a></h2>
+<h3 id="frr-icp">FRR-ICP<a class="headerlink" href="#frr-icp" title="Permanent link">&para;</a></h3>
+<p><strong>These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.</strong></p>
+<h4 id="frr-icp-01">FRR-ICP-01<a class="headerlink" href="#frr-icp-01" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST responsibly report <em>incidents</em> to FedRAMP within 1 hour of identification by sending an email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#95;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#46;&#103;&#111;&#118;">&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#95;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#46;&#103;&#111;&#118;</a> or <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#95;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#103;&#115;&#97;&#46;&#103;&#111;&#118;">&#102;&#101;&#100;&#114;&#97;&#109;&#112;&#95;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#64;&#103;&#115;&#97;&#46;&#103;&#111;&#118;</a>.</p>
+</blockquote>
+<h4 id="frr-icp-02">FRR-ICP-02<a class="headerlink" href="#frr-icp-02" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST responsibly report <em>incidents</em> to all <em>agency</em> customers within 1 hour of identification using the <em>incident</em> communications points of contact provided by each <em>agency</em> customer.</p>
+</blockquote>
+<h4 id="frr-icp-03">FRR-ICP-03<a class="headerlink" href="#frr-icp-03" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST responsibly report <em>incidents</em> to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at <a href="https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy">https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy</a>, following the CISA Federal Incident Notification Guidelines at <a href="https://www.cisa.gov/federal-incident-notification-guidelines">https://www.cisa.gov/federal-incident-notification-guidelines</a>, by using the CISA Incident Reporting System at <a href="https://myservices.cisa.gov/irf">https://myservices.cisa.gov/irf</a>. </p>
+</blockquote>
+<h4 id="frr-icp-04">FRR-ICP-04<a class="headerlink" href="#frr-icp-04" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST update <em>all necessary parties</em>, including at least FedRAMP, CISA (if applicable), and all <em>agency</em> customers, at least once per calendar day until the <em>incident</em> is resolved and recovery is complete.</p>
+</blockquote>
+<h4 id="frr-icp-05">FRR-ICP-05<a class="headerlink" href="#frr-icp-05" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST make <em>incident</em> report information available in their secure FedRAMP repository (such as USDA Connect) or <em>trust center</em>.</p>
+</blockquote>
+<h4 id="frr-icp-06">FRR-ICP-06<a class="headerlink" href="#frr-icp-06" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST NOT irresponsibly disclose specific sensitive information about <em>incidents</em> that would <em>likely</em> increase the impact of the <em>incident</em>, but MUST disclose sufficient information for informed risk-based decision-making to <em>all necessary parties</em>.</p>
+</blockquote>
+<h4 id="frr-icp-07">FRR-ICP-07<a class="headerlink" href="#frr-icp-07" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers MUST provide a final report once the <em>incident</em> is resolved and recovery is complete that describes at least:
+1. What occurred
+1. Root cause
+1. Response
+1. Lessons learned
+1. Changes needed</p>
+</blockquote>
+<h4 id="frr-icp-08">FRR-ICP-08<a class="headerlink" href="#frr-icp-08" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).</p>
+</blockquote>
+<h4 id="frr-icp-09">FRR-ICP-09<a class="headerlink" href="#frr-icp-09" title="Permanent link">&para;</a></h4>
+<p><em>Applies to:</em> Low, Moderate, High</p>
+<blockquote>
+<p>Providers SHOULD make <em>incident</em> report information available in consistent human-readable and <em>machine-readable</em> formats.</p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../FRMR.FRD.fedramp-definitions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FedRAMP Definitions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                FedRAMP Definitions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../FRMR.KSI.key-security-indicators-with-controls/" class="md-footer__link md-footer__link--next" aria-label="Next: Key Security Indicators">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Key Security Indicators
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1193bd74.min.js"></script>
+      
+    
+  </body>
+</html>
