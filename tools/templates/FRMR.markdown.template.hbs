@@ -1,0 +1,247 @@
+# {{info.name}}
+
+- **Release:** {{info.current_release}}
+- **Published:** {{info.releases.[0].published_date}}  
+- **Designator:** {{info.short_name}}
+- **Description:** {{info.releases.[0].description}}
+
+{{#if info.releases.[0].effective}}
+## Front Matter
+
+### Effective Date(s) & Overall Applicability
+
+{{#each info.releases.[0].effective}}
+- **FedRAMP {{@key}}**:
+  {{#each this.timeline}}
+  - This release is effective **{{start_date}}** for **{{designator}}**. 
+  {{#if comment}}
+  - {{comment}}
+  {{/if}}
+  {{/each}}
+  {{#if comment}}
+  - {{comment}}  
+  {{/if}}
+  {{#if comments}}
+    {{#each comments}}
+  - {{this}}
+    {{/each}}
+  {{/if}}
+
+{{/each}}
+
+### Documentation Guidelines
+
+The following FedRAMP documentation guidelines apply to this document:
+
+- The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- FedRAMP-specific terms defined in [FRD-ALL (FedRAMP Definitions)](https://github.com/FedRAMP/docs/blob/main/markdown/FRMR.FRD.fedramp-definitions.md) are italicized throughout this document for reference.
+
+
+## Background & Authority
+{{#each info.front_matter.authority}}
+- [{{reference}}]({{reference_url}}) {{description}}
+{{/each}}
+
+### Purpose
+
+{{info.front_matter.purpose}}
+
+{{#if info.front_matter.expected_outcomes}}
+### Expected Outcomes
+
+  {{#each info.front_matter.expected_outcomes}}
+- {{this}}
+  {{/each}}
+{{/if}}
+
+{{/if}}
+---
+
+{{!-- Definitions section (FRD) --}}
+{{#if FRD}}
+## Definitions
+
+  {{#each FRD}}
+    {{#each this}}
+#### {{id}}: {{term}}
+
+> **{{term}}**: {{definition}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
+      {{#if notes}}
+>
+>  _Notes:_
+        {{#each notes}}
+>  - _{{this}}_
+        {{/each}}
+      {{/if}}      
+      {{#if reference}}
+>
+>  _[Reference: {{reference}}]({{reference_url}})_
+      {{/if}}
+{{#if alts}}
+>
+> Includes: {{#each alts}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
+
+    {{/each}}
+
+  {{/each}}
+
+{{/if}}
+
+{{!-- Requirements section (FRR) --}}
+{{#if FRR}}
+## Requirements and Recommendations
+
+  {{#each FRR}}
+    {{#each this}}    
+### {{this.id}}
+
+**{{this.application}}**
+      {{#each requirements}}
+
+#### {{this.id}}
+{{#if impact}}
+{{!-- this is super messy but ok for now --}}
+_Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+{{/if}}
+
+> {{this.statement}}
+        {{#if following_information}}
+          {{#each following_information}}
+> 1. {{this}}
+          {{/each}}
+        {{/if}}
+        {{#if following_information_bullets}}
+          {{#each following_information_bullets}}
+> - {{this}}
+          {{/each}}
+        {{/if}}
+        {{#if pain_timeframes}}
+> | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+> |-------------------------|-----------|------------|------|
+          {{#each pain_timeframes}}
+> | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
+      {{/each}}
+
+---   
+
+    {{/each}}      
+
+  {{/each}}
+
+{{/if}}
+
+
+{{!-- KSIs have a different structure that is added afterwards --}}
+{{#if KSI}}
+## Key Security Indicators
+  {{#each KSI}}
+    {{#with this}}
+### {{id}}: {{name}}
+
+**{{indicator}}**
+
+      {{#each requirements}}
+{{#if name}}      
+#### {{id}}: {{name}}
+{{else}}
+#### {{id}}
+{{/if}}
+
+{{#if impact}}
+{{!-- this is super messy but ok for now --}}
+_Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+{{/if}}
+{{#if retired}}
+_This KSI ID is retired but may be reassigned in the future._
+{{/if}}
+
+{{#if statement}}
+> {{statement}}
+{{/if}}
+{{#if following_information}}
+          {{#each following_information}}
+> 1. {{this}}
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+>
+>  _Note: {{note}}_
+      {{/if}}
+      {{#if notes}}
+>
+>  _Notes:_
+        {{#each notes}}
+>  - _{{this}}_
+        {{/each}}
+      {{/if}}  
+
+        {{#if controls}}
+          {{#if @root.showControls}}
+##### Controls
+
+            {{#each controls}}
+- {{ control_id }} {{ title }}
+            {{/each}}
+          {{/if}}
+        {{/if}}
+      {{/each}}
+    {{/with}}
+  {{/each}}
+
+{{/if}}
+
+
+{{!-- Maybe this has some technical assistance? FRA --}}
+{{#if FRA}}
+# Technical assistance
+
+  {{#each FRA}}
+### {{id}}
+
+**Purpose:** {{this.purpose}}
+
+**Disclaimer:** {{this.disclaimer}}
+
+**{{this.application}}**
+    {{#each requirements}}
+
+#### {{this.id}}
+
+{{this.statement}}
+
+        {{#if this.examples}}
+          {{#each this.examples}}
+##### {{this.id}}
+
+Key Tests:
+
+          {{#each this.key_tests}}
+- {{this}}
+          {{/each}}
+
+Examples:
+
+          {{#each this.examples}}
+- {{this}}
+          {{/each}}
+          
+          {{/each}}
+        {{/if}}
+
+---   
+    
+    {{/each}}      
+  
+  {{/each}}
+{{/if}}

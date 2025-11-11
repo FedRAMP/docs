@@ -1,0 +1,2616 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An experiment FedRAMP Documentation site.">
+      
+      
+        <meta name="author" content="pete@fedramp.gov">
+      
+      
+      
+        <link rel="prev" href="../intro/">
+      
+      
+        <link rel="next" href="../key-security-indicators/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.5">
+    
+    
+      
+        <title>FedRAMP Definitions - FedRAMP Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1357c24d.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <style>:root{--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22currentColor%22%20d%3D%22m169.6%20153.4-18.7-18.7c-12.5-12.5-12.5-32.8%200-45.3L265.6-25.4c12.5-12.5%2032.8-12.5%2045.3%200l18.7%2018.8c12.5%2012.5%2012.5%2032.8%200%2045.3L214.9%20153.4c-12.5%2012.5-32.8%2012.5-45.3%200M276%20211.7l-31.4-31.4%20112-112L476%20187.7l-112%20112-31.4-31.4-232%20232c-15.6%2015.6-40.9%2015.6-56.6%200s-15.6-40.9%200-56.6zm114.9%20162.9c-12.5-12.5-12.5-32.8%200-45.3l114.7-114.7c12.5-12.5%2032.8-12.5%2045.3%200l18.7%2018.7c12.5%2012.5%2012.5%2032.8%200%2045.3L454.9%20393.4c-12.5%2012.5-32.8%2012.5-45.3%200l-18.7-18.7z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fedramp-definitions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://fedramp.gov" title="FedRAMP Documentation" class="md-header__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  <img src="../../assets/fedramp-logo-just-letters.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FedRAMP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FedRAMP Definitions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../20xP1/intro/" class="md-tabs__link">
+          
+  
+  20x Phase One
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  20x Phase Two
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Rev5/intro/" class="md-tabs__link">
+          
+  
+  Rev5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://fedramp.gov" class="md-tabs__link">
+        
+  
+  // Return to fedramp.gov
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://fedramp.gov" title="FedRAMP Documentation" class="md-nav__button md-logo" aria-label="FedRAMP Documentation" data-md-component="logo">
+      
+  <img src="../../assets/fedramp-logo-just-letters.svg" alt="logo">
+
+    </a>
+    FedRAMP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Overview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20x Phase One
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    20x Phase One
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20xP1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20xP1/key-security-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20xP1/minimum-assessment-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minimum Assessment Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20x Phase Two
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    20x Phase Two
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accepted-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accepted Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adaptive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-necessary-parties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All Necessary Parties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization Package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catastrophic-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catastrophic Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-service-offering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Service Offering
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#false-positive-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        False Positive Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-customer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federal Customer Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fully-mitigated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully Mitigated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-categorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Categorization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Resource
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interim-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interim Requirement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-reachable-vulnerability-irv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internet-Reachable Vulnerability (IRV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-exploited-vulnerability-kev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Exploited Vulnerability (KEV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#likely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Likely
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#likely-exploitable-vulnerability-lev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Likely Exploitable Vulnerability (LEV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limited-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limited Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-readable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-Readable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#negligible-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negligible Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ongoing-authorization-report-oar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ongoing Authorization Report (OAR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overdue-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overdue Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partially-mitigated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partially Mitigated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistently
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potential-adverse-impact-of-vulnerability-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Adverse Impact (of vulnerability exploitation)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privileged-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privileged account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promptly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Promptly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quarterly-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quarterly Review
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regularly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regularly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remediated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routine-recurring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routine Recurring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serious-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serious Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#significant-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Significant change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-information-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third-party Information Resource
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-administrative-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top-level administrative account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trust-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trust Center
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Response
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key-security-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key Security Indicators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimum-assessment-scope/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minimum Assessment Scope
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authorization-data-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorization Data Sharing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vulnerability-detection-and-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vulnerability Detection and Response
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../significant-change-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Significant Change Notification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collaborative-continuous-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaborative Continous Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommended-secure-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommended Secure Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../incident-communications-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Communications Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-cryptographic-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Cryptographic Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rev5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Rev5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Rev5/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../section/page-1.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Page 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://fedramp.gov" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    // Return to fedramp.gov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accepted-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accepted Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adaptive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-necessary-parties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All Necessary Parties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization Package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catastrophic-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catastrophic Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-service-offering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Service Offering
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#false-positive-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        False Positive Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-customer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federal Customer Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fully-mitigated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fully Mitigated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-categorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Categorization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incident
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Resource
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interim-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interim Requirement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-reachable-vulnerability-irv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internet-Reachable Vulnerability (IRV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-exploited-vulnerability-kev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Exploited Vulnerability (KEV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#likely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Likely
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#likely-exploitable-vulnerability-lev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Likely Exploitable Vulnerability (LEV)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limited-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limited Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-readable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-Readable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#negligible-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negligible Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ongoing-authorization-report-oar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ongoing Authorization Report (OAR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overdue-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overdue Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partially-mitigated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partially Mitigated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistently
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potential-adverse-impact-of-vulnerability-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Adverse Impact (of vulnerability exploitation)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privileged-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privileged account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promptly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Promptly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quarterly-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quarterly Review
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regularly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regularly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remediated-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediated Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routine-recurring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routine Recurring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serious-adverse-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serious Adverse Effect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#significant-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Significant change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-information-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third-party Information Resource
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-administrative-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top-level administrative account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformative
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trust-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trust Center
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Response
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="fedramp-definitions">FedRAMP Definitions<a class="headerlink" href="#fedramp-definitions" title="Permanent link">&para;</a></h1>
+<p>This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.</p>
+<details class="success">
+<summary>Effective Date(s) &amp; Overall Applicability</summary>
+<ul>
+<li><strong>Release:</strong> 25.11A DRAFT</li>
+<li><strong>Published:</strong> 1900-01-01</li>
+<li><strong>Designator:</strong> FRD</li>
+<li><strong>Description:</strong> THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.</li>
+</ul>
+<hr />
+<ul>
+<li><strong>FedRAMP 20x</strong>:<ul>
+<li>This release is effective <strong>2025-06-01</strong> for <strong>20x Phase One Pilot</strong>.</li>
+<li>These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials.</li>
+</ul>
+</li>
+<li><strong>FedRAMP Rev5</strong>:<ul>
+<li>This release is effective <strong>2025-06-01</strong> for <strong>Rev5 Balance Improvement Releases</strong>.</li>
+<li>These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release.</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="abstract">
+<summary>Background &amp; Authority</summary>
+<ul>
+<li><a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609">FedRAMP Authorization Act (44 USC § 3608)</a> requires that the Administrator of the General Services Administration shall &quot;establish a Government- wide program that provides a standardized, reusable approach to security assessment and authorization for cloud computing products and services that process unclassified information used by agencies&quot;</li>
+</ul>
+</details>
+<hr />
+<h3 id="accepted-vulnerability">Accepted Vulnerability<a class="headerlink" href="#accepted-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> that the provider does not intend to <em>fully mitigate</em> or <em>remediate</em>, OR that has not or will not be <em>fully mitigated</em> or <em>remediated</em> within the maximum overdue period recommended or required by FedRAMP.</p>
+<p><strong>Also:</strong> accepted vulnerability, accepted vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-31</p>
+</div>
+<h3 id="adaptive">Adaptive<a class="headerlink" href="#adaptive" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The type of <em>significant change</em> that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.</p>
+<p><strong>Note:</strong> Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.</p>
+<p><strong>Also:</strong> adaptive</p>
+<p><strong>ID:</strong> FRD-ALL-10</p>
+</div>
+<h3 id="agency">Agency<a class="headerlink" href="#agency" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning given in 44 U.S. Code § 3502 (1), which is &quot;any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.&quot;
+<a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"><strong>Reference:</strong> 44 U.S. Code § 3502 (1)</a></p>
+<p><strong>Also:</strong> agency, agencies</p>
+<p><strong>ID:</strong> FRD-ALL-19</p>
+</div>
+<h3 id="all-necessary-parties">All Necessary Parties<a class="headerlink" href="#all-necessary-parties" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>All entities whose interests are affected directly by activity related to a specific <em>cloud service offering</em> in the context of a FedRAMP authorization. This always includes FedRAMP and any <em>agency</em> customer who is operating the <em>cloud service offering</em>, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential <em>agency</em> customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.</p>
+<p><strong>Also:</strong> all necessary parties</p>
+<p><strong>ID:</strong> FRD-ALL-18</p>
+</div>
+<h3 id="authorization-package">Authorization Package<a class="headerlink" href="#authorization-package" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has meaning from 44 USC § 3607 (b)(8) which is &quot;the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.&quot;</p>
+<p><strong>Note:</strong> In FedRAMP documentation, <em>authorization package</em> always refers to a FedRAMP <em>authorization package</em> unless otherwise specified.
+<a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607"><strong>Reference:</strong> 44 USC § 3607 (b)(8)</a></p>
+<p><strong>Also:</strong> authorization package, authorization packages</p>
+<p><strong>ID:</strong> FRD-ALL-14</p>
+</div>
+<h3 id="authorization-data">Authorization data<a class="headerlink" href="#authorization-data" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The collective information required by FedRAMP for initial and ongoing assessment and authorization of a <em>cloud service offering</em>, including the <em>authorization package</em>. </p>
+<p><strong>Note:</strong> In FedRAMP documentation, <em>authorization data</em> always refers to FedRAMP <em>authorization data</em> unless otherwise specified.</p>
+<p><strong>Also:</strong> authorization data</p>
+<p><strong>ID:</strong> FRD-ALL-15</p>
+</div>
+<h3 id="catastrophic-adverse-effect">Catastrophic Adverse Effect<a class="headerlink" href="#catastrophic-adverse-effect" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would <em>likely</em>: (i) result in a severe degradation in the availability or performance of services within the <em>cloud service offering</em> for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the <em>federal customer data</em> stored within the <em>cloud service offering</em>.</p>
+<p><strong>Also:</strong> catastrophic adverse effect, catastrophic adverse effects</p>
+<p><strong>ID:</strong> FRD-ALL-32</p>
+</div>
+<h3 id="cloud-service-offering">Cloud Service Offering<a class="headerlink" href="#cloud-service-offering" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.</p>
+<p><strong>Also:</strong> cloud service offering, cloud service offerings</p>
+<p><strong>ID:</strong> FRD-ALL-06</p>
+</div>
+<h3 id="drift">Drift<a class="headerlink" href="#drift" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Changes to <em>information resources</em> that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.</p>
+<p><strong>Also:</strong> drift, drifts, drifting</p>
+<p><strong>ID:</strong> FRD-ALL-39</p>
+</div>
+<h3 id="false-positive-vulnerability">False Positive Vulnerability<a class="headerlink" href="#false-positive-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>detected vulnerability</em> that is not actually present in an exploitable state in the <em>information resource</em>; this includes situations where vulnerable software or code exist on an machine-based <em>information resource</em> but are not loaded, running, or otherwise in an operating state required for exploitation.</p>
+<p><strong>Note:</strong> This only applies if the <em>vulnerability</em> is not and was not present; a <em>remediated vulnerability</em> or a <em>fully mitigated vulnerability</em> cannot also be a <em>false positive vulnerability</em>.</p>
+<p><strong>Also:</strong> false positive vulnerability, false positive vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-29</p>
+</div>
+<h3 id="federal-customer-data">Federal Customer Data<a class="headerlink" href="#federal-customer-data" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>All electronic information, content, and materials that an <em>agency</em> or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.</p>
+<p><strong>Note:</strong> In the context of FedRAMP authorization, &quot;federal customer data&quot; ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific <em>agencies</em> may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the <em>agency</em>; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.</p>
+<p><strong>Also:</strong> federal customer data</p>
+<p><strong>ID:</strong> FRD-ALL-01</p>
+</div>
+<h3 id="fully-mitigated-vulnerability">Fully Mitigated Vulnerability<a class="headerlink" href="#fully-mitigated-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> where the likelihood of exploitation or <em>potential adverse impact</em> of exploitation has been reduced from the original evaluation until either are negligible, but the <em>vulnerability</em> is still <em>detected</em>.</p>
+<p><strong>Also:</strong> fully mitigated vulnerability, fully mitigated vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-28</p>
+</div>
+<h3 id="handle">Handle<a class="headerlink" href="#handle" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.</p>
+<p><strong>Also:</strong> handle, handles, handled, handling</p>
+<p><strong>ID:</strong> FRD-ALL-03</p>
+</div>
+<h3 id="impact-categorization">Impact Categorization<a class="headerlink" href="#impact-categorization" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The type of <em>significant change</em> that is <em>likely</em> to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).</p>
+<p><strong>Also:</strong> impact categorization</p>
+<p><strong>ID:</strong> FRD-ALL-12</p>
+</div>
+<h3 id="incident">Incident<a class="headerlink" href="#incident" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is &quot;an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].&quot;
+<a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552"><strong>Reference:</strong> 44 USC § 3552 (b)(2)</a></p>
+<p><strong>Also:</strong> incident, incidents</p>
+<p><strong>ID:</strong> FRD-ALL-40</p>
+</div>
+<h3 id="information-resource">Information Resource<a class="headerlink" href="#information-resource" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;</p>
+<p><strong>Note:</strong> This applies to any aspect of the <em>cloud service offering</em>, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.
+<a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"><strong>Reference:</strong> 44 USC § 3502 (6)</a></p>
+<p><strong>Also:</strong> information resource, information resources</p>
+<p><strong>ID:</strong> FRD-ALL-02</p>
+</div>
+<h3 id="interim-requirement">Interim Requirement<a class="headerlink" href="#interim-requirement" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will <em>likely</em> be replaced, updated, or removed prior to the formal wide release of the requirement.</p>
+<p><strong>ID:</strong> FRD-ALL-13</p>
+</div>
+<h3 id="internet-reachable-vulnerability-irv">Internet-Reachable Vulnerability (IRV)<a class="headerlink" href="#internet-reachable-vulnerability-irv" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> in a machine-based <em>information resource</em> that might be exploited or otherwise triggered by a payload originating from a source on the public internet; this includes machine-based <em>information resources</em> that have no direct route to/from the internet but receive payloads or otherwise take action triggered by internet activity.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>
+<p>The opposite of this is a &quot;Not Internet-reachable Vulnerability&quot; (NIRV).</p>
+</li>
+<li>
+<p>Internet-reachability applies only to the specific vulnerable machine-based <em>information resources</em> processing the payload; please review the relevant FedRAMP technical assistance on <em>internet-reachable vulnerabilities</em> for examples.</p>
+</li>
+</ul>
+<p><strong>Also:</strong> internet-reachable vulnerability, internet-reachable vulnerabilities, IRV, IRVs, NIRV, NIRVs</p>
+<p><strong>ID:</strong> FRD-ALL-24</p>
+</div>
+<h3 id="known-exploited-vulnerability-kev">Known Exploited Vulnerability (KEV)<a class="headerlink" href="#known-exploited-vulnerability-kev" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning given in CISA Binding Operational Directive 22-01, which is any <em>vulnerability</em> identified in CISA&#x27;s Known Exploited Vulnerabilities catalog.
+<a href="https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities"><strong>Reference:</strong> CISA BOD 22-01</a></p>
+<p><strong>Also:</strong> known exploited vulnerability, known exploited vulnerabilities, KEV, KEVs</p>
+<p><strong>ID:</strong> FRD-ALL-25</p>
+</div>
+<h3 id="likely">Likely<a class="headerlink" href="#likely" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A reasonable degree of probability based on context.</p>
+<p><strong>Also:</strong> likely, likelihood</p>
+<p><strong>ID:</strong> FRD-ALL-04</p>
+</div>
+<h3 id="likely-exploitable-vulnerability-lev">Likely Exploitable Vulnerability (LEV)<a class="headerlink" href="#likely-exploitable-vulnerability-lev" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A vulnerability that is not <em>fully mitigated</em>, AND is reachable by a <em>likely</em> threat actor, AND a <em>likely</em> threat actor with knowledge of the <em>vulnerability</em> would likely be able to gain unauthorized access, cause harm, disrupt operations, or otherwise have an undesired adverse impact within the <em>cloud service offering</em> by exploiting the <em>vulnerability</em>.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>
+<p>The opposite of this is a &quot;Not Likely Exploitable Vulnerability&quot; (NLEV).</p>
+</li>
+<li>
+<p>At the absolute minimum, any <em>vulnerability</em> that an automated unauthenticated system can exploit over the internet is a <em>likely exploitable vulnerability</em>.</p>
+</li>
+</ul>
+<p><strong>Also:</strong> likely exploitable vulnerability, likely exploitable vulnerabilities, LEV, LEVs, NLEV, NLEVs</p>
+<p><strong>ID:</strong> FRD-ALL-23</p>
+</div>
+<h3 id="limited-adverse-effect">Limited Adverse Effect<a class="headerlink" href="#limited-adverse-effect" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the <em>cloud service offering</em> for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the <em>federal customer data</em> stored within the <em>cloud service offering</em> by only a few relevant users.</p>
+<p><strong>Also:</strong> limited adverse effect, limited adverse effects</p>
+<p><strong>ID:</strong> FRD-ALL-34</p>
+</div>
+<h3 id="machine-readable">Machine-Readable<a class="headerlink" href="#machine-readable" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning from 44 U.S. Code § 3502 (18) which is &quot;the term &quot;<em>machine-readable</em>&quot;, when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost&quot;
+<a href="https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502"><strong>Reference:</strong> 44 U.S. Code § 3502 (18)</a></p>
+<p><strong>Also:</strong> machine-readable</p>
+<p><strong>ID:</strong> FRD-ALL-17</p>
+</div>
+<h3 id="negligible-adverse-effect">Negligible Adverse Effect<a class="headerlink" href="#negligible-adverse-effect" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the <em>cloud service offering</em>; OR (ii) result in degradation of the availability or performance of services within the <em>cloud service offering</em> for only a few relevant users.</p>
+<p><strong>Also:</strong> negligible adverse effect, negligible adverse effects</p>
+<p><strong>ID:</strong> FRD-ALL-35</p>
+</div>
+<h3 id="ongoing-authorization-report-oar">Ongoing Authorization Report (OAR)<a class="headerlink" href="#ongoing-authorization-report-oar" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>regular</em> report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.</p>
+<p><strong>Also:</strong> ongoing authorization report, OAR, OARs</p>
+<p><strong>ID:</strong> FRD-ALL-43</p>
+</div>
+<h3 id="overdue-vulnerability">Overdue Vulnerability<a class="headerlink" href="#overdue-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> that the provider intends to <em>fully mitigate</em> or <em>remediate</em> but has not or will not do so within the time frames recommended or required by FedRAMP.</p>
+<p><strong>Also:</strong> overdue vulnerability, overdue vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-30</p>
+</div>
+<h3 id="partially-mitigated-vulnerability">Partially Mitigated Vulnerability<a class="headerlink" href="#partially-mitigated-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> where the likelihood or <em>potential adverse impact</em> of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the <em>vulnerability</em> is still <em>detected</em>.</p>
+<p><strong>Also:</strong> partially mitigated vulnerability, partially mitigated vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-27</p>
+</div>
+<h3 id="persistently">Persistently<a class="headerlink" href="#persistently" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. </p>
+<p><strong>Note:</strong> The use of <em>persistently</em> indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of &quot;continuous&quot; in federal information security policies.</p>
+<p><strong>Also:</strong> persistently, persistent</p>
+<p><strong>ID:</strong> FRD-ALL-38</p>
+</div>
+<h3 id="potential-adverse-impact-of-vulnerability-exploitation">Potential Adverse Impact (of vulnerability exploitation)<a class="headerlink" href="#potential-adverse-impact-of-vulnerability-exploitation" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that <em>likely</em> could result if a threat actor exploits a <em>vulnerability</em> in the <em>cloud service offering</em>; as estimated following FedRAMP recommendations and requirements.</p>
+<p><strong>Also:</strong> potential adverse impact, potential adverse impacts</p>
+<p><strong>ID:</strong> FRD-ALL-36</p>
+</div>
+<h3 id="privileged-account">Privileged account<a class="headerlink" href="#privileged-account" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>An account with elevated privileges that enables administrative functions over some aspect of the <em>cloud service offering</em> that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.</p>
+<p><strong>Note:</strong> Any references to <em>privileged accounts</em> in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to <em>privileged accounts</em>.</p>
+<p><strong>Also:</strong> privileged account, privileged accounts</p>
+<p><strong>ID:</strong> FRD-ALL-42</p>
+</div>
+<h3 id="promptly">Promptly<a class="headerlink" href="#promptly" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Without Unnecessary Delay.</p>
+<p><strong>Note:</strong> The use of <em>promptly</em> in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a <em>cloud service offering</em>.</p>
+<p><strong>Also:</strong> promptly, prompt</p>
+<p><strong>ID:</strong> FRD-ALL-37</p>
+</div>
+<h3 id="quarterly-review">Quarterly Review<a class="headerlink" href="#quarterly-review" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>regular</em> synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.</p>
+<p><strong>Also:</strong> quarterly review, quarterly reviews</p>
+<p><strong>ID:</strong> FRD-ALL-44</p>
+</div>
+<h3 id="regularly">Regularly<a class="headerlink" href="#regularly" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.</p>
+<p><strong>Also:</strong> regularly, regular</p>
+<p><strong>ID:</strong> FRD-ALL-07</p>
+</div>
+<h3 id="remediated-vulnerability">Remediated Vulnerability<a class="headerlink" href="#remediated-vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A <em>vulnerability</em> that has been neutralized or eliminated and is no longer <em>detected</em>.</p>
+<p><strong>Also:</strong> remediated vulnerability, remediated vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-26</p>
+</div>
+<h3 id="routine-recurring">Routine Recurring<a class="headerlink" href="#routine-recurring" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The type of <em>significant change</em> that <em>regularly</em> and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.</p>
+<p><strong>Also:</strong> routine recurring</p>
+<p><strong>ID:</strong> FRD-ALL-09</p>
+</div>
+<h3 id="serious-adverse-effect">Serious Adverse Effect<a class="headerlink" href="#serious-adverse-effect" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the <em>cloud service offering</em>, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the <em>federal customer data</em> stored within the <em>cloud service offering</em>.</p>
+<p><strong>Also:</strong> serious adverse effect, serious adverse effects</p>
+<p><strong>ID:</strong> FRD-ALL-33</p>
+</div>
+<h3 id="significant-change">Significant change<a class="headerlink" href="#significant-change" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning given in NIST SP 800-37 Rev. 2 which is &quot;a change that is <em>likely</em> to substantively affect the security or privacy posture of a system.&quot;
+<a href="https://csrc.nist.gov/pubs/sp/800/37/r2/final"><strong>Reference:</strong> NIST SP 800-37 Rev. 2</a></p>
+<p><strong>Also:</strong> significant change, significant changes</p>
+<p><strong>ID:</strong> FRD-ALL-08</p>
+</div>
+<h3 id="third-party-information-resource">Third-party Information Resource<a class="headerlink" href="#third-party-information-resource" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Any <em>information resource</em> that is not entirely included in the assessment for the <em>cloud service offering</em> seeking authorization.</p>
+<p><strong>Also:</strong> third-party information resource, third-party information resources</p>
+<p><strong>ID:</strong> FRD-ALL-05</p>
+</div>
+<h3 id="top-level-administrative-account">Top-level administrative account<a class="headerlink" href="#top-level-administrative-account" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The most privileged account with the highest level of access within a <em>cloud service offering</em> for a customer organization, typically with complete control over all aspects of the <em>cloud service offering</em>, including managing resources, users, access, privileges, and the account itself.</p>
+<p><strong>Note:</strong> Any references to <em>top-level administrative accounts</em> in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign <em>top-level administrative account</em> privileges.</p>
+<p><strong>Also:</strong> top-level administrative account, top-level administrative accounts</p>
+<p><strong>ID:</strong> FRD-ALL-41</p>
+</div>
+<h3 id="transformative">Transformative<a class="headerlink" href="#transformative" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The type of <em>significant change</em> that introduces substantive potential security risks that are <em>likely</em> to affect existing risk determinations and must be assessed in depth.</p>
+<p><strong>Note:</strong> Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.</p>
+<p><strong>Also:</strong> transformative</p>
+<p><strong>ID:</strong> FRD-ALL-11</p>
+</div>
+<h3 id="trust-center">Trust Center<a class="headerlink" href="#trust-center" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>A secure repository or service used by cloud service providers to store and share <em>authorization data</em>. <em>Trust centers</em> are the complete and definitive source for <em>authorization data</em> and must meet the requirements outlined in the FedRAMP <em>authorization data</em> Sharing Standard to be FedRAMP-compatible.</p>
+<p><strong>Note:</strong> In FedRAMP documentation, all references to <em>trust centers</em> indicate FedRAMP-compatible <em>trust centers</em> unless otherwise specified.</p>
+<p><strong>Also:</strong> trust center, trust centers</p>
+<p><strong>ID:</strong> FRD-ALL-16</p>
+</div>
+<h3 id="vulnerability">Vulnerability<a class="headerlink" href="#vulnerability" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>Has the meaning given to &quot;security vulnerability&quot; in 6 USC § 650 (25), which is &quot;any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.&quot; This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).
+<a href="https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650"><strong>Reference:</strong> 6 USC § 650 (25)</a></p>
+<p><strong>Also:</strong> vulnerability, vulnerabilities</p>
+<p><strong>ID:</strong> FRD-ALL-20</p>
+</div>
+<h3 id="vulnerability-detection">Vulnerability Detection<a class="headerlink" href="#vulnerability-detection" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The systematic process of discovering and identifying security vulnerabilities in <em>information resources</em> through assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other capabilities. This process includes the initial discovery of a <em>vulnerability&#x27;s</em> existence and the determination of affected <em>information resources</em> within a <em>cloud service offering.</em></p>
+<p><strong>Note:</strong> This definition applies to other forms such as &quot;detect vulnerabilities&quot; or simply &quot;detection&quot; / &quot;detected&quot; used in FedRAMP materials.</p>
+<p><strong>Also:</strong> vulnerability detection, detect vulnerabilities, detect, detection, detected</p>
+<p><strong>ID:</strong> FRD-ALL-21</p>
+</div>
+<h3 id="vulnerability-response">Vulnerability Response<a class="headerlink" href="#vulnerability-response" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p>The systematic process of tracking, evaluating, mitigating, monitoring, remediating, assessing exploitation, reporting, and otherwise managing <em>detected vulnerabilities</em>.</p>
+<p><strong>Note:</strong> This definition applies to other forms such as &quot;respond to vulnerabilities&quot; or simply &quot;response&quot; / &quot;responded&quot; used in FedRAMP materials.</p>
+<p><strong>Also:</strong> vulnerability response, respond to vulnerabilities, respond, response, responded</p>
+<p><strong>ID:</strong> FRD-ALL-22</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Intro
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../key-security-indicators/" class="md-footer__link md-footer__link--next" aria-label="Next: Key Security Indicators">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Key Security Indicators
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1193bd74.min.js"></script>
+      
+    
+  </body>
+</html>

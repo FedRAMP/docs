@@ -1,0 +1,78 @@
+
+[project]
+site_name = "FedRAMP Documentation"
+site_description = "An experiment FedRAMP Documentation site."
+site_author = "pete@fedramp.gov"
+site_dir = "site"
+docs_dir = "docs"
+
+nav = [
+    {"Overview" = [
+        "index.md" 
+    ]},
+    {"20x Phase One" = [
+        {"Intro" = "20xP1/intro.md"},
+        {"Key Security Indicators" = "20xP1/key-security-indicators.md"},
+        {"Minimum Assessment Standard" = "20xP1/minimum-assessment-standard.md"}
+    ]},
+    {"20x Phase Two" = [
+        {"Intro" = "20xP2/intro.md"}, 
+        {"Definitions" = "20xP2/fedramp-definitions.md"},
+        {"Key Security Indicators" = "20xP2/key-security-indicators.md"},
+        {"Minimum Assessment Scope" = "20xP2/minimum-assessment-scope.md"},
+        {"Authorization Data Sharing" = "20xP2/authorization-data-sharing.md"},
+        {"Vulnerability Detection and Response" = "20xP2/vulnerability-detection-and-response.md"},
+        {"Significant Change Notification" = "20xP2/significant-change-notifications.md"},
+        {"Collaborative Continous Monitoring" = "20xP2/collaborative-continuous-monitoring.md"},
+        {"Recommended Secure Configuration" = "20xP2/recommended-secure-configuration.md"},
+        {"Incident Communications Procedures" = "20xP2/incident-communications-procedures.md"},
+        {"Using Cryptographic Modules" = "20xP2/using-cryptographic-modules.md"},
+    ]},
+    {"Rev5" = [
+        {"Intro" = "Rev5/intro.md"}, 
+        {"Page 1" = "section/page-1.md"},
+    ]},
+    {"// Return to fedramp.gov" = "https://fedramp.gov"}
+]
+
+[project.extra]
+homepage = "https://fedramp.gov"
+
+[project.theme]
+logo = "assets/fedramp-logo-just-letters.svg"
+custom_dir = "overrides"
+language = "en"
+features = [
+    "announce.dismiss",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+]
+
+[project.theme.icon.admonition]
+abstract = "fontawesome/solid/gavel"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
