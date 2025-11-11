@@ -66,9 +66,7 @@ async function convertFRMRToMarkdown(
 
 (async () => {
   try {
-    const pattern1 = path.join(__dirname, "../../", "FRMR*.json");
-    const pattern2 = path.join(__dirname, "../../combined/", "FRMR*.json");
-    const pattern = [pattern1, pattern2];
+    const pattern = path.join(__dirname, "../../data", "FRMR*.json");
     const files = await glob(pattern);
 
     if (files.length === 0) {
@@ -78,22 +76,30 @@ async function convertFRMRToMarkdown(
 
     const templateFilePath = path.join(
       __dirname,
-      "../../templates",
-      "FRMR.markdown.template.zensical.hbs"
+      "../templates",
+      "zensical-template.hbs"
     );
 
     for (const jsonFilePath of files) {
       const baseName = path.basename(jsonFilePath, ".json");
-      const outputFileName = baseName.startsWith("FRMR-")
+      let outputFileName = baseName.startsWith("FRMR-")
         ? baseName.substring(5) + ".md"
         : baseName + ".md";
+      
+      // Remove "FRMR.TLA." prefix from filenames
+      if (outputFileName.startsWith("FRMR.")) {
+        const parts = outputFileName.split(".");
+        if (parts.length > 2) {
+          outputFileName = parts.slice(2).join(".");
+        }
+      }
 
       // Determine if the file is from the combined directory
       const isFromCombined = jsonFilePath.includes("/combined/");
       const outputDir = isFromCombined
         ? path.join(__dirname, "../../markdown/combined")
         // : path.join(__dirname, "../../markdown");
-        : path.join(__dirname, "../../tools/zensical/docs/20xP2");
+        : path.join(__dirname, "../../docs/20xP2");
 
       // Create the combined directory if it doesn't exist
       if (isFromCombined) {
