@@ -1,7 +1,25 @@
 import * as fs from "fs-extra";
 import * as path from "path";
-import * as Handlebars from "handlebars";
+import Handlebars from "handlebars";
 import { glob } from "glob";
+
+Handlebars.registerHelper('FRDSorted', function(array, options) {
+  const sortedArray = [...array].sort((a, b) => {
+    const termA = a.term || '';
+    const termB = b.term || '';
+    if (termA < termB) return -1;
+    if (termA > termB) return 1;
+    return 0;
+  });
+
+  let result = '';
+  for (let i = 0; i < sortedArray.length; i++) {
+    result += options.fn(sortedArray[i]);
+  }
+  return result;
+});
+
+
 
 async function convertFRMRToMarkdown(
   jsonFilePath: string,
@@ -61,7 +79,7 @@ async function convertFRMRToMarkdown(
     const templateFilePath = path.join(
       __dirname,
       "../../templates",
-      "FRMR.markdown.template.hbs"
+      "FRMR.markdown.template.zensical.hbs"
     );
 
     for (const jsonFilePath of files) {
@@ -74,7 +92,8 @@ async function convertFRMRToMarkdown(
       const isFromCombined = jsonFilePath.includes("/combined/");
       const outputDir = isFromCombined
         ? path.join(__dirname, "../../markdown/combined")
-        : path.join(__dirname, "../../markdown");
+        // : path.join(__dirname, "../../markdown");
+        : path.join(__dirname, "../../tools/zensical/docs/20xP2");
 
       // Create the combined directory if it doesn't exist
       if (isFromCombined) {

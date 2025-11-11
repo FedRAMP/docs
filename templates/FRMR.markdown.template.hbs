@@ -63,7 +63,7 @@ The following FedRAMP documentation guidelines apply to this document:
 
   {{#each FRD}}
     {{#each this}}
-#### {{id}}
+#### {{id}}: {{term}}
 
 > **{{term}}**: {{definition}}
       {{#if note}}
@@ -81,6 +81,10 @@ The following FedRAMP documentation guidelines apply to this document:
 >
 >  _[Reference: {{reference}}]({{reference_url}})_
       {{/if}}
+{{#if alts}}
+>
+> Includes: {{#each alts}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
 
     {{/each}}
 

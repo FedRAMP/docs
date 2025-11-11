@@ -18,6 +18,6 @@
   "type": "module",
   "scripts": {
     "all": "bun run scripts/combine-frmr-json.ts && bun run scripts/FRMR-to-markdown.ts && cd ../markdown && ../tools/scripts/update-pdfs.sh && cd ../tools && bun run scripts/generate-table-of-docs.ts",
-    "watch": "bunx nodemon --watch ../templates/FRMR.markdown.template.hbs --watch ../ --exec 'bun run scripts/FRMR-to-markdown.ts'"
+    "watch": "bunx nodemon --watch ../templates/FRMR.markdown.template.hbs --watch ../templates/FRMR.markdown.template.zensical.hbs --watch ../ --exec 'bun run scripts/FRMR-to-markdown.ts'"
   }
 }

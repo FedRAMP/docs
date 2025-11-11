@@ -1,0 +1,243 @@
+# {{info.name}}
+
+{{info.front_matter.purpose}}
+
+??? success "Effective Date(s) & Overall Applicability"
+    - **Release:** {{info.current_release}}
+    - **Published:** {{info.releases.[0].published_date}}
+    - **Designator:** {{info.short_name}}
+    - **Description:** {{info.releases.[0].description}}
+    ---
+{{#each info.releases.[0].effective}}
+    - **FedRAMP {{@key}}**:
+{{#each this.timeline}}
+        - This release is effective **{{start_date}}** for **{{designator}}**.
+{{#if comment}}
+        - {{comment}}
+{{/if}}
+{{/each}}
+{{#if comment}}
+        - {{comment}}
+{{/if}}
+{{#if comments}}
+{{#each comments}}
+        - {{this}}
+{{/each}}
+{{/if}}
+{{/each}}
+
+??? abstract "Background & Authority"
+{{#each info.front_matter.authority}}
+    - [{{reference}}]({{reference_url}}) {{description}}
+{{/each}}
+
+---
+
+{{!-- Definitions section (FRD) --}}
+{{#if FRD}}
+
+  {{#each FRD}}
+    {{#FRDSorted this}}
+### {{term}}
+
+!!! quote ""
+    {{definition}}
+      {{#if note}}
+
+    **Note:** {{note}}
+      {{/if}}
+      {{#if notes}}
+
+    **Notes:**
+        {{#each notes}}
+
+    - {{this}}
+        {{/each}}
+      {{/if}}      
+      {{#if reference}}
+    [**Reference:** {{reference}}]({{reference_url}})
+{{/if}}
+{{#if alts}}
+
+    **Also:** {{#each alts}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
+
+    **ID:** {{id}}
+    {{/FRDSorted}}
+
+  {{/each}}
+
+{{/if}}
+
+{{!-- Requirements section (FRR) --}}
+{{#if FRR}}
+
+  {{#each FRR}}
+    {{#each this}}
+        
+{{#if this.name}}
+## {{this.name}}
+{{else}}
+## {{this.id}}
+{{/if}}
+
+!!! info ""
+    {{this.application}}
+      {{#each requirements}}
+
+### {{this.id}}
+
+!!! quote ""
+    {{this.statement}}
+        {{#if following_information}}
+          {{#each following_information}}
+
+    1. {{this}}
+          {{/each}}
+        {{/if}}
+        {{#if following_information_bullets}}
+          {{#each following_information_bullets}}
+
+    - {{this}}
+          {{/each}}
+        {{/if}}        
+        {{#if pain_timeframes}}
+    | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+    |-------------------------|-----------|------------|------|
+          {{#each pain_timeframes}}
+    | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+
+    **Note:** {{note}}
+      {{/if}}
+
+
+      {{#if impact}}
+      {{!-- this is super messy but ok for now --}}
+    **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+      {{/if}}
+    
+    {{/each}}
+
+---   
+
+    {{/each}}      
+
+  {{/each}}
+
+{{/if}}
+
+
+{{!-- KSIs have a different structure that is added afterwards --}}
+{{#if KSI}}
+  {{#each KSI}}
+    {{#with this}}
+## {{name}}
+
+!!! info ""
+    {{indicator}}
+
+      {{#each requirements}}
+{{#if name}}      
+### {{id}} {{name}}
+{{else}}
+### {{id}}
+{{/if}}
+
+{{#if retired}}
+!!! note "This KSI ID was retired in the 20x Phase Two Pilot"
+{{else}}
+!!! quote ""
+{{/if}}
+
+{{#if statement}}
+    {{statement}}
+{{/if}}
+{{#if following_information}}
+          {{#each following_information}}
+
+    1. {{this}}
+          {{/each}}
+        {{/if}}
+      {{#if note}}
+
+    **Note:** {{note}}
+      {{/if}}
+      {{#if notes}}
+
+    **_Notes:_**
+        {{#each notes}}
+
+    - {{this}}
+        {{/each}}
+      {{/if}}  
+
+        {{#if controls}}
+          {{#if @root.showControls}}
+##### Controls
+
+            {{#each controls}}
+- {{ control_id }} {{ title }}
+            {{/each}}
+          {{/if}}
+        {{/if}}
+        {{#if impact}}
+        {{!-- this is super messy but ok for now --}}
+      **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if
+        impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+        {{/if}}
+      
+
+      {{/each}}
+    {{/with}}
+---
+  {{/each}}
+
+{{/if}}
+
+
+{{!-- Maybe this has some technical assistance? FRA --}}
+{{#if FRA}}
+# Technical assistance
+
+  {{#each FRA}}
+### {{id}}
+
+**Purpose:** {{this.purpose}}
+
+**Disclaimer:** {{this.disclaimer}}
+
+**{{this.application}}**
+    {{#each requirements}}
+
+#### {{this.id}}
+
+{{this.statement}}
+
+        {{#if this.examples}}
+          {{#each this.examples}}
+##### {{this.id}}
+
+Key Tests:
+
+          {{#each this.key_tests}}
+- {{this}}
+          {{/each}}
+
+Examples:
+
+          {{#each this.examples}}
+- {{this}}
+          {{/each}}
+          
+          {{/each}}
+        {{/if}}
+
+---   
+    
+    {{/each}}      
+  
+  {{/each}}
+{{/if}}

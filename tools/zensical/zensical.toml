@@ -64,6 +64,9 @@ features = [
     "toc.follow",
 ]
 
+[project.theme.icon.admonition]
+abstract = "fontawesome/solid/gavel"
+
 [[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"

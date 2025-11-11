@@ -1,4 +1,4 @@
-# Standard
+# Continuous Collaborative Monitoring Standard
 
 - **Release:** 25.00A DRAFT
 - **Published:** 1900-01-01  
