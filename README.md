@@ -1,6 +1,6 @@
 # FedRAMP Machine Readable (FRMR) Documentation
 
-This respository contains:
+This repository contains:
 
 1. Machine-readable FedRAMP documentation for 20x in the `data` subdirectory
 2. Tools and templates to convert FRMR JSON into enriched markdown
@@ -17,3 +17,28 @@ FedRAMP is actively and aggressively developing and improving the JSON structure
 ## Building the Static Site
 
 Stay tuned for tweaks as we work through standardizing this whole process.
+### Installing dependencies
+We use several tools to support the development and build process.  At a minimum you will need to install [bun](https://bun.com/docs/installation) and the [zensical](https://zensical.org/docs/get-started/) python library.
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install zensical
+
+    curl -fsSL https://bun.com/install | bash
+
+### Testing
+
+There is a simple test suite that can be run with `bun test` once bun is installed.  This test suite will validate the FRMR JSON files in the `data` folder against the schema in `tools/templates/FedRAMP.schema.json`.
+
+### Building
+
+Building teh site has two main steps:
+1. Generate the enriched markdown files from the FRMR JSON files.
+2. Build the static site using the enriched markdown files.
+
+#### Generating the enriched markdown files
+1. First we generate the markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `markdown` directory.
+2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
+3. Once you have confirmed the site looks correct you can build the static site by running `zensical build`.
+
+    
