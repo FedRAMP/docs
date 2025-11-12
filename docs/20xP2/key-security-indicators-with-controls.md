@@ -81,25 +81,29 @@ Modern cloud services use automated or code-driven configuration management and 
 !!! info ""
     A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.
 
-#### KSI-AFR-01 Minimum Assessment Scope (MAS)
+#### KSI-AFR-01 Minimum Assessment Scope
 
 !!! quote ""
 
     Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.
 
+    **Reference:** [Minimum Assessment Scope](https://fedramp.gov/docs/20xP2/minimum-assessment-scope)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-02 Key Security Indicators (KSI)
+#### KSI-AFR-02 Key Security Indicators
 
 !!! quote ""
 
     Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.
 
+    **Reference:** [Key Security Indicators](https://fedramp.gov/docs/20xP2/key-security-indicators)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-03 Authorization Data Sharing (ADS)
+#### KSI-AFR-03 Authorization Data Sharing
 
 !!! quote ""
 
@@ -116,10 +120,12 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-4 Incident Handling
 - ra-5 Vulnerability Monitoring and Scanning
 - sc-8 Transmission Confidentiality and Integrity
+    **Reference:** [Authorization Data Sharing](https://fedramp.gov/docs/20xP2/authorization-data-sharing)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-04 Vulnerability Detection and Response (VDR)
+#### KSI-AFR-04 Vulnerability Detection and Response
 
 !!! quote ""
 
@@ -167,14 +173,16 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-4.2 Automated Tools and Mechanisms for Real-time Analysis
 - si-4.3 Automated Tool and Mechanism Integration
 - si-4.7 Automated Response to Suspicious Events
+    **Reference:** [Vulnerability Detection and Response](https://fedramp.gov/docs/20xP2/vulnerability-detection-and-response)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-05 Significant Change Notification (SCN)
+#### KSI-AFR-05 Significant Change Notifications
 
 !!! quote ""
 
-    Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations.
+    Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.
 
 ##### Controls
 
@@ -195,59 +203,73 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-7.7 Integration of Detection and Response
 - si-10 Information Input Validation
 - si-11 Error Handling
+    **Reference:** [Significant Change Notifications](https://fedramp.gov/docs/20xP2/significant-change-notifications)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-06 Collaborative Continuous Monitoring (CCM)
+#### KSI-AFR-06 Collaborative Continuous Monitoring
 
 !!! quote ""
 
     Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.
 
+    **Reference:** [Collaborative Continuous Monitoring](https://fedramp.gov/docs/20xP2/collaborative-continuous-monitoring)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-07 Recommended Secure Configuration (RSC)
+#### KSI-AFR-07 Recommended Secure Configuration
 
 !!! quote ""
 
-    Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.
+    Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.
+
+    **Reference:** [Recommended Secure Configuration](https://fedramp.gov/docs/20xP2/recommended-secure-configuration)
 
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-08 FedRAMP Security Inbox (FSI)
+#### KSI-AFR-08 FedRAMP Security Inbox
 
 !!! quote ""
 
     Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.
 
+    **Reference:** [FedRAMP Security Inbox](https://fedramp.gov/docs/20xP2/fedramp-security-inbox)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-09 Persistent Validation and Assessment (PVA)
+#### KSI-AFR-09 Persistent Validation and Assessment
 
 !!! quote ""
 
     Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.
 
+    **Reference:** [Persistent Validation and Assessment](https://fedramp.gov/docs/20xP2/persistent-validation-and-assessment)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-10 Incident Communications Procedures(ICP)
+#### KSI-AFR-10 Incident Communications Procedures
 
 !!! quote ""
 
     Integrate FedRAMP&#x27;s Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.
 
+    **Reference:** [Incident Communications Procedures](https://fedramp.gov/docs/20xP2/incident-communications-procedures)
+
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-11 Use of Cryptographic Modules (UCM)
+#### KSI-AFR-11 Using Cryptographic Modules
 
 !!! quote ""
 
-    Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.
+    Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.
+
+    **Reference:** [Using Cryptographic Modules](https://fedramp.gov/docs/20xP2/using-cryptographic-modules)
 
       **Applies to:** Low, Moderate
       
@@ -272,6 +294,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - at-3.5 Processing Personally Identifiable Information
 - at-4 Training Records
 - ir-2.3 Breach
+
       **Applies to:** Low, Moderate
       
 
@@ -287,6 +310,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - at-2.3 Social Engineering and Mining
 - at-3 Role-based Training
 - sr-11.1 Anti-counterfeit Training
+
       **Applies to:** Low, Moderate
       
 
@@ -301,6 +325,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cp-3 Contingency Training
 - ir-2 Incident Response Training
 - ps-6 Access Agreements
+
       **Applies to:** Low, Moderate
       
 
@@ -309,6 +334,7 @@ Modern cloud services use automated or code-driven configuration management and 
 !!! quote ""
 
     Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.
+
 
       **Applies to:** Low, Moderate
       
@@ -334,6 +360,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-6 Configuration Settings
 - cm-8.3 Automated Unauthorized Component Detection
 - ma-2 Controlled Maintenance
+
       **Applies to:** Low, Moderate
       
 
@@ -352,6 +379,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-7 Least Functionality
 - cm-8.1 Updates During Installation and Removal
 - si-3 Malicious Code Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -367,6 +395,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-3.2 Testing, Validation, and Documentation of Changes
 - cm-4.2 Verification of Controls
 - si-2 Flaw Remediation
+
       **Applies to:** Low, Moderate
       
 
@@ -384,6 +413,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-5 Access Restrictions for Change
 - cm-7.1 Periodic Review
 - cm-9 Configuration Management Plan
+
       **Applies to:** Low, Moderate
       
 
@@ -415,6 +445,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-7.1 Periodic Review
 - sc-7.5 Deny by Default — Allow by Exception
 - si-8 Spam Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -440,6 +471,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-10 Information Input Validation
 - si-11 Error Handling
 - si-16 Memory Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -459,6 +491,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-7.7 Split Tunneling for Remote Devices
 - sc-8 Transmission Confidentiality and Integrity
 - sc-10 Network Disconnect
+
       **Applies to:** Low, Moderate
       
 
@@ -472,6 +505,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - cm-2 Baseline Configuration
 - si-3 Malicious Code Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -486,6 +520,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-5 Denial-of-service Protection
 - si-8 Spam Protection
 - si-8.2 Automatic Updates
+
       **Applies to:** Low, Moderate
       
 
@@ -494,6 +529,7 @@ Modern cloud services use automated or code-driven configuration management and 
 !!! quote ""
 
     Design systems for high availability and rapid recovery.
+
 
       **Applies to:** Low, Moderate
       
@@ -509,6 +545,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ac-17.3 Managed Access Control Points
 - cm-2 Baseline Configuration
 - pl-10 Baseline Selection
+
       **Applies to:** Low, Moderate
       
 
@@ -522,6 +559,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - ca-2.1 Independent Assessors
 - ca-7.1 Independent Assessment
+
       **Applies to:** Moderate
       
 
@@ -547,6 +585,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ia-5 Authenticator Management
 - ia-8 Identification and Authentication (Non-organizational Users)
 - sc-23 Session Authenticity
+
       **Applies to:** Low, Moderate
       
 
@@ -568,6 +607,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ia-5.6 Protection of Authenticators
 - ia-6 Authentication Feedback
 - sc-23 Session Authenticity
+
       **Applies to:** Low, Moderate
       
 
@@ -586,6 +626,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ia-3 Device Identification and Authentication
 - ia-5.2 Public Key-based Authentication
 - ra-5.5 Privileged Access
+
       **Applies to:** Low, Moderate
       
 
@@ -636,6 +677,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-2 Separation of System and User Functionality
 - sc-23 Session Authenticity
 - sc-39 Process Isolation
+
       **Applies to:** Low, Moderate
       
 
@@ -681,6 +723,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-23 Session Authenticity
 - sc-39 Process Isolation
 - si-3 Malicious Code Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -699,6 +742,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ac-7 Unsuccessful Logon Attempts
 - ps-4 Personnel Termination
 - ps-8 Personnel Sanctions
+
       **Applies to:** Low, Moderate
       
 
@@ -719,6 +763,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ia-12.2 Identity Evidence
 - ia-12.3 Identity Evidence Validation and Verification
 - ia-12.5 Address Confirmation
+
       **Applies to:** Low, Moderate
       
 
@@ -746,6 +791,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-8 Incident Response Plan
 - ir-8.1 Breaches
 - si-4.5 System-generated Alerts
+
       **Applies to:** Low, Moderate
       
 
@@ -762,6 +808,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-4.1 Automated Incident Handling Processes
 - ir-5 Incident Monitoring
 - ir-8 Incident Response Plan
+
       **Applies to:** Low, Moderate
       
 
@@ -777,6 +824,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ir-4 Incident Handling
 - ir-4.1 Automated Incident Handling Processes
 - ir-8 Incident Response Plan
+
       **Applies to:** Low, Moderate
       
 
@@ -812,6 +860,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-4.2 Automated Tools and Mechanisms for Real-time Analysis
 - si-4.4 Inbound and Outbound Communications Traffic
 - si-7.7 Integration of Detection and Response
+
       **Applies to:** Low, Moderate
       
 
@@ -830,6 +879,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - au-6.1 Automated Process Integration
 - si-4 System Monitoring
 - si-4.4 Inbound and Outbound Communications Traffic
+
       **Applies to:** Low, Moderate
       
 
@@ -863,6 +913,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-2 Baseline Configuration
 - cm-6 Configuration Settings
 - si-7.7 Integration of Detection and Response
+
       **Applies to:** Low, Moderate
       
 
@@ -893,6 +944,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-4.4 Inbound and Outbound Communications Traffic
 - si-4.5 System-generated Alerts
 - si-7.7 Integration of Detection and Response
+
       **Applies to:** Low, Moderate
       
 
@@ -905,6 +957,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ##### Controls
 
 - si-11 Error Handling
+
       **Applies to:** Moderate
       
 
@@ -929,6 +982,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cm-12 Information Location
 - cm-12.1 Automated Tools to Support Information Location
 - cp-2.8 Identify Critical Assets
+
       **Applies to:** Low, Moderate
       
 
@@ -970,6 +1024,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sr-2 Supply Chain Risk Management Plan
 - sr-3 Supply Chain Controls and Processes
 - sr-11 Component Authenticity
+
       **Applies to:** Low, Moderate
       
 
@@ -982,6 +1037,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ##### Controls
 
 - ra-5.11 Public Disclosure Program
+
       **Applies to:** Low, Moderate
       
 
@@ -1005,6 +1061,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-10 Information Input Validation
 - si-11 Error Handling
 - si-16 Memory Protection
+
       **Applies to:** Low, Moderate
       
 
@@ -1013,6 +1070,7 @@ Modern cloud services use automated or code-driven configuration management and 
 !!! quote ""
 
     Document methods used to evaluate _information resource_ implementations.
+
 
       **Applies to:** Low, Moderate
       
@@ -1034,6 +1092,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sa-2 Allocation of Resources
 - sa-3 System Development Life Cycle
 - sr-2.1 Establish SCRM Team
+
       **Applies to:** Low, Moderate
       
 
@@ -1047,6 +1106,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - ca-7.4 Risk Monitoring
 - sc-18 Mobile Code
+
       **Applies to:** Low, Moderate
       
 
@@ -1055,6 +1115,7 @@ Modern cloud services use automated or code-driven configuration management and 
 !!! quote ""
 
     Regularly measure executive support for achieving the organization’s security objectives.
+
 
       **Applies to:** Low, Moderate
       
@@ -1075,6 +1136,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - cp-2.3 Resume Mission and Business Functions
 - cp-10 System Recovery and Reconstitution
+
       **Applies to:** Low, Moderate
       
 
@@ -1102,6 +1164,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cp-8.2 Single Points of Failure
 - cp-10 System Recovery and Reconstitution
 - cp-10.2 Transaction Recovery
+
       **Applies to:** Low, Moderate
       
 
@@ -1119,6 +1182,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cp-10 System Recovery and Reconstitution
 - cp-10.2 Transaction Recovery
 - si-12 Information Management and Retention
+
       **Applies to:** Low, Moderate
       
 
@@ -1140,6 +1204,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - cp-10 System Recovery and Reconstitution
 - ir-3 Incident Response Testing
 - ir-3.2 Coordination with Related Plans
+
       **Applies to:** Low, Moderate
       
 
@@ -1166,6 +1231,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-2.2 Automated Flaw Remediation Status
 - si-4 System Monitoring
 - sr-10 Inspection of Systems or Components
+
       **Applies to:** Low, Moderate
       
 
@@ -1187,6 +1253,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sc-21 Secure Name/Address Resolution Service (Recursive or Caching Resolver)
 - sc-22 Architecture and Provisioning for Name/Address Resolution Service
 - sc-23 Session Authenticity
+
       **Applies to:** Low, Moderate
       
 
@@ -1218,6 +1285,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sa-5 System Documentation
 - si-5 Security Alerts, Advisories, and Directives
 - sr-10 Inspection of Systems or Components
+
       **Applies to:** Low, Moderate
       
 
@@ -1236,6 +1304,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-7 Software, Firmware, and Information Integrity
 - si-7.1 Integrity Checks
 - sr-10 Inspection of Systems or Components
+
       **Applies to:** Low, Moderate
       
 
@@ -1252,6 +1321,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ia-5.6 Protection of Authenticators
 - sc-12 Cryptographic Key Establishment and Management
 - sc-17 Public Key Infrastructure Certificates
+
       **Applies to:** Low, Moderate
       
 
@@ -1266,6 +1336,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - ca-7.4 Risk Monitoring
 - ra-5 Vulnerability Monitoring and Scanning
 - ra-7 Risk Response
+
       **Applies to:** Low, Moderate
       
 
@@ -1278,6 +1349,7 @@ Modern cloud services use automated or code-driven configuration management and 
 ##### Controls
 
 - sc-4 Information in Shared System Resources
+
       **Applies to:** Moderate
       
 
@@ -1291,6 +1363,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - sc-23 Session Authenticity
 - si-7.1 Integrity Checks
+
       **Applies to:** Moderate
       
 
@@ -1304,6 +1377,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 - si-12.3 Information Disposal
 - si-18.4 Individual Requests
+
       **Applies to:** Moderate
       
 
@@ -1349,6 +1423,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - si-7.1 Integrity Checks
 - sr-5 Acquisition Strategies, Tools, and Methods
 - sr-6 Supplier Assessments and Reviews
+
       **Applies to:** Low, Moderate
       
 
@@ -1370,6 +1445,7 @@ Modern cloud services use automated or code-driven configuration management and 
 - sr-5 Acquisition Strategies, Tools, and Methods
 - sr-6 Supplier Assessments and Reviews
 - sr-8 Notification Agreements
+
       **Applies to:** Low, Moderate
       
 
