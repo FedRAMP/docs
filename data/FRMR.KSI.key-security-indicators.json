@@ -228,23 +228,27 @@
       "requirements": [
         {
           "id": "KSI-AFR-01",
-          "name": "Minimum Assessment Scope (MAS)",
+          "name": "Minimum Assessment Scope",
           "statement": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Minimum Assessment Scope",
+          "reference_url": "https://fedramp.gov/docs/20xP2/minimum-assessment-scope"
         },
         {
           "id": "KSI-AFR-02",
-          "name": "Key Security Indicators (KSI)",
+          "name": "Key Security Indicators",
           "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Key Security Indicators",
+          "reference_url": "https://fedramp.gov/docs/20xP2/key-security-indicators"
         },
         {
           "id": "KSI-AFR-03",
-          "name": "Authorization Data Sharing (ADS)",
+          "name": "Authorization Data Sharing",
           "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
+          "reference": "Authorization Data Sharing",
+          "reference_url": "https://fedramp.gov/docs/20xP2/authorization-data-sharing",
           "controls": [
             {
               "control_id": "ac-3",
@@ -286,9 +290,11 @@
         },
         {
           "id": "KSI-AFR-04",
-          "name": "Vulnerability Detection and Response (VDR)",
+          "name": "Vulnerability Detection and Response",
           "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
+          "reference": "Vulnerability Detection and Response",
+          "reference_url": "https://fedramp.gov/docs/20xP2/vulnerability-detection-and-response",
           "controls": [
             {
               "control_id": "ca-2",
@@ -454,9 +460,11 @@
         },
         {
           "id": "KSI-AFR-05",
-          "name": "Significant Change Notification (SCN)",
-          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notification (SCN) standard and persistently address all related requirements and recommendations.",
+          "name": "Significant Change Notifications",
+          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
+          "reference": "Significant Change Notifications",
+          "reference_url": "https://fedramp.gov/docs/20xP2/significant-change-notifications",
           "controls": [
             {
               "control_id": "ca-7.4",
@@ -530,45 +538,51 @@
         },
         {
           "id": "KSI-AFR-06",
-          "name": "Collaborative Continuous Monitoring (CCM)",
+          "name": "Collaborative Continuous Monitoring",
           "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Collaborative Continuous Monitoring",
+          "reference_url": "https://fedramp.gov/docs/20xP2/collaborative-continuous-monitoring"
         },
         {
           "id": "KSI-AFR-07",
-          "name": "Recommended Secure Configuration (RSC)",
-          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) standard and persistently address all related requirements and recommendations.",
+          "name": "Recommended Secure Configuration",
+          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Recommended Secure Configuration",
+          "reference_url": "https://fedramp.gov/docs/20xP2/recommended-secure-configuration"
         },
         {
           "id": "KSI-AFR-08",
-          "name": "FedRAMP Security Inbox (FSI)",
+          "name": "FedRAMP Security Inbox",
           "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "FedRAMP Security Inbox",
+          "reference_url": "https://fedramp.gov/docs/20xP2/fedramp-security-inbox"
         },
         {
           "id": "KSI-AFR-09",
-          "name": "Persistent Validation and Assessment (PVA)",
+          "name": "Persistent Validation and Assessment",
           "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Persistent Validation and Assessment",
+          "reference_url": "https://fedramp.gov/docs/20xP2/persistent-validation-and-assessment"
         },
         {
           "id": "KSI-AFR-10",
-          "name": "Incident Communications Procedures(ICP)",
+          "name": "Incident Communications Procedures",
           "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Incident Communications Procedures",
+          "reference_url": "https://fedramp.gov/docs/20xP2/incident-communications-procedures"
         },
         {
           "id": "KSI-AFR-11",
-          "name": "Use of Cryptographic Modules (UCM)",
-          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Use of Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.",
+          "name": "Using Cryptographic Modules",
+          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
-          "controls": []
+          "reference": "Using Cryptographic Modules",
+          "reference_url": "https://fedramp.gov/docs/20xP2/using-cryptographic-modules"
         }
       ]
     },

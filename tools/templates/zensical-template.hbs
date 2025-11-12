@@ -200,6 +200,10 @@
           {{/if}}
         {{/if}}
         {{#if impact}}
+ {{#if reference}}
+    **Reference:** [{{reference}}]({{reference_url}})
+{{/if}}
+
         {{!-- this is super messy but ok for now --}}
       **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if
         impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
