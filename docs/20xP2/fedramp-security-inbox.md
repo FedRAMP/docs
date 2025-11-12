@@ -18,7 +18,7 @@ This set of requirements and recommendations include explicit requirements that 
 
 ??? success "Effective Date(s) & Overall Applicability"
     - **Release:** 25.11A DRAFT
-    - **Published:** 1900-01-01
+    - **Published:** 2025-11-17
     - **Designator:** FedRAMP Security Inbox
     - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release.
     ---

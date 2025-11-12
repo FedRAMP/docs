@@ -128,11 +128,11 @@
         "id": "FRD-ALL-02",
         "term": "Information Resource",
         "alts": ["information resource", "information resources"],
-        "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\"",
-        "note": "This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.",
+        "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\" This includes any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from non-_machine-based_ _information resources_ like organizational policies, procedures, employees, etc. to _machine-based_ _information resources_ like hardware, software, cloud services, code, etc.",
+        "note": "_Information resources_ are either _machine-based_ or non-_machine-based_; any requirement or recommendation that references _information resources_ without specifying a type is inclusive of all _information resources_.",
         "reference": "44 USC § 3502 (6)",
         "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
-        "referenced_fr": ["FRD-ALL-06"]
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-50"]
       },
       {
         "id": "FRD-ALL-03",
@@ -521,6 +521,50 @@
         "alts": ["security inbox", "security inboxes", "FSI"],
         "definition": "An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.",
         "referenced_fr": ["FRD-FSI"]
+      },
+      {
+        "id": "FRD-ALL-46",
+        "term": "All Necessary Assessors",
+        "alts": ["all necessary assessors"],
+        "definition": "All entities who participate in the FedRAMP assessment of a _cloud service offering_ in the context of a FedRAMP program authorization. This always includes FedRAMP and any FedRAMP recognized independent assessor contracted by the provider to perform a FedRAMP assessment.",
+        "note": "This standard identifies the requirements for an assessment and authorization performed by FedRAMP prior to any _agency_ use of the _cloud service offering_, therefore _agency_ assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials _agency_ authorization teams need to assess the _cloud service offering_ for _agency_ use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.",
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-19"]
+      },
+      {
+        "id": "FRD-ALL-47",
+        "term": "Persistent Validation",
+        "alts": [
+          "persistent validation",
+          "persistently validate",
+          "persistently validated",
+          "validate",
+          "validated",
+          "validation"
+        ],
+        "definition": "The systematic and persistent process of validating that _information resources_ within a _cloud service offering_ are operating in a secure manner as expected by the goals and objectives outlined by the provider against FedRAMP Key Security Indicators.",
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-02"]
+      },
+      {
+        "id": "FRD-ALL-48",
+        "term": "Initial FedRAMP Assessment",
+        "alts": ["initial FedRAMP assessment", "IFRA"],
+        "definition": "The first full assessment of a _cloud service offering_ seeking FedRAMP authorization, coordinated by the provider with _all necessary assessors_, that results in a FedRAMP authorization.",
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-46"]
+      },
+      {
+        "id": "FRD-ALL-49",
+        "term": "Persistent FedRAMP Assessment",
+        "alts": ["persistent FedRAMP assessment", "PFRA"],
+        "definition": "Follow-on assessments of a _cloud service offering_ focused on Key Security Indicators, coordinated by the provider with _all necessary assessors_, to maintain a FedRAMP authorization or change its _impact categorization_.",
+        "referenced_fr": ["FRD-ALL-06", "FRD-ALL-46", "FRD-ALL-12"]
+      },
+      {
+        "id": "FRD-ALL-50",
+        "term": "Machine-Based (information resources)",
+        "alts": ["machine-based", "machine based"],
+        "definition": "Any information technology _information resource_—including systems, processes, software, hardware, services, cloud-native capabilities, and any other such capability, component, or resource—that relies primarily on mechanical or electronic devices (i.e. computers) for operation.",
+        "note": "All other _information resources_ that do not rely on computers are non-_machine-based_ _information resources_.",
+        "referenced_fr": ["FRD-ALL-02"]
       }
     ]
   }

@@ -99,9 +99,9 @@
             "statement": "",
             "name": "",
             "impact": { "low": true, "moderate": true, "high": true },
-            "affects": ["Providers", "3PAOs", "Agencies"],
+            "affects": ["Providers", "Assessors", "Agencies"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-TLA-01"],
+            "referenced_fr": ["FRD-ALL-"],
             "following_information": ["", ""],
             "note": ""
           }
@@ -118,9 +118,9 @@
             "statement": "",
             "name": "",
             "impact": { "low": true, "moderate": true, "high": true },
-            "affects": ["Providers", "3PAOs", "Agencies"],
+            "affects": ["Providers", "Assessors", "Agencies"],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-TLA-01"],
+            "referenced_fr": ["FRD-ALL-"],
             "following_information": ["", ""],
             "note": ""
           }

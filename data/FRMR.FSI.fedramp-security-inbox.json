@@ -8,8 +8,8 @@
     "types": ["FRR"],
     "releases": [
       {
-        "id": "25.00A",
-        "published_date": "1900-01-01",
+        "id": "25.11A",
+        "published_date": "2025-11-17",
         "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release.",
         "public_comment": true,
         "effective": {
