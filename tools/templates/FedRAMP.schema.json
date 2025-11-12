@@ -316,8 +316,7 @@
                     "type": "object",
                     "required": [
                       "low",
-                      "moderate",
-                      "high"
+                      "moderate"
                     ],
                     "properties": {
                       "low": {
@@ -382,7 +381,7 @@
         "statement": { "type": "string" },
         "impact": {
           "type": "object",
-          "required": ["low", "moderate", "high"],
+          "required": ["low", "moderate"],
           "properties": {
             "low": { "type": "boolean" },
             "moderate": { "type": "boolean" },
@@ -626,8 +625,7 @@
                 "type": "object",
                 "required": [
                   "low",
-                  "moderate",
-                  "high"
+                  "moderate"
                 ],
                 "properties": {
                   "low": {
