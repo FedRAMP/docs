@@ -19,7 +19,9 @@ Handlebars.registerHelper('FRDSorted', function(array, options) {
   return result;
 });
 
-
+Handlebars.registerHelper("uppercase", function (str) {
+  return str ? str.toUpperCase() : "";
+});
 
 async function convertFRMRToMarkdown(
   jsonFilePath: string,
@@ -38,27 +40,12 @@ async function convertFRMRToMarkdown(
     const compiledTemplate = Handlebars.compile(templateContent);
 
     // Render the template with the JSON data
-    const markdown = compiledTemplate({ ...jsonData, showControls: false });
+    const markdown = compiledTemplate({ ...jsonData });
 
     // Write the markdown to the output file
     await fs.writeFile(outputFilePath, markdown);
 
     console.log(`Successfully converted ${jsonFilePath} to ${outputFilePath}`);
-    // This is sloppy but can polish this up another time, renders a separate
-    // version of the KSI markdown with controls shown
-    if (baseName.startsWith("FRMR.KSI.")) {
-      outputFilePath = outputFilePath.replace(/\.md$/, "-with-controls.md");
-
-      // Render the template with the JSON data
-      const markdown = compiledTemplate({ ...jsonData, showControls: true });
-
-      // Write the markdown to the output file
-      await fs.writeFile(outputFilePath, markdown);
-
-      console.log(
-        `Successfully converted ${jsonFilePath} to ${outputFilePath}`
-      );
-    }
   } catch (error) {
     console.error("Error converting FRMR to Markdown:", error);
   }

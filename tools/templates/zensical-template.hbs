@@ -191,16 +191,12 @@
       {{/if}}  
 
         {{#if controls}}
-          {{#if @root.showControls}}
-##### Controls
 
-            {{#each controls}}
-- {{ control_id }} {{ title }}
-            {{/each}}
-          {{/if}}
-        {{/if}}
+    **Related SP 800-53 Controls:** {{#each controls}}{{ uppercase control_id }}{{#unless @last}}, {{/unless}}{{/each}}
+    {{/if}}
         {{#if impact}}
  {{#if reference}}
+
     **Reference:** [{{reference}}]({{reference_url}})
 {{/if}}
 
