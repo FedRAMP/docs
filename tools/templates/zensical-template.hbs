@@ -69,7 +69,15 @@
 
 {{/if}}
 
+
+
+
+
+
+
+
 {{!-- Requirements section (FRR) --}}
+
 {{#if FRR}}
 
   {{#each FRR}}
@@ -85,7 +93,11 @@
     {{this.application}}
       {{#each requirements}}
 
+{{#if this.name}}
+### {{this.id}} {{this.name}}
+{{else}}
 ### {{this.id}}
+{{/if}}
 
 !!! quote ""
     {{this.statement}}

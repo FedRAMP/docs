@@ -20,7 +20,11 @@
                 "designator": "20x"
               }
             },
-            "comments": [""]
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations.",
+              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
+              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
+            ]
           },
           "Rev5": {
             "timeline": {
@@ -68,48 +72,57 @@
     "TLA": {
       "base": {
         "id": "FRR-TLA",
+        "name": "Requirements & Recommendations",
         "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
         "referenced_fr": ["FRD-TLA-00"],
         "requirements": [
           {
             "id": "FRR-TLA-00",
+            "name": "",
             "statement": "",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "following_information": ["", ""]
+            "following_information": ["", ""],
+            "note": ""
           }
         ]
       },
       "exceptions": {
         "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
         "id": "FRR-TLA-EX",
+        "name": "Exceptions",
         "requirements": [
           {
             "id": "FRR-TLA-EX-01",
             "statement": "",
+            "name": "",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "following_information": ["", ""]
+            "following_information": ["", ""],
+            "note": ""
           }
         ]
       },
       "another_type": {
         "application": "These requirements apply ONLY to CHANGEME ANOTHER TYPE.",
         "id": "FRR-TLA-LL",
+        "name": "Another Type",
         "referenced_fr": ["FRD-TLA-00", "FRD-TLA-00"],
         "requirements": [
           {
             "id": "FRR-TLA-LL-00",
             "statement": "",
+            "name": "",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers", "3PAOs", "Agencies"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-TLA-01"],
-            "following_information": ["", ""]
+            "following_information": ["", ""],
+            "note": ""
           }
         ]
       }
@@ -118,6 +131,7 @@
   "FRA": {
     "TLA": {
       "id": "FRA-TLA",
+      "name": "Technical Assistance",
       "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
       "purpose": "This Technical Assistance helps stakeholders ....",
       "requirements": [

@@ -111,6 +111,14 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
     **Also:** false positive vulnerability, false positive vulnerabilities
 
     **ID:** FRD-ALL-29
+### FedRAMP Security Inbox
+
+!!! quote ""
+    An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.
+
+    **Also:** security inbox, security inboxes, FSI
+
+    **ID:** FRD-ALL-45
 ### Federal Customer Data
 
 !!! quote ""
@@ -419,6 +427,14 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
     **Also:** vulnerability response, respond to vulnerabilities, respond, response, responded
 
     **ID:** FRD-ALL-22
+
+
+
+
+
+
+
+
 
 
 

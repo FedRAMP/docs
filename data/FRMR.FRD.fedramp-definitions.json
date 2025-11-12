@@ -514,6 +514,13 @@
         "alts": ["quarterly review", "quarterly reviews"],
         "definition": "A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.",
         "referenced_fr": ["FRD-ALL-07"]
+      },
+      {
+        "id": "FRD-ALL-45",
+        "term": "FedRAMP Security Inbox",
+        "alts": ["security inbox", "security inboxes", "FSI"],
+        "definition": "An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.",
+        "referenced_fr": ["FRD-FSI"]
       }
     ]
   }
