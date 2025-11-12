@@ -26,6 +26,14 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
 
 
 
+
+
+
+
+
+
+
+
         
 ## Requirements &amp; Recommendations
 

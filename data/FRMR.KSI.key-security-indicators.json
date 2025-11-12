@@ -193,6 +193,7 @@
           {
             "id": "FRR-KSI-01",
             "statement": "Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
+            "name": "Application of Key Security Indicators",
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
             "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"],
@@ -209,6 +210,7 @@
               "Current implementation status",
               "Any clarifications or responses to the assessment summary"
             ],
+            "name": "Implementation Summaries",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "impact": { "low": true, "moderate": true },
@@ -542,8 +544,8 @@
         },
         {
           "id": "KSI-AFR-08",
-          "name": "FedRAMP Security Inbox (SIR)",
-          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations.",
+          "name": "FedRAMP Security Inbox (FSI)",
+          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
           "impact": { "low": true, "moderate": true },
           "controls": []
         },

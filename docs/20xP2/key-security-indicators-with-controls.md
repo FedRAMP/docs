@@ -24,13 +24,21 @@ Modern cloud services use automated or code-driven configuration management and 
 
 
 
+
+
+
+
+
+
+
+
         
 ## Requirements &amp; Recommendations
 
 !!! info ""
     These requirements apply ALWAYS to ALL FedRAMP 20x authorizations based on the Effective Date(s) and Overall Applicability.
 
-### FRR-KSI-01
+### FRR-KSI-01 Application of Key Security Indicators
 
 !!! quote ""
     Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.
@@ -39,7 +47,7 @@ Modern cloud services use automated or code-driven configuration management and 
     **Applies to:** Low, Moderate
     
 
-### FRR-KSI-02
+### FRR-KSI-02 Implementation Summaries
 
 !!! quote ""
     Providers MUST maintain simple high-level summaries of at least the following for each Key Security Indicator:
@@ -208,11 +216,11 @@ Modern cloud services use automated or code-driven configuration management and 
       **Applies to:** Low, Moderate
       
 
-#### KSI-AFR-08 FedRAMP Security Inbox (SIR)
+#### KSI-AFR-08 FedRAMP Security Inbox (FSI)
 
 !!! quote ""
 
-    Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox Requirements (SIR) and persistently address all related requirements and recommendations.
+    Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.
 
       **Applies to:** Low, Moderate
       
