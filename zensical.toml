@@ -77,3 +77,7 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
+#[project.markdown_extensions.abbr]
+#[project.markdown_extensions.attr_list]
+#[project.markdown_extensions.pymdownx.snippets]
+#auto_append = ["overrides/definitions.md"]
