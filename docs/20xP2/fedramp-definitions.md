@@ -48,6 +48,16 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
     **Also:** agency, agencies
 
     **ID:** FRD-ALL-19
+### All Necessary Assessors
+
+!!! quote ""
+    All entities who participate in the FedRAMP assessment of a _cloud service offering_ in the context of a FedRAMP program authorization. This always includes FedRAMP and any FedRAMP recognized independent assessor contracted by the provider to perform a FedRAMP assessment.
+
+    **Note:** This standard identifies the requirements for an assessment and authorization performed by FedRAMP prior to any _agency_ use of the _cloud service offering_, therefore _agency_ assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials _agency_ authorization teams need to assess the _cloud service offering_ for _agency_ use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.
+
+    **Also:** all necessary assessors
+
+    **ID:** FRD-ALL-46
 ### All Necessary Parties
 
 !!! quote ""
@@ -165,14 +175,22 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 ### Information Resource
 
 !!! quote ""
-    Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot;
+    Has the meaning from 44 USC § 3502 (6): &quot;information and related resources, such as personnel, equipment, funds, and information technology.&quot; This includes any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from non-_machine-based_ _information resources_ like organizational policies, procedures, employees, etc. to _machine-based_ _information resources_ like hardware, software, cloud services, code, etc.
 
-    **Note:** This applies to any aspect of the _cloud service offering_, both technical and managerial, including everything that makes up the business of the offering from organizational policies and procedures to hardware, software, and code.
+    **Note:** _Information resources_ are either _machine-based_ or non-_machine-based_; any requirement or recommendation that references _information resources_ without specifying a type is inclusive of all _information resources_.
     [**Reference:** 44 USC § 3502 (6)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502)
 
     **Also:** information resource, information resources
 
     **ID:** FRD-ALL-02
+### Initial FedRAMP Assessment
+
+!!! quote ""
+    The first full assessment of a _cloud service offering_ seeking FedRAMP authorization, coordinated by the provider with _all necessary assessors_, that results in a FedRAMP authorization.
+
+    **Also:** initial FedRAMP assessment, IFRA
+
+    **ID:** FRD-ALL-48
 ### Interim Requirement
 
 !!! quote ""
@@ -232,6 +250,16 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
     **Also:** limited adverse effect, limited adverse effects
 
     **ID:** FRD-ALL-34
+### Machine-Based (information resources)
+
+!!! quote ""
+    Any information technology _information resource_—including systems, processes, software, hardware, services, cloud-native capabilities, and any other such capability, component, or resource—that relies primarily on mechanical or electronic devices (i.e. computers) for operation.
+
+    **Note:** All other _information resources_ that do not rely on computers are non-_machine-based_ _information resources_.
+
+    **Also:** machine-based, machine based
+
+    **ID:** FRD-ALL-50
 ### Machine-Readable
 
 !!! quote ""
@@ -273,6 +301,22 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
     **Also:** partially mitigated vulnerability, partially mitigated vulnerabilities
 
     **ID:** FRD-ALL-27
+### Persistent FedRAMP Assessment
+
+!!! quote ""
+    Follow-on assessments of a _cloud service offering_ focused on Key Security Indicators, coordinated by the provider with _all necessary assessors_, to maintain a FedRAMP authorization or change its _impact categorization_.
+
+    **Also:** persistent FedRAMP assessment, PFRA
+
+    **ID:** FRD-ALL-49
+### Persistent Validation
+
+!!! quote ""
+    The systematic and persistent process of validating that _information resources_ within a _cloud service offering_ are operating in a secure manner as expected by the goals and objectives outlined by the provider against FedRAMP Key Security Indicators.
+
+    **Also:** persistent validation, persistently validate, persistently validated, validate, validated, validation
+
+    **ID:** FRD-ALL-47
 ### Persistently
 
 !!! quote ""

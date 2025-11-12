@@ -26,6 +26,7 @@ nav = [
         {"Collaborative Continous Monitoring" = "20xP2/collaborative-continuous-monitoring.md"},
         {"Recommended Secure Configuration" = "20xP2/recommended-secure-configuration.md"},
         {"FedRAMP Security Inbox" = "20xP2/fedramp-security-inbox.md"},
+        {"Persistent Validation and Assessment" = "20xP2/persistent-validation-and-assessment.md"},
         {"Incident Communications Procedures" = "20xP2/incident-communications-procedures.md"},
         {"Using Cryptographic Modules" = "20xP2/using-cryptographic-modules.md"},
     ]},
@@ -76,6 +77,7 @@ toggle.name = "Switch to dark mode"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
+
 
 #[project.markdown_extensions.abbr]
 #[project.markdown_extensions.attr_list]
