@@ -3,7 +3,7 @@
   "$id": "FedRAMP.schema.json",
   "info": {
     "name": "FedRAMP Security Inbox requirements",
-    "short_name": "FedRAMP Security Inbox",
+    "short_name": "FSI",
     "current_release": "25.11A DRAFT",
     "types": ["FRR"],
     "releases": [

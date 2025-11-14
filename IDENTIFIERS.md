@@ -30,6 +30,7 @@ Designators include a prefix, a label, an optional suffix, then a number.
 
 **Key Security Indicator Labels:**
 
+- `AFR`: Authorization by FedRAMP
 - `CED`: Cybersecurity Education
 - `CMT`: Change Management
 - `CNA`: Cloud Native Architecture

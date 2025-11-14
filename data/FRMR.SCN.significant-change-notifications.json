@@ -225,7 +225,7 @@
           {
             "id": "FRR-SCN-06",
             "statement": "All parties SHOULD follow FedRAMP's best practices and technical assistance on _significant change_ assessment and notification where applicable.",
-            "affects": ["Providers", "Agencies", "3PAOs"],
+            "affects": ["Providers", "Agencies", "Assessors"],
             "primary_key_word": "SHOULD",
             "referenced_fr": ["FRD-ALL-08"],
             "impact": { "low": true, "moderate": true, "high": true }
@@ -250,7 +250,7 @@
             "statement": "Providers MUST include at least the following information in Significant Change Notifications:",
             "following_information": [
               "Service Offering FedRAMP ID",
-              "3PAO Name (if applicable)",
+              "Assessor Name (if applicable)",
               "Related POA&M (if applicable)",
               "Significant Change type and explanation of categorization",
               "Short description of change",
