@@ -41,4 +41,6 @@ Building teh site has two main steps:
 2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
 3. Once you have confirmed the site looks correct you can build the static site by running `zensical build`.
 
-    
+#### Generate documentation for the JSON Schema
+pip install json-schema-for-humans 
+generate-schema-doc templates/FedRAMP.schema.json

@@ -11,7 +11,9 @@
       "required": ["name", "short_name", "current_release", "types", "releases", "front_matter"],
       "additionalProperties": false,
       "properties": {
-        "name": { "type": "string" },
+        "name": { "type": "string",
+          "description": "The name of the document or policy"
+        },
         "short_name": { "type": "string", "pattern": "^[A-Z]{3}$" },
         "current_release": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$"},
         "types": {
