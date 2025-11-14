@@ -281,7 +281,7 @@
           }
         ]
       },
-      "timeframe-mod": {
+      "timeframe-moderate": {
         "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
         "id": "FRR-PVA-TF-MO",
         "name": "Timeframes - Moderate",
