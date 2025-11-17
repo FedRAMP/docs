@@ -10,9 +10,9 @@ This set of requirements focus specifically on communication that comes from Fed
 
 3. General communications that include all other messages from FedRAMP that may be managed by a cloud service provider following their standard operational process.
 
-All Emergency and Important messages sent by FedRAMP will include specific actions, timeframes expected for action, and an explanation of the corrective actions that FedRAMP will take if the timeframes are not met. In extreme circumstances, failure to take timely action as required by Emergency communications may result in suspension from the FedRAMP Marketplace.
+All Emergency and Important messages sent by FedRAMP will include specific actions, timeframes expected for action, and an explanation of the corrective actions that FedRAMP will take if the timeframes are not met. Failure to take timely action as required by Emergency communications will result in corrective action from FedRAMP.
 
-FedRAMP will conduct strictly controlled tests of response to emergency communications regularly and provide public notice of these tests in advance. The response times for these tests will be tracked by FedRAMP and may be made publicly available.
+FedRAMP will conduct strictly controlled tests of response to emergency communications regularly and provide public notice of these tests in advance. The response times for these tests will be tracked by FedRAMP and made publicly available.
 
 This set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.
 
@@ -147,8 +147,12 @@ This set of requirements and recommendations include explicit requirements that 
 !!! quote ""
     Providers MUST establish and maintain an email address to receive messages from FedRAMP; this inbox is a _FedRAMP Security Inbox_ (FSI).
 
-    **Note:** NOTE: This inbox does not need to be dedicated to FedRAMP communications or have any specific public-facing name. It may be the email address listed in the Security E-Mail on the Marketplace or may be any other inbox given to FedRAMP. If a provider establishes a new inbox in response to this guidance that is different from the Security E-Mail they must follow the requirements in FRR-FSI-12 to notify FedRAMP.
 
+    **Notes:**
+
+    - Unless otherwise notified, FedRAMP will use the listed Security E-mail on the Marketplace for these notifications.
+
+    - If a provider establishes a new inbox in response to this guidance that is different from the Security E-Mail then they must follow the requirements in FRR-FSI-12 to notify FedRAMP.
 
     **Applies to:** Low, Moderate, High
     

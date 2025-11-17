@@ -127,6 +127,14 @@
     **Note:** {{note}}
       {{/if}}
 
+      {{#if notes}}
+
+    **Notes:**
+        {{#each notes}}
+
+    - {{this}}
+        {{/each}}
+      {{/if}}  
 
       {{#if impact}}
       {{!-- this is super messy but ok for now --}}

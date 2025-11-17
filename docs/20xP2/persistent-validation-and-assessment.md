@@ -86,6 +86,12 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
     Providers MUST have the implementation of their goals and validation processes assessed by a FedRAMP-recognized independent assessor OR by FedRAMP directly AND MUST include the results of this assessment in their _authorization data_ without modification.
 
 
+    **Notes:**
+
+    - The option for assessment by FedRAMP directly is limited to cloud services that are explicitly prioritized by FedRAMP, in consultation with the FedRAMP Board and the federal Chief Information Officers Council. During 20x Phase Two this includes AI services that meet certain criteria as shown at https://fedramp.gov/ai.
+
+    - FedRAMP recognized assessors are listed on the FedRAMP Marketplace.
+
     **Applies to:** Low, Moderate, High
     
 
