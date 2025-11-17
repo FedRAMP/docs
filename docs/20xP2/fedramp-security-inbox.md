@@ -17,10 +17,10 @@ FedRAMP will conduct strictly controlled tests of response to emergency communic
 This set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.
 
 ??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A DRAFT
-    - **Published:** 2025-11-17
-    - **Designator:** FedRAMP Security Inbox
-    - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release.
+    - **Release:** 25.11A
+    - **Published:** 2025-11-18
+    - **Designator:** FSI
+    - **Description:** Initial Release of the FedRAMP Security Inbox requirements for both 20x and Rev5.
     ---
     - **FedRAMP 20x**:
         - This release is effective **2026-01-05** for **20x**.

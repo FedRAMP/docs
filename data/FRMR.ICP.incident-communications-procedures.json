@@ -9,23 +9,27 @@
     "releases": [
       {
         "id": "25.11A",
-        "published_date": "2025-11-08",
+        "published_date": "2025-11-18",
         "description": "Initial release of simplified 20x version of this existing FedRAMP policy.",
         "public_comment": false,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-11-01",
+                "start_date": "2025-11-18",
                 "designator": "20x"
               }
             },
-            "comments": ["This policy applies to all FedRAMP 20x authorizations."]
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations."
+            ]
           },
           "Rev5": {
-            "comments": ["This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP's Incident Communications Procedures."]
+            "comments": [
+              "This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP's Incident Communications Procedures."
+            ]
           }
-        }        
+        }
       }
     ],
     "front_matter": {
@@ -42,6 +46,7 @@
           {
             "id": "FRR-ICP-01",
             "statement": "Providers MUST responsibly report _incidents_ to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.",
+            "name": "Incident Reporting to FedRAMP",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -50,6 +55,7 @@
           {
             "id": "FRR-ICP-02",
             "statement": "Providers MUST responsibly report _incidents_ to all _agency_ customers within 1 hour of identification using the _incident_ communications points of contact provided by each _agency_ customer.",
+            "name": "Incident Reporting to Agencies",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -58,6 +64,7 @@
           {
             "id": "FRR-ICP-03",
             "statement": "Providers MUST responsibly report _incidents_ to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. ",
+            "name": "Incident Reporting to CISA",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -66,6 +73,7 @@
           {
             "id": "FRR-ICP-04",
             "statement": "Providers MUST update _all necessary parties_, including at least FedRAMP, CISA (if applicable), and all _agency_ customers, at least once per calendar day until the _incident_ is resolved and recovery is complete.",
+            "name": "Incident Updates",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -74,6 +82,7 @@
           {
             "id": "FRR-ICP-05",
             "statement": "Providers MUST make _incident_ report information available in their secure FedRAMP repository (such as USDA Connect) or _trust center_.",
+            "name": "Incident Report Availability",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -82,6 +91,7 @@
           {
             "id": "FRR-ICP-06",
             "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.",
+            "name": "Responsible Disclosure",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -90,6 +100,7 @@
           {
             "id": "FRR-ICP-07",
             "statement": "Providers MUST provide a final report once the _incident_ is resolved and recovery is complete that describes at least:",
+            "name": "Final Incident Report",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -105,6 +116,7 @@
           {
             "id": "FRR-ICP-08",
             "statement": "Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).",
+            "name": "Automated Reporting",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",
@@ -113,6 +125,7 @@
           {
             "id": "FRR-ICP-09",
             "statement": "Providers SHOULD make _incident_ report information available in consistent human-readable and _machine-readable_ formats.",
+            "name": "Human-Readable and Machine-Readable Formats",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "SHOULD",

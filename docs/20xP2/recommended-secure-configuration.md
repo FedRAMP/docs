@@ -5,14 +5,16 @@ All customers benefit from simple, easy to follow, easy to understand instructio
 This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
 
 ??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.00A DRAFT
-    - **Published:** 1900-01-01
+    - **Release:** 25.11A
+    - **Published:** 2025-11-18
     - **Designator:** RSC
-    - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Recommended Secure Configuration Standard (RSC) after public comment.
+    - **Description:** Initial release of the Recommended Secure Configuration Standard (RSC) for the FedRAMP 20x Phase Two pilot.
     ---
     - **FedRAMP 20x**:
-        - This release is effective **1900-01-01** for **20x**.
+        - This release is effective **2025-11-18** for **20x**.
         - This policy applies to all FedRAMP 20x authorizations.
+        - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
+        - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
     - **FedRAMP Rev5**:
         - This release is effective **2026-03-01** for **Rev5 (Wide Release)**.
         - This policy applies to all FedRAMP Rev5 authorizations as a supplement to SSP Appendix J: CSO CIS and CRM Workbook (both are required).
@@ -40,7 +42,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
 !!! info ""
     These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
 
-### FRR-RSC-01
+### FRR-RSC-01 Top-Level Administrative Accounts Guidance
 
 !!! quote ""
     Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.
@@ -51,7 +53,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-02
+### FRR-RSC-02 Top-Level Administrative Accounts Security Settings Guidance
 
 !!! quote ""
     Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.
@@ -60,7 +62,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-03
+### FRR-RSC-03 Privileged Accounts Security Settings Guidance
 
 !!! quote ""
     Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.
@@ -69,7 +71,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-04
+### FRR-RSC-04 Secure Defaults on Provisioning
 
 !!! quote ""
     Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.
@@ -78,7 +80,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-05
+### FRR-RSC-05 Comparison Capability
 
 !!! quote ""
     Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.
@@ -87,7 +89,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-06
+### FRR-RSC-06 Export Capability
 
 !!! quote ""
     Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.
@@ -96,7 +98,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-07
+### FRR-RSC-07 API Capability
 
 !!! quote ""
     Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.
@@ -105,7 +107,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-08
+### FRR-RSC-08 Machine-Readable Guidance
 
 !!! quote ""
     Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.
@@ -114,7 +116,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-09
+### FRR-RSC-09 Publish Guidance
 
 !!! quote ""
     Providers SHOULD make recommended secure configuration guidance available publicly.
@@ -123,7 +125,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-RSC-10
+### FRR-RSC-10 Versioning and Release History
 
 !!! quote ""
     Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.

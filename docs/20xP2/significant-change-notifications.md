@@ -11,13 +11,13 @@ This standard broadly identifies four types of significant changes, from least i
 These categories, and the resulting requirements, apply only to significant changes.
 
 ??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A DRAFT
-    - **Published:** 1900-01-01
+    - **Release:** 25.11A
+    - **Published:** 2025-11-18
     - **Designator:** SCN
-    - **Description:** Renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards. THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.
+    - **Description:** Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards
     ---
     - **FedRAMP 20x**:
-        - This release is effective **1900-01-01** for **20x**.
+        - This release is effective **2025-11-18** for **20x**.
         - This policy applies to all FedRAMP 20x authorizations.
         - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
         - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
@@ -48,7 +48,7 @@ These categories, and the resulting requirements, apply only to significant chan
 !!! info ""
     These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability
 
-### FRR-SCN-01
+### FRR-SCN-01 Notifications
 
 !!! quote ""
     Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.
@@ -57,7 +57,7 @@ These categories, and the resulting requirements, apply only to significant chan
     **Applies to:** Low, Moderate, High
     
 
-### FRR-SCN-02
+### FRR-SCN-02 Procedures and Documentation
 
 !!! quote ""
     Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.
@@ -66,7 +66,7 @@ These categories, and the resulting requirements, apply only to significant chan
     **Applies to:** Low, Moderate, High
     
 
-### FRR-SCN-03
+### FRR-SCN-03 Evaluate Changes
 
 !!! quote ""
     Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.
@@ -127,7 +127,7 @@ These categories, and the resulting requirements, apply only to significant chan
 
     1. Service Offering FedRAMP ID
 
-    1. 3PAO Name (if applicable)
+    1. Assessor Name (if applicable)
 
     1. Related POA&amp;M (if applicable)
 

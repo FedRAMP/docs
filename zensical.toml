@@ -38,7 +38,7 @@ nav = [
 ]
 
 [project.extra]
-homepage = "https://fedramp.gov"
+homepage = "https://fedramp.gov/20x/phase-two"
 
 [project.theme]
 logo = "assets/fedramp-logo-just-letters.svg"

@@ -3,16 +3,16 @@
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 
 ??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A DRAFT
-    - **Published:** 1900-01-01
+    - **Release:** 25.11A
+    - **Published:** 2025-11-18
     - **Designator:** FRD
-    - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.
+    - **Description:** Updates and new definitions added for the FedRAMP 20x Phase Two pilot.
     ---
     - **FedRAMP 20x**:
-        - This release is effective **2025-06-01** for **20x Phase One Pilot**.
+        - This release is effective **2025-11-18** for **20x**.
         - These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials.
     - **FedRAMP Rev5**:
-        - This release is effective **2025-06-01** for **Rev5 Balance Improvement Releases**.
+        - This release is effective **2025-11-18** for **Rev5 Balance Improvement Releases**.
         - These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release.
 
 ??? abstract "Background & Authority"

@@ -4,13 +4,13 @@
   "info": {
     "name": "Persistent Validation and Assessment",
     "short_name": "PVA",
-    "current_release": "25.11A DRAFT",
+    "current_release": "25.11A",
     "types": ["FRR"],
     "releases": [
       {
-        "id": "25.11A DRAFT",
-        "published_date": "2025-11-17",
-        "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release.",
+        "id": "25.11A",
+        "published_date": "2025-11-18",
+        "description": "Initial release of the Persistent Validation and Assessment standard for the FedRAMP 20x Phase Two pilot.",
         "public_comment": true,
         "effective": {
           "20x": {
@@ -75,7 +75,7 @@
         "requirements": [
           {
             "id": "FRR-PVA-01",
-            "name": "",
+            "name": "Persistent Validation",
             "statement": "Providers MUST _persistently_ perform validation of their Key Security Indicators following the processes and cycles documented for their _cloud service offering_ per FRR-KSI-02; this process is called _persistent validation_ and is part of _vulnerability detection_.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -90,7 +90,7 @@
           },
           {
             "id": "FRR-PVA-02",
-            "name": "",
+            "name": "Failures As Vulnerabilities",
             "statement": "Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response Standard for such findings.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -100,7 +100,7 @@
           {
             "id": "FRR-PVA-03",
             "statement": "Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response Standard.",
-            "name": "",
+            "name": "Report Persistent Validation",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -108,7 +108,7 @@
           },
           {
             "id": "FRR-PVA-04",
-            "name": "",
+            "name": "Track Significant Changes",
             "statement": "Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification Standard; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -123,7 +123,7 @@
           },
           {
             "id": "FRR-PVA-05",
-            "name": "",
+            "name": "Independent Assessment",
             "statement": "Providers MUST have the implementation of their goals and validation processes assessed by a FedRAMP-recognized independent assessor OR by FedRAMP directly AND MUST include the results of this assessment in their _authorization data_ without modification.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -136,7 +136,7 @@
           },
           {
             "id": "FRR-PVA-06",
-            "name": "",
+            "name": "Complete Validation Assessment",
             "statement": "Providers MUST ensure a complete assessment of _validation_ procedures (including underlying code, pipelines, configurations, automation tools, etc.) for the _cloud service offering_ by _all necessary assessors_.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -146,7 +146,7 @@
           },
           {
             "id": "FRR-PVA-07",
-            "name": "",
+            "name": "Provide Technical Evidence",
             "statement": "Providers SHOULD provide technical explanations, demonstrations, and other relevant supporting information to _all necessary assessors_ for the technical capabilities they employ to meet Key Security Indicators and to provide _validation_.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -155,7 +155,7 @@
           },
           {
             "id": "FRR-PVA-08",
-            "name": "",
+            "name": "Receiving Assessor Advice",
             "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their _validation_ and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also FRR-PVA-09).",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Providers"],
@@ -165,7 +165,7 @@
           },
           {
             "id": "FRR-PVA-09",
-            "name": "",
+            "name": "Assessors May Advise",
             "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their _validation_ and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also FRR-PVA-08).",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -174,7 +174,7 @@
           },
           {
             "id": "FRR-PVA-10",
-            "name": "",
+            "name": "Evaluate Validation Processes",
             "statement": "Assessors MUST evaluate the underlying processes (both _machine-based_ and non-_machine-based_) that providers use to _validate_ Key Security Indicators; this evaluation should include at least:",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -188,7 +188,7 @@
           },
           {
             "id": "FRR-PVA-11",
-            "name": "",
+            "name": "Assess Process Implementation",
             "statement": "Assessors MUST evaluate the implementation of processes derived from Key Security Indicators to determine whether or not the provider has accurately documented their process and goals.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -196,7 +196,7 @@
           },
           {
             "id": "FRR-PVA-12",
-            "name": "",
+            "name": "Assess Outcome Consistency",
             "statement": "Assessors MUST evaluate whether or not the underlying processes are consistently creating the desired security outcome documented by the provider.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -204,7 +204,7 @@
           },
           {
             "id": "FRR-PVA-13",
-            "name": "",
+            "name": "Mixed Methods Evaluation",
             "statement": "Assessors MUST perform evaluation using a combination of quantitative and expert qualitative assessment as appropriate AND document which is applied to which aspect of the assessment.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -212,7 +212,7 @@
           },
           {
             "id": "FRR-PVA-14",
-            "name": "",
+            "name": "Engage Provider Experts",
             "statement": "Assessors SHOULD engage provider experts in discussion to understand the decisions made by the provider and inform expert qualitative assessment, and SHOULD perform independent research to test such information as part of the expert qualitative assessment process.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -220,7 +220,7 @@
           },
           {
             "id": "FRR-PVA-15",
-            "name": "",
+            "name": "Avoid Static Evidence",
             "statement": "Assessors MUST NOT rely on screenshots, configuration dumps, or other static output as evidence EXCEPT when evaluating the accuracy and reliability of a process that generates such artifacts.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -228,7 +228,7 @@
           },
           {
             "id": "FRR-PVA-16",
-            "name": "",
+            "name": "Verify Procedure Adherence",
             "statement": "Assessors MUST assess whether or not procedures are consistently followed, including the processes in place to ensure this occurs, without relying solely on the existence of a procedure document for assessing if appropriate processes and procedures are in place.",
             "note": "Note: This includes evaluating tests or plans for activities that may occur in the future but have not yet occurred.",
             "impact": { "low": true, "moderate": true, "high": true },
@@ -237,7 +237,7 @@
           },
           {
             "id": "FRR-PVA-17",
-            "name": "",
+            "name": "Deliver Assessment Summary",
             "statement": "Assessors MUST deliver a high-level summary of their assessment process and findings for each Key Security Indicator; this summary will be included in the _authorization data_ for the _cloud service offering_.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -246,7 +246,7 @@
           },
           {
             "id": "FRR-PVA-18",
-            "name": "",
+            "name": "No Overall Recommendation",
             "statement": "Assessors MUST NOT deliver an overall recommendation on whether or not the _cloud service offering_ meets the requirements for FedRAMP authorization.",
             "impact": { "low": true, "moderate": true, "high": true },
             "affects": ["Assessors"],
@@ -264,7 +264,7 @@
           {
             "id": "FRR-PVA-TF-LO-01",
             "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of non-_machine-based_ _information resources_ at least once every 3 months.",
-            "name": "",
+            "name": "Quarterly Non-Machine Validation",
             "impact": { "low": true, "moderate": false, "high": false },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -273,7 +273,7 @@
           {
             "id": "FRR-PVA-TF-LO-02",
             "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of _machine-based_ _information resources_ at least once every 7 days.",
-            "name": "",
+            "name": "Weekly Machine Validation",
             "impact": { "low": true, "moderate": false, "high": false },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -289,7 +289,7 @@
           {
             "id": "FRR-PVA-TF-MO-01",
             "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of non-_machine-based_ _information resources_ at least once every 3 months.",
-            "name": "",
+            "name": "Quarterly Non-Machine Validation",
             "impact": { "low": false, "moderate": true, "high": false },
             "affects": ["Providers"],
             "primary_key_word": "MUST",
@@ -298,7 +298,7 @@
           {
             "id": "FRR-PVA-TF-LM-02",
             "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of _machine-based_ _information resources_ at least once every 3 days.",
-            "name": "",
+            "name": "3-Day Machine Validation",
             "impact": { "low": false, "moderate": true, "high": false },
             "affects": ["Providers"],
             "primary_key_word": "MUST",

@@ -4,19 +4,19 @@
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
-    "current_release": "25.11A DRAFT",
+    "current_release": "25.11A",
     "types": ["FRR", "FRA"],
     "releases": [
       {
-        "id": "25.11A DRAFT",
-        "published_date": "1900-01-01",
-        "description": "Renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with \"timeframe\" rulesets in other FedRAMP standards. THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.",
+        "id": "25.11A",
+        "published_date": "2025-11-18",
+        "description": "Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with \"timeframe\" rulesets in other FedRAMP standards",
         "public_comment": false,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "1900-01-01",
+                "start_date": "2025-11-18",
                 "designator": "20x"
               }
             },
@@ -189,6 +189,7 @@
           {
             "id": "FRR-SCN-01",
             "statement": "Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.",
+            "name": "Notifications",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "impact": { "low": true, "moderate": true, "high": true }
@@ -196,6 +197,7 @@
           {
             "id": "FRR-SCN-02",
             "statement": "Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.",
+            "name": "Procedures and Documentation",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "impact": { "low": true, "moderate": true, "high": true }
@@ -203,6 +205,7 @@
           {
             "id": "FRR-SCN-03",
             "statement": "Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.",
+            "name": "Evaluate Changes",
             "affects": ["Providers"],
             "primary_key_word": "MUST",
             "referenced_fr": ["FRD-ALL-08"],
@@ -273,7 +276,7 @@
           }
         ]
       },
-      
+
       "routine_recurring": {
         "application": "These requirements apply ONLY to _significant changes_ of type _routine recurring_.",
         "id": "FRR-SCN-RR",

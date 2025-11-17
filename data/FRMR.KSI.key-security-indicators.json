@@ -4,19 +4,19 @@
   "info": {
     "name": "Key Security Indicators",
     "short_name": "KSI",
-    "current_release": "25.11A DRAFT",
+    "current_release": "25.11A",
     "types": ["FRR", "KSI"],
     "releases": [
       {
-        "id": "25.11A DRAFT",
-        "published_date": "1900-01-01",
-        "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Phase Two Key Security Indicators (KSI) after public comment.",
+        "id": "25.11A",
+        "published_date": "2025-11-18",
+        "description": "Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs.",
         "public_comment": true,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "1900-01-01",
+                "start_date": "2025-11-18",
                 "designator": "20x"
               }
             },
@@ -30,7 +30,7 @@
         "related_rfcs": [
           {
             "start_date": "2025-09-10",
-            "end_date": "1900-01-01",
+            "end_date": "2025-11-17",
             "id": "0015",
             "url": "https://www.fedramp.gov/rfcs/0015/",
             "discussion_url": "https://github.com/FedRAMP/community/discussions/84",

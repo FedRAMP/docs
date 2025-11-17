@@ -6,12 +6,12 @@ The only notable change from the default Rev5 Incident Communications Procedures
 
 ??? success "Effective Date(s) & Overall Applicability"
     - **Release:** 25.11A
-    - **Published:** 2025-11-08
+    - **Published:** 2025-11-18
     - **Designator:** ICP
     - **Description:** Initial release of simplified 20x version of this existing FedRAMP policy.
     ---
     - **FedRAMP 20x**:
-        - This release is effective **2025-11-01** for **20x**.
+        - This release is effective **2025-11-18** for **20x**.
         - This policy applies to all FedRAMP 20x authorizations.
     - **FedRAMP Rev5**:
         - This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP&#x27;s Incident Communications Procedures.
@@ -36,7 +36,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
 !!! info ""
     These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
 
-### FRR-ICP-01
+### FRR-ICP-01 Incident Reporting to FedRAMP
 
 !!! quote ""
     Providers MUST responsibly report _incidents_ to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.
@@ -45,7 +45,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-02
+### FRR-ICP-02 Incident Reporting to Agencies
 
 !!! quote ""
     Providers MUST responsibly report _incidents_ to all _agency_ customers within 1 hour of identification using the _incident_ communications points of contact provided by each _agency_ customer.
@@ -54,7 +54,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-03
+### FRR-ICP-03 Incident Reporting to CISA
 
 !!! quote ""
     Providers MUST responsibly report _incidents_ to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. 
@@ -63,7 +63,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-04
+### FRR-ICP-04 Incident Updates
 
 !!! quote ""
     Providers MUST update _all necessary parties_, including at least FedRAMP, CISA (if applicable), and all _agency_ customers, at least once per calendar day until the _incident_ is resolved and recovery is complete.
@@ -72,7 +72,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-05
+### FRR-ICP-05 Incident Report Availability
 
 !!! quote ""
     Providers MUST make _incident_ report information available in their secure FedRAMP repository (such as USDA Connect) or _trust center_.
@@ -81,7 +81,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-06
+### FRR-ICP-06 Responsible Disclosure
 
 !!! quote ""
     Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.
@@ -90,7 +90,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-07
+### FRR-ICP-07 Final Incident Report
 
 !!! quote ""
     Providers MUST provide a final report once the _incident_ is resolved and recovery is complete that describes at least:
@@ -109,7 +109,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-08
+### FRR-ICP-08 Automated Reporting
 
 !!! quote ""
     Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).
@@ -118,7 +118,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
     **Applies to:** Low, Moderate, High
     
 
-### FRR-ICP-09
+### FRR-ICP-09 Human-Readable and Machine-Readable Formats
 
 !!! quote ""
     Providers SHOULD make _incident_ report information available in consistent human-readable and _machine-readable_ formats.

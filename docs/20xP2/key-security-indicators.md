@@ -3,13 +3,13 @@
 Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.
 
 ??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A DRAFT
-    - **Published:** 1900-01-01
+    - **Release:** 25.11A
+    - **Published:** 2025-11-18
     - **Designator:** KSI
-    - **Description:** THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release of the Phase Two Key Security Indicators (KSI) after public comment.
+    - **Description:** Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs.
     ---
     - **FedRAMP 20x**:
-        - This release is effective **1900-01-01** for **20x**.
+        - This release is effective **2025-11-18** for **20x**.
         - These Key Security Indicators apply to all FedRAMP 20x authorizations.
         - Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.
         - Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review.

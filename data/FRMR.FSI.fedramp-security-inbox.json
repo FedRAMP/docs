@@ -4,13 +4,13 @@
   "info": {
     "name": "FedRAMP Security Inbox requirements",
     "short_name": "FSI",
-    "current_release": "25.11A DRAFT",
+    "current_release": "25.11A",
     "types": ["FRR"],
     "releases": [
       {
         "id": "25.11A",
-        "published_date": "2025-11-17",
-        "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK. Initial DRAFT release.",
+        "published_date": "2025-11-18",
+        "description": "Initial Release of the FedRAMP Security Inbox requirements for both 20x and Rev5.",
         "public_comment": true,
         "effective": {
           "20x": {

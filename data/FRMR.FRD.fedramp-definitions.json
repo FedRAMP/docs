@@ -4,20 +4,20 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.11A DRAFT",
+    "current_release": "25.11A",
     "types": ["FRD"],
     "releases": [
       {
-        "id": "25.11A DRAFT",
-        "published_date": "1900-01-01",
-        "description": "THIS IS A DRAFT AND IS NOT FINALIZED, USE AT YOUR OWN RISK.",
+        "id": "25.11A",
+        "published_date": "2025-11-18",
+        "description": "Updates and new definitions added for the FedRAMP 20x Phase Two pilot.",
         "public_comment": false,
         "effective": {
           "20x": {
             "timeline": {
               "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20x Phase One Pilot"
+                "start_date": "2025-11-18",
+                "designator": "20x"
               }
             },
             "comments": [
@@ -27,7 +27,7 @@
           "Rev5": {
             "timeline": {
               "wide_release": {
-                "start_date": "2025-06-01",
+                "start_date": "2025-11-18",
                 "designator": "Rev5 Balance Improvement Releases"
               }
             },
