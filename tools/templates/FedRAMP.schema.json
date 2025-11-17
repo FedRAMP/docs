@@ -8,31 +8,54 @@
   "properties": {
     "info": {
       "type": "object",
+      "description": "Information about the document including version information, general purpose, and other meta data.",
       "required": ["name", "short_name", "current_release", "types", "releases", "front_matter"],
       "additionalProperties": false,
       "properties": {
-        "name": { "type": "string" },
-        "short_name": { "type": "string", "pattern": "^[A-Z]{3}$" },
-        "current_release": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$"},
+        "name": { "type": "string",
+          "description": "The name of the document or policy"
+        },
+        "short_name": { "type": "string", "pattern": "^[A-Z]{3}$",
+          "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects."
+        },
+        "current_release": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
+          "description": "The currently official release. May not always be the latest version."
+        },
         "types": {
           "type": "array",
           "items": {"type": "string", "enum": ["FRR", "FRD", "FRA", "KSI", "FRB"]},
           "uniqueItems": true,
-          "minItems": 1
+          "minItems": 1,
+          "description": "The types of objects included in the document. See IDENTIFIERS.md for explanations."
         },
         "releases": {
           "type": "array",
+          "description": "An array of both past and future releases of this document.",
           "items": {
             "type": "object",
             "required": ["id", "published_date", "description", "effective", "public_comment"],
             "additionalProperties": false,
             "properties": {
-              "id": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$"},
-              "published_date": {"type": "string", "format": "date"},
-              "description": { "type": "string" },
-              "public_comment": { "type": "boolean" },
+              "id": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
+                "description": "Unique identifier for the release in the format ##.##A. 'draft' may be appended to denote future releases."
+              },
+              "published_date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date",
+                "description": "A Valid date string or null"
+              },
+              "description": { "type": "string",
+                "description": "Description of the release"
+              },
+              "public_comment": { "type": "boolean",
+                "description": "Indicates if the release was made available for public comment."
+              },
               "effective": {
                 "type": "object",
+                "description": "collection of objects that describe when the release will be effective for specific FedRAMP authorization paths.",
                 "additionalProperties": false,
                 "properties": {
                   "20x": { "$ref": "#/$defs/release_target" },
