@@ -159,15 +159,39 @@
           "required": ["id", "term", "definition"],
           "additionalProperties": false,
           "properties": {
-            "id": {"type": "string", "pattern": "^FRD-[A-Z]{3}-\\d{2}$"},
-            "term": {"type": "string"},
-            "alts": {"type": "array", "items": {"type": "string"}},
-            "definition": {"type": "string"},
-            "note": {"type": "string"},
-            "reference": {"type": "string"},
-            "reference_url": {"type": "string", "format": "uri"},
-            "referenced_fr": {"type": "array", "items": {"type": "string"}},
-            "notes": {"type": "array", "items": {"type": "string"}}
+            "id": {"type": "string", "pattern": "^FRD-[A-Z]{3}-\\d{2}$",
+              "description": "FedRAMP definition ID in the format FRD-AAA-##"
+            },
+            "term": {"type": "string",
+              "description": "Term being defined"
+            },
+            "alts": {"type": "array",
+              "description": "Alternate terms (synonyms)",
+              "items": {"type": "string"}},
+            "definition": {"type": "string",
+              "description": "The meaning of the listed term and any synonyms"
+            },
+            "note": {"type": "string",
+              "description": ""
+            },
+            "reference": {"type": "string",
+              "description": ""
+            },
+            "reference_url": {"type": "string", "format": "uri",
+              "description": ""
+            },
+            "referenced_fr": {"type": "array",
+              "description": "",
+              "items": {"type": "string",
+              "description": ""
+            }
+            },
+            "notes": {"type": "array",
+              "description": "",
+              "items": {"type": "string",
+                "description": ""
+              }
+            }
           }
         }
       }}
@@ -180,24 +204,44 @@
           "required": ["base"],
           "additionalProperties": false,
           "properties": {
-            "base": {"$ref": "#/$defs/requirement_section"},
-            "exceptions": {"$ref": "#/$defs/requirement_section"},
-            "routine_recurring": {"$ref": "#/$defs/requirement_section"},
-            "adaptive": {"$ref": "#/$defs/requirement_section"},
-            "transformative": {"$ref": "#/$defs/requirement_section"},
-            "impact": {"$ref": "#/$defs/requirement_section"},
-            "application": {"$ref": "#/$defs/requirement_section"},
-            "id": {"$ref": "#/$defs/requirement_section"},
-            "access_control": {"$ref": "#/$defs/requirement_section"},
-            "trust_center": {"$ref": "#/$defs/requirement_section"},
-            "apply": {"$ref": "#/$defs/requirement_section"},
-            "reporting": {"$ref": "#/$defs/requirement_section"},
-            "timeframes": {"$ref": "#/$defs/requirement_section"},
-            "timeframe-low": {"$ref": "#/$defs/requirement_section"},
-            "timeframe-moderate": {"$ref": "#/$defs/requirement_section"},
-            "timeframe-high": {"$ref": "#/$defs/requirement_section"},
-            "agencies": {"$ref": "#/$defs/requirement_section"},
-            "quarterly_reviews": {"$ref": "#/$defs/requirement_section"}
+            "base": {"$ref": "#/$defs/requirement_section",
+              "description": "The base requirements section for the document."
+            },
+            "exceptions": {"$ref": "#/$defs/requirement_section",
+              "description": "The exceptions requirements section for the document."
+            },
+            "routine_recurring": {"$ref": "#/$defs/requirement_section",
+              "description": "The requirements for routine recurring changes."},
+            "adaptive": {"$ref": "#/$defs/requirement_section",
+              "description": "The requirements for adaptive changes."},
+            "transformative": {"$ref": "#/$defs/requirement_section",
+              "description": "The requirements for transformative changes."},
+            "impact": {"$ref": "#/$defs/requirement_section",
+              "description": "The impact requirements section for the document."},
+            "application": {"$ref": "#/$defs/requirement_section",
+              "description": "The application requirements section for the document."},
+            "id": {"$ref": "#/$defs/requirement_section",
+              "description": "The id requirements section for the document."},
+            "access_control": {"$ref": "#/$defs/requirement_section",
+              "description": "The access control requirements section for the document."},
+            "trust_center": {"$ref": "#/$defs/requirement_section",
+              "description": "The trust center requirements section for the document."},
+            "apply": {"$ref": "#/$defs/requirement_section",
+              "description": "The apply requirements section for the document."},
+            "reporting": {"$ref": "#/$defs/requirement_section",
+              "description": "The reporting requirements section for the document."},
+            "timeframes": {"$ref": "#/$defs/requirement_section",
+              "description": "The timeframe section for the document."},
+            "timeframe-low": {"$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for low vulnerabilities."},
+            "timeframe-moderate": {"$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for moderate vulnerabilities."},
+            "timeframe-high": {"$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for high vulnerabilities."},
+            "agencies": {"$ref": "#/$defs/requirement_section",
+              "description": "The agencies requirements section for the document."},
+            "quarterly_reviews": {"$ref": "#/$defs/requirement_section",
+              "description": "The quarterly reviews requirements section for the document."}
           }
         }
       }
