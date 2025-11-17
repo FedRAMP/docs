@@ -5,7 +5,10 @@
     "name": "Key Security Indicators",
     "short_name": "KSI",
     "current_release": "25.11A",
-    "types": ["FRR", "KSI"],
+    "types": [
+      "FRR",
+      "KSI"
+    ],
     "releases": [
       {
         "id": "25.11A",
@@ -160,7 +163,7 @@
         {
           "reference": "NIST SP 800-53B",
           "reference_url": "https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final",
-          "description": "Section 2.5 states \"As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that\u2014if properly designed, developed, and implemented\u2014produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.\" This section later states \"Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.\""
+          "description": "Section 2.5 states \"As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that—if properly designed, developed, and implemented—produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.\" This section later states \"Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.\""
         },
         {
           "reference": "NIST SP 800-53A",
@@ -168,9 +171,9 @@
           "description": "Section 3.5 states \"When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.\""
         },
         {
-          "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (1))",
+          "reference": "FedRAMP Authorization Act (44 USC § 3609 (a) (1))",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-          "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC \u00a7 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
+          "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC § 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
           "delegation": "These responsibilities are delegated to the FedRAMP Director",
           "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
         }
@@ -194,10 +197,14 @@
             "id": "FRR-KSI-01",
             "statement": "Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
             "name": "Application of Key Security Indicators",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-06", "FRR-MAS-01"],
-            "impact": { "low": true, "moderate": true }
+            "impact": {
+              "low": true,
+              "moderate": true
+            }
           },
           {
             "id": "FRR-KSI-02",
@@ -211,10 +218,14 @@
               "Any clarifications or responses to the assessment summary"
             ],
             "name": "Implementation Summaries",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true },
-            "referenced_fr": ["FRD-ALL-01", "FRD-ALL-38"]
+            "impact": {
+              "low": true,
+              "moderate": true
+            }
           }
         ]
       }
@@ -230,7 +241,10 @@
           "id": "KSI-AFR-01",
           "name": "Minimum Assessment Scope",
           "statement": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Minimum Assessment Scope",
           "reference_url": "https://fedramp.gov/docs/20xP2/minimum-assessment-scope"
         },
@@ -238,7 +252,10 @@
           "id": "KSI-AFR-02",
           "name": "Key Security Indicators",
           "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Key Security Indicators",
           "reference_url": "https://fedramp.gov/docs/20xP2/key-security-indicators"
         },
@@ -246,7 +263,10 @@
           "id": "KSI-AFR-03",
           "name": "Authorization Data Sharing",
           "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Authorization Data Sharing",
           "reference_url": "https://fedramp.gov/docs/20xP2/authorization-data-sharing",
           "controls": [
@@ -292,7 +312,10 @@
           "id": "KSI-AFR-04",
           "name": "Vulnerability Detection and Response",
           "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Vulnerability Detection and Response",
           "reference_url": "https://fedramp.gov/docs/20xP2/vulnerability-detection-and-response",
           "controls": [
@@ -462,7 +485,10 @@
           "id": "KSI-AFR-05",
           "name": "Significant Change Notifications",
           "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Significant Change Notifications",
           "reference_url": "https://fedramp.gov/docs/20xP2/significant-change-notifications",
           "controls": [
@@ -540,7 +566,10 @@
           "id": "KSI-AFR-06",
           "name": "Collaborative Continuous Monitoring",
           "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Collaborative Continuous Monitoring",
           "reference_url": "https://fedramp.gov/docs/20xP2/collaborative-continuous-monitoring"
         },
@@ -548,7 +577,10 @@
           "id": "KSI-AFR-07",
           "name": "Recommended Secure Configuration",
           "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Recommended Secure Configuration",
           "reference_url": "https://fedramp.gov/docs/20xP2/recommended-secure-configuration"
         },
@@ -556,7 +588,10 @@
           "id": "KSI-AFR-08",
           "name": "FedRAMP Security Inbox",
           "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "FedRAMP Security Inbox",
           "reference_url": "https://fedramp.gov/docs/20xP2/fedramp-security-inbox"
         },
@@ -564,7 +599,10 @@
           "id": "KSI-AFR-09",
           "name": "Persistent Validation and Assessment",
           "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Persistent Validation and Assessment",
           "reference_url": "https://fedramp.gov/docs/20xP2/persistent-validation-and-assessment"
         },
@@ -572,7 +610,10 @@
           "id": "KSI-AFR-10",
           "name": "Incident Communications Procedures",
           "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Incident Communications Procedures",
           "reference_url": "https://fedramp.gov/docs/20xP2/incident-communications-procedures"
         },
@@ -580,7 +621,10 @@
           "id": "KSI-AFR-11",
           "name": "Using Cryptographic Modules",
           "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "reference": "Using Cryptographic Modules",
           "reference_url": "https://fedramp.gov/docs/20xP2/using-cryptographic-modules"
         }
@@ -595,7 +639,10 @@
           "id": "KSI-CED-01",
           "name": "General Education",
           "statement": "Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "at-2",
@@ -627,7 +674,10 @@
           "id": "KSI-CED-02",
           "name": "Role-Specific Education",
           "statement": "Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "at-2",
@@ -651,7 +701,10 @@
           "id": "KSI-CED-03",
           "name": "Development and Engineering Education",
           "statement": "Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "cp-3",
@@ -671,11 +724,13 @@
           "id": "KSI-CED-04",
           "name": "Incident Response and Disaster Recovery Education",
           "statement": "Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": []
         }
-      ],
-      "referenced_fr": ["FRD-ALL-07"]
+      ]
     },
     "CMT": {
       "id": "KSI-CMT",
@@ -826,8 +881,7 @@
           "id": "KSI-CMT-05",
           "statement": "",
           "note": "Superseded by KSI-AFR-05 (SCN)",
-          "retired": true,
-          "referenced_fr": ["KSI-AFR-05"]
+          "retired": true
         }
       ]
     },
@@ -859,14 +913,13 @@
             },
             {
               "control_id": "sc-7.5",
-              "title": "Deny by Default \u2014 Allow by Exception"
+              "title": "Deny by Default — Allow by Exception"
             },
             {
               "control_id": "si-8",
               "title": "Spam Protection"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          ]
         },
         {
           "id": "KSI-CNA-02",
@@ -907,7 +960,7 @@
             },
             {
               "control_id": "sc-7.5",
-              "title": "Deny by Default \u2014 Allow by Exception"
+              "title": "Deny by Default — Allow by Exception"
             },
             {
               "control_id": "sc-7.8",
@@ -1051,14 +1104,16 @@
               "control_id": "pl-10",
               "title": "Baseline Selection"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          ]
         },
         {
           "id": "KSI-CNA-08",
           "name": "Persistent Assessment and Automated Enforcement",
           "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state.",
-          "impact": { "low": false, "moderate": true },
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ca-2.1",
@@ -1070,8 +1125,7 @@
             }
           ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06"]
+      ]
     },
     "IAM": {
       "id": "KSI-IAM",
@@ -1105,7 +1159,7 @@
             },
             {
               "control_id": "ia-2.8",
-              "title": "Access to Accounts \u2014 Replay Resistant"
+              "title": "Access to Accounts — Replay Resistant"
             },
             {
               "control_id": "ia-5",
@@ -1148,7 +1202,7 @@
             },
             {
               "control_id": "ia-2.8",
-              "title": "Access to Accounts \u2014 Replay Resistant"
+              "title": "Access to Accounts — Replay Resistant"
             },
             {
               "control_id": "ia-5.1",
@@ -1318,7 +1372,7 @@
             },
             {
               "control_id": "cm-7.5",
-              "title": "Authorized Software \u2014 Allow-by-exception"
+              "title": "Authorized Software — Allow-by-exception"
             },
             {
               "control_id": "cm-9",
@@ -1568,7 +1622,10 @@
           "id": "KSI-IAM-07",
           "name": "Automated Account Management",
           "statement": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2.2",
@@ -1608,8 +1665,7 @@
             }
           ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06"]
+      ]
     },
     "INR": {
       "id": "KSI-INR",
@@ -1723,11 +1779,9 @@
               "control_id": "ir-8",
               "title": "Incident Response Plan"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-07"]
+          ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06"]
+      ]
     },
     "MLA": {
       "id": "KSI-MLA",
@@ -1854,22 +1908,19 @@
               "control_id": "si-4.4",
               "title": "Inbound and Outbound Communications Traffic"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-07"]
+          ]
         },
         {
           "id": "KSI-MLA-03",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true,
-          "referenced_fr": ["KSI-AFR-04"]
+          "retired": true
         },
         {
           "id": "KSI-MLA-04",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true,
-          "referenced_fr": ["KSI-AFR-04"]
+          "retired": true
         },
         {
           "id": "KSI-MLA-05",
@@ -1902,14 +1953,16 @@
           "id": "KSI-MLA-06",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "referenced_fr": ["KSI-AFR-04"],
           "retired": true
         },
         {
           "id": "KSI-MLA-07",
           "name": "Event Types",
           "statement": "Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.",
-          "impact": { "low": true, "moderate": true },
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "ac-2.4",
@@ -1957,7 +2010,10 @@
           "id": "KSI-MLA-08",
           "name": "Log Data Access",
           "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity.",
-          "impact": { "low": false, "moderate": true },
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "si-11",
@@ -1965,8 +2021,7 @@
             }
           ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06"]
+      ]
     },
     "PIY": {
       "id": "KSI-PIY",
@@ -1988,7 +2043,7 @@
             },
             {
               "control_id": "cm-7.5",
-              "title": "Authorized Software \u2014 Allow-by-exception"
+              "title": "Authorized Software — Allow-by-exception"
             },
             {
               "control_id": "cm-8",
@@ -2010,8 +2065,7 @@
               "control_id": "cp-2.8",
               "title": "Identify Critical Assets"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          ]
         },
         {
           "id": "KSI-PIY-02",
@@ -2142,8 +2196,7 @@
               "control_id": "sr-11",
               "title": "Component Authenticity"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          ]
         },
         {
           "id": "KSI-PIY-03",
@@ -2227,8 +2280,7 @@
             "low": true,
             "moderate": true
           },
-          "controls": [],
-          "referenced_fr": ["FRD-ALL-02"]
+          "controls": []
         },
         {
           "id": "KSI-PIY-06",
@@ -2299,12 +2351,14 @@
         {
           "id": "KSI-PIY-08",
           "name": "Executive Support",
-          "statement": "Regularly measure executive support for achieving the organization\u2019s security objectives.",
-          "impact": { "low": true, "moderate": true },
+          "statement": "Regularly measure executive support for achieving the organization’s security objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
           "controls": []
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-02"]
+      ]
     },
     "RPL": {
       "id": "KSI-RPL",
@@ -2489,11 +2543,9 @@
               "control_id": "ir-3.2",
               "title": "Coordination with Related Plans"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-07"]
+          ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06"]
+      ]
     },
     "SVC": {
       "id": "KSI-SVC",
@@ -2602,8 +2654,7 @@
           "id": "KSI-SVC-03",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-11 (UCM)",
-          "referenced_fr": ["KSI-AFR-11"]
+          "note": "Superseded by KSI-AFR-11 (UCM)"
         },
         {
           "id": "KSI-SVC-04",
@@ -2697,8 +2748,7 @@
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-02"]
+          ]
         },
         {
           "id": "KSI-SVC-06",
@@ -2729,8 +2779,7 @@
               "control_id": "sc-17",
               "title": "Public Key Infrastructure Certificates"
             }
-          ],
-          "referenced_fr": ["FRD-ALL-07"]
+          ]
         },
         {
           "id": "KSI-SVC-07",
@@ -2759,7 +2808,10 @@
           "id": "KSI-SVC-08",
           "name": "Shared Resources",
           "statement": "Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of _federal customer data_ during operations.",
-          "impact": { "low": false, "moderate": true },
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "sc-4",
@@ -2771,7 +2823,10 @@
           "id": "KSI-SVC-09",
           "name": "Communication Integrity",
           "statement": "Persistently validate the authenticity and integrity of communications between _machine-based_ _information resources_ using automation.",
-          "impact": { "low": false, "moderate": true },
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "sc-23",
@@ -2787,7 +2842,10 @@
           "id": "KSI-SVC-10",
           "name": "Data Destruction",
           "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage.",
-          "impact": { "low": false, "moderate": true },
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
           "controls": [
             {
               "control_id": "si-12.3",
@@ -2799,8 +2857,7 @@
             }
           ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-02", "FRD-ALL-05"]
+      ]
     },
     "TPR": {
       "id": "KSI-TPR",
@@ -2811,15 +2868,13 @@
           "id": "KSI-TPR-01",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)",
-          "referenced_fr": ["KSI-AFR-01"]
+          "note": "Superseded by KSI-AFR-01 (MAS)"
         },
         {
           "id": "KSI-TPR-02",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)",
-          "referenced_fr": ["KSI-AFR-01"]
+          "note": "Superseded by KSI-AFR-01 (MAS)"
         },
         {
           "id": "KSI-TPR-03",
@@ -2923,8 +2978,7 @@
             }
           ]
         }
-      ],
-      "referenced_fr": ["FRD-ALL-06", "FRD-ALL-05"]
+      ]
     }
   }
 }

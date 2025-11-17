@@ -5,7 +5,10 @@
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
     "current_release": "25.11A",
-    "types": ["FRR", "FRA"],
+    "types": [
+      "FRR",
+      "FRA"
+    ],
     "releases": [
       {
         "id": "25.11A",
@@ -184,69 +187,115 @@
         "id": "FRR-SCN",
         "application": "These requirements apply ALWAYS to ALL _significant changes_ based on current Effective Date(s) and Overall Applicability",
         "name": "Requirements & Recommendations",
-        "referenced_fr": ["FRD-ALL-08"],
         "requirements": [
           {
             "id": "FRR-SCN-01",
             "statement": "Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.",
             "name": "Notifications",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-02",
             "statement": "Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.",
             "name": "Procedures and Documentation",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-03",
             "statement": "Providers MUST evaluate and type label all _significant changes_, then follow FedRAMP requirements for the type.",
             "name": "Evaluate Changes",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-08"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-04",
             "statement": "Providers MUST maintain auditable records of these activities and make them available to all necessary parties.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-05",
             "statement": "Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-06",
             "statement": "All parties SHOULD follow FedRAMP's best practices and technical assistance on _significant change_ assessment and notification where applicable.",
-            "affects": ["Providers", "Agencies", "Assessors"],
+            "affects": [
+              "Providers",
+              "Agencies",
+              "Assessors"
+            ],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-08"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-07",
             "statement": "Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MAY",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-08",
             "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible _machine-readable_ formats.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-17"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-09",
@@ -263,33 +312,48 @@
               "Copy of the business or security impact analysis",
               "Name and title of approver"
             ],
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-10",
             "statement": "Providers MAY include additional relevant information in Significant Change Notifications.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MAY",
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
-
       "routine_recurring": {
         "application": "These requirements apply ONLY to _significant changes_ of type _routine recurring_.",
         "id": "FRR-SCN-RR",
         "name": "Routine Recurring",
-        "referenced_fr": ["FRD-ALL-08", "FRD-ALL-09"],
         "requirements": [
           {
             "id": "FRR-SCN-RR-01",
             "statement": "Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "SHOULD NOT",
-            "referenced_fr": ["FRD-ALL-09"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -297,7 +361,6 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _adaptive_.",
         "id": "FRR-SCN-AD",
         "name": "Adaptive",
-        "referenced_fr": ["FRD-ALL-08", "FRD-ALL-10"],
         "requirements": [
           {
             "id": "FRR-SCN-AD-01",
@@ -305,10 +368,15 @@
             "following_information": [
               "Summary of any new risks identified and/or POA&Ms resulting from the change (if applicable)"
             ],
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-10"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -316,31 +384,45 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _transformative_.",
         "id": "FRR-SCN-TR",
         "name": "Transformative",
-        "referenced_fr": ["FRD-ALL-08", "FRD-ALL-11"],
         "requirements": [
           {
             "id": "FRR-SCN-TR-01",
             "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting _transformative_ changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "SHOULD",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-02",
             "statement": "Providers MUST notify all necessary parties of initial plans for _transformative_ changes at least 30 business days before starting _transformative_ changes.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-03",
             "statement": "Providers MUST notify all necessary parties of final plans for _transformative_ changes at least 10 business days before starting _transformative_ changes.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-04",
@@ -348,10 +430,15 @@
             "following_information": [
               "Updates to all previously sent information"
             ],
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-05",
@@ -361,26 +448,41 @@
               "Summary of any new risks identified and/or POA&Ms resulting from the change (if applicable)",
               "Copy of the security assessment report (if applicable)"
             ],
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-06",
             "statement": "Providers MUST publish updated service documentation and other materials to reflect _transformative_ changes within 30 business days after finishing _transformative_ changes.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-TR-07",
             "statement": "Providers MUST allow agency customers to OPT OUT of _transformative_ changes whenever feasible.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-11"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -388,15 +490,19 @@
         "application": "These requirements apply ONLY to _significant changes_ of type _impact categorization_.",
         "id": "FRR-SCN-IM",
         "name": "Impact Categorization",
-        "referenced_fr": ["FRD-ALL-08", "FRD-ALL-12"],
         "requirements": [
           {
             "id": "FRR-SCN-IM-01",
             "statement": "Providers MUST follow the legacy Significant Change Request process or full re-authorization for _impact categorization_ changes, with advance approval from an identified lead agency, until further notice.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MUST",
-            "referenced_fr": ["FRD-ALL-12"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       },
@@ -408,18 +514,28 @@
           {
             "id": "FRR-SCN-EX-01",
             "statement": "Providers MAY be required to delay _significant changes_ beyond the standard Significant Change Notification period and/or submit _significant changes_ for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-ALL-08"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           },
           {
             "id": "FRR-SCN-EX-02",
             "statement": "Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.",
-            "affects": ["Providers"],
+            "affects": [
+              "Providers"
+            ],
             "primary_key_word": "MAY",
-            "referenced_fr": ["FRD-ALL-08"],
-            "impact": { "low": true, "moderate": true, "high": true }
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            }
           }
         ]
       }
@@ -435,14 +551,21 @@
           "id": "FRA-SCN-03",
           "applies_to": "FRR-SCN-03",
           "statement": "Once a change has been identified as a _significant change_ in general, FedRAMP recommends next determining if a change is of the type _routine recurring_. If it is not, work down from the highest impact to lowest to identify the type of change.\n\n1. Is it a _significant change_?\n2. If it is, is it a _routine recurring_ change?\n3. If it is not, is it an _impact categorization_ change?\n4. If it is not, is it a _transformative_ change?\n5. If it is not, then it is an _adaptive_ change.",
-          "impact": { "low": true, "moderate": true, "high": true }
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          }
         },
         {
           "id": "FRA-SCN-RR",
           "applies_to": "FRR-SCN-RR",
           "statement": "Activities that match the _routine recurring_ _significant change_ type are performed _regularly_ and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.\n\nThese changes leverage mature processes and capabilities to identify, mitigate, and remediate risks as part of the change. They are often entirely automated and may occur without human intervention, even though they have an impact on security of the service.\n\nIf the activity does not occur _regularly_ and routinely then it cannot be a _significant change_ of this type (e.g., replacing all physical firewalls to remediate a vulnerability is obviously not regular or routine).",
-          "referenced_fr": ["FRD-ALL-09", "FRD-ALL-08", "FRD-ALL-07"],
-          "impact": { "low": true, "moderate": true, "high": true },
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "examples": [
             {
               "id": "Ongoing operations",
@@ -478,7 +601,11 @@
           "id": "FRA-SCN-TR",
           "applies_to": "FRR-SCN-TR",
           "statement": "Activities that match the _transformative_ _significant change_ type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without _transformative_ changes, while hyperscale providers may release multiple _transformative_ changes per year.",
-          "impact": { "low": true, "moderate": true, "high": true },
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "examples": [
             {
               "id": "Transformative changes",
@@ -501,8 +628,11 @@
           "id": "FRA-SCN-AD",
           "applies_to": "FRR-SCN-AD",
           "statement": "Activities that match the _adaptive_ _significant change_ type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.\n\nIn general, most changes that do not happen _regularly_ will be _adaptive_ changes. This change type deliberately covers a wide range of activities in a way that requires assessment and consideration.",
-          "impact": { "low": true, "moderate": true, "high": true },
-          "referenced_fr": ["FRD-ALL-10", "FRD-ALL-08", "FRD-ALL-07"],
+          "impact": {
+            "low": true,
+            "moderate": true,
+            "high": true
+          },
           "examples": [
             {
               "id": "Service adjustments",

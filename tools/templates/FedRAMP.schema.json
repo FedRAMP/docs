@@ -121,15 +121,14 @@
           "required": ["id", "term", "definition"],
           "additionalProperties": false,
           "properties": {
-            "id": {"type": "string", "pattern": "^FRD-[A-Z]{3}-\\d{2}$"},
-            "term": {"type": "string"},
-            "alts": {"type": "array", "items": {"type": "string"}},
-            "definition": {"type": "string"},
-            "note": {"type": "string"},
-            "reference": {"type": "string"},
-            "reference_url": {"type": "string", "format": "uri"},
-            "referenced_fr": {"type": "array", "items": {"type": "string"}},
-            "notes": {"type": "array", "items": {"type": "string"}}
+            "id": { "type": "string", "pattern": "^FRD-[A-Z]{3}-\\d{2}$" },
+            "term": { "type": "string" },
+            "alts": { "type": "array", "items": { "type": "string" } },
+            "definition": { "type": "string" },
+            "note": { "type": "string" },
+            "reference": { "type": "string" },
+            "reference_url": { "type": "string", "format": "uri" },
+            "notes": { "type": "array", "items": { "type": "string" } }
           }
         }
       }}

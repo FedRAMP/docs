@@ -184,7 +184,7 @@ The concept behind collaborative continuous monitoring is unique to government c
 ### FRR-CCM-QR-07 Additional Content
 
 !!! quote ""
-    Providers SHOULD include additional information in _Quarterly Reviews_ that the provider determines are of interest, use, or otherwise relevant to _agencies_.
+    Providers SHOULD include additional information in _Quarterly Reviews_ that the provider determines is of interest, use, or otherwise relevant to _agencies_.
 
 
     **Applies to:** Low, Moderate, High
@@ -193,7 +193,7 @@ The concept behind collaborative continuous monitoring is unique to government c
 ### FRR-CCM-QR-08 Restrict Third Parties
 
 !!! quote ""
-    Providers MUST NOT invite third parties to attend _Quarterly Reviews_ intended for _agencies_ unless it is of specific relevance.
+    Providers SHOULD NOT invite third parties to attend _Quarterly Reviews_ intended for _agencies_ unless they have specific relevance.
 
     **Note:** This is because _agencies_ are less likely to actively participate in meetings with third parties; the cloud service provider&#x27;s independent assessor should be considered relevant by default.
 
