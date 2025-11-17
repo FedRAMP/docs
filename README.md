@@ -37,7 +37,7 @@ Building the site has two main steps:
 2. Build the static site using the enriched Markdown files.
 
 #### Generating the enriched markdown files
-1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `markdown` directory.
+1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `docs` directory.
 2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
 3. Once you have confirmed the site looks correct, you can build the static site by running `zensical build`.
 
@@ -45,4 +45,4 @@ Building the site has two main steps:
 We are using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) to generate documentation for the FRMR JSON schema.
 
     pip install json-schema-for-humans 
-    generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json tools/templates/FedRAMP.schema.html
+    generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json docs/schema/FedRAMP.schema.md

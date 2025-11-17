@@ -34,6 +34,7 @@ nav = [
     #    {"Intro" = "Rev5/intro.md"}, 
     #    {"Page 1" = "section/page-1.md"},
     #]},
+    {"FRMR JSON Schema" = "schema/FedRAMP.schema/index.html"},
     {"// Return to fedramp.gov" = "https://fedramp.gov"}
 ]
 
