@@ -220,12 +220,12 @@
       }
     }
   },
-  "KSI": {
+  "ksi_theme": {
     "AFR": {
       "id": "KSI-AFR",
       "name": "Authorization by FedRAMP",
       "indicator": "A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-AFR-01",
           "name": "Minimum Assessment Scope",
@@ -590,7 +590,7 @@
       "id": "KSI-CED",
       "name": "Cybersecurity Education",
       "indicator": "A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them _regularly_ to ensure their knowledge is satisfactory.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-CED-01",
           "name": "General Education",
@@ -681,7 +681,7 @@
       "id": "KSI-CMT",
       "name": "Change Management",
       "indicator": "A secure cloud service provider will ensure that all system changes are properly documented and configuration baselines are updated accordingly.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-CMT-01",
           "name": "Log and Monitor Changes",
@@ -835,7 +835,7 @@
       "id": "KSI-CNA",
       "name": "Cloud Native Architecture",
       "indicator": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-CNA-01",
           "name": "Restrict Network Traffic",
@@ -1077,7 +1077,7 @@
       "id": "KSI-IAM",
       "name": "Identity and Access Management",
       "indicator": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-IAM-01",
           "name": "Phishing-Resistant MFA",
@@ -1615,7 +1615,7 @@
       "id": "KSI-INR",
       "name": "Incident Response",
       "indicator": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-INR-01",
           "name": "Incident Response Procedure",
@@ -1733,7 +1733,7 @@
       "id": "KSI-MLA",
       "name": "Monitoring, Logging, and Auditing",
       "indicator": "A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-MLA-01",
           "name": "Security Information and Event Management (SIEM)",
@@ -1972,7 +1972,7 @@
       "id": "KSI-PIY",
       "name": "Policy and Inventory",
       "indicator": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-PIY-01",
           "name": "Automated Inventory",
@@ -2310,7 +2310,7 @@
       "id": "KSI-RPL",
       "name": "Recovery Planning",
       "indicator": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-RPL-01",
           "name": "Recovery Objectives",
@@ -2499,7 +2499,7 @@
       "id": "KSI-SVC",
       "name": "Service Configuration",
       "indicator": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-SVC-01",
           "name": "Continuous Improvement",
@@ -2806,7 +2806,7 @@
       "id": "KSI-TPR",
       "name": "Third-Party Information Resources",
       "indicator": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
-      "requirements": [
+      "ksi": [
         {
           "id": "KSI-TPR-01",
           "retired": true,

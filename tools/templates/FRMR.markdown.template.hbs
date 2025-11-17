@@ -143,15 +143,15 @@ _Applies to:_ {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if 
 
 
 {{!-- KSIs have a different structure that is added afterwards --}}
-{{#if KSI}}
+{{#if ksi_theme}}
 ## Key Security Indicators
-  {{#each KSI}}
+  {{#each ksi_theme}}
     {{#with this}}
 ### {{id}}: {{name}}
 
 **{{indicator}}**
 
-      {{#each requirements}}
+      {{#each ksi}}
 {{#if name}}      
 #### {{id}}: {{name}}
 {{else}}

@@ -246,20 +246,20 @@
         }
       }
     },
-    "KSI": {
+    "ksi_theme": {
       "type": "object",
       "additionalProperties": false,
       "patternProperties": {
         "^[A-Z]{3}$": {
           "type": "object",
-          "required": ["id", "name", "indicator", "requirements"],
+          "required": ["id", "name", "indicator", "ksi"],
           "additionalProperties": false,
           "properties": {
             "id": {"type": "string", "pattern": "^KSI-[A-Z]{3}$"},
             "name": {"type": "string"},
             "indicator": {"type": "string"},
             "referenced_fr": {"type": "array", "items": {"type": "string"}},
-            "requirements": {
+            "ksi": {
               "type": "array",
               "items": {
                 "type": "object",
