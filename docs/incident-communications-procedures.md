@@ -1,6 +1,6 @@
 # Incident Communications Procedures
 
-This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/CSP_Incident_Communications_Procedures.pdf) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.
+This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.
 
 The only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.
 
