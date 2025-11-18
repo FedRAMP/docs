@@ -252,6 +252,7 @@
       "patternProperties": {
         "^[A-Z]{3}$": {
           "type": "object",
+          "description": "A collection of KSIs on a related topic",
           "required": ["id", "name", "indicator", "ksi"],
           "additionalProperties": false,
           "properties": {
@@ -261,6 +262,7 @@
             "referenced_fr": {"type": "array", "items": {"type": "string"}},
             "ksi": {
               "type": "array",
+              "description": "Key Security Indicator.",
               "items": {
                 "type": "object",
                 "required": ["id", "statement"],
