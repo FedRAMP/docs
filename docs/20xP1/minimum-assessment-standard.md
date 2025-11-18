@@ -1,5 +1,11 @@
 # FedRAMP Minimum Assessment Standard
 
+!!! danger "The 20x Phase One pilot is over!"
+
+    The 20x Phase One pilot ended in September 2026. 
+    
+    The documentation on this page is outdated and only preserved for reference for participants in the 20x Phase One pilot. All 20x Phase One pilot participants who receive a pilot FedRAMP authorization have up to 12 months to adopt Phase Two standards.
+
 - **Release:** 25.06A
 - **Published:** 2025-06-17  
 - **Designator:** MAS

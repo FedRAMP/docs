@@ -7,14 +7,6 @@ site_dir = "site"
 docs_dir = "docs"
 
 nav = [
-    {"Overview" = [
-        "index.md" 
-    ]},
-    {"20x Phase One" = [
-        {"P1 Intro" = "20xP1/intro.md"},
-        {"P1 Key Security Indicators" = "20xP1/key-security-indicators.md"},
-        {"P1 Minimum Assessment Standard" = "20xP1/minimum-assessment-standard.md"}
-    ]},
     {"20x Phase Two" = [
         {"Intro" = "20xP2/intro.md"}, 
         {"Definitions" = "20xP2/fedramp-definitions.md"},
@@ -30,6 +22,12 @@ nav = [
         {"Incident Communications Procedures" = "20xP2/incident-communications-procedures.md"},
         {"Using Cryptographic Modules" = "20xP2/using-cryptographic-modules.md"},
     ]},
+    {"20x Phase One (Archive)" = [
+        {"P1 Intro" = "20xP1/intro.md"},
+        {"P1 Key Security Indicators" = "20xP1/key-security-indicators.md"},
+        {"P1 Minimum Assessment Standard" = "20xP1/minimum-assessment-standard.md"}
+    ]},
+    
     #{"Rev5" = [
     #    {"Intro" = "Rev5/intro.md"}, 
     #    {"Page 1" = "section/page-1.md"},
