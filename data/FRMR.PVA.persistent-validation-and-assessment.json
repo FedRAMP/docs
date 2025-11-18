@@ -1,0 +1,417 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "FedRAMP.schema.json",
+  "info": {
+    "name": "Persistent Validation and Assessment",
+    "short_name": "PVA",
+    "current_release": "25.11A",
+    "types": [
+      "FRR"
+    ],
+    "releases": [
+      {
+        "id": "25.11A",
+        "published_date": "2025-11-18",
+        "description": "Initial release of the Persistent Validation and Assessment standard for the FedRAMP 20x Phase Two pilot.",
+        "public_comment": true,
+        "effective": {
+          "20x": {
+            "timeline": {
+              "pilot": {
+                "start_date": "2025-11-17",
+                "designator": "20x"
+              }
+            },
+            "comments": [
+              "This policy applies to all FedRAMP 20x authorizations.",
+              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
+              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
+            ]
+          },
+          "Rev5": {
+            "comments": [
+              "This standard DOES NOT apply to FedRAMP Rev5 authorizations."
+            ]
+          }
+        },
+        "related_rfcs": [
+          {
+            "start_date": "2025-09-15",
+            "end_date": "2025-11-14",
+            "id": "0017",
+            "url": "https://www.fedramp.gov/rfcs/0017/",
+            "discussion_url": "https://github.com/FedRAMP/community/discussions/88",
+            "short_name": "rfc-0017-persistent-validation",
+            "full_name": "FedRAMP RFC-0017: Persistent Validation and Assessment Standard"
+          }
+        ]
+      }
+    ],
+    "front_matter": {
+      "authority": [
+        {
+          "reference": "OMB Circular A-130: Managing Information as a Strategic Resource",
+          "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf",
+          "description": "defines continuous monitoring as \"maintaining ongoing awareness of information security, vulnerabilities, threats, and incidents to support agency risk management decisions.\""
+        },
+        {
+          "reference": "The FedRAMP Authorization Act (44 USC § 3609 (a) (7))",
+          "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
+          "description": "directs the Administrator of the General Services Administration to \"coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the Director and the Secretary, to establish and regularly update a framework for continuous monitoring...\""
+        }
+      ],
+      "purpose": "FedRAMP 20x is built around the core concept that secure cloud service providers will persistently and automatically validate that their security decisions and policies are being implemented as expected within their cloud service offering. The activities of a secure service should be intentional, documented, and in a state that is always known and understood by the provider.\n\nSecure providers will design their business processes and technical procedures to maximize the use of automation, persistent validation, and reporting across the entirety of their cloud service offering. This reduces cost by increasing efficiency, enables fast agile delivery of new capabilities and prevents unintended drift between the deployed cloud service offering and the business goals for the offering. Secure providers leverage automated and independent audits to evaluate the validity and effectiveness of their secure practices.\n\nAll FedRAMP 20x Authorized providers are expected to implement persistent validation programs as part of their core engineering workflow. These programs should be optimized to deliver value to the provider and their engineering teams first and foremost, though agencies and other customers will benefit from the improved security and insight resulting from high quality persistent validation programs.\n\nTo obtain and maintain a FedRAMP 20x authorization, providers will be required to have their persistent validation programs assessed regularly for effectiveness and completeness.",
+      "expected_outcomes": [
+        "Cloud service providers will operate effective persistent validation programs to always understand the state of their services.",
+        "Assessors will prioritize technical review of validation programs to ensure the quality and effectiveness of a cloud service provider’s security programs are documented accurately.",
+        "Federal agencies will have significantly increased confidence in the quality and effectiveness of cloud service provider’s security programs."
+      ]
+    }
+  },
+  "FRR": {
+    "PVA": {
+      "base": {
+        "id": "FRR-PVA",
+        "name": "Requirements & Recommendations",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services and those seeking authorization based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "requirements": [
+          {
+            "id": "FRR-PVA-01",
+            "name": "Persistent Validation",
+            "statement": "Providers MUST _persistently_ perform validation of their Key Security Indicators following the processes and cycles documented for their _cloud service offering_ per FRR-KSI-02; this process is called _persistent validation_ and is part of _vulnerability detection_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-02",
+            "name": "Failures As Vulnerabilities",
+            "statement": "Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response Standard for such findings.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-03",
+            "statement": "Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response Standard.",
+            "name": "Report Persistent Validation",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-04",
+            "name": "Track Significant Changes",
+            "statement": "Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification Standard; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-05",
+            "name": "Independent Assessment",
+            "statement": "Providers MUST have the implementation of their goals and validation processes assessed by a FedRAMP-recognized independent assessor OR by FedRAMP directly AND MUST include the results of this assessment in their _authorization data_ without modification.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "notes": [
+              "The option for assessment by FedRAMP directly is limited to cloud services that are explicitly prioritized by FedRAMP, in consultation with the FedRAMP Board and the federal Chief Information Officers Council. During 20x Phase Two this includes AI services that meet certain criteria as shown at https://fedramp.gov/ai.",
+              "FedRAMP recognized assessors are listed on the FedRAMP Marketplace."
+            ]
+          },
+          {
+            "id": "FRR-PVA-06",
+            "name": "Complete Validation Assessment",
+            "statement": "Providers MUST ensure a complete assessment of _validation_ procedures (including underlying code, pipelines, configurations, automation tools, etc.) for the _cloud service offering_ by _all necessary assessors_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST",
+            "note": ""
+          },
+          {
+            "id": "FRR-PVA-07",
+            "name": "Provide Technical Evidence",
+            "statement": "Providers SHOULD provide technical explanations, demonstrations, and other relevant supporting information to _all necessary assessors_ for the technical capabilities they employ to meet Key Security Indicators and to provide _validation_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-PVA-08",
+            "name": "Receiving Assessor Advice",
+            "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their _validation_ and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also FRR-PVA-09).",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MAY",
+            "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments."
+          },
+          {
+            "id": "FRR-PVA-09",
+            "name": "Assessors May Advise",
+            "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their _validation_ and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also FRR-PVA-08).",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MAY"
+          },
+          {
+            "id": "FRR-PVA-10",
+            "name": "Evaluate Validation Processes",
+            "statement": "Assessors MUST evaluate the underlying processes (both _machine-based_ and non-_machine-based_) that providers use to _validate_ Key Security Indicators; this evaluation should include at least:",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST",
+            "following_information": [
+              "The effectiveness, completeness, and integrity of the automated processes that perform validation of the _cloud service offering's_ security posture.",
+              "The effectiveness, completeness, and integrity of the human processes that perform _validation_ of the _cloud service offering's_ security posture",
+              "The coverage of these processes within the _cloud service offering_, including if all of the consolidated _information resources_ listed are being _validated_."
+            ]
+          },
+          {
+            "id": "FRR-PVA-11",
+            "name": "Assess Process Implementation",
+            "statement": "Assessors MUST evaluate the implementation of processes derived from Key Security Indicators to determine whether or not the provider has accurately documented their process and goals.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-12",
+            "name": "Assess Outcome Consistency",
+            "statement": "Assessors MUST evaluate whether or not the underlying processes are consistently creating the desired security outcome documented by the provider.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-13",
+            "name": "Mixed Methods Evaluation",
+            "statement": "Assessors MUST perform evaluation using a combination of quantitative and expert qualitative assessment as appropriate AND document which is applied to which aspect of the assessment.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-14",
+            "name": "Engage Provider Experts",
+            "statement": "Assessors SHOULD engage provider experts in discussion to understand the decisions made by the provider and inform expert qualitative assessment, and SHOULD perform independent research to test such information as part of the expert qualitative assessment process.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "SHOULD"
+          },
+          {
+            "id": "FRR-PVA-15",
+            "name": "Avoid Static Evidence",
+            "statement": "Assessors MUST NOT rely on screenshots, configuration dumps, or other static output as evidence EXCEPT when evaluating the accuracy and reliability of a process that generates such artifacts.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST NOT"
+          },
+          {
+            "id": "FRR-PVA-16",
+            "name": "Verify Procedure Adherence",
+            "statement": "Assessors MUST assess whether or not procedures are consistently followed, including the processes in place to ensure this occurs, without relying solely on the existence of a procedure document for assessing if appropriate processes and procedures are in place.",
+            "note": "Note: This includes evaluating tests or plans for activities that may occur in the future but have not yet occurred.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-17",
+            "name": "Deliver Assessment Summary",
+            "statement": "Assessors MUST deliver a high-level summary of their assessment process and findings for each Key Security Indicator; this summary will be included in the _authorization data_ for the _cloud service offering_.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-18",
+            "name": "No Overall Recommendation",
+            "statement": "Assessors MUST NOT deliver an overall recommendation on whether or not the _cloud service offering_ meets the requirements for FedRAMP authorization.",
+            "impact": {
+              "low": true,
+              "moderate": true,
+              "high": true
+            },
+            "affects": [
+              "Assessors"
+            ],
+            "primary_key_word": "MUST NOT",
+            "note": "FedRAMP will make the final authorization decision based on the assessor's findings and other relevant information."
+          }
+        ]
+      },
+      "timeframe-low": {
+        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+        "id": "FRR-PVA-TF-LO",
+        "name": "Timeframes - Low",
+        "requirements": [
+          {
+            "id": "FRR-PVA-TF-LO-01",
+            "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of non-_machine-based_ _information resources_ at least once every 3 months.",
+            "name": "Quarterly Non-Machine Validation",
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-TF-LO-02",
+            "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of _machine-based_ _information resources_ at least once every 7 days.",
+            "name": "Weekly Machine Validation",
+            "impact": {
+              "low": true,
+              "moderate": false,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          }
+        ]
+      },
+      "timeframe-moderate": {
+        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+        "id": "FRR-PVA-TF-MO",
+        "name": "Timeframes - Moderate",
+        "requirements": [
+          {
+            "id": "FRR-PVA-TF-MO-01",
+            "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of non-_machine-based_ _information resources_ at least once every 3 months.",
+            "name": "Quarterly Non-Machine Validation",
+            "impact": {
+              "low": false,
+              "moderate": true,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          },
+          {
+            "id": "FRR-PVA-TF-LM-02",
+            "statement": "Providers MUST complete the _validation_ processes for Key Security Indicators of _machine-based_ _information resources_ at least once every 3 days.",
+            "name": "3-Day Machine Validation",
+            "impact": {
+              "low": false,
+              "moderate": true,
+              "high": false
+            },
+            "affects": [
+              "Providers"
+            ],
+            "primary_key_word": "MUST"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -17,6 +17,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "watch": "bunx nodemon --watch ../templates/FRMR.markdown.template.hbs --watch ../ --exec 'bun run scripts/FRMR-to-markdown.ts'"
+    "site": "bun run scripts/FRMR-to-markdown.ts",
+    "watch": "bunx nodemon --watch templates/zensical-template.hbs --watch ../data/ --exec 'bun run scripts/FRMR-to-markdown.ts'"
   }
 }

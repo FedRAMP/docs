@@ -1,95 +1,58 @@
-# FedRAMP 20x Machine Readable (FRMR) Docs
+# FedRAMP Machine Readable (FRMR) Documentation
 
-This repository contains FedRAMP 20x standards, technical assistance, and other materials in both machine-readable and human-readable formats.
-
-## FRMR Identifiers
-
-See [IDENTIFIERS.md](./IDENTIFIERS.md) for explanations about the naming and structure of these materials.
-
-## FRMR Materials
-
-| Markdown | PDF | Description | Version | Published Date |
-|-----------|---|-------------|---------|----------------|
-| [Authorization Data Sharing Standard (ADS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ADS.authorization-data-sharing.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.ADS.authorization-data-sharing.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
-| [Significant Change Notification Requirements (SCN)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.SCN.significant-change-notifications.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.SCN.significant-change-notifications.pdf) | minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
-| [FedRAMP Definitions (FRD)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.FRD.fedramp-definitions.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.FRD.fedramp-definitions.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes. | 25.10A | 2025-10-17 |
-| [Minimum Assessment Standard (MAS)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MAS.minimum-assessment-standard.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.MAS.minimum-assessment-standard.pdf) | minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
-| [Vulnerability Detection and Response Standard (VDR)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.VDR.vulnerability-detection-and-response.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.VDR.vulnerability-detection-and-response.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
-| [Key Security Indicators (KSI)](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.KSI.key-security-indicators.md) | [[PDF]](https://github.com/FedRAMP/docs/blob/main/pdf/FRMR.KSI.key-security-indicators.pdf) | Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes. | 25.10A | 2025-10-17 |
-
-In addition, simplified combined documents for each impact level are available as follows:
-
-| Markdown | PDF | Impact Level |
-| -- | -- | -- |
-| [All Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.ALL.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.ALL.combined.pdf) | All |
-| [Low Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.LOW.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.LOW.combined.pdf) | Low |
-| [Moderate Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.MOD.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.MOD.combined.pdf) | Moderate |
-| [High Combined](https://github.com/FedRAMP/docs/tree/main/markdown/FRMR.HIGH.combined.md) | [[PDF]](https://github.com/FedRAMP/docs/tree/main/pdf/FRMR.HIGH.combined.pdf) | High |
+## Human-readable versions of this documentation are now hosted at https://fedramp.gov/docs!
 
 
----
+This repository contains:
 
-## Folders
+1. Machine-readable FedRAMP documentation for 20x in the `data` subdirectory
+2. Tools and templates to convert FRMR JSON into enriched markdown
+3. A [Zensical](https://zensical.org/about)-based static site renderer for viewing 
 
-- `FRMR.*.json` — Requirement files
-- `templates/` — Handlebars templates
-- `markdown/` — Generated docs in markdown format
-- `tools/` — Scripts and tests (bun / node)
+> **Please Note:** This repository previously contained basic markdown for direct viewing but moving forward FedRAMP will focus on enriched markdown for increased viewability.
 
-## Testing
 
-1. **Install Bun:** [https://bun.sh](https://bun.sh)
 
-2. **Install dependencies:**
 
-   ```sh
-   cd tools
-   bun install
-   ```
+## Using the JSON Data
 
-### Things you can do include:
+The public is strongly encouraged to develop supporting systems that read FRMR docs directly, especially for integration in tools. Nothing beyond the JSON files in the `data` directory are necessary to begin leveraging these files.
 
-> If changes are made, all of these things need to be run manually at the moment, in the following order:
+FedRAMP is actively and aggressively developing and improving the JSON structure and associated metadata to improve the value of FRMR docs and may occasionally make breaking changes during the 20x pilots. FedRAMP will be seeking feedback during Phase Two and Phase Three for opportunities to improve and may open this repository up to public contribution.
 
-**Validate JSON:**
+## Building the Static Site
 
-```sh
-bun test
-```
+This is very much a work in progress.
 
-**Create Combined JSON files**
+### Installing dependencies
+We use several tools to support the development and build process.  At a minimum you will need to install [bun](https://bun.com/docs/installation) and the [zensical](https://zensical.org/docs/get-started/) python library.
 
-```sh
-bun run scripts/combine-frmr-json.ts
-```
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install zensical
 
- **Generate Markdown:**
+    curl -fsSL https://bun.com/install | bash
 
-```sh
-bun run watch
-```
-(watches for changes and regenerates markdown)
+### Testing
 
-**Generate Updated TOC:**
+There is a simple test suite that can be run with `bun test` once bun is installed.  This test suite will validate the FRMR JSON files in the `data` folder against the schema in `tools/templates/FedRAMP.schema.json`.
 
-```sh
-bun run scripts/generate-table-of-docs.ts
-```
-(copy/paste to README.md)
+### Building
 
-**Conversion to PDF:**
+Building the site has two main steps:
 
-```sh
-cd markdown
-../tools/scripts/update-pdfs.sh
-```
+1. Generate the enriched Markdown files from the FRMR JSON files.
+2. Build the static site using the enriched Markdown files.
 
-# Broader Changes / Notes
+#### Generating the enriched markdown files
+1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script or via `bun run site`.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `docs` directory. If you are editing various things, you can also run `bun run watch` to build the markdown after every change to JSON or the template.
 
-- **October**
-  - Removed `specific_release` from JSON files (this was not really used)
-  - Removed `is_optional` from JSON files to avoid confusion
-  - Removed `is_tentantive` from JSON files to avoid confusion
-  - Removed `is_interim` from JSON files to avoid confusion
-  - Removed `comment` field from releases and replaced with `comments` array in JSON files
-  
+
+2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
+3. Once you have confirmed the site looks correct, you can build the static site by running `zensical build`.
+
+#### Generate documentation for the JSON Schema
+We are using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) to generate documentation for the FRMR JSON schema.
+
+    pip install json-schema-for-humans 
+    generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json docs/schema/FedRAMP.schema.md

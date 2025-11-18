@@ -1,0 +1,7 @@
+link_to_reused_ref: false
+template_name: md
+description_is_markdown: true
+expand_buttons: true
+show_toc: false
+
+

@@ -22,7 +22,7 @@ async function buildDefinitionMap(): Promise<DefinitionMap> {
   const definitionMap: DefinitionMap = {};
   
   try {
-    const files = await glob('../FRMR*.json');
+    const files = await glob('../data/FRMR*.json');
     
     for (const file of files) {
       const jsonContent = await fs.readJSON(file);

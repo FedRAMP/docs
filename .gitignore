@@ -5,6 +5,7 @@ tools/node_modules
 out
 dist
 *.tgz
+/site
 
 # code coverage
 coverage
@@ -32,3 +33,4 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
