@@ -234,7 +234,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AT-2, AT-2.2, AT-2.3, AT-4
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CED-02 Role-Specific Education
@@ -286,7 +286,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AU-2, CM-3, CM-4.2, CM-6, MA-2
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CMT-02 Redeployment
@@ -298,7 +298,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CM-2, CM-3, CM-5, CM-6, CM-7, CM-8.1, SI-3
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CMT-03 Automated Testing and Validation
@@ -310,7 +310,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CM-3, CM-3.2, SI-2
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CMT-04 Change Management Procedure
@@ -322,7 +322,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CM-3, CM-3.4, CM-5, CM-7.1, CM-9
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CMT-05
@@ -361,7 +361,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-17.3, CA-9, SC-7.3, SC-7.4, SC-7.5, SC-7.8, SC-8, SC-10, SI-10, SI-11, SI-16
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CNA-03 Enforce Traffic Flow
@@ -373,7 +373,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-17.3, CA-9, SC-7
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CNA-04 Immutable Infrastructure
@@ -385,7 +385,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CM-2, SI-3
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CNA-05 Unwanted Activity
@@ -397,7 +397,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** SC-5
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-CNA-06 High Availability
@@ -449,7 +449,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2, IA-2, IA-2.1, IA-2.2, IA-2.8, IA-8
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-IAM-02 Passwordless Authentication
@@ -461,7 +461,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2, AC-3, IA-2.1, IA-2.2, IA-2.8, IA-5.1, IA-5.2, IA-5.6, IA-6
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-IAM-03 Non-User Accounts
@@ -473,7 +473,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2, AC-4, IA-3, IA-5.2
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-IAM-04 Just-in-Time Authorization
@@ -485,7 +485,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2, AC-2.2, AC-2.3, AC-2.4, AC-2.6, AC-3, AC-4, AC-5, AC-6, AC-6.1, AC-6.2, AC-6.5, AC-6.7, AC-6.9, AC-6.10, AC-7, AC-17, AU-9.4, CM-5, CM-7, CM-7.2, CM-7.5, CM-9, IA-4, IA-4.4, IA-7, PS-2, PS-3, PS-4, PS-5, PS-6, PS-9, SC-39
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-IAM-05 Least Privilege
@@ -497,7 +497,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2.5, AC-2.6, AC-3, AC-4, AC-6, AC-12, AC-14, AC-17, AC-17.1, AC-17.2, AC-17.3, AC-20, AC-20.1, CM-9, IA-2, IA-3, IA-4, IA-4.4, IA-5.2, IA-11, PS-2, PS-3, PS-4, PS-5, PS-6, SC-20, SC-21, SC-22, SC-39, SI-3
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-IAM-06 Suspicious Activity
@@ -537,7 +537,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** IR-4, IR-4.1, IR-6, IR-6.1, IR-7, IR-7.1, IR-8
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-INR-02 Incident Logging
@@ -549,7 +549,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** IR-3, IR-4, IR-4.1, IR-5, IR-8
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-INR-03 Incident After Action Reports
@@ -579,7 +579,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AU-2, AU-3, AU-3.1, AU-4, AU-5, AU-6.1, AU-6.3, AU-7, AU-7.1, AU-8, AU-9, AU-11
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-MLA-02 Audit Logging
@@ -621,7 +621,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CA-7, CM-2, CM-6
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-MLA-06
@@ -696,7 +696,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** RA-5.11
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-PIY-04 CISA Secure By Design
@@ -708,7 +708,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-5, SA-3
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-PIY-05 Evaluate Implementations
@@ -730,7 +730,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-5, CP-2.1, CP-4.1, IR-3.2, SA-2, SA-3, SR-2.1
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-PIY-07 Supply Chain Risk Management
@@ -770,7 +770,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CP-2.3, CP-10
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-RPL-02 Recovery Plan
@@ -782,7 +782,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CP-2, CP-2.3, CP-6, CP-10
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-RPL-03 System Backups
@@ -794,7 +794,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** CM-2.3, CP-6, CP-9, CP-10, CP-10.2, SI-12
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-RPL-04 Recovery Testing
@@ -824,7 +824,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** MA-2, SC-7, SC-39, SI-4, SR-10
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-SVC-02 Network Encryption
@@ -836,7 +836,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-1, AC-17.2, CP-9.8, SC-13, SC-20, SC-21, SC-22
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-SVC-03
@@ -857,7 +857,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-2.4, CM-2, CM-2.2, CM-2.3, CM-6, PL-10, SA-5, SI-5, SR-10
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-SVC-05 Resource Integrity
@@ -965,7 +965,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-20, RA-3.1, SA-9, SA-22, SR-5
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 #### KSI-TPR-04 Supply Chain Risk Monitoring
@@ -977,7 +977,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
     **Related SP 800-53 Controls:** AC-20, CA-3, IR-6.3, PS-7, RA-5, SA-9, SI-5, SR-5, SR-8
 
-      **Applies to:** Low, Moderate, High
+      **Applies to:** Low, Moderate
       
 
 ---
