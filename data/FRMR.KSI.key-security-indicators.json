@@ -246,7 +246,7 @@
             "moderate": true
           },
           "reference": "Minimum Assessment Scope",
-          "reference_url": "https://fedramp.gov/docs/20xP2/minimum-assessment-scope"
+          "reference_url": "https://fedramp.gov/docs/minimum-assessment-scope"
         },
         {
           "id": "KSI-AFR-02",
@@ -257,7 +257,7 @@
             "moderate": true
           },
           "reference": "Key Security Indicators",
-          "reference_url": "https://fedramp.gov/docs/20xP2/key-security-indicators"
+          "reference_url": "https://fedramp.gov/docs/key-security-indicators"
         },
         {
           "id": "KSI-AFR-03",
@@ -268,7 +268,7 @@
             "moderate": true
           },
           "reference": "Authorization Data Sharing",
-          "reference_url": "https://fedramp.gov/docs/20xP2/authorization-data-sharing",
+          "reference_url": "https://fedramp.gov/docs/authorization-data-sharing",
           "controls": [
             {
               "control_id": "ac-3",
@@ -317,7 +317,7 @@
             "moderate": true
           },
           "reference": "Vulnerability Detection and Response",
-          "reference_url": "https://fedramp.gov/docs/20xP2/vulnerability-detection-and-response",
+          "reference_url": "https://fedramp.gov/docs/vulnerability-detection-and-response",
           "controls": [
             {
               "control_id": "ca-2",
@@ -490,7 +490,7 @@
             "moderate": true
           },
           "reference": "Significant Change Notifications",
-          "reference_url": "https://fedramp.gov/docs/20xP2/significant-change-notifications",
+          "reference_url": "https://fedramp.gov/docs/significant-change-notifications",
           "controls": [
             {
               "control_id": "ca-7.4",
@@ -571,7 +571,7 @@
             "moderate": true
           },
           "reference": "Collaborative Continuous Monitoring",
-          "reference_url": "https://fedramp.gov/docs/20xP2/collaborative-continuous-monitoring"
+          "reference_url": "https://fedramp.gov/docs/collaborative-continuous-monitoring"
         },
         {
           "id": "KSI-AFR-07",
@@ -582,7 +582,7 @@
             "moderate": true
           },
           "reference": "Recommended Secure Configuration",
-          "reference_url": "https://fedramp.gov/docs/20xP2/recommended-secure-configuration"
+          "reference_url": "https://fedramp.gov/docs/recommended-secure-configuration"
         },
         {
           "id": "KSI-AFR-08",
@@ -593,7 +593,7 @@
             "moderate": true
           },
           "reference": "FedRAMP Security Inbox",
-          "reference_url": "https://fedramp.gov/docs/20xP2/fedramp-security-inbox"
+          "reference_url": "https://fedramp.gov/docs/fedramp-security-inbox"
         },
         {
           "id": "KSI-AFR-09",
@@ -604,7 +604,7 @@
             "moderate": true
           },
           "reference": "Persistent Validation and Assessment",
-          "reference_url": "https://fedramp.gov/docs/20xP2/persistent-validation-and-assessment"
+          "reference_url": "https://fedramp.gov/docs/persistent-validation-and-assessment"
         },
         {
           "id": "KSI-AFR-10",
@@ -615,7 +615,7 @@
             "moderate": true
           },
           "reference": "Incident Communications Procedures",
-          "reference_url": "https://fedramp.gov/docs/20xP2/incident-communications-procedures"
+          "reference_url": "https://fedramp.gov/docs/incident-communications-procedures"
         },
         {
           "id": "KSI-AFR-11",
@@ -626,7 +626,7 @@
             "moderate": true
           },
           "reference": "Using Cryptographic Modules",
-          "reference_url": "https://fedramp.gov/docs/20xP2/using-cryptographic-modules"
+          "reference_url": "https://fedramp.gov/docs/using-cryptographic-modules"
         }
       ]
     },
