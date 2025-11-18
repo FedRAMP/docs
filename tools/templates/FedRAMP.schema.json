@@ -226,7 +226,7 @@
         "^[A-Z]{3}$": {
           "type": "object",
           "description": "A collection of KSIs on a related topic",
-          "required": ["id", "name", "indicator", "ksi"],
+          "required": ["id", "name", "theme", "indicators"],
           "additionalProperties": false,
           "properties": {
             "id": {"type": "string", "pattern": "^KSI-[A-Z]{3}$"},

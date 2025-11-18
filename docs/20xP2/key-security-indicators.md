@@ -6,7 +6,7 @@ Modern cloud services use automated or code-driven configuration management and 
     - **Release:** 25.11A
     - **Published:** 2025-11-18
     - **Designator:** KSI
-    - **Description:** Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs.
+    - **Description:** Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs; Renamed KSI &quot;indicator&quot; property to &quot;theme&quot; and KSI &quot;requirements&quot; property to &quot;indicators&quot; to match current naming conventions..
     ---
     - **FedRAMP 20x**:
         - This release is effective **2025-11-18** for **20x**.
