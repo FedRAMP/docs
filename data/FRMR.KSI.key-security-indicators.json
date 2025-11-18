@@ -646,8 +646,16 @@
               "title": "Social Engineering and Mining"
             },
             {
+              "control_id": "at-3.5",
+              "title": "Processing Personally Identifiable Information"
+            },
+            {
               "control_id": "at-4",
               "title": "Training Records"
+            },
+            {
+              "control_id": "ir-2.3",
+              "title": "Breach"
             }
           ],
           "impact": { "low": true, "moderate": true }
@@ -664,6 +672,10 @@
             {
               "control_id": "at-2",
               "title": "Literacy Training and Awareness"
+            },
+            {
+              "control_id": "at-2.3",
+              "title": "Social Engineering and Mining"
             },
             {
               "control_id": "at-3",
@@ -733,12 +745,20 @@
               "title": "Configuration Change Control"
             },
             {
+              "control_id": "cm-3.2",
+              "title": "Testing, Validation, and Documentation of Changes"
+            },
+            {
               "control_id": "cm-4.2",
               "title": "Verification of Controls"
             },
             {
               "control_id": "cm-6",
               "title": "Configuration Settings"
+            },
+            {
+              "control_id": "cm-8.3",
+              "title": "Automated Unauthorized Component Detection"
             },
             {
               "control_id": "ma-2",
@@ -800,6 +820,10 @@
               "title": "Testing, Validation, and Documentation of Changes"
             },
             {
+              "control_id": "cm-4.2",
+              "title": "Verification of Controls"
+            },
+            {
               "control_id": "si-2",
               "title": "Flaw Remediation"
             }
@@ -817,6 +841,10 @@
             {
               "control_id": "cm-3",
               "title": "Configuration Change Control"
+            },
+            {
+              "control_id": "cm-3.2",
+              "title": "Testing, Validation, and Documentation of Changes"
             },
             {
               "control_id": "cm-3.4",
@@ -894,6 +922,18 @@
               "title": "Managed Access Control Points"
             },
             {
+              "control_id": "ac-18.1",
+              "title": "Authentication and Encryption"
+            },
+             {
+              "control_id": "ac-18.3",
+              "title": "Disable Wireless Networking"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
               "control_id": "ca-9",
               "title": "Internal System Connections"
             },
@@ -944,6 +984,10 @@
             "moderate": true
           },
           "controls": [
+             {
+              "control_id": "ac-12",
+              "title": "Session Termination"
+            },
             {
               "control_id": "ac-17.3",
               "title": "Managed Access Control Points"
@@ -953,8 +997,24 @@
               "title": "Internal System Connections"
             },
             {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
               "control_id": "sc-7",
               "title": "Boundary Protection"
+            },
+            {
+              "control_id": "sc-7.7",
+              "title": "Split Tunneling for Remote Devices"
+            },
+            {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            },
+            {
+              "control_id": "sc-10",
+              "title": "Network Disconnect"
             }
           ]
         },
@@ -989,6 +1049,14 @@
             {
               "control_id": "sc-5",
               "title": "Denial-of-service Protection"
+            },
+            {
+              "control_id": "si-8",
+              "title": "Spam Protection"
+            },
+            {
+              "control_id": "si-8.2",
+              "title": "Automatic Updates"
             }
           ]
         },
@@ -1081,8 +1149,16 @@
               "title": "Access to Accounts — Replay Resistant"
             },
             {
+              "control_id": "ia-5",
+              "title": "Authenticator Management"
+            },
+            {
               "control_id": "ia-8",
               "title": "Identification and Authentication (Non-organizational Users)"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             }
           ]
         },
@@ -1147,8 +1223,16 @@
               "title": "Account Management"
             },
             {
+              "control_id": "ac-2.2",
+              "title": "Automated Temporary and Emergency Account Management"
+            },
+            {
               "control_id": "ac-4",
               "title": "Information Flow Enforcement"
+            },
+            {
+              "control_id": "ac-6.5",
+              "title": "Privileged Accounts"
             },
             {
               "control_id": "ia-3",
@@ -1157,6 +1241,10 @@
             {
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ra-5.5",
+              "title": "Privileged Access"
             }
           ]
         },
@@ -1172,6 +1260,10 @@
             {
               "control_id": "ac-2",
               "title": "Account Management"
+            },
+            {
+              "control_id": "ac-2.1",
+              "title": "Automated System Account Management"
             },
             {
               "control_id": "ac-2.2",
@@ -1232,6 +1324,10 @@
             {
               "control_id": "ac-7",
               "title": "Unsuccessful Logon Attempts"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
             },
             {
               "control_id": "ac-17",
@@ -1296,6 +1392,18 @@
             {
               "control_id": "ps-9",
               "title": "Position Descriptions"
+            },
+            {
+              "control_id": "ra-5.5",
+              "title": "Privileged Access"
+            },
+            {
+              "control_id": "sc-2",
+              "title": "Separation of System and User Functionality"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             },
             {
               "control_id": "sc-39",
@@ -1365,6 +1473,10 @@
               "title": "Limits on Authorized Use"
             },
             {
+              "control_id": "cm-2.7",
+              "title": "Configure Systems and Components for High-risk Areas"
+            },
+            {
               "control_id": "cm-9",
               "title": "Configuration Management Plan"
             },
@@ -1387,6 +1499,10 @@
             {
               "control_id": "ia-5.2",
               "title": "Public Key-based Authentication"
+            },
+            {
+              "control_id": "ia-5.6",
+              "title": "Protection of Authenticators"
             },
             {
               "control_id": "ia-11",
@@ -1413,6 +1529,10 @@
               "title": "Access Agreements"
             },
             {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
               "control_id": "sc-20",
               "title": "Secure Name/Address Resolution Service (Authoritative Source)"
             },
@@ -1423,6 +1543,10 @@
             {
               "control_id": "sc-22",
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             },
             {
               "control_id": "sc-39",
@@ -1549,6 +1673,10 @@
               "title": "Automated Reporting"
             },
             {
+              "control_id": "ir-6.3",
+              "title": "Supply Chain Coordination"
+            },
+            {
               "control_id": "ir-7",
               "title": "Incident Response Assistance"
             },
@@ -1559,6 +1687,14 @@
             {
               "control_id": "ir-8",
               "title": "Incident Response Plan"
+            },
+            {
+              "control_id": "ir-8.1",
+              "title": "Breaches"
+            },
+            {
+              "control_id": "si-4.5",
+              "title": "System-generated Alerts"
             }
           ]
         },
@@ -1637,6 +1773,14 @@
           },
           "controls": [
             {
+              "control_id": "ac-17.1",
+              "title": "Monitoring and Control"
+            },
+            {
+              "control_id": "ac-20.1",
+              "title": "Limits on Authorized Use"
+            },
+            {
               "control_id": "au-2",
               "title": "Event Logging"
             },
@@ -1683,6 +1827,23 @@
             {
               "control_id": "au-11",
               "title": "Audit Record Retention"
+            },
+
+            {
+              "control_id": "ir-4.1",
+              "title": "Automated Incident Handling Processes"
+            },
+            {
+              "control_id": "si-4.2",
+              "title": "Automated Tools and Mechanisms for Real-time Analysis"
+            },
+            {
+              "control_id": "si-4.4",
+              "title": "Inbound and Outbound Communications Traffic"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
             }
           ]
         },
@@ -1712,8 +1873,16 @@
               "title": "Audit Record Review, Analysis, and Reporting"
             },
             {
+              "control_id": "au-6.1",
+              "title": "Automated Process Integration"
+            },
+            {
               "control_id": "si-4",
               "title": "System Monitoring"
+            },
+            {
+              "control_id": "si-4.4",
+              "title": "Inbound and Outbound Communications Traffic"
             }
           ]
         },
@@ -1749,6 +1918,10 @@
             {
               "control_id": "cm-6",
               "title": "Configuration Settings"
+            },
+            {
+              "control_id": "si-7.7",
+              "title": "Integration of Detection and Response"
             }
           ]
         },
@@ -1841,6 +2014,10 @@
           },
           "controls": [
             {
+              "control_id": "cm-2.2",
+              "title": "Automation Support for Accuracy and Currency"
+            },
+            {
               "control_id": "cm-7.5",
               "title": "Authorized Software — Allow-by-exception"
             },
@@ -1880,6 +2057,10 @@
               "title": "Policy and Procedures"
             },
             {
+              "control_id": "ac-21",
+              "title": "Information Sharing"
+            },
+            {
               "control_id": "at-1",
               "title": "Policy and Procedures"
             },
@@ -1902,6 +2083,10 @@
             {
               "control_id": "cp-2.1",
               "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-2.8",
+              "title": "Identify Critical Assets"
             },
             {
               "control_id": "cp-4.1",
@@ -1950,6 +2135,10 @@
             {
               "control_id": "ra-1",
               "title": "Policy and Procedures"
+            },
+            {
+              "control_id": "ra-9",
+              "title": "Criticality Analysis"
             },
             {
               "control_id": "sa-1",
@@ -2010,8 +2199,48 @@
               "title": "Separation of Duties"
             },
             {
+              "control_id": "au-3.3",
+              "title": "Limit Personally Identifiable Information Elements"
+            },
+            {
+              "control_id": "cm-3.4",
+              "title": "Security and Privacy Representatives"
+            },
+            {
+              "control_id": "pl-8",
+              "title": "Security and Privacy Architectures"
+            },
+            {
+              "control_id": "pm-7",
+              "title": "Enterprise Architecture"
+            },
+            {
               "control_id": "sa-3",
               "title": "System Development Life Cycle"
+            },
+            {
+              "control_id": "sa-8",
+              "title": "Security and Privacy Engineering Principles"
+            },
+            {
+              "control_id": "sc-4",
+              "title": "Information in Shared System Resources"
+            },
+            {
+              "control_id": "sc-18",
+              "title": "Mobile Code"
+            },
+            {
+              "control_id": "si-10",
+              "title": "Information Input Validation"
+            },
+            {
+              "control_id": "si-11",
+              "title": "Error Handling"
+            },
+            {
+              "control_id": "si-16",
+              "title": "Memory Protection"
             }
           ]
         },
@@ -2039,6 +2268,10 @@
               "title": "Separation of Duties"
             },
             {
+              "control_id": "ca-2",
+              "title": "Control Assessments"
+            },
+            {
               "control_id": "cp-2.1",
               "title": "Coordinate with Related Plans"
             },
@@ -2049,6 +2282,10 @@
             {
               "control_id": "ir-3.2",
               "title": "Coordination with Related Plans"
+            },
+            {
+              "control_id": "pm-3",
+              "title": "Information Security and Privacy Resources"
             },
             {
               "control_id": "sa-2",
@@ -2076,6 +2313,10 @@
             {
               "control_id": "ca-7.4",
               "title": "Risk Monitoring"
+            },
+            {
+              "control_id": "sc-18",
+              "title": "Mobile Code"
             }
           ]
         },
@@ -2129,16 +2370,64 @@
               "title": "Contingency Plan"
             },
             {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
               "control_id": "cp-2.3",
               "title": "Resume Mission and Business Functions"
+            },
+            {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
             },
             {
               "control_id": "cp-6",
               "title": "Alternate Storage Site"
             },
             {
+              "control_id": "cp-6.1",
+              "title": "Separation from Primary Site"
+            },
+            {
+              "control_id": "cp-6.3",
+              "title": "Accessibility"
+            },
+            {
+              "control_id": "cp-7",
+              "title": "Alternate Processing Site"
+            },
+            {
+              "control_id": "cp-7.1",
+              "title": "Separation from Primary Site"
+            },
+            {
+              "control_id": "cp-7.2",
+              "title": "Accessibility"
+            },
+            {
+              "control_id": "cp-7.3",
+              "title": "Priority of Service"
+            },
+            {
+              "control_id": "cp-8",
+              "title": "Telecommunications Services"
+            },
+            {
+              "control_id": "cp-8.1",
+              "title": "Priority of Service Provisions"
+            },
+            {
+              "control_id": "cp-8.2",
+              "title": "Single Points of Failure"
+            },
+            {
               "control_id": "cp-10",
               "title": "System Recovery and Reconstitution"
+            },
+            {
+              "control_id": "cp-10.2",
+              "title": "Transaction Recovery"
             }
           ]
         },
@@ -2187,12 +2476,28 @@
           },
           "controls": [
             {
+              "control_id": "cp-2.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
+              "control_id": "cp-2.3",
+              "title": "Resume Mission and Business Functions"
+            },
+            {
               "control_id": "cp-4",
               "title": "Contingency Plan Testing"
             },
             {
+              "control_id": "cp-4.1",
+              "title": "Coordinate with Related Plans"
+            },
+            {
               "control_id": "cp-6",
               "title": "Alternate Storage Site"
+            },
+            {
+              "control_id": "cp-6.1",
+              "title": "Separation from Primary Site"
             },
             {
               "control_id": "cp-9.1",
@@ -2205,6 +2510,10 @@
             {
               "control_id": "ir-3",
               "title": "Incident Response Testing"
+            },
+            {
+              "control_id": "ir-3.2",
+              "title": "Coordination with Related Plans"
             }
           ]
         }
@@ -2225,8 +2534,20 @@
           },
           "controls": [
             {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "cm-12.1",
+              "title": "Automated Tools to Support Information Location"
+            },
+            {
               "control_id": "ma-2",
               "title": "Controlled Maintenance"
+            },
+            {
+              "control_id": "pl-8",
+              "title": "Security and Privacy Architectures"
             },
             {
               "control_id": "sc-7",
@@ -2235,6 +2556,10 @@
             {
               "control_id": "sc-39",
               "title": "Process Isolation"
+            },
+            {
+              "control_id": "si-2.2",
+              "title": "Automated Flaw Remediation Status"
             },
             {
               "control_id": "si-4",
@@ -2268,6 +2593,14 @@
               "title": "Cryptographic Protection"
             },
             {
+              "control_id": "sc-8",
+              "title": "Transmission Confidentiality and Integrity"
+            },
+            {
+              "control_id": "sc-8.1",
+              "title": "Cryptographic Protection"
+            },
+            {
               "control_id": "sc-13",
               "title": "Cryptographic Protection"
             },
@@ -2282,6 +2615,10 @@
             {
               "control_id": "sc-22",
               "title": "Architecture and Provisioning for Name/Address Resolution Service"
+            },
+            {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
             }
           ]
         },
@@ -2319,6 +2656,14 @@
             {
               "control_id": "cm-6",
               "title": "Configuration Settings"
+            },
+            {
+              "control_id": "cm-7.1",
+              "title": "Periodic Review"
+            },
+            {
+              "control_id": "pl-9",
+              "title": "Central Management"
             },
             {
               "control_id": "pl-10",
@@ -2360,6 +2705,18 @@
               "title": "Cryptographic Protection"
             },
             {
+              "control_id": "sc-23",
+              "title": "Session Authenticity"
+            },
+            {
+              "control_id": "si-7",
+              "title": "Software, Firmware, and Information Integrity"
+            },
+            {
+              "control_id": "si-7.1",
+              "title": "Integrity Checks"
+            },
+            {
               "control_id": "sr-10",
               "title": "Inspection of Systems or Components"
             }
@@ -2389,6 +2746,10 @@
             {
               "control_id": "sc-12",
               "title": "Cryptographic Key Establishment and Management"
+            },
+            {
+              "control_id": "sc-17",
+              "title": "Public Key Infrastructure Certificates"
             }
           ]
         },
@@ -2509,12 +2870,32 @@
               "title": "External System Services"
             },
             {
+              "control_id": "sa-10",
+              "title": "Developer Configuration Management"
+            },
+            {
+              "control_id": "sa-11",
+              "title": "Developer Testing and Evaluation"
+            },
+            {
+              "control_id": "sa-15.3",
+              "title": "Criticality Analysis"
+            },
+            {
               "control_id": "sa-22",
               "title": "Unsupported System Components"
             },
             {
+              "control_id": "si-7.1",
+              "title": "Integrity Checks"
+            },
+            {
               "control_id": "sr-5",
               "title": "Acquisition Strategies, Tools, and Methods"
+            },
+            {
+              "control_id": "sr-6",
+              "title": "Supplier Assessments and Reviews"
             }
           ]
         },
@@ -2558,6 +2939,10 @@
             {
               "control_id": "sr-5",
               "title": "Acquisition Strategies, Tools, and Methods"
+            },
+            {
+              "control_id": "sr-6",
+              "title": "Supplier Assessments and Reviews"
             },
             {
               "control_id": "sr-8",
