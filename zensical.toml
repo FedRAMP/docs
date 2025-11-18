@@ -1,39 +1,34 @@
 
 [project]
-site_name = "FedRAMP Documentation"
-site_description = "An experiment FedRAMP Documentation site."
+site_name = "FedRAMP 20x Documentation"
+site_description = "An experimental FedRAMP Documentation site."
 site_author = "pete@fedramp.gov"
 site_dir = "site"
 docs_dir = "docs"
+site_url = "https://fedramp.gov/docs"
 
 nav = [
-    {"20x Phase Two" = [
-        {"Intro" = "20xP2/intro.md"}, 
-        {"Definitions" = "20xP2/fedramp-definitions.md"},
-        {"Key Security Indicators" = "20xP2/key-security-indicators.md"},
-        {"Minimum Assessment Scope" = "20xP2/minimum-assessment-scope.md"},
-        {"Authorization Data Sharing" = "20xP2/authorization-data-sharing.md"},
-        {"Vulnerability Detection and Response" = "20xP2/vulnerability-detection-and-response.md"},
-        {"Significant Change Notification" = "20xP2/significant-change-notifications.md"},
-        {"Collaborative Continous Monitoring" = "20xP2/collaborative-continuous-monitoring.md"},
-        {"Recommended Secure Configuration" = "20xP2/recommended-secure-configuration.md"},
-        {"FedRAMP Security Inbox" = "20xP2/fedramp-security-inbox.md"},
-        {"Persistent Validation and Assessment" = "20xP2/persistent-validation-and-assessment.md"},
-        {"Incident Communications Procedures" = "20xP2/incident-communications-procedures.md"},
-        {"Using Cryptographic Modules" = "20xP2/using-cryptographic-modules.md"},
+    {"Phase Two (Current)" = [
+        {"Overview" = "index.md"},
+        {"Definitions" = "fedramp-definitions.md"},
+        {"Key Security Indicators" = "key-security-indicators.md"},
+        {"Minimum Assessment Scope" = "minimum-assessment-scope.md"},
+        {"Authorization Data Sharing" = "authorization-data-sharing.md"},
+        {"Vulnerability Detection and Response" = "vulnerability-detection-and-response.md"},
+        {"Significant Change Notification" = "significant-change-notifications.md"},
+        {"Collaborative Continous Monitoring" = "collaborative-continuous-monitoring.md"},
+        {"Recommended Secure Configuration" = "recommended-secure-configuration.md"},
+        {"FedRAMP Security Inbox" = "fedramp-security-inbox.md"},
+        {"Persistent Validation and Assessment" = "persistent-validation-and-assessment.md"},
+        {"Incident Communications Procedures" = "incident-communications-procedures.md"},
+        {"Using Cryptographic Modules" = "using-cryptographic-modules.md"},
     ]},
-    {"20x Phase One (Archive)" = [
+    {"Phase One (Archive)" = [
         {"P1 Intro" = "20xP1/intro.md"},
         {"P1 Key Security Indicators" = "20xP1/key-security-indicators.md"},
         {"P1 Minimum Assessment Standard" = "20xP1/minimum-assessment-standard.md"}
     ]},
-    
-    #{"Rev5" = [
-    #    {"Intro" = "Rev5/intro.md"}, 
-    #    {"Page 1" = "section/page-1.md"},
-    #]},
-#    {"FRMR JSON Schema" = "schema/FedRAMP.schema/index.html"},
-#    {"// Return to fedramp.gov" = "https://fedramp.gov"}
+    {"// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two"}
 ]
 
 [project.extra]
@@ -55,10 +50,12 @@ features = [
     "navigation.indexes",
     "navigation.instant",
     "navigation.instant.prefetch",
+    "navigation.instant.progress",
     "navigation.sections",
     "navigation.tabs",
     "navigation.top",
     "navigation.tracking",
+    "navigation.path",
     "search.highlight",
     "toc.follow",
 ]

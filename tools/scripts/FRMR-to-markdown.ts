@@ -85,8 +85,8 @@ async function convertFRMRToMarkdown(
       const isFromCombined = jsonFilePath.includes("/combined/");
       const outputDir = isFromCombined
         ? path.join(__dirname, "../../markdown/combined")
-        // : path.join(__dirname, "../../markdown");
-        : path.join(__dirname, "../../docs/20xP2");
+        : // : path.join(__dirname, "../../markdown");
+          path.join(__dirname, "../../docs/");
 
       // Create the combined directory if it doesn't exist
       if (isFromCombined) {

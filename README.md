@@ -1,5 +1,8 @@
 # FedRAMP Machine Readable (FRMR) Documentation
 
+## Human-readable versions of this documentation are now hosted at https://fedramp.gov/docs!
+
+
 This repository contains:
 
 1. Machine-readable FedRAMP documentation for 20x in the `data` subdirectory
@@ -7,6 +10,9 @@ This repository contains:
 3. A [Zensical](https://zensical.org/about)-based static site renderer for viewing 
 
 > **Please Note:** This repository previously contained basic markdown for direct viewing but moving forward FedRAMP will focus on enriched markdown for increased viewability.
+
+
+
 
 ## Using the JSON Data
 
@@ -16,7 +22,8 @@ FedRAMP is actively and aggressively developing and improving the JSON structure
 
 ## Building the Static Site
 
-Stay tuned for tweaks as we work through standardizing this whole process.
+This is very much a work in progress.
+
 ### Installing dependencies
 We use several tools to support the development and build process.  At a minimum you will need to install [bun](https://bun.com/docs/installation) and the [zensical](https://zensical.org/docs/get-started/) python library.
 
@@ -33,11 +40,14 @@ There is a simple test suite that can be run with `bun test` once bun is install
 ### Building
 
 Building the site has two main steps:
+
 1. Generate the enriched Markdown files from the FRMR JSON files.
 2. Build the static site using the enriched Markdown files.
 
 #### Generating the enriched markdown files
-1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `docs` directory.
+1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script or via `bun run site`.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `docs` directory. If you are editing various things, you can also run `bun run watch` to build the markdown after every change to JSON or the template.
+
+
 2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
 3. Once you have confirmed the site looks correct, you can build the static site by running `zensical build`.
 
