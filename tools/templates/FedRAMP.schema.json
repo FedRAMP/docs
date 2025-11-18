@@ -219,7 +219,7 @@
         }
       }
     },
-    "ksi_theme": {
+    "KSI": {
       "type": "object",
       "additionalProperties": false,
       "patternProperties": {
@@ -231,9 +231,9 @@
           "properties": {
             "id": {"type": "string", "pattern": "^KSI-[A-Z]{3}$"},
             "name": {"type": "string"},
-            "indicator": {"type": "string"},
+            "theme": {"type": "string"},
             "referenced_fr": {"type": "array", "items": {"type": "string"}},
-            "ksi": {
+            "indicators": {
               "type": "array",
               "description": "Key Security Indicator.",
               "items": {
