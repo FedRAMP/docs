@@ -8,37 +8,43 @@
   "properties": {
     "info": {
       "type": "object",
+      "title": "Document Meta Information",
       "description": "Information about the document including version information, general purpose, and other meta data.",
       "required": ["name", "short_name", "current_release", "types", "releases", "front_matter"],
       "additionalProperties": false,
       "properties": {
         "name": { "type": "string",
-          "description": "The name of the document or policy"
+          "description": "The name of the document or policy",
+          "title": "Document Name"
         },
         "short_name": { "type": "string", "pattern": "^[A-Z]{3}$",
-          "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects."
+          "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects.",
+          "title": "Short Name"
         },
         "current_release": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
-          "description": "The currently official release. May not always be the latest version."
+          "description": "The currently official release. May not always be the latest version.",
+          "title": "Current Release"
         },
         "types": {
           "type": "array",
-          "description": "The types of objects included in the document. See IDENTIFIERS.md for explanations.",
+          "description": "The broad category(s) (definitions, requirements, technical assistance, etc.) included in the document. See IDENTIFIERS.md for explanations.",
+          "title": "Category(s)",
           "items": {"type": "string", "enum": ["FRR", "FRD", "FRA", "KSI", "FRB"]},
           "uniqueItems": true,
           "minItems": 1
         },
         "releases": {
           "type": "array",
-          "description": "An array of both past and future releases of this document.",
+          "description": "Both past and future releases of this document.",
+          "title": "Document Releases ",
           "items": {
             "type": "object",
-            "description": "A specific release or release draft",
             "required": ["id", "published_date", "description", "effective", "public_comment"],
             "additionalProperties": false,
             "properties": {
               "id": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
-                "description": "Unique identifier for the release in the format ##.##A. 'draft' may be appended to denote future releases."
+                "description": "Unique identifier for the release in the format ##.##A. 'draft' may be appended to denote future releases.",
+                "title": "Release Identifier"
               },
               "published_date": {
                 "type": [
@@ -46,54 +52,63 @@
                   "null"
                 ],
                 "format": "date",
-                "description": "A valid date string indicating the date that the changes in this release were published, or null for draft releases"
+                "description": "A valid date string indicating the date that the changes in this release were published, or null for draft releases",
+                "title": "Published Date"
               },
-              "description": { "type": "string",
-                "description": "Description of the release"
-              },
+              "description": { "type": "string", "description": "What changed in this release", "title": "Description"},
               "public_comment": { "type": "boolean",
-                "description": "Indicates if the release was made available for public comment."
+                "description": "Indicates if the release was made available for public comment.",
+                "title": " Public Comment?"
               },
               "effective": {
                 "type": "object",
                 "description": "collection of objects that describe when the release will be effective for specific FedRAMP authorization paths.",
+                "title": "When will this release be effective?",
                 "additionalProperties": false,
                 "properties": {
                   "20x": { "$ref": "#/$defs/release_target",
                     "description": "When this release will be effective for CSPs using the 20x authorization program."
                   },
                   "Rev5": { "$ref": "#/$defs/release_target",
-                    "description": "When this release will be effective for CSPs using the Rev5 authorization program." }
+                    "description": "When this release will be effective for CSPs using the Rev5 authorization program."}
                 }
               },
               "related_rfcs": {
                 "type": "array",
                 "description": "Requests for Comment related to this specific release.",
+                "title": "Related RFCs",
                 "items": {
                   "type": "object",
                   "required": ["start_date", "end_date", "id", "url", "short_name", "full_name", "discussion_url"],
                   "additionalProperties": false,
                   "properties": {
-                    "start_date": { "type": ["string", "null"], "format": "date",
-                      "description": "Date the RFC was opened or null"
-                    },
-                    "end_date": { "type": ["string", "null"], "format": "date",
-                      "description": "Date the RFC was closed or null"
-                    },
-                    "id": { "type": "string",
-                      "description": "RFC unique ID. Usually a 4 digit number like 0015."
-                    },
-                    "url": { "type": "string", "format": "uri",
-                      "description": "The URL for the RFC"
-                    },
-                    "discussion_url": { "type": "string", "format": "uri",
-                      "description": "URL for the github feedback on he RFC."
+                    "full_name": { "type": "string",
+                      "description": "Full title of the RFC",
+                      "title": "Name"
                     },
                     "short_name": { "type": "string",
-                      "description": "Abbreviation for the RFC"
+                      "description": "Abbreviation for the RFC",
+                      "title": "Short Name"
                     },
-                    "full_name": { "type": "string",
-                      "description": "Full title of the RFC"
+                    "id": { "type": "string",
+                      "description": "RFC unique ID. Usually a 4 digit number like 0015.",
+                      "title": "RFC ID"
+                    },
+                    "start_date": { "type": ["string", "null"], "format": "date",
+                      "description": "Date the RFC was opened or null",
+                      "title": "Start Date"
+                    },
+                    "end_date": { "type": ["string", "null"], "format": "date",
+                      "description": "Date the RFC was closed or null",
+                      "title": "End Date"
+                    },
+                    "url": { "type": "string", "format": "uri",
+                      "description": "The URL for the RFC",
+                      "title": "URL"
+                    },
+                    "discussion_url": { "type": "string", "format": "uri",
+                      "description": "URL for the github feedback on he RFC.",
+                      "title": "RFC Discussion"
                     }
                   }
                 }
@@ -103,7 +118,8 @@
         },
         "front_matter": {
           "type": "object",
-          "description": "Meta data about the document",
+          "description": "Meta data about the document including relevant authority(s), purpose, and expected outcomes",
+          "title": "Front Matter",
           "required": ["purpose"],
           "properties": {
             "authority": {
@@ -115,31 +131,38 @@
                 "required": ["reference", "reference_url", "description"],
                 "additionalProperties": false,
                 "properties": {
-                  "reference": {"type": "string",
-                    "description": "The name of the referenced law, OMB Memo, or other regulatory documentation"
+                  "reference": {
+                    "type": "string",
+                    "description": "The name of the referenced law, OMB Memo, or other regulatory documentation",
+                    "title": "Title"
                   },
                   "reference_url": {"type": "string", "format": "uri",
-                    "description": "Link to the law, OMB Memo, or other regulatory documentation"
+                    "description": "Link to the law, OMB Memo, or other regulatory documentation",
+                    "title": "URL"
                   },
                   "description": {"type": "string",
-                    "description": "Relevent text from the law, OMB Memo, or other regulatory documentation"
+                    "description": "Relevent text from the law, OMB Memo, or other regulatory documentation",
+                    "title": "Description"
                   },
                   "delegation": {"type": "string",
-                    "description": "The role or organization to which the referenced authority is assigned."
+                    "description": "The role or organization to which the referenced authority is assigned.",
+                    "title": "Delegated To"
                   },
                   "delegation_url": {"type": "string", "format": "uri",
-                    "description": "Link to the role or organization to which the referenced authority is assigned."
+                    "description": "Link to the role or organization to which the referenced authority is assigned.",
+                    "title": "Delegation URL"
                   }
                 }
               }
             },
             "purpose": {"type": "string",
-              "description": "The purpose of the document"
-            },
+              "description": "The purpose of the document",
+              "title": "Purpose"},
             "expected_outcomes": {"type": "array",
+              "title": "Expected Outcome(s)",
               "description": "The expected outcomes of the document",
-              "items": {"type": "string"}}
-          }
+              "items": {"type": "string"}
+          }}
         }
       }
     },

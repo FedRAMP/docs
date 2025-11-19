@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <title>FedRAMP Machine Readable JSON Editor</title>
@@ -22,6 +22,9 @@
     <div class='columns'>
         <h1 class='col-md-12'>FedRAMP Machine Readable JSON Editor</h1>
     </div>
+
+    <div><a href="http://localhost:63342/docs/tools/json-editor.html?data=FRMR.KSI.key-security-indicators.json&schema=http://localhost:63342/docs/tools/templates/FedRAMP.schema.json">Load with local schema</a></div>
+
     <div class='columns'>
         <div class='column col-md-12'>
             <button id='save' class='tiny'>Save Result As File</button>
@@ -46,7 +49,18 @@
 
     Promise.all([schemaPromise, dataPromise])
         .then(([schema, data]) => {
-            // Example: Force a specific field to be a textarea
+            // Override default behavior to show descriptions as tooltips for ALL fields
+                    const originalAfterInputReady = JSONEditor.AbstractEditor.prototype.afterInputReady;
+                    JSONEditor.AbstractEditor.prototype.afterInputReady = function () {
+                        if (originalAfterInputReady) originalAfterInputReady.call(this);
+
+                        // Apply tooltip only if description and label exist
+                        if (this.schema.description && this.label && this.description) {
+                            this.label.classList.add('tooltip', 'tooltip-right');
+                            this.label.setAttribute('data-tooltip', this.schema.description);
+                            this.description.style.display = 'none';
+                        }
+                    };
                 const options = {
                     schema: schema,
                     theme: 'spectre',
@@ -59,6 +73,24 @@
                 const jseditor = new JSONEditor(editor, options);
 
                 jseditor.on('ready', function () {
+                    // // Move descriptions to tooltips
+                    //     for (const key in jseditor.editors) {
+                    //         if (jseditor.editors.hasOwnProperty(key)) {
+                    //             const ed = jseditor.editors[key];
+                    //             // Check if the editor has a description, a label element, and a description element
+                    //             if (ed.schema.description && ed.label && ed.description) {
+                    //                 // Method 1: Use Spectre.css tooltips (since you are using the Spectre theme)
+                    //                 ed.label.classList.add('tooltip', 'tooltip-right');
+                    //                 ed.label.setAttribute('data-tooltip', ed.schema.description);
+                    //
+                    //                 // Method 2: Use standard browser tooltip (Uncomment if Method 1 has layout issues)
+                    //                 // ed.label.setAttribute('title', ed.schema.description);
+                    //
+                    //                 // Hide the original description text block
+                    //                 ed.description.style.display = 'none';
+                    //             }
+                    //         }
+                    //     }
                     // let button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File'),
                     //     button_holder = jseditor.root.theme.getHeaderButtonHolder();
                     // button_holder.appendChild(button);
