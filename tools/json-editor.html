@@ -2,22 +2,43 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Basic JSON Editor Example</title>
-    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/css/jsoneditor.min.css"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/spectre.css@latest/dist/spectre-exp.min.css"></script>
-    <script src="https://cdn.jsdelivr.net/npm/spectre.css@latest/dist/spectre-icons.min.css"></script>
-    <script src="https://cdn.jsdelivr.net/npm/spectre.css@latest/dist/spectre.min.css"></script>
+    <title>FedRAMP Machine Readable JSON Editor</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto
+        }
+    </style>
 </head>
 <body>
-<h1>Basic JSON Editor Example</h1>
-<div id="editor"></div>
+<div class='container'>
+    <div class='columns'>
+        <h1 class='col-md-12'>FedRAMP Machine Readable JSON Editor</h1>
+    </div>
+    <div class='columns'>
+        <div class='column col-md-12'>
+            <button id='save' class='tiny'>Save Result As File</button>
+            <button id='restore' class='secondary tiny'>Restore to Default</button>
+            <span id='valid_indicator' class='label'></span>
+        </div>
+    </div>
+    <div class='columns'>
+        <div class='column col-md-12' id='editor'></div>
+    </div>
+</div>
 
 <script>
     const params = new URLSearchParams(window.location.search);
     const schemaUrl = params.get('schema') || 'https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/tools/templates/FedRAMP.schema.json';
-
-    const dataUrl = "https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/data/" + params.get('data');
+    const filename = params.get('data');
+    const dataUrl = "https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/data/" + filename;
     const editor = document.getElementById('editor');
 
     const schemaPromise = fetch(schemaUrl).then(response => response.json());
@@ -25,49 +46,80 @@
 
     Promise.all([schemaPromise, dataPromise])
         .then(([schema, data]) => {
-            const options = {
-                schema: schema,
-                theme: 'spectre',
-                iconlib: 'spectre',
-                ajax: true
-            };
-            if (data) {
-                options.startval = data;
-            }
-            const jseditor = new JSONEditor(editor, options);
+            // Example: Force a specific field to be a textarea
+                const options = {
+                    schema: schema,
+                    theme: 'spectre',
+                    iconlib: 'spectre',
+                    ajax: true,
+                };
+                if (data) {
+                    options.startval = data;
+                }
+                const jseditor = new JSONEditor(editor, options);
 
-    jseditor.on('ready', function () {
-        let button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File'),
-            button_holder = jseditor.root.theme.getHeaderButtonHolder();
-        button_holder.appendChild(button);
-        jseditor.root.header.parentNode.insertBefore(button_holder, jseditor.root.header.nextSibling);
+                jseditor.on('ready', function () {
+                    // let button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File'),
+                    //     button_holder = jseditor.root.theme.getHeaderButtonHolder();
+                    // button_holder.appendChild(button);
+                    // jseditor.root.header.parentNode.insertBefore(button_holder, jseditor.root.header.nextSibling);
 
-        button.addEventListener('click', function (e) {
-            e.preventDefault();
-            var example = jseditor.getValue(),
-                filename = 'example.json',
-                blob = new Blob([JSON.stringify(example, null, 2)], {
-                    type: "application/json;charset=utf-8"
+                    function handleSaveButtonClick(e) {
+                        e.preventDefault();
+                        const output = jseditor.getValue();
+                        output.$schema = "https://json-schema.org/draft/2020-12/schema";
+                        output.$id = "FedRAMP.schema.json";
+
+                        const blob = new Blob([JSON.stringify(output, null, 2)], {
+                            type: "application/json;charset=utf-8"
+                        });
+
+                        if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                            window.navigator.msSaveOrOpenBlob(blob, filename);
+                        } else {
+                            const a = document.createElement('a');
+                            a.download = filename || 'fedramp-output.json';
+                            a.href = URL.createObjectURL(blob);
+                            a.dataset.downloadurl = ['text/plain', a.download, a.href].join(':');
+
+                            a.dispatchEvent(new MouseEvent('click', {
+                                'view': window,
+                                'bubbles': true,
+                                'cancelable': false
+                            }));
+                        }
+                    }
+
+                    // button.addEventListener('click', handleSaveButtonClick, false);
+                    // Hook up the Restore to Default button
+                    document.getElementById('save').addEventListener('click', handleSaveButtonClick);
+                    // Hook up the Restore to Default button
+                    document.getElementById('restore').addEventListener('click', function () {
+                        jseditor.setValue(data);
+
+                        // Hook up the validation indicator to update its
+                        // status whenever the editor changes
+                        jseditor.on('change', function () {
+                            // Get an array of errors from the validator
+                            var errors = editor.validate();
+
+                            var indicator = document.getElementById('valid_indicator');
+
+                            // Not valid
+                            if (errors.length) {
+                                indicator.className = 'label alert';
+                                indicator.textContent = 'not valid';
+                            }
+                            // Valid
+                            else {
+                                indicator.className = 'label success';
+                                indicator.textContent = 'valid';
+                            }
+                        });
+                    });
                 });
-
-            if (window.navigator && window.navigator.msSaveOrOpenBlob) {
-                window.navigator.msSaveOrOpenBlob(blob, filename);
-            } else {
-                var a = document.createElement('a');
-                a.download = filename;
-                a.href = URL.createObjectURL(blob);
-                a.dataset.downloadurl = ['text/plain', a.download, a.href].join(':');
-
-                a.dispatchEvent(new MouseEvent('click', {
-                    'view': window,
-                    'bubbles': true,
-                    'cancelable': false
-                }));
             }
-        }, false);
-    });
-    }
-    )
+        )
     ;
 
 
