@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
 
     <style>
@@ -49,23 +50,46 @@
 
     Promise.all([schemaPromise, dataPromise])
         .then(([schema, data]) => {
-            // Override default behavior to show descriptions as tooltips for ALL fields
-                    const originalAfterInputReady = JSONEditor.AbstractEditor.prototype.afterInputReady;
-                    JSONEditor.AbstractEditor.prototype.afterInputReady = function () {
-                        if (originalAfterInputReady) originalAfterInputReady.call(this);
+            // Apply headerTemplate to info.releases in the schema
+            if (schema.properties && schema.properties.info && schema.properties.info.properties && schema.properties.info.properties.releases) {
+                schema.properties.info.properties.releases.items.headerTemplate = "{{self.id}}";
+            }
 
-                        // Apply tooltip only if description and label exist
-                        if (this.schema.description && this.label && this.description) {
-                            this.label.classList.add('tooltip', 'tooltip-right');
-                            this.label.setAttribute('data-tooltip', this.schema.description);
-                            this.description.style.display = 'none';
+            // Add headerTemplate for any object with the title "comments"
+            function addCommentHeaders(obj) {
+                for (const key in obj) {
+                    if (obj[key] && typeof obj[key] === 'object') {
+                        if (obj[key].title === 'Comment') {
+                            obj[key].items.headerTemplate = "REPLACE ME WITH COMMENT HEADER";
                         }
-                    };
+                        addCommentHeaders(obj[key]);
+                    }
+                }
+            }
+
+            // // Use textarea
+            // function useTextArea(obj) {
+            //     for (const key in obj) {
+            //         console.log(`Checking ${key} for text length > 50`)
+            //         if (obj[key] && typeof obj[key] === 'string') {
+            //             if (obj[key].length > 50) {
+            //                 console.log(`Setting ${key} to textarea`)
+            //                 obj[key].formInput = "textarea";
+            //             }
+            //         }
+            //         useTextArea(obj[key]);
+            //     }
+            // }
+            // useTextArea(schema.properties);
+
+            // Remove description from schema
+            if (schema.description) {schema.description = "";}
                 const options = {
                     schema: schema,
                     theme: 'spectre',
                     iconlib: 'spectre',
                     ajax: true,
+                    // object_layout: 'grid'
                 };
                 if (data) {
                     options.startval = data;
@@ -73,29 +97,6 @@
                 const jseditor = new JSONEditor(editor, options);
 
                 jseditor.on('ready', function () {
-                    // // Move descriptions to tooltips
-                    //     for (const key in jseditor.editors) {
-                    //         if (jseditor.editors.hasOwnProperty(key)) {
-                    //             const ed = jseditor.editors[key];
-                    //             // Check if the editor has a description, a label element, and a description element
-                    //             if (ed.schema.description && ed.label && ed.description) {
-                    //                 // Method 1: Use Spectre.css tooltips (since you are using the Spectre theme)
-                    //                 ed.label.classList.add('tooltip', 'tooltip-right');
-                    //                 ed.label.setAttribute('data-tooltip', ed.schema.description);
-                    //
-                    //                 // Method 2: Use standard browser tooltip (Uncomment if Method 1 has layout issues)
-                    //                 // ed.label.setAttribute('title', ed.schema.description);
-                    //
-                    //                 // Hide the original description text block
-                    //                 ed.description.style.display = 'none';
-                    //             }
-                    //         }
-                    //     }
-                    // let button = jseditor.root.getButton('Save Result As File', 'save', 'Save Result As File'),
-                    //     button_holder = jseditor.root.theme.getHeaderButtonHolder();
-                    // button_holder.appendChild(button);
-                    // jseditor.root.header.parentNode.insertBefore(button_holder, jseditor.root.header.nextSibling);
-
                     function handleSaveButtonClick(e) {
                         e.preventDefault();
                         const output = jseditor.getValue();
