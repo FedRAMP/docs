@@ -347,33 +347,46 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
+                "start_date": {"type": "string",
+                  "format": "date"
+                },
                 "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "comment": {"type": "string",
+                  "title": "Comment"
+                }
               }
             },
             "closed_beta": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
+                "start_date": {"type": "string",
+                  "format": "date"
+                },
                 "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "comment": {"type": "string",
+                  "title": "Comment"}
               }
             },
             "wide_release": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
+                "start_date": {"type": "string",
+                  "format": "date"
+                },
                 "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "comment": {"type": "string",
+                  "title": "Comment"}
               }
             }
           }
         },
         "specific_release": {"type": "string", "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"},
-        "comments": {"type": "array", "items": {"type": "string"}
+        "comments": {"type": "array",
+          "title": "Comments",
+          "items": {"type": "string",
+          "title": "Comment"}
         }
       }
     },
