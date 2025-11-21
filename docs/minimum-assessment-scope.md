@@ -2,20 +2,28 @@
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** MAS
-    - **Description:** Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2025-11-18** for **20x**.
-        - These Key Security Indicators apply to all FedRAMP 20x authorizations.
-        - Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.
-        - Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review.
-    - **FedRAMP Rev5**:
-        - This release is effective **2025-12-01** for **Rev5 Open Beta**.
-        - This set of requirements and recommendations may be adopted by Rev5 cloud service providers in place of legacy FedRAMP boundary requirements. Providers MUST contact rev5@fedramp.gov to coordinate adoption of these requirements for Rev5 authorizations during the Open Beta.
+???+ success "Effective Date(s) & Overall Applicability"
+    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
+
+      - This policy applies to all FedRAMP 20x authorizations.
+      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+    **FedRAMP Rev5:** Optional (Closed Beta)
+
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+
+??? info "Version 25.11B published on 2025-12-01 " 
+    **History:**
+
+    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.
+    - **25.10A (2025-10-17):** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
+    - **25.06B (2025-08-24):** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
+    - **25.06A (2025-06-17):** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Scope to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering
+    - **25.05A (2025-05-30):** Initial release of the Minimum Assessment Scope Standard.
+
 
 ??? abstract "Background & Authority"
     - [OMB Circular A-130: Managing Information as a Strategic Resource](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf) Section 10 states that an &quot;Authorization boundary&quot; includes &quot;all components of an information system to be authorized for operation by an authorizing official. This excludes separately authorized systems to which the information system is connected.&quot; and further adds in footnote 64 that &quot;Agencies have significant flexibility in determining what constitutes an information system and its associated boundary.&quot;

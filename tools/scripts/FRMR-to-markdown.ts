@@ -23,6 +23,17 @@ Handlebars.registerHelper("uppercase", function (str) {
   return str ? str.toUpperCase() : "";
 });
 
+Handlebars.registerHelper("ucfirst", function (str) {
+  if (!str) {
+    return ""; // Handle null or undefined strings
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+});
+
+Handlebars.registerHelper("stringEquals", function (str1, str2) {
+  return str1 === str2;
+});
+
 async function convertFRMRToMarkdown(
   jsonFilePath: string,
   templateFilePath: string,
@@ -47,7 +58,7 @@ async function convertFRMRToMarkdown(
 
     // If this FRMR file indicates a Rev5 release, also write a copy to ../../docs/rev5
     try {
-      if (jsonData && jsonData.info && jsonData.info.rev5 === true) {
+      if (jsonData && jsonData.info && jsonData.info.rev5 != "no") {
         const rev5Dir = path.join(__dirname, "../../docs/rev5");
         await fs.ensureDir(rev5Dir);
         const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));

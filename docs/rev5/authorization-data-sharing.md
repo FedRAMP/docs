@@ -10,21 +10,26 @@ At the initial release of this standard there will not be many platforms that di
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** ADS
-    - **Description:** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2025-11-18** for **20x**.
-        - These Key Security Indicators apply to all FedRAMP 20x authorizations.
-        - Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.
-        - Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review.
-    - **FedRAMP Rev5**:
-        - This release is effective **2025-09-01** for **Rev5 Closed Beta**.
-        - Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
-        - Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.
+???+ success "Effective Date(s) & Overall Applicability"
+    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
+
+      - This policy applies to all FedRAMP 20x authorizations.
+      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+    **FedRAMP Rev5:** Optional (Closed Beta)
+
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+
+??? info "Version 25.11B published on 2025-12-01 " 
+    **History:**
+
+    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
+    - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
+    - **25.08A (2025-08-24):** Initial release of the Authorization Data Sharing Standard
+
 
 ??? abstract "Background & Authority"
     - [44 USC § 3609 (a)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) The FedRAMP Authorization Act directs the Administrator of the General Services Administration to &quot;provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...&quot;

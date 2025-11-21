@@ -4,164 +4,67 @@
   "info": {
     "name": "Minimum Assessment Scope",
     "short_name": "MAS",
-    "current_release": "25.11A",
-    "types": ["FRR"],
-    "rev5": true,
+    "effective": {
+      "rev5": {
+        "is": "optional",
+        "signup_url": "",
+        "current_status": "Closed Beta",
+        "start_date": "2025-09-01",
+        "end_date": "2025-12-31",
+        "comments": [
+          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
+          "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
+        ]
+      },
+      "20x": {
+        "is": "mandatory",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase Two Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "This policy applies to all FedRAMP 20x authorizations.",
+          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "These Key Security Indicators apply to all FedRAMP 20x authorizations.",
-              "Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.",
-              "Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-12-01",
-                "designator": "Rev5 Open Beta"
-              }
-            },
-            "comments": [
-              "This set of requirements and recommendations may be adopted by Rev5 cloud service providers in place of legacy FedRAMP boundary requirements. Providers MUST contact rev5@fedramp.gov to coordinate adoption of these requirements for Rev5 authorizations during the Open Beta."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.10A",
         "published_date": "2025-10-17",
         "description": "minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20x Phase One Pilot"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-30",
-                "designator": "Rev5 Closed Beta"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta.",
-              "Providers MUST participate in the MAS Closed Beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.06B",
         "published_date": "2025-08-24",
         "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-30",
-                "designator": "R5.MAS.B1"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1).",
-              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
         "description": "Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Scope to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-30",
-                "designator": "R5.MAS.B1"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the MAS Closed Beta (B1).",
-              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.05A",
         "published_date": "2025-05-30",
         "description": "Initial release of the Minimum Assessment Scope Standard.",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-05-30"
-              }
-            },
-            "comments": [
-              "Minimum Assessment Scope is primarily documented and validated in KSI-PIY and KSI-TPR."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-06-30"
-              }
-            },
-            "comments": [
-              "Providers MUST participate in the FedRAMP R5.MAS.B1 closed beta to transition from the Rev 5 legacy boundary until a final transition path is announced."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-04-24",
@@ -214,9 +117,7 @@
           {
             "id": "FRR-MAS-01",
             "statement": "Providers MUST identify a set of _information resources_ to assess for FedRAMP authorization that includes all _information resources_ that are _likely_ to _handle_ _federal customer data_ or _likely_ to impact the confidentiality, integrity, or availability of _federal customer data_ _handled_ by the _cloud service offering_.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Cloud Service Offering Identification",
             "primary_key_word": "MUST",
             "impact": {
@@ -228,9 +129,7 @@
           {
             "id": "FRR-MAS-02",
             "statement": "Providers MUST include the configuration and usage of _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Third-Party Information Resources",
             "primary_key_word": "MUST",
             "impact": {
@@ -242,9 +141,7 @@
           {
             "id": "FRR-MAS-03",
             "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to _federal customer data_ from the configuration and usage of non-FedRAMP authorized _third-party information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Non-FedRAMP Authorized Third-Party Information Resources",
             "primary_key_word": "MUST",
             "impact": {
@@ -256,9 +153,7 @@
           {
             "id": "FRR-MAS-04",
             "statement": "Providers MUST include metadata (including metadata about _federal customer data_), ONLY IF _FRR-MAS-01_ APPLIES.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Metadata Inclusion",
             "primary_key_word": "MUST",
             "impact": {
@@ -270,9 +165,7 @@
           {
             "id": "FRR-MAS-05",
             "statement": "Providers MUST clearly identify, document, and explain information flows and impact levels for ALL _information resources_, ONLY IF _FRR-MAS-01_ APPLIES.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Information Flows and Impact Levels",
             "primary_key_word": "MUST",
             "impact": {
@@ -291,9 +184,7 @@
           {
             "id": "FRR-MAS-AY-01",
             "statement": "Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud service offering_ for FedRAMP. For more, see https://fedramp.gov/scope.",
-            "affects": [
-              "All"
-            ],
+            "affects": ["All"],
             "name": "Scope of FedRAMP",
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
@@ -307,9 +198,7 @@
           {
             "id": "FRR-MAS-AY-02",
             "statement": "Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.",
-            "affects": [
-              "All"
-            ],
+            "affects": ["All"],
             "name": "Non-Cloud-Based Software",
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
@@ -323,9 +212,7 @@
           {
             "id": "FRR-MAS-AY-03",
             "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).",
-            "affects": [
-              "All"
-            ],
+            "affects": ["All"],
             "name": "Exclusion of Non-Impacting Information Resources",
             "primary_key_word": "MUST",
             "impact": {
@@ -337,9 +224,7 @@
           {
             "id": "FRR-MAS-AY-04",
             "statement": "_Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
-            "affects": [
-              "All"
-            ],
+            "affects": ["All"],
             "name": "Impact Level Variations",
             "primary_key_word": "MAY",
             "impact": {
@@ -351,9 +236,7 @@
           {
             "id": "FRR-MAS-AY-05",
             "statement": "All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Scope as needed.",
-            "affects": [
-              "All"
-            ],
+            "affects": ["All"],
             "name": "Review of Best Practices",
             "primary_key_word": "SHOULD",
             "impact": {
@@ -365,9 +248,7 @@
           {
             "id": "FRR-MAS-AY-06",
             "statement": "All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Cloud Service Offering Determination",
             "primary_key_word": "MUST",
             "impact": {
@@ -386,9 +267,7 @@
           {
             "id": "FRR-MAS-EX-01",
             "statement": "Providers MAY include documentation of _information resources_ beyond the _cloud service offering_, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and _authorization package_ supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the _cloud service offering_.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "name": "Supplemental Information",
             "primary_key_word": "MAY",
             "impact": {

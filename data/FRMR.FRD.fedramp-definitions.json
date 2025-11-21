@@ -4,99 +4,54 @@
   "info": {
     "name": "FedRAMP Definitions",
     "short_name": "FRD",
-    "current_release": "25.11A",
-    "types": ["FRD"],
-    "rev5": true,
+    "effective": {
+      "rev5": {
+        "is": "mandatory",
+        "signup_url": "",
+        "current_status": "Closed Beta",
+        "start_date": "2025-09-01",
+        "end_date": "2025-12-31",
+        "comments": [
+          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP."
+        ]
+      },
+      "20x": {
+        "is": "mandatory",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase Two Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "This policy applies to all FedRAMP 20x authorizations.",
+          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Updates and new definitions added for the FedRAMP 20x Phase Two pilot.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "wide_release": {
-                "start_date": "2025-11-18",
-                "designator": "Rev5 Balance Improvement Releases"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.10A",
         "published_date": "2025-10-17",
         "description": "Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20x Phase One Pilot"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "wide_release": {
-                "start_date": "2025-06-01",
-                "designator": "Rev5 Balance Improvement Releases"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.09A",
         "published_date": "2025-09-10",
         "description": "Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.",
-        "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "wide_release": {
-                "start_date": "2025-06-01",
-                "designator": "R5.FRD.WR"
-              }
-            },
-            "comments": [
-              "These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 under Balance Improvement Releases."
-            ]
-          }
-        }
+        "public_comment": true
       }
     ],
     "front_matter": {

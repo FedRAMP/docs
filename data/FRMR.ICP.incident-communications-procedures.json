@@ -4,33 +4,35 @@
   "info": {
     "name": "Incident Communications Procedures",
     "short_name": "ICP",
-    "current_release": "25.11A",
-    "types": ["FRR"],
-    "rev5": false,
+    "effective": {
+      "rev5": {
+        "is": "no"
+      },
+      "20x": {
+        "is": "mandatory",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase Two Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "This policy applies to all FedRAMP 20x authorizations.",
+          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Initial release of simplified 20x version of this existing FedRAMP policy.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "This policy applies to all FedRAMP 20x authorizations."
-            ]
-          },
-          "Rev5": {
-            "comments": [
-              "This version does not apply to Rev5; the full Rev5 requirements related to this policy are documented in FedRAMP's Incident Communications Procedures."
-            ]
-          }
-        }
+        "public_comment": false
       }
     ],
     "front_matter": {

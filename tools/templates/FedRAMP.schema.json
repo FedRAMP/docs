@@ -9,7 +9,7 @@
     "info": {
       "type": "object",
       "description": "Information about the document including version information, general purpose, and other meta data.",
-      "required": ["name", "short_name", "current_release", "types", "releases", "front_matter"],
+      "required": ["name", "short_name", "releases", "front_matter"],
       "additionalProperties": false,
       "properties": {
         "name": {
@@ -21,20 +21,14 @@
           "pattern": "^[A-Z]{3}$",
           "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects."
         },
-        "current_release": {
-          "type": "string",
-          "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
-          "description": "The currently official release. May not always be the latest version."
-        },
-        "types": {
-          "type": "array",
-          "description": "The types of objects included in the document. See IDENTIFIERS.md for explanations.",
-          "items": {
-            "type": "string",
-            "enum": ["FRR", "FRD", "FRA", "KSI", "FRB"]
-          },
-          "uniqueItems": true,
-          "minItems": 1
+        "effective": {
+          "type": "object",
+          "description": "When this document or its current release is effective for specific authorization paths (e.g. 20x, Rev5).",
+          "additionalProperties": false,
+          "properties": {
+            "20x": { "$ref": "#/$defs/effective" },
+            "rev5": { "$ref": "#/$defs/effective" }
+          }
         },
         "releases": {
           "type": "array",
@@ -122,15 +116,6 @@
             }
           }
         },
-        "effective": {
-          "type": "object",
-          "description": "When this document or its current release is effective for specific authorization paths (e.g. 20x, Rev5).",
-          "additionalProperties": false,
-          "properties": {
-            "20x": { "$ref": "#/$defs/release_target" },
-            "rev5": { "$ref": "#/$defs/release_target" }
-          }
-        },
         "front_matter": {
           "type": "object",
           "description": "Meta data about the document",
@@ -187,27 +172,55 @@
       "type": "object",
       "description": "FedRAMP Technical Assistance Documents. Each document is identified by a 3 character abbreviation.",
       "additionalProperties": false,
-      "patternProperties": {"^[A-Z]{3}$": {"type": "object", "$ref": "#/$defs/assistance_document"}}
+      "patternProperties": {
+        "^[A-Z]{3}$": {
+          "type": "object",
+          "$ref": "#/$defs/assistance_document"
+        }
+      }
     },
     "FRD": {
       "type": "object",
       "description": "FedRAMP Definitions. Each document is identified by a 3 character abbreviation.",
-      "patternProperties": {"^[A-Z]{3}$": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "required": ["id", "term", "definition"],
-          "additionalProperties": false,
-          "properties": {
-            "id": {"type": "string", "pattern": "^FRD-[A-Z]{3}-\\d{2}$", "description": "FedRAMP definition ID in the format FRD-AAA-##"},
-            "term": {"type": "string", "description": "Term being defined"},
-            "alts": {"type": "array", "description": "Alternate terms (synonyms)", "items": {"type": "string"}}, "definition": {"type": "string", "description": "The meaning of the listed term and any synonyms"},
-            "note": {"type": "string", "description": ""}, "reference": {"type": "string", "description": ""},
-            "reference_url": {"type": "string", "format": "uri", "description": ""},
-            "notes": {"type": "array", "description": "", "items": {"type": "string", "description": ""}}
+      "patternProperties": {
+        "^[A-Z]{3}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "term", "definition"],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^FRD-[A-Z]{3}-\\d{2}$",
+                "description": "FedRAMP definition ID in the format FRD-AAA-##"
+              },
+              "term": { "type": "string", "description": "Term being defined" },
+              "alts": {
+                "type": "array",
+                "description": "Alternate terms (synonyms)",
+                "items": { "type": "string" }
+              },
+              "definition": {
+                "type": "string",
+                "description": "The meaning of the listed term and any synonyms"
+              },
+              "note": { "type": "string", "description": "" },
+              "reference": { "type": "string", "description": "" },
+              "reference_url": {
+                "type": "string",
+                "format": "uri",
+                "description": ""
+              },
+              "notes": {
+                "type": "array",
+                "description": "",
+                "items": { "type": "string", "description": "" }
+              }
+            }
           }
         }
-      }}
+      }
     },
     "FRR": {
       "type": "object",
@@ -217,44 +230,78 @@
           "required": ["base"],
           "additionalProperties": false,
           "properties": {
-            "base": {"$ref": "#/$defs/requirement_section",
+            "base": {
+              "$ref": "#/$defs/requirement_section",
               "description": "The base requirements section for the document."
             },
-            "exceptions": {"$ref": "#/$defs/requirement_section",
+            "exceptions": {
+              "$ref": "#/$defs/requirement_section",
               "description": "The exceptions requirements section for the document."
             },
-            "routine_recurring": {"$ref": "#/$defs/requirement_section",
-              "description": "The requirements for routine recurring changes."},
-            "adaptive": {"$ref": "#/$defs/requirement_section",
-              "description": "The requirements for adaptive changes."},
-            "transformative": {"$ref": "#/$defs/requirement_section",
-              "description": "The requirements for transformative changes."},
-            "impact": {"$ref": "#/$defs/requirement_section",
-              "description": "The impact requirements section for the document."},
-            "application": {"$ref": "#/$defs/requirement_section",
-              "description": "The application requirements section for the document."},
-            "id": {"$ref": "#/$defs/requirement_section",
-              "description": "The id requirements section for the document."},
-            "access_control": {"$ref": "#/$defs/requirement_section",
-              "description": "The access control requirements section for the document."},
-            "trust_center": {"$ref": "#/$defs/requirement_section",
-              "description": "The trust center requirements section for the document."},
-            "apply": {"$ref": "#/$defs/requirement_section",
-              "description": "The apply requirements section for the document."},
-            "reporting": {"$ref": "#/$defs/requirement_section",
-              "description": "The reporting requirements section for the document."},
-            "timeframes": {"$ref": "#/$defs/requirement_section",
-              "description": "The timeframe section for the document."},
-            "timeframe-low": {"$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for low vulnerabilities."},
-            "timeframe-moderate": {"$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for moderate vulnerabilities."},
-            "timeframe-high": {"$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for high vulnerabilities."},
-            "agencies": {"$ref": "#/$defs/requirement_section",
-              "description": "The agencies requirements section for the document."},
-            "quarterly_reviews": {"$ref": "#/$defs/requirement_section",
-              "description": "The quarterly reviews requirements section for the document."}
+            "routine_recurring": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The requirements for routine recurring changes."
+            },
+            "adaptive": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The requirements for adaptive changes."
+            },
+            "transformative": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The requirements for transformative changes."
+            },
+            "impact": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The impact requirements section for the document."
+            },
+            "application": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The application requirements section for the document."
+            },
+            "id": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The id requirements section for the document."
+            },
+            "access_control": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The access control requirements section for the document."
+            },
+            "trust_center": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The trust center requirements section for the document."
+            },
+            "apply": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The apply requirements section for the document."
+            },
+            "reporting": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The reporting requirements section for the document."
+            },
+            "timeframes": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The timeframe section for the document."
+            },
+            "timeframe-low": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for low vulnerabilities."
+            },
+            "timeframe-moderate": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for moderate vulnerabilities."
+            },
+            "timeframe-high": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The timeframe requirements for high vulnerabilities."
+            },
+            "agencies": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The agencies requirements section for the document."
+            },
+            "quarterly_reviews": {
+              "$ref": "#/$defs/requirement_section",
+              "description": "The quarterly reviews requirements section for the document."
+            }
           }
         }
       }
@@ -269,10 +316,10 @@
           "required": ["id", "name", "theme", "indicators"],
           "additionalProperties": false,
           "properties": {
-            "id": {"type": "string", "pattern": "^KSI-[A-Z]{3}$"},
-            "name": {"type": "string"},
-            "theme": {"type": "string"},
-            "referenced_fr": {"type": "array", "items": {"type": "string"}},
+            "id": { "type": "string", "pattern": "^KSI-[A-Z]{3}$" },
+            "name": { "type": "string" },
+            "theme": { "type": "string" },
+            "referenced_fr": { "type": "array", "items": { "type": "string" } },
             "indicators": {
               "type": "array",
               "description": "Key Security Indicator.",
@@ -331,9 +378,17 @@
       "additionalProperties": false,
       "properties": {
         "id": { "type": "string", "minLength": 1 },
-        "key_tests": {"type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }},
-        "examples": {"type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }},
-        "referenced_fr": {"type": "array", "items": { "type": "string" }}
+        "key_tests": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "referenced_fr": { "type": "array", "items": { "type": "string" } }
       }
     },
     "assistance_requirement": {
@@ -341,16 +396,27 @@
       "required": ["id", "statement", "impact"],
       "additionalProperties": false,
       "properties": {
-        "id": {"type": "string", "pattern": "^FRA-[A-Z]{3}-(?:\\d{2}|[A-Z]{2})$"},
+        "id": {
+          "type": "string",
+          "pattern": "^FRA-[A-Z]{3}-(?:\\d{2}|[A-Z]{2})$"
+        },
         "applies_to": { "type": "string" },
         "statement": { "type": "string" },
         "impact": {
           "type": "object",
           "required": ["low", "moderate"],
-          "properties": {"low": { "type": "boolean" }, "moderate": { "type": "boolean" }, "high": { "type": "boolean" }}
+          "properties": {
+            "low": { "type": "boolean" },
+            "moderate": { "type": "boolean" },
+            "high": { "type": "boolean" }
+          }
         },
-        "referenced_fr": {"type": "array", "items": { "type": "string" }},
-        "examples": {"type": "array", "minItems": 1, "items": { "$ref": "#/$defs/assistance_example" }}
+        "referenced_fr": { "type": "array", "items": { "type": "string" } },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/assistance_example" }
+        }
       }
     },
     "assistance_document": {
@@ -358,123 +424,153 @@
       "required": ["id", "purpose", "requirements"],
       "additionalProperties": false,
       "properties": {
-        "id": {"type": "string", "pattern": "^FRA-[A-Z]{3}$"},
+        "id": { "type": "string", "pattern": "^FRA-[A-Z]{3}$" },
         "disclaimer": { "type": "string" },
         "purpose": { "type": "string" },
-        "referenced_fr": {"type": "array", "items": { "type": "string" }},
-        "requirements": {"type": "array", "minItems": 1, "items": { "$ref": "#/$defs/assistance_requirement" }}
+        "referenced_fr": { "type": "array", "items": { "type": "string" } },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/assistance_requirement" }
+        }
       }
     },
-    "release_target": {
+    "effective": {
       "type": "object",
       "additionalProperties": false,
+      "required": ["is"],
       "properties": {
         "signup_url": {
           "type": "string",
-          "description": "Optional URL for signups, pilot enrollment, or further information. May be an empty string if not provided."
+          "description": "URL for signups, pilot enrollment, or further information. May be an empty string if not provided."
+        },
+        "is": {
+          "type": "string",
+          "enum": ["mandatory", "optional", "no"]
         },
         "current_status": {
           "type": "string",
           "description": "Human-readable status for this release target (e.g., 'Closed Beta', 'Phase Two Pilot')."
         },
         "start_date": {
-          "type": ["string", "null"],
+          "type": "string",
           "format": "date",
-          "description": "Start date for this release target or null for no fixed start date."
+          "description": "Start date for this release target."
         },
         "end_date": {
-          "type": ["string", "null"],
-          "format": "date",
-          "description": "End date for this release target or null if not set."
-        },
-        "timeline": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "pilot": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "start_date": { "type": "string" },
-                "designator": { "type": "string" },
-                "comment": { "type": "string" }
-              }
-            },
-            "closed_beta": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "start_date": { "type": "string" },
-                "designator": { "type": "string" },
-                "comment": { "type": "string" }
-              }
-            },
-            "wide_release": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "start_date": { "type": "string" },
-                "designator": { "type": "string" },
-                "comment": { "type": "string" }
-              }
-            }
-          }
-        },
-        "specific_release": {
           "type": "string",
-          "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"
+          "format": "date",
+          "description": "End date for this release target."
         },
-        "comments": { "type": "array", "items": { "type": "string" } }
+        "comments": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Additional comments or notes about this release target."
+        }
       }
     },
     "requirement_section": {
       "type": "object",
       "required": ["application", "requirements", "id"],
       "properties": {
-        "application": {"type": "string"},
-        "id": {"type": "string"},
+        "application": { "type": "string" },
+        "id": { "type": "string" },
         "requirements": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "statement", "affects", "primary_key_word", "impact"],
+            "required": [
+              "id",
+              "statement",
+              "affects",
+              "primary_key_word",
+              "impact"
+            ],
             "additionalProperties": false,
             "properties": {
-              "id": {"type": "string", "pattern": "^FRR-[A-Z]{3}(?:-[A-Z]{2})*-\\d{2}$"},
-              "name": {"type": "string"},
-              "statement": {"type": "string"},
-              "affects": {"type": "array", "items": {"type": "string", "enum": ["Providers", "Agencies", "All", "FedRAMP", "Assessors"]}},
-              "primary_key_word": {"type": "string", "enum": ["MUST", "SHOULD", "MAY", "SHOULD NOT", "MUST NOT", "NONE"]},
-              "referenced_fr": {"type": "array", "items": {"type": "string"}},
-              "is_interim": {"type": "boolean"},
-              "following_information": {"type": "array", "items": {"type": "string"}},
-              "following_information_bullets": {"type": "array", "items": {"type": "string"}},
-              "note": {"type": "string"},
-              "notes": {"type": "array", "items": {"type": "string"}},
+              "id": {
+                "type": "string",
+                "pattern": "^FRR-[A-Z]{3}(?:-[A-Z]{2})*-\\d{2}$"
+              },
+              "name": { "type": "string" },
+              "statement": { "type": "string" },
+              "affects": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Providers",
+                    "Agencies",
+                    "All",
+                    "FedRAMP",
+                    "Assessors"
+                  ]
+                }
+              },
+              "primary_key_word": {
+                "type": "string",
+                "enum": [
+                  "MUST",
+                  "SHOULD",
+                  "MAY",
+                  "SHOULD NOT",
+                  "MUST NOT",
+                  "NONE"
+                ]
+              },
+              "referenced_fr": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "is_interim": { "type": "boolean" },
+              "following_information": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "following_information_bullets": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "note": { "type": "string" },
+              "notes": { "type": "array", "items": { "type": "string" } },
               "pain_timeframes": {
                 "type": "array",
                 "minItems": 1,
                 "items": {
                   "type": "object",
-                  "required": ["pain", "max_days_irv_lev", "max_days_nirv_lev", "max_days_nlev"],
+                  "required": [
+                    "pain",
+                    "max_days_irv_lev",
+                    "max_days_nirv_lev",
+                    "max_days_nlev"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "pain": {"type": "integer", "minimum": 0},
-                    "max_days_irv_lev": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "string"}]},
-                    "max_days_nirv_lev": {"type": "integer", "minimum": 0},
-                    "max_days_nlev": {"type": "integer", "minimum": 0}
+                    "pain": { "type": "integer", "minimum": 0 },
+                    "max_days_irv_lev": {
+                      "anyOf": [
+                        { "type": "integer", "minimum": 0 },
+                        { "type": "string" }
+                      ]
+                    },
+                    "max_days_nirv_lev": { "type": "integer", "minimum": 0 },
+                    "max_days_nlev": { "type": "integer", "minimum": 0 }
                   }
                 },
                 "uniqueItems": true
               },
-              "reference": {"type": "string"},
-              "reference_url": {"type": "string", "format": "uri"},
-              "applies_to": {"type": "string"},
+              "reference": { "type": "string" },
+              "reference_url": { "type": "string", "format": "uri" },
+              "applies_to": { "type": "string" },
               "impact": {
                 "type": "object",
                 "required": ["low", "moderate"],
                 "additionalProperties": false,
-                "properties": {"low": {"type": "boolean"}, "moderate": {"type": "boolean"}, "high": {"type": "boolean"}}
+                "properties": {
+                  "low": { "type": "boolean" },
+                  "moderate": { "type": "boolean" },
+                  "high": { "type": "boolean" }
+                }
               },
               "examples": {
                 "type": "array",
@@ -484,9 +580,17 @@
                   "required": ["id", "key_tests", "examples"],
                   "additionalProperties": false,
                   "properties": {
-                    "id": {"type": "string", "minLength": 1},
-                    "key_tests": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-                    "examples": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+                    "id": { "type": "string", "minLength": 1 },
+                    "key_tests": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": { "type": "string", "minLength": 1 }
+                    },
+                    "examples": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": { "type": "string", "minLength": 1 }
+                    }
                   }
                 }
               }
@@ -497,4 +601,3 @@
     }
   }
 }
-

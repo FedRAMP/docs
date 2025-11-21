@@ -2,29 +2,30 @@
 
 {{info.front_matter.purpose}}
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** {{info.current_release}}
-    - **Published:** {{info.releases.[0].published_date}}
-    - **Designator:** {{info.short_name}}
-    - **Description:** {{info.releases.[0].description}}
-    ---
-{{#each info.releases.[0].effective}}
-    - **FedRAMP {{@key}}**:
-{{#each this.timeline}}
-        - This release is effective **{{start_date}}** for **{{designator}}**.
-{{#if comment}}
-        - {{comment}}
+???+ success "Effective Date(s) & Overall Applicability"
+    **FedRAMP 20x:** {{ucfirst info.effective.20x.is}} ({{info.effective.20x.current_status}})
+
+      {{#each info.effective.20x.comments}}
+      - {{this}}
+      {{/each}}
+
+{{#if (stringEquals info.effective.rev5.is "no")}}
+    **FedRAMP Rev5:** This policy does NOT apply!
+{{else}}
+    **FedRAMP Rev5:** {{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}})
+
+      {{#each info.effective.rev5.comments}}
+      - {{this}}
+      {{/each}}  
 {{/if}}
-{{/each}}
-{{#if comment}}
-        - {{comment}}
-{{/if}}
-{{#if comments}}
-{{#each comments}}
-        - {{this}}
-{{/each}}
-{{/if}}
-{{/each}}
+
+??? info "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
+    **History:**
+
+{{#each info.releases}}
+    - **{{this.id}} ({{this.published_date}}):** {{this.description}}
+{{/each}}    
+
 
 ??? abstract "Background & Authority"
 {{#each info.front_matter.authority}}

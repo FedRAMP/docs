@@ -4,21 +4,23 @@ Agencies are required to continuously monitor all of their information systems f
 
 The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** CCM
-    - **Description:** Initial release of the Collaborative Continuous Monitoring Standard (CCM) for the FedRAMP 20x Phase Two pilot.
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2025-11-18** for **20x**.
-        - This policy applies to all FedRAMP 20x authorizations.
-        - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
-        - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
-    - **FedRAMP Rev5**:
-        - This release is effective **2026-01-01** for **Rev5 Closed Beta**.
-        - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
-        - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+???+ success "Effective Date(s) & Overall Applicability"
+    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
+
+      - This policy applies to all FedRAMP 20x authorizations.
+      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+    **FedRAMP Rev5:** Optional (Closed Beta)
+
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+
+??? info "Version 25.11B published on 2025-12-01 " 
+    **History:**
+
+    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Initial release of the Collaborative Continuous Monitoring Standard (CCM) for the FedRAMP 20x Phase Two pilot.
+
 
 ??? abstract "Background & Authority"
     - [OMB Circular A-130: Managing Information as a Strategic Resource](https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf) section 4 (c) states that agencies SHALL &quot;conduct and document security and privacy control assessments prior to the operation of an information system, and periodically thereafter, consistent with the frequency defined in the agency information security continuous monitoring (ISCM) and privacy continuous monitoring (PCM) strategies and the agency risk tolerance&quot;

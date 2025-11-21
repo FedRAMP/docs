@@ -4,10 +4,9 @@
   "info": {
     "name": "Authorization Data Sharing Standard",
     "short_name": "ADS",
-    "current_release": "25.11A",
-    "types": ["FRR", "FRA"],
     "effective": {
       "rev5": {
+        "is": "optional",
         "signup_url": "",
         "current_status": "Closed Beta",
         "start_date": "2025-09-01",
@@ -18,18 +17,25 @@
         ]
       },
       "20x": {
+        "is": "mandatory",
         "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
         "current_status": "Phase Two Pilot",
         "start_date": "2025-11-18",
         "end_date": "2026-03-31",
         "comments": [
-          "These Key Security Indicators apply to all FedRAMP 20x authorizations.",
-          "Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.",
-          "Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review."
+          "This policy applies to all FedRAMP 20x authorizations.",
+          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
         ]
       }
     },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",

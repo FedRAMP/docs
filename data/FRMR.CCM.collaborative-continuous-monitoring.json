@@ -4,42 +4,42 @@
   "info": {
     "name": "Continuous Collaborative Monitoring Standard",
     "short_name": "CCM",
-    "current_release": "25.11A",
-    "types": ["FRR"],
-    "rev5": true,
+    "effective": {
+      "rev5": {
+        "is": "optional",
+        "signup_url": "",
+        "current_status": "Closed Beta",
+        "start_date": "2025-09-01",
+        "end_date": "2025-12-31",
+        "comments": [
+          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP."
+        ]
+      },
+      "20x": {
+        "is": "mandatory",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase Two Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "This policy applies to all FedRAMP 20x authorizations.",
+          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Initial release of the Collaborative Continuous Monitoring Standard (CCM) for the FedRAMP 20x Phase Two pilot.",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "This policy applies to all FedRAMP 20x authorizations.",
-              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
-              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2026-01-01",
-                "designator": "Rev5 Closed Beta"
-              }
-            },
-            "comments": [
-              "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
-              "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-09-15",
