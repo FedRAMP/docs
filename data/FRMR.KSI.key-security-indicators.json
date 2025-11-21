@@ -6,6 +6,7 @@
     "short_name": "KSI",
     "current_release": "25.11A",
     "types": ["FRR", "KSI"],
+    "rev5": false,
     "releases": [
       {
         "id": "25.11A",

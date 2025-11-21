@@ -16,6 +16,15 @@ _* Providers with questions about this should consult with a lawyer who speciali
     - **Designator:** ADS
     - **Description:** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
     ---
+    - **FedRAMP 20x**:
+        - This release is effective **2025-11-18** for **20x**.
+        - These Key Security Indicators apply to all FedRAMP 20x authorizations.
+        - Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.
+        - Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review.
+    - **FedRAMP Rev5**:
+        - This release is effective **2025-09-01** for **Rev5 Closed Beta**.
+        - Providers MUST participate in a Balance Improvement Test to transition to the Authorization Data Sharing Standard process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
+        - Providers MUST NOT adopt changes to meet these requirements unless they inform the FedRAMP PMO and participate in a Balance Improvement Test.
 
 ??? abstract "Background & Authority"
     - [44 USC § 3609 (a)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) The FedRAMP Authorization Act directs the Administrator of the General Services Administration to &quot;provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...&quot;
