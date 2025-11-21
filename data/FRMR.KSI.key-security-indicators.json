@@ -869,7 +869,8 @@
           "id": "KSI-CMT-05",
           "statement": "",
           "note": "Superseded by KSI-AFR-05 (SCN)",
-          "retired": true
+          "retired": true,
+          "impact": { "low": false, "moderate": false }
         }
       ]
     },
@@ -926,7 +927,7 @@
               "control_id": "ac-18.1",
               "title": "Authentication and Encryption"
             },
-             {
+            {
               "control_id": "ac-18.3",
               "title": "Disable Wireless Networking"
             },
@@ -985,7 +986,7 @@
             "moderate": true
           },
           "controls": [
-             {
+            {
               "control_id": "ac-12",
               "title": "Session Termination"
             },
@@ -1592,7 +1593,11 @@
               "control_id": "ps-8",
               "title": "Personnel Sanctions"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          }
         },
         {
           "id": "KSI-IAM-07",
@@ -1891,13 +1896,21 @@
           "id": "KSI-MLA-03",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-04",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-05",
@@ -1930,7 +1943,11 @@
           "id": "KSI-MLA-06",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-07",
@@ -2627,7 +2644,11 @@
           "id": "KSI-SVC-03",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-11 (UCM)"
+          "note": "Superseded by KSI-AFR-11 (UCM)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-SVC-04",
@@ -2841,13 +2862,21 @@
           "id": "KSI-TPR-01",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)"
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-TPR-02",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)"
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-TPR-03",
