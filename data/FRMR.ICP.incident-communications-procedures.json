@@ -5,9 +5,8 @@
     "name": "Incident Communications Procedures",
     "short_name": "ICP",
     "current_release": "25.11A",
-    "types": [
-      "FRR"
-    ],
+    "types": ["FRR"],
+    "rev5": false,
     "releases": [
       {
         "id": "25.11A",

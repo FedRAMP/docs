@@ -5,9 +5,8 @@
     "name": "FedRAMP Security Inbox requirements",
     "short_name": "FSI",
     "current_release": "25.11A",
-    "types": [
-      "FRR"
-    ],
+    "types": ["FRR"],
+    "rev5": true,
     "releases": [
       {
         "id": "25.11A",

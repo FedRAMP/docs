@@ -5,10 +5,8 @@
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
     "current_release": "25.11A",
-    "types": [
-      "FRR",
-      "FRA"
-    ],
+    "types": ["FRR", "FRA"],
+    "rev5": true,
     "releases": [
       {
         "id": "25.11A",

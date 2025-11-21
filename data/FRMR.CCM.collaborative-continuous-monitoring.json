@@ -5,9 +5,8 @@
     "name": "Continuous Collaborative Monitoring Standard",
     "short_name": "CCM",
     "current_release": "25.11A",
-    "types": [
-      "FRR"
-    ],
+    "types": ["FRR"],
+    "rev5": true,
     "releases": [
       {
         "id": "25.11A",

@@ -1,19 +1,12 @@
-# 20x Phase Two
+# Important Documentation Guidelines
 
-This page is the authoritative repository for FedRAMP 20x Phase Two pilot requirements.
+## FedRAMP Defined Terms
 
-!!! tip "Machine-Readable Docs"
-    Machine-readable requirements are available in the [FedRAMP 20x Machine Readable Docs](https://github.com/FedRAMP/docs) repository on GitHub. Participants are strongly encouraged to leverage the underlying machine-readable documentation to simplify addressing all requirements and recommendations. All of the materials on this page are generated automatically from these machine-readable materials.
-
-## Important Documentation Guidelines
-
-### FedRAMP Defined Terms
-
-Terms with FedRAMP-specific meaning are _italicized_ in all FedRAMP 20x documents. Some of these terms may be familiar from historical use, others may at times be similar to commonly used terms, but **any time a FedRAMP definition exists for a term it is authoritative in the context of FedRAMP 20x.** 
+Terms with FedRAMP-specific meaning are _italicized_ in all FedRAMP 20x documents and Rev5 Balance Improvement Releases. Some of these terms may be familiar from historical use, others may at times be similar to commonly used terms, but **any time a FedRAMP definition exists for a term it is authoritative in the context of FedRAMP 20x or a Rev5 Balance Improvement Release.** 
 
 If a term is not defined by FedRAMP then the rules of common plain language apply - don't overthink it.
 
-### Capitalized Key Words
+## Capitalized Key Words
 
 The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this documentation are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 

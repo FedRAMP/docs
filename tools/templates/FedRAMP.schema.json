@@ -12,19 +12,27 @@
       "required": ["name", "short_name", "current_release", "types", "releases", "front_matter"],
       "additionalProperties": false,
       "properties": {
-        "name": { "type": "string",
+        "name": {
+          "type": "string",
           "description": "The name of the document or policy"
         },
-        "short_name": { "type": "string", "pattern": "^[A-Z]{3}$",
+        "short_name": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
           "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects."
         },
-        "current_release": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
+        "current_release": {
+          "type": "string",
+          "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
           "description": "The currently official release. May not always be the latest version."
         },
         "types": {
           "type": "array",
           "description": "The types of objects included in the document. See IDENTIFIERS.md for explanations.",
-          "items": {"type": "string", "enum": ["FRR", "FRD", "FRA", "KSI", "FRB"]},
+          "items": {
+            "type": "string",
+            "enum": ["FRR", "FRD", "FRA", "KSI", "FRB"]
+          },
           "uniqueItems": true,
           "minItems": 1
         },
@@ -34,71 +42,93 @@
           "items": {
             "type": "object",
             "description": "A specific release or release draft",
-            "required": ["id", "published_date", "description", "effective", "public_comment"],
+            "required": [
+              "id",
+              "published_date",
+              "description",
+              "public_comment"
+            ],
             "additionalProperties": false,
             "properties": {
-              "id": {"type": "string", "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
+              "id": {
+                "type": "string",
+                "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
                 "description": "Unique identifier for the release in the format ##.##A. 'draft' may be appended to denote future releases."
               },
               "published_date": {
-                "type": [
-                  "string",
-                  "null"
-                ],
+                "type": ["string", "null"],
                 "format": "date",
                 "description": "A valid date string indicating the date that the changes in this release were published, or null for draft releases"
               },
-              "description": { "type": "string",
+              "description": {
+                "type": "string",
                 "description": "Description of the release"
               },
-              "public_comment": { "type": "boolean",
+              "public_comment": {
+                "type": "boolean",
                 "description": "Indicates if the release was made available for public comment."
-              },
-              "effective": {
-                "type": "object",
-                "description": "collection of objects that describe when the release will be effective for specific FedRAMP authorization paths.",
-                "additionalProperties": false,
-                "properties": {
-                  "20x": { "$ref": "#/$defs/release_target",
-                    "description": "When this release will be effective for CSPs using the 20x authorization program."
-                  },
-                  "Rev5": { "$ref": "#/$defs/release_target",
-                    "description": "When this release will be effective for CSPs using the Rev5 authorization program." }
-                }
               },
               "related_rfcs": {
                 "type": "array",
                 "description": "Requests for Comment related to this specific release.",
                 "items": {
                   "type": "object",
-                  "required": ["start_date", "end_date", "id", "url", "short_name", "full_name", "discussion_url"],
+                  "required": [
+                    "start_date",
+                    "end_date",
+                    "id",
+                    "url",
+                    "short_name",
+                    "full_name",
+                    "discussion_url"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "start_date": { "type": ["string", "null"], "format": "date",
+                    "start_date": {
+                      "type": ["string", "null"],
+                      "format": "date",
                       "description": "Date the RFC was opened or null"
                     },
-                    "end_date": { "type": ["string", "null"], "format": "date",
+                    "end_date": {
+                      "type": ["string", "null"],
+                      "format": "date",
                       "description": "Date the RFC was closed or null"
                     },
-                    "id": { "type": "string",
+                    "id": {
+                      "type": "string",
                       "description": "RFC unique ID. Usually a 4 digit number like 0015."
                     },
-                    "url": { "type": "string", "format": "uri",
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
                       "description": "The URL for the RFC"
                     },
-                    "discussion_url": { "type": "string", "format": "uri",
+                    "discussion_url": {
+                      "type": "string",
+                      "format": "uri",
                       "description": "URL for the github feedback on he RFC."
                     },
-                    "short_name": { "type": "string",
+                    "short_name": {
+                      "type": "string",
                       "description": "Abbreviation for the RFC"
                     },
-                    "full_name": { "type": "string",
+                    "full_name": {
+                      "type": "string",
                       "description": "Full title of the RFC"
                     }
                   }
                 }
               }
             }
+          }
+        },
+        "effective": {
+          "type": "object",
+          "description": "When this document or its current release is effective for specific authorization paths (e.g. 20x, Rev5).",
+          "additionalProperties": false,
+          "properties": {
+            "20x": { "$ref": "#/$defs/release_target" },
+            "rev5": { "$ref": "#/$defs/release_target" }
           }
         },
         "front_matter": {
@@ -115,30 +145,40 @@
                 "required": ["reference", "reference_url", "description"],
                 "additionalProperties": false,
                 "properties": {
-                  "reference": {"type": "string",
+                  "reference": {
+                    "type": "string",
                     "description": "The name of the referenced law, OMB Memo, or other regulatory documentation"
                   },
-                  "reference_url": {"type": "string", "format": "uri",
+                  "reference_url": {
+                    "type": "string",
+                    "format": "uri",
                     "description": "Link to the law, OMB Memo, or other regulatory documentation"
                   },
-                  "description": {"type": "string",
+                  "description": {
+                    "type": "string",
                     "description": "Relevent text from the law, OMB Memo, or other regulatory documentation"
                   },
-                  "delegation": {"type": "string",
+                  "delegation": {
+                    "type": "string",
                     "description": "The role or organization to which the referenced authority is assigned."
                   },
-                  "delegation_url": {"type": "string", "format": "uri",
+                  "delegation_url": {
+                    "type": "string",
+                    "format": "uri",
                     "description": "Link to the role or organization to which the referenced authority is assigned."
                   }
                 }
               }
             },
-            "purpose": {"type": "string",
+            "purpose": {
+              "type": "string",
               "description": "The purpose of the document"
             },
-            "expected_outcomes": {"type": "array",
+            "expected_outcomes": {
+              "type": "array",
               "description": "The expected outcomes of the document",
-              "items": {"type": "string"}}
+              "items": { "type": "string" }
+            }
           }
         }
       }
@@ -329,6 +369,24 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "signup_url": {
+          "type": "string",
+          "description": "Optional URL for signups, pilot enrollment, or further information. May be an empty string if not provided."
+        },
+        "current_status": {
+          "type": "string",
+          "description": "Human-readable status for this release target (e.g., 'Closed Beta', 'Phase Two Pilot')."
+        },
+        "start_date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Start date for this release target or null for no fixed start date."
+        },
+        "end_date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "End date for this release target or null if not set."
+        },
         "timeline": {
           "type": "object",
           "additionalProperties": false,
@@ -337,34 +395,36 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
-                "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "start_date": { "type": "string" },
+                "designator": { "type": "string" },
+                "comment": { "type": "string" }
               }
             },
             "closed_beta": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
-                "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "start_date": { "type": "string" },
+                "designator": { "type": "string" },
+                "comment": { "type": "string" }
               }
             },
             "wide_release": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "start_date": {"type": "string"},
-                "designator": {"type": "string"},
-                "comment": {"type": "string"}
+                "start_date": { "type": "string" },
+                "designator": { "type": "string" },
+                "comment": { "type": "string" }
               }
             }
           }
         },
-        "specific_release": {"type": "string", "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"},
-        "comments": {"type": "array", "items": {"type": "string"}
-        }
+        "specific_release": {
+          "type": "string",
+          "pattern": "^(20x|R5)\\.[A-Z]{3}\\.((P|B)\\d+|WR)\\.\\d{2}\\.\\d{2}[A-Z]$"
+        },
+        "comments": { "type": "array", "items": { "type": "string" } }
       }
     },
     "requirement_section": {

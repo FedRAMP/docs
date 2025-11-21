@@ -45,6 +45,19 @@ async function convertFRMRToMarkdown(
     // Write the markdown to the output file
     await fs.writeFile(outputFilePath, markdown);
 
+    // If this FRMR file indicates a Rev5 release, also write a copy to ../../docs/rev5
+    try {
+      if (jsonData && jsonData.info && jsonData.info.rev5 === true) {
+        const rev5Dir = path.join(__dirname, "../../docs/rev5");
+        await fs.ensureDir(rev5Dir);
+        const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
+        await fs.writeFile(rev5FilePath, markdown);
+        console.log(`Also wrote Rev5 copy to ${rev5FilePath}`);
+      }
+    } catch (err) {
+      console.error("Error writing Rev5 copy:", err);
+    }
+
     console.log(`Successfully converted ${jsonFilePath} to ${outputFilePath}`);
   } catch (error) {
     console.error("Error converting FRMR to Markdown:", error);
