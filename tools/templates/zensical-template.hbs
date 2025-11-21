@@ -167,7 +167,11 @@
 {{#if name}}      
 #### {{id}} {{name}}
 {{else}}
+{{#if retired}}
+#### {{id}} (Retired)
+{{else}}
 #### {{id}}
+{{/if}}
 {{/if}}
 
 {{#if retired}}
@@ -208,11 +212,13 @@
     **Reference:** [{{reference}}]({{reference_url}})
 {{/if}}
 
+          {{#unless retired}}
         {{!-- this is super messy but ok for now --}}
       **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if
         impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
+          {{/unless}}      
+
         {{/if}}
-      
 
       {{/each}}
     {{/with}}

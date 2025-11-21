@@ -238,31 +238,44 @@
               "description": "Key Security Indicator.",
               "items": {
                 "type": "object",
-                "required": ["id", "statement"],
+                "required": ["id", "statement", "impact"],
                 "additionalProperties": false,
                 "properties": {
-                  "id": {"type": "string", "pattern": "^KSI-[A-Z]{3}-\\d{2}$"},
-                  "name": {"type": "string"},
-                  "statement": {"type": "string"},
+                  "id": {
+                    "type": "string",
+                    "pattern": "^KSI-[A-Z]{3}-\\d{2}$"
+                  },
+                  "name": { "type": "string" },
+                  "statement": { "type": "string" },
                   "controls": {
                     "type": "array",
                     "items": {
                       "type": "object",
                       "required": ["control_id", "title"],
                       "additionalProperties": false,
-                      "properties": {"control_id": {"type": "string"}, "title": {"type": "string"}}
+                      "properties": {
+                        "control_id": { "type": "string" },
+                        "title": { "type": "string" }
+                      }
                     }
                   },
                   "impact": {
                     "type": "object",
                     "required": ["low", "moderate"],
-                    "properties": {"low": {"type": "boolean"}, "moderate": {"type": "boolean"}, "high": {"type": "boolean"}}
+                    "properties": {
+                      "low": { "type": "boolean" },
+                      "moderate": { "type": "boolean" },
+                      "high": { "type": "boolean" }
+                    }
                   },
-                  "referenced_fr": {"type": "array", "items": {"type": "string"}},
-                  "note": {"type": "string"},
-                  "retired": {"type": "boolean"},
-                  "reference_url": {"type": "string", "format": "uri"},
-                  "reference": {"type": "string"}
+                  "referenced_fr": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "note": { "type": "string" },
+                  "retired": { "type": "boolean" },
+                  "reference_url": { "type": "string", "format": "uri" },
+                  "reference": { "type": "string" }
                 }
               }
             }
