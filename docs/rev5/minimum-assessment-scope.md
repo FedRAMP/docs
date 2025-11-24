@@ -1,8 +1,8 @@
 # Minimum Assessment Scope
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
-      - **Optional (Wide Release) beginning 2026-01-12.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Wide Release) beginning 2026-01-12.
       - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP boundary after January 12, 2026.
       - Providers MUST follow the Significant Change Request process (or Significant Change Notification if applicable) to transition from the traditional boundary to the MAS, and this change must be assessed by a FedRAMP recognized assessor.
       - Providers adopting this standard MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
@@ -14,7 +14,7 @@
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

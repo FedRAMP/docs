@@ -1,15 +1,15 @@
 # FedRAMP Definitions
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
-      - **Optional (Wide Release) beginning 2025-09-01.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Wide Release) beginning 2025-09-01.
       - Rev5 Authorized providers MUST apply these definitions for Rev5 Balance Improvement Release materials; these definitions do not always apply in legacy Rev5 materials.
       
 
 
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

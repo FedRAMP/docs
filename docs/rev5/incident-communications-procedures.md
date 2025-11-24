@@ -1,8 +1,8 @@
 # Incident Communications Procedures
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: No"
-      - **No () beginning .**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **No** () beginning .
       
 
 
@@ -10,7 +10,7 @@ This set of requirements and recommendations converts the existing FedRAMP Incid
 
 The only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

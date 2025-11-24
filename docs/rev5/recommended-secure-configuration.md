@@ -1,14 +1,14 @@
 # Recommended Secure Configuration Standard
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Required"
-      - **Required (Wide Release) beginning 2026-03-01.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Required** (Wide Release) beginning 2026-03-01.
       - These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
       - This standard supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.
       - FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this standard are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers.
       
 
-!!! failure "Mandatory Adoption for Rev5"
+!!! danger "Mandatory Adoption for Rev5"
     - **FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this standard will receive corrective action.**
     - Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.
     - Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.
@@ -18,7 +18,7 @@ All customers benefit from simple, easy to follow, easy to understand instructio
 
 This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

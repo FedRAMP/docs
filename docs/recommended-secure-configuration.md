@@ -1,6 +1,7 @@
 # Recommended Secure Configuration Standard
 
-!!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
+!!! info "Effective Date(s) & Overall Applicability for 20x"
+      - **Required** (Phase 2 Pilot)
       - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
       - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
 
@@ -9,7 +10,7 @@ All customers benefit from simple, easy to follow, easy to understand instructio
 
 This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

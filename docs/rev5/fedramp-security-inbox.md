@@ -1,12 +1,12 @@
 # FedRAMP Security Inbox requirements
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Required"
-      - **Required (Wide Release) beginning 2026-01-05.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Required** (Wide Release) beginning 2026-01-05.
       - These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
       
 
-!!! failure "Mandatory Adoption for Rev5"
+!!! danger "Mandatory Adoption for Rev5"
     - **FedRAMP will begin enforcement of this policy after January 5, 2026 with an Emergency Test.**
     - Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this policy.
     - Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.
@@ -28,7 +28,7 @@ FedRAMP will conduct strictly controlled tests of response to emergency communic
 
 This set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

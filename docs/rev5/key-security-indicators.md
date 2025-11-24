@@ -1,14 +1,14 @@
 # Key Security Indicators
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: No"
-      - **No () beginning .**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **No** () beginning .
       
 
 
 Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

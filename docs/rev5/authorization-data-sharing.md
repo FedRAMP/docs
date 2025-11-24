@@ -1,8 +1,8 @@
 # Authorization Data Sharing Standard
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
-      - **Optional (Open Beta) beginning 2026-02-02.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Open Beta) beginning 2026-02-02.
       - **Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
       - Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.
       - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.
@@ -21,7 +21,7 @@ At the initial release of this standard there will not be many platforms that di
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

@@ -1,8 +1,8 @@
 # Collaborative Continuous Monitoring Standard
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
-      - **Optional (Open Beta) beginning 2026-02-02.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Open Beta) beginning 2026-02-02.
       - **Providers MUST notify FedRAMP of intent to participate in the Collaborative Continuous Monitoring Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
       - Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 as part of the Open Beta.
       - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.
@@ -16,7 +16,7 @@ Agencies are required to continuously monitor all of their information systems f
 
 The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.

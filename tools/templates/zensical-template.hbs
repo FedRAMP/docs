@@ -1,15 +1,16 @@
 # {{info.name}}
 
 {{#if (stringEquals version "20x")}}
-!!! success "Effective Date(s) & Overall Applicability for 20x: {{ucfirst info.effective.20x.is}} ({{info.effective.20x.current_status}})"
+!!! info "Effective Date(s) & Overall Applicability for 20x"
+      - **{{ucfirst info.effective.20x.is}}** ({{info.effective.20x.current_status}})
       {{#each info.effective.20x.comments}}
       - {{this}}
       {{/each}}
 {{/if}}
 
 {{#if (stringEquals version "rev5")}}
-!!! success "Effective Date(s) & Overall Applicability for Rev5: {{ucfirst info.effective.rev5.is}}"
-      - **{{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}}) beginning {{info.effective.rev5.start_date}}.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **{{ucfirst info.effective.rev5.is}}** ({{info.effective.rev5.current_status}}) beginning {{info.effective.rev5.start_date}}.
       {{#each info.effective.rev5.comments}}
       - {{this}}
       {{/each}}
@@ -19,7 +20,7 @@
       {{/if}}
 
 {{#if info.effective.rev5.warnings}}
-!!! failure "Mandatory Adoption for Rev5"
+!!! danger "Mandatory Adoption for Rev5"
     {{#each info.effective.rev5.warnings}}
     - {{this}}
     {{/each}}
@@ -28,7 +29,7 @@
 
 {{info.front_matter.purpose}}
 
-??? info "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
+??? tip "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
     **History:**
 
 {{#each info.releases}}

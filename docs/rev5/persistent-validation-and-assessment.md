@@ -1,8 +1,8 @@
 # Persistent Validation and Assessment
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
-      - **Optional (Closed Beta) beginning 2025-09-01.**
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Closed Beta) beginning 2025-09-01.
       - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
       - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
       
@@ -16,7 +16,7 @@ All FedRAMP 20x Authorized providers are expected to implement persistent valida
 
 To obtain and maintain a FedRAMP 20x authorization, providers will be required to have their persistent validation programs assessed regularly for effectiveness and completeness.
 
-??? info "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
