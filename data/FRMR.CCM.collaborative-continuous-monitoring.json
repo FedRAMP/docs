@@ -7,7 +7,7 @@
     "effective": {
       "rev5": {
         "is": "optional",
-        "signup_url": "",
+        "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLSeFTHtUjXCmAUprCGrMLpgaN2kmL08EluzHvnTzAC4lTCfEVg/viewform",
         "current_status": "Open Beta",
         "start_date": "2026-02-02",
         "end_date": "2026-05-22",
@@ -34,7 +34,7 @@
     "releases": [
       {
         "id": "25.11B",
-        "published_date": "2025-12-01",
+        "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
         "public_comment": false
       },
@@ -92,9 +92,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "following_information": [
               "Changes to _authorization data_",
@@ -113,9 +111,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD",
             "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their _Ongoing Authorization Reports_ during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle."
           },
@@ -128,9 +124,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -142,9 +136,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -156,9 +148,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from _agencies_ and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter."
           },
@@ -171,9 +161,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -185,9 +173,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           }
         ]
@@ -206,9 +192,7 @@
               "moderate": false,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -220,9 +204,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -234,9 +216,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -248,9 +228,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST NOT"
           },
           {
@@ -262,9 +240,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -276,9 +252,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -290,9 +264,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -304,9 +276,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD NOT",
             "note": "This is because _agencies_ are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default."
           },
@@ -319,9 +289,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -333,9 +301,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MAY"
           },
           {
@@ -347,9 +313,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MAY"
           }
         ]
@@ -368,9 +332,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "MUST",
             "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15."
           },
@@ -383,9 +345,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -397,9 +357,7 @@
               "moderate": false,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -411,9 +369,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -425,9 +381,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "MUST",
             "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
           },
@@ -440,9 +394,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "MUST NOT",
             "note": "This is a statory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization."
           },
@@ -455,9 +407,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Agencies"
-            ],
+            "affects": ["Agencies"],
             "primary_key_word": "MUST",
             "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
           }

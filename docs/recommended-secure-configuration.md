@@ -9,10 +9,10 @@ All customers benefit from simple, easy to follow, easy to understand instructio
 
 This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Initial release of the Recommended Secure Configuration Standard (RSC) for the FedRAMP 20x Phase Two pilot.
 
 

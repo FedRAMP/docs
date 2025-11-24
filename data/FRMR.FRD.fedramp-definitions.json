@@ -30,7 +30,7 @@
     "releases": [
       {
         "id": "25.11B",
-        "published_date": "2025-12-01",
+        "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
         "public_comment": false
       },

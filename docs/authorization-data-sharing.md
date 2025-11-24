@@ -15,10 +15,10 @@ At the initial release of this standard there will not be many platforms that di
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
     - **25.08A (2025-08-24):** Initial release of the Authorization Data Sharing Standard

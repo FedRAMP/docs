@@ -7,7 +7,7 @@
     "effective": {
       "rev5": {
         "is": "optional",
-        "signup_url": "https://test",
+        "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform",
         "current_status": "Open Beta",
         "start_date": "2026-02-02",
         "end_date": "2026-05-22",
@@ -33,7 +33,7 @@
     "releases": [
       {
         "id": "25.11B",
-        "published_date": "2025-12-01",
+        "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
         "public_comment": false
       },

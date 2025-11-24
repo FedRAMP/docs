@@ -8,7 +8,7 @@
       - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.
       - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s participation in this beta.
       
-      - **Beta Sign-up Form:** [https://test](https://test)
+      - **Beta Sign-up Form:** [https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform)
 
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.
 
@@ -20,10 +20,10 @@ At the initial release of this standard there will not be many platforms that di
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
     - **25.08A (2025-08-24):** Initial release of the Authorization Data Sharing Standard

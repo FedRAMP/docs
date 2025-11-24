@@ -9,10 +9,10 @@ Agencies are required to continuously monitor all of their information systems f
 
 The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Initial release of the Collaborative Continuous Monitoring Standard (CCM) for the FedRAMP 20x Phase Two pilot.
 
 

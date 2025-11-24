@@ -7,10 +7,10 @@
 
 Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs; Renamed KSI &quot;indicator&quot; property to &quot;theme&quot; and KSI &quot;requirements&quot; property to &quot;indicators&quot; to match current naming conventions..
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
     - **25.05D (2025-08-24):** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).

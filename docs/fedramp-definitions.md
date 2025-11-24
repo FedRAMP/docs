@@ -7,10 +7,10 @@
 
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 
-??? info "Version 25.11B published on 2025-12-01 " 
+??? info "Version 25.11B published on 2025-11-24 " 
     **History:**
 
-    - **25.11B (2025-12-01):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates and new definitions added for the FedRAMP 20x Phase Two pilot.
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.
     - **25.09A (2025-09-10):** Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.
