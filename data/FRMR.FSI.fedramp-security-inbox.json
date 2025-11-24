@@ -12,7 +12,9 @@
         "start_date": "2026-01-05",
         "end_date": "2027-12-22",
         "comments": [
-          "These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
+          "These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace."
+        ],
+        "warnings": [
           "**FedRAMP will begin enforcement of this policy after January 5, 2026 with an Emergency Test.**",
           "Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this policy.",
           "Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.",

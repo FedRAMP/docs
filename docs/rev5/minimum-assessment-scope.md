@@ -11,6 +11,7 @@
       - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
       
 
+
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
 ??? info "Version 25.11B published on 2025-11-24 " 

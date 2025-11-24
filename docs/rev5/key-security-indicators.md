@@ -5,6 +5,7 @@
       - **No () beginning .**
       
 
+
 Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.
 
 ??? info "Version 25.11B published on 2025-11-24 " 

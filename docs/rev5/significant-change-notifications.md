@@ -11,6 +11,7 @@
       - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
       
 
+
 The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
 
 This standard broadly identifies four types of significant changes, from least impactful to most impactful:
