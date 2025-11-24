@@ -8,7 +8,7 @@
 {{/if}}
 
 {{#if (stringEquals version "rev5")}}
-!!! success "Effective Date(s) & Overall Applicability for Rev5: {{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}})"
+!!! success "Effective Date(s) & Overall Applicability for Rev5: {{ucfirst info.effective.rev5.is}}"
       - **{{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}}) beginning {{info.effective.rev5.start_date}}.**
       {{#each info.effective.rev5.comments}}
       - {{this}}

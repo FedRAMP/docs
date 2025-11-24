@@ -1,7 +1,7 @@
 # Using Cryptographic Modules Policy
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: No ()"
+!!! success "Effective Date(s) & Overall Applicability for Rev5: No"
       - **No () beginning .**
       
 

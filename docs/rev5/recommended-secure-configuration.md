@@ -1,8 +1,8 @@
 # Recommended Secure Configuration Standard
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Mandatory (Wide Release)"
-      - **Mandatory (Wide Release) beginning 2026-03-01.**
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Required"
+      - **Required (Wide Release) beginning 2026-03-01.**
       - These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
       - This standard supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.
       - FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this standard are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers.

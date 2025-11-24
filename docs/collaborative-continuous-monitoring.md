@@ -1,4 +1,4 @@
-# Continuous Collaborative Monitoring Standard
+# Collaborative Continuous Monitoring Standard
 
 !!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
       - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.

@@ -2,17 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Continuous Collaborative Monitoring Standard",
+    "name": "Collaborative Continuous Monitoring Standard",
     "short_name": "CCM",
     "effective": {
       "rev5": {
         "is": "optional",
         "signup_url": "",
-        "current_status": "Closed Beta",
-        "start_date": "2025-09-01",
-        "end_date": "2025-12-31",
+        "current_status": "Open Beta",
+        "start_date": "2026-02-02",
+        "end_date": "2026-05-22",
         "comments": [
-          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP."
+          "**Providers MUST notify FedRAMP of intent to participate in the Collaborative Continuous Monitoring Rev5 Open Beta by submitting a sign-up form to FedRAMP.**",
+          "Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 as part of the Open Beta.",
+          "Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.",
+          "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's participation in this beta.",
+          "FedRAMP recommends that participants in the Collaborative Continuous Mounting beta also adopt the Vulnerability Detection and Response standard and the Significant Change Notification standard."
         ]
       },
       "20x": {

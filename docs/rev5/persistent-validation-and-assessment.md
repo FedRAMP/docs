@@ -1,7 +1,7 @@
 # Persistent Validation and Assessment
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
       - **Optional (Closed Beta) beginning 2025-09-01.**
       - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
       - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
