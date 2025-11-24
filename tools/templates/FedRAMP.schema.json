@@ -466,6 +466,11 @@
           "type": "array",
           "items": { "type": "string" },
           "description": "Additional comments or notes about this release target."
+        },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Warnings about this release target."
         }
       }
     },

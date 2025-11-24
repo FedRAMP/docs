@@ -6,6 +6,7 @@
       - Rev5 Authorized providers MUST apply these definitions for Rev5 Balance Improvement Release materials; these definitions do not always apply in legacy Rev5 materials.
       
 
+
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 
 ??? info "Version 25.11B published on 2025-11-24 " 
