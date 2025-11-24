@@ -446,7 +446,7 @@
         },
         "is": {
           "type": "string",
-          "enum": ["mandatory", "optional", "no"]
+          "enum": ["required", "optional", "no"]
         },
         "current_status": {
           "type": "string",
