@@ -4,32 +4,39 @@
   "info": {
     "name": "Authorization Data Sharing Standard",
     "short_name": "ADS",
-    "current_release": "25.11A",
-    "types": ["FRR", "FRA"],
     "effective": {
       "rev5": {
-        "signup_url": "",
-        "current_status": "Closed Beta",
-        "start_date": "2025-09-01",
-        "end_date": "2025-12-31",
+        "is": "optional",
+        "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform",
+        "current_status": "Open Beta",
+        "start_date": "2026-02-02",
+        "end_date": "2026-05-22",
         "comments": [
-          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
-          "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
+          "**Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**",
+          "Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.",
+          "Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.",
+          "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's participation in this beta."
         ]
       },
       "20x": {
+        "is": "required",
         "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
-        "current_status": "Phase Two Pilot",
+        "current_status": "Phase 2 Pilot",
         "start_date": "2025-11-18",
         "end_date": "2026-03-31",
         "comments": [
-          "These Key Security Indicators apply to all FedRAMP 20x authorizations.",
-          "Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.",
-          "Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review."
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
         ]
       }
     },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-11-24",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",

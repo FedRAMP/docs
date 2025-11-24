@@ -1,5 +1,16 @@
 # Significant Change Notification Requirements
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
+      - **Optional (Wide Release) beginning 2026-02-27.**
+      - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP Significant Change Request process after February 27, 2026.
+      - Providers MUST address all requirements and recommendations in this standard prior to full adoption.
+      - Rev5 Authorized Providers who switch to the Significant Change Notification process MUST notify FedRAMP by sending an email to info@fedramp.gov.
+      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s adoption of this policy.
+      - Providers seeking FedRAMP authorization who plan to follow the Significant Change Notification policy must clearly note this in their authorization package
+      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
+      
+
 The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
 
 This standard broadly identifies four types of significant changes, from least impactful to most impactful:
@@ -10,21 +21,15 @@ This standard broadly identifies four types of significant changes, from least i
 
 These categories, and the resulting requirements, apply only to significant changes.
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** SCN
-    - **Description:** Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2025-11-18** for **20x**.
-        - This policy applies to all FedRAMP 20x authorizations.
-        - Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.
-        - Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review.
-    - **FedRAMP Rev5**:
-        - This release is effective **2025-07-07** for **Rev5 Beta**.
-        - These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.
-        - Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process.
+??? info "Version 25.11B published on 2025-11-24 " 
+    **History:**
+
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards
+    - **25.10A (2025-10-17):** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
+    - **25.06B (2025-08-24):** Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).
+    - **25.06A (2025-06-17):** Initial release of Significant Change Notification Requirements
+
 
 ??? abstract "Background & Authority"
     - [FedRAMP Authorization Act (44 USC § 3609 (a) (7))](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) directs the Administrator of the General Services Administration to &quot;coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...&quot;

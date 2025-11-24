@@ -1,5 +1,10 @@
 # Authorization Data Sharing Standard
 
+!!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
+      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.
 
 This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.
@@ -10,12 +15,14 @@ At the initial release of this standard there will not be many platforms that di
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** ADS
-    - **Description:** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
-    ---
+??? info "Version 25.11B published on 2025-11-24 " 
+    **History:**
+
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
+    - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
+    - **25.08A (2025-08-24):** Initial release of the Authorization Data Sharing Standard
+
 
 ??? abstract "Background & Authority"
     - [44 USC § 3609 (a)(8)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) The FedRAMP Authorization Act directs the Administrator of the General Services Administration to &quot;provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...&quot;

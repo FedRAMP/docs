@@ -1,30 +1,33 @@
 # {{info.name}}
 
+{{#if (stringEquals version "20x")}}
+!!! success "Effective Date(s) & Overall Applicability for 20x: {{ucfirst info.effective.20x.is}} ({{info.effective.20x.current_status}})"
+      {{#each info.effective.20x.comments}}
+      - {{this}}
+      {{/each}}
+{{/if}}
+
+{{#if (stringEquals version "rev5")}}
+!!! success "Effective Date(s) & Overall Applicability for Rev5: {{ucfirst info.effective.rev5.is}}"
+      - **{{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}}) beginning {{info.effective.rev5.start_date}}.**
+      {{#each info.effective.rev5.comments}}
+      - {{this}}
+      {{/each}}
+      
+      {{#if info.effective.rev5.signup_url}}
+      - **Beta Sign-up Form:** [{{info.effective.rev5.signup_url}}]({{info.effective.rev5.signup_url}})
+      {{/if}}
+{{/if}}
+
 {{info.front_matter.purpose}}
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** {{info.current_release}}
-    - **Published:** {{info.releases.[0].published_date}}
-    - **Designator:** {{info.short_name}}
-    - **Description:** {{info.releases.[0].description}}
-    ---
-{{#each info.releases.[0].effective}}
-    - **FedRAMP {{@key}}**:
-{{#each this.timeline}}
-        - This release is effective **{{start_date}}** for **{{designator}}**.
-{{#if comment}}
-        - {{comment}}
-{{/if}}
-{{/each}}
-{{#if comment}}
-        - {{comment}}
-{{/if}}
-{{#if comments}}
-{{#each comments}}
-        - {{this}}
-{{/each}}
-{{/if}}
-{{/each}}
+??? info "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
+    **History:**
+
+{{#each info.releases}}
+    - **{{this.id}} ({{this.published_date}}):** {{this.description}}
+{{/each}}    
+
 
 ??? abstract "Background & Authority"
 {{#each info.front_matter.authority}}

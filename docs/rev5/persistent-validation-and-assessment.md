@@ -1,9 +1,11 @@
 # Persistent Validation and Assessment
 
-!!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
-      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
 
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
+      - **Optional (Closed Beta) beginning 2025-09-01.**
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+      
 
 FedRAMP 20x is built around the core concept that secure cloud service providers will persistently and automatically validate that their security decisions and policies are being implemented as expected within their cloud service offering. The activities of a secure service should be intentional, documented, and in a state that is always known and understood by the provider.
 

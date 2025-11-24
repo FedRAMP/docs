@@ -1,5 +1,15 @@
 # FedRAMP Security Inbox requirements
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Required"
+      - **Required (Wide Release) beginning 2026-01-05.**
+      - These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
+      - **FedRAMP will begin enforcement of this policy after January 5, 2026 with an Emergency Test.**
+      - Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this policy.
+      - Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.
+      - Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months.
+      
+
 FedRAMP must have a reliable way to directly contact security and compliance staff operating all FedRAMP Authorized cloud service offerings without tracking individual contacts or maintaining provider-specific logins to customer support portals. These requirements for a FedRAMP Security Inbox apply to all cloud service providers to ensure this direct reliable path remains open, especially in the event of critical security issues.
 
 This set of requirements focus specifically on communication that comes from FedRAMP and includes three categories of communication:
@@ -16,20 +26,12 @@ FedRAMP will conduct strictly controlled tests of response to emergency communic
 
 This set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** FSI
-    - **Description:** Initial Release of the FedRAMP Security Inbox requirements for both 20x and Rev5.
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2026-01-05** for **20x**.
-        - These requirements apply after January 5, 2026 to all FedRAMP 20x authorizations.
-        - Phase One Pilot participants must address all of these requirements by January 5, 2026.
-        - Phase Two Pilot participants must address all of these requirements prior to submission for authorization review (even if submitted before January 5, 2026).
-    - **FedRAMP Rev5**:
-        - This release is effective **2026-01-05** for **Rev5**.
-        - These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
+??? info "Version 25.11B published on 2025-11-24 " 
+    **History:**
+
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Initial Release of the FedRAMP Security Inbox requirements for both 20x and Rev5.
+
 
 ??? abstract "Background & Authority"
     - [OMB Memorandum M-24-15 on Modernizing FedRAMP](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) section VII (a) (17) states that GSA must &quot;position FedRAMP as a central point of contact to the commercial cloud sector for Government-wide communications or requests for risk management information concerning commercial cloud providers used by Federal agencies.&quot;

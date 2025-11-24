@@ -1,19 +1,21 @@
 # FedRAMP Definitions
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional"
+      - **Optional (Wide Release) beginning 2025-09-01.**
+      - Rev5 Authorized providers MUST apply these definitions for Rev5 Balance Improvement Release materials; these definitions do not always apply in legacy Rev5 materials.
+      
+
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 
-??? success "Effective Date(s) & Overall Applicability"
-    - **Release:** 25.11A
-    - **Published:** 2025-11-18
-    - **Designator:** FRD
-    - **Description:** Updates and new definitions added for the FedRAMP 20x Phase Two pilot.
-    ---
-    - **FedRAMP 20x**:
-        - This release is effective **2025-11-18** for **20x**.
-        - These definitions apply to all FedRAMP 20x documents, standards, requirements, and other materials.
-    - **FedRAMP Rev5**:
-        - This release is effective **2025-11-18** for **Rev5 Balance Improvement Releases**.
-        - These definitions apply to all FedRAMP Rev5 documents, standard, requirements, and other materials that have been included in updates to Rev5 in a Balance Improvement Release.
+??? info "Version 25.11B published on 2025-11-24 " 
+    **History:**
+
+    - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
+    - **25.11A (2025-11-18):** Updates and new definitions added for the FedRAMP 20x Phase Two pilot.
+    - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.
+    - **25.09A (2025-09-10):** Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.
+
 
 ??? abstract "Background & Authority"
     - [FedRAMP Authorization Act (44 USC § 3608)](https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609) requires that the Administrator of the General Services Administration shall &quot;establish a Government- wide program that provides a standardized, reusable approach to security assessment and authorization for cloud computing products and services that process unclassified information used by agencies&quot;
