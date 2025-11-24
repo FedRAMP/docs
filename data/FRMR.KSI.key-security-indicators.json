@@ -9,15 +9,14 @@
         "is": "no"
       },
       "20x": {
-        "is": "mandatory",
+        "is": "required",
         "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
-        "current_status": "Phase Two Pilot",
+        "current_status": "Phase 2 Pilot",
         "start_date": "2025-11-18",
         "end_date": "2026-03-31",
         "comments": [
-          "This policy applies to all FedRAMP 20x authorizations.",
-          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
-          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
         ]
       }
     },

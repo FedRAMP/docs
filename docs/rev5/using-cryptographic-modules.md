@@ -1,19 +1,14 @@
 # Using Cryptographic Modules Policy
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: No ()"
+      - **No () beginning .**
+
 This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x standard style and clarifies the implementation expectations for FedRAMP 20x.
 
 The notable change from the default Rev5 Policy for Cryptographic Module Selection and Use is that the use of cryptographic modules (or update streams) validated under the NIST Cryptographic Module Validation Program are not explicitly required when cryptographic modules are used to protect federal customer data in cloud service offerings seeking FedRAMP authorization at the Moderate impact level. This acknowledges that not all Moderate impact federal customer data is considered “sensitive” and allows both cloud service providers and agency customers to make risk-based decisions about their use of Moderate impact services for agency use cases that do not include sensitive data.
 
 FedRAMP recommends that cloud service providers seeking FedRAMP authorization at the Moderate impact level use such cryptographic modules whenever technically feasible and reasonable but acknowledges there may be sound reasons not to do so across the board at the Moderate impact level. As always, the reasoning and justification for such decisions must be documented by the cloud service provider.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** This policy does NOT apply!
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

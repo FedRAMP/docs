@@ -1,18 +1,15 @@
 # Minimum Assessment Scope
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Wide Release)"
+      - **Optional (Wide Release) beginning 2026-01-12.**
+      - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP boundary after January 12, 2026.
+      - Providers MUST follow the Significant Change Request process (or Significant Change Notification if applicable) to transition from the traditional boundary to the MAS, and this change must be assessed by a FedRAMP recognized assessor.
+      - Providers adopting this standard MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
+      - Rev5 Authorized providers who switch from a traditional FedRAMP boundary to the MAS MUST notify FedRAMP by sending an email to rev5@fedramp.gov.
+      - All new Rev5 authorizations in progress that use the MAS must clearly mark all authorization data to indicate adoption of the MAS.
+
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Optional (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
-      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

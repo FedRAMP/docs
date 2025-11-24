@@ -1,17 +1,12 @@
 # Incident Communications Procedures
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: No ()"
+      - **No () beginning .**
+
 This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.
 
 The only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** This policy does NOT apply!
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

@@ -1,19 +1,13 @@
 # Continuous Collaborative Monitoring Standard
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
+      - **Optional (Closed Beta) beginning 2025-09-01.**
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+
 Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.
 
 The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Optional (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

@@ -12,19 +12,22 @@
         "start_date": "2026-01-05",
         "end_date": "2027-12-22",
         "comments": [
-          "These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace."
+          "These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
+          "**FedRAMP will begin enforcement of this policy after January 5, 2026 with an Emergency Test.**",
+          "Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this policy.",
+          "Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.",
+          "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
         ]
       },
       "20x": {
-        "is": "mandatory",
+        "is": "required",
         "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
-        "current_status": "Phase Two Pilot",
+        "current_status": "Phase 2 Pilot",
         "start_date": "2025-11-18",
         "end_date": "2026-03-31",
         "comments": [
-          "These requirements apply after January 5, 2026 to all FedRAMP 20x authorizations.",
-          "Phase One Pilot participants must address all of these requirements by January 5, 2026.",
-          "Phase Two Pilot participants must address all of these requirements prior to submission for authorization review (even if submitted before January 5, 2026)."
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
         ]
       }
     },

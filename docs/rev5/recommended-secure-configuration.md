@@ -1,19 +1,19 @@
 # Recommended Secure Configuration Standard
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Mandatory (Wide Release)"
+      - **Mandatory (Wide Release) beginning 2026-03-01.**
+      - These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
+      - This standard supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.
+      - FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this standard are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers.
+      - **FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this standard will receive corrective action.**
+      - Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.
+      - Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.
+      - Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months.
+
 All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.
 
 This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Mandatory (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

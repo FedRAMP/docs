@@ -1,5 +1,10 @@
 # Significant Change Notification Requirements
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
+      - **Optional (Closed Beta) beginning 2025-09-01.**
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+
 The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
 
 This standard broadly identifies four types of significant changes, from least impactful to most impactful:
@@ -9,17 +14,6 @@ This standard broadly identifies four types of significant changes, from least i
 4. Impact Categorization
 
 These categories, and the resulting requirements, apply only to significant changes.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Optional (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

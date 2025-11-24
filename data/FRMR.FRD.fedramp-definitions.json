@@ -6,25 +6,24 @@
     "short_name": "FRD",
     "effective": {
       "rev5": {
-        "is": "mandatory",
+        "is": "optional",
         "signup_url": "",
-        "current_status": "Closed Beta",
+        "current_status": "Wide Release",
         "start_date": "2025-09-01",
-        "end_date": "2025-12-31",
+        "end_date": "2027-12-22",
         "comments": [
-          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP."
+          "Rev5 Authorized providers MUST apply these definitions for Rev5 Balance Improvement Release materials; these definitions do not always apply in legacy Rev5 materials."
         ]
       },
       "20x": {
-        "is": "mandatory",
+        "is": "required",
         "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
-        "current_status": "Phase Two Pilot",
+        "current_status": "Phase 2 Pilot",
         "start_date": "2025-11-18",
         "end_date": "2026-03-31",
         "comments": [
-          "This policy applies to all FedRAMP 20x authorizations.",
-          "Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
-          "Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
         ]
       }
     },

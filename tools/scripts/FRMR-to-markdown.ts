@@ -50,19 +50,22 @@ async function convertFRMRToMarkdown(
     // Compile the Handlebars template
     const compiledTemplate = Handlebars.compile(templateContent);
 
-    // Render the template with the JSON data
-    const markdown = compiledTemplate({ ...jsonData });
+    // Render the template for the default (20x) version
+    const markdown = compiledTemplate({ ...jsonData, version: "20x" });
 
     // Write the markdown to the output file
     await fs.writeFile(outputFilePath, markdown);
 
     // If this FRMR file indicates a Rev5 release, also write a copy to ../../docs/rev5
     try {
-      if (jsonData && jsonData.info && jsonData.info.rev5 != "no") {
+      if (jsonData?.info?.rev5 !== "no") {
+        // Render the template for the rev5 version
+        const rev5Markdown = compiledTemplate({ ...jsonData, version: "rev5" });
+
         const rev5Dir = path.join(__dirname, "../../docs/rev5");
         await fs.ensureDir(rev5Dir);
         const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
-        await fs.writeFile(rev5FilePath, markdown);
+        await fs.writeFile(rev5FilePath, rev5Markdown);
         console.log(`Also wrote Rev5 copy to ${rev5FilePath}`);
       }
     } catch (err) {

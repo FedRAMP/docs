@@ -1,5 +1,11 @@
 # Authorization Data Sharing Standard
 
+
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
+      - **Optional (Closed Beta) beginning 2025-09-01.**
+      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.
 
 This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.
@@ -9,18 +15,6 @@ The FedRAMP Authorization Data Sharing Standard provides a process or mechanism 
 At the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Optional (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
-      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

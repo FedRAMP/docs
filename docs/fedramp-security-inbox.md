@@ -1,5 +1,10 @@
 # FedRAMP Security Inbox requirements
 
+!!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
+      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+
 FedRAMP must have a reliable way to directly contact security and compliance staff operating all FedRAMP Authorized cloud service offerings without tracking individual contacts or maintaining provider-specific logins to customer support portals. These requirements for a FedRAMP Security Inbox apply to all cloud service providers to ensure this direct reliable path remains open, especially in the event of critical security issues.
 
 This set of requirements focus specifically on communication that comes from FedRAMP and includes three categories of communication:
@@ -15,17 +20,6 @@ All Emergency and Important messages sent by FedRAMP will include specific actio
 FedRAMP will conduct strictly controlled tests of response to emergency communications regularly and provide public notice of these tests in advance. The response times for these tests will be tracked by FedRAMP and made publicly available.
 
 This set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - These requirements apply after January 5, 2026 to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants must address all of these requirements by January 5, 2026.
-      - Phase Two Pilot participants must address all of these requirements prior to submission for authorization review (even if submitted before January 5, 2026).
-
-    **FedRAMP Rev5:** Mandatory (Wide Release)
-
-      - These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**

@@ -1,17 +1,11 @@
 # FedRAMP Definitions
 
+!!! success "Effective Date(s) & Overall Applicability for 20x: Required (Phase 2 Pilot)"
+      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
+      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
-
-???+ success "Effective Date(s) & Overall Applicability"
-    **FedRAMP 20x:** Mandatory (Phase Two Pilot)
-
-      - This policy applies to all FedRAMP 20x authorizations.
-      - Phase One Pilot participants have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase Two Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
-
-    **FedRAMP Rev5:** Mandatory (Closed Beta)
-
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
 
 ??? info "Version 25.11B published on 2025-12-01 " 
     **History:**
