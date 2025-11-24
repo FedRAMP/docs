@@ -3,6 +3,7 @@
 
 !!! success "Effective Date(s) & Overall Applicability for Rev5: No ()"
       - **No () beginning .**
+      
 
 This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.
 

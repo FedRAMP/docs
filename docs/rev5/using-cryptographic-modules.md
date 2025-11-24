@@ -3,6 +3,7 @@
 
 !!! success "Effective Date(s) & Overall Applicability for Rev5: No ()"
       - **No () beginning .**
+      
 
 This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x standard style and clarifies the implementation expectations for FedRAMP 20x.
 

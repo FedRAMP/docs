@@ -5,6 +5,7 @@
       - **Optional (Closed Beta) beginning 2025-09-01.**
       - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
       - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+      
 
 FedRAMP 20x is built around the core concept that secure cloud service providers will persistently and automatically validate that their security decisions and policies are being implemented as expected within their cloud service offering. The activities of a secure service should be intentional, documented, and in a state that is always known and understood by the provider.
 

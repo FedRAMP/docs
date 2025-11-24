@@ -1,9 +1,14 @@
 # Significant Change Notification Requirements
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
-      - **Optional (Closed Beta) beginning 2025-09-01.**
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Open Beta)"
+      - **Optional (Open Beta) beginning 2026-01-12.**
+      - **Providers MUST notify FedRAMP of intent to participate in the Significant Change Notification Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
+      - Rev5 Authorized providers MAY adopt this standard beginning January 12, 2026.
+      - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on April 24, 2026.
+      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s participation in this beta.
+      - FedRAMP recommends that participants in the Significant Change Notification beta also participate in the Authorization Data Sharing and Vulnerability Detection and Response betas.
+      
 
 The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
 

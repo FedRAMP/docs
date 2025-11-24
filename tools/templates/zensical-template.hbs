@@ -12,7 +12,11 @@
       - **{{ucfirst info.effective.rev5.is}} ({{info.effective.rev5.current_status}}) beginning {{info.effective.rev5.start_date}}.**
       {{#each info.effective.rev5.comments}}
       - {{this}}
-      {{/each}}  
+      {{/each}}
+      
+      {{#if info.effective.rev5.signup_url}}
+      - **Beta Sign-up Form:** [{{info.effective.rev5.signup_url}}]({{info.effective.rev5.signup_url}})
+      {{/if}}
 {{/if}}
 
 {{info.front_matter.purpose}}

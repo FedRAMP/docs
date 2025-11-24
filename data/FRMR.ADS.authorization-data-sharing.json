@@ -7,13 +7,15 @@
     "effective": {
       "rev5": {
         "is": "optional",
-        "signup_url": "",
-        "current_status": "Closed Beta",
-        "start_date": "2025-09-01",
-        "end_date": "2025-12-31",
+        "signup_url": "https://test",
+        "current_status": "Open Beta",
+        "start_date": "2026-01-12",
+        "end_date": "2026-04-24",
         "comments": [
-          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
-          "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
+          "**Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**",
+          "Rev5 Authorized providers MAY adopt this standard beginning January 12, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.",
+          "Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on April 24, 2026.",
+          "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's participation in this beta."
         ]
       },
       "20x": {

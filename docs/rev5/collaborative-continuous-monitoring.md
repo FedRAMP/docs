@@ -4,6 +4,7 @@
 !!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
       - **Optional (Closed Beta) beginning 2025-09-01.**
       - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
+      
 
 Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.
 

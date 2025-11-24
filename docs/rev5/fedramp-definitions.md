@@ -4,6 +4,7 @@
 !!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Wide Release)"
       - **Optional (Wide Release) beginning 2025-09-01.**
       - Rev5 Authorized providers MUST apply these definitions for Rev5 Balance Improvement Release materials; these definitions do not always apply in legacy Rev5 materials.
+      
 
 This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
 

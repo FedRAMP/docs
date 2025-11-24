@@ -1,10 +1,14 @@
 # Authorization Data Sharing Standard
 
 
-!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Closed Beta)"
-      - **Optional (Closed Beta) beginning 2025-09-01.**
-      - Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.
-      - Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard.
+!!! success "Effective Date(s) & Overall Applicability for Rev5: Optional (Open Beta)"
+      - **Optional (Open Beta) beginning 2026-01-12.**
+      - **Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
+      - Rev5 Authorized providers MAY adopt this standard beginning January 12, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.
+      - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on April 24, 2026.
+      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s participation in this beta.
+      
+      - **Beta Sign-up Form:** [https://test](https://test)
 
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.
 
