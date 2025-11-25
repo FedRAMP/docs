@@ -1,9 +1,15 @@
 # Minimum Assessment Scope
 
-!!! info "Effective Date(s) & Overall Applicability for 20x"
-      - **Required** (Phase 2 Pilot)
-      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Wide Release) beginning 2026-01-12.
+      - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP boundary after January 12, 2026.
+      - Providers MUST follow the Significant Change Request process (or Significant Change Notification if applicable) to transition from the traditional boundary to the MAS, and this change must be assessed by a FedRAMP recognized assessor.
+      - Providers adopting this standard MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
+      - Rev5 Authorized providers who switch from a traditional FedRAMP boundary to the MAS MUST notify FedRAMP by sending an email to info@fedramp.gov.
+      - All new Rev5 authorizations in progress that use the MAS must clearly mark all authorization data to indicate adoption of the MAS.
+      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
+      
 
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.

@@ -4,29 +4,34 @@
   "info": {
     "name": "Key Security Indicators",
     "short_name": "KSI",
-    "current_release": "25.11A",
-    "types": ["FRR", "KSI"],
+    "effective": {
+      "rev5": {
+        "is": "no"
+      },
+      "20x": {
+        "is": "required",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase 2 Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-11-24",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs; Renamed KSI \"indicator\" property to \"theme\" and KSI \"requirements\" property to \"indicators\" to match current naming conventions..",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "These Key Security Indicators apply to all FedRAMP 20x authorizations.",
-              "Phase One Pilot participants have one year from authorization to fully address these Key Security Indicators but must demonstrate continuous quarterly progress.",
-              "Phase Two Pilot participants must address all of these Key Security Indicators prior to submission for authorization review."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-09-10",
@@ -43,100 +48,31 @@
         "id": "25.10A",
         "published_date": "2025-10-17",
         "description": "Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20x Phase One Pilot"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.05D",
         "published_date": "2025-08-24",
         "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.05C",
         "published_date": "2025-06-28",
         "description": "Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.05B",
         "published_date": "2025-06-18",
         "description": "Initial release of Key Security Indicators from 25.05; the previous 25.05A release contained errors during conversion to JSON that are fixed in this release, the KSIs should now be identical to the original 25.05 paper release of the KSIs released on 2025-05-30. FRR-KSI-AY rules were converted to FRR-KSI rules, but otherwise unchanged.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-01",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.05A",
         "published_date": "2025-05-30",
         "description": "Initial release of Key Security Indicators",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-16",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "For FedRAMP 20x Low authorizations for cloud service offerings deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services, and only using FedRAMP authorized _third-party information resources_."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-04-24",
@@ -868,7 +804,8 @@
           "id": "KSI-CMT-05",
           "statement": "",
           "note": "Superseded by KSI-AFR-05 (SCN)",
-          "retired": true
+          "retired": true,
+          "impact": { "low": false, "moderate": false }
         }
       ]
     },
@@ -925,7 +862,7 @@
               "control_id": "ac-18.1",
               "title": "Authentication and Encryption"
             },
-             {
+            {
               "control_id": "ac-18.3",
               "title": "Disable Wireless Networking"
             },
@@ -984,7 +921,7 @@
             "moderate": true
           },
           "controls": [
-             {
+            {
               "control_id": "ac-12",
               "title": "Session Termination"
             },
@@ -1591,7 +1528,11 @@
               "control_id": "ps-8",
               "title": "Personnel Sanctions"
             }
-          ]
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          }
         },
         {
           "id": "KSI-IAM-07",
@@ -1890,13 +1831,21 @@
           "id": "KSI-MLA-03",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-04",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-05",
@@ -1929,7 +1878,11 @@
           "id": "KSI-MLA-06",
           "statement": "",
           "note": "Superseded by KSI-AFR-04 (VDR)",
-          "retired": true
+          "retired": true,
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-MLA-07",
@@ -2626,7 +2579,11 @@
           "id": "KSI-SVC-03",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-11 (UCM)"
+          "note": "Superseded by KSI-AFR-11 (UCM)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-SVC-04",
@@ -2840,13 +2797,21 @@
           "id": "KSI-TPR-01",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)"
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-TPR-02",
           "retired": true,
           "statement": "",
-          "note": "Superseded by KSI-AFR-01 (MAS)"
+          "note": "Superseded by KSI-AFR-01 (MAS)",
+          "impact": {
+            "low": false,
+            "moderate": false
+          }
         },
         {
           "id": "KSI-TPR-03",

@@ -10,6 +10,7 @@ site_url = "https://fedramp.gov/docs"
 nav = [
     {"Phase Two (Current)" = [
         {"Overview" = "index.md"},
+        {"Documentation Guidelines" = "/#important-documentation-guidelines"},
         {"Definitions" = "fedramp-definitions.md"},
         {"Key Security Indicators" = "key-security-indicators.md"},
         {"Minimum Assessment Scope" = "minimum-assessment-scope.md"},
@@ -27,6 +28,23 @@ nav = [
         {"P1 Intro" = "20xP1/intro.md"},
         {"P1 Key Security Indicators" = "20xP1/key-security-indicators.md"},
         {"P1 Minimum Assessment Standard" = "20xP1/minimum-assessment-standard.md"}
+    ]},
+    {"Rev 5 Balance" = [
+        {"Overview" = "rev5/index.md"},
+        {"Overview" = "rev5/"},
+        {"Documentation Guidelines" = "rev5/guidelines.md"},
+        {"Definitions" = "rev5/fedramp-definitions.md"},
+        {"Mandatory Balance" = [
+            {"Recommended Secure Configuration" = "rev5/recommended-secure-configuration.md"},
+            {"FedRAMP Security Inbox" = "rev5/fedramp-security-inbox.md"},
+        ]},
+        {"Optional Balance" = [
+            {"Minimum Assessment Scope" = "rev5/minimum-assessment-scope.md"},                
+            {"Significant Change Notification" = "rev5/significant-change-notifications.md"},
+            {"Authorization Data Sharing" = "rev5/authorization-data-sharing.md"},
+            {"Vulnerability Detection and Response" = "rev5/vulnerability-detection-and-response.md"},
+            {"Collaborative Continous Monitoring" = "rev5/collaborative-continuous-monitoring.md"},
+        ]},
     ]},
     {"// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two"}
 ]

@@ -1,9 +1,14 @@
 # Authorization Data Sharing Standard
 
-!!! info "Effective Date(s) & Overall Applicability for 20x"
-      - **Required** (Phase 2 Pilot)
-      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+
+!!! info "Effective Date(s) & Overall Applicability for Rev5"
+      - **Optional** (Open Beta) beginning 2026-02-02.
+      - **Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
+      - Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.
+      - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.
+      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s participation in this beta.
+      
+      - **Beta Sign-up Form:** [https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdOH7qeJ9uPlb3zYN35qDPNOm_pXQ8sHanAZIIh5tdgjnubVw/viewform)
 
 
 Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.

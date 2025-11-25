@@ -4,44 +4,49 @@
   "info": {
     "name": "Recommended Secure Configuration Standard",
     "short_name": "RSC",
-    "current_release": "25.11A",
-    "types": [
-      "FRR"
-    ],
+    "effective": {
+      "rev5": {
+        "is": "required",
+        "signup_url": "",
+        "current_status": "Wide Release",
+        "start_date": "2026-03-01",
+        "end_date": "2027-12-22",
+        "comments": [
+          "These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
+          "This standard supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.",
+          "FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this standard are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers."
+        ],
+        "warnings": [
+          "**FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this standard will receive corrective action.**",
+          "Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.",
+          "Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.",
+          "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
+        ]
+      },
+      "20x": {
+        "is": "required",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase 2 Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-11-24",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Initial release of the Recommended Secure Configuration Standard (RSC) for the FedRAMP 20x Phase Two pilot.",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "This policy applies to all FedRAMP 20x authorizations.",
-              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
-              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "wide_release": {
-                "start_date": "2026-03-01",
-                "designator": "Rev5 (Wide Release)"
-              }
-            },
-            "comments": [
-              "This policy applies to all FedRAMP Rev5 authorizations as a supplement to SSP Appendix J: CSO CIS and CRM Workbook (both are required).",
-              "All cloud service offerings seeking FedRAMP Rev5 authorization MUST implement the Recommended Secure Configuration Standard (RSC) starting on the Effective Date for Rev5 authorizations.",
-              "All cloud service offerings with an active FedRAMP Rev5 authorization MUST implement the Recommended Secure Configuration Standard (RSC) no later than their next annual assessment that begins after the Effective Date for Rev5 authorizations."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-09-10",

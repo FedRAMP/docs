@@ -4,139 +4,64 @@
   "info": {
     "name": "Significant Change Notification Requirements",
     "short_name": "SCN",
-    "current_release": "25.11A",
-    "types": [
-      "FRR",
-      "FRA"
-    ],
+    "effective": {
+      "rev5": {
+        "is": "optional",
+        "signup_url": "",
+        "current_status": "Wide Release",
+        "start_date": "2026-02-27",
+        "end_date": "2027-12-22",
+        "comments": [
+          "Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP Significant Change Request process after February 27, 2026.",
+          "Providers MUST address all requirements and recommendations in this standard prior to full adoption.",
+          "Rev5 Authorized Providers who switch to the Significant Change Notification process MUST notify FedRAMP by sending an email to info@fedramp.gov.",
+          "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's adoption of this policy.",
+          "Providers seeking FedRAMP authorization who plan to follow the Significant Change Notification policy must clearly note this in their authorization package",
+          "The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy."
+        ]
+      },
+      "20x": {
+        "is": "required",
+        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+        "current_status": "Phase 2 Pilot",
+        "start_date": "2025-11-18",
+        "end_date": "2026-03-31",
+        "comments": [
+          "Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.",
+          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review."
+        ]
+      }
+    },
     "releases": [
+      {
+        "id": "25.11B",
+        "published_date": "2025-11-24",
+        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+        "public_comment": false
+      },
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
         "description": "Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with \"timeframe\" rulesets in other FedRAMP standards",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-11-18",
-                "designator": "20x"
-              }
-            },
-            "comments": [
-              "This policy applies to all FedRAMP 20x authorizations.",
-              "Phase One Pilot participants have one year from authorization to fully implement this standard but must demonstrate continuous quarterly progress.",
-              "Phase Two Pilot participants must demonstrate significant progress towards implementing this standard prior to submission for authorization review."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-07",
-                "designator": "Rev5 Beta"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.",
-              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.10A",
         "published_date": "2025-10-17",
         "description": "minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20x Phase One Pilot"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-07",
-                "designator": "Rev5 Closed Beta"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta.",
-              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.06B",
         "published_date": "2025-08-24",
         "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).",
-        "public_comment": false,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-07",
-                "designator": "R5.SCN.B1"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).",
-              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        }
+        "public_comment": false
       },
       {
         "id": "25.06A",
         "published_date": "2025-06-17",
         "description": "Initial release of Significant Change Notification Requirements",
         "public_comment": true,
-        "effective": {
-          "20x": {
-            "timeline": {
-              "pilot": {
-                "start_date": "2025-06-17",
-                "designator": "20xP1"
-              }
-            },
-            "comments": [
-              "These requirements apply to all participants in the FedRAMP 20x Phase One pilot.",
-              "Key Security Indicators for Configuration Management (KSI-CMT) should be updated in alignment with the Significant Change Notification Standard."
-            ]
-          },
-          "Rev5": {
-            "timeline": {
-              "closed_beta": {
-                "start_date": "2025-07-07",
-                "designator": "R5.SCN.B1"
-              }
-            },
-            "comments": [
-              "These requirements will be initially tested and evaluated for Rev5 in the SCN Closed Beta (B1).",
-              "Providers MUST participate in a Balance Improvement Test to transition from the Significant Change Request process to the new Significant Change Notification process prior to wide release of this process for Rev5. Providers should participate in the FedRAMP Rev5 Community Working Group at https://www.fedramp.gov/community/ to follow this process."
-            ]
-          }
-        },
         "related_rfcs": [
           {
             "start_date": "2025-04-24",
