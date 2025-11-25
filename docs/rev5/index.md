@@ -13,8 +13,8 @@ These policies apply directly to Rev5 cloud service offerings and are **mandator
 
 | Policy | Effective Date(s) |
 | -- | -- |
-| [Recommended Secure Configuration](recommended-secure-configuration) | March 1, 2026 |
 | [FedRAMP Security Inbox](fedramp-security-inbox) | January 5, 2026 | 
+| [Recommended Secure Configuration](recommended-secure-configuration) | March 1, 2026 |
 
 ## Optional Balance for Rev5
 
@@ -26,7 +26,7 @@ These policies may be adopted by Rev5 cloud service offerings following the Rev5
 | Policy | Overall Balance Status |
 | -- | -- |
 | [Minimum Assessment Scope](minimum-assessment-scope) | Wide Release begins January 12, 2026|
-| [Significant Change Notification](significant-change-notification) | Wide Release begins February 27, 2026 (tentative)|
+| [Significant Change Notification](significant-change-notifications) | Wide Release begins February 27, 2026 (tentative)|
 | [Authorization Data Sharing](authorization-data-sharing) | Open Beta will run from February 2 to May 22, 2026|
 | [Vulnerability Detection and Response](vulnerability-detection-and-response) | Open Beta will run from February 2 to May 22, 2026|
 | [Collaborative Continuous Monitoring](collaborative-continuous-monitoring) | Closed Beta will run from February 2 to May 22, 2026|
