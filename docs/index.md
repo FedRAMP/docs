@@ -3,12 +3,14 @@
 This page is the authoritative repository for FedRAMP 20x Phase Two pilot
 requirements.
 
-!!! tip "Machine-Readable Docs" Machine-readable requirements are available in
-the [FedRAMP 20x Machine Readable Docs](https://github.com/FedRAMP/docs)
-repository on GitHub. Participants are strongly encouraged to leverage the
-underlying machine-readable documentation to simplify addressing all
-requirements and recommendations. All of the materials on this page are
-generated automatically from these machine-readable materials.
+!!! tip "Machine-Readable Docs"
+
+    Machine-readable requirements are available in
+    the [FedRAMP 20x Machine Readable Docs](https://github.com/FedRAMP/docs)
+    repository on GitHub. Participants are strongly encouraged to leverage the
+    underlying machine-readable documentation to simplify addressing all
+    requirements and recommendations. All of the materials on this page are
+    generated automatically from these machine-readable materials.
 
 ## Important Documentation Guidelines
 
@@ -31,13 +33,13 @@ documentation are to be interpreted as described in
 
 !!! warning "Confusion over SHOULD"
 
-    The use of "SHOULD" does not just make something optional for fun - there 
-    must be a valid reason not to implement a recommendation that has been 
-    carefully weighed. For FedRAMP 20x, cloud service providers MUST document 
+    The use of "SHOULD" does not just make something optional for fun - there
+    must be a valid reason not to implement a recommendation that has been
+    carefully weighed. For FedRAMP 20x, cloud service providers MUST document
     this reasoning in their authorization package.
 
-    Cloud service providers who do not implement recommendations may also be 
-    assessed as being less secure than those who do and may be less likely 
+    Cloud service providers who do not implement recommendations may also be
+    assessed as being less secure than those who do and may be less likely
     to be reused by federal agencies.
 
 ??? quote "RFC 2119 Key Word Summary"
@@ -81,32 +83,32 @@ materials.
 
 !!! info "Key Security Indicators only apply to cloud service providers."
 
-| Low Impact   | Moderate Impact   |
-| ------------ | ----------------- |
-| 60           | 65                |
+| Low Impact | Moderate Impact |
+| ---------- | --------------- |
+| 60         | 65              |
 
 ### Authorization by FedRAMP Requirements and Recommendations
 
-All requirements and recommendations must be addressed prior to
-submission for authorization.
+All requirements and recommendations must be addressed prior to submission for
+authorization.
 
 #### Providers
 
-| Keyword      | Low | Moderate |
-|--------------|-----|----------|
-| MUST         | 89   | 90      |
-| SHOULD       | 38   | 39      |
-| MUST NOT     | 3   | 3      |
-| SHOULD NOT   | 4   | 4      |
-| MAY          | 14   | 14      |
-| **Total**    | **148**   | **150**      |
+| Keyword    | Low     | Moderate |
+| ---------- | ------- | -------- |
+| MUST       | 89      | 90       |
+| SHOULD     | 38      | 39       |
+| MUST NOT   | 3       | 3        |
+| SHOULD NOT | 4       | 4        |
+| MAY        | 14      | 14       |
+| **Total**  | **148** | **150**  |
 
 #### Assessors
 
-| Keyword      | Low | Moderate |
-|--------------|-----|----------|
-| MUST         | 10   | 10      |
-| SHOULD       | 3   | 3      |
-| MUST NOT     | 2   | 2      |
-| MAY          | 2   | 2      |
-| **Total**    | **17**   | **17**      |
+| Keyword   | Low    | Moderate |
+| --------- | ------ | -------- |
+| MUST      | 10     | 10       |
+| SHOULD    | 3      | 3        |
+| MUST NOT  | 2      | 2        |
+| MAY       | 2      | 2        |
+| **Total** | **17** | **17**   |
