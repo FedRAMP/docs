@@ -1,0 +1,937 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "20xSubmission.schema.json",
+    "type": "object",
+    "title": "FedRAMP System Assessment Submission",
+    "description": "JSON Schema for Cloud Service Provider (CSP) system submission for FedRAMP authorization. This is a notional draft and SHOULD NOT BE USED BY ANYONE!!!!",
+    "required": [
+        "serviceIdentification",
+        "impactLevel",
+        "authorizationStatus",
+        "contactInformation",
+        "keySecurityIndicators"
+    ],
+    "properties": {
+        "serviceIdentification": {
+            "type": "object",
+            "title": "Service Identification",
+            "description": "Basic service identification details",
+            "required": [
+                "serviceName",
+                "serviceAcronym",
+                "providerName",
+                "serviceType",
+                "serviceDescription"
+            ],
+            "properties": {
+                "serviceName": {
+                    "type": "string",
+                    "title": "Service Name",
+                    "description": "Full name of the cloud service being authorized"
+                },
+                "serviceAcronym": {
+                    "type": "string",
+                    "title": "Service Acronym",
+                    "description": "Short acronym or abbreviation for the service"
+                },
+                "providerName": {
+                    "type": "string",
+                    "title": "Provider Name",
+                    "description": "Name of the Cloud Service Provider"
+                },
+                "serviceType": {
+                    "type": "string",
+                    "title": "Service Type",
+                    "description": "Type of cloud service model",
+                    "enum": [
+                        "SaaS",
+                        "PaaS",
+                        "IaaS",
+                        "Hybrid"
+                    ]
+                },
+                "serviceDescription": {
+                    "title": "Service Description",
+                    "description": "A brief description of the service being authorized",
+                    "$ref": "#/$defs/markdownEditor"
+                },
+                "repositories": {
+                    "type": "array",
+                    "title": "Repositories",
+                    "description": "List of repository locations for the system. Repositories hold information about the system authorization including KSI responses, security assessment reports, and other relevant documents.",
+                    "items": {
+                        "type": "object",
+                        "title": "Repository",
+                        "headerTemplate": "{{self.description}}",
+                        "required": [
+                            "url",
+                            "description",
+                            "authenticationRequired"
+                        ],
+                        "properties": {
+                            "url": {
+                                "type": "string",
+                                "title": "Repository URL",
+                                "format": "uri",
+                                "description": "URL of the repository"
+                            },
+                            "description": {
+                                "type": "string",
+                                "title": "Repository Description",
+                                "description": "Description of the repository contents"
+                            },
+                            "authenticationRequired": {
+                                "type": "boolean",
+                                "title": "Authentication Required",
+                                "description": "Whether authentication is required to access the repository",
+                                "format": "checkbox"
+                            },
+                            "accessRequestInstructions": {
+                                "type": "string",
+                                "title": "Access Request Instructions",
+                                "description": "Instructions for requesting access to the repository"
+                            }
+                        },
+                        "if": {
+                            "properties": {
+                                "authenticationRequired": {
+                                    "const": true
+                                }
+                            }
+                        },
+                        "then": {
+                            "required": [
+                                "accessRequestInstructions"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "impactLevel": {
+            "type": "string",
+            "title": "Impact Level",
+            "description": "FedRAMP impact level of the service being authorized",
+            "enum": [
+                "Low",
+                "Moderate",
+                "High"
+            ]
+        },
+        "authorizationStatus": {
+            "type": "object",
+            "required": [
+                "status",
+                "dateAuthorized"
+            ],
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "status": {
+                                "enum": [
+                                    "Authorized",
+                                    "Continuous Monitoring"
+                                ]
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "dateAuthorized": {
+                                "type": "string",
+                                "format": "date"
+                            }
+                        }
+                    }
+                }
+            ],
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "title": "Authorization Status",
+                    "description": "Current authorization status of the system",
+                    "enum": [
+                        "In Progress",
+                        "Authorized",
+                        "Continuous Monitoring",
+                        "Expired"
+                    ]
+                },
+                "dateAuthorized": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Date of Authorization",
+                    "description": "Date when FedRAMP authorization was granted or the system was first authorized for continuous monitoring",
+                    "format": "date"
+                }
+            }
+        },
+        "contactInformation": {
+            "type": "object",
+            "title": "Contact Information",
+            "description": "Key contacts for the FedRAMP assessment",
+            "properties": {
+                "primaryContact": {
+                    "$ref": "#/$defs/contactInfo",
+                    "title": "Primary Contact",
+                    "description": "Primary point of contact for the FedRAMP assessment"
+                },
+                "securityContact": {
+                    "$ref": "#/$defs/contactInfo",
+                    "title": "Security Contact",
+                    "description": "Point of contact for security-related questions"
+                }
+            }
+        },
+        "keySecurityIndicators": {
+            "$comment": "The vibe here is that for each KSI the CSP will list 1 - n security objectives. For each objective they will list 1 - n achievements. An achievement is a specific design choice, process, or other measure that meets the objective. For each achievement they will list 1 - n objectiveMonitoring which are specific tests that validate the achievement. Finally each objectiveMonitoring will list 1 - n evidence. which will be the actual output of the test. I am anticipating that there will be a lot of repetition here. The CSP SHOULD either use native JSON constructs like $ref or if they are managing the data in another system then they can simply output the repetitive data. Although that will make the JSON MUCH bigger so maybe we should encourage the use of $ref. and have a separate file for each of these elements?",
+            "type": "object",
+            "title": "Key Security Indicators",
+            "description": "Key Security Indicators for FedRAMP assessment",
+            "properties": {
+                "KSI-AFR-01": {
+                    "type": "array",
+                    "title": "KSI-AFR-01 Minimum Assessment Scope",
+                    "description": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/minimum-assessment-scope",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-02": {
+                    "type": "array",
+                    "title": "KSI-AFR-02 Key Security Indicators",
+                    "description": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/key-security-indicators",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-03": {
+                    "type": "array",
+                    "title": "KSI-AFR-03 Authorization Data Sharing",
+                    "description": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/authorization-data-sharing",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-04": {
+                    "type": "array",
+                    "title": "KSI-AFR-04 Vulnerability Detection and Response",
+                    "description": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/vulnerability-detection-and-response",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-05": {
+                    "type": "array",
+                    "title": "KSI-AFR-05 Significant Change Notifications",
+                    "description": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/significant-change-notifications",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-06": {
+                    "type": "array",
+                    "title": "KSI-AFR-06 Collaborative Continuous Monitoring",
+                    "description": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/collaborative-continuous-monitoring",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-07": {
+                    "type": "array",
+                    "title": "KSI-AFR-07 Recommended Secure Configuration",
+                    "description": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/recommended-secure-configuration",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-08": {
+                    "type": "array",
+                    "title": "KSI-AFR-08 FedRAMP Security Inbox",
+                    "description": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/fedramp-security-inbox",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-09": {
+                    "type": "array",
+                    "title": "KSI-AFR-09 Persistent Validation and Assessment",
+                    "description": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/persistent-validation-and-assessment",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-10": {
+                    "type": "array",
+                    "title": "KSI-AFR-10 Incident Communications Procedures",
+                    "description": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/incident-communications-procedures",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-AFR-11": {
+                    "type": "array",
+                    "title": "KSI-AFR-11 Using Cryptographic Modules",
+                    "description": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.\nhttps://fedramp.gov/docs/using-cryptographic-modules",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CED-01": {
+                    "type": "array",
+                    "title": "KSI-CED-01 General Education",
+                    "description": "Require and monitor the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CED-02": {
+                    "type": "array",
+                    "title": "KSI-CED-02 Role-Specific Education",
+                    "description": "Require and monitor the effectiveness of role-specific training for high risk roles, including at least roles with privileged access.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CED-03": {
+                    "type": "array",
+                    "title": "KSI-CED-03 Development and Engineering Education",
+                    "description": "Require and monitor the effectiveness of role-specific training provided to development and engineering staff that covers best practices for delivering secure software.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CED-04": {
+                    "type": "array",
+                    "title": "KSI-CED-04 Incident Response and Disaster Recovery Education",
+                    "description": "Require and monitor the effectiveness of role-specific training to staff involved with incident response or disaster recovery.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CMT-01": {
+                    "type": "array",
+                    "title": "KSI-CMT-01 Log and Monitor Changes",
+                    "description": "Log and monitor modifications to the cloud service offering.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CMT-02": {
+                    "type": "array",
+                    "title": "KSI-CMT-02 Redeployment",
+                    "description": "Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CMT-03": {
+                    "type": "array",
+                    "title": "KSI-CMT-03 Automated Testing and Validation",
+                    "description": "Automate persistent testing and validation of changes throughout deployment.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CMT-04": {
+                    "type": "array",
+                    "title": "KSI-CMT-04 Change Management Procedure",
+                    "description": "Always follow a documented change management procedure.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-01": {
+                    "type": "array",
+                    "title": "KSI-CNA-01 Restrict Network Traffic",
+                    "description": "Configure all machine-based information resources to limit inbound and outbound network traffic.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-02": {
+                    "type": "array",
+                    "title": "KSI-CNA-02 Minimize the Attack Surface",
+                    "description": "Design systems to minimize the attack surface and minimize lateral movement if compromised.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-03": {
+                    "type": "array",
+                    "title": "KSI-CNA-03 Enforce Traffic Flow",
+                    "description": "Use logical networking and related capabilities to enforce traffic flow controls.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-04": {
+                    "type": "array",
+                    "title": "KSI-CNA-04 Immutable Infrastructure",
+                    "description": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-05": {
+                    "type": "array",
+                    "title": "KSI-CNA-05 Unwanted Activity",
+                    "description": "Protect against denial of service attacks and other unwanted activity.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-06": {
+                    "type": "array",
+                    "title": "KSI-CNA-06 High Availability",
+                    "description": "Design systems for high availability and rapid recovery.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-07": {
+                    "type": "array",
+                    "title": "KSI-CNA-07 Best Practices",
+                    "description": "Ensure cloud-native _information resources_ are implemented based on host provider's best practices and documented guidance.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-CNA-08": {
+                    "type": "array",
+                    "title": "KSI-CNA-08 Persistent Assessment and Automated Enforcement",
+                    "description": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-01": {
+                    "type": "array",
+                    "title": "KSI-IAM-01 Phishing-Resistant MFA",
+                    "description": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-02": {
+                    "type": "array",
+                    "title": "KSI-IAM-02 Passwordless Authentication",
+                    "description": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-03": {
+                    "type": "array",
+                    "title": "KSI-IAM-03 Non-User Accounts",
+                    "description": "Enforce appropriately secure authentication methods for non-user accounts and services.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-04": {
+                    "type": "array",
+                    "title": "KSI-IAM-04 Just-in-Time Authorization",
+                    "description": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-05": {
+                    "type": "array",
+                    "title": "KSI-IAM-05 Least Privilege",
+                    "description": "Configure identity and access management with measures that always verify each user or device can only access the resources they need.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-06": {
+                    "type": "array",
+                    "title": "KSI-IAM-06 Suspicious Activity",
+                    "description": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-IAM-07": {
+                    "type": "array",
+                    "title": "KSI-IAM-07 Automated Account Management",
+                    "description": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-INR-01": {
+                    "type": "array",
+                    "title": "KSI-INR-01 Incident Response Procedure",
+                    "description": "Always follow a documented incident response procedure.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-INR-02": {
+                    "type": "array",
+                    "title": "KSI-INR-02 Incident Logging",
+                    "description": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-INR-03": {
+                    "type": "array",
+                    "title": "KSI-INR-03 Incident After Action Reports",
+                    "description": "Generate after action reports and _regularly_ incorporate lessons learned into operations.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-MLA-01": {
+                    "type": "array",
+                    "title": "KSI-MLA-01 Security Information and Event Management (SIEM)",
+                    "description": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-MLA-02": {
+                    "type": "array",
+                    "title": "KSI-MLA-02 Audit Logging",
+                    "description": "_Regularly_ review and audit logs.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-MLA-05": {
+                    "type": "array",
+                    "title": "KSI-MLA-05 Infrastructure as Code",
+                    "description": "Perform Infrastructure as Code and configuration evaluation and testing.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-MLA-07": {
+                    "type": "array",
+                    "title": "KSI-MLA-07 Event Types",
+                    "description": "Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-MLA-08": {
+                    "type": "array",
+                    "title": "KSI-MLA-08 Log Data Access",
+                    "description": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-01": {
+                    "type": "array",
+                    "title": "KSI-PIY-01 Automated Inventory",
+                    "description": "Use authoritative sources to automatically maintain real-time inventories of all information resources.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-02": {
+                    "type": "array",
+                    "title": "KSI-PIY-02 Security Objectives and Requirements",
+                    "description": "Document the security objectives and requirements for each information resource or set of information resources.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-03": {
+                    "type": "array",
+                    "title": "KSI-PIY-03 Vulnerability Disclosure Program",
+                    "description": "Maintain a vulnerability disclosure program.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-04": {
+                    "type": "array",
+                    "title": "KSI-PIY-04 CISA Secure By Design",
+                    "description": "Monitor the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-05": {
+                    "type": "array",
+                    "title": "KSI-PIY-05 Evaluate Implementations",
+                    "description": "Document methods used to evaluate _information resource_ implementations.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-06": {
+                    "type": "array",
+                    "title": "KSI-PIY-06 Security Investment Effectiveness",
+                    "description": "Monitor the effectiveness of the organization's investments in achieving security objectives.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-07": {
+                    "type": "array",
+                    "title": "KSI-PIY-07 Supply Chain Risk Management",
+                    "description": "Document risk management decisions for software supply chain security.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-PIY-08": {
+                    "type": "array",
+                    "title": "KSI-PIY-08 Executive Support",
+                    "description": "Regularly measure executive support for achieving the organization\u2019s security objectives.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-RPL-01": {
+                    "type": "array",
+                    "title": "KSI-RPL-01 Recovery Objectives",
+                    "description": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-RPL-02": {
+                    "type": "array",
+                    "title": "KSI-RPL-02 Recovery Plan",
+                    "description": "Develop and maintain a recovery plan that aligns with the defined recovery objectives.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-RPL-03": {
+                    "type": "array",
+                    "title": "KSI-RPL-03 System Backups",
+                    "description": "Perform system backups aligned with recovery objectives.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-RPL-04": {
+                    "type": "array",
+                    "title": "KSI-RPL-04 Recovery Testing",
+                    "description": "_Regularly_ test the capability to recover from incidents and contingencies.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-01": {
+                    "type": "array",
+                    "title": "KSI-SVC-01 Continuous Improvement",
+                    "description": "Implement improvements based on persistent evaluation of information resources for opportunities to improve security.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-02": {
+                    "type": "array",
+                    "title": "KSI-SVC-02 Network Encryption",
+                    "description": "Encrypt or otherwise secure network traffic.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-04": {
+                    "type": "array",
+                    "title": "KSI-SVC-04 Configuration Automation",
+                    "description": "Manage configuration of machine-based information resources using automation.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-05": {
+                    "type": "array",
+                    "title": "KSI-SVC-05 Resource Integrity",
+                    "description": "Use cryptographic methods to validate the integrity of machine-based information resources.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-06": {
+                    "type": "array",
+                    "title": "KSI-SVC-06 Secret Management",
+                    "description": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-07": {
+                    "type": "array",
+                    "title": "KSI-SVC-07 Patching",
+                    "description": "Use a consistent, risk-informed approach for applying security patches.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-08": {
+                    "type": "array",
+                    "title": "KSI-SVC-08 Shared Resources",
+                    "description": "Do not introduce or leave behind residual elements that could negatively affect confidentiality, integrity, or availability of _federal customer data_ during operations.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-09": {
+                    "type": "array",
+                    "title": "KSI-SVC-09 Communication Integrity",
+                    "description": "Persistently validate the authenticity and integrity of communications between _machine-based_ _information resources_ using automation.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-SVC-10": {
+                    "type": "array",
+                    "title": "KSI-SVC-10 Data Destruction",
+                    "description": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-TPR-03": {
+                    "type": "array",
+                    "title": "KSI-TPR-03 Supply Chain Risk Management",
+                    "description": "Identify and prioritize mitigation of potential supply chain risks.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                },
+                "KSI-TPR-04": {
+                    "type": "array",
+                    "title": "KSI-TPR-04 Supply Chain Risk Monitoring",
+                    "description": "Automatically monitor third party software _information resources_ for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
+                    "items": {
+                        "$ref": "#/$defs/securityObjective"
+                    }
+                }
+            }
+        }
+    },
+    "$defs": {
+        "securityObjective": {
+            "type": "object",
+            "description": "Specific security objective being addressed",
+            "properties": {
+                "securityStatement": {
+                    "type": "string",
+                    "title": "Security Statement",
+                    "description": "Description of the security objective",
+                    "examples": [
+                        "The company's network is segmented to prevent unauthorized access to customer data.",
+                        "The company management has established defined roles and responsibilities to oversee the design and implementation of information security controls."
+                    ]
+                },
+                "responsibleParty": {
+                    "type": "array",
+                    "title": "Responsible Party(s)",
+                    "description": "Teams or individuals responsible for achieving the security objective",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "securityControls": {
+                    "type": "array",
+                    "title": "Security Controls",
+                    "description": "Specific security controls being implemented",
+                    "items": {
+                        "$ref": "#/$defs/securityControl"
+                    }
+                }
+            }
+        },
+        "securityControl": {
+            "type": "object",
+            "title": "Security Control",
+            "description": "Specific security control being implemented",
+            "required": [
+                "description",
+                "responsibleParty"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "title": "Control Description",
+                    "description": "Detailed explanation of how the security objective is achieved."
+                },
+                "responsibleParty": {
+                    "type": "array",
+                    "title": "Responsible Party(s)",
+                    "description": "Teams or individuals responsible for implementing the security control",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "securityTests": {
+                    "type": "array",
+                    "$ref": "#/$defs/SecurityTest"
+                }
+            }
+        },
+        "SecurityTest": {
+            "type": "object",
+            "required": [
+                "frequency",
+                "method",
+                "automated"
+            ],
+            "properties": {
+                "frequency": {
+                    "type": "string",
+                    "enum": [
+                        "Continuous",
+                        "Daily",
+                        "Weekly",
+                        "Monthly",
+                        "Quarterly",
+                        "Annually"
+                    ],
+                    "title": "Frequency",
+                    "description": "Frequency of monitoring the security objective"
+                },
+                "method": {
+                    "type": "string",
+                    "title": "Monitoring Method",
+                    "description": "Specific method used to monitor the security objective."
+                },
+                "automated": {
+                    "type": "boolean",
+                    "title": "Automated",
+                    "description": "Whether the monitoring method is automated"
+                },
+                "evidence": {
+                    "type": "array",
+                    "title": "Evidence",
+                    "$ref": "#/$defs/evidence"
+                }
+            }
+        },
+        "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "description": "results of the security test",
+            "items": {
+                "type": "object",
+                "required": [
+                    "evidenceType",
+                    "description"
+                ],
+                "oneOf": [
+                    {
+                        "required": [
+                            "evidenceLocation"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "evidenceContent"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "evidenceText"
+                        ]
+                    }
+                ],
+                "properties": {
+                    "evidenceType": {
+                        "type": "string",
+                        "enum": [
+                            "Log",
+                            "Report",
+                            "Screenshot",
+                            "Configuration",
+                            "Policy",
+                            "Procedure",
+                            "Audit Record"
+                        ],
+                        "title": "Evidence Type",
+                        "description": "Type of evidence provided"
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "Evidence Description",
+                        "description": "Detailed description of the evidence."
+                    },
+                    "evidenceLocation": {
+                        "type": "string",
+                        "format": "uri",
+                        "title": "Evidence Location",
+                        "description": "URI or file path to the evidence document"
+                    },
+                    "evidenceContent": {
+                        "type": "string",
+                        "pattern": "^[A-Za-z0-9+/]*={0,2}$",
+                        "title": "Evidence Content (base64 encoded)",
+                        "description": "Base64 encoded content of the evidence document",
+                        "media": {
+                            "binaryEncoding": "base64"
+                        }
+                    },
+                    "evidenceText": {
+                        "type": "string",
+                        "title": "Evidence Content (Text)",
+                        "description": "Evidence included as plain text such as the output of a command or log."
+                    },
+                    "lastUpdated": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Last Updated",
+                        "description": "Date when the evidence was last updated"
+                    }
+                }
+            }
+        },
+        "contactInfo": {
+            "type": "object",
+            "properties": {
+                "contactName": {
+                    "title": "Name",
+                    "type": "string"
+                },
+                "contactEmail": {
+                    "type": "string",
+                    "title": "Email",
+                    "format": "email"
+                },
+                "contactPhone": {
+                    "type": "string",
+                    "title": "Phone Number",
+                    "pattern": "^\\+?[1-9]\\d{1,14}$",
+                    "description": "Phone number in E.164 format (e.g. +12025550123)"
+                }
+            }
+        },
+        "markdownEditor": {
+            "type": "string",
+            "format": "markdown",
+            "options": {
+                "simplemde": {
+                    "toolbar": [
+                        "bold",
+                        "italic",
+                        "heading",
+                        "unordered-list",
+                        "ordered-list",
+                        "|",
+                        "link",
+                        "code",
+                        "|",
+                        "preview",
+                        "fullscreen",
+                        "side-by-side",
+                        "guide"
+                    ],
+                    "spellChecker": true
+                }
+            }
+        }
+    }
+}

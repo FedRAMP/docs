@@ -1,0 +1,403 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "20xSubmission.schema.json",
+  "type": "object",
+  "title": "FedRAMP System Assessment Submission",
+  "description": "JSON Schema for Cloud Service Provider (CSP) system submission for FedRAMP authorization. This is a notional draft and SHOULD NOT BE USED BY ANYONE!!!!",
+  "required": [
+    "serviceIdentification",
+    "impactLevel",
+    "authorizationStatus",
+    "contactInformation",
+    "keySecurityIndicators"
+  ],
+  "properties": {
+    "serviceIdentification": {
+      "type": "object",
+      "title": "Service Identification",
+      "description": "Basic service identification details",
+      "required": [
+        "serviceName",
+        "serviceAcronym",
+        "providerName",
+        "serviceType",
+        "serviceDescription"
+      ],
+      "properties": {
+        "serviceName": {
+          "type": "string",
+          "title": "Service Name",
+          "description": "Full name of the cloud service being authorized"
+        },
+        "serviceAcronym": {
+          "type": "string",
+          "title": "Service Acronym",
+          "description": "Short acronym or abbreviation for the service"
+        },
+        "providerName": {
+          "type": "string",
+          "title": "Provider Name",
+          "description": "Name of the Cloud Service Provider"
+        },
+        "serviceType": {
+          "type": "string",
+          "title": "Service Type",
+          "description": "Type of cloud service model",
+          "enum": [
+            "SaaS",
+            "PaaS",
+            "IaaS",
+            "Hybrid"
+          ]
+        },
+        "serviceDescription": {
+          "title": "Service Description",
+                    "description": "A brief description of the service being authorized",
+                  "$ref": "#/$defs/markdownEditor"
+        },
+        "repositories": {
+          "type": "array",
+          "title": "Repositories",
+          "description": "List of repository locations for the system. Repositories hold information about the system authorization including KSI responses, security assessment reports, and other relevant documents.",
+          "items": {
+            "type": "object",
+            "title": "Repository",
+            "headerTemplate": "{{self.description}}",
+            "required": [
+              "url",
+              "description",
+              "authenticationRequired"
+            ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "title": "Repository URL",
+                "format": "uri",
+                "description": "URL of the repository"
+              },
+              "description": {
+                "type": "string",
+                "title": "Repository Description",
+                "description": "Description of the repository contents"
+              },
+              "authenticationRequired": {
+                "type": "boolean",
+                "title": "Authentication Required",
+                "description": "Whether authentication is required to access the repository",
+                "format": "checkbox"
+              },
+              "accessRequestInstructions": {
+                "type": "string",
+                "title": "Access Request Instructions",
+                "description": "Instructions for requesting access to the repository"
+              }
+            },
+            "if": {
+              "properties": {
+                "authenticationRequired": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "accessRequestInstructions"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "impactLevel": {
+      "type": "string",
+      "title": "Impact Level",
+      "description": "FedRAMP impact level of the service being authorized",
+      "enum": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    },
+    "authorizationStatus": {
+      "type": "object",
+      "required": [
+        "status",
+        "dateAuthorized"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "Authorized",
+                  "Continuous Monitoring"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dateAuthorized": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "title": "Authorization Status",
+          "description": "Current authorization status of the system",
+          "enum": [
+            "In Progress",
+            "Authorized",
+            "Continuous Monitoring",
+            "Expired"
+          ]
+        },
+        "dateAuthorized": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Date of Authorization",
+          "description": "Date when FedRAMP authorization was granted or the system was first authorized for continuous monitoring",
+          "format": "date"
+        }
+      }
+    },
+    "contactInformation": {
+      "type": "object",
+      "title": "Contact Information",
+      "description": "Key contacts for the FedRAMP assessment",
+      "properties": {
+        "primaryContact": {
+          "$ref": "#/$defs/contactInfo",
+          "title": "Primary Contact",
+          "description": "Primary point of contact for the FedRAMP assessment"
+        },
+        "securityContact": {
+          "$ref": "#/$defs/contactInfo",
+          "title": "Security Contact",
+          "description": "Point of contact for security-related questions"
+        }
+      }
+    },
+    "keySecurityIndicators": {
+      "$comment": "The vibe here is that for each KSI the CSP will list 1 - n security objectives. For each objective they will list 1 - n achievements. An achievement is a specific design choice, process, or other measure that meets the objective. For each achievement they will list 1 - n objectiveMonitoring which are specific tests that validate the achievement. Finally each objectiveMonitoring will list 1 - n evidence. which will be the actual output of the test. I am anticipating that there will be a lot of repetition here. The CSP SHOULD either use native JSON constructs like $ref or if they are managing the data in another system then they can simply output the repetitive data. Although that will make the JSON MUCH bigger so maybe we should encourage the use of $ref. and have a separate file for each of these elements?",
+      "type": "object",
+      "title": "Key Security Indicators",
+      "description": "Key Security Indicators for FedRAMP assessment",
+      "properties": {
+      }
+    }
+    },
+  "$defs": {
+    "securityObjective": {
+      "type": "object",
+      "description": "Specific security objective being addressed",
+      "properties": {
+        "securityStatement": {
+          "type": "string",
+          "title": "Security Statement",
+          "description": "Description of the security objective",
+          "examples": [
+            "The company's network is segmented to prevent unauthorized access to customer data.",
+            "The company management has established defined roles and responsibilities to oversee the design and implementation of information security controls."
+          ]
+        },
+        "responsibleParty": {
+          "type": "array",
+          "title": "Responsible Party(s)",
+          "description": "Teams or individuals responsible for achieving the security objective",
+          "items": {
+            "type": "string"
+          }
+        },
+        "securityControls": {
+          "type": "array",
+          "title": "Security Controls",
+          "description": "Specific security controls being implemented",
+          "items": {
+            "$ref": "#/$defs/securityControl"
+          }
+        }
+      }
+    },
+    "securityControl": {
+      "type": "object",
+      "title": "Security Control",
+      "description": "Specific security control being implemented",
+      "required": [
+        "description",
+        "responsibleParty"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "title": "Control Description",
+          "description": "Detailed explanation of how the security objective is achieved."
+        },
+        "responsibleParty": {
+          "type": "array",
+          "title": "Responsible Party(s)",
+          "description": "Teams or individuals responsible for implementing the security control",
+          "items": {
+            "type": "string"
+          }
+        },
+        "securityTests": {
+          "type": "array",
+          "$ref": "#/$defs/SecurityTest"
+        }
+      }
+    },
+    "SecurityTest": {
+      "type": "object",
+      "required": [
+        "frequency",
+        "method",
+        "automated"
+      ],
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "enum": [
+            "Continuous",
+            "Daily",
+            "Weekly",
+            "Monthly",
+            "Quarterly",
+            "Annually"
+          ],
+          "title": "Frequency",
+          "description": "Frequency of monitoring the security objective"
+        },
+        "method": {
+          "type": "string",
+          "title": "Monitoring Method",
+          "description": "Specific method used to monitor the security objective."
+        },
+        "automated": {
+          "type": "boolean",
+          "title": "Automated",
+          "description": "Whether the monitoring method is automated"
+        },
+        "evidence": {
+          "type": "array",
+          "title": "Evidence",
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "description": "results of the security test",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidenceType",
+          "description"
+        ],
+        "oneOf": [
+          {
+            "required": [
+              "evidenceLocation"
+            ]
+          },
+          {
+            "required": [
+              "evidenceContent"
+            ]
+          },
+          {
+            "required": [
+              "evidenceText"
+            ]
+          }
+        ],
+        "properties": {
+          "evidenceType": {
+            "type": "string",
+            "enum": [
+              "Log",
+              "Report",
+              "Screenshot",
+              "Configuration",
+              "Policy",
+              "Procedure",
+              "Audit Record"
+            ],
+            "title": "Evidence Type",
+            "description": "Type of evidence provided"
+          },
+          "description": {
+            "type": "string",
+            "title": "Evidence Description",
+            "description": "Detailed description of the evidence."
+          },
+          "evidenceLocation": {
+            "type": "string",
+            "format": "uri",
+            "title": "Evidence Location",
+            "description": "URI or file path to the evidence document"
+          },
+          "evidenceContent": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9+/]*={0,2}$",
+            "title": "Evidence Content (base64 encoded)",
+            "description": "Base64 encoded content of the evidence document",
+            "media": {
+              "binaryEncoding": "base64"
+              }
+          },
+          "evidenceText": {
+            "type": "string",
+            "title": "Evidence Content (Text)",
+            "description": "Evidence included as plain text such as the output of a command or log."
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date",
+            "title": "Last Updated",
+            "description": "Date when the evidence was last updated"
+          }
+        }
+      }
+    },
+    "contactInfo": {
+      "type": "object",
+      "properties": {
+        "contactName": {
+          "title": "Name",
+          "type": "string"
+        },
+        "contactEmail": {
+          "type": "string",
+          "title": "Email",
+          "format": "email"
+        },
+        "contactPhone": {
+          "type": "string",
+          "title": "Phone Number",
+          "pattern": "^\\+?[1-9]\\d{1,14}$",
+          "description": "Phone number in E.164 format (e.g. +12025550123)"
+        }
+      }
+    },
+    "markdownEditor": {
+        "type": "string",
+        "format": "markdown",
+        "options": {
+          "simplemde": {
+            "toolbar": ["bold", "italic", "heading", "unordered-list", "ordered-list", "|", "link", "code", "|", "preview", "fullscreen", "side-by-side", "guide"],
+            "spellChecker": true
+          }
+        }
+      }
+  }
+}

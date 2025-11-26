@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>FedRAMP 20x Assessment JSON Editor</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='columns'>
+        <h1 class='col-md-12'>FedRAMP Machine Readable JSON Editor</h1>
+    </div>
+
+    <div><a href="http://localhost:63342/docs/tools/20xAssesmentTool.html?schema=http://localhost:63342/docs/tools/templates/20xAssesmentForm.json">Load with local schema</a></div>
+
+
+
+    <div class='columns'>
+        <div class='column col-md-12'>
+            <button id='save' class='tiny'>Save Result As File</button>
+            <button id='restore' class='secondary tiny'>Restore to Default</button>
+            <input type="file" id="file-input" accept=".json" class='tiny'>
+            <span id='valid_indicator' class='label'></span>
+        </div>
+    </div>
+    <div class='columns'>
+        <div class='column col-md-12' id='editor'></div>
+    </div>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const schemaUrl = params.get('schema') || 'http://localhost:63342/docs/tools/20xAssesmentTool/20xAssesmentForm.json';
+    const filename = params.get('data');
+    // const dataUrl = "https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/data/" + filename;
+    let data = null;
+    const editor = document.getElementById('editor');
+
+    document.getElementById('file-input').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                data = JSON.parse(e.target.result);
+                location.reload();
+            };
+            reader.readAsText(file);
+        }
+    });
+
+    const schemaPromise = fetch(schemaUrl).then(response => response.json());
+    const dataPromise = data ? fetch(dataUrl).then(response => response.json()) : Promise.resolve(null);
+
+    Promise.all([schemaPromise, dataPromise])
+        .then(([schema, data]) => {
+            // Apply headerTemplate to info.releases in the schema
+            if (schema.properties && schema.properties.info && schema.properties.info.properties && schema.properties.info.properties.releases) {
+                schema.properties.info.properties.releases.items.headerTemplate = "{{self.id}}";
+            }
+
+            // Add headerTemplate for any object with the title "comments"
+            function addCommentHeaders(obj) {
+                for (const key in obj) {
+                    if (obj[key] && typeof obj[key] === 'object') {
+                        if (obj[key].title === 'Comment') {
+                            obj[key].items.headerTemplate = "REPLACE ME WITH COMMENT HEADER";
+                        }
+                        addCommentHeaders(obj[key]);
+                    }
+                }
+            }
+
+            // Remove description from schema
+            if (schema.description) {schema.description = "";}
+                const options = {
+                    schema: schema,
+                    theme: 'spectre',
+                    iconlib: 'spectre',
+                    ajax: true,
+                    // object_layout: 'grid'
+                };
+                if (data) {
+                    options.startval = data;
+                }
+                const jseditor = new JSONEditor(editor, options);
+
+                jseditor.on('ready', function () {
+                    function handleSaveButtonClick(e) {
+                        e.preventDefault();
+                        const output = jseditor.getValue();
+                        output.$schema = "https://json-schema.org/draft/2020-12/schema";
+                        output.$id = "FedRAMP.schema.json";
+
+                        const blob = new Blob([JSON.stringify(output, null, 2)], {
+                            type: "application/json;charset=utf-8"
+                        });
+
+                        if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                            window.navigator.msSaveOrOpenBlob(blob, filename);
+                        } else {
+                            const a = document.createElement('a');
+                            a.download = filename || 'fedramp-output.json';
+                            a.href = URL.createObjectURL(blob);
+                            a.dataset.downloadurl = ['text/plain', a.download, a.href].join(':');
+
+                            a.dispatchEvent(new MouseEvent('click', {
+                                'view': window,
+                                'bubbles': true,
+                                'cancelable': false
+                            }));
+                        }
+                    }
+
+                    // button.addEventListener('click', handleSaveButtonClick, false);
+                    // Hook up the Restore to Default button
+                    document.getElementById('save').addEventListener('click', handleSaveButtonClick);
+                    // Hook up the Restore to Default button
+                    document.getElementById('restore').addEventListener('click', function () {
+                        jseditor.setValue(data);
+
+                        // Hook up the validation indicator to update its
+                        // status whenever the editor changes
+                        jseditor.on('change', function () {
+                            // Get an array of errors from the validator
+                            var errors = editor.validate();
+
+                            var indicator = document.getElementById('valid_indicator');
+
+                            // Not valid
+                            if (errors.length) {
+                                indicator.className = 'label alert';
+                                indicator.textContent = 'not valid';
+                            }
+                            // Valid
+                            else {
+                                indicator.className = 'label success';
+                                indicator.textContent = 'valid';
+                            }
+                        });
+                    });
+                });
+            }
+        )
+    ;
+
+
+</script>
+</body>
+</html>
