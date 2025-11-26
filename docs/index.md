@@ -1,30 +1,48 @@
 # 20x Phase Two
 
-This page is the authoritative repository for FedRAMP 20x Phase Two pilot requirements.
+This page is the authoritative repository for FedRAMP 20x Phase Two pilot
+requirements.
 
-!!! tip "Machine-Readable Docs"
-    Machine-readable requirements are available in the [FedRAMP 20x Machine Readable Docs](https://github.com/FedRAMP/docs) repository on GitHub. Participants are strongly encouraged to leverage the underlying machine-readable documentation to simplify addressing all requirements and recommendations. All of the materials on this page are generated automatically from these machine-readable materials.
+!!! tip "Machine-Readable Docs" Machine-readable requirements are available in
+the [FedRAMP 20x Machine Readable Docs](https://github.com/FedRAMP/docs)
+repository on GitHub. Participants are strongly encouraged to leverage the
+underlying machine-readable documentation to simplify addressing all
+requirements and recommendations. All of the materials on this page are
+generated automatically from these machine-readable materials.
 
 ## Important Documentation Guidelines
 
 ### FedRAMP Defined Terms
 
-Terms with FedRAMP-specific meaning are _italicized_ in all FedRAMP 20x documents. Some of these terms may be familiar from historical use, others may at times be similar to commonly used terms, but **any time a FedRAMP definition exists for a term it is authoritative in the context of FedRAMP 20x.** 
+Terms with FedRAMP-specific meaning are _italicized_ in all FedRAMP 20x
+documents. Some of these terms may be familiar from historical use, others may
+at times be similar to commonly used terms, but **any time a FedRAMP definition
+exists for a term it is authoritative in the context of FedRAMP 20x.**
 
-If a term is not defined by FedRAMP then the rules of common plain language apply - don't overthink it.
+If a term is not defined by FedRAMP then the rules of common plain language
+apply - don't overthink it.
 
 ### Capitalized Key Words
 
-The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this documentation are to be interpreted as described in [IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+documentation are to be interpreted as described in
+[IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 !!! warning "Confusion over SHOULD"
-    The use of "SHOULD" does not just make something optional for fun - there must be a valid reason not to implement a recommendation that has been carefully weighed. For FedRAMP 20x, cloud service providers MUST document this reasoning in their authorization package. 
-    
-    Cloud service providers who do not implement recommendations may also be assessed as being less secure than those who do and may be less likely to be reused by federal agencies.
 
+    The use of "SHOULD" does not just make something optional for fun - there 
+    must be a valid reason not to implement a recommendation that has been 
+    carefully weighed. For FedRAMP 20x, cloud service providers MUST document 
+    this reasoning in their authorization package.
+
+    Cloud service providers who do not implement recommendations may also be 
+    assessed as being less secure than those who do and may be less likely 
+    to be reused by federal agencies.
 
 ??? quote "RFC 2119 Key Word Summary"
-    1. MUST   This word, or the terms "REQUIRED" or "SHALL", mean that the
+
+    1. MUST This word, or the terms "REQUIRED" or "SHALL", mean that the
     definition is an absolute requirement of the specification.
 
     2. MUST NOT   This phrase, or the phrase "SHALL NOT", mean that the
@@ -52,3 +70,43 @@ The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", 
     MUST be prepared to interoperate with another implementation which
     does not include the option (except, of course, for the feature the
     option provides.)
+
+## Total Requirements and Recommendations
+
+The tables below have summary information about the number of Key Security
+Indicators, requirements, and recommendations included in 20x Phase Two
+materials.
+
+### Key Security Indicators
+
+!!! info "Key Security Indicators only apply to cloud service providers."
+
+| Low Impact   | Moderate Impact   |
+| ------------ | ----------------- |
+| 60           | 65                |
+
+### Authorization by FedRAMP Requirements and Recommendations
+
+All requirements and recommendations must be addressed prior to
+submission for authorization.
+
+#### Providers
+
+| Keyword      | Low | Moderate |
+|--------------|-----|----------|
+| MUST         | 89   | 90      |
+| SHOULD       | 38   | 39      |
+| MUST NOT     | 3   | 3      |
+| SHOULD NOT   | 4   | 4      |
+| MAY          | 14   | 14      |
+| **Total**    | **148**   | **150**      |
+
+#### Assessors
+
+| Keyword      | Low | Moderate |
+|--------------|-----|----------|
+| MUST         | 10   | 10      |
+| SHOULD       | 3   | 3      |
+| MUST NOT     | 2   | 2      |
+| MAY          | 2   | 2      |
+| **Total**    | **17**   | **17**      |

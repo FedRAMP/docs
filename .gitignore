@@ -6,6 +6,7 @@ out
 dist
 *.tgz
 /site
+.gemini
 
 # code coverage
 coverage

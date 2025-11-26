@@ -34,6 +34,12 @@
     },
     "releases": [
       {
+        "id": "25.11C",
+        "published_date": "2025-11-26",
+        "description": "No material changes to content; underlying JSON replaced the \"All\" option for \"affects\" with a breakout of all affected entities.",
+        "public_comment": false
+      },
+      {
         "id": "25.11B",
         "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
@@ -187,7 +193,7 @@
           {
             "id": "FRR-MAS-AY-01",
             "statement": "Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the _cloud service offering_ for FedRAMP. For more, see https://fedramp.gov/scope.",
-            "affects": ["All"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Scope of FedRAMP",
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
@@ -201,7 +207,7 @@
           {
             "id": "FRR-MAS-AY-02",
             "statement": "Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore not included in the _cloud service offering_ for FedRAMP. For more, see fedramp.gov/scope.",
-            "affects": ["All"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Non-Cloud-Based Software",
             "primary_key_word": "MUST",
             "reference": "Overall Scope of FedRAMP",
@@ -215,7 +221,7 @@
           {
             "id": "FRR-MAS-AY-03",
             "statement": "_Information resources_ (including _third-party information resources_) that do not meet the conditions in FRR-MAS-01 are not included in the _cloud service offering_ for FedRAMP (_FRR-MAS-02_).",
-            "affects": ["All"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Exclusion of Non-Impacting Information Resources",
             "primary_key_word": "MUST",
             "impact": {
@@ -227,7 +233,7 @@
           {
             "id": "FRR-MAS-AY-04",
             "statement": "_Information resources_ (including _third-party information resources_) MAY vary by impact level as appropriate to the level of information _handled_ or impacted by the information resource (_FRR-MAS-05_).",
-            "affects": ["All"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Impact Level Variations",
             "primary_key_word": "MAY",
             "impact": {
@@ -239,7 +245,7 @@
           {
             "id": "FRR-MAS-AY-05",
             "statement": "All parties SHOULD review best practices and technical assistance provided separately by FedRAMP for help with applying the Minimum Assessment Scope as needed.",
-            "affects": ["All"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Review of Best Practices",
             "primary_key_word": "SHOULD",
             "impact": {
@@ -251,7 +257,7 @@
           {
             "id": "FRR-MAS-AY-06",
             "statement": "All aspects of the _cloud service offering_ are determined and maintained by the cloud service provider in accordance with related FedRAMP authorization requirements and documented by the cloud service provider in their assessment and authorization materials.",
-            "affects": ["Providers"],
+            "affects": ["Providers", "Agencies", "Assessors", "FedRAMP"],
             "name": "Cloud Service Offering Determination",
             "primary_key_word": "MUST",
             "impact": {

@@ -14,9 +14,10 @@
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-11-26 " 
     **History:**
 
+    - **25.11C (2025-11-26):** No material changes to content; underlying JSON replaced the &quot;All&quot; option for &quot;affects&quot; with a breakout of all affected entities.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.
     - **25.10A (2025-10-17):** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
