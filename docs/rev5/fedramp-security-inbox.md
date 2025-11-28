@@ -190,7 +190,7 @@ This set of requirements and recommendations include explicit requirements that 
     **Applies to:** Low, Moderate, High
     
 
-### FRR-FSI-13 Acknowedgement of Receipt
+### FRR-FSI-13 Acknowledgment of Receipt
 
 !!! quote ""
     Providers SHOULD _promptly_ and automatically acknowledge the receipt of messages received from FedRAMP in their _FedRAMP Security Inbox_.

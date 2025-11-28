@@ -269,15 +269,13 @@
           {
             "id": "FRR-FSI-13",
             "statement": "Providers SHOULD _promptly_ and automatically acknowledge the receipt of messages received from FedRAMP in their _FedRAMP Security Inbox_.",
-            "name": "Acknowedgement of Receipt",
+            "name": "Acknowledgment of Receipt",
             "impact": {
               "low": true,
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
