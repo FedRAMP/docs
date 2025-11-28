@@ -1,24 +1,25 @@
-# Collaborative Continuous Monitoring Standard
+# Collaborative Continuous Monitoring
 
 
 !!! info "Effective Date(s) & Overall Applicability for Rev5"
       - **Optional** (Open Beta) beginning 2026-02-02.
       - **Providers MUST notify FedRAMP of intent to participate in the Collaborative Continuous Monitoring Rev5 Open Beta by submitting a sign-up form to FedRAMP.**
-      - Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 as part of the Open Beta.
-      - Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.
+      - Rev5 Authorized providers MAY adopt this process beginning February 2, 2026 as part of the Open Beta.
+      - Providers MUST plan to address all requirements and recommendations in this process by the end of the Open Beta on May 22, 2026.
       - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s participation in this beta.
-      - FedRAMP recommends that participants in the Collaborative Continuous Mounting beta also adopt the Vulnerability Detection and Response standard and the Significant Change Notification standard.
+      - FedRAMP recommends that participants in the Collaborative Continuous Mounting beta also adopt the Vulnerability Detection and Response process and the Significant Change Notifications process.
       
       - **Beta Sign-up Form:** [https://docs.google.com/forms/d/e/1FAIpQLSeFTHtUjXCmAUprCGrMLpgaN2kmL08EluzHvnTzAC4lTCfEVg/viewform](https://docs.google.com/forms/d/e/1FAIpQLSeFTHtUjXCmAUprCGrMLpgaN2kmL08EluzHvnTzAC4lTCfEVg/viewform)
 
 
 Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.
 
-The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
+The concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This process attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Initial release of the Collaborative Continuous Monitoring Standard (CCM) for the FedRAMP 20x Phase Two pilot.
 
@@ -43,7 +44,7 @@ The concept behind collaborative continuous monitoring is unique to government c
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-CCM-01 Ongoing Authorization Reports
 

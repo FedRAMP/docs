@@ -10,19 +10,26 @@ site_url = "https://fedramp.gov/docs"
 nav = [
     {"Phase Two (Current)" = [
         {"Overview" = "index.md"},
-        {"Documentation Guidelines" = "/#important-documentation-guidelines"},
-        {"Definitions" = "fedramp-definitions.md"},
-        {"Key Security Indicators" = "key-security-indicators.md"},
-        {"Minimum Assessment Scope" = "minimum-assessment-scope.md"},
-        {"Authorization Data Sharing" = "authorization-data-sharing.md"},
-        {"Vulnerability Detection and Response" = "vulnerability-detection-and-response.md"},
-        {"Significant Change Notification" = "significant-change-notifications.md"},
-        {"Collaborative Continous Monitoring" = "collaborative-continuous-monitoring.md"},
-        {"Recommended Secure Configuration" = "recommended-secure-configuration.md"},
-        {"FedRAMP Security Inbox" = "fedramp-security-inbox.md"},
-        {"Persistent Validation and Assessment" = "persistent-validation-and-assessment.md"},
-        {"Incident Communications Procedures" = "incident-communications-procedures.md"},
-        {"Using Cryptographic Modules" = "using-cryptographic-modules.md"},
+        {"Overview" = [
+            {"Introduction" = "/docs"},
+            {"Documentation Guidelines" = "guidelines.md"},
+            {"Definitions" = "fedramp-definitions.md"},
+        ]},
+        {"Foundation" = [
+            {"Key Security Indicators" = "key-security-indicators.md"},
+            {"Minimum Assessment Scope" = "minimum-assessment-scope.md"},
+            {"Using Cryptographic Modules" = "using-cryptographic-modules.md"},
+        ]},
+        {"Structure" = [
+            {"Authorization Data Sharing" = "authorization-data-sharing.md"},
+            {"Vulnerability Detection and Response" = "vulnerability-detection-and-response.md"},
+            {"Significant Change Notifications" = "significant-change-notifications.md"},
+            {"Collaborative Continous Monitoring" = "collaborative-continuous-monitoring.md"},
+            {"Recommended Secure Configuration" = "recommended-secure-configuration.md"},
+            {"FedRAMP Security Inbox" = "fedramp-security-inbox.md"},
+            {"Persistent Validation and Assessment" = "persistent-validation-and-assessment.md"},
+            {"Incident Communications Procedures" = "incident-communications-procedures.md"},            
+        ]}
     ]},
     {"Phase One (Archive)" = [
         {"P1 Intro" = "20xP1/intro.md"},
@@ -31,16 +38,18 @@ nav = [
     ]},
     {"Rev 5 Balance" = [
         {"Overview" = "rev5/index.md"},
-        {"Overview" = "rev5/"},
+        {"Overview" = [
+        {"Introduction" = "rev5/"},
         {"Documentation Guidelines" = "rev5/guidelines.md"},
         {"Definitions" = "rev5/fedramp-definitions.md"},
+        ]},
         {"Mandatory Balance" = [
             {"Recommended Secure Configuration" = "rev5/recommended-secure-configuration.md"},
             {"FedRAMP Security Inbox" = "rev5/fedramp-security-inbox.md"},
         ]},
         {"Optional Balance" = [
             {"Minimum Assessment Scope" = "rev5/minimum-assessment-scope.md"},                
-            {"Significant Change Notification" = "rev5/significant-change-notifications.md"},
+            {"Significant Change Notifications" = "rev5/significant-change-notifications.md"},
             {"Authorization Data Sharing" = "rev5/authorization-data-sharing.md"},
             {"Vulnerability Detection and Response" = "rev5/vulnerability-detection-and-response.md"},
             {"Collaborative Continous Monitoring" = "rev5/collaborative-continuous-monitoring.md"},
@@ -50,7 +59,7 @@ nav = [
 ]
 
 [project.extra]
-homepage = "https://fedramp.gov/20x/phase-two"
+homepage = "https://fedramp.gov/docs"
 
 [project.theme]
 logo = "assets/fedramp-logo-just-letters.svg"

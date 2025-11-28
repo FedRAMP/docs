@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Collaborative Continuous Monitoring Standard",
+    "name": "Collaborative Continuous Monitoring",
     "short_name": "CCM",
     "effective": {
       "rev5": {
@@ -13,10 +13,10 @@
         "end_date": "2026-05-22",
         "comments": [
           "**Providers MUST notify FedRAMP of intent to participate in the Collaborative Continuous Monitoring Rev5 Open Beta by submitting a sign-up form to FedRAMP.**",
-          "Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 as part of the Open Beta.",
-          "Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.",
+          "Rev5 Authorized providers MAY adopt this process beginning February 2, 2026 as part of the Open Beta.",
+          "Providers MUST plan to address all requirements and recommendations in this process by the end of the Open Beta on May 22, 2026.",
           "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's participation in this beta.",
-          "FedRAMP recommends that participants in the Collaborative Continuous Mounting beta also adopt the Vulnerability Detection and Response standard and the Significant Change Notification standard."
+          "FedRAMP recommends that participants in the Collaborative Continuous Mounting beta also adopt the Vulnerability Detection and Response process and the Significant Change Notifications process."
         ]
       },
       "20x": {
@@ -32,6 +32,12 @@
       }
     },
     "releases": [
+      {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
+        "public_comment": false
+      },
       {
         "id": "25.11B",
         "published_date": "2025-11-24",
@@ -69,7 +75,7 @@
           "description": "directs the Administrator of the General Services Administration to \"develop, coordinate, and implement a process … including, as appropriate, oversight of continuous monitoring of cloud computing products and services\""
         }
       ],
-      "purpose": "Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.\n\nThe concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This standard attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.",
+      "purpose": "Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.\n\nThe concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This process attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.",
       "expected_outcomes": [
         "Cloud service providers will operate their services and share additional information with agency customers to ensure they can meet their responsibilities and obligations for safely and securely operating the service",
         "Federal agencies will have streamlined access to the information they actually need to make ongoing security and authorization decisions while having support from government-wide policies that demonstrate the different responsibilities and obligations for operating cloud services"
@@ -80,7 +86,7 @@
     "CCM": {
       "base": {
         "id": "FRR-CCM",
-        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
         "name": "Requirements & Recommendations",
         "requirements": [
           {

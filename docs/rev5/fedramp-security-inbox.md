@@ -1,4 +1,4 @@
-# FedRAMP Security Inbox requirements
+# FedRAMP Security Inbox
 
 
 !!! info "Effective Date(s) & Overall Applicability for Rev5"
@@ -54,7 +54,7 @@ This set of requirements and recommendations include explicit requirements that 
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements apply ALWAYS to FedRAMP and ALL cloud services listed in the FedRAMP Marketplace based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements apply ALWAYS to FedRAMP and ALL cloud services listed in the FedRAMP Marketplace based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-FSI-01 Verified Emails
 

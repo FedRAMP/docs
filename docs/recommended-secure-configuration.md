@@ -1,4 +1,4 @@
-# Recommended Secure Configuration Standard
+# Recommended Secure Configuration
 
 !!! info "Effective Date(s) & Overall Applicability for 20x"
       - **Required** (Phase 2 Pilot)
@@ -8,13 +8,13 @@
 
 All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.
 
-This standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
+This process outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers.
 
 ??? tip "Version 25.11B published on 2025-11-24 " 
     **History:**
 
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
-    - **25.11A (2025-11-18):** Initial release of the Recommended Secure Configuration Standard (RSC) for the FedRAMP 20x Phase Two pilot.
+    - **25.11A (2025-11-18):** Initial release of the Recommended Secure Configuration (RSC) process for the FedRAMP 20x Phase Two pilot.
 
 
 ??? abstract "Background & Authority"
@@ -36,7 +36,7 @@ This standard outlines simple requirements for FedRAMP authorized cloud service 
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-RSC-01 Top-Level Administrative Accounts Guidance
 

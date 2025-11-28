@@ -22,6 +22,12 @@
     },
     "releases": [
       {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No effective/material changes; adjusted some KSI-AFR indcators to reference \"process\" instead of \"standard\" and added a note to KSI-AFR-02 addressing the potential infinite loop.",
+        "public_comment": false
+      },
+      {
         "id": "25.11B",
         "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
@@ -169,7 +175,7 @@
         {
           "id": "KSI-AFR-01",
           "name": "Minimum Assessment Scope",
-          "statement": "Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
+          "statement": "Apply the FedRAMP Minimum Assessment Scope (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -186,12 +192,13 @@
             "moderate": true
           },
           "reference": "Key Security Indicators",
-          "reference_url": "https://fedramp.gov/docs/key-security-indicators"
+          "reference_url": "https://fedramp.gov/docs/key-security-indicators",
+          "note": "This KSI is not intended to create an infinite loop; unlike other KSI-AFR themed indicators, this KSI is addressed by otherwise addressing all the KSIs. Providers and assessors may use this KSI to summarize the approach, coverage, status, etc. but are not expected to include all KSIs within this KSI in an infinite loop."
         },
         {
           "id": "KSI-AFR-03",
           "name": "Authorization Data Sharing",
-          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.",
+          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) process and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -240,7 +247,7 @@
         {
           "id": "KSI-AFR-04",
           "name": "Vulnerability Detection and Response",
-          "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.",
+          "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) process and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -413,7 +420,7 @@
         {
           "id": "KSI-AFR-05",
           "name": "Significant Change Notifications",
-          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.",
+          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) process and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -494,7 +501,7 @@
         {
           "id": "KSI-AFR-06",
           "name": "Collaborative Continuous Monitoring",
-          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.",
+          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) process and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -505,7 +512,7 @@
         {
           "id": "KSI-AFR-07",
           "name": "Recommended Secure Configuration",
-          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.",
+          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance process and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -527,7 +534,7 @@
         {
           "id": "KSI-AFR-09",
           "name": "Persistent Validation and Assessment",
-          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.",
+          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) process, and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true
@@ -549,7 +556,7 @@
         {
           "id": "KSI-AFR-11",
           "name": "Using Cryptographic Modules",
-          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.",
+          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) guidance and persistently address all related requirements and recommendations.",
           "impact": {
             "low": true,
             "moderate": true

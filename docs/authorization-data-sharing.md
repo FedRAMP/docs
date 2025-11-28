@@ -1,4 +1,4 @@
-# Authorization Data Sharing Standard
+# Authorization Data Sharing
 
 !!! info "Effective Date(s) & Overall Applicability for 20x"
       - **Required** (Phase 2 Pilot)
@@ -10,15 +10,16 @@ Modern cloud services store and share security and compliance information in con
 
 This security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.
 
-The FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.
+FedRAMP&#x27;s Authorization Data Sharing process provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.
 
-At the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.
+At the initial release of this process there will not be many platforms that directly support the requirements in this process. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.
 
 _* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
@@ -45,7 +46,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-ADS-01 Public Information
 
@@ -269,7 +270,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 ### FRR-ADS-EX-01 Legacy Self-Managed Repository Exception
 
 !!! quote ""
-    Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.
+    Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this Authorization Data Sharing document until future notice.
 
 
     **Applies to:** Low, Moderate, High
@@ -288,7 +289,7 @@ _* Providers with questions about this should consult with a lawyer who speciali
 
 ### FRA-ADS
 
-**Purpose:** This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP _authorization data_ Sharing Standard.
+**Purpose:** This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP Authorization Data Sharing process.
 
 **Disclaimer:** Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.
 

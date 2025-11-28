@@ -5,15 +5,16 @@
       - FedRAMP 20x pilot participants MUST apply these definitions to all FedRAMP 20x requirements and recommendations.
 
 
-This document consolidates formal FedRAMP definitions for terms used in FedRAMP standards.
+This document consolidates formal FedRAMP definitions for terms used in FedRAMP 20x processes and documentation.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates and new definitions added for the FedRAMP 20x Phase Two pilot.
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; no substantive changes.
-    - **25.09A (2025-09-10):** Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response standard.
+    - **25.09A (2025-09-10):** Added FRD-ALL-18 through FRD-ALL-39 aligned with the Vulnerability Detection and Response process.
 
 
 ??? abstract "Background & Authority"
@@ -54,7 +55,7 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 !!! quote ""
     All entities who participate in the FedRAMP assessment of a _cloud service offering_ in the context of a FedRAMP program authorization. This always includes FedRAMP and any FedRAMP recognized independent assessor contracted by the provider to perform a FedRAMP assessment.
 
-    **Note:** This standard identifies the requirements for an assessment and authorization performed by FedRAMP prior to any _agency_ use of the _cloud service offering_, therefore _agency_ assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials _agency_ authorization teams need to assess the _cloud service offering_ for _agency_ use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.
+    **Note:** This process identifies the requirements for an assessment and authorization performed by FedRAMP prior to any _agency_ use of the _cloud service offering_, therefore _agency_ assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials _agency_ authorization teams need to assess the _cloud service offering_ for _agency_ use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.
 
     **Also:** all necessary assessors
 
@@ -99,7 +100,7 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 ### Cloud Service Offering
 
 !!! quote ""
-    A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Standard.
+    A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Scope.
 
     **Also:** cloud service offering, cloud service offerings
 
@@ -281,7 +282,7 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 ### Ongoing Authorization Report (OAR)
 
 !!! quote ""
-    A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
+    A _regular_ report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.
 
     **Also:** ongoing authorization report, OAR, OARs
 
@@ -359,7 +360,7 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 ### Quarterly Review
 
 !!! quote ""
-    A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring Standard.
+    A _regular_ synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.
 
     **Also:** quarterly review, quarterly reviews
 
@@ -436,7 +437,7 @@ This document consolidates formal FedRAMP definitions for terms used in FedRAMP 
 ### Trust Center
 
 !!! quote ""
-    A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP _authorization data_ Sharing Standard to be FedRAMP-compatible.
+    A secure repository or service used by cloud service providers to store and share _authorization data_. _Trust centers_ are the complete and definitive source for _authorization data_ and must meet the requirements outlined in the FedRAMP Authorization Data Sharing process to be FedRAMP-compatible.
 
     **Note:** In FedRAMP documentation, all references to _trust centers_ indicate FedRAMP-compatible _trust centers_ unless otherwise specified.
 

@@ -8,9 +8,10 @@
 
 Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No effective/material changes; adjusted some KSI-AFR indcators to reference &quot;process&quot; instead of &quot;standard&quot; and added a note to KSI-AFR-02 addressing the potential infinite loop.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates Key Security Indicators for the FedRAMP 20x Phase Two pilot, including underlying structural changes to machine-readable docs; Renamed KSI &quot;indicator&quot; property to &quot;theme&quot; and KSI &quot;requirements&quot; property to &quot;indicators&quot; to match current naming conventions..
     - **25.10A (2025-10-17):** Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
@@ -91,7 +92,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Apply the FedRAMP Minimum Assessment Standard (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.
+    Apply the FedRAMP Minimum Assessment Scope (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.
 
 
     **Reference:** [Minimum Assessment Scope](https://fedramp.gov/docs/minimum-assessment-scope)
@@ -105,6 +106,8 @@ Modern cloud services use automated or code-driven configuration management and 
 
     Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.
 
+    **Note:** This KSI is not intended to create an infinite loop; unlike other KSI-AFR themed indicators, this KSI is addressed by otherwise addressing all the KSIs. Providers and assessors may use this KSI to summarize the approach, coverage, status, etc. but are not expected to include all KSIs within this KSI in an infinite loop.
+
 
     **Reference:** [Key Security Indicators](https://fedramp.gov/docs/key-security-indicators)
 
@@ -115,7 +118,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) standard and persistently address all related requirements and recommendations.
+    Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) process and persistently address all related requirements and recommendations.
 
 
     **Related SP 800-53 Controls:** AC-3, AC-4, AU-2, AU-3, AU-6, CA-2, IR-4, RA-5, SC-8
@@ -129,7 +132,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) standard and persistently address all related requirements and recommendations.
+    Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) process and persistently address all related requirements and recommendations.
 
 
     **Related SP 800-53 Controls:** CA-2, CA-7, CA-7.6, IR-1, IR-4, IR-4.1, IR-5, IR-5.1, IR-6, IR-6.1, IR-6.2, PM-3, PM-5, PM-31, RA-2, RA-2.1, RA-3, RA-3.3, RA-5, RA-5.2, RA-5.3, RA-5.4, RA-5.5, RA-5.6, RA-5.7, RA-5.11, RA-9, RA-10, SI-2, SI-2.1, SI-2.2, SI-2.4, SI-2.5, SI-3, SI-3.1, SI-3.2, SI-4, SI-4.2, SI-4.3, SI-4.7
@@ -143,7 +146,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) standard and persistently address all related requirements and recommendations.
+    Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) process and persistently address all related requirements and recommendations.
 
 
     **Related SP 800-53 Controls:** CA-7.4, CM-3.4, CM-4, CM-7.1, AU-5, CA-5, CA-7, RA-5, RA-5.2, SA-22, SI-2, SI-2.2, SI-3, SI-5, SI-7.7, SI-10, SI-11
@@ -157,7 +160,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) standard and persistently address all related requirements and recommendations.
+    Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) process and persistently address all related requirements and recommendations.
 
 
     **Reference:** [Collaborative Continuous Monitoring](https://fedramp.gov/docs/collaborative-continuous-monitoring)
@@ -169,7 +172,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance standard and persistently address all related requirements and recommendations.
+    Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance process and persistently address all related requirements and recommendations.
 
 
     **Reference:** [Recommended Secure Configuration](https://fedramp.gov/docs/recommended-secure-configuration)
@@ -193,7 +196,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) standard, and persistently address all related requirements and recommendations.
+    Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) process, and persistently address all related requirements and recommendations.
 
 
     **Reference:** [Persistent Validation and Assessment](https://fedramp.gov/docs/persistent-validation-and-assessment)
@@ -217,7 +220,7 @@ Modern cloud services use automated or code-driven configuration management and 
 
 !!! quote ""
 
-    Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) policy and persistently address all related requirements and recommendations.
+    Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) guidance and persistently address all related requirements and recommendations.
 
 
     **Reference:** [Using Cryptographic Modules](https://fedramp.gov/docs/using-cryptographic-modules)

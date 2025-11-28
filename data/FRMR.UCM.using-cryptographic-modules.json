@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Using Cryptographic Modules Policy",
+    "name": "Using Cryptographic Modules",
     "short_name": "UCM",
     "effective": {
       "rev5": {
@@ -22,6 +22,12 @@
     },
     "releases": [
       {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
+        "public_comment": false
+      },
+      {
         "id": "25.11B",
         "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
@@ -35,14 +41,14 @@
       }
     ],
     "front_matter": {
-      "purpose": "This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x standard style and clarifies the implementation expectations for FedRAMP 20x.\n\nThe notable change from the default Rev5 Policy for Cryptographic Module Selection and Use is that the use of cryptographic modules (or update streams) validated under the NIST Cryptographic Module Validation Program are not explicitly required when cryptographic modules are used to protect federal customer data in cloud service offerings seeking FedRAMP authorization at the Moderate impact level. This acknowledges that not all Moderate impact federal customer data is considered “sensitive” and allows both cloud service providers and agency customers to make risk-based decisions about their use of Moderate impact services for agency use cases that do not include sensitive data.\n\nFedRAMP recommends that cloud service providers seeking FedRAMP authorization at the Moderate impact level use such cryptographic modules whenever technically feasible and reasonable but acknowledges there may be sound reasons not to do so across the board at the Moderate impact level. As always, the reasoning and justification for such decisions must be documented by the cloud service provider."
+      "purpose": "This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x style and clarifies the implementation expectations for FedRAMP 20x.\n\nThe notable change from the default Rev5 Policy for Cryptographic Module Selection and Use is that the use of cryptographic modules (or update streams) validated under the NIST Cryptographic Module Validation Program are not explicitly required when cryptographic modules are used to protect federal customer data in cloud service offerings seeking FedRAMP authorization at the Moderate impact level. This acknowledges that not all Moderate impact federal customer data is considered “sensitive” and allows both cloud service providers and agency customers to make risk-based decisions about their use of Moderate impact services for agency use cases that do not include sensitive data.\n\nFedRAMP recommends that cloud service providers seeking FedRAMP authorization at the Moderate impact level use such cryptographic modules whenever technically feasible and reasonable but acknowledges there may be sound reasons not to do so across the board at the Moderate impact level. As always, the reasoning and justification for such decisions must be documented by the cloud service provider."
     }
   },
   "FRR": {
     "UCM": {
       "base": {
         "id": "FRR-UCM",
-        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
         "name": "Requirements & Recommendations",
         "requirements": [
           {
@@ -54,9 +60,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -68,9 +72,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -82,9 +84,7 @@
               "moderate": true,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -96,9 +96,7 @@
               "high": true
             },
             "name": "Update Streams (High)",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           }
         ]

@@ -1,4 +1,4 @@
-# Significant Change Notification Requirements
+# Significant Change Notifications
 
 !!! info "Effective Date(s) & Overall Applicability for 20x"
       - **Required** (Phase 2 Pilot)
@@ -6,9 +6,9 @@
       - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
 
 
-The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
+The Significant Change Notification (SCN) process establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.
 
-This standard broadly identifies four types of significant changes, from least impactful to most impactful:
+This process broadly identifies four types of significant changes, from least impactful to most impactful:
 1. Routine Recurring
 2. Adaptive
 3. Transformative
@@ -16,9 +16,10 @@ This standard broadly identifies four types of significant changes, from least i
 
 These categories, and the resulting requirements, apply only to significant changes.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with &quot;timeframe&quot; rulesets in other FedRAMP standards
     - **25.10A (2025-10-17):** minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.
@@ -169,7 +170,7 @@ These categories, and the resulting requirements, apply only to significant chan
 ### FRR-SCN-RR-01
 
 !!! quote ""
-    Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.
+    Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this process.
 
 
     **Applies to:** Low, Moderate, High
@@ -296,7 +297,7 @@ These categories, and the resulting requirements, apply only to significant chan
 ## Exceptions
 
 !!! info ""
-    These exceptions MAY override some or all of the FedRAMP requirements for this standard.
+    These exceptions MAY override some or all of the FedRAMP requirements for this process.
 
 ### FRR-SCN-EX-01
 

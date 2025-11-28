@@ -6,15 +6,7 @@
     "short_name": "PVA",
     "effective": {
       "rev5": {
-        "is": "optional",
-        "signup_url": "",
-        "current_status": "Closed Beta",
-        "start_date": "2025-09-01",
-        "end_date": "2025-12-31",
-        "comments": [
-          "Rev5 Authorized providers MUST NOT adopt this standard without participating in a formal beta process with FedRAMP.",
-          "Rev5 providers MUST first align with the Significant Change Notification Standard and the Vulnerability Detection and Response Standard."
-        ]
+        "is": "no"
       },
       "20x": {
         "is": "required",
@@ -30,6 +22,12 @@
     },
     "releases": [
       {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate and removed incorrect Rev5 effective information from JSON.",
+        "public_comment": false
+      },
+      {
         "id": "25.11B",
         "published_date": "2025-11-24",
         "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
@@ -38,7 +36,7 @@
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
-        "description": "Initial release of the Persistent Validation and Assessment standard for the FedRAMP 20x Phase Two pilot.",
+        "description": "Initial release of the Persistent Validation and Assessment process for the FedRAMP 20x Phase Two pilot.",
         "public_comment": true,
         "related_rfcs": [
           {
@@ -79,7 +77,7 @@
       "base": {
         "id": "FRR-PVA",
         "name": "Requirements & Recommendations",
-        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services and those seeking authorization based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services and those seeking authorization based on the current Effective Date(s) and Overall Applicability of this document.",
         "requirements": [
           {
             "id": "FRR-PVA-01",
@@ -90,51 +88,43 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
             "id": "FRR-PVA-02",
             "name": "Failures As Vulnerabilities",
-            "statement": "Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response Standard for such findings.",
+            "statement": "Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response process for such findings.",
             "impact": {
               "low": true,
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
             "id": "FRR-PVA-03",
-            "statement": "Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response Standard.",
+            "statement": "Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response process.",
             "name": "Report Persistent Validation",
             "impact": {
               "low": true,
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
             "id": "FRR-PVA-04",
             "name": "Track Significant Changes",
-            "statement": "Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification Standard; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.",
+            "statement": "Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification process; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.",
             "impact": {
               "low": true,
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -146,9 +136,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "notes": [
               "The option for assessment by FedRAMP directly is limited to cloud services that are explicitly prioritized by FedRAMP, in consultation with the FedRAMP Board and the federal Chief Information Officers Council. During 20x Phase Two this includes AI services that meet certain criteria as shown at https://fedramp.gov/ai.",
@@ -164,9 +152,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": ""
           },
@@ -179,9 +165,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -193,9 +177,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MAY",
             "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments."
           },
@@ -208,9 +190,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MAY"
           },
           {
@@ -222,9 +202,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST",
             "following_information": [
               "The effectiveness, completeness, and integrity of the automated processes that perform validation of the _cloud service offering's_ security posture.",
@@ -241,9 +219,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST"
           },
           {
@@ -255,9 +231,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST"
           },
           {
@@ -269,9 +243,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST"
           },
           {
@@ -283,9 +255,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -297,9 +267,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST NOT"
           },
           {
@@ -312,9 +280,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST"
           },
           {
@@ -326,9 +292,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST"
           },
           {
@@ -340,16 +304,14 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Assessors"
-            ],
+            "affects": ["Assessors"],
             "primary_key_word": "MUST NOT",
             "note": "FedRAMP will make the final authorization decision based on the assessor's findings and other relevant information."
           }
         ]
       },
       "timeframe-low": {
-        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this document; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
         "id": "FRR-PVA-TF-LO",
         "name": "Timeframes - Low",
         "requirements": [
@@ -362,9 +324,7 @@
               "moderate": false,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -376,15 +336,13 @@
               "moderate": false,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           }
         ]
       },
       "timeframe-moderate": {
-        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
+        "application": "This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this document; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.",
         "id": "FRR-PVA-TF-MO",
         "name": "Timeframes - Moderate",
         "requirements": [
@@ -397,9 +355,7 @@
               "moderate": true,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -411,9 +367,7 @@
               "moderate": true,
               "high": false
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           }
         ]

@@ -8,9 +8,10 @@
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
-??? tip "Version 25.11C published on 2025-11-26 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11C (2025-11-26):** No material changes to content; underlying JSON replaced the &quot;All&quot; option for &quot;affects&quot; with a breakout of all affected entities.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.
@@ -94,7 +95,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 ## Application
 
 !!! info ""
-    This section provides general guidance on the application of this standard.
+    This section provides general guidance on the application of this process.
 
 ### FRR-MAS-AY-01 Scope of FedRAMP
 
@@ -156,7 +157,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 ## Exceptions
 
 !!! info ""
-    These exceptions MAY override some or all of the FedRAMP requirements for this standard.
+    These exceptions MAY override some or all of the FedRAMP requirements for this process.
 
 ### FRR-MAS-EX-01 Supplemental Information
 

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Significant Change Notification Requirements",
+    "name": "Significant Change Notifications",
     "short_name": "SCN",
     "effective": {
       "rev5": {
@@ -12,8 +12,8 @@
         "start_date": "2026-02-27",
         "end_date": "2027-12-22",
         "comments": [
-          "Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP Significant Change Request process after February 27, 2026.",
-          "Providers MUST address all requirements and recommendations in this standard prior to full adoption.",
+          "Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this process in place of the traditional FedRAMP Significant Change Request process after February 27, 2026.",
+          "Providers MUST address all requirements and recommendations in this process prior to full adoption.",
           "Rev5 Authorized Providers who switch to the Significant Change Notification process MUST notify FedRAMP by sending an email to info@fedramp.gov.",
           "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's adoption of this policy.",
           "Providers seeking FedRAMP authorization who plan to follow the Significant Change Notification policy must clearly note this in their authorization package",
@@ -33,6 +33,12 @@
       }
     },
     "releases": [
+      {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
+        "public_comment": false
+      },
       {
         "id": "25.11B",
         "published_date": "2025-11-24",
@@ -99,7 +105,7 @@
           "description": "section VI states \"FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.\""
         }
       ],
-      "purpose": "The Significant Change Notification (SCN) standard establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.\n\nThis standard broadly identifies four types of significant changes, from least impactful to most impactful:\n1. Routine Recurring\n2. Adaptive\n3. Transformative\n4. Impact Categorization\n\nThese categories, and the resulting requirements, apply only to significant changes.",
+      "purpose": "The Significant Change Notification (SCN) process establishes conditions for FedRAMP authorized cloud service providers to make most significant changes without requiring advance government approval. Agency authorizing officials who authorize the use of FedRAMP authorized cloud services are expected to account for the risk of cloud service providers making changes to improve the service.\n\nThis process broadly identifies four types of significant changes, from least impactful to most impactful:\n1. Routine Recurring\n2. Adaptive\n3. Transformative\n4. Impact Categorization\n\nThese categories, and the resulting requirements, apply only to significant changes.",
       "expected_outcomes": [
         "Cloud service providers will securely deliver new features and capabilities for government customers at the same speed and pace of delivery for commercial customers, without needing advance government approval",
         "Federal agencies will have equal access to features and capabilities as commercial customers without sacrificing the visibility and information they need to maintain ongoing confidence in the service"
@@ -269,10 +275,8 @@
         "requirements": [
           {
             "id": "FRR-SCN-RR-01",
-            "statement": "Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this standard.",
-            "affects": [
-              "Providers"
-            ],
+            "statement": "Providers SHOULD NOT make formal Significant Change Notifications for _routine recurring_ changes; this type of change is exempted from the notification requirements of this process.",
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD NOT",
             "impact": {
               "low": true,
@@ -432,16 +436,14 @@
         ]
       },
       "exceptions": {
-        "application": "These exceptions MAY override some or all of the FedRAMP requirements for this standard.",
+        "application": "These exceptions MAY override some or all of the FedRAMP requirements for this process.",
         "id": "FRR-SCN-EX",
         "name": "Exceptions",
         "requirements": [
           {
             "id": "FRR-SCN-EX-01",
             "statement": "Providers MAY be required to delay _significant changes_ beyond the standard Significant Change Notification period and/or submit _significant changes_ for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MAY",
             "impact": {
               "low": true,
@@ -452,9 +454,7 @@
           {
             "id": "FRR-SCN-EX-02",
             "statement": "Providers MAY execute _significant changes_ (including _transformative_ changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.",
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MAY",
             "impact": {
               "low": true,

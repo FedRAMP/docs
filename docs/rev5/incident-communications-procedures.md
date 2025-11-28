@@ -6,7 +6,7 @@
       
 
 
-This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) to the simpler FedRAMP 20x standard style and clarifies the expectations for FedRAMP 20x.
+This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) to the simpler FedRAMP 20x style and clarifies the expectations for FedRAMP 20x.
 
 The only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.
 
@@ -35,7 +35,7 @@ The only notable change from the default Rev5 Incident Communications Procedures
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-ICP-01 Incident Reporting to FedRAMP
 

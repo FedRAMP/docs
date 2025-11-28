@@ -14,11 +14,12 @@ All FedRAMP 20x Authorized providers are expected to implement persistent valida
 
 To obtain and maintain a FedRAMP 20x authorization, providers will be required to have their persistent validation programs assessed regularly for effectiveness and completeness.
 
-??? tip "Version 25.11B published on 2025-11-24 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate and removed incorrect Rev5 effective information from JSON.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
-    - **25.11A (2025-11-18):** Initial release of the Persistent Validation and Assessment standard for the FedRAMP 20x Phase Two pilot.
+    - **25.11A (2025-11-18):** Initial release of the Persistent Validation and Assessment process for the FedRAMP 20x Phase Two pilot.
 
 
 ??? abstract "Background & Authority"
@@ -41,7 +42,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ## Requirements &amp; Recommendations
 
 !!! info ""
-    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services and those seeking authorization based on the current Effective Date(s) and Overall Applicability of this standard.
+    These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services and those seeking authorization based on the current Effective Date(s) and Overall Applicability of this document.
 
 ### FRR-PVA-01 Persistent Validation
 
@@ -55,7 +56,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ### FRR-PVA-02 Failures As Vulnerabilities
 
 !!! quote ""
-    Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response Standard for such findings.
+    Providers MUST treat failures detected during _persistent validation_ and failures of the _persistent validation_ process as _vulnerabilities_, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response process for such findings.
 
 
     **Applies to:** Low, Moderate, High
@@ -64,7 +65,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ### FRR-PVA-03 Report Persistent Validation
 
 !!! quote ""
-    Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response Standard.
+    Providers MUST include _persistent validation_ activity in the reports on _vulnerability detection_ and _response_ activity required by the FedRAMP Vulnerability Detection and Response process.
 
 
     **Applies to:** Low, Moderate, High
@@ -73,7 +74,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ### FRR-PVA-04 Track Significant Changes
 
 !!! quote ""
-    Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification Standard; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.
+    Providers MUST track _significant changes_ that impact their Key Security Indicator goals and _validation_ processes while following the requirements and recommendations in the FedRAMP Significant Change Notification process; if such _significant changes_ are not properly tracked and supplied to _all necessary assessors_ then a full _Initial FedRAMP Assessment_ may be required in place of the expected _Persistent FedRAMP Assessment_.
 
 
     **Applies to:** Low, Moderate, High
@@ -229,7 +230,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ## Timeframes - Low
 
 !!! info ""
-    This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.
+    This section provides guidance on timeframes that apply specifically to FedRAMP Low authorizations for activities required or recommended in this document; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.
 
 ### FRR-PVA-TF-LO-01 Quarterly Non-Machine Validation
 
@@ -255,7 +256,7 @@ To obtain and maintain a FedRAMP 20x authorization, providers will be required t
 ## Timeframes - Moderate
 
 !!! info ""
-    This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this standard; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.
+    This section provides guidance on timeframes that apply specifically to FedRAMP Moderate authorizations for activities required or recommended in this document; these timeframes are thresholds that secure providers should consistently strive to exceed by significant margins.
 
 ### FRR-PVA-TF-MO-01 Quarterly Non-Machine Validation
 

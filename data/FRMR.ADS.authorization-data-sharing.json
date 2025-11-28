@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Authorization Data Sharing Standard",
+    "name": "Authorization Data Sharing",
     "short_name": "ADS",
     "effective": {
       "rev5": {
@@ -13,8 +13,8 @@
         "end_date": "2026-05-22",
         "comments": [
           "**Providers MUST notify FedRAMP of intent to participate in the Authorization Data Sharing Rev5 Open Beta by submitting a sign-up form to FedRAMP.**",
-          "Rev5 Authorized providers MAY adopt this standard beginning February 2, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.",
-          "Providers MUST plan to address all requirements and recommendations in this standard by the end of the Open Beta on May 22, 2026.",
+          "Rev5 Authorized providers MAY adopt this process beginning February 2, 2026 if they are also participating in the Significant Change Notification and Vulnerability Detection and Response betas.",
+          "Providers MUST plan to address all requirements and recommendations in this process by the end of the Open Beta on May 22, 2026.",
           "It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider's participation in this beta."
         ]
       },
@@ -31,6 +31,12 @@
       }
     },
     "releases": [
+      {
+        "id": "25.11C",
+        "published_date": "2025-12-01",
+        "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
+        "public_comment": false
+      },
       {
         "id": "25.11B",
         "published_date": "2025-11-24",
@@ -82,7 +88,7 @@
           "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
         }
       ],
-      "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nThe FedRAMP Authorization Data Sharing Standard provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this standard there will not be many platforms that directly support the requirements in this standard. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",
+      "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nFedRAMP's Authorization Data Sharing process provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this process there will not be many platforms that directly support the requirements in this process. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",
       "expected_outcomes": [
         "Cloud service providers will be able to manage authorization data in the same platforms used for commercial customers, reusing data as appropriate",
         "Federal agencies will be able to access necessary authorization data via API or other automated mechanisms integrated into agency authorization systems to simplify the burden of review and continuous monitoring",
@@ -94,7 +100,7 @@
     "ADS": {
       "base": {
         "id": "FRR-ADS",
-        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
         "name": "Requirements & Recommendations",
         "requirements": [
           {
@@ -362,7 +368,7 @@
         "requirements": [
           {
             "id": "FRR-ADS-EX-01",
-            "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this standard until future notice.",
+            "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this Authorization Data Sharing document until future notice.",
             "affects": ["Providers"],
             "name": "Legacy Self-Managed Repository Exception",
             "primary_key_word": "MAY",
@@ -380,7 +386,7 @@
     "ADS": {
       "id": "FRA-ADS",
       "disclaimer": "Every cloud service provider is different, every architecture is different, and every environment is different. Best practices and technical assistance MUST NOT be used as a checklist. All examples are for discussion purposes ONLY.",
-      "purpose": "This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP _authorization data_ Sharing Standard.",
+      "purpose": "This Technical Assistance helps stakeholders understand the intent behind the requirements in the FedRAMP Authorization Data Sharing process.",
       "requirements": [
         {
           "id": "FRA-ADS-04",

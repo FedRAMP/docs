@@ -3,9 +3,9 @@
 
 !!! info "Effective Date(s) & Overall Applicability for Rev5"
       - **Optional** (Wide Release) beginning 2026-01-12.
-      - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this standard in place of the traditional FedRAMP boundary after January 12, 2026.
+      - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this process in place of the traditional FedRAMP boundary after January 12, 2026.
       - Providers MUST follow the Significant Change Request process (or Significant Change Notification if applicable) to transition from the traditional boundary to the MAS, and this change must be assessed by a FedRAMP recognized assessor.
-      - Providers adopting this standard MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
+      - Providers adopting this process MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
       - Rev5 Authorized providers who switch from a traditional FedRAMP boundary to the MAS MUST notify FedRAMP by sending an email to info@fedramp.gov.
       - All new Rev5 authorizations in progress that use the MAS must clearly mark all authorization data to indicate adoption of the MAS.
       - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
@@ -14,9 +14,10 @@
 
 Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.
 
-??? tip "Version 25.11C published on 2025-11-26 " 
+??? tip "Version 25.11C published on 2025-12-01 " 
     **History:**
 
+    - **25.11C (2025-12-01):** No material changes to content; replaced references to &quot;standard&quot; with &quot;process&quot; or &quot;documentation&quot; as appropriate.
     - **25.11C (2025-11-26):** No material changes to content; underlying JSON replaced the &quot;All&quot; option for &quot;affects&quot; with a breakout of all affected entities.
     - **25.11B (2025-11-24):** No material changes to content; updated JSON structure with additional information about Rev5 application added.
     - **25.11A (2025-11-18):** Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.
@@ -100,7 +101,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 ## Application
 
 !!! info ""
-    This section provides general guidance on the application of this standard.
+    This section provides general guidance on the application of this process.
 
 ### FRR-MAS-AY-01 Scope of FedRAMP
 
@@ -162,7 +163,7 @@ Application boundaries that are defined too broadly complicate the assessment pr
 ## Exceptions
 
 !!! info ""
-    These exceptions MAY override some or all of the FedRAMP requirements for this standard.
+    These exceptions MAY override some or all of the FedRAMP requirements for this process.
 
 ### FRR-MAS-EX-01 Supplemental Information
 

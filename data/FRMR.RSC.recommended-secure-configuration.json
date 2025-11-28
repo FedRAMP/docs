@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "Recommended Secure Configuration Standard",
+    "name": "Recommended Secure Configuration",
     "short_name": "RSC",
     "effective": {
       "rev5": {
@@ -13,11 +13,11 @@
         "end_date": "2027-12-22",
         "comments": [
           "These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
-          "This standard supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.",
-          "FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this standard are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers."
+          "This process supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.",
+          "FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this document are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers."
         ],
         "warnings": [
-          "**FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this standard will receive corrective action.**",
+          "**FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this document will receive corrective action.**",
           "Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.",
           "Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.",
           "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
@@ -45,7 +45,7 @@
       {
         "id": "25.11A",
         "published_date": "2025-11-18",
-        "description": "Initial release of the Recommended Secure Configuration Standard (RSC) for the FedRAMP 20x Phase Two pilot.",
+        "description": "Initial release of the Recommended Secure Configuration (RSC) process for the FedRAMP 20x Phase Two pilot.",
         "public_comment": true,
         "related_rfcs": [
           {
@@ -68,14 +68,14 @@
           "description": " to Section 3 (b), states \"the Administrator of General Services, acting through the Director of the Federal Risk and Authorization Management Program (FedRAMP), in coordination with the Secretary of Commerce, acting through the Director of NIST, and the Secretary of Homeland Security, acting through the Director of CISA, shall develop FedRAMP policies and practices to incentivize or require cloud service providers in the FedRAMP Marketplace to produce baselines with specifications and recommendations for agency configuration of agency cloud-based systems in order to secure Federal data based on agency requirements.\""
         }
       ],
-      "purpose": "All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.\n\nThis standard outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers."
+      "purpose": "All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.\n\nThis process outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers."
     }
   },
   "FRR": {
     "RSC": {
       "base": {
         "id": "FRR-RSC",
-        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
         "name": "Requirements & Recommendations",
         "requirements": [
           {
@@ -87,9 +87,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": "This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_."
           },
@@ -102,9 +100,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -116,9 +112,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -130,9 +124,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -144,9 +136,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -158,9 +148,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -172,9 +160,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -186,9 +172,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -200,9 +184,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           },
           {
@@ -214,9 +196,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           }
         ]

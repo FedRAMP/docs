@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "FedRAMP.schema.json",
   "info": {
-    "name": "FedRAMP Security Inbox requirements",
+    "name": "FedRAMP Security Inbox",
     "short_name": "FSI",
     "effective": {
       "rev5": {
@@ -78,7 +78,7 @@
       "base": {
         "id": "FRR-FSI",
         "name": "Requirements & Recommendations",
-        "application": "These requirements apply ALWAYS to FedRAMP and ALL cloud services listed in the FedRAMP Marketplace based on the current Effective Date(s) and Overall Applicability of this standard.",
+        "application": "These requirements apply ALWAYS to FedRAMP and ALL cloud services listed in the FedRAMP Marketplace based on the current Effective Date(s) and Overall Applicability of this document.",
         "requirements": [
           {
             "id": "FRR-FSI-01",
@@ -89,9 +89,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "note": "Anyone at GSA can send email from @fedramp.gov or @gsa.gov - FedRAMP team members will typically have \"FedRAMP\" or \"Q20B\" in their name but this is not universal or enforceable. The nature of government enterprise IT services makes it difficult for FedRAMP to isolate FedRAMP-specific team members with enforceable identifiers. ",
             "primary_key_word": "MUST"
           },
@@ -104,9 +102,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST",
             "following_information": [
               "**Emergency:** There is a potential incident or crisis such that FedRAMP requires an extremely urgent response; emergency messages will contain aggressive timeframes for response and failure to meet these timeframes will result in corrective action.",
@@ -124,9 +120,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST"
           },
           {
@@ -138,9 +132,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST"
           },
           {
@@ -152,9 +144,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST"
           },
           {
@@ -166,9 +156,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST",
             "following_information": [
               "**High Impact:** within 12 hours",
@@ -186,9 +174,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MUST"
           },
           {
@@ -200,9 +186,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "FedRAMP"
-            ],
+            "affects": ["FedRAMP"],
             "primary_key_word": "MAY"
           },
           {
@@ -214,9 +198,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "notes": [
               "Unless otherwise notified, FedRAMP will use the listed Security E-mail on the Marketplace for these notifications.",
@@ -232,9 +214,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -246,9 +226,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": "Note: This requirement is intended to prevent cloud service providers from requiring FedRAMP to respond to a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message."
           },
@@ -261,9 +239,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST"
           },
           {
@@ -287,9 +263,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": "Timeframes may vary by impact level of the _cloud service offering_."
           },
@@ -302,9 +276,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "MUST",
             "note": "Senior security officials are determined by the provider."
           },
@@ -318,9 +290,7 @@
               "moderate": true,
               "high": true
             },
-            "affects": [
-              "Providers"
-            ],
+            "affects": ["Providers"],
             "primary_key_word": "SHOULD"
           }
         ]
