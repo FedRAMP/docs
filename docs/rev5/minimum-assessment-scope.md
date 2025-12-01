@@ -8,7 +8,7 @@
       - Providers adopting this process MUST comply with ALL requirements and recommendations, including documentation. Templates are not provided for Rev5 MAS adoption so it is up to the provider to minimize confusion.
       - Rev5 Authorized providers who switch from a traditional FedRAMP boundary to the MAS MUST notify FedRAMP by sending an email to info@fedramp.gov.
       - All new Rev5 authorizations in progress that use the MAS must clearly mark all authorization data to indicate adoption of the MAS.
-      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
+      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this process.
       
 
 

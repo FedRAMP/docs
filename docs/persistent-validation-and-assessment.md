@@ -2,8 +2,8 @@
 
 !!! info "Effective Date(s) & Overall Applicability for 20x"
       - **Required** (Phase 2 Pilot)
-      - Phase 1 pilot authorizations have one year from authorization to fully address this policy but must demonstrate continuous quarterly progress.
-      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this policy prior to submission for authorization review.
+      - Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.
+      - Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review.
 
 
 FedRAMP 20x is built around the core concept that secure cloud service providers will persistently and automatically validate that their security decisions and policies are being implemented as expected within their cloud service offering. The activities of a secure service should be intentional, documented, and in a state that is always known and understood by the provider.

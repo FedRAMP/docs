@@ -6,9 +6,9 @@
       - Rev5 Authorized providers or those seeking FedRAMP authorization MAY adopt this process in place of the traditional FedRAMP Significant Change Request process after February 27, 2026.
       - Providers MUST address all requirements and recommendations in this process prior to full adoption.
       - Rev5 Authorized Providers who switch to the Significant Change Notification process MUST notify FedRAMP by sending an email to info@fedramp.gov.
-      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s adoption of this policy.
-      - Providers seeking FedRAMP authorization who plan to follow the Significant Change Notification policy must clearly note this in their authorization package
-      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this policy.
+      - It is up to providers to coordinate with their active agency customers to ensure agency customers will not be negatively impacted by the provider&#x27;s adoption of this process.
+      - Providers seeking FedRAMP authorization who plan to follow the Significant Change Notification process must clearly note this in their authorization package
+      - The FedRAMP Marketplace will include a section that indicates if a cloud service offering is following this process.
       
 
 

@@ -43,11 +43,11 @@ nav = [
         {"Documentation Guidelines" = "rev5/guidelines.md"},
         {"Definitions" = "rev5/fedramp-definitions.md"},
         ]},
-        {"Mandatory Balance" = [
+        {"Mandatory for Rev5" = [
             {"Recommended Secure Configuration" = "rev5/recommended-secure-configuration.md"},
             {"FedRAMP Security Inbox" = "rev5/fedramp-security-inbox.md"},
         ]},
-        {"Optional Balance" = [
+        {"Optional for Rev5" = [
             {"Minimum Assessment Scope" = "rev5/minimum-assessment-scope.md"},                
             {"Significant Change Notifications" = "rev5/significant-change-notifications.md"},
             {"Authorization Data Sharing" = "rev5/authorization-data-sharing.md"},

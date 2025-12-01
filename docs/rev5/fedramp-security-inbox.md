@@ -7,8 +7,8 @@
       
 
 !!! danger "Mandatory Adoption for Rev5"
-    - **FedRAMP will begin enforcement of this policy after January 5, 2026 with an Emergency Test.**
-    - Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this policy.
+    - **FedRAMP will begin enforcement of this process after January 5, 2026 with an Emergency Test.**
+    - Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this process.
     - Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.
     - Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months.
 

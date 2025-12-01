@@ -9,7 +9,7 @@
       
 
 !!! danger "Mandatory Adoption for Rev5"
-    - **FedRAMP will begin enforcement of this policy after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this document will receive corrective action.**
+    - **FedRAMP will begin enforcement of this process after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this document will receive corrective action.**
     - Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.
     - Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.
     - Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months.

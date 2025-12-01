@@ -303,7 +303,7 @@ The concept behind collaborative continuous monitoring is unique to government c
 ### FRR-CCM-AG-07 Notify FedRAMP After Requests
 
 !!! quote ""
-    Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those required in this policy by sending a notification to info@fedramp.gov.
+    Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those FedRAMP requires by sending a notification to info@fedramp.gov.
 
     **Note:** Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).
 
