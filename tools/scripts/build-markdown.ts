@@ -62,7 +62,7 @@ async function convertFRMRToMarkdown(
         // Render the template for the rev5 version
         const rev5Markdown = compiledTemplate({ ...jsonData, version: "rev5" });
 
-        const rev5Dir = path.join(__dirname, "../../markdown-rev5");
+        const rev5Dir = path.join(__dirname, "../site/markdown-rev5");
         await fs.ensureDir(rev5Dir);
         const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
         await fs.writeFile(rev5FilePath, rev5Markdown);
@@ -80,7 +80,7 @@ async function convertFRMRToMarkdown(
 
 (async () => {
   try {
-    const pattern = path.join(__dirname, "../../data", "FRMR*.json");
+    const pattern = path.join(__dirname, "../..", "FRMR*.json");
     const files = await glob(pattern);
 
     if (files.length === 0) {
@@ -99,7 +99,7 @@ async function convertFRMRToMarkdown(
       let outputFileName = baseName.startsWith("FRMR-")
         ? baseName.substring(5) + ".md"
         : baseName + ".md";
-      
+
       // Remove "FRMR.TLA." prefix from filenames
       if (outputFileName.startsWith("FRMR.")) {
         const parts = outputFileName.split(".");
@@ -108,7 +108,7 @@ async function convertFRMRToMarkdown(
         }
       }
 
-      const outputDir = path.join(__dirname, "../../markdown/");
+      const outputDir = path.join(__dirname, "../site/markdown/");
       const outputFilePath = path.join(outputDir, outputFileName);
 
       await convertFRMRToMarkdown(
@@ -121,8 +121,8 @@ async function convertFRMRToMarkdown(
 
     // Copy override files
     try {
-      const overrideSrcDir = path.join(__dirname, "../overrides/content");
-      const overrideDestDir = path.join(__dirname, "../../markdown");
+      const overrideSrcDir = path.join(__dirname, "../site/overrides/content");
+      const overrideDestDir = path.join(__dirname, "../site/markdown");
 
       // Check if the source directory exists before attempting to copy
       if (await fs.pathExists(overrideSrcDir)) {

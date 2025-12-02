@@ -11,7 +11,7 @@ nav = [
     {"Phase 2 (Current)" = [
         {"Overview" = "index.md"},
         {"Overview" = [
-            {"Introduction" = "/docs"},
+            {"Introduction" = "/docs/20x"},
             {"Documentation Guidelines" = "guidelines.md"},
             {"Definitions" = "fedramp-definitions.md"},
         ]},
@@ -44,7 +44,7 @@ homepage = "https://fedramp.gov/docs"
 
 [project.theme]
 logo = "assets/fedramp-logo-just-letters.svg"
-custom_dir = "tools/overrides"
+custom_dir = "overrides"
 language = "en"
 features = [
     "announce.dismiss",

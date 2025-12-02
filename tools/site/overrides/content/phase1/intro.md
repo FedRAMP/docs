@@ -1,10 +1,10 @@
-# 20x Phase One (Archive)
+# 20x Phase 1 (Archive)
 
-!!! danger "The 20x Phase One pilot is over!"
+!!! danger "The 20x Phase 1 pilot is over!"
 
-    The 20x Phase One pilot ended in September 2026. 
+    The 20x Phase 1 pilot ended in September 2026. 
     
-    The documentation on this page is outdated and only preserved for reference for participants in the 20x Phase One pilot. All 20x Phase One pilot participants who receive a pilot FedRAMP authorization have up to 12 months to adopt Phase Two standards.
+    The documentation on this page is outdated and only preserved for reference for participants in the 20x Phase 1 pilot. All 20x Phase 1 pilot participants who receive a pilot FedRAMP authorization have up to 12 months to adopt Phase Two standards.
 
 The 20xP1 pilot is testing a new approach to FedRAMP Low authorization that uses
 Key Security Indicators (KSIs) and machine-readable validation to assess and
@@ -13,7 +13,7 @@ federal government.
 
 This pilot is open to the public. Any cloud-native SaaS provider may
 participate. No agency sponsor is needed. Qualifying cloud service offerings
-that successfully complete Phase One will receive a 12 month FedRAMP Low program
+that successfully complete Phase 1 will receive a 12 month FedRAMP Low program
 authorization and will be prioritized for FedRAMP Moderate program authorization
 in Phase Two.
 
@@ -120,9 +120,9 @@ entail:
 
 ## Initial Submission Requirements
 
-!!! danger "The 20x Phase One pilot is over!"
+!!! danger "The 20x Phase 1 pilot is over!"
 
-    The 20x Phase One pilot ended in September 2026. 
+    The 20x Phase 1 pilot ended in September 2026. 
     
     The documentation on this page is outdated and only preserved for reference for participants in the 20x Phase One pilot. All 20x Phase One pilot participants who receive a pilot FedRAMP authorization have up to 12 months to adopt Phase Two standards.
 
@@ -216,21 +216,3 @@ at least the following:
 - Correct any failing or partial validations during the 1 year initial
   authorization
 
-## Resources
-
-[FedRAMP 20x Standards]({base}/20x/standards/) The foundation of the
-20x Phase One pilot. Most pilot deliverables center around applying validations
-for the Key Security Indicators within the Minimum Assessment Scope.
-
-[FedRAMP 20x Guidance]({base}/20x/guidance/) Additional information
-relating to the FedRAMP 20x Standards.
-
-[FedRAMP 20x Goals]({base}/20x/) Key goals of the FedRAMP 20x
-authorization process.
-
-[20x Community Working Group Discussions](https://github.com/FedRAMP/community/discussions)
-A discussion space to ask questions and share ideas related to 20x Phase One.
-Draft submissions and FedRAMP feedback can be found here.
-
-[Pilot Participation Example]({base}/20x/phase-one/example/) An
-example of how a CSP might approach the pilot
