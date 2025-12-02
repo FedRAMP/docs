@@ -56,13 +56,13 @@ async function convertFRMRToMarkdown(
     // Write the markdown to the output file
     await fs.writeFile(outputFilePath, markdown);
 
-    // If this FRMR file indicates a Rev5 release, also write a copy to ../../docs/rev5
+    // If this FRMR file indicates a Rev5 release, also write a copy to ../../markdown/rev5
     try {
       if (jsonData?.info?.rev5 !== "no") {
         // Render the template for the rev5 version
         const rev5Markdown = compiledTemplate({ ...jsonData, version: "rev5" });
 
-        const rev5Dir = path.join(__dirname, "../../docs/rev5");
+        const rev5Dir = path.join(__dirname, "../../markdown-rev5");
         await fs.ensureDir(rev5Dir);
         const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
         await fs.writeFile(rev5FilePath, rev5Markdown);
@@ -108,18 +108,7 @@ async function convertFRMRToMarkdown(
         }
       }
 
-      // Determine if the file is from the combined directory
-      const isFromCombined = jsonFilePath.includes("/combined/");
-      const outputDir = isFromCombined
-        ? path.join(__dirname, "../../markdown/combined")
-        : // : path.join(__dirname, "../../markdown");
-          path.join(__dirname, "../../docs/");
-
-      // Create the combined directory if it doesn't exist
-      if (isFromCombined) {
-        await fs.ensureDir(outputDir);
-      }
-
+      const outputDir = path.join(__dirname, "../../markdown/");
       const outputFilePath = path.join(outputDir, outputFileName);
 
       await convertFRMRToMarkdown(
@@ -128,6 +117,22 @@ async function convertFRMRToMarkdown(
         outputFilePath,
         baseName
       );
+    }
+
+    // Copy override files
+    try {
+      const overrideSrcDir = path.join(__dirname, "../overrides/content");
+      const overrideDestDir = path.join(__dirname, "../../markdown");
+
+      // Check if the source directory exists before attempting to copy
+      if (await fs.pathExists(overrideSrcDir)) {
+        await fs.copy(overrideSrcDir, overrideDestDir, { overwrite: true });
+        console.log(`Successfully copied override files to ${overrideDestDir}`);
+      } else {
+        console.log("No override directory found, skipping copy.");
+      }
+    } catch (err) {
+      console.error("Error copying override files:", err);
     }
   } catch (error) {
     console.error("Error processing files:", error);

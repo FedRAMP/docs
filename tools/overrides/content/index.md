@@ -1,6 +1,6 @@
-# 20x Phase Two
+# 20x Phase 2
 
-This page is the authoritative repository for FedRAMP 20x Phase Two pilot
+This page is the authoritative location for FedRAMP 20x Phase 2 pilot
 requirements.
 
 !!! tip "Machine-Readable Docs"
@@ -15,7 +15,7 @@ requirements.
 ## Total Requirements and Recommendations
 
 The tables below have summary information about the number of Key Security
-Indicators, requirements, and recommendations included in 20x Phase Two
+Indicators, requirements, and recommendations included in 20x Phase 2
 materials.
 
 ### Key Security Indicators
