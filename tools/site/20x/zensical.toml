@@ -3,8 +3,8 @@
 site_name = "FedRAMP 20x Documentation"
 site_description = "An experimental FedRAMP Documentation site."
 site_author = "pete@fedramp.gov"
-site_dir = "html"
-docs_dir = "markdown"
+site_dir = "../html"
+docs_dir = "../markdown"
 site_url = "https://fedramp.gov/docs/20x"
 
 nav = [
@@ -40,11 +40,11 @@ nav = [
 ]
 
 [project.extra]
-homepage = "https://fedramp.gov/docs"
+homepage = "https://fedramp.gov/docs/20x"
 
 [project.theme]
+custom_dir = "../overrides"
 logo = "assets/fedramp-logo-just-letters.svg"
-custom_dir = "overrides"
 language = "en"
 features = [
     "announce.dismiss",

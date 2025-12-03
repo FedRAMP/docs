@@ -121,7 +121,7 @@ async function convertFRMRToMarkdown(
 
     // Copy override files
     try {
-      const overrideSrcDir = path.join(__dirname, "../site/overrides/content");
+      const overrideSrcDir = path.join(__dirname, "../site/overrides/20x/content");
       const overrideDestDir = path.join(__dirname, "../site/markdown");
 
       // Check if the source directory exists before attempting to copy
