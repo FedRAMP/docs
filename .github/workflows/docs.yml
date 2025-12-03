@@ -20,11 +20,19 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: 3.x          
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+      - name: Install Bun dependencies
+        run: bun install
+        working-directory: tools
+      - name: Run Bun build
+        run: bun run build
+        working-directory: tools
       - run: pip install zensical
-      - name: Build Rev5
+      - name: Build Rev5 and 20x
         working-directory: tools/site
-        run: zensical build --config-file zensical-20x.toml --clean && zensical build --config-file zensical-rev5.toml
+        run: zensical build --config-file zensical-20x.toml --clean && zensical build --config-file zensical-rev5.toml --clean
       - uses: actions/upload-pages-artifact@v4
         with:
           path: tools/site/static/html/
