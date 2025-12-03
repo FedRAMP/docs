@@ -24,8 +24,8 @@ jobs:
       - run: pip install zensical
       - name: Build Rev5
         working-directory: tools/site
-        run: zensical build --config-file zensical-20x.toml --clean && zensical build --config-file zensical-rev5.toml --clean              
+        run: zensical build --config-file zensical-20x.toml --clean && zensical build --config-file zensical-rev5.toml
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: tools/site/static/html
+          path: tools/site/static/html/
       - uses: actions/deploy-pages@v4
