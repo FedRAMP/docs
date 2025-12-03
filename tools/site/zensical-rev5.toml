@@ -1,0 +1,116 @@
+
+[project]
+site_name = "FedRAMP Rev5 Documentation"
+site_description = "An emerging FedRAMP Documentation site."
+site_author = "pete@fedramp.gov"
+site_dir = "static/html/rev5"
+docs_dir = "static/markdown/rev5"
+site_url = "https://fedramp.gov/docs/rev5"
+dev_addr = "localhost:8001"
+
+nav = [    
+    {"Overview" = [
+        {"Overview" = "index.md"},
+    ]},
+    {"Cloud Service Providers" = [
+        {"FedRAMP Authorization" = [
+            {"Introduction" = "playbook/csp/authorization/intro.md"},
+            {"What's In An Authorization Package" = "playbook/csp/authorization/what.md"},
+            {"Roles & Responsibilities" = "playbook/csp/authorization/roles.md"},
+            {"System Security Plan (SSP)" = "playbook/csp/authorization/ssp.md"},
+            {"Security Assessment Plan (SAP)" = "playbook/csp/authorization/sap.md"},
+            {"Security Assessment Report (SAR)" = "playbook/csp/authorization/sar.md"},
+            {"Plans of Action & Milestones" = "playbook/csp/authorization/poam.md"},
+        ]},
+        {"Continuous Monitoring" = [
+            {"Introduction" = "playbook/csp/continuous-monitoring/intro.md"},
+            {"Overview of Expectations" = "playbook/csp/continuous-monitoring/overview.md"},
+            {"Vulnerability Scanning" = "playbook/csp/continuous-monitoring/vulnerability-scanning.md"},
+            {"Annual Assessment" = "playbook/csp/continuous-monitoring/annual-assessment.md"},
+            {"Significant Changes" = "playbook/csp/continuous-monitoring/significant-changes.md"},
+            {"Incident Communication" = "playbook/csp/continuous-monitoring/incident-communication.md"},
+            {"Collaborative Monitoring" = "playbook/csp/continuous-monitoring/collaborative-monitoring.md"},
+            {"Performance Management" = "playbook/csp/continuous-monitoring/performance-management.md"},
+        ]},       
+    ]},
+    {"Agencies" = [        
+        {"Agency Authorization" = [
+            {"Introduction" = "playbook/agency/authorization/intro.md"},
+            {"The FedRAMP Marketplace" = "playbook/agency/authorization/marketplace.md"},
+            {"Liaison Program" = "playbook/agency/authorization/liaison-program.md"},
+            {"Authorization Process" = "playbook/agency/authorization/authorization-process.md"},
+            {"Partnering" = "playbook/agency/authorization/partnering.md"},
+            {"Preparation" = "playbook/agency/authorization/preparation.md"},
+            {"Authorization" = "playbook/agency/authorization/authorization.md"},
+            {"Continuous Monitoring" = "playbook/agency/authorization/continuous-monitoring.md"},
+        ]}
+    ]},
+    {"20x Balance Improvement Releases" = [
+        {"Overview" = "balance/index.md"},
+        {"Overview" = [
+        {"Introduction" = "balance/"},
+        {"Documentation Guidelines" = "balance/guidelines.md"},
+        {"Definitions" = "balance/fedramp-definitions.md"},
+        ]},
+        {"Mandatory for Rev5" = [
+            {"Recommended Secure Configuration" = "balance/recommended-secure-configuration.md"},
+            {"FedRAMP Security Inbox" = "balance/fedramp-security-inbox.md"},
+        ]},
+        {"Optional for Rev5" = [
+            {"Minimum Assessment Scope" = "balance/minimum-assessment-scope.md"},                
+            {"Significant Change Notifications" = "balance/significant-change-notifications.md"},
+            {"Authorization Data Sharing" = "balance/authorization-data-sharing.md"},
+            {"Vulnerability Detection and Response" = "balance/vulnerability-detection-and-response.md"},
+            {"Collaborative Continous Monitoring" = "balance/collaborative-continuous-monitoring.md"},
+        ]},
+    ]},
+    {"// Return to fedramp.gov" = "https://fedramp.gov/"}
+]
+
+[project.extra]
+homepage = "https://fedramp.gov/docs"
+
+[project.theme]
+logo = "assets/fedramp-logo-just-letters.svg"
+custom_dir = "overrides"
+language = "en"
+features = [
+    "announce.dismiss",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.top",
+    "navigation.tracking",
+    "navigation.path",
+    "search.highlight",
+    "toc.follow",
+]
+
+[project.theme.icon.admonition]
+abstract = "fontawesome/solid/gavel"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+
+#[project.markdown_extensions.abbr]
+#[project.markdown_extensions.attr_list]
+#[project.markdown_extensions.pymdownx.snippets]
+#auto_append = ["overrides/definitions.md"]

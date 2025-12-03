@@ -5,9 +5,8 @@ tools/node_modules
 out
 dist
 *.tgz
-tools/site/html
-tools/site/markdown
-tools/site/markdown-rev5
+tools/site/static/html/*
+tools/site/static/markdown/*
 .gemini
 
 # code coverage
