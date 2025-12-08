@@ -18,6 +18,17 @@
   "type": "module",
   "scripts": {
     "build": "bun run scripts/build-markdown.ts",
-    "watch": "bunx nodemon --watch templates/zensical-template.hbs --watch ../data/ --watch overrides/ --exec 'bun run scripts/build-markdown.ts'"
+    "watch": "bunx nodemon"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "./site/static/*"
+    ],
+    "watch": [
+      "../*"
+    ],
+    "delay": "1000",
+    "exec": "bun run scripts/build-markdown.ts"
   }
 }

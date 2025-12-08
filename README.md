@@ -39,17 +39,26 @@ There is a simple test suite that can be run with `bun test` once bun is install
 
 ### Building
 
-Building the site has two main steps:
+There are separate 20x and Rev5 sites that can be previewed or built with zensical. 
 
-1. Generate the enriched Markdown files from the FRMR JSON files.
-2. Build the static site using the enriched Markdown files.
+#### Preview for Rev5
 
-#### Generating the enriched markdown files
-1. First we generate the Markdown files from the FRMR JSON files using the `tools/scripts/FRMR-to-markdown.ts` script or via `bun run site`.  This script will read the FRMR JSON files in the `data` directory and generate markdown files in the `docs` directory. If you are editing various things, you can also run `bun run watch` to build the markdown after every change to JSON or the template.
+```
+cd tools/site
+zensical serve
+zensical serve --config-file zensical-rev5.toml
+```
+https://localhost:8001/docs/rev5
 
+#### Preview for 20x
 
-2. Next we can preview the static site by running `zensical serve`. This will build the site and start a local web server.
-3. Once you have confirmed the site looks correct, you can build the static site by running `zensical build`.
+```
+cd tools/site
+zensical serve
+zensical serve --config-file zensical-20x.toml
+```
+https://localhost:8000/docs/20x
+
 
 #### Generate documentation for the JSON Schema
 We are using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) to generate documentation for the FRMR JSON schema.
