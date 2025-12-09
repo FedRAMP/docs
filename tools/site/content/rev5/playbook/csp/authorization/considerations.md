@@ -1,0 +1,61 @@
+# Important Considerations
+
+Below are some areas of consideration as you develop your authorization strategy.
+
+## **IaaS vs. PaaS vs. SaaS**
+
+[NIST SP 800-145](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf) establishes FedRAMP’s definitions for cloud services that are IaaS, PaaS, or SaaS. CSPs needing to define their offerings as one or multiple of the service models should refer to the following guidelines:
+
+|                                        | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Software-as-a-Service (SaaS)**       | The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure, including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings. |
+| **Platform-as-a-Service (PaaS)**       | The capability provided to the consumer is to deploy consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider onto the cloud infrastructure. The consumer does not manage or control the underlying cloud infrastructure, including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.                                                                        |
+| **Infrastructure-as-a-Service (IaaS)** | The capability provided to the consumer is to provide processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications, and possibly limited control of select networking components (e.g., host firewalls).                                                                     |
+
+## **System Stack**
+
+The “system stack” generally refers to the layers of services in the data center that are included in the CSO. The CSO must be authorized according to the appropriate FedRAMP baseline, meaning each component (IaaS, PaaS, and SaaS) must be authorized through either an inheritance model (a SaaS vendor leveraging a FedRAMP authorized PaaS) or a traditional authorization (Infrastructure, Platform, and Services are authorized as one).  
+
+In a traditional authorization, a CSP has its system hosted in a non-FedRAMP­ Authorized cloud service; therefore “inheritance/leveraging” relationship does not exist. In this situation, a SaaS provider would need to include the infrastructure and platform within its authorization boundary, in addition to its own software application, to authorize the entire stack. The CSP is responsible for the entire stack in this situation and details the underlying infrastructure and platform within its SSP. The authorization in this case would be for the SaaS with its own infrastructure, but the infrastructure itself would not constitute an IaaS.  
+
+FedRAMP highly recommends CSPs understand a CSO’s stack and illustrate how IaaS, PaaS, and SaaS may be layered. Additionally, FedRAMP can inform CSPs on how existing ATOs can be leveraged depending on the system architecture.
+
+!!! warning "Warning"
+
+    To achieve a FedRAMP authorization, a CSP’s service must reside on a FedRAMP Authorized infrastructure or stand up their own infrastructure.
+
+
+## **Level of Effort**
+
+The level of effort (LOE) and cost associated with authorizing a CSO will vary depending on the complexity of the system, implementation of secure architectural principals, current security posture, and overall commitment and expertise of the team.  
+LOE can be broken down into the following categories:
+
+|                        | Definition                                                                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Project Management** | Managing the FedRAMP authorization process and coordinating activities.                                                                                                              |
+| **Engineering**        | Making changes to the system in compliance with federal agency and FedRAMP controls.                                                                                                 |
+| **Documentation**      | Completion of all required documentation, including technical writing, review, and quality assurance of documentation submitted to FedRAMP and agencies.                             |
+| **Support**            | Costs associated with consultants and advisory services acquired to support the authorization, including appropriate technical expertise and assessment services provided by a 3PAO. |
+
+Typical barriers for CSPs completing the authorization process that will impact overall LOE include:
+
+- Not accurately defining the authorization boundary or depicting data flow diagram(s) and supporting inventory.
+- Gaps in vulnerability scanning.
+- End of life software.
+- Not having FIPS 140 validated encryption modules.
+- Using external services where federal data is stored or in-transit that are not FedRAMP Authorized or are authorized at a system impact level lower than the CSO going through the authorization process.
+- Not implementing multi-factor authentication appropriately.
+- Poor documentation lacking technical detail and immature management processes.
+- Immature security practices and failure to apply appropriate resources up front (e.g., failing to bake security and resources in early).
+
+### CSP Authorization Team
+
+Staffing an authorization effort should be a key consideration for any CSP. While FedRAMP does not recommend any specific resource leveling, it has witnessed successful authorization efforts when the following competencies are included on a CSP authorization team, either in an in-house or consulting capacity:
+
+|                                         | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Management**                  | Experience with team and task management as part of information technology (IT) system implementation with federal or large-scale private organizations, including prior FedRAMP or FISMA authorization experience. Successful project managers typically have a working knowledge of agile, DevOps, or lean management approaches. Additionally, they are comfortable in the coordination of project stakeholders and have end-to-end visibility of the implementation of an IT system. |
+| **Customer Relationship Management**    | Typically, a sales or business development associate familiar with or responsible for the business relationship leading to the federal procurement of a system. Successful customer relationship managers facilitate communications among stakeholders throughout the implementation effort, especially during the initial partnership of CSP and federal agency resources at the beginning of an authorization effort.                                                                  |
+| **System Architecture and Engineering** | Informed expertise regarding a service offering’s system architecture and design, including visibility to the adaptation of applicable security controls to the system. Effective technical personnel in an authorization effort often demonstrate competency with federal IT systems and a thorough understanding of federal security requirements as defined by FISMA and FedRAMP.                                                                                                     |
+| **Technical Writing**                   | Effective writing capability that is informed by a thorough understanding of a system’s architecture and design and how applicable security controls affect and interact with the system. Additionally, effective technical writers demonstrate a working knowledge of how controls relate to their technical implementation within the service offering, the FedRAMP guidelines and requirements, and any underlying systems within the system stack (e.g., IaaS inheritance).          |
+| **Communications**                      | FedRAMP considers communications to be a core competency of any project team and can be reflected in a dedicated full-time equivalent (FTE) or represented in the aggregate skill sets of the CSP team. Communications are integral to the ongoing coordination of CSP, federal agency, 3PAO, and FedRAMP resources throughout the lifecycle of a system in a federal environment.                                                                                                       |

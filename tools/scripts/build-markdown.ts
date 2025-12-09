@@ -124,10 +124,7 @@ async function convertFRMRToMarkdown(
 
     // Copy override files
     try {
-      const overrideSrcDir = path.join(
-        __dirname,
-        "../site/overrides/content/20x"
-      );
+      const overrideSrcDir = path.join(__dirname, "../site/content/20x");
       const overrideDestDir = path.join(
         __dirname,
         "../site/static/markdown/20x"
@@ -146,10 +143,7 @@ async function convertFRMRToMarkdown(
       console.error("Error copying 20x override files:", err);
     }
     try {
-      const overrideSrcDir = path.join(
-        __dirname,
-        "../site/overrides/content/rev5"
-      );
+      const overrideSrcDir = path.join(__dirname, "../site/content/rev5");
       const overrideDestDir = path.join(
         __dirname,
         "../site/static/markdown/rev5"

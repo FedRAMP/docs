@@ -12,9 +12,15 @@ nav = [
         {"Overview" = "index.md"},
     ]},
     {"Cloud Service Providers" = [
-        {"FedRAMP Authorization" = [
-            {"Introduction" = "playbook/csp/authorization/intro.md"},
-            {"What's In An Authorization Package" = "playbook/csp/authorization/what.md"},
+        {"Getting Started" = [
+            "playbook/csp/authorization/getting-started.md",            
+            {"Partners" = "playbook/csp/authorization/partners.md"},
+            {"Elements" = "playbook/csp/authorization/elements.md"},
+            {"Rev5 Authorization" = "playbook/csp/authorization/agency-authorization-path.md"},
+            {"Considerations" = "playbook/csp/authorization/considerations.md"}
+        ]},
+        {"Rev5 Authorization Packages" = [
+            "playbook/csp/authorization/what.md",
             {"Roles & Responsibilities" = "playbook/csp/authorization/roles.md"},
             {"System Security Plan (SSP)" = "playbook/csp/authorization/ssp.md"},
             {"Security Assessment Plan (SAP)" = "playbook/csp/authorization/sap.md"},
@@ -22,7 +28,7 @@ nav = [
             {"Plans of Action & Milestones" = "playbook/csp/authorization/poam.md"},
         ]},
         {"Continuous Monitoring" = [
-            {"Introduction" = "playbook/csp/continuous-monitoring/intro.md"},
+            "playbook/csp/continuous-monitoring/intro.md",
             {"Overview of Expectations" = "playbook/csp/continuous-monitoring/overview.md"},
             {"Vulnerability Scanning" = "playbook/csp/continuous-monitoring/vulnerability-scanning.md"},
             {"Annual Assessment" = "playbook/csp/continuous-monitoring/annual-assessment.md"},
@@ -45,11 +51,10 @@ nav = [
         ]}
     ]},
     {"20x Balance Improvement Releases" = [
-        {"Overview" = "balance/index.md"},
         {"Overview" = [
-        {"Introduction" = "balance/"},
-        {"Documentation Guidelines" = "balance/guidelines.md"},
-        {"Definitions" = "balance/fedramp-definitions.md"},
+            "balance/intro.md",
+            {"Documentation Guidelines" = "balance/guidelines.md"},
+            {"Definitions" = "balance/fedramp-definitions.md"},
         ]},
         {"Mandatory for Rev5" = [
             {"Recommended Secure Configuration" = "balance/recommended-secure-configuration.md"},
