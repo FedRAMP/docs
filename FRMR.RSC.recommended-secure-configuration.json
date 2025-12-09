@@ -1,206 +1,228 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "FedRAMP.schema.json",
-  "info": {
-    "name": "Recommended Secure Configuration",
-    "short_name": "RSC",
-    "effective": {
-      "rev5": {
-        "is": "required",
-        "signup_url": "",
-        "current_status": "Wide Release",
-        "start_date": "2026-03-01",
-        "end_date": "2027-12-22",
-        "comments": [
-          "These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
-          "This process supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.",
-          "FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this document are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers."
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "FedRAMP.schema.json",
+    "info": {
+        "name": "Recommended Secure Configuration",
+        "short_name": "RSC",
+        "effective": {
+            "rev5": {
+                "is": "required",
+                "signup_url": "",
+                "current_status": "Wide Release",
+                "start_date": "2026-03-01",
+                "end_date": "2027-12-22",
+                "comments": [
+                    "These requirements apply after March 1, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace.",
+                    "This process supplements the Customer Responsibilities Matrix and other existing materials - all existing Rev5 materials are still required to be maintained.",
+                    "FedRAMP does not provide a specific template for the information required in this guidance to enable cloud service providers to share innovative solutions. As long as all requirements and recommendations in this document are addressed, providers are encouraged to share their Recommended Secure Configuration information in a way that makes the most sense for them and their customers."
+                ],
+                "warnings": [
+                    "**FedRAMP will begin enforcement of this process after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this document will receive corrective action.**",
+                    "Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.",
+                    "Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.",
+                    "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
+                ]
+            },
+            "20x": {
+                "is": "required",
+                "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+                "current_status": "Phase 2 Pilot",
+                "start_date": "2025-11-18",
+                "end_date": "2026-03-31",
+                "comments": [
+                    "Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.",
+                    "Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review."
+                ]
+            }
+        },
+        "releases": [
+            {
+                "id": "25.11B",
+                "published_date": "2025-11-24",
+                "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+                "public_comment": false,
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.RSC.recommended-secure-configuration.json"
+            },
+            {
+                "id": "25.11A",
+                "published_date": "2025-11-18",
+                "description": "Initial release of the Recommended Secure Configuration (RSC) process for the FedRAMP 20x Phase Two pilot.",
+                "public_comment": true,
+                "related_rfcs": [
+                    {
+                        "start_date": "2025-09-10",
+                        "end_date": "1900-01-01",
+                        "id": "0015",
+                        "url": "https://www.fedramp.gov/rfcs/0015/",
+                        "discussion_url": "https://github.com/FedRAMP/community/discussions/84",
+                        "short_name": "rfc-0015-recommended-secure-configuration",
+                        "full_name": "FedRAMP RFC-0015: Recommended Secure Configuration Standard"
+                    }
+                ],
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.RSC.recommended-secure-configuration.json"
+            }
         ],
-        "warnings": [
-          "**FedRAMP will begin enforcement of this process after March 1, 2026. Providers who do not have Recommended Secure Configuration guidance that meets the requirements and recommendations in this document will receive corrective action.**",
-          "Beginning 2026-03-01, corrective action will include public notification that the provider does not meet this requirement.",
-          "Beginning 2026-05-01, corrective action will include revocation of FedRAMP authorization and downgrade to FedRAMP Ready.",
-          "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
-        ]
-      },
-      "20x": {
-        "is": "required",
-        "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
-        "current_status": "Phase 2 Pilot",
-        "start_date": "2025-11-18",
-        "end_date": "2026-03-31",
-        "comments": [
-          "Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.",
-          "Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review."
-        ]
-      }
-    },
-    "releases": [
-      {
-        "id": "25.11B",
-        "published_date": "2025-11-24",
-        "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
-        "public_comment": false
-      },
-      {
-        "id": "25.11A",
-        "published_date": "2025-11-18",
-        "description": "Initial release of the Recommended Secure Configuration (RSC) process for the FedRAMP 20x Phase Two pilot.",
-        "public_comment": true,
-        "related_rfcs": [
-          {
-            "start_date": "2025-09-10",
-            "end_date": "1900-01-01",
-            "id": "0015",
-            "url": "https://www.fedramp.gov/rfcs/0015/",
-            "discussion_url": "https://github.com/FedRAMP/community/discussions/84",
-            "short_name": "rfc-0015-recommended-secure-configuration",
-            "full_name": "FedRAMP RFC-0015: Recommended Secure Configuration Standard"
-          }
-        ]
-      }
-    ],
-    "front_matter": {
-      "authority": [
-        {
-          "reference": "Executive Order 14144 Strengthening and Promoting Innovation in the Nation’s Cybersecurity Section 3 (d), as amended by Executive Order 14306 Sustaining Select Efforts to Strengthen the Nation’s Cybersecurity and Amending Executive Order 13694 and Executive Order 14144",
-          "reference_url": "https://www.federalregister.gov/documents/2025/06/11/2025-10804/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694",
-          "description": " to Section 3 (b), states \"the Administrator of General Services, acting through the Director of the Federal Risk and Authorization Management Program (FedRAMP), in coordination with the Secretary of Commerce, acting through the Director of NIST, and the Secretary of Homeland Security, acting through the Director of CISA, shall develop FedRAMP policies and practices to incentivize or require cloud service providers in the FedRAMP Marketplace to produce baselines with specifications and recommendations for agency configuration of agency cloud-based systems in order to secure Federal data based on agency requirements.\""
+        "front_matter": {
+            "authority": [
+                {
+                    "reference": "Executive Order 14144 Strengthening and Promoting Innovation in the Nation\u2019s Cybersecurity Section 3 (d), as amended by Executive Order 14306 Sustaining Select Efforts to Strengthen the Nation\u2019s Cybersecurity and Amending Executive Order 13694 and Executive Order 14144",
+                    "reference_url": "https://www.federalregister.gov/documents/2025/06/11/2025-10804/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694",
+                    "description": " to Section 3 (b), states \"the Administrator of General Services, acting through the Director of the Federal Risk and Authorization Management Program (FedRAMP), in coordination with the Secretary of Commerce, acting through the Director of NIST, and the Secretary of Homeland Security, acting through the Director of CISA, shall develop FedRAMP policies and practices to incentivize or require cloud service providers in the FedRAMP Marketplace to produce baselines with specifications and recommendations for agency configuration of agency cloud-based systems in order to secure Federal data based on agency requirements.\""
+                }
+            ],
+            "purpose": "All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.\n\nThis process outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers."
         }
-      ],
-      "purpose": "All customers benefit from simple, easy to follow, easy to understand instructions for securely configuring a cloud service offering. Cloud service providers often provide a wide range of configuration options to allow individual customers to pick and choose their security posture based on their individual customer needs and are best positioned to provide instructions about the overall security impacts of many of these choices.\n\nThis process outlines simple requirements for FedRAMP authorized cloud service providers to effectively communicate the security impact of common settings to new and current agency customers."
+    },
+    "FRR": {
+        "RSC": {
+            "base": {
+                "id": "FRR-RSC",
+                "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
+                "name": "Requirements & Recommendations",
+                "requirements": [
+                    {
+                        "id": "FRR-RSC-01",
+                        "statement": "Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.",
+                        "name": "Top-Level Administrative Accounts Guidance",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST",
+                        "note": "This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_."
+                    },
+                    {
+                        "id": "FRR-RSC-02",
+                        "statement": "Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.",
+                        "name": "Top-Level Administrative Accounts Security Settings Guidance",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-RSC-03",
+                        "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
+                        "name": "Privileged Accounts Security Settings Guidance",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-RSC-04",
+                        "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
+                        "name": "Secure Defaults on Provisioning",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-RSC-05",
+                        "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
+                        "name": "Comparison Capability",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-RSC-06",
+                        "statement": "Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.",
+                        "name": "Export Capability",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    },
+                    {
+                        "id": "FRR-RSC-07",
+                        "statement": "Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.",
+                        "name": "API Capability",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    },
+                    {
+                        "id": "FRR-RSC-08",
+                        "statement": "Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.",
+                        "name": "Machine-Readable Guidance",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    },
+                    {
+                        "id": "FRR-RSC-09",
+                        "statement": "Providers SHOULD make recommended secure configuration guidance available publicly.",
+                        "name": "Publish Guidance",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    },
+                    {
+                        "id": "FRR-RSC-10",
+                        "statement": "Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.",
+                        "name": "Versioning and Release History",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    }
+                ]
+            }
+        }
     }
-  },
-  "FRR": {
-    "RSC": {
-      "base": {
-        "id": "FRR-RSC",
-        "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
-        "name": "Requirements & Recommendations",
-        "requirements": [
-          {
-            "id": "FRR-RSC-01",
-            "statement": "Providers MUST create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission _top-level administrative accounts_ that control enterprise access to the entire _cloud service offering_.",
-            "name": "Top-Level Administrative Accounts Guidance",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "MUST",
-            "note": "This guidance should explain how _top-level administrative accounts_ are named and referred to in the _cloud service offering_."
-          },
-          {
-            "id": "FRR-RSC-02",
-            "statement": "Providers MUST create and maintain guidance that explains security-related settings that can be operated only by _top-level administrative accounts_ and their security implications.",
-            "name": "Top-Level Administrative Accounts Security Settings Guidance",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "MUST"
-          },
-          {
-            "id": "FRR-RSC-03",
-            "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
-            "name": "Privileged Accounts Security Settings Guidance",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "MUST"
-          },
-          {
-            "id": "FRR-RSC-04",
-            "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
-            "name": "Secure Defaults on Provisioning",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "MUST"
-          },
-          {
-            "id": "FRR-RSC-05",
-            "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
-            "name": "Comparison Capability",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "MUST"
-          },
-          {
-            "id": "FRR-RSC-06",
-            "statement": "Providers SHOULD offer the capability to export all security settings in a _machine-readable_ format.",
-            "name": "Export Capability",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "SHOULD"
-          },
-          {
-            "id": "FRR-RSC-07",
-            "statement": "Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.",
-            "name": "API Capability",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "SHOULD"
-          },
-          {
-            "id": "FRR-RSC-08",
-            "statement": "Providers SHOULD provide recommended secure configuration guidance in a _machine-readable_ format that can be used by customers or third-party tools to compare against current settings.",
-            "name": "Machine-Readable Guidance",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "SHOULD"
-          },
-          {
-            "id": "FRR-RSC-09",
-            "statement": "Providers SHOULD make recommended secure configuration guidance available publicly.",
-            "name": "Publish Guidance",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "SHOULD"
-          },
-          {
-            "id": "FRR-RSC-10",
-            "statement": "Providers SHOULD provide versioning and a release history for recommended secure default settings for _top-level administrative accounts_ and _privileged accounts_ as they are adjusted over time.",
-            "name": "Versioning and Release History",
-            "impact": {
-              "low": true,
-              "moderate": true,
-              "high": true
-            },
-            "affects": ["Providers"],
-            "primary_key_word": "SHOULD"
-          }
-        ]
-      }
-    }
-  }
 }
