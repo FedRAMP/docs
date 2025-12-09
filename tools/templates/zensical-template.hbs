@@ -32,8 +32,10 @@
 ??? tip "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
     **History:**
 
+| ID | Published | Description | Links |
+|----|-----------|-------------|-------|
 {{#each info.releases}}
-    - **{{this.id}} ({{this.published_date}}):** {{this.description}} | ["JSON"]({{this.machine_readable_link}})
+    | {{this.id}} | {{this.published_date}} | {{this.description}} | {{#if this.machine_readable_link}} [:material-file-code:]({{this.machine_readable_link}} "Download machine-readable JSON for release {{this.id}} published on {{this.published_date}}") {{/if}} |
 {{/each}}    
 
 
