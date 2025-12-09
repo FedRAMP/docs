@@ -23,7 +23,7 @@ test("All requirement files must validate against the FedRAMP JSON schema", asyn
   const validate = ajv.compile(schema);
 
   // Find all JSON files in src-requirements
-    const files = await glob(join(import.meta.dir, "../../data/FRMR*.json"));
+    const files = await glob(join(import.meta.dir, "../../FRMR*.json"));
     expect(files.length > 0).toBeTruthy();
   
   // Test each file
