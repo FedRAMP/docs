@@ -35,7 +35,7 @@
 | ID | Published | Description | Links |
 |----|-----------|-------------|-------|
 {{#each info.releases}}
-    | {{this.id}} | {{this.published_date}} | {{this.description}} | {{#if this.machine_readable_link}} [:material-file-code:]({{this.machine_readable_link}} "Download machine-readable JSON for release {{this.id}} published on {{this.published_date}}") {{/if}} |
+    | {{this.id}} | {{this.published_date}} {: nowrap}| {{this.description}} | {{#if this.machine_readable_link}} [:fontawesome-solid-cloud-arrow-down:]({{this.machine_readable_link}} "Download machine-readable JSON for release {{this.id}} published on {{this.published_date}}") {{/if}} |
 {{/each}}    
 
 
