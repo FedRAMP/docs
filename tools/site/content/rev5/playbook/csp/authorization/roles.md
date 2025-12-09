@@ -12,7 +12,9 @@ CSPs and 3PAOs should understand and agree on the division of roles and responsi
 | **POA\&M** | Create and maintain a POA\&M that aligns with _FedRAMP’s [POA\&M Template](https://www.fedramp.gov/assets/resources/templates/FedRAMP-POAM-Template.xlsm) and [Completion Guide](https://www.fedramp.gov/assets/resources/documents/CSP_POAM_Template_Completion_Guide.pdf)_. Implement monthly ConMon. Use the POA\&M to track and manage risks. | Validate the POA\&M detail for a CSO as part of the annual assessment. If performing POA\&M activities on behalf of a CSP, assume all CSP responsibilities for POA\&M management.                                                                                                                                     |
 
 _\* CSPs are required to use FedRAMP templates for the SSP, security controls rules of behavior (RoB), information system contingency plan (ISCP), control implementation summary (CIS) and customer responsibility matrix (CRM) workbook, integrated inventory workbook, POA\&M, and cryptographic modules table. CSPs develop their own policies and procedures, user guides, incident response plans, and configuration management plans. Additional guidance on each of these required documents is provided in Section 12 of the SSP template._  
+
 _\*\* Per the [A2LA R311: Specific Requirements \- FedRAMP](https://a2la.qualtraxcloud.com/ShowDocument.aspx?ID=5621), 3PAOs contracted to provide advisory services cannot provide assessment services for the same CSO for a period of two years._  
+
 _\*\*\* 3PAOs are required to use FedRAMP templates for the SAP, security test case procedures, SAR, and risk exposure table (RET)._
 
 ###

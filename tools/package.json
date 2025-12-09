@@ -22,12 +22,12 @@
   },
   "nodemonConfig": {
     "verbose": true,
-    "ignore": [
-      "./site/static/*"
-    ],
     "watch": [
-      "../*"
+      "./site/content/**/*",
+      "./templates/zensical-template.hbs",
+      "../FRMR*.json"      
     ],
+    "ext": "ts,md,json,hbs",
     "delay": "1000",
     "exec": "bun run scripts/build-markdown.ts"
   }

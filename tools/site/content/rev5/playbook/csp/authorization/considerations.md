@@ -15,11 +15,15 @@ Below are some areas of consideration as you develop your authorization strategy
 ## **System Stack**
 
 The “system stack” generally refers to the layers of services in the data center that are included in the CSO. The CSO must be authorized according to the appropriate FedRAMP baseline, meaning each component (IaaS, PaaS, and SaaS) must be authorized through either an inheritance model (a SaaS vendor leveraging a FedRAMP authorized PaaS) or a traditional authorization (Infrastructure, Platform, and Services are authorized as one).  
+
 In a traditional authorization, a CSP has its system hosted in a non-FedRAMP­ Authorized cloud service; therefore “inheritance/leveraging” relationship does not exist. In this situation, a SaaS provider would need to include the infrastructure and platform within its authorization boundary, in addition to its own software application, to authorize the entire stack. The CSP is responsible for the entire stack in this situation and details the underlying infrastructure and platform within its SSP. The authorization in this case would be for the SaaS with its own infrastructure, but the infrastructure itself would not constitute an IaaS.  
+
 FedRAMP highly recommends CSPs understand a CSO’s stack and illustrate how IaaS, PaaS, and SaaS may be layered. Additionally, FedRAMP can inform CSPs on how existing ATOs can be leveraged depending on the system architecture.
 
-| NOTE: _To achieve a FedRAMP authorization, a CSP’s service must reside on a FedRAMP Authorized infrastructure or stand up their own infrastructure._ |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+!!! warning "Warning"
+
+    To achieve a FedRAMP authorization, a CSP’s service must reside on a FedRAMP Authorized infrastructure or stand up their own infrastructure.
+
 
 ## **Level of Effort**
 
