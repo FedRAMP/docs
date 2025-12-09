@@ -47,7 +47,7 @@ for file in os.listdir(repo_root):
             for release in content["info"]["releases"]:
                 text_to_find = release["id"]
                 earliest_commit_hash = find_earliest_commit(os.path.join(repo_root,file_name), text_to_find)
-                release["machine_readable_link"] = f'https://raw.githubusercontent.com/FedRAMP/docs/{earliest_commit_hash}/data/{file_name}'
+                release["machine_readable_link"] = f'https://raw.githubusercontent.com/FedRAMP/docs/{earliest_commit_hash}/{file_name}'
                 release_list.append(release)
             content["info"]["releases"] = release_list
             with open(os.path.join(repo_root,file_name), 'w') as outfile:
