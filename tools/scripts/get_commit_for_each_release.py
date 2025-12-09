@@ -5,17 +5,6 @@ import json
 
 def find_earliest_commit(file_path, search_text):
     try:
-        # Run git log command
-        # -S looks for the string's introduction/removal
-        # --reverse puts the oldest commit at the top
-        # --format controls the output style
-        # cmd = [
-        #     'git', 'log', '-S', search_text,
-        #     '--reverse', '--format=Commit: %H | Date: %ad | Author: %an | Message: %s | Link: https://raw.githubusercontent.com/FedRAMP/docs/%H/data/FRMR.ADS.authorization-data-sharing.json',
-        #     '--date=short',
-        #     '--', file_path
-        # ]
-
         cmd = [
             'git', 'log', '-S', search_text,
             '--reverse', '--format=%H',
@@ -42,19 +31,24 @@ def find_earliest_commit(file_path, search_text):
 
 
 # Example usage for your specific file
-file_path = "/Users/danielechandler/PycharmProjects/docs/"
-for file in os.listdir(file_path):
+# Get git repository root path
+try:
+    repo_root = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], text=True).strip()
+except subprocess.CalledProcessError as e:
+    print(f"Failed to get repository root: {e}")
+    exit(1)
+for file in os.listdir(repo_root):
     file_name = file
     release_list = []
     print(file_name)
     if file_name.startswith("FRMR") and file_name.endswith(".json"):
-        with open(os.path.join(file_path,file_name)) as f:
+        with open(os.path.join(repo_root,file_name)) as f:
             content = json.load(f)
             for release in content["info"]["releases"]:
                 text_to_find = release["id"]
-                earliest_commit_hash = find_earliest_commit(os.path.join(file_path,file_name), text_to_find)
-                release["direct_link"] = f'https://raw.githubusercontent.com/FedRAMP/docs/{earliest_commit_hash}/data/{file_name}'
+                earliest_commit_hash = find_earliest_commit(os.path.join(repo_root,file_name), text_to_find)
+                release["machine_readable_link"] = f'https://raw.githubusercontent.com/FedRAMP/docs/{earliest_commit_hash}/data/{file_name}'
                 release_list.append(release)
             content["info"]["releases"] = release_list
-            with open(os.path.join(file_path,file_name), 'w') as outfile:
+            with open(os.path.join(repo_root,file_name), 'w') as outfile:
                 json.dump(content, outfile, indent=4)
