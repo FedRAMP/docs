@@ -13,11 +13,10 @@ nav = [
     ]},
     {"Cloud Service Providers" = [
         {"Getting Started" = [
-            "playbook/csp/authorization/getting-started.md",            
+            "playbook/csp/authorization/getting-started.md",
+            {"Rev5 Authorization" = "playbook/csp/authorization/agency-authorization-path.md"},            
             {"Partners" = "playbook/csp/authorization/partners.md"},
-            {"Elements" = "playbook/csp/authorization/elements.md"},
-            {"Rev5 Authorization" = "playbook/csp/authorization/agency-authorization-path.md"},
-            {"Considerations" = "playbook/csp/authorization/considerations.md"}
+            {"Important Considerations" = "playbook/csp/authorization/considerations.md"}
         ]},
         {"Rev5 Authorization Packages" = [
             "playbook/csp/authorization/what.md",

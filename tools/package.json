@@ -25,10 +25,10 @@
     "watch": [
       "./site/content/**/*",
       "./templates/zensical-template.hbs",
-      "../FRMR*.json"      
+      "../FRMR*.json"
     ],
     "ext": "ts,md,json,hbs",
-    "delay": "1000",
+    "delay": "200",
     "exec": "bun run scripts/build-markdown.ts"
   }
 }

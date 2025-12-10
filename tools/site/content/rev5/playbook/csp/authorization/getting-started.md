@@ -1,9 +1,20 @@
 # Is FedRAMP Right For You?
 
-If you have a cloud service offering (CSO) that is being used by the federal
-government, you should consider obtaining a FedRAMP authorization. Per an
-[Office of Management and Budget (OMB) memorandum](https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf),
-cloud services that hold federal data must be FedRAMP Authorized. A FedRAMP
+Federal agencies are required to obtain FedRAMP authorizations or reuse existing
+FedRAMP authorizations for all cloud services within the
+[scope of FedRAMP](https://fedramp.gov/scope). This means any company selling a
+cloud service to the government that meets the criteria outlined in the
+[scope of FedRAMP](https://fedramp.gov/scope) must obtain a FedRAMP
+authorization.
+
+!!! warning "FedRAMP only applies to cloud services used by federal government agencies"
+
+    The law explicitly limits the application of FedRAMP to services used by federal
+    government agencies (including some third-party services); FedRAMP will not
+    invest government resources into assessment and authorization of services without
+    a direct federal agency use-case.
+
+A FedRAMP
 [Rev5 Agency Authorization](https://www.fedramp.gov/rev5/agency-authorization/)
 requires a security assessment based on Federal Information Security Management
 Act (FISMA) requirements and National Institute of Standards and Technology
@@ -21,15 +32,6 @@ development driver. FedRAMP provides cross-government visibility on the
 [FedRAMP Marketplace](https://marketplace.fedramp.gov/products) and provides a
 single security package that can be leveraged by multiple federal agencies for
 review.
-
-Section III of the
-[OMB memorandum](https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf)
-defines the scope of FedRAMP as cloud computing products and services such as
-Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and
-Software-as-a-Service (SaaS) that create, collect, process, store, or maintain
-Federal information on behalf of a Federal agency. Section III also describes
-categories of cloud computing products and services that are specified as
-outside the scope of FedRAMP.
 
 Please note that the initial authorizing agency determines whether or not the
 data qualifies as federal information as well as the overall applicability of
