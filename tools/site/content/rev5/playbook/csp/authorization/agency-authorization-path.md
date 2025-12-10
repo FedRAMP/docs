@@ -220,7 +220,7 @@ After the agency AO issues the ATO letter, FedRAMP performs a cursory review of 
 
 Once the Agency ATO letter is received by FedRAMP, the following steps are performed to get to a FedRAMP Authorized designation: 
 
-1. CSP and 3PAOupload current versions of package deliverables, including all assessment artifacts to a secure repository: FedRAMP’s secure repository for Low and Moderate baseline packages. CSP’s repository for High baseline packages.
+1. CSP and 3PAO upload current versions of package deliverables, including all assessment artifacts to a secure repository: FedRAMP’s secure repository for Low and Moderate baseline packages. CSP’s repository for High baseline packages.
 
 2. CSP completes and submits [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) to [intake@fedramp.gov](mailto:info@fedramp.gov).                                                                                                                                                                                                                                                                 
 
@@ -228,7 +228,7 @@ Once the Agency ATO letter is received by FedRAMP, the following steps are perfo
 
 4. The package is placed in the FedRAMP review team’s queue. Packages are reviewed in the order they are received.
 
-5. The FedRAMP review team performs a cursory review of the package. The review team reaches out to stakeholders with areas that require clarification or technical security gaps that may require remediation prior to authorization. This is typically done via email, but may require a meeting. Once requests for clarification and/or gaps have been addressed, the review team submits a final review report and authorization recommendation to FedRAMP leadership for approval.. Once approved, the FedRAMP Marketplace designation is changed to “FedRAMP Authorized.” A copy of the final review report is provided to all stakeholders and typically includes post-authorization actions that must be addressed by the CSP and/or 3PAO, and then reviewed by the partner agency.
+5. The FedRAMP review team performs a cursory review of the package. The review team reaches out to stakeholders with areas that require clarification or technical security gaps that may require remediation prior to authorization. This is typically done via email, but may require a meeting. Once requests for clarification and/or gaps have been addressed, the review team submits a final review report and authorization recommendation to FedRAMP leadership for approval. Once approved, the FedRAMP Marketplace designation is changed to “FedRAMP Authorized.” A copy of the final review report is provided to all stakeholders and typically includes post-authorization actions that must be addressed by the CSP and/or 3PAO, and then reviewed by the partner agency.
 
 Once a CSO receives a FedRAMP Authorized designation, the FedRAMP Marketplace
 will be updated to reflect the designation. FedRAMP will make the CSO security
@@ -268,7 +268,7 @@ collaborative ConMon approach, intended to streamline the ConMon process and
 potentially minimize duplicative efforts in a way that helps each federal agency
 still perform their due diligence related to ConMon. This approach is described
 in the
-[FedRAMP Collaborative ConMonPlaybook](https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf).
+[FedRAMP Continuous Monitoring Playbook](../continuous-monitoring/intro.md).
 Collaborative ConMon benefits agencies by allowing them to share responsibility
 for ConMon oversight, and it benefits the CSP by creating a central forum for
 addressing questions and achieving consensus related to deviation requests,

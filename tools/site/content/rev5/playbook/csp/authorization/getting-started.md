@@ -10,9 +10,9 @@ authorization.
 !!! warning "FedRAMP only applies to cloud services used by federal government agencies"
 
     The law explicitly limits the application of FedRAMP to services used by federal
-    government agencies (including some third-party services); FedRAMP will not
+    government agencies (including some third-party services); FedRAMP is unable to
     invest government resources into assessment and authorization of services without
-    a direct federal agency use-case.
+    a federal agency use-case.
 
 A FedRAMP
 [Rev5 Agency Authorization](https://www.fedramp.gov/rev5/agency-authorization/)
