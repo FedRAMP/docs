@@ -14,4 +14,4 @@ cd site
 zensical build --config-file zensical-20x.toml
 zensical build --config-file zensical-rev5.toml
 
-echo "Build complete. To preview the site run: zensical serve --config-file zensical-20x.toml"
+echo "Build complete. To preview the site run: zensical serve --config-file tools/site/zensical-20x.toml or zensical serve --config-file tools/site/zensical-rev5.toml"
