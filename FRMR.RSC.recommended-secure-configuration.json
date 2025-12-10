@@ -41,7 +41,7 @@
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.RSC.recommended-secure-configuration.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.RSC.recommended-secure-configuration.json"
             },
             {
                 "id": "25.11A",
@@ -59,7 +59,7 @@
                         "full_name": "FedRAMP RFC-0015: Recommended Secure Configuration Standard"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.RSC.recommended-secure-configuration.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/e8c82f51ab77d760f5df340022a0ae1ab18f31ad/data/FRMR.RSC.recommended-secure-configuration.json"
             }
         ],
         "front_matter": {

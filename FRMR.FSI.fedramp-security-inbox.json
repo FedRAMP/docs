@@ -39,7 +39,7 @@
                 "published_date": "2025-12-01",
                 "description": "Fixed a typo in FRR-FSI-13; no changes to requirements/etc.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.FSI.fedramp-security-inbox.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f9ab33eb6457f6035b6e20cb13d900bdfb671d1d/data/FRMR.FSI.fedramp-security-inbox.json"
             },
             {
                 "id": "25.11A",
@@ -57,7 +57,7 @@
                         "full_name": "FedRAMP RFC-0018: Security Inbox Requirements"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.FSI.fedramp-security-inbox.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a64c08e2aab10c1cc9b0076e5e773297e01ea59c/data/FRMR.FSI.fedramp-security-inbox.json"
             }
         ],
         "front_matter": {

@@ -32,14 +32,14 @@
                 "published_date": "2025-12-01",
                 "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.FRD.fedramp-definitions.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/ced2160b22455ed26a11bf697be8f0ae3e1e5dff/data/FRMR.FRD.fedramp-definitions.json"
             },
             {
                 "id": "25.11B",
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.FRD.fedramp-definitions.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.FRD.fedramp-definitions.json"
             },
             {
                 "id": "25.11A",

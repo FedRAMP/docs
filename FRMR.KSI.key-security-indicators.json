@@ -26,14 +26,14 @@
                 "published_date": "2025-12-01",
                 "description": "No effective/material changes; adjusted some KSI-AFR indcators to reference \"process\" instead of \"standard\" and added a note to KSI-AFR-02 addressing the potential infinite loop.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/ced2160b22455ed26a11bf697be8f0ae3e1e5dff/data/FRMR.KSI.key-security-indicators.json"
             },
             {
                 "id": "25.11B",
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.KSI.key-security-indicators.json"
             },
             {
                 "id": "25.11A",
@@ -51,35 +51,35 @@
                         "full_name": "FedRAMP RFC-0015: Recommended Secure Configuration Standard"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/b79d0a96f5303e9713603e31716ee4eae0a60543/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/3291fa1952f5b68eaf1a815a8ef1846ae8ca9e2f/data/FRMR.KSI.key-security-indicators.json"
             },
             {
                 "id": "25.10A",
                 "published_date": "2025-10-17",
                 "description": "Minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/e5a72fc4b1602e56a145b73e44a822e9ee2aa8bd/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.05D",
                 "published_date": "2025-08-24",
                 "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (no changes to KSIs, definitions are now in FRD-ALL).",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/eeabf1a93045067ad71e80d12c89baf7ec6c0363/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.05C",
                 "published_date": "2025-06-28",
                 "description": "Key Security Indicators in this release are unchanged from previously releases. 25.05C adds references for each KSI to underlying SP 800-53 controls.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/721a0b6182136f49fb61a9487769932b7a191797/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.05B",
                 "published_date": "2025-06-18",
                 "description": "Initial release of Key Security Indicators from 25.05; the previous 25.05A release contained errors during conversion to JSON that are fixed in this release, the KSIs should now be identical to the original 25.05 paper release of the KSIs released on 2025-05-30. FRR-KSI-AY rules were converted to FRR-KSI rules, but otherwise unchanged.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/5da196276f27ba2f3105b30edb3a57b6c18e3672/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.05A",
@@ -97,7 +97,7 @@
                         "full_name": "FedRAMP RFC-0006: 20x Phase One Key Security Indicators"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f97f261327626879c06a52cf98c37712590fa1d7/FRMR.KSI.key-security-indicators.json"
+                "machine_readable_link": null
             }
         ],
         "front_matter": {

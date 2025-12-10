@@ -38,49 +38,49 @@
                 "published_date": "2025-12-01",
                 "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/6463c839204df61ce80e40daa98b18e3cf95f17b/data/FRMR.MAS.minimum-assessment-scope.json"
             },
             {
                 "id": "25.11C",
                 "published_date": "2025-11-26",
                 "description": "No material changes to content; underlying JSON replaced the \"All\" option for \"affects\" with a breakout of all affected entities.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/6463c839204df61ce80e40daa98b18e3cf95f17b/data/FRMR.MAS.minimum-assessment-scope.json"
             },
             {
                 "id": "25.11B",
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.MAS.minimum-assessment-scope.json"
             },
             {
                 "id": "25.11A",
                 "published_date": "2025-11-18",
                 "description": "Minor updates for the FedRAMP 20x Phase Two pilot and Rev5 Open Beta.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/e8c82f51ab77d760f5df340022a0ae1ab18f31ad/data/FRMR.MAS.minimum-assessment-scope.json"
             },
             {
                 "id": "25.10A",
                 "published_date": "2025-10-17",
                 "description": "minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.06B",
                 "published_date": "2025-08-24",
                 "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.06A",
                 "published_date": "2025-06-17",
                 "description": "Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Scope to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f97f261327626879c06a52cf98c37712590fa1d7/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.05A",
@@ -98,7 +98,7 @@
                         "full_name": "FedRAMP RFC-0005: Minimum Assessment Scope Standard"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f97f261327626879c06a52cf98c37712590fa1d7/FRMR.MAS.minimum-assessment-scope.json"
+                "machine_readable_link": null
             }
         ],
         "front_matter": {

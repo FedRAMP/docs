@@ -38,35 +38,35 @@
                 "published_date": "2025-12-01",
                 "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/ced2160b22455ed26a11bf697be8f0ae3e1e5dff/data/FRMR.SCN.significant-change-notifications.json"
             },
             {
                 "id": "25.11B",
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.SCN.significant-change-notifications.json"
             },
             {
                 "id": "25.11A",
                 "published_date": "2025-11-18",
                 "description": "Updates for the FedRAMP 20x Phase Two pilot; renames FRR-SCN-TF section to FRR-SCN-TR to avoid confusion with \"timeframe\" rulesets in other FedRAMP standards",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/1e90491745ca3a404e7de9efeda7506281794c18/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/3291fa1952f5b68eaf1a815a8ef1846ae8ca9e2f/data/FRMR.SCN.significant-change-notifications.json"
             },
             {
                 "id": "25.10A",
                 "published_date": "2025-10-17",
                 "description": "minor updates to improve clarity; switch from federal information to federal customer data; add impact level metadata; no substantive changes.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/e5a72fc4b1602e56a145b73e44a822e9ee2aa8bd/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.06B",
                 "published_date": "2025-08-24",
                 "description": "Minor non-breaking updates to align term definitions and highlighted terms across updated materials (definitions are now in FRD-ALL).",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/eeabf1a93045067ad71e80d12c89baf7ec6c0363/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": null
             },
             {
                 "id": "25.06A",
@@ -93,7 +93,7 @@
                         "full_name": "FedRAMP RFC-0009: Significant Change Notification Technical Assistance"
                     }
                 ],
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f97f261327626879c06a52cf98c37712590fa1d7/FRMR.SCN.significant-change-notifications.json"
+                "machine_readable_link": null
             }
         ],
         "front_matter": {

@@ -36,21 +36,21 @@
                 "published_date": "2025-12-01",
                 "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.ADS.authorization-data-sharing.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/ced2160b22455ed26a11bf697be8f0ae3e1e5dff/data/FRMR.ADS.authorization-data-sharing.json"
             },
             {
                 "id": "25.11B",
                 "published_date": "2025-11-24",
                 "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.ADS.authorization-data-sharing.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.ADS.authorization-data-sharing.json"
             },
             {
                 "id": "25.11A",
                 "published_date": "2025-11-18",
                 "description": "Updates for the FedRAMP 20x Phase Two pilot, including minor clarifications and improvements based on pilot feedback.",
                 "public_comment": false,
-                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/7a040cf4b68f928244cb482597f609148f717d23/FRMR.ADS.authorization-data-sharing.json"
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/e8c82f51ab77d760f5df340022a0ae1ab18f31ad/data/FRMR.ADS.authorization-data-sharing.json"
             },
             {
                 "id": "25.10A",
