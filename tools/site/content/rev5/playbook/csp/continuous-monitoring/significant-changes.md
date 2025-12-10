@@ -1,5 +1,9 @@
 # Significant Changes
 
+!!! abstract "Significant Change Notifications Balance Improvement Release"
+
+    This entire section and set of requirements does not apply to cloud service providers who have met all of the requirements for adopting the optional [Significant Change Notifications](../../../balance/significant-change-notifications.md) Balance Improvement Release.
+
 During continuous monitoring, CSPs may need to make changes to the system. A "significant" change is one that is likely to affect the security state of the system. CSPs document significant changes, conduct a security impact analysis, and \- depending on the type of change \- implement the significant change process steps described in this section.
 
 ## Types of Changes
@@ -95,7 +99,7 @@ This section describes the steps taken by CSPs, assessors and agency AOs (or the
 
    2. Assessor Name
 
-   3. Related POA\&M (if the change is being implemented to address a known risk)
+   3. Related POA&M (if the change is being implemented to address a known risk)
 
    4. Significant Change type and explanation of categorization
 
@@ -121,7 +125,7 @@ This section describes the steps taken by CSPs, assessors and agency AOs (or the
 
 7. Once implemented, the assessor conducts testing, develops a SAR package, and briefs the CSP and AO on the outcome of the assessment.
 
-8. The AO reviews the SAR package and determines if the change is acceptable (i.e., no impact to the security posture of the system). If not, the CSP would be required to remediate risks or roll back to the previous version. If the change is accepted, then the CSP must update the POA\&M with any conditions. All other documentation must be updated no later than the next Annual Assessment.
+8. The AO reviews the SAR package and determines if the change is acceptable (i.e., no impact to the security posture of the system). If not, the CSP would be required to remediate risks or roll back to the previous version. If the change is accepted, then the CSP must update the POA&M with any conditions. All other documentation must be updated no later than the next Annual Assessment.
 
 9. CSP continues with normal ConMon operations.
 

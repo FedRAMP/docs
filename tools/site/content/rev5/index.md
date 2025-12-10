@@ -13,11 +13,15 @@ applicability to the current Rev5 processes will be integrated as part of
 FedRAMP’s Rev5 Balance Improvement Release (BIR) initiative. Each Rev5 BIR will
 undergo beta testing phases with volunteer Cloud Service Providers (CSPs) and
 agencies prior to wide release and full implementation.  
+
 More information about the Rev5 BIR process, see our write-up in
 [Github](https://github.com/fedRAMP/community/discussions/38). To see all past
 and emerging standards associated with the Rev 5 BIR, please see our
-[Public Roadmap](https://github.com/orgs/FedRAMP/projects/25). The following
+[Public Roadmap](https://github.com/orgs/FedRAMP/projects/25). 
+
+The following
 content in this playbook is focused on the Agency Authorization Rev5 process.
+
 For all 20x updates please ensure you are following along in your Community
 Working Group (CWG)
 [discussion forum for 20x](https://github.com/FedRAMP/community/discussions/)

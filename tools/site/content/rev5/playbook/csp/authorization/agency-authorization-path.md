@@ -1,8 +1,8 @@
-# FedRAMP Agency Authorization Path
+# The FedRAMP Rev5 Agency Authorization Path
 
 The section below provides an overview of the FedRAMP agency authorization path.
 This is the same as the process displayed in the
-[FedRAMP Agency Authorization Playbook](https://www.fedramp.gov/resources/documents/Agency_Authorization_Playbook.pdf),
+[FedRAMP Agency Authorization Playbook](../../agency/authorization/intro/),
 but it is from the CSP’s perspective. It includes additional steps that both the
 CSP and agency would complete.
 
@@ -59,6 +59,27 @@ CSP as to which impact level is most appropriate for their system. Once a
 partnership is in place, a CSP should confirm their impact level with the
 agency, which will conduct its own FIPS 199 assessment.
 
+##### Common Agency Questions About Partnership
+
+Answers to the frequently asked questions below can be found under the
+“[Federal Agencies](https://help.fedramp.gov/hc/en-us/sections/27700650101403-Federal-Agencies)”
+section on the
+[FAQs](https://help.fedramp.gov/hc/en-us/categories/27695387528859-Frequently-Asked-Questions-FAQs)
+page of [FedRAMP’s Help Center](https://help.fedramp.gov/hc/en-us). As a CSP, it
+is beneficial to review these and other
+[FAQs](https://help.fedramp.gov/hc/en-us/categories/27695387528859-Frequently-Asked-Questions-FAQs)
+on our Help Center to help in your preparedness when these topics arise with
+federal agency customers.
+
+| [What does it mean to be an initial agency partner?](https://help.fedramp.gov/hc/en-us/articles/27703197616027-What-does-it-mean-to-be-an-initial-agency-partner)                                                                                                                                                                                |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[Is there an additional level of effort associated with being the initial authorizing agency?](https://help.fedramp.gov/hc/en-us/articles/27703206782619-Is-there-an-additional-level-of-effort-associated-with-being-the-initial-authorizing-agency)**                                                                                        |
+| **[As the initial authorizing agency, are we responsible for performing ConMon oversight on behalf of other leveraging agencies?](https://help.fedramp.gov/hc/en-us/articles/27703347140763-As-the-initial-authorizing-agency-are-we-responsible-for-performing-continuous-monitoring-ConMon-oversight-on-behalf-of-other-leveraging-agencies)** |
+| **[What happens if my agency decides to stop using the CSO?](https://help.fedramp.gov/hc/en-us/articles/27703498077979-What-happens-if-my-agency-decides-to-stop-using-the-cloud-service-offering-CSO)**                                                                                                                                         |
+| **[What happens if a CSO loses its agency customers?](https://help.fedramp.gov/hc/en-us/articles/27703601485083-What-happens-if-a-cloud-service-offering-CSO-loses-its-agency-customers)**                                                                                                                                                       |
+| **[Should my agency use FedRAMP to authorize a private cloud deployment?](https://help.fedramp.gov/hc/en-us/articles/27703635042459-Should-my-agency-use-FedRAMP-to-authorize-private-cloud-deployment)**                                                                                                                                        |
+
+
 #### Authorization Planning
 
 Once the partnership is established, a CSP should:
@@ -66,17 +87,19 @@ Once the partnership is established, a CSP should:
 - Confirm resources dedicated to the authorization process, which should include
   one technical writer, one technical SME, and one project manager, at a
   minimum.
+
 - Select a 3PAO for the assessment.
+
 - Determine the federal agency’s approach for reviewing the authorization
   package as described below:
 
-| Just-In-Time Linear Approach                                                                                                                                                                                                                                                                                                                                                                                                                                            | All Deliverables Provided Simultaneously                                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Each FedRAMP deliverable builds upon another, starting with the SSP. The SSP and appendices, Security Assessment Plan (SAP), and Security Assessment Report (SAR) are completed in a linear fashion, obtaining feedback from the federal agency once each deliverable is produced. In turn, modifications are made to each deliverable based on the agency’s review. Once the deliverable is finalized and accepted by the agency, work begins on the next deliverable. | All FedRAMP deliverables (i.e., the SSP and appendices, SAP, SAR, Plan of Action and Milestones (POA&M) are completed and submitted to the agency at once. The agency reviews all deliverables together and works collaboratively with the CSP and 3PAO. |
+    1. **Just-In-Time Linear Approach:** Each FedRAMP deliverable builds upon another, starting with the SSP. The SSP and appendices, Security Assessment Plan (SAP), and Security Assessment Report (SAR) are completed in a linear fashion, obtaining feedback from the federal agency once each deliverable is produced. In turn, modifications are made to each deliverable based on the agency’s review. Once the deliverable is finalized and accepted by the agency, work begins on the next deliverable.
 
-!!! tip "Recommended Approach"
+    2. **All Deliverables Provided Simultaneously:** All FedRAMP deliverables (i.e., the SSP and appendices, SAP, SAR, Plan of Action and Milestones (POA&M) are completed and submitted to the agency at once. The agency reviews all deliverables together and works collaboratively with the CSP and 3PAO.
+
+    !!! tip "Recommended Approach"
     
-    FedRAMP recommends the “Just-In-Time” approach, as it is a more iterative and agile approach that may prevent rework after 3PAO testing has occurred.
+        FedRAMP recommends the “Just-In-Time” approach, as it is a more iterative and agile approach that may prevent rework after 3PAO testing has occurred.
 
 - Work with your federal agency partner to complete an
   [in-process request (IPR)](https://fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-In-Process-Request-Template.docx)
@@ -86,11 +109,14 @@ Once the partnership is established, a CSP should:
   FedRAMP for review via [intake@fedramp.gov](mailto:intake@fedramp.gov). At
   this point, the CSO is eligible to be listed as In Process on the FedRAMP
   Marketplace with agency approval.
+
   - If you are working with a DoD agency toward FedRAMP authorization at the IL4
     or IL5 level, please reach out to FedRAMP for an IPR specific to DISA.
+
 - After submitting the WBS and the IPR, FedRAMP will provision access to
   FedRAMP’s secure repository for Low and Moderate impact offerings (High impact
   offerings must use their own organization’s secure repository).
+
 - Upload a copy of the CSP’s completed
   [Kickoff meeting deck](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-Kickoff-Architecture-Briefing-Guidance.pdf)
   to the secure repository.
@@ -107,12 +133,15 @@ understanding of:
 
 - The overall authorization process, milestones, deliverables, roles and
   responsibilities, and schedule;
+
 - The CSO’s purpose and function, authorization boundary, data flows, known
   security gaps and plans for remediation, federal agency-specific requirements,
   customer responsible controls, and areas that may require federal agency risk
   acceptance;
+
 - The federal agency’s process for reviewing the authorization package and
   reaching a risk-based authorization decision; and
+
 - Best practices and tips for success.
 
 Additionally, CSPs that are not already listed as In Process on the FedRAMP
@@ -156,18 +185,24 @@ At the conclusion of the SAR debrief, all stakeholders will have a shared
 understanding of:
 
 - The 3PAO’s assessment approach, methodology, and schedule;
+
 - The scope of testing, which includes validation of the authorization boundary
   and data flows;
+
 - The assessment results and residual risk;
+
 - The CSP’s plan and timeline for remediating residual risk;
+
 - Deviation requests that require federal agency approval (risk adjustments and
   false positives);
+
 - Operationally required risks that require federal agency risk acceptance
   (e.g., services or components essential to the operation of the CSO but
   excluded from the tested boundary);
+
 - The federal agency’s process for reviewing the authorization package and
-  reaching a risk-based  
-  authorization decision; and
+  reaching a risk-based authorization decision; and
+
 - Best practices and tips for success.
 
 ### Agency Authorization Process

@@ -12,7 +12,9 @@ Most FedRAMP recognized 3PAOs have developed an assessment schedule template to 
 
 CSPs must review the SSP and appendices, and update (as necessary) at least annually to incorporate system changes and/or changes in processes and procedures.
 
-**\*_NOTE to CSP and Assessor:_** _FedRAMP periodically publishes updates to the SAP, SAR (including SRTM and RET) and POA\&M templates, so make sure you are using the most recent template when preparing for the annual assessment._
+!!! info "Periodic Updates"
+
+    FedRAMP periodically publishes updates to the SAP, SAR (including SRTM and RET) and POA&M templates, so make sure you are using the most recent template when preparing for the annual assessment.
 
 ### Incident Response and Contingency Testing
 
@@ -24,8 +26,8 @@ The CSP and assessor work together to define the scope of the FedRAMP Rev 5 annu
 
 - FedRAMP-selected list of core controls (as defined in the control selection worksheet)
 - CSP-selected controls required to address system changes that have been implemented and/or changed by a CSP since their last assessment (this excludes those controls or portions of controls previously assessed under a significant change within the same annual period)
-- Validation of POA\&Ms closed since the last assessment
-- Validation of POA\&Ms identified as vendor dependencies (VDs) or deviation requests (DRs)
+- Validation of POA&Ms closed since the last assessment
+- Validation of POA&Ms identified as vendor dependencies (VDs) or deviation requests (DRs)
 - Controls identified as “Not Applicable” (N/A) to validate they are, in fact, not applicable
 - Controls that have not been assessed, at least once in a three year period, to ensure controls are meeting periodicity requirements
 
@@ -37,7 +39,9 @@ The assessor prepares and submits the SAP using the [FedRAMP Security Assessment
 
 The CSP and assessor brief the agency customers (AOs and/or their representatives) on the assessment plan, scope and schedule. If multiple agencies are leveraging the CSO, schedule the briefing during the monthly collaborative ConMon meeting.
 
-_\*NOTE:_ Some agencies may want to review the SAP and supporting documentation (e.g., controls section worksheet), so be sure to make these documents available via the secure repository.
+!!! tip "Agency Review"
+
+    Some agencies may want to review the SAP and supporting documentation (e.g., controls section worksheet), so be sure to make these documents available via the secure repository.
 
 ### Conduct the Security Assessment and Develop SAR
 
@@ -56,6 +60,6 @@ In accordance with the SAP, the SAR documents the actual process, procedures, an
 
 \* For LI-SaaS cloud offerings, the control implementations, assessment test procedures, and assessment results are combined into one document using the [SSP Appendix A \- LI-SaaS FedRAMP Security Controls](https://www.fedramp.gov/resources/templates/SSP-Appendix-A-LI-SaaS-FedRAMP-Security-Controls.docx) template. To facilitate agency customer reviews, FedRAMP recommends aggregating the remaining risks using the RET template.
 
-### Complete Plan of Action and Milestones (POA\&M)
+### Complete Plan of Action and Milestones (POA&M)
 
-The CSP prepares and submits the POA\&M using the [FedRAMP Plan of Action and Milestone (POA\&M) Template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx). The CSP documents residual risks identified in the SAR and defines a plan for remediation of those risks in the POA\&M.
+The CSP prepares and submits the POA&M using the [FedRAMP Plan of Action and Milestone (POA&M) Template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx). The CSP documents residual risks identified in the SAR and defines a plan for remediation of those risks in the POA&M.

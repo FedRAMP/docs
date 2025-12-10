@@ -1,5 +1,9 @@
 # Collaborative ConMon
 
+!!! abstract "Collaborative Continuous Monitoring Balance Improvement Release"
+
+    This entire section and set of requirements does not apply to cloud service providers who have met all of the requirements for adopting the optional [Collaborative Continuous Monitoring](../../../balance/collaborative-continuous-monitoring.md) Balance Improvement Release.
+
 The FedRAMP High, Moderate and Low baselines require CSPs to develop a ConMon strategy that complies with the requirements defined in CA-7, Security Assessment and Authorization | Continuous Monitoring.
 
 FedRAMP does not currently have the capacity to actively monitor continuous monitoring for all Rev 5 FedRAMP Authored services. Each agency that issues an ATO or Authorization to Use (ATU) for the CSO is responsible for performing oversight for their use of the system to ensure the security posture remains sufficient for its own use and supports an ongoing authorization.
@@ -20,7 +24,9 @@ The charter defines the process for conducting Collaborative ConMon. The draft c
 
 In addition to the CSP, membership includes one or more security representative(s) from each agency. This may include the Authorizing Official (AO) at each agency; however, AOs typically delegate this responsibility to Information System Security Officers (ISSOs) on the Chief Information Officer’s (CIO’s)/Chief Information Security Officer’s (CISO’s) team. The Collaboration Group membership will change over time as new agency customers are onboarded or discontinue using the cloud service.
 
-_NOTE: You should already have direct points of contacts (POCs) at each agency as part of your Incident Response Plan, but the PMO recognizes that POC information may become outdated with employee turnover. Feel free to contact the PMO if you need help identifying security POCs at your member agencies._
+!!! tip "Points of Contact"
+
+    You should already have direct points of contacts (POCs) at each agency as part of your Incident Response Plan, but the PMO recognizes that POC information may become outdated with employee turnover. Feel free to contact the PMO if you need help identifying security POCs at your member agencies.
 
 Independent assessors are not typically included as members of the Collaboration Group unless you are using an assessor in a consulting role to perform ConMon activities. Assessors may be asked to attend Collaborative ConMon meetings on an ad hoc basis \- for example, to brief the results of the Annual Assessment.
 
@@ -28,7 +34,9 @@ Independent assessors are not typically included as members of the Collaboration
 
 The PMO recommends holding a monthly, one-hour recurring Collaborative ConMon meeting. To ensure high participation, we recommend scheduling the recurring meeting on Tuesday, Wednesday, or Thursday and in the early afternoon (EST) to accommodate different time zones.
 
-_NOTE: It may not be necessary for a CSP to meet each month with their agency customers if there are no substantial changes to the system or vulnerabilities identified. In such cases, the CSP can simply post their Continuous Monitoring reports to their respective repository and inform customers that the meeting is not being held that month._
+!!! tip "Optional Meetings"
+
+    It may not be necessary for a CSP to meet each month with their agency customers if there are no substantial changes to the system or vulnerabilities identified. In such cases, the CSP can simply post their Continuous Monitoring reports to their respective repository and inform customers that the meeting is not being held that month.
 
 ### Section 3: Meeting Agenda
 
@@ -36,7 +44,7 @@ A typical agenda for the monthly collaborative ConMon meeting includes:
 
 - Summary of monthly vulnerability scan results
 
-- Discussion of past due POA\&Ms and any new POA\&Ms that are dependent on a downstream vendor (i.e., Vendor Dependencies)
+- Discussion of past due POA&Ms and any new POA&Ms that are dependent on a downstream vendor (i.e., Vendor Dependencies)
 
 - Open Deviations Requests (DRs) pending approval (Operational Requirements, Risk Adjustments, False Positives)
 
@@ -50,11 +58,13 @@ A typical agenda for the monthly collaborative ConMon meeting includes:
 
 - Agency-specific reporting requirements (if applicable)
 
-- Question & Answer (Q\&A)
+- Question & Answer (Q&A)
 
 A good way to disseminate this information is in a summary report that agency representatives can use to brief their respective AOs on the security posture of the cloud offering.
 
-_Note: It is not practical to cover every POA\&M item, particularly those you intend to remediate within the FedRAMP-prescribed timeframes. The focus of the POA\&M discussion should be the status of any past due POA\&Ms, Vendor Dependencies, and Deviation Requests \- most importantly, any areas that require risk acceptance._
+!!! tip "Focused POA&M Discussions"
+
+    It is not practical to cover every POA&M item, particularly those you intend to remediate within the FedRAMP-prescribed timeframes. The focus of the POA&M discussion should be the status of any past due POA&Ms, Vendor Dependencies, and Deviation Requests \- most importantly, any areas that require risk acceptance.
 
 Be sure to differentiate between changes that impact all agency customers versus a specific agency. For example:
 
@@ -64,7 +74,7 @@ Be sure to differentiate between changes that impact all agency customers versus
 
 ### Section 4: ConMon Deliverables
 
-The PMO recommends uploading the monthly ConMon deliverables (summary report, vulnerability scan files, updated POA\&M and Inventory, DRs, SCRs) on the same day each month and then hold the recurring meeting a week later. This will give each agency representative time to review the deliverables and come to the meeting ready with questions and recommendations for DR/SCR approvals.
+The PMO recommends uploading the monthly ConMon deliverables (summary report, vulnerability scan files, updated POA&M and Inventory, DRs, SCRs) on the same day each month and then hold the recurring meeting a week later. This will give each agency representative time to review the deliverables and come to the meeting ready with questions and recommendations for DR/SCR approvals.
 
 ### Section 5: Decision-Making Authorities
 
@@ -76,9 +86,9 @@ Determining how decisions are made, and by whom, is a critical part of the Colla
 
 - The CSP makes information (e.g., DR, SCR, etc.) available via the FedRAMP secure repository at least one week prior to the monthly Collaborative ConMon meeting and then notifies all group members.
 
-- During the monthly Collaborative ConMon meeting, the CSP briefs all group members on DR, SCR, etc. and holds room for Q\&A.
+- During the monthly Collaborative ConMon meeting, the CSP briefs all group members on DR, SCR, etc. and holds room for Q&A.
 
-- After the monthly meeting, the CSP sends a follow up email that summarizes the discussion topics and reminds group members of the window of time to ask any follow up questions. After the defined Q\&A period has ended, the CSP sends a follow-up email, informing group members that no objections were raised; therefore, the DR, SCR, etc. is considered approved.
+- After the monthly meeting, the CSP sends a follow up email that summarizes the discussion topics and reminds group members of the window of time to ask any follow up questions. After the defined Q&A period has ended, the CSP sends a follow-up email, informing group members that no objections were raised; therefore, the DR, SCR, etc. is considered approved.
 
 ### Section 6: Agency-specific ConMon requirements
 
