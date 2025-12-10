@@ -38,18 +38,17 @@ nav = [
         ]},       
     ]},
     {"Agencies" = [        
-        {"Agency Authorization" = [
-            {"Introduction" = "playbook/agency/authorization/intro.md"},
+        {"Rev5 Agency Authorization" = [
+            {"Why Use FedRAMP" = "playbook/agency/authorization/intro.md"},
             {"The FedRAMP Marketplace" = "playbook/agency/authorization/marketplace.md"},
             {"Liaison Program" = "playbook/agency/authorization/liaison-program.md"},
-            {"Authorization Process" = "playbook/agency/authorization/authorization-process.md"},
-            {"Partnering" = "playbook/agency/authorization/partnering.md"},
+            {"Sponsoring Authorizations" = "playbook/agency/authorization/sponsoring.md"},
             {"Preparation" = "playbook/agency/authorization/preparation.md"},
             {"Authorization" = "playbook/agency/authorization/authorization.md"},
             {"Continuous Monitoring" = "playbook/agency/authorization/continuous-monitoring.md"},
         ]}
     ]},
-    {"20x Balance Improvement Releases" = [
+    {"Balance Improvement Releases" = [
         {"Overview" = [
             "balance/intro.md",
             {"Documentation Guidelines" = "balance/guidelines.md"},

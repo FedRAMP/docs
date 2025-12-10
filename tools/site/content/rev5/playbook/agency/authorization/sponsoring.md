@@ -1,8 +1,8 @@
-# Partnering for Initial FedRAMP Authorization
+# Sponsoring Initial FedRAMP Authorization
 
-Federal agencies can partner with a Cloud Service Provider (CSP) for an initial FedRAMP authorization if they would like to use a CSO that is not currently FedRAMP Authorized. The rest of this playbook explains the initial FedRAMP authorization process, providing guidance and tips for success at each point along the way.
+Federal agencies can partner with a Cloud Service Provider (CSP) for an initial FedRAMP authorization if they would like to use a CSO that is not currently FedRAMP Authorized. The rest of this playbook explains the initial FedRAMP authorization process, providing guidance and tips for success at each point along the way. 
 
-# Common Questions About Partnership
+## Common Questions About Sponsoring Authorization
 
 Answers to the frequently asked questions below can be found under the “[Federal Agencies](https://help.fedramp.gov/hc/en-us/sections/27700650101403-Federal-Agencies)” section on the [FAQs](https://help.fedramp.gov/hc/en-us/categories/27695387528859-Frequently-Asked-Questions-FAQs) page of [FedRAMP’s Help Center](https://help.fedramp.gov/hc/en-us). If you have additional questions about the responsibility of an initial authorizing agency, please first reach out to your agency’s FedRAMP Agency Liaison before reaching out to FedRAMP at [intake@fedramp.gov](mailto:intake@FedRAMP.gov).
 
