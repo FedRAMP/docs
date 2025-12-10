@@ -45,6 +45,8 @@ The build process requires generating new Markdown files from the FRMR JSON. Thi
 
 You can use the `build.sh` script to execute the tests and run the complete build process. 
 
+###### Note: the build command executes the `build-markdown.ts` script in `tools/scripts`. This script includes a section which copies files from `tools/site/content` to `tools/site/static/markdown`. This overwrites some generated files with static content. If you are making changes which affect the static content in `tools/site/content` you will need to remove these files from the `content` directory before running `build.sh`.
+
 #### Preview for Rev5
 
 ```
