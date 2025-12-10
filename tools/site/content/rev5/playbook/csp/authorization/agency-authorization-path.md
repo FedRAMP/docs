@@ -19,9 +19,8 @@ capability to meet federal security requirements.
 CSPs that achieve the FedRAMP Ready designation are listed on
 [FedRAMP’s Marketplace](https://marketplace.fedramp.gov/products). Agencies use
 the FedRAMP Marketplace to research cloud services that meet their
-organizational requirements. If a CSP is interested in pursuing government
-clients, becoming FedRAMP Ready makes available valuable information about the
-service offering’s security for potential federal agency customers via the
+organizational requirements. FedRAMP Ready makes valuable information about the
+service offering’s security available for potential federal agency customers via the
 FedRAMP Marketplace.  
 
 Additionally, for CSPs who are considering whether or not to become FedRAMP
@@ -45,19 +44,6 @@ engagement with FedRAMP by filling out a
 
 By completing this form, FedRAMP will generate a FedRAMP ID for the CSO and
 provide valuable resources in an automated follow-up email.  
-
-Prior to identifying a federal agency partner, a CSP should determine the
-security categorization of the data that will be placed within the system. CSPs
-should use the _Federal Information Processing Standard (FIPS) 199
-Categorization Template_ (Appendix K) in the
-[SSP template](<https://www.fedramp.gov/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx>),
-along with the guidance of
-[_NIST Special Publication 800-60 volume 2, revision 1_](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v2r1.pdf),
-to correctly categorize their system based on the types of information
-processed, stored, and transmitted on their systems. This analysis will inform a
-CSP as to which impact level is most appropriate for their system. Once a
-partnership is in place, a CSP should confirm their impact level with the
-agency, which will conduct its own FIPS 199 assessment.
 
 ##### Common Agency Questions About Partnership
 
@@ -104,7 +90,7 @@ Once the partnership is established, a CSP should:
 - Work with your federal agency partner to complete an
   [in-process request (IPR)](https://fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-In-Process-Request-Template.docx)
   and a
-  [work breakdown structure (WBS](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx)[)](https://www.fedramp.gov/assets/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx).
+  [work breakdown structure (WBS](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx)[)](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx).
   After the completion of the IPR and WBS, please send these documents to
   FedRAMP for review via [intake@fedramp.gov](mailto:intake@fedramp.gov). At
   this point, the CSO is eligible to be listed as In Process on the FedRAMP
@@ -210,8 +196,8 @@ understanding of:
 Once the assessment and associated deliverables are complete, the federal agency
 reviews them and either approves them or requests that additional testing take
 place. A final review is then conducted, and if the federal agency accepts the
-risk associated with the use of the system, they provide an ATO letter signed by
-the federal agency AO.
+risk associated with the use of the system, they provide an [ATO letter signed by
+the federal agency AO](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx).
 
 After the agency AO issues the ATO letter, FedRAMP performs a cursory review of the authorization package to determine suitability for government-wide reuse and makes a FedRAMP authorization decision. The scope of FedRAMP’s review includes:
 

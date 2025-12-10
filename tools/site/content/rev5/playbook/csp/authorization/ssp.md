@@ -1,7 +1,8 @@
 # System Security Plan (SSP)
 
 The SSP is the “security blueprint” for the CSO. A well-written SSP allows the reviewer to follow between the system’s architecture, data flows, security control implementations, and authorization boundary. After reviewing the SSP, a federal agency AO (or designee) should have a strong understanding of how federal data is transmitted to, from, and within the system; where the data is processed and stored; and how the data is protected from a process and technical perspective.  
-FedRAMP provides a [single SSP template](<https://www.fedramp.gov/assets/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx>) that must be used for each baseline: [LI-SaaS,](https://www.fedramp.gov/assets/resources/templates/FedRAMP-SSP-Low-Baseline-Template.docx) Low, Moderate, and High. Specific controls are documented in Appendix A for each baseline.
+
+FedRAMP provides a [single SSP template](https://www.fedramp.gov/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx) that must be used for each baseline: Li-SaaS, Low, Moderate, and High. Specific controls are documented in Appendix A for each baseline.
 
 !!! tip "Telling a Story"
 
@@ -39,22 +40,24 @@ To understand how to define the authorization boundary, CSPs must review the [Fe
 
 This section summarizes the required appendices for a complete SSP. CSPs should understand the information required to complete each document and, where applicable, align and update existing organizational policy and processes to meet requirements outlined in the SSP appendices (e.g., Appendix I: Incident Response Plan, Appendix H: Configuration Management Plan, etc.). Instructions for each appendix are included within the SSP template; however, detailed guidance on how to properly document security controls is provided in the sections that follow.  
 
-- [Appendix A: FedRAMP Security Controls](https://www.fedramp.gov/resources/templates/SSP-Appendix-A-High-FedRAMP-Security-Controls.docx)
+These appendices can be downloaded from the Rev5 [Documents & Templates](https://fedramp.gov/rev5/documents-templates) section of this website:
+
+- Appendix A: FedRAMP Security Controls
 - Appendix B: Related Acronyms 
 - Appendix C: Security Policies and Procedures 
 - Appendix D: User Guide Appendix E: Digital Identity Worksheet 
-- [Appendix F: Rules of Behavior\*](<https://www.fedramp.gov/resources/templates/SSP-Appendix-F-Rules-of-Behavior-(RoB)-Template.docx>) 
-- [Appendix G: Information System Contingency Plan (ICSP)\*](<https://www.fedramp.gov/resources/templates/SSP-Appendix-G-Information-System-Contingency-Plan-(ISCP)-Template.docx>) 
+- Appendix F: Rules of Behavior\*
+- Appendix G: Information System Contingency Plan (ICSP)\* 
 - Appendix H: Configuration Management Plan (CMP) 
 - Appendix I: Incident Response Plan (IRP) 
-- [Appendix J: CIS and CRM Workbook\*](https://www.fedramp.gov/resources/templates/SSP-Appendix-J-CSO-CIS-and-CRM-Workbook.xlsx) 
+- Appendix J: CIS and CRM Workbook\*
 - Appendix K: FIPS 199 Worksheet 
 - Appendix L: CSO-Specific Required Laws and Regulations 
-- [Appendix M: Integrated Inventory Workbook\*](https://www.fedramp.gov/resources/templates/SSP-Appendix-M-Integrated-Inventory-Workbook-Template.xlsx) 
+- Appendix M: Integrated Inventory Workbook\*
 - Appendix N: Continuous Monitoring Plan 
-- [Appendix O: POA&M\*](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) 
+- Appendix O: POA&M\*
 - Appendix P: Supply Chain Risk Management Plan (SCRMP) 
-- [Appendix Q: Cryptographic Modules Table\*](https://www.fedramp.gov/resources/templates/SSP-Appendix-Q-Cryptographic-Modules-Table.docx)
+- Appendix Q: Cryptographic Modules Table\*
 
 _\*Document must be submitted in FedRAMP-provided template_
 

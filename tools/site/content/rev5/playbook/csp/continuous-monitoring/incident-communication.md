@@ -87,4 +87,4 @@ Upon receipt of a CSP’s notification, AOs must take the following actions:
 
       2. AO and applicable team members (contact information on file with the CSP)
 
-The AO will evaluate the final report submitted by the CSP and determine an appropriate path forward. This may include developing a plan of action and milestones (POA\&Ms) and/or CAPs to address areas needing improvement.
+The AO will evaluate the final report submitted by the CSP and determine an appropriate path forward. This may include developing a plan of action and milestones (POA&Ms) and/or CAPs to address areas needing improvement.

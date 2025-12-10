@@ -64,7 +64,7 @@ security environment and operations of the agency.
 
 !!! warning "The initial federal agency ATO is not a government-wide risk acceptance!"
 
-    Likewise, the initial authorizing agency is not responsible for performing ConMon oversight on behalf of all federal agencies. Each federal agency must issue an ATO or ATU for its own use of the CSO and review ConMon deliverables to ensure the security posture remains sufficient for the agency’s continued use. CSPs with multiple federal agency customers must establish a collaborative approach to ConMon as outlined in the [FedRAMP Continuous Monitoring Playbook](https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf).
+    Likewise, the initial authorizing agency is not responsible for performing ConMon oversight on behalf of all federal agencies. Each federal agency must issue an ATO or ATU for its own use of the CSO and review ConMon deliverables to ensure the security posture remains sufficient for the agency’s continued use. CSPs with multiple federal agency customers must establish a collaborative approach to ConMon as outlined in the [FedRAMP Continuous Monitoring Playbook](../continuous-monitoring/intro.md).
 
 ## Third Party Assessment Organizations (3PAOs) aka Independent Assessors
 

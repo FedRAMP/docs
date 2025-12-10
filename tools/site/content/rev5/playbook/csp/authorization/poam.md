@@ -5,9 +5,9 @@
     This entire section and set of requirements for POA&Ms does not apply to cloud service providers who have met all of the requirements for adopting the optional [Rev5 Vulnerability Detection and Response Balance Improvement Release](../../../balance/vulnerability-detection-and-response).
 
 Security control CA-5 requires CSPs to develop a POA&M to document remediation plans for correcting risks (e.g., weaknesses, deficiencies, and vulnerabilities) identified during security assessments and ConMon activities.  
-CSPs are required to use the [_FedRAMP POA&M Template_](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) to track and manage risks. Instructions for completing the POA&M template are provided in the [_FedRAMP POA&M Template Completion Guide_](https://www.fedramp.gov/resources/documents/CSP_POAM_Template_Completion_Guide.pdf).  
+CSPs are required to use the [_FedRAMP POA&M Template_](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) to track and manage risks.  
 
-CSPs are required to submit a POA&M with the initial authorization package. Before authorizing the CSO, federal agency AOs will review the POA&M to understand the current risk posture. Depending on the federal agency AO’s risk tolerance, the CSP may be required to remediate or mitigate open risks prior to authorization. General POA&M management guidance is provided in this section, but CSPs should also review the [FedRAMP Continuous Monitoring Playbook](https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf).
+CSPs are required to submit a POA&M with the initial authorization package. Before authorizing the CSO, federal agency AOs will review the POA&M to understand the current risk posture. Depending on the federal agency AO’s risk tolerance, the CSP may be required to remediate or mitigate open risks prior to authorization. General POA&M management guidance is provided in this section, but CSPs should also review the [FedRAMP Continuous Monitoring Playbook](../../csp/continuous-monitoring/intro.md).
 
 ## General POA&M Guidance
 

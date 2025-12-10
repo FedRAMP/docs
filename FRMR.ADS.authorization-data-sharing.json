@@ -88,9 +88,9 @@
                     "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 },
                 {
-                    "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
-                    "reference_url": "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf",
-                    "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
+                  "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
+                  "reference_url": "https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf",
+                  "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
                 }
             ],
             "purpose": "Modern cloud services store and share security and compliance information in convenient repositories that allow customers to rapidly review security information and gain access to additional information as needed. These services often include automated integration with cloud service infrastructure to remove manual burden and ensure information is accurate and up to date.\n\nThis security and compliance information (including FedRAMP authorization data) is the intellectual property of the cloud service provider and is not _federal customer data_ in most cases.* The federal government benefits when the same security information is shared among all customers and even the public to ensure maximum transparency and accountability of cloud service providers.\n\nFedRAMP's Authorization Data Sharing process provides a process or mechanism for cloud service providers to store and share authorization data on their preferred platform of choice if it meets certain FedRAMP requirements.\n\nAt the initial release of this process there will not be many platforms that directly support the requirements in this process. FedRAMP anticipates this will change rapidly in response to market demand as platforms work to provide innovative solutions to these requirements.\n\n_* Providers with questions about this should consult with a lawyer who specializes in procurement law. Typically a contract with the government granting ownership of information is required to transfer ownership to the government._",

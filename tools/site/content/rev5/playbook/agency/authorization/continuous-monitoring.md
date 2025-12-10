@@ -19,7 +19,7 @@ These activities are described in the [_FedRAMP Continuous Monitoring Playbook_]
 
 ## Collaborative ConMon
 
-CSPs with more than one federal agency customer are required to implement a collaborative ConMon approach, intended to streamline the ConMon process and potentially minimize duplicative efforts in a way that helps each federal agency still perform their due diligence related to ConMon. This approach is described in the [_FedRAMP_ Continuous Monitoring Playbook](https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf). Collaborative ConMon benefits federal agencies by allowing them to share responsibility for ConMon oversight, and it benefits the CSP by creating a central forum for addressing questions and achieving consensus related to deviation requests, significant change requests, and the annual assessment, versus having to coordinate with each federal agency separately.
+CSPs with more than one federal agency customer are required to implement a collaborative ConMon approach, intended to streamline the ConMon process and potentially minimize duplicative efforts in a way that helps each federal agency still perform their due diligence related to ConMon. This approach is described in the [_FedRAMP_ Continuous Monitoring Playbook](../../csp/continuous-monitoring/intro.md). Collaborative ConMon benefits federal agencies by allowing them to share responsibility for ConMon oversight, and it benefits the CSP by creating a central forum for addressing questions and achieving consensus related to deviation requests, significant change requests, and the annual assessment, versus having to coordinate with each federal agency separately.
 
 ## ConMon Best Practices
 
@@ -39,4 +39,4 @@ CSPs with more than one federal agency customer are required to implement a coll
   
     - Status of annual assessment.
 
-- **Continuous Monitoring Accountability:** Think about how you will hold the CSP accountable for meeting ConMon requirements. The [_FedRAMP Continuous Monitoring_ Playbook](https://www.fedramp.gov/resources/documents/Continuous_Monitoring_Playbook.pdf) provides recommended actions the agency AO may take when a FedRAMP Authorized CSP fails to maintain an adequate ConMon capability. Section 3 of this guide also provides recommendations for processes that federal agencies should use to perform oversight of CSOs authorized via the FedRAMP agency authorization path.
+- **Continuous Monitoring Accountability:** Think about how you will hold the CSP accountable for meeting ConMon requirements. The [_FedRAMP Continuous Monitoring_ Playbook](../../csp/continuous-monitoring/intro.md) provides recommended actions the agency AO may take when a FedRAMP Authorized CSP fails to maintain an adequate ConMon capability. Section 3 of this guide also provides recommendations for processes that federal agencies should use to perform oversight of CSOs authorized via the FedRAMP agency authorization path.
