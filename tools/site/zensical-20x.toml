@@ -9,9 +9,8 @@ site_url = "https://fedramp.gov/docs/20x"
 
 nav = [
     {"Phase 2 (Current)" = [
-        {"Overview" = "index.md"},
-        {"Overview" = [
-            {"Introduction" = "/docs/20x"},
+        {"Introduction" = [
+            "index.md",
             {"Documentation Guidelines" = "guidelines.md"},
             {"Definitions" = "fedramp-definitions.md"},
         ]},
