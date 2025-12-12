@@ -37,33 +37,15 @@ There is a simple test suite that can be run with `bun test` once bun is install
     cd tools
     bun test
 
-### Building
 
-There are separate 20x and Rev5 sites that can be previewed or built with zensical. 
-
-The build process requires generating new Markdown files from the FRMR JSON. This is done with the `build` command in `tools/bunfile.toml`. The output of this command is placed in the `tools/site/static/markdown` directory. zensical will use these files to generate the static site.
-
-You can use the `build.sh` script to execute the tests and run the complete build process. 
-
-###### Note: the build command executes the `build-markdown.ts` script in `tools/scripts`. This script includes a section which copies files from `tools/site/content` to `tools/site/static/markdown`. This overwrites some generated files with static content. If you are making changes which affect the static content in `tools/site/content` you will need to remove these files from the `content` directory before running `build.sh`.
-
-#### Preview for Rev5
+#### Preview
 
 ```
 cd tools/site
 zensical serve
-zensical serve --config-file zensical-rev5.toml
 ```
-https://localhost:8001/docs/rev5
+https://localhost:8000/docs/
 
-#### Preview for 20x
-
-```
-cd tools/site
-zensical serve
-zensical serve --config-file zensical-20x.toml
-```
-https://localhost:8000/docs/20x
 
 
 #### Generate documentation for the JSON Schema
@@ -73,3 +55,10 @@ If you are trying to understand the FRMR JSON Schema it might be helpfull to rev
     generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json FedRAMP.schema.html
 
 Then open the `FedRAMP.schema.html` file in your browser.
+
+### Building
+
+```
+cd tools
+bun run build
+```

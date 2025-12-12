@@ -1,22 +1,5 @@
 # FedRAMP Rev5 Documentation and Playbooks
 
-This site contains digital-first FedRAMP documentation and playbooks
-focused on the traditional FedRAMP Rev5 authorization path. These materials
-replace traditional off-line documents (such as PDF or DOCX) with responsive
-on-line materials that can be viewed on a variety of devices, directly
-linked to, and are always up to date.
-
-!!! info "Modernization in Progress!"
-
-    FedRAMP is working incrementally to migrate legacy documentation to this
-    site. Most legacy Rev5 materials still require downloading off-line
-    documents and are available in the 
-    [Rev5 Documents and Templates](https://www.fedramp.gov/rev5/documents-templates/) 
-    section of this site.
-
-    As documents are migrated we will provide redirects to their new location
-    whenever possible.
-
 ## Cloud Service Provider Playbooks
 
 The Cloud Service Provider section of this Rev5 site includes:

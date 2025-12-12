@@ -124,43 +124,19 @@ async function convertFRMRToMarkdown(
 
     // Copy override files
     try {
-      const overrideSrcDir = path.join(__dirname, "../site/content/20x");
-      const overrideDestDir = path.join(
-        __dirname,
-        "../site/static/markdown/20x"
-      );
+      const overrideSrcDir = path.join(__dirname, "../site/content/");
+      const overrideDestDir = path.join(__dirname, "../site/static/markdown/");
 
       // Check if the source directory exists before attempting to copy
       if (await fs.pathExists(overrideSrcDir)) {
         await fs.copy(overrideSrcDir, overrideDestDir, { overwrite: true });
-        console.log(
-          `Successfully copied 20x override files to ${overrideDestDir}`
-        );
+        console.log(`Successfully copied override files to ${overrideDestDir}`);
       } else {
-        console.log("No 20x override directory found, skipping copy.");
+        console.log("No override directory found, skipping copy.");
       }
     } catch (err) {
-      console.error("Error copying 20x override files:", err);
-    }
-    try {
-      const overrideSrcDir = path.join(__dirname, "../site/content/rev5");
-      const overrideDestDir = path.join(
-        __dirname,
-        "../site/static/markdown/rev5"
-      );
-
-      // Check if the source directory exists before attempting to copy
-      if (await fs.pathExists(overrideSrcDir)) {
-        await fs.copy(overrideSrcDir, overrideDestDir, { overwrite: true });
-        console.log(
-          `Successfully copied rev5 override files to ${overrideDestDir}`
-        );
-      } else {
-        console.log("No rev5 override directory found, skipping copy.");
-      }
-    } catch (err) {
-      console.error("Error copying rev5 override files:", err);
-    }
+      console.error("Error copying override files:", err);
+    }    
   } catch (error) {
     console.error("Error processing files:", error);
   }
