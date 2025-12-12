@@ -32,7 +32,7 @@ jobs:
       - run: pip install zensical
       - name: Build Rev5 and 20x
         working-directory: tools/site
-        run: zensical build --config-file zensical-20x.toml --clean && zensical build --config-file zensical-rev5.toml --clean
+        run: zensical build --clean
       - uses: actions/upload-pages-artifact@v4
         with:
           path: tools/site/static/html/
