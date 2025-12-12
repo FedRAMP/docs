@@ -17,7 +17,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bun run clean && bun run scripts/build-markdown.ts && cd site && zensical build",
+    "build": "bun run clean && bun run scripts/build-markdown.ts && cd site && zensical build --clean",
     "clean": "/bin/rm -rf site/static/markdown/*",
     "watch": "bunx nodemon"
   },
