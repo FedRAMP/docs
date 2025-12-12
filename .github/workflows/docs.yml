@@ -30,7 +30,7 @@ jobs:
         run: bun run build
         working-directory: tools
       - run: pip install zensical
-      - name: Build Rev5 and 20x
+      - name: Build Site
         working-directory: tools/site
         run: zensical build --clean
       - uses: actions/upload-pages-artifact@v4

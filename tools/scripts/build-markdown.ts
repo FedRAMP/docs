@@ -66,7 +66,6 @@ async function convertFRMRToMarkdown(
           __dirname,
           "../site/static/markdown/rev5/balance"
         );
-        await fs.ensureDir(rev5Dir);
         const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
         await fs.writeFile(rev5FilePath, rev5Markdown);
         console.log(`Also wrote Rev5 copy to ${rev5FilePath}`);
@@ -83,6 +82,19 @@ async function convertFRMRToMarkdown(
 
 (async () => {
   try {
+    const outputDirs = [
+      path.join(__dirname, "../site/static/markdown/20x"),
+      path.join(__dirname, "../site/static/markdown/rev5/balance"),
+      path.join(__dirname, "../site/static/markdown/"),
+    ];
+
+    try {
+      await Promise.all(outputDirs.map((dir) => fs.ensureDir(dir)));
+    } catch (err) {
+      console.error("Error creating output directories:", err);
+      process.exit(1);
+    }
+
     const pattern = path.join(__dirname, "../..", "FRMR*.json");
     const files = await glob(pattern);
 
@@ -136,7 +148,7 @@ async function convertFRMRToMarkdown(
       }
     } catch (err) {
       console.error("Error copying override files:", err);
-    }    
+    }
   } catch (error) {
     console.error("Error processing files:", error);
   }
