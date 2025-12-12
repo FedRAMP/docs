@@ -4,7 +4,7 @@ FedRAMP ConMon is based on the continuous monitoring process described in NIST S
 
 The effectiveness of a CSP’s ConMon capability supports ongoing agency authorization decisions. CSPs report on the status of the CSO’s security posture by providing ConMon deliverables to federal agency customers. Required ConMon deliverables are described in greater detail throughout this playbook.
 
-CSPs with more than one federal agency customer are required to implement a collaborative ConMon approach, intended to streamline the ConMon process and potentially minimize duplicative efforts in a way that helps each federal agency still perform their due diligence related to ConMon. This approach is described in [Section 7](#heading=h.mtuh46v9el0u) of this playbook.
+CSPs with more than one federal agency customer are required to implement a collaborative ConMon approach, intended to streamline the ConMon process and potentially minimize duplicative efforts in a way that helps each federal agency still perform their due diligence related to ConMon. This approach is described in the [Collaborative ConMon](collaborative-monitoring.md) section of this playbook.
 
 ## **Continuous Monitoring Process Areas**
 
@@ -14,11 +14,11 @@ CSPs demonstrate a mature and effective security program through the implementat
 
 ### Change Control
 
-Cloud systems are dynamic and are in a constant state of change. Configuration management and change control processes help maintain a secure baseline configuration of the cloud system. Before implementing a change, CSPs conduct a security impact analysis, and \- depending on the type of change \- implement the Significant Change process steps described in [Section 5](#heading=h.j7lmlgrr4r64) of this playbook.
+Cloud systems are dynamic and are in a constant state of change. Configuration management and change control processes help maintain a secure baseline configuration of the cloud system. Before implementing a change, CSPs conduct a security impact analysis, and \- depending on the type of change \- implement the process steps described in the [Significant Changes](significant-changes.md) section of this playbook.
 
 ### Incident Response
 
-CSPs must demonstrate the ability to adequately respond to security incidents and emergency directives. As part of the FedRAMP authorization process, the CSP is required to submit and maintain an incident response plan. Requirements and guidance for incident communications are described in [Section 6](#heading=h.pvfo5pyug8k9) of this playbook.
+CSPs must demonstrate the ability to adequately respond to security incidents and emergency directives. As part of the FedRAMP authorization process, the CSP is required to submit and maintain an incident response plan. Requirements and guidance for incident communications are described in the [Incident Communication](incident-communication.md) section of this playbook.
 
 ## **Continuous Monitoring Roles & Responsibilities**
 

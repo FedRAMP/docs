@@ -20,11 +20,11 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 - POA&Ms remediated _after_ the SAR was delivered by the 3PAO should be listed on the POA&M’s “_Closed_” tab. These risks will be validated as closed by the 3PAO during the annual assessment.
 
-- A risk adjustment (RA) is a reduction in the scanner-defined risk level of a vulnerability. To justify a RA, CSPs must describe mitigating factors or compensating controls in place that reduce likelihood and/or impact of exploitation. For RAs validated by the 3PAO during the assessment, select “_Yes_” in Column U (Risk Adjustment). For RAs that were not validated by the 3PAO, select “_Pending_” in Column U. Pending RAs must be approved by the federal agency AO prior to authorization.
+- A risk adjustment (RA) is a reduction in the scanner-defined risk level of a vulnerability. To justify a RA, CSPs must describe mitigating factors or compensating controls in place that reduce likelihood and/or impact of exploitation. For RAs validated by the 3PAO during the assessment, select “_Yes_” in Column V (Risk Adjustment). For RAs that were not validated by the 3PAO, select “_Pending_” in Column V. Pending RAs must be approved by the federal agency AO prior to authorization.
 
-- A false positive (FP) occurs when a vulnerability is identified that does not actually exist on the system. For FPs validated by the 3PAO during the assessment, select “_Yes_” in Column V (False Positive) and move the risk to the POA&M’s “_Closed_” tab (validated FPs are not considered open risks). For FPs that were not validated by the 3PAO, select “_Pending_” in Column V. Pending FPs must be approved by the federal agency AO prior to authorization.
+- A false positive (FP) occurs when a vulnerability is identified that does not actually exist on the system. For FPs validated by the 3PAO during the assessment, select “_Yes_” in Column W (False Positive) and move the risk to the POA&M’s “_Closed_” tab (validated FPs are not considered open risks). For FPs that were not validated by the 3PAO, select “_Pending_” in Column W. Pending FPs must be approved by the federal agency AO prior to authorization.
 
-- An operational requirement (OR) is a finding that cannot be remediated, often because the system will not function as intended or because a vendor explicitly indicated it does not intend to offer a fix to their product. FedRAMP will not approve an OR for a High vulnerability; however, CSPs may mitigate the risk. For ORs validated by the 3PAO during the assessment, select “_Yes_” in Column W (Operational Requirement). For ORs that were not validated by the 3PAO, select “_Pending_” in Column W. Pending ORs must be approved by the federal agency AO prior to authorization.
+- An operational requirement (OR) is a finding that cannot be remediated, often because the system will not function as intended or because a vendor explicitly indicated it does not intend to offer a fix to their product. FedRAMP will not approve an OR for a High vulnerability; however, CSPs may mitigate the risk. For ORs validated by the 3PAO during the assessment, select “_Yes_” in Column X (Operational Requirement). For ORs that were not validated by the 3PAO, select “_Pending_” in Column X. Pending ORs must be approved by the federal agency AO prior to authorization.
 
   - Approved ORs are still considered open risks. They must be captured on the POA&M’s “_Open_” tab and periodically reassessed by the CSP.
 
@@ -36,7 +36,7 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 - VDs are tracked as open risks, and CSPs are required to check in with the vendor at least once a month to determine the status of the patch/fix.
 
-- When capturing risks as VDs in the POA&M, select “_Yes_” in Column P (Vendor Dependency), enter the last check-in date in Column Q (Last Vendor Check-in Date), and enter the product name in Column R (Vendor Dependent Product Name).
+- When capturing risks as VDs in the POA&M, select “_Yes_” in Column Q (Vendor Dependency), enter the last check-in date in Column R (Last Vendor Check-in Date), and enter the product name in Column S (Vendor Dependent Product Name).
 
 !!! warning "Remediation Requirements"
 
@@ -46,7 +46,7 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 ### Do
 
-- **Do** follow the instructions in the [_FedRAMP POA&M Template Completion Guide_](https://www.fedramp.gov/resources/documents/CSP_POAM_Template_Completion_Guide.pdf) to ensure the POA&M is completed correctly. This will prevent delays during the review process. 
+- **Do** follow the instructions in the Instructions tab of the [POA&M template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) to ensure the POA&M is completed correctly. This will prevent delays during the review process. 
 
 - **Do** remediate or mitigate all High risks identified during the security assessment. FedRAMP will not issue a “FedRAMP Authorized” designation on the FedRAMP Marketplace if there are open High risks. 
 
@@ -54,10 +54,10 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 - **Do** provide evidence of vendor interactions regarding the status of patches/fixes (e.g., vendor notifications, email exchanges, etc.). 
 
-- **Do** ensure that the information in Column E (Weakness Detector Source) is consistent with Column E (Weakness Detector Source)in the RET
+- **Do** ensure that the information in Column F (Weakness Detector Source) is consistent with Column F (Weakness Detector Source) in the RET
 
 ### Don't
 
-- **Don’t** wait until the CSO is FedRAMP Authorized before checking in with vendors on the status of patches/fixes. CSPs should conduct ConMon activities, such as vendor check-ins, while the federal agency AO is reviewing the authorization package. Update Column Q (Last Vendor Check-in Date) to reflect the last check-in date. 
+- **Don’t** wait until the CSO is FedRAMP Authorized before checking in with vendors on the status of patches/fixes. CSPs should conduct ConMon activities, such as vendor check-ins, while the federal agency AO is reviewing the authorization package.
 
 - **Don’t** put VDs and ORs in the POA&M’s “Closed” tab. VDs and ORs are considered open risks that must be tracked by the CSP.

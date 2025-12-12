@@ -95,25 +95,26 @@ This section describes the steps taken by CSPs, assessors and agency AOs (or the
 1. CSP and AO meet to discuss the significant change, potential security impacts and any increases in risk posture to the current authorization from the CSP’s perspective. To facilitate the discussion, the CSP provides a Security Impact Analysis which includes an estimate of known and potential security changes, and the security impact associated with these changes (reference CM-4).
 
 2. If the AO and CSP agree that the change is routine recurring in nature, the CSP proceeds with normal monthly ConMon activities. If they determine the change is transformative or adaptive, the CSP documents the Significant Change Request (SCR) and begins the process to engage an assessor. FedRAMP does not provide a SCR template. However, the SCR must include at least the following information:
-   1. Service Offering FedRAMP ID
+   
+    - Service Offering FedRAMP ID
 
-   2. Assessor Name
+    - Assessor Name
 
-   3. Related POA&M (if the change is being implemented to address a known risk)
+    - Related POA&M (if the change is being implemented to address a known risk)
 
-   4. Significant Change type and explanation of categorization
+    - Significant Change type and explanation of categorization
 
-   5. Short description of change
+    - Short description of change
 
-   6. Reason for change
+    - Reason for change
 
-   7. Summary of customer impact, including changes to services and customer configuration responsibilities
+    - Summary of customer impact, including changes to services and customer configuration responsibilities
 
-   8. Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted security controls
+    - Plan and timeline for the change, including for the verification, assessment, and/or validation of impacted security controls
 
-   9. Copy of the security impact analysis
+    - Copy of the security impact analysis
 
-   10. Name and title of CSP approver (typically the system owner)
+    - Name and title of CSP approver (typically the system owner)
 
 3. Assessor begins to assess the impact of the proposed change on system functionality and security by reviewing the SCR and other relevant system security documentation.
 

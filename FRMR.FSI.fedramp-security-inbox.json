@@ -64,7 +64,7 @@
             "authority": [
                 {
                   "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
-                  "reference_url": "https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf",
+                  "reference_url": "https://www.fedramp.gov/docs/authority/m-24-15",
                   "description": "section VII (a) (17) states that GSA must \"position FedRAMP as a central point of contact to the commercial cloud sector for Government-wide communications or requests for risk management information concerning commercial cloud providers used by Federal agencies.\""
                 }
             ],

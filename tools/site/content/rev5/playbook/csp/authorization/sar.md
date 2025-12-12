@@ -10,7 +10,8 @@ The SAR documents the results of the security assessment for the CSO, including 
 - Appendix C: Vulnerability Scan Results 
 - Appendix D: Documentation Review Findings 
 - Appendix E: Auxiliary Documents 
-- Appendix F: Penetration Test Report Evidence collected during the assessment 
+- Appendix F: Penetration Test Report 
+- Evidence collected during the assessment 
 
 _\* Document must be submitted in the FedRAMP-provided template_
 
@@ -18,7 +19,7 @@ _\* Document must be submitted in the FedRAMP-provided template_
 
 - Did the 3PAO use the FedRAMP template to prepare the SAR, including the RET and SRTM? Current templates can be found on the [FedRAMP Templates](https://www.fedramp.gov/rev5/documents-templates/) webpage.
 
-- Are all required appendices, listed in the **Table 6** above, included with the SAR?
+- Are all required appendices listed above included with the SAR?
 
 - Verify that all findings in the SRTM workbook (also known as the “Test Case Workbook”) are documented in the SAR.
 

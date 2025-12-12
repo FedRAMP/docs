@@ -4,11 +4,11 @@ A FedRAMP authorization package documents the security and risk posture for a CS
 
 FedRAMP authorization packages are leveraged by federal agencies for the authorization of cloud services for federal government use. FedRAMP provides standard templates and resources for CSPs to develop and deliver authorization packages to federal customers.
 
-- System Security Plan (SSP) and Appendix A
-- Appendix Q (as necessary) Security Assessment Plan (SAP)
-- Appendix D (as necessary) Security Assessment Report (SAR)
-- Appendix F (as necessary) Plan of Action & Milestones (POA&M) 
-- Appendix O Signed federal agency Authority to Operate (ATO) 
+- System Security Plan (SSP) and appendices A - Q 
+- Security Assessment Plan (SAP) and appendices A - D 
+- Security Assessment Report (SAR) and appendices A - F 
+- Plan of Action & Milestones (POA&M) (SSP Appendix O)
+- Signed federal agency Authority to Operate (ATO)
 
 !!! warning "Required Formats"
 

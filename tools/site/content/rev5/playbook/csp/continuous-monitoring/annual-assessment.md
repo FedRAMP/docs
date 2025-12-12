@@ -50,12 +50,17 @@ When developing the assessment schedule, be sure to build in time for developing
 The assessor prepares and submits the SAR and supporting documents using the following templates:
 
 - [FedRAMP Security Assessment Report (SAR) Template](<https://www.fedramp.gov/resources/templates/FedRAMP-Security-Assessment-Report-(SAR)-Template.docx>)\*
-- Depending on the impact categorization:
-  - [FedRAMP SAR Appendix B \- Low Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Low-Security-Requirements-Traceability-Matrix-Template.xlsx)
-  - [FedRAMP SAR Appendix B \- Moderate Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Moderate-Security-Requirements-Traceability-Matrix-Template.xlsx)
-  - [FedRAMP SAR Appendix B \- High Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-High-Security-Requirements-Traceability-Matrix-Template.xlsx)
+
 - [SAR Appendix A \- FedRAMP Risk Exposure Table (RET) Template](<https://www.fedramp.gov/resources/templates/SAR-Appendix-A-FedRAMP-Risk-Exposure-Table-(RET)-Template.xlsx>)
 
+- Depending on the impact categorization:
+
+    - [FedRAMP SAR Appendix B \- Low Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Low-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    
+    - [FedRAMP SAR Appendix B \- Moderate Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Moderate-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    
+    - [FedRAMP SAR Appendix B \- High Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-High-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    
 In accordance with the SAP, the SAR documents the actual process, procedures, and methodologies followed during the assessment, the assessment results, risks corrected during testing, and risks that remained at the conclusion of the assessment.
 
 \* For LI-SaaS cloud offerings, the control implementations, assessment test procedures, and assessment results are combined into one document using the [SSP Appendix A \- LI-SaaS FedRAMP Security Controls](https://www.fedramp.gov/resources/templates/SSP-Appendix-A-LI-SaaS-FedRAMP-Security-Controls.docx) template. To facilitate agency customer reviews, FedRAMP recommends aggregating the remaining risks using the RET template.

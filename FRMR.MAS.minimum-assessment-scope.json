@@ -114,11 +114,11 @@
                     "description": "Chapter 2.4 footnote 36 similarly states that \"the term authorization boundary is now used exclusively to refer to the set of system elements comprising the system to be authorized for operation or authorized for use by an authorizing official (i.e., the scope of the authorization).\""
                 },
                 {
-                    "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (4))",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
-                    "description": "Requires the General Services Administration to \"establish and update guidance on the boundaries of FedRAMP authorization packages to enhance the security and protection of Federal information and promote transparency for agencies and users as to which services are included in the scope of a FedRAMP authorization.\"",
-                    "delegation": "This responsibility is delegated to the FedRAMP Director",
-                    "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+                  "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (4))",
+                  "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+                  "description": "Requires the General Services Administration to \"establish and update guidance on the boundaries of FedRAMP authorization packages to enhance the security and protection of Federal information and promote transparency for agencies and users as to which services are included in the scope of a FedRAMP authorization.\"",
+                  "delegation": "This responsibility is delegated to the FedRAMP Director",
+                  "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 }
             ],
             "purpose": "Application boundaries that are defined too broadly complicate the assessment process by introducing components that are unlikely to have an impact on the confidentiality, integrity or accessibility of the offering. The Minimum Assessment Scope provides guidance for cloud service providers to narrowly define information resource boundaries while still including all necessary components.",

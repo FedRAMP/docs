@@ -12,16 +12,17 @@ FedRAMP provides a [single SSP template](https://www.fedramp.gov/resources/templ
 
 A high-quality SSP is the key to success. If you do not have a strong technical writer with security experience on your team, hire one\! Though it is not required, CSPs often choose to hire an experienced advisory partner to help develop the SSP. Many of the FedRAMP recognized 3PAOs, listed on the FedRAMP Marketplace, provide advisory services in addition to assessment services. NOTE: If engaging a 3PAO advisor, a different 3PAO must be engaged to perform the independent assessment.
 
-A common barrier to success is a poorly written, incomplete, inaccurate, and/or inconsistent SSP. FedRAMP has defined general criteria for document acceptance in **Table 3** below. **NOTE**: With the release of [NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) and [OMB-24-15](https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-15-modernizing-the-federal-risk-and-authorization-management-program-fedramp/), FedRAMP made several changes to the FedRAMP templates referenced in this training module; however, the key information and best practices intended to help you put forward a quality package is still relevant. FedRAMP will be updating this module in the future to better align with the updated templates. Further guidance and expectations, associated with effective control writing, is provided later in this section.
+A common barrier to success is a poorly written, incomplete, inaccurate, and/or inconsistent SSP. FedRAMP has defined general criteria for document acceptance in **Table 3** below. **NOTE**: With the release of [NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) and [OMB-24-15](../../../../authority/m-24-15.md), FedRAMP made several changes to the FedRAMP templates referenced in this training module; however, the key information and best practices intended to help you put forward a quality package is still relevant. FedRAMP will be updating this module in the future to better align with the updated templates. Further guidance and expectations, associated with effective control writing, is provided later in this section.
 
-**_Table 3\. Criteria for Document Acceptance_**
+### Criteria for Document Acceptance
 
-| Criteria         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Clarity**      | Logical presentation of material Current dates and timely content Non-standard terms, phrases, acronyms, and abbreviations defined No ambiguous statements or content Correct grammar and free from awkward phrases, typographical errors, spelling errors, missing words, or incorrect page and section numbers Readable figure text Sharp and legible figure graphics                                                                                            |
-| **Completeness** | Includes accurate, detailed, and informative content that is consistent with FedRAMP requirements Includes all appropriate sections of FedRAMP templates Includes all attachments and appendices Includes tables of contents, list of tables, and list of figures, where applicable Includes figures with required information, correct labels, and keys to color and line formats                                                                                 |
-| **Conciseness**  | Content and complexity relevant to the audience No superfluous words or phrases                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Consistency**  | Correct and consistent format Correct and continuous section numbering Terms with the same meaning throughout the document Items that are referred to by the same name or description throughout the document Level of detail and presentation style that are the same throughout the document Material that does not contradict predecessor documents All material in subsequent documents based in the predecessor document Figure content that agrees with text |
+- **Clarity**:Logical presentation of material Current dates and timely content Non-standard terms, phrases, acronyms, and abbreviations defined No ambiguous statements or content Correct grammar and free from awkward phrases, typographical errors, spelling errors, missing words, or incorrect page and section numbers Readable figure text Sharp and legible figure graphics.
+
+- **Completeness**: Includes accurate, detailed, and informative content that is consistent with FedRAMP requirements Includes all appropriate sections of FedRAMP templates Includes all attachments and appendices Includes tables of contents, list of tables, and list of figures, where applicable Includes figures with required information, correct labels, and keys to color and line formats.                                                                              
+
+- **Conciseness**: Content and complexity relevant to the audience No superfluous words or phrases.
+
+- **Consistency**: Correct and consistent format Correct and continuous section numbering Terms with the same meaning throughout the document Items that are referred to by the same name or description throughout the document Level of detail and presentation style that are the same throughout the document Material that does not contradict predecessor documents All material in subsequent documents based in the predecessor document Figure content that agrees with text.
 
 ## Writing the SSP
 
@@ -42,10 +43,11 @@ This section summarizes the required appendices for a complete SSP. CSPs should 
 
 These appendices can be downloaded from the Rev5 [Documents & Templates](https://fedramp.gov/rev5/documents-templates) section of this website:
 
-- Appendix A: FedRAMP Security Controls
+- Appendix A: FedRAMP Security Controls\*
 - Appendix B: Related Acronyms 
 - Appendix C: Security Policies and Procedures 
-- Appendix D: User Guide Appendix E: Digital Identity Worksheet 
+- Appendix D: User Guide 
+- Appendix E: Digital Identity Worksheet 
 - Appendix F: Rules of Behavior\*
 - Appendix G: Information System Contingency Plan (ICSP)\* 
 - Appendix H: Configuration Management Plan (CMP) 
@@ -86,9 +88,9 @@ Many control requirements include _parameters_ that are defined by the CSP or de
     
     Report incident information to **\[Assignment: organization-defined authorities\]**. 
     
-    _Hint: The organization (CSP) defines which authorities receive incident reports, but must also follow the reporting requirements defined in the FedRAMP Incident Communications Procedures._ 
+    _Hint: The organization (CSP) defines which authorities receive incident reports, but must also follow the reporting requirements defined in the FedRAMP [Continuous Monitoring Playbook](../continuous-monitoring/incident-communication.md)._ 
     
-    **IR-6 Additional FedRAMP Requirements and Guidance: Requirement:** Reports security incident information according to _FedRAMP Incident Communications Procedures_.
+    **IR-6 Additional FedRAMP Requirements and Guidance: Requirement:** Reports security incident information according to _FedRAMP [Continuous Monitoring Playbook](../continuous-monitoring/incident-communication.md)_.
 
 ### Control Summary Information
 
@@ -140,7 +142,7 @@ The control implementation statement is the written narrative that describes wha
 
 !!! tip "Verbs Matter"
 
-    Pay attention to the verbs in each of the control requirements. For example, IR-5 requires the CSP to _track_ and _document_ security incidents. In the control implementation statement for IR-5, CSPs must describe the process/tools employed to _track_ incidents, as well as the process/tools employed to _document_ incidents. To ensure that all control requirements are implemented and adequately addressed in the implementation statement, CSPs are encouraged to review the assessment objectives defined for each control in the FedRAMP Security Test Case Procedures template (SAP Appendix A). Templates for the LI-SaaS, Low, Moderate, and High baselines are available on the [Document & Templates](https://www.fedramp.gov/rev5/documents-templates/) page of the FedRAMP website. 
+    Pay attention to the verbs in each of the control requirements. For example, IR-5 requires the CSP to _track_ and _document_ security incidents. In the control implementation statement for IR-5, CSPs must describe the process/tools employed to _track_ incidents, as well as the process/tools employed to _document_ incidents. To ensure that all control requirements are implemented and adequately addressed in the implementation statement, CSPs are encouraged to review the assessment objectives defined for each control in the FedRAMP Security Requirements Traceability Matrix  (SAR Appendix B). Templates for the LI-SaaS, Low, Moderate, and High baselines are available on the [Document & Templates](https://www.fedramp.gov/rev5/documents-templates/) page of the FedRAMP website. 
 
 !!! tip "Customer Responsibility Headings"
 

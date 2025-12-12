@@ -118,11 +118,11 @@
                     "description": "Section 3.5 states \"When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.\""
                 },
                 {
-                    "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (1))",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-                    "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC \u00a7 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
-                    "delegation": "These responsibilities are delegated to the FedRAMP Director",
-                    "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+                  "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (1))",
+                  "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+                  "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC \u00a7 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
+                  "delegation": "These responsibilities are delegated to the FedRAMP Director",
+                  "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 }
             ],
             "purpose": "Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.",

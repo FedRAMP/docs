@@ -2,7 +2,7 @@
 
 ## Full Security Assessment
 
-During the Full Security Assessment phase, the 3PAO performs an independent security assessment of the system. Depending on the federal agency’s review approach determined in the [Authorization Planning](#heading=h.3whwml4) phase, the federal agency may review and approve the SSP and SAP prior to the start of the 3PAO assessment.
+During the Full Security Assessment phase, the 3PAO performs an independent security assessment of the system. Depending on the federal agency’s review approach determined in the [Authorization Planning](preparation.md#authorization-planning) phase, the federal agency may review and approve the SSP and SAP prior to the start of the 3PAO assessment.
 
 During this step, the 3PAO tests and validates the CSP’s implementation of security controls, validates vulnerability scans, and performs penetration testing. At the conclusion of the assessment, the 3PAO develops a SAR, which documents the results of the security assessment and includes a recommendation for FedRAMP authorization.
 
@@ -58,7 +58,7 @@ Examples include:
 
 - Inconsistencies between the boundary diagram, data flow diagrams, and SSP narrative.
 
-- Inconsistencies between control narratives and what is validated by the 3PAO and described in the [FedRAMP Security Test Case Procedures Workbook](<https://www.fedramp.gov/resources/templates/FedRAMP-Security-Assessment-Report-(SAR)-Template.docx>).
+- Inconsistencies between control narratives and what is validated by the 3PAO and described in the SAR
 
 - Inconsistencies between the SAR and POA&M.
 
@@ -74,7 +74,7 @@ At the end of the Remediation phase, the federal agency, CSP, and 3PAO should co
 
 During this phase, the federal agency review team finalizes its review of the authorization package, and the federal agency AO issues an ATO for the CSO. FedRAMP provides an [_ATO letter template_](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx) that federal agency AOs are encouraged to use. The ATO letter is sent to the CSP and [ato-letter@fedramp.gov](mailto:ato-letter@fedramp.gov).  
 
-The process for closing out the review and issuing an ATO varies from federal agency to agency. The implementation, testing, and documentation of customer controls in the federal agency’s GRC tool typically occurs during this phase, but may occur later in the authorization process after the ATO for the CSO is issued. As described in the [Authorization Planning](#heading=h.3whwml4) section, the federal agency’s process and timeline for reaching an authorization decision and issuing an ATO should be defined early in the process and communicated to all stakeholders to manage expectations.
+The process for closing out the review and issuing an ATO varies from federal agency to agency. The implementation, testing, and documentation of customer controls in the federal agency’s GRC tool typically occurs during this phase, but may occur later in the authorization process after the ATO for the CSO is issued. As described in the [Authorization Planning](preparation.md#authorization-planning) section of this playbook, the federal agency’s process and timeline for reaching an authorization decision and issuing an ATO should be defined early in the process and communicated to all stakeholders to manage expectations.
 
 
 ### (5) FedRAMP Review

@@ -66,11 +66,11 @@
         "front_matter": {
             "authority": [
                 {
-                    "reference": "FedRAMP Authorization Act (44 USC \u00a7 3608)",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-                    "description": "requires that the Administrator of the General Services Administration shall \"establish a Government- wide program that provides a standardized, reusable approach to security assessment and authorization for cloud computing products and services that process unclassified information used by agencies\"",
-                    "delegation": "These responsibilities are delegated to the FedRAMP Director",
-                    "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+                  "reference": "FedRAMP Authorization Act (44 USC \u00a7 3608)",
+                  "reference_url": "http://fedramp.gov/docs/authority/law/#sec-3608-federal-risk-and-authorization-management-program",
+                  "description": "requires that the Administrator of the General Services Administration shall \"establish a Government- wide program that provides a standardized, reusable approach to security assessment and authorization for cloud computing products and services that process unclassified information used by agencies\"",
+                  "delegation": "These responsibilities are delegated to the FedRAMP Director",
+                  "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 }
             ],
             "purpose": "This document consolidates formal FedRAMP definitions for terms used in FedRAMP 20x processes and documentation.",
@@ -200,16 +200,13 @@
                 "definition": "A temporary requirement included as part of a FedRAMP Pilot or Beta Test that will _likely_ be replaced, updated, or removed prior to the formal wide release of the requirement."
             },
             {
-                "id": "FRD-ALL-14",
-                "term": "Authorization Package",
-                "alts": [
-                    "authorization package",
-                    "authorization packages"
-                ],
-                "definition": "Has meaning from 44 USC \u00a7 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
-                "reference": "44 USC \u00a7 3607 (b)(8)",
-                "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3607",
-                "note": "In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified."
+              "id": "FRD-ALL-14",
+              "term": "Authorization Package",
+              "alts": ["authorization package", "authorization packages"],
+              "definition": "Has meaning from 44 USC \u00a7 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
+              "reference": "44 USC \u00a7 3607 (b)(8)",
+              "reference_url": "https://fedramp.gov/docs/authority/law/#b-additional-definitions",
+              "note": "In FedRAMP documentation, _authorization package_ always refers to a FedRAMP _authorization package_ unless otherwise specified."
             },
             {
                 "id": "FRD-ALL-15",

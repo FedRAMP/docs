@@ -99,15 +99,15 @@
         "front_matter": {
             "authority": [
                 {
-                    "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (7))",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-                    "description": "directs the Administrator of the General Services Administration to \"coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...\"",
-                    "delegation": "This responsibility is delegated to the FedRAMP Director",
-                    "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+                  "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (7))",
+                  "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+                  "description": "directs the Administrator of the General Services Administration to \"coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the [OMB] Director and the [DHS] Secretary, to establish and regularly update a framework for continuous monitoring...\"",
+                  "delegation": "This responsibility is delegated to the FedRAMP Director",
+                  "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 },
                 {
                   "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
-                  "reference_url": "https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf",
+                  "reference_url": "https://www.fedramp.gov/docs/authority/m-24-15",
                   "description": "section VI states \"FedRAMP should seek input from CSPs and develop processes that enable CSPs to maintain an agile deployment lifecycle that does not require advance Government approval, while giving the Government the visibility and information it needs to maintain ongoing confidence in the FedRAMP-authorized system and to respond timely and appropriately to incidents.\""
                 }
             ],

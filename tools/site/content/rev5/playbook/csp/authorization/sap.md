@@ -14,7 +14,7 @@ _\* Document must be submitted in the FedRAMP-provided template_
 
 - Did the 3PAO use the FedRAMP template to prepare the SAP? The current SAP template can be found on the [FedRAMP Templates](https://www.fedramp.gov/rev5/documents-templates/) webpage.
 
-- Are all applicable artifacts, listed in the **Table 5** above, included with the SAP?
+- Are all applicable artifacts listed above included with the SAP?
 
 - Does the scope accurately reflect all system services, components, and devices that comprise the authorization boundary for the system?
 

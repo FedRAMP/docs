@@ -73,9 +73,9 @@
                     "description": "section 4 (c) states that agencies SHALL \"conduct and document security and privacy control assessments prior to the operation of an information system, and periodically thereafter, consistent with the frequency defined in the agency information security continuous monitoring (ISCM) and privacy continuous monitoring (PCM) strategies and the agency risk tolerance\""
                 },
                 {
-                    "reference": "The FedRAMP Authorization Act (44 USC \u00a7 3609 (a)(1))",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-                    "description": "directs the Administrator of the General Services Administration to \"develop, coordinate, and implement a process \u2026 including, as appropriate, oversight of continuous monitoring of cloud computing products and services\""
+                  "reference": "The FedRAMP Authorization Act (44 USC \u00a7 3609 (a)(1))",
+                  "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+                  "description": "directs the Administrator of the General Services Administration to \"develop, coordinate, and implement a process \u2026 including, as appropriate, oversight of continuous monitoring of cloud computing products and services\""
                 }
             ],
             "purpose": "Agencies are required to continuously monitor all of their information systems following a documented process integrated into their Information Security Continuous Monitoring (ISCM) strategy. These strategies are specific to each agency and may even vary at the bureau, component, or information system levels.\n\nThe concept behind collaborative continuous monitoring is unique to government customers and creates a burden for commercial cloud service providers. This process attempts to minimize this burden by encouraging the use of automated monitoring and review of authorization data required by other FedRAMP standards and limiting the expected human interaction costs for cloud service providers and agencies. Agencies are expected to use information from the cloud service provider collaboratively in accordance with their agency ISCM strategy without blocking other agencies from making their own risk-based decisions about ongoing authorization.",

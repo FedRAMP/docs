@@ -24,7 +24,7 @@ The initial authorizing agency (aka “partner” or “sponsor”) is not respo
 
 - Reviewing the results of the annual assessment.
 
-For CSPs with more than one agency ATO/ATU, security control CA-7 | Continuous Monitoring requires the CSP to implement the collaborative ConMon approach described in [Section 7](#heading=h.8x5s79v6vku6) of this playbook.
+For CSPs with more than one agency ATO/ATU, security control CA-7 | Continuous Monitoring requires the CSP to implement the approach described in the [Collaborative ConMon](collaborative-monitoring.md) section of this playbook.
 
 Agencies should implement an escalation process to monitor their authorized CSOs, which may result in one of the following escalation levels[^2]:
 
@@ -41,40 +41,46 @@ When an agency AO identifies a deficiency in the CSP’s ConMon capabilities, th
 1. The agency AO identifies a deficiency with a CSP’s ConMon capability.
 
 2. The Agency AO reviews the deficiency and compares it to the CSP’s past ConMon performance. As a result of the review, the agency AO decides on one of the following actions:
-   1. The agency AO may elect to simply monitor the CSP more closely and take no further action. If so, no notice is sent and the process stops here;
 
-   2. The agency AO may increase a CSP’s existing escalation level; for example, a CSP on a CAP may face Suspension; or
+    1. The agency AO may elect to simply monitor the CSP more closely and take no further action. If so, no notice is sent and the process stops here;
 
-   3. The agency AO may determine the deficiency is severe enough to make the escalation effective immediately in which case, steps 3 and 4 are skipped.
+    2. The agency AO may increase a CSP’s existing escalation level; for example, a CSP on a CAP may face Suspension; or
+
+    3. The agency AO may determine the deficiency is severe enough to make the escalation effective immediately in which case, steps 3 and 4 are skipped.
 
 3. The agency AO notifies the CSP of the deficiency and the agency AO’s intended escalation.
 
 4. The CSP responds to the notification. The CSP’s response should include any information that may rebut the escalation decision. Depending on the intended escalation level, the CSP’s response must come from:
-   1. The CSP’s security POC for a DFR; or
+   
+    1. The CSP’s security POC for a DFR; or
 
-   2. The CSP’s system owner for a CAP, Suspension, or Revocation.
+    2. The CSP’s system owner for a CAP, Suspension, or Revocation.
 
 5. The agency AO reviews and adjudicates the CSP’s response, and renders a formal escalation decision.
 
 6. The Agency AO notifies the CSP of its decision. If the agency AO decides to follow through with an escalation, this notice:
-   1. Identifies the criteria for returning the CSO to a Satisfactory status. It may also include a deadline by which the CSP must fully satisfy the criteria or face more severe escalation; and
 
-   2. Requires certain actions from the CSP. Typically, an agency AO would require the CSP to perform a root-cause analysis and develop a formal plan for addressing the deficiencies.
+    1. Identifies the criteria for returning the CSO to a Satisfactory status. It may also include a deadline by which the CSP must fully satisfy the criteria or face more severe escalation; and
+
+    2. Requires certain actions from the CSP. Typically, an agency AO would require the CSP to perform a root-cause analysis and develop a formal plan for addressing the deficiencies.
 
 7. The CSP responds to the Agency AO notification. This response must include:
-   1. The results of the root cause analysis;
+   
+    1. The results of the root cause analysis;
 
-   2. The CSP’s plan for fully resolving the issues, with clearly established milestones and dates, including a date of full resolution;
+    2. The CSP’s plan for fully resolving the issues, with clearly established milestones and dates, including a date of full resolution;
 
-   3. For a CAP or Suspension, the system owner’s signature on the plan and agency AO approval of the plan; and
+    3. For a CAP or Suspension, the system owner’s signature on the plan and agency AO approval of the plan; and
 
-   4. Any other items as specified by the agency AO in the notification.
+    4. Any other items as specified by the agency AO in the notification.
 
 8. When a CSP is subject to escalation as described above, the following occurs:
-   1. Notification to FedRAMP: Agency AOs must notify FedRAMP at <info@fedramp.gov> if a decision is made to initiate Suspension or Revocation. CAP letters should be uploaded to the FedRAMP secure repository.
+   
+    1. Notification to FedRAMP: Agency AOs must notify FedRAMP at <info@fedramp.gov> if a decision is made to initiate Suspension or Revocation. CAP letters should be uploaded to the FedRAMP secure repository.
 
 9. When the agency AO determines the CSP has fully resolved the cited deficiencies and satisfied the identified criteria communicated in the notification, the agency AO must take the following actions:
-   1. Notification to FedRAMP: Agency AOs must notify FedRAMP at <info@fedramp.gov> if an escalation has been resolved. CAP release letters must be posted to the FedRAMP secure repository.
+   
+    1. Notification to FedRAMP: Agency AOs must notify FedRAMP at <info@fedramp.gov> if an escalation has been resolved. CAP release letters must be posted to the FedRAMP secure repository.
 
 ## **Agency Performance Management Deficiency Triggers**
 
@@ -100,7 +106,7 @@ Table 1\. Agency Performance Management Deficiency Triggers
 | Change Control         | **Late Notice of Emergency Change** Notification received more than five days after the change.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |           CAP            |
 |                        | **Undocumented/Unreported Change** No notification.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |           CAP            |
 |                        | **Degradation of the Change Management and Change Control Processes** Insufficient adherence to the provided configuration management plan as determined by FedRAMP.                                                                                                                                                                                                                                                                                                                                                                                                              |           DFR            |
-| Incident Response      | **Late Incident Notification** Late notification of incident not in accordance with [Section 6](#heading=h.pvfo5pyug8k9) of this playbook.                                                                                                                                                                                                                                                                                                                                                                                                                                        |           CAP            |
+| Incident Response      | **Late Incident Notification** Late notification of incident not in accordance with the [Incident Communication](incident-communication.md) section of this playbook.                                                                                                                                                                                                                                                                                                                                                                                                                                        |           CAP            |
 |                        | **Late response to Cybersecurity and Infrastructure Security Agency (CISA) Emergency Directives** Failure to respond to CISA Emergency Directives within prescribed timeframes.                                                                                                                                                                                                                                                                                                                                                                                                   |           CAP            |
 |                        | **Incident Frequency of Recurring Type** Any incident with recurring type and/or cause                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |           CAP            |
 |                        | **Incident Frequency** Four or more incidents within six months                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |           DFR            |

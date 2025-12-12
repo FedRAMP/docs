@@ -81,15 +81,15 @@
         "front_matter": {
             "authority": [
                 {
-                    "reference": "44 USC \u00a7 3609 (a)(8)",
-                    "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap36-sec3609",
-                    "description": "The FedRAMP Authorization Act directs the Administrator of the General Services Administration to \"provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...\"",
-                    "delegation": "This responsibility is delegated to the FedRAMP Director",
-                    "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+                  "reference": "44 USC \u00a7 3609 (a)(8)",
+                  "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+                  "description": "The FedRAMP Authorization Act directs the Administrator of the General Services Administration to \"provide a secure mechanism for storing and sharing necessary data, including FedRAMP authorization packages, to enable better reuse of such packages across agencies, including making available any information and data necessary for agencies...\"",
+                  "delegation": "This responsibility is delegated to the FedRAMP Director",
+                  "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
                 },
                 {
                   "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
-                  "reference_url": "https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf",
+                  "reference_url": "https://www.fedramp.gov/docs/authority/m-24-15",
                   "description": "Section 6 states that \"In general, to encourage both security and agility, Federal agencies should use the same infrastructure relied on by the rest of CSPs' commercial customer base.\""
                 }
             ],

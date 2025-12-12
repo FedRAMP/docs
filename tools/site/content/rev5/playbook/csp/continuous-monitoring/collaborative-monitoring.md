@@ -6,7 +6,7 @@
 
 The FedRAMP High, Moderate and Low baselines require CSPs to develop a ConMon strategy that complies with the requirements defined in CA-7, Security Assessment and Authorization | Continuous Monitoring.
 
-FedRAMP does not currently have the capacity to actively monitor continuous monitoring for all Rev 5 FedRAMP Authored services. Each agency that issues an ATO or Authorization to Use (ATU) for the CSO is responsible for performing oversight for their use of the system to ensure the security posture remains sufficient for its own use and supports an ongoing authorization.
+FedRAMP does not currently have the capacity to actively monitor continuous monitoring for all Rev 5 FedRAMP Authorized services. Each agency that issues an ATO or Authorization to Use (ATU) for the CSO is responsible for performing oversight for their use of the system to ensure the security posture remains sufficient for its own use and supports an ongoing authorization.
 
 For CSOs that have more than one active ATO/ATU on file with FedRAMP, CA-7 requires the CSP to implement a Collaborative ConMon approach. Collaborative ConMon benefits both agencies and CSPs:
 
@@ -96,7 +96,7 @@ The charter should identify additional ConMon requirements that the member agenc
 
 ### Section 7: ConMon Performance Management
 
-While it is ultimately up to each agency Authorizing Official to maintain or revoke an ATO, this section can be used by the collaboration group to define performance triggers and associated escalation levels (for example, Corrective Action Plan “In Remediation” status) when the CSP fails to comply with FedRAMP’s continuous monitoring requirements or the agreed upon charter. The PMO recommends using the process defined in [Section 8](#heading=h.8hei98boqjpn) of this playbook as the basis for this section.
+While it is ultimately up to each agency Authorizing Official to maintain or revoke an ATO, this section can be used by the collaboration group to define performance triggers and associated escalation levels (for example, Corrective Action Plan “In Remediation” status) when the CSP fails to comply with FedRAMP’s continuous monitoring requirements or the agreed upon charter. The PMO recommends using the process defined in the [Performance Management](performance-management.md) section of this playbook as the basis for this section.
 
 ## **Step 2: Hold Inaugural Collaborative ConMon Meeting**
 
