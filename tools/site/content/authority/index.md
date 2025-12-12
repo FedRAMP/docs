@@ -1,0 +1,3 @@
+# Authority & Responsibility
+
+Background stuffs
