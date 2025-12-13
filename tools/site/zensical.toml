@@ -122,11 +122,11 @@ nav = [
                 {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
             ]},
         ] },
-        { "Executive Orders" = [
-            "authority/eos.md",
-        ] },
         { "Related Guidance" = [
             { "Scope of FedRAMP" = "authority/scope.md" },
+        ]},
+        { "Historical" = [
+            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md"},
         ]}
     ] },
     { "// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two" },
