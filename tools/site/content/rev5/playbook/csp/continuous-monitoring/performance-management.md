@@ -8,13 +8,13 @@ Failure to adhere to FedRAMP ConMon requirements and conditions in the ATO lette
 
 !!! tip "Agency AO"
 
-    The term “Agency AO” is used throughout this section; however, specific actions may be taken by the Agency AO, the AO’s representative, or collaborative ConMon group.
+    The term "Agency AO" is used throughout this section; however, specific actions may be taken by the Agency AO, the AO's representative, or collaborative ConMon group.
 
 ## **Performance Management for Ongoing Authorization**
 
 This section provides a recommended process to help agencies perform oversight of CSOs authorized via the FedRAMP agency authorization path.
 
-The initial authorizing agency (aka “partner” or “sponsor”) is not responsible for performing ConMon oversight on behalf of subsequent authorizing agencies. Each agency that issues an ATO, or authority to use (ATU), for a cloud offering must review the CSP’s ConMon activities to ensure the security posture remains sufficient for its own use and supports an ongoing authorization. This includes:
+The initial authorizing agency (aka "partner" or "sponsor") is not responsible for performing ConMon oversight on behalf of subsequent authorizing agencies. Each agency that issues an ATO, or authority to use (ATU), for a cloud offering must review the CSP's ConMon activities to ensure the security posture remains sufficient for its own use and supports an ongoing authorization. This includes:
 
 - Reviewing the monthly POA&Ms
 
@@ -30,33 +30,33 @@ Agencies should implement an escalation process to monitor their authorized CSOs
 
 - **Detailed Finding Review (DFR):** A request from an agency AO for a CSP to assess a deficiency and report the cause and remedy. If the CSP does not resolve a DFR within the agreed upon timeframe, the agency AO may escalate to a corrective action plan (CAP).
 
-- **CAP:** A request from an agency AO for a CSP to perform a root-cause analysis and provide a formal plan for remediation. If the CSP does not resolve a CAP within the agreed upon timeframe, the agency AO may suspend or revoke the CSO’s ATO(s).
+- **CAP:** A request from an agency AO for a CSP to perform a root-cause analysis and provide a formal plan for remediation. If the CSP does not resolve a CAP within the agreed upon timeframe, the agency AO may suspend or revoke the CSO's ATO(s).
 
-- **Suspension:** A decision by an agency AO to temporarily suspend a CSO’s ATO(s) until the identified deficiencies are resolved. In this phase, an agency may choose to suspend use of the CSO. If the CSP does not resolve a suspension within the agreed upon timeframe or if the agency AO determines the CSP can no longer meet FedRAMP compliance requirements, the agency AO may revoke the CSO’s ATO(s).
+- **Suspension:** A decision by an agency AO to temporarily suspend a CSO's ATO(s) until the identified deficiencies are resolved. In this phase, an agency may choose to suspend use of the CSO. If the CSP does not resolve a suspension within the agreed upon timeframe or if the agency AO determines the CSP can no longer meet FedRAMP compliance requirements, the agency AO may revoke the CSO's ATO(s).
 
-- **Revocation:** A decision by an agency AO to revoke a CSO’s ATO and migrate the data to another CSO.
+- **Revocation:** A decision by an agency AO to revoke a CSO's ATO and migrate the data to another CSO.
 
-When an agency AO identifies a deficiency in the CSP’s ConMon capabilities, the following escalation process should be initiated:
+When an agency AO identifies a deficiency in the CSP's ConMon capabilities, the following escalation process should be initiated:
 
-1. The agency AO identifies a deficiency with a CSP’s ConMon capability.
+1. The agency AO identifies a deficiency with a CSP's ConMon capability.
 
-2. The Agency AO reviews the deficiency and compares it to the CSP’s past ConMon performance. As a result of the review, the agency AO decides on one of the following actions:
+2. The Agency AO reviews the deficiency and compares it to the CSP's past ConMon performance. As a result of the review, the agency AO decides on one of the following actions:
 
     1. The agency AO may elect to simply monitor the CSP more closely and take no further action. If so, no notice is sent and the process stops here;
 
-    2. The agency AO may increase a CSP’s existing escalation level; for example, a CSP on a CAP may face Suspension; or
+    2. The agency AO may increase a CSP's existing escalation level; for example, a CSP on a CAP may face Suspension; or
 
     3. The agency AO may determine the deficiency is severe enough to make the escalation effective immediately in which case, steps 3 and 4 are skipped.
 
-3. The agency AO notifies the CSP of the deficiency and the agency AO’s intended escalation.
+3. The agency AO notifies the CSP of the deficiency and the agency AO's intended escalation.
 
-4. The CSP responds to the notification. The CSP’s response should include any information that may rebut the escalation decision. Depending on the intended escalation level, the CSP’s response must come from:
+4. The CSP responds to the notification. The CSP's response should include any information that may rebut the escalation decision. Depending on the intended escalation level, the CSP's response must come from:
    
-    1. The CSP’s security POC for a DFR; or
+    1. The CSP's security POC for a DFR; or
 
-    2. The CSP’s system owner for a CAP, Suspension, or Revocation.
+    2. The CSP's system owner for a CAP, Suspension, or Revocation.
 
-5. The agency AO reviews and adjudicates the CSP’s response, and renders a formal escalation decision.
+5. The agency AO reviews and adjudicates the CSP's response, and renders a formal escalation decision.
 
 6. The Agency AO notifies the CSP of its decision. If the agency AO decides to follow through with an escalation, this notice:
 
@@ -68,9 +68,9 @@ When an agency AO identifies a deficiency in the CSP’s ConMon capabilities, th
    
     1. The results of the root cause analysis;
 
-    2. The CSP’s plan for fully resolving the issues, with clearly established milestones and dates, including a date of full resolution;
+    2. The CSP's plan for fully resolving the issues, with clearly established milestones and dates, including a date of full resolution;
 
-    3. For a CAP or Suspension, the system owner’s signature on the plan and agency AO approval of the plan; and
+    3. For a CAP or Suspension, the system owner's signature on the plan and agency AO approval of the plan; and
 
     4. Any other items as specified by the agency AO in the notification.
 
@@ -84,14 +84,14 @@ When an agency AO identifies a deficiency in the CSP’s ConMon capabilities, th
 
 ## **Agency Performance Management Deficiency Triggers**
 
-To ensure consistent expectations and enforcement, an agency AO should define performance management deficiency “triggers.” An agency can pick and choose the appropriate triggers. Examples are described in the table below.
+To ensure consistent expectations and enforcement, an agency AO should define performance management deficiency "triggers." An agency can pick and choose the appropriate triggers. Examples are described in the table below.
 
 Table 1\. Agency Performance Management Deficiency Triggers
 
 | Process Area           | Deficiency Trigger                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Minimum Escalation Level |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------: |
 | Operational Visibility | **Unique Vulnerability Count Increase** 20% from ATO baseline or 10 unique vulnerabilities, whichever is greater. Note: A request to re-baseline a unique vulnerability count, accompanied with proper justification, can be submitted to the agency, and may be approved on a case-by-case basis.                                                                                                                                                                                                                                                                                |           DFR            |
-|                        | **Non-compliance with scanning requirements outlined in FedRAMP Vulnerability Scanning Requirements**. **First incident in the previous six months.** Unauthenticated scan results delivered as part of the initial SAR submission, as part of the annual SAR submission, or as part of the monthly scanning submission, where the unauthenticated scans are 10% or greater of the total scan submission. This applies only to a CSP’s first submission that is non-compliant with authenticated scan requirements.                                                               |           DFR            |
+|                        | **Non-compliance with scanning requirements outlined in FedRAMP Vulnerability Scanning Requirements**. **First incident in the previous six months.** Unauthenticated scan results delivered as part of the initial SAR submission, as part of the annual SAR submission, or as part of the monthly scanning submission, where the unauthenticated scans are 10% or greater of the total scan submission. This applies only to a CSP's first submission that is non-compliant with authenticated scan requirements.                                                               |           DFR            |
 |                        | **Non-compliance with scanning requirements outlined in FedRAMP Vulnerability Scanning Requirements**. **Each subsequent incident beyond the first within the previous six months.** Unauthenticated scan results delivered as part of the initial SAR submission, as part of the annual SAR submission, or as part of the monthly scanning submission, where the unauthenticated scans are 10% or greater of the total scan submission, result in a CSP being placed on a CAP, when a second or subsequent CSP submission is non-compliant with authenticated scan requirements. |           CAP            |
 |                        | **Late Remediation High Impact Vulnerabilities** Five or more unique vulnerabilities or POA&M items aged greater than 30 days.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |           DFR            |
 |                        | **Late Remediation High Impact Vulnerabilities** Five or more unique vulnerabilities or POA&M items aged greater than 60 days.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |           CAP            |

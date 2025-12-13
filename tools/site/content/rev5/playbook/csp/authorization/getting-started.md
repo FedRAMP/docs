@@ -39,4 +39,4 @@ FedRAMP in accordance with the
 [OMB memorandum](https://www.fedramp.gov/resources/documents/FedRAMP_Policy_Memo.pdf).
 
 General information, including resources, blogs, templates, and documentation
-for authorization, can be found on FedRAMP’s [website](http://www.fedramp.gov).
+for authorization, can be found on FedRAMP's [website](http://www.fedramp.gov).

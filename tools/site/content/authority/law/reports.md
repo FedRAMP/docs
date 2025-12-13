@@ -4,7 +4,7 @@
 
 ### **(a) Reports to Congress**
 
-Not later than 1 year after the date of enactment of this section, and annually thereafter, the Director **shall** submit to the appropriate congressional committees a report that includes the following:
+Not later than 1 year[^1] after the date of enactment of this section, and annually thereafter, the Director **shall** submit to the appropriate congressional committees a report that includes the following:
 
 1. During the preceding year, the status, efficiency, and effectiveness of the General Services Administration under section 3609 and agencies under section 3613 and in supporting the speed, effectiveness, sharing, reuse, and security of authorizations to operate for secure cloud computing products and services.
 
@@ -32,7 +32,7 @@ Not later than 1 year after the date of enactment of this section, and annually 
 
 ### **(b) GAO Report**
 
-Not later than 180 days after the date of enactment of this section, the Comptroller General of the United States **shall** report to the appropriate congressional committees an assessment of the following:
+Not later than 180 days[^2] after the date of enactment of this section, the Comptroller General of the United States **shall** report to the appropriate congressional committees an assessment of the following:
 
 1. The costs incurred by agencies and cloud service providers relating to the issuance of FedRAMP authorizations.
 
@@ -42,3 +42,12 @@ Not later than 180 days after the date of enactment of this section, the Comptro
 
 4. The unique costs and potential burdens incurred by cloud computing companies that are small business concerns (as defined in section 3(a) of the Small Business Act (15 U.S.C.  632(a)) as a part of the FedRAMP authorization process.
 
+!!! note "GAO-24-106591"
+
+    This required report was released on January 18, 2024 by GAO:
+    
+    [Cloud Security: Federal Authorization Program Usage Increasing, but Challenges Need to Be Fully Addressed"](https://www.gao.gov/products/gao-24-106591)
+    
+
+[^1]: December 23, 2023
+[^2]: June 21, 2023

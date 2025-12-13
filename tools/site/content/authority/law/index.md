@@ -2,15 +2,17 @@
 
 !!! abstract "The Statutory Establishment of FedRAMP"
 
-    FedRAMP was established on **December 23, 2022** in Subtitle I, Title LIX, Subtitle C, Section 5921 of 
-    [Public Law 117-263 - James M. Inhofe National Defense Authorization Act for Fiscal Year 2023](https://www.govinfo.gov/app/details/PLAW-117publ263).
+    FedRAMP was established on **December 23, 2022** in Subtitle I, Title LIX, Subtitle C, Section 5921 of
+    [Public Law 117-263 - James M. Inhofe National Defense Authorization Act for Fiscal Year 2023](https://www.govinfo.gov/app/details/PLAW-117publ263). This law amended Chapter 36 of Title 44 of the United States Code.
 
-    This law amended Chapter 36 of Title 44 of the United States Code.
+    As required in Section 3614 of this Act, OMB Memorandum M-24-15 was published on **July 25, 2024** to guide government-wide implementation. This Memorandum formally rescinded and replaced FedRAMP in its entirety, effectively creating a new program with the same name but an entirely different set of authority and responsibilities.
 
 !!! info "Minor Modifications for Readability"
 
     The text of the FedRAMP Authorization Act shown on this site has been modified slightly
     for readability. No material content or words have been changed.
+
+---
 
 ## **SEC. 5921. FEDRAMP AUTHORIZATION ACT**
 
@@ -20,7 +22,8 @@ This section may be cited as the FedRAMP Authorization Act.
 
 ### **(b) Amendment**
 
-Chapter 36 of title 44, United States Code, is amended by adding at the end the following:
+Chapter 36 of title 44, United States Code, is amended by adding at the end the
+following:
 
 ---
 
@@ -48,7 +51,8 @@ Chapter 36 of title 44, United States Code, is amended by adding at the end the 
 
 ### **\(c) Technical and Conforming Amendment**
 
-The table of sections for chapter 36 of title 44, United States Code, is amended by adding at the end the following new items:
+The table of sections for chapter 36 of title 44, United States Code, is amended
+by adding at the end the following new items:
 
 3607. Definitions.
 
@@ -74,12 +78,19 @@ The table of sections for chapter 36 of title 44, United States Code, is amended
 
 #### **(1) In general**
 
-Effective on the date that is 5 years after the date of enactment of this Act, chapter 36 of title 44, United States Code, is amended by striking sections 3607 through 3616.
+Effective on the date that is 5 years after the date of enactment of this Act,
+chapter 36 of title 44, United States Code, is amended by striking sections 3607
+through 3616.
 
 #### **(2) Conforming amendment**
 
-Effective on the date that is 5 years after the date of enactment of this Act, the table of sections for chapter 36 of title 44, United States Code, is amended by striking the items relating to sections 3607 through 3616.
+Effective on the date that is 5 years after the date of enactment of this Act,
+the table of sections for chapter 36 of title 44, United States Code, is amended
+by striking the items relating to sections 3607 through 3616.
 
 ### **(e) Rule of Construction**
 
-Nothing in this section or any amendment made by this section shall be construed as altering or impairing the authorities of the Director of the Office of Management and Budget or the Secretary of Homeland Security under subchapter II of chapter 35 of title 44, United States Code.
+Nothing in this section or any amendment made by this section shall be construed
+as altering or impairing the authorities of the Director of the Office of
+Management and Budget or the Secretary of Homeland Security under subchapter II
+of chapter 35 of title 44, United States Code.

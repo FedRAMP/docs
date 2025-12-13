@@ -28,7 +28,7 @@ The CSP and assessor work together to define the scope of the FedRAMP Rev 5 annu
 - CSP-selected controls required to address system changes that have been implemented and/or changed by a CSP since their last assessment (this excludes those controls or portions of controls previously assessed under a significant change within the same annual period)
 - Validation of POA&Ms closed since the last assessment
 - Validation of POA&Ms identified as vendor dependencies (VDs) or deviation requests (DRs)
-- Controls identified as “Not Applicable” (N/A) to validate they are, in fact, not applicable
+- Controls identified as "Not Applicable" (N/A) to validate they are, in fact, not applicable
 - Controls that have not been assessed, at least once in a three year period, to ensure controls are meeting periodicity requirements
 
 ### Develop Security Assessment Plan (SAP)

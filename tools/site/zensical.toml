@@ -6,7 +6,6 @@ site_author = "pete@fedramp.gov"
 site_dir = "static/html/"
 docs_dir = "static/markdown/"
 site_url = "https://fedramp.gov/docs/"
-
 nav = [
     { "Overview" = "index.md" },
     { "FedRAMP 20x" = [
@@ -95,7 +94,7 @@ nav = [
         ] },
     ] },
     { "Authority & Responsibility" = [
-        "authority/index.md",
+        "authority/index.md",        
         { "Foundational Authority" = [
             { "FedRAMP Authorization Act" = [
                 "authority/law/index.md",
@@ -108,11 +107,27 @@ nav = [
                 { "Reports to Congress" = "authority/law/reports.md"},
                 { "FSCAC" = "authority/law/fscac.md"},
             ]},
-            { "M-24-15" = "authority/m-24-15.md" },
+            { "M-24-15" = [
+                "authority/m-24-15/index.md",
+                {"Background" = "authority/m-24-15/background.md"},
+                {"Vision" = "authority/m-24-15/vision.md"},
+                {"Scope of FedRAMP" = "authority/m-24-15/scope.md"},
+                {"The FedRAMP Authorization Process" = "authority/m-24-15/process.md"},
+                {"Automation and Efficiency" = "authority/m-24-15/automation.md"},
+                {"Continuous Monitoring" = "authority/m-24-15/monitoring.md"},
+                {"Roles and Responsibilities" = "authority/m-24-15/roles.md"},
+                {"Industry Engagement" = "authority/m-24-15/industry.md"},
+                {"Implementation" = "authority/m-24-15/implementation.md"},
+                {"Rescissions" = "authority/m-24-15/rescissions.md"},
+                {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
+            ]},
         ] },
         { "Executive Orders" = [
             "authority/eos.md",
         ] },
+        { "Related Guidance" = [
+            { "Scope of FedRAMP" = "authority/scope.md" },
+        ]}
     ] },
     { "// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two" },
 ]
@@ -159,7 +174,15 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
-#[project.markdown_extensions.abbr]
-#[project.markdown_extensions.attr_list]
-#[project.markdown_extensions.pymdownx.snippets]
-#auto_append = ["overrides/definitions.md"]
+
+[project.markdown_extensions]
+admonition = {}
+footnotes = {}
+abbr = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+tables = {}
+
+[project.markdown_extensions.toc]
+permalink =  true

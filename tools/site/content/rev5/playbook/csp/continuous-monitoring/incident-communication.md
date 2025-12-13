@@ -14,7 +14,7 @@ Incident communications stakeholders include a variety of teams and individuals 
 
 - Interconnected systems
 
-The Federal Information Security Modernization Act of 2014 (FISMA) is the authoritative source for incident definitions. FISMA defines an "incident" as "an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies." The terms “security incident” and “information security incident” are also used interchangeably with “incident” within the body of the law.
+The Federal Information Security Modernization Act of 2014 (FISMA) is the authoritative source for incident definitions. FISMA defines an "incident" as "an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies." The terms "security incident" and "information security incident" are also used interchangeably with "incident" within the body of the law.
 
 Clear and timely incident communication to stakeholders is a key aspect of ConMon to ensure that incident handling is transparent and stakeholders are aware of the current status and remediation efforts.
 
@@ -32,7 +32,7 @@ Reporting suspected or confirmed incidents, as well as responses to emergency di
 
 - Both internal and external incident response contact lists (in all incident response plans) are accurate and up-to-date
 
-- CSP contact information is up-to-date and on file with FedRAMP and all federal customers of a CSP’s FedRAMP-Authorized services
+- CSP contact information is up-to-date and on file with FedRAMP and all federal customers of a CSP's FedRAMP-Authorized services
 
 ## **Roles and Responsibilities**
 
@@ -50,7 +50,7 @@ The following table describes the stakeholder roles and responsibilities in the 
 
 CSPs must report all incidents, which include any suspected or confirmed events, that result in the potential or confirmed loss of confidentiality, integrity, or availability to assets or services provided by the service offering. Reporting requirements to CISA, agency customers and FedRAMP are identified in this section.
 
-As CSPs manage and report incidents, they must not deviate from FedRAMP requirements to protect the confidentiality, integrity, or availability of data stored, processed, or transmitted by the system as well as data about the system and related to the incident. Sensitive information must be provided using approved mechanisms. CSPs must report suspected and confirmed information security incidents to the following parties **within one (1) hour** of being identified by the CSP’s top-level Computer Security Incident Response Team (CSIRT), Security Operations Center (SOC), or information technology department to the following stakeholders:
+As CSPs manage and report incidents, they must not deviate from FedRAMP requirements to protect the confidentiality, integrity, or availability of data stored, processed, or transmitted by the system as well as data about the system and related to the incident. Sensitive information must be provided using approved mechanisms. CSPs must report suspected and confirmed information security incidents to the following parties **within one (1) hour** of being identified by the CSP's top-level Computer Security Incident Response Team (CSIRT), Security Operations Center (SOC), or information technology department to the following stakeholders:
 
 - Customers who are impacted or who are suspected of being impacted (via the CSP Incident Information and Forms folder in their respective FedRAMP Secure Repository)
 
@@ -69,20 +69,20 @@ CSPs must maintain current and accurate contact information on file for all POCs
 
 When reporting to CISA, CSPs must include the required data elements as well as any other available information. CSPs must submit incident notifications in accordance with the Submitting Incident Notifications section of [https://www.cisa.gov/federal-incident-notification-guidelines](https://www.cisa.gov/federal-incident-notification-guidelines). In some cases, it may not be feasible to have complete and validated information prior to reporting. CSPs should provide their best estimate at the time of notification and report updated information as it becomes available.
 
-After initial incident notification, the CSP must provide updates to CISA as well as daily updates to all POCs. The final daily update must be provided to all POCs after the CSP has completed the Recovery phase of Incident Response Life Cycle (Containment, Eradication, Recovery, and Post-Incident Activity). The CSP must also provide a report to all POCs after it has completed the Post-Incident Activity in the Incident Response Life Cycle. The final report must describe what occurred, the root cause, the CSP’s response, lessons learned, and changes needed.
+After initial incident notification, the CSP must provide updates to CISA as well as daily updates to all POCs. The final daily update must be provided to all POCs after the CSP has completed the Recovery phase of Incident Response Life Cycle (Containment, Eradication, Recovery, and Post-Incident Activity). The CSP must also provide a report to all POCs after it has completed the Post-Incident Activity in the Incident Response Life Cycle. The final report must describe what occurred, the root cause, the CSP's response, lessons learned, and changes needed.
 
 Additionally, CSPs are responsible for responding to emergency inquiries from FedRAMP, including those that are the result of the issuance of CISA Emergency Directives. If any emergency inquiry is issued, the CSP must comply within the timeline described in the request. Any additional reporting requirements identified in the inquiry must also be met. If there are any explicit actions the CSP must take that are identified in the emergency inquiry, they must be addressed in the timeline prescribed. Failure to report or respond to emergency inquiries, or failure to perform the prescribed remediation actions, can result in the escalation actions outlined in the [Performance Management](performance-management.md) section of this playbook.
 
 ## **AO Responsibilities**
 
-Upon receipt of a CSP’s notification, AOs must take the following actions:
+Upon receipt of a CSP's notification, AOs must take the following actions:
 
 1. Verify that, if required, CISA has been notified
 
 2. Request that the CSP provides daily updates and the CISA tracking number when it has become available
 
-3. Verify the CSP’s notification and supporting documentation is posted to the Incident Information and Forms folder in the FedRAMP secure repository
-   1. Notifications of incidents should be sent to the following FedRAMP POCs after each update, should not contain any sensitive data, and should direct POCs to the CSP’s designated FedRAMP secure repository:
+3. Verify the CSP's notification and supporting documentation is posted to the Incident Information and Forms folder in the FedRAMP secure repository
+   1. Notifications of incidents should be sent to the following FedRAMP POCs after each update, should not contain any sensitive data, and should direct POCs to the CSP's designated FedRAMP secure repository:
       1. FedRAMP at **fedramp_security@gsa.gov**
 
       2. AO and applicable team members (contact information on file with the CSP)

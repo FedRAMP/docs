@@ -18,7 +18,7 @@ _\* Document must be submitted in the FedRAMP-provided template_
 
 - Does the scope accurately reflect all system services, components, and devices that comprise the authorization boundary for the system?
 
-- Does the 3PAO intend to use a sampling methodology? If so, was the methodology included as an appendix to the SAP? For vulnerability scans, the 3PAO’s sampling methodology must align with [FedRAMP's vulnerability scanning sampling requirements](../continuous-monitoring/vulnerability-scanning.md#sampling-for-vulnerability-scanning).
+- Does the 3PAO intend to use a sampling methodology? If so, was the methodology included as an appendix to the SAP? For vulnerability scans, the 3PAO's sampling methodology must align with [FedRAMP's vulnerability scanning sampling requirements](../continuous-monitoring/vulnerability-scanning.md#sampling-for-vulnerability-scanning).
 
 - Does the test schedule reflect the agreed upon schedule?
 

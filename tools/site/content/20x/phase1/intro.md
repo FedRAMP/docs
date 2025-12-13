@@ -57,9 +57,9 @@ Participation is self-organized and self-directed. Participants should:
 - Engage in our [20x community working group]({base}/community/)
 - Review the draft submissions posted in the
   [community discussion forum](https://github.com/FedRAMP/community/discussions/categories/20xp1-pilot-drafts),
-  as well as FedRAMP’s feedback
+  as well as FedRAMP's feedback
 
-<ColorfulBlockquote color="#ff98004d" text="Participants have equal access to all information about the pilot by reviewing the additional materials on this site and in the public working groups. It’s important that you read this information so you can make the best decisions about how to move forward on your own."/>
+<ColorfulBlockquote color="#ff98004d" text="Participants have equal access to all information about the pilot by reviewing the additional materials on this site and in the public working groups. It's important that you read this information so you can make the best decisions about how to move forward on your own."/>
 
 ## Community Working Groups: The Heart of 20x
 

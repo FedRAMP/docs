@@ -12,9 +12,9 @@ For CSOs that have more than one active ATO/ATU on file with FedRAMP, CA-7 requi
 
 - **Agency Benefits:** Allows agencies to share responsibility for ConMon oversight and make better risk-based decisions through collaboration
 
-- **CSP Benefits:** Creates a central forum for addressing questions related to the CSP’s ConMon activities, and achieving consensus on Deviation Requests (DRs), Significant Change Requests (SCRs) and the Annual Assessment (AA) \- versus having to coordinate with each agency separately.
+- **CSP Benefits:** Creates a central forum for addressing questions related to the CSP's ConMon activities, and achieving consensus on Deviation Requests (DRs), Significant Change Requests (SCRs) and the Annual Assessment (AA) \- versus having to coordinate with each agency separately.
 
-FedRAMP has worked with a number of CSPs to successfully implement Collaborative ConMon. In doing so, we have found there is no “one size fits all” approach. Therefore, this guide provides a framework that CSPs can leverage to develop their own Collaborative ConMon process. At a minimum, CSPs must include the following key elements in their Collaborative ConMon process.
+FedRAMP has worked with a number of CSPs to successfully implement Collaborative ConMon. In doing so, we have found there is no "one size fits all" approach. Therefore, this guide provides a framework that CSPs can leverage to develop their own Collaborative ConMon process. At a minimum, CSPs must include the following key elements in their Collaborative ConMon process.
 
 ## **Step 1: Develop Collaborative ConMon Draft Charter**
 
@@ -22,7 +22,7 @@ The charter defines the process for conducting Collaborative ConMon. The draft c
 
 ### Section 1: Collaboration Group Member Contact Information
 
-In addition to the CSP, membership includes one or more security representative(s) from each agency. This may include the Authorizing Official (AO) at each agency; however, AOs typically delegate this responsibility to Information System Security Officers (ISSOs) on the Chief Information Officer’s (CIO’s)/Chief Information Security Officer’s (CISO’s) team. The Collaboration Group membership will change over time as new agency customers are onboarded or discontinue using the cloud service.
+In addition to the CSP, membership includes one or more security representative(s) from each agency. This may include the Authorizing Official (AO) at each agency; however, AOs typically delegate this responsibility to Information System Security Officers (ISSOs) on the Chief Information Officer's (CIO's)/Chief Information Security Officer's (CISO's) team. The Collaboration Group membership will change over time as new agency customers are onboarded or discontinue using the cloud service.
 
 !!! tip "Points of Contact"
 
@@ -68,9 +68,9 @@ A good way to disseminate this information is in a summary report that agency re
 
 Be sure to differentiate between changes that impact all agency customers versus a specific agency. For example:
 
-- A Low-\>Moderate or Moderate-\>High “uplift” is considered a significant change. Oftentimes, uplifts are requested by a single agency with a use case at the higher impact level. In this scenario, all agency customers should be made aware of the change, but the requesting agency should take the lead on reviewing and approving the SCR, reviewing the assessment results, and issuing an ATO at the higher impact level.
+- A Low-\>Moderate or Moderate-\>High "uplift" is considered a significant change. Oftentimes, uplifts are requested by a single agency with a use case at the higher impact level. In this scenario, all agency customers should be made aware of the change, but the requesting agency should take the lead on reviewing and approving the SCR, reviewing the assessment results, and issuing an ATO at the higher impact level.
 
-- From time to time, CSPs choose to add services or features to the authorization boundary through the significant change process. This may be done at the request of one or more existing agency customers OR as an effort to expand the CSP’s offering to attract new customers. If the latter, CSPs should not assume that existing agency customers will approve the addition of services/features. This is something that needs to receive buy-in from existing agency customers along with a commitment to review and approve the SCR, review the assessment results and issue an updated ATO that covers the expanded offering. Otherwise, the CSP will be required to find an agency willing to review the SCR and issue an ATO that covers the expanded offering.
+- From time to time, CSPs choose to add services or features to the authorization boundary through the significant change process. This may be done at the request of one or more existing agency customers OR as an effort to expand the CSP's offering to attract new customers. If the latter, CSPs should not assume that existing agency customers will approve the addition of services/features. This is something that needs to receive buy-in from existing agency customers along with a commitment to review and approve the SCR, review the assessment results and issue an updated ATO that covers the expanded offering. Otherwise, the CSP will be required to find an agency willing to review the SCR and issue an ATO that covers the expanded offering.
 
 ### Section 4: ConMon Deliverables
 
@@ -78,11 +78,11 @@ The PMO recommends uploading the monthly ConMon deliverables (summary report, vu
 
 ### Section 5: Decision-Making Authorities
 
-Determining how decisions are made, and by whom, is a critical part of the Collaborative ConMon process. While it’s important to give each agency a voice, it is not always practical or in the best interest of security to seek unanimous agreement \- particularly if the issue at hand only affects a single agency. Most CSPs that have successfully implemented Collaborative ConMon have used one of two approaches (or some combination) to decision making.
+Determining how decisions are made, and by whom, is a critical part of the Collaborative ConMon process. While it's important to give each agency a voice, it is not always practical or in the best interest of security to seek unanimous agreement \- particularly if the issue at hand only affects a single agency. Most CSPs that have successfully implemented Collaborative ConMon have used one of two approaches (or some combination) to decision making.
 
 **Voting Members:** During the inaugural Collaborative ConMon meeting, the collaboration group grants certain members decision-making authority for DRs, SCRs, or any other area that requires agency approval. Oftentimes, agency representatives will volunteer to take on this responsibility. Depending on the number of agency customers, the PMO recommends at least two (2) or more voting members share this responsibility.
 
-**Comment Period:** Some collaboration groups have agreed to a “comment period” approach, whereby all group members are allowed an agreed upon period of time to raise questions, concerns or objections. If there are no objections when the time period ends, the matter is considered approved. The PMO recommends giving group members two weeks. For any group members that were unable to attend the monthly meeting, two weeks will allow those members to review the relevant documentation. This approach typically works as follows:
+**Comment Period:** Some collaboration groups have agreed to a "comment period" approach, whereby all group members are allowed an agreed upon period of time to raise questions, concerns or objections. If there are no objections when the time period ends, the matter is considered approved. The PMO recommends giving group members two weeks. For any group members that were unable to attend the monthly meeting, two weeks will allow those members to review the relevant documentation. This approach typically works as follows:
 
 - The CSP makes information (e.g., DR, SCR, etc.) available via the FedRAMP secure repository at least one week prior to the monthly Collaborative ConMon meeting and then notifies all group members.
 
@@ -96,7 +96,7 @@ The charter should identify additional ConMon requirements that the member agenc
 
 ### Section 7: ConMon Performance Management
 
-While it is ultimately up to each agency Authorizing Official to maintain or revoke an ATO, this section can be used by the collaboration group to define performance triggers and associated escalation levels (for example, Corrective Action Plan “In Remediation” status) when the CSP fails to comply with FedRAMP’s continuous monitoring requirements or the agreed upon charter. The PMO recommends using the process defined in the [Performance Management](performance-management.md) section of this playbook as the basis for this section.
+While it is ultimately up to each agency Authorizing Official to maintain or revoke an ATO, this section can be used by the collaboration group to define performance triggers and associated escalation levels (for example, Corrective Action Plan "In Remediation" status) when the CSP fails to comply with FedRAMP's continuous monitoring requirements or the agreed upon charter. The PMO recommends using the process defined in the [Performance Management](performance-management.md) section of this playbook as the basis for this section.
 
 ## **Step 2: Hold Inaugural Collaborative ConMon Meeting**
 

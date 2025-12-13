@@ -18,8 +18,6 @@ In implementing the requirements of FedRAMP, the head of each agency **shall**, 
 
 4. provide to the Director data and information required by the Director pursuant to section 3614 to determine how agencies are meeting metrics established by the Administrator.
 
-
-
 ### **(b) Attestation**
 
 Upon completing an assessment or authorization activity with respect to a particular cloud computing product or service, if an agency determines that the information and data the agency has reviewed under paragraph (2) or (3) of subsection (a) is wholly or substantially deficient for the purposes of performing an authorization of the cloud computing product or service, the head of the agency **shall** document as part of the resulting FedRAMP authorization package the reasons for this determination.
@@ -30,7 +28,7 @@ Upon issuance of an agency authorization to operate based on a FedRAMP authoriza
 
 ### **(d) Submission of Policies Required**
 
-Not later than 180 days after the date on which the Director issues guidance in accordance with section 3614 (1), the head of each agency, acting through the chief information officer of the agency, **shall** submit to the Director all agency policies relating to the authorization of cloud computing products and services.
+Not later than 180 days[^1] after the date on which the Director issues guidance in accordance with section 3614 (1), the head of each agency, acting through the chief information officer of the agency, **shall** submit to the Director all agency policies relating to the authorization of cloud computing products and services.
 
 ### **(e) Presumption of Adequacy**
 
@@ -48,3 +46,4 @@ Not later than 180 days after the date on which the Director issues guidance in 
     (B) the authority of the head of any agency to make a determination that there is a demonstrable need for additional security requirements beyond the security requirements included in a FedRAMP authorization for a particular control implementation.
     </ul>
 
+[^1]: January 21, 2025 (OMB Memorandum M-24-15 was released on July 25, 2025)

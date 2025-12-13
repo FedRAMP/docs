@@ -19,7 +19,7 @@ To enable reuse of FedRAMP Authorized packages and continuous monitoring
 for cloud offerings categorized at LI-SaaS, Low, or Moderate.
 
 Federal agency authorizing official (AO) representatives, and contractors
-working on their behalf, may request temporary (60-day) access to a CSO’s
+working on their behalf, may request temporary (60-day) access to a CSO's
 repository for the purpose of reviewing the authorization package in order to
 inform a risk-based authorization decision. Access requests are submitted to
 FedRAMP via the
@@ -28,35 +28,35 @@ In addition to the form, agency contractors must sign the nondisclosure
 agreement embedded as an attachment within the form.
 
 Once a federal agency issues an authorization to operate (ATO) for a CSO,
-FedRAMP provides permanent access to the CSO’s repository. Federal agency AO
+FedRAMP provides permanent access to the CSO's repository. Federal agency AO
 representatives, or contractors working on their behalf, require permanent
-access to a CSO’s repository for the purpose of reviewing ConMon deliverables to
+access to a CSO's repository for the purpose of reviewing ConMon deliverables to
 ensure the security posture remains sufficient for their use of the CSO.
 
-Each federal agency representative or contractor that requires access to a CSO’s
+Each federal agency representative or contractor that requires access to a CSO's
 repository must submit a FedRAMP Package Access Request Form; however, the form
 may be used to request access to multiple CSO repositories.
 
 CSPs with cloud offerings categorized at High must establish and maintain a
 secure repository in an environment that is FedRAMP Authorized at High, or in an
 environment that is fully owned, maintained, and operated by the CSP. FedRAMP
-facilitates access to a CSO’s High repository via the FedRAMP Package Access
-Request Form; however, it is the CSP’s responsibility to provision and control
+facilitates access to a CSO's High repository via the FedRAMP Package Access
+Request Form; however, it is the CSP's responsibility to provision and control
 access to the information.
 
 ## Federal Agencies
 
 CSPs partner with a federal agency throughout the initial FedRAMP authorization
 process. Agencies are responsible for reviewing CSP-developed security packages.
-Ultimately, a federal agency’s authorizing official (AO) must accept the risk
+Ultimately, a federal agency's authorizing official (AO) must accept the risk
 associated with the use of a cloud system through the issuance of an ATO for
 their agency. Agencies should also conduct ConMon oversight of each authorized
 system in use, reviewing monthly and annual deliverables provided by CSPs.
 
 ### Agency Authorizing Official
 
-A federal agency’s AO is a senior federal official who is ultimately responsible
-for making a risk-based decision to grant a CSP’s offering an ATO or Authority
+A federal agency's AO is a senior federal official who is ultimately responsible
+for making a risk-based decision to grant a CSP's offering an ATO or Authority
 to Use (ATU). The decision is formalized in an ATO letter provided to the CSP
 system owner and FedRAMP. AOs have sufficient visibility across their
 organization to understand the impact and cost of an individual CSO on the
@@ -64,7 +64,7 @@ security environment and operations of the agency.
 
 !!! warning "The initial federal agency ATO is not a government-wide risk acceptance!"
 
-    Likewise, the initial authorizing agency is not responsible for performing ConMon oversight on behalf of all federal agencies. Each federal agency must issue an ATO or ATU for its own use of the CSO and review ConMon deliverables to ensure the security posture remains sufficient for the agency’s continued use. CSPs with multiple federal agency customers must establish a collaborative approach to ConMon as outlined in the [FedRAMP Continuous Monitoring Playbook](../continuous-monitoring/intro.md).
+    Likewise, the initial authorizing agency is not responsible for performing ConMon oversight on behalf of all federal agencies. Each federal agency must issue an ATO or ATU for its own use of the CSO and review ConMon deliverables to ensure the security posture remains sufficient for the agency's continued use. CSPs with multiple federal agency customers must establish a collaborative approach to ConMon as outlined in the [FedRAMP Continuous Monitoring Playbook](../continuous-monitoring/intro.md).
 
 ## Third Party Assessment Organizations (3PAOs) aka Independent Assessors
 

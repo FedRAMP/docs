@@ -1,6 +1,6 @@
-# What’s in an Authorization Package
+# What's in an Authorization Package
 
-A FedRAMP authorization package documents the security and risk posture for a CSP’s CSO. It includes the SSP, which is the “security blueprint” for the CSO. The SSP defines the CSO’s authorization boundary and describes the security controls in place to protect the confidentiality, integrity, and availability (CIA) of the CSO and federal data. The authorization package also includes several required SSP appendices (e.g., Appendix C: Security Policies and Procedures and Appendix I: Incident Response Plan), SAP, SAR, POA&M, and federal agency authorization letter.  
+A FedRAMP authorization package documents the security and risk posture for a CSP's CSO. It includes the SSP, which is the "security blueprint" for the CSO. The SSP defines the CSO's authorization boundary and describes the security controls in place to protect the confidentiality, integrity, and availability (CIA) of the CSO and federal data. The authorization package also includes several required SSP appendices (e.g., Appendix C: Security Policies and Procedures and Appendix I: Incident Response Plan), SAP, SAR, POA&M, and federal agency authorization letter.  
 
 FedRAMP authorization packages are leveraged by federal agencies for the authorization of cloud services for federal government use. FedRAMP provides standard templates and resources for CSPs to develop and deliver authorization packages to federal customers.
 

@@ -1,6 +1,6 @@
 # System Security Plan (SSP)
 
-The SSP is the “security blueprint” for the CSO. A well-written SSP allows the reviewer to follow between the system’s architecture, data flows, security control implementations, and authorization boundary. After reviewing the SSP, a federal agency AO (or designee) should have a strong understanding of how federal data is transmitted to, from, and within the system; where the data is processed and stored; and how the data is protected from a process and technical perspective.  
+The SSP is the "security blueprint" for the CSO. A well-written SSP allows the reviewer to follow between the system's architecture, data flows, security control implementations, and authorization boundary. After reviewing the SSP, a federal agency AO (or designee) should have a strong understanding of how federal data is transmitted to, from, and within the system; where the data is processed and stored; and how the data is protected from a process and technical perspective.  
 
 FedRAMP provides a [single SSP template](https://www.fedramp.gov/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx) that must be used for each baseline: Li-SaaS, Low, Moderate, and High. Specific controls are documented in Appendix A for each baseline.
 
@@ -26,7 +26,7 @@ A common barrier to success is a poorly written, incomplete, inaccurate, and/or 
 
 ## Writing the SSP
 
-The SSP includes general information about the CSO (e.g., FIPS 199 categorization, service model, deployment model) as well as detailed descriptions of the CSO’s function, system architecture, authorization boundary, data flows, interconnections, leveraged external services, and use of cryptographic modules. Each section includes instructional text describing the level of detail that is required. Failure to follow these instructions will slow down the review and extend the authorization timeline.
+The SSP includes general information about the CSO (e.g., FIPS 199 categorization, service model, deployment model) as well as detailed descriptions of the CSO's function, system architecture, authorization boundary, data flows, interconnections, leveraged external services, and use of cryptographic modules. Each section includes instructional text describing the level of detail that is required. Failure to follow these instructions will slow down the review and extend the authorization timeline.
 
 ## Define the Authorization Boundary and Data Flows
 
@@ -65,20 +65,20 @@ _\*Document must be submitted in FedRAMP-provided template_
 
 ## SSP Appendix A: FedRAMP Security Controls
 
-The FedRAMP-provided SSP appendix A template is used to document the security control implementations for the CSO. A separate appendix A template is provided for each impact level: LI-SaaS, Low, Moderate, High. CSPs must use the template that corresponds to the CSO’s impact level.  
+The FedRAMP-provided SSP appendix A template is used to document the security control implementations for the CSO. A separate appendix A template is provided for each impact level: LI-SaaS, Low, Moderate, High. CSPs must use the template that corresponds to the CSO's impact level.  
 
 This section provides guidance on how to properly document security controls in appendix A.  
-Each and every control contains three sections: Control Requirement(s), Control Summary Information, and Control Implementation Statement. Guidance related to each section is provided below, along with a list of “Dos and Don’ts” to ensure success.
+Each and every control contains three sections: Control Requirement(s), Control Summary Information, and Control Implementation Statement. Guidance related to each section is provided below, along with a list of "Dos and Don'ts" to ensure success.
 
 ### Control Requirement
 
-FedRAMP’s baselines are based on the National Institute of Standards and Technology (NIST) Special Publication (SP) 800-53 catalog of security and privacy controls for federal information systems. Security controls may include a single requirement or may be broken down into several requirements.  
+FedRAMP's baselines are based on the National Institute of Standards and Technology (NIST) Special Publication (SP) 800-53 catalog of security and privacy controls for federal information systems. Security controls may include a single requirement or may be broken down into several requirements.  
 
-A requirement that begins with “The information system…” generally refers to a technical capability that must be in place. For example, IA-2(1) requires the information system to _implement multifactor authentication for access to privileged accounts._  
+A requirement that begins with "The information system…" generally refers to a technical capability that must be in place. For example, IA-2(1) requires the information system to _implement multifactor authentication for access to privileged accounts._  
 
-A requirement that begins with “The organization…” generally refers to a process or procedure that must be in place. For example, IR-5 requires the organization to _track and document incidents_.  
+A requirement that begins with "The organization…" generally refers to a process or procedure that must be in place. For example, IR-5 requires the organization to _track and document incidents_.  
 
-Many control requirements include _parameters_ that are defined by the CSP or defined by FedRAMP. Some controls also include additional FedRAMP requirements and/or guidance. Let’s use IR-6 as an example:
+Many control requirements include _parameters_ that are defined by the CSP or defined by FedRAMP. Some controls also include additional FedRAMP requirements and/or guidance. Let's use IR-6 as an example:
 
 !!! abstract "IR-6 INCIDENT REPORTING"
 
@@ -108,15 +108,15 @@ The FedRAMP SSP Appendix A template includes a control summary information table
 
     - (b) retain the message on screen until the user acknowledges the usage conditions by taking an explicit action
 
-  - If the CSP has successfully implemented (a) but is still figuring out a way to implement (b), the CSP would select both “Implemented” and “Planned”.
+  - If the CSP has successfully implemented (a) but is still figuring out a way to implement (b), the CSP would select both "Implemented" and "Planned".
 
     !!! tip "Other than Satisfied"
   
-        If any portion of a control is “Planned” or “Partially Implemented,” the control will be identified as “Other than Satisfied” during the 3PAO security assessment.
+        If any portion of a control is "Planned" or "Partially Implemented," the control will be identified as "Other than Satisfied" during the 3PAO security assessment.
 
 - **Control Origination:** All controls originate from a system or from a business process. It is important to correctly describe the control origination so that it is clear who is responsible for implementing, managing, and monitoring the control. Definitions and examples for each control origination can be found in Table A-1, _Control Origination and Definitions_.
 
-  - If the system is inheriting a control from a FedRAMP Authorized IaaS/PaaS, select the “inherited” box and provide the name and FedRAMP ID of the underlying IaaS/PaaS along with the date of authorization. Controls can only be inherited from a pre-existing FedRAMP authorization. If the CSO is hosted in an IaaS/PaaS not authorized by FedRAMP, there is no leveraging/inheritance relationship. In this scenario, the CSP is responsible for the entire stack, and the underlying components must be defined as part of the CSO’s authorization boundary as system interconnections and external services.
+  - If the system is inheriting a control from a FedRAMP Authorized IaaS/PaaS, select the "inherited" box and provide the name and FedRAMP ID of the underlying IaaS/PaaS along with the date of authorization. Controls can only be inherited from a pre-existing FedRAMP authorization. If the CSO is hosted in an IaaS/PaaS not authorized by FedRAMP, there is no leveraging/inheritance relationship. In this scenario, the CSP is responsible for the entire stack, and the underlying components must be defined as part of the CSO's authorization boundary as system interconnections and external services.
 
     !!! tip "Describe Inheritance"
     
@@ -146,7 +146,7 @@ The control implementation statement is the written narrative that describes wha
 
 !!! tip "Customer Responsibility Headings"
 
-    For customer-provided, customer-configured, or shared controls, create a “Customer Responsibility” heading in the control implementation statement. Clearly describe what the customer is expected to do under this heading. You do not have to describe how the customer implements the requirement. 
+    For customer-provided, customer-configured, or shared controls, create a "Customer Responsibility" heading in the control implementation statement. Clearly describe what the customer is expected to do under this heading. You do not have to describe how the customer implements the requirement. 
 
 #### Good Control Responses
 
@@ -170,17 +170,17 @@ The control implementation statement is the written narrative that describes wha
 
 #### Example Control Responses
 
-If the control states: “**Ensure tires are safe, regularly inspected, properly maintained, and meet the requirements for your vehicle.”**
+If the control states: "**Ensure tires are safe, regularly inspected, properly maintained, and meet the requirements for your vehicle."**
 
 **A good response may be:**  
 
-“I visually inspect the tires on my car every time I drive for signs of wear, damage, and proper inflation. I use a NIST-tracable pressure gauge, which I have calibrated yearly to check the tire pressure weekly. I take my car to an authorized mechanic and have the oil changed and the tires inspected and rotated every 5,000 miles. I have the dealer authorized mechanic replace tires that fail inspection, have a tread under 6/32 of an inch, or when they are over 6 years of age with a tire that meets the DOT specifications in the vehicles owner manual on page 45 for a vehicle driven on public roads.”
+"I visually inspect the tires on my car every time I drive for signs of wear, damage, and proper inflation. I use a NIST-tracable pressure gauge, which I have calibrated yearly to check the tire pressure weekly. I take my car to an authorized mechanic and have the oil changed and the tires inspected and rotated every 5,000 miles. I have the dealer authorized mechanic replace tires that fail inspection, have a tread under 6/32 of an inch, or when they are over 6 years of age with a tire that meets the DOT specifications in the vehicles owner manual on page 45 for a vehicle driven on public roads."
 
 **A bad response may be:**  
 
-“The tires on my car are best of breed, ultra high performance, and run flat. High performance tires are important because the car is very fast. Some people I know change the oil with 5-W20 high performance oil every 5,000 miles, which ensures that the tires are safe, inspected, and meet the requirements. Bad tires are replaced with other tires that are black and round. Also the car is Red with a black interior, and it has the DVD player accessory.”
+"The tires on my car are best of breed, ultra high performance, and run flat. High performance tires are important because the car is very fast. Some people I know change the oil with 5-W20 high performance oil every 5,000 miles, which ensures that the tires are safe, inspected, and meet the requirements. Bad tires are replaced with other tires that are black and round. Also the car is Red with a black interior, and it has the DVD player accessory."
 
-### Controls Do’s and Don'ts
+### Controls Do's and Don'ts
 
 #### Do
 
@@ -188,19 +188,19 @@ If the control states: “**Ensure tires are safe, regularly inspected, properly
 
 - **Do** complete all fields in the control summary information table and ensure the information is consistent with the control implementation statement.
 
-- **Do** provide a rationale for “Not Applicable” (N/A) controls. Many CSPs mistakenly identify controls as N/A if the capability is not authorized for use. For example, many CSPs consider AC-2(2) to be N/A because temporary/emergency accounts are not used in the environment. FedRAMP considers this control to be applicable and requires the CSPs to reference the policy that prohibits the creation of temporary/emergency accounts and describe any technical controls in place to prevent the creation of and/or audit unauthorized accounts.
+- **Do** provide a rationale for "Not Applicable" (N/A) controls. Many CSPs mistakenly identify controls as N/A if the capability is not authorized for use. For example, many CSPs consider AC-2(2) to be N/A because temporary/emergency accounts are not used in the environment. FedRAMP considers this control to be applicable and requires the CSPs to reference the policy that prohibits the creation of temporary/emergency accounts and describe any technical controls in place to prevent the creation of and/or audit unauthorized accounts.
 
-- **Do** include correct and consistent document titles when referencing other SSP appendices or external documents. If the entire referenced document does not apply, specific section references should be provided so the applicable sections can be located easily. Provide the filenames of all SSP appendices in Table 12.1 of the SSP template, SSP _Required Appendices._ This way, you only have to update the filename in one location. If referencing other external documents, use a standard naming convention, add the document name and filename, to Table 12.1 of the SSP, and upload the documents to the secure repository with the SSP package. NOTE: If an external document contains sensitive system information and cannot be uploaded to the secure repository, include a statement in Table 12.1 to the effect of, “this document contains sensitive system information, but can be provided upon request for audits and assessments.” 
+- **Do** include correct and consistent document titles when referencing other SSP appendices or external documents. If the entire referenced document does not apply, specific section references should be provided so the applicable sections can be located easily. Provide the filenames of all SSP appendices in Table 12.1 of the SSP template, SSP _Required Appendices._ This way, you only have to update the filename in one location. If referencing other external documents, use a standard naming convention, add the document name and filename, to Table 12.1 of the SSP, and upload the documents to the secure repository with the SSP package. NOTE: If an external document contains sensitive system information and cannot be uploaded to the secure repository, include a statement in Table 12.1 to the effect of, "this document contains sensitive system information, but can be provided upon request for audits and assessments." 
 
 #### Don't
 
-- **Don’t** modify the control requirement text, including the parameter assignment instructions and additional FedRAMP requirements/guidance. CSP responses must be documented in the “Control Summary Information” and “What is the solution and how is it implemented?” tables.
+- **Don't** modify the control requirement text, including the parameter assignment instructions and additional FedRAMP requirements/guidance. CSP responses must be documented in the "Control Summary Information" and "What is the solution and how is it implemented?" tables.
 
-- **Don’t** simply repeat or rephrase the control requirement when writing the control implementation statement.
+- **Don't** simply repeat or rephrase the control requirement when writing the control implementation statement.
 
-- **Don’t** reference other controls instead of providing a written control narrative. Referencing related controls for _additional detail_ is acceptable, but each control needs to stand on its own with a narrative that adequately addresses the control requirement(s). 
+- **Don't** reference other controls instead of providing a written control narrative. Referencing related controls for _additional detail_ is acceptable, but each control needs to stand on its own with a narrative that adequately addresses the control requirement(s). 
 
-- **Don’t** reference SSP appendices or external documents instead of providing a written control narrative. Referencing SSP appendices or external documents as _examples_ or for _additional detail_ is acceptable as long as the control narrative adequately addresses the control requirement(s). 
+- **Don't** reference SSP appendices or external documents instead of providing a written control narrative. Referencing SSP appendices or external documents as _examples_ or for _additional detail_ is acceptable as long as the control narrative adequately addresses the control requirement(s). 
 
-- **Don’t** copy and paste implementation statements from one control to another. The implementation statement should address the specific control requirement(s). It should not contain content that is not directly relevant to the control requirement. 
+- **Don't** copy and paste implementation statements from one control to another. The implementation statement should address the specific control requirement(s). It should not contain content that is not directly relevant to the control requirement. 
 
