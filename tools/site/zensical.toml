@@ -176,13 +176,21 @@ toggle.name = "Switch to light mode"
 
 
 [project.markdown_extensions]
-admonition = {}
-footnotes = {}
 abbr = {}
+admonition = {}
 attr_list = {}
 def_list = {}
+footnotes = {}
 md_in_html = {}
 tables = {}
 
 [project.markdown_extensions.toc]
 permalink =  true
+
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji" 
+emoji_generator = "zensical.extensions.emoji.to_svg"
