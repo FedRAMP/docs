@@ -97,7 +97,17 @@ nav = [
     { "Authority & Responsibility" = [
         "authority/index.md",
         { "Foundational Authority" = [
-            { "FedRAMP Authorization Act" = "authority/law.md" },
+            { "FedRAMP Authorization Act" = [
+                "authority/law/index.md",
+                { "Definitions" = "authority/law/definitions.md"},
+                { "GSA" = "authority/law/gsa.md"},
+                { "FedRAMP Board" = "authority/law/board.md"},
+                { "Independent Assessment" = "authority/law/assessment.md"},
+                { "Agencies" = "authority/law/agencies.md"},
+                { "OMB" = "authority/law/omb.md"},
+                { "Reports to Congress" = "authority/law/reports.md"},
+                { "FSCAC" = "authority/law/fscac.md"},
+            ]},
             { "M-24-15" = "authority/m-24-15.md" },
         ] },
         { "Executive Orders" = [
