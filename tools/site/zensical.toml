@@ -1,0 +1,196 @@
+
+[project]
+site_name = "FedRAMP Documentation"
+site_description = "An experimental FedRAMP Documentation site."
+site_author = "pete@fedramp.gov"
+site_dir = "static/html/"
+docs_dir = "static/markdown/"
+site_url = "https://fedramp.gov/docs/"
+nav = [
+    { "Overview" = "index.md" },
+    { "FedRAMP 20x" = [
+        "20x/index.md",
+        { "Background" = [
+            { "Documentation Guidelines" = "20x/guidelines.md" },
+            { "Definitions" = "20x/fedramp-definitions.md" },
+        ] },
+        { "Foundation" = [
+            { "Key Security Indicators" = "20x/key-security-indicators.md" },
+            { "Minimum Assessment Scope" = "20x/minimum-assessment-scope.md" },
+            { "Using Cryptographic Modules" = "20x/using-cryptographic-modules.md" },
+        ] },
+        { "Structure" = [
+            { "Authorization Data Sharing" = "20x/authorization-data-sharing.md" },
+            { "Vulnerability Detection and Response" = "20x/vulnerability-detection-and-response.md" },
+            { "Significant Change Notifications" = "20x/significant-change-notifications.md" },
+            { "Collaborative Continuous Monitoring" = "20x/collaborative-continuous-monitoring.md" },
+            { "Recommended Secure Configuration" = "20x/recommended-secure-configuration.md" },
+            { "FedRAMP Security Inbox" = "20x/fedramp-security-inbox.md" },
+            { "Persistent Validation and Assessment" = "20x/persistent-validation-and-assessment.md" },
+            { "Incident Communications Procedures" = "20x/incident-communications-procedures.md" },
+        ] },
+        { "Phase 1 (Archive)" = [
+            { "P1 Archive Overview" = "20x/phase1/intro.md" },
+            { "P1 Key Security Indicators" = "20x/phase1/key-security-indicators.md" },
+            { "P1 Minimum Assessment Standard" = "20x/phase1/minimum-assessment-standard.md" },
+        ] },
+    ] },
+    { "FedRAMP Rev5" = [
+        "rev5/index.md",
+        { "Cloud Service Providers" = [
+            { "Getting Started" = [
+                "rev5/playbook/csp/authorization/getting-started.md",
+                { "Rev5 Authorization" = "rev5/playbook/csp/authorization/agency-authorization-path.md" },
+                { "Partners" = "rev5/playbook/csp/authorization/partners.md" },
+                { "Important Considerations" = "rev5/playbook/csp/authorization/considerations.md" },
+            ] },
+            { "Rev5 Authorization Packages" = [
+                "rev5/playbook/csp/authorization/what.md",
+                { "Roles & Responsibilities" = "rev5/playbook/csp/authorization/roles.md" },
+                { "System Security Plan (SSP)" = "rev5/playbook/csp/authorization/ssp.md" },
+                { "Security Assessment Plan (SAP)" = "rev5/playbook/csp/authorization/sap.md" },
+                { "Security Assessment Report (SAR)" = "rev5/playbook/csp/authorization/sar.md" },
+                { "Plans of Action & Milestones" = "rev5/playbook/csp/authorization/poam.md" },
+            ] },
+            { "Continuous Monitoring" = [
+                "rev5/playbook/csp/continuous-monitoring/intro.md",
+                { "Overview of Expectations" = "rev5/playbook/csp/continuous-monitoring/overview.md" },
+                { "Vulnerability Scanning" = "rev5/playbook/csp/continuous-monitoring/vulnerability-scanning.md" },
+                { "Annual Assessment" = "rev5/playbook/csp/continuous-monitoring/annual-assessment.md" },
+                { "Significant Changes" = "rev5/playbook/csp/continuous-monitoring/significant-changes.md" },
+                { "Incident Communication" = "rev5/playbook/csp/continuous-monitoring/incident-communication.md" },
+                { "Collaborative ConMon" = "rev5/playbook/csp/continuous-monitoring/collaborative-monitoring.md" },
+                { "Performance Management" = "rev5/playbook/csp/continuous-monitoring/performance-management.md" },
+            ] },
+        ] },
+        { "Agencies" = [
+            { "Rev5 Agency Authorization" = [
+                { "Why Use FedRAMP" = "rev5/playbook/agency/authorization/intro.md" },
+                { "The FedRAMP Marketplace" = "rev5/playbook/agency/authorization/marketplace.md" },
+                { "Liaison Program" = "rev5/playbook/agency/authorization/liaison-program.md" },
+                { "Sponsoring Authorizations" = "rev5/playbook/agency/authorization/sponsoring.md" },
+                { "Preparation" = "rev5/playbook/agency/authorization/preparation.md" },
+                { "Authorization" = "rev5/playbook/agency/authorization/authorization.md" },
+                { "Continuous Monitoring" = "rev5/playbook/agency/authorization/continuous-monitoring.md" },
+            ] },
+        ] },
+        { "Balance Improvement Releases" = [
+            { "Overview" = [
+                "rev5/balance/intro.md",
+                { "Documentation Guidelines" = "rev5/balance/guidelines.md" },
+                { "Definitions" = "rev5/balance/fedramp-definitions.md" },
+            ] },
+            { "Mandatory for Rev5" = [
+                { "Recommended Secure Configuration" = "rev5/balance/recommended-secure-configuration.md" },
+                { "FedRAMP Security Inbox" = "rev5/balance/fedramp-security-inbox.md" },
+            ] },
+            { "Optional for Rev5" = [
+                { "Minimum Assessment Scope" = "rev5/balance/minimum-assessment-scope.md" },
+                { "Significant Change Notifications" = "rev5/balance/significant-change-notifications.md" },
+                { "Authorization Data Sharing" = "rev5/balance/authorization-data-sharing.md" },
+                { "Vulnerability Detection and Response" = "rev5/balance/vulnerability-detection-and-response.md" },
+                { "Collaborative Continuous Monitoring" = "rev5/balance/collaborative-continuous-monitoring.md" },
+            ] },
+        ] },
+    ] },
+    { "Authority & Responsibility" = [
+        "authority/index.md",        
+        { "Foundational Authority" = [
+            { "FedRAMP Authorization Act" = [
+                "authority/law/index.md",
+                { "Definitions" = "authority/law/definitions.md"},
+                { "GSA" = "authority/law/gsa.md"},
+                { "FedRAMP Board" = "authority/law/board.md"},
+                { "Independent Assessment" = "authority/law/assessment.md"},
+                { "Agencies" = "authority/law/agencies.md"},
+                { "OMB" = "authority/law/omb.md"},
+                { "Reports to Congress" = "authority/law/reports.md"},
+                { "FSCAC" = "authority/law/fscac.md"},
+            ]},
+            { "M-24-15" = [
+                "authority/m-24-15/index.md",
+                {"Background" = "authority/m-24-15/background.md"},
+                {"Vision" = "authority/m-24-15/vision.md"},
+                {"Scope of FedRAMP" = "authority/m-24-15/scope.md"},
+                {"The FedRAMP Authorization Process" = "authority/m-24-15/process.md"},
+                {"Automation and Efficiency" = "authority/m-24-15/automation.md"},
+                {"Continuous Monitoring" = "authority/m-24-15/monitoring.md"},
+                {"Roles and Responsibilities" = "authority/m-24-15/roles.md"},
+                {"Industry Engagement" = "authority/m-24-15/industry.md"},
+                {"Implementation" = "authority/m-24-15/implementation.md"},
+                {"Rescissions" = "authority/m-24-15/rescissions.md"},
+                {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
+            ]},
+        ] },
+        { "Related Guidance" = [
+            { "Scope of FedRAMP" = "authority/scope.md" },
+        ]},
+        { "Historical" = [
+            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md"},
+        ]}
+    ] },
+    { "// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two" },
+]
+
+[project.extra]
+homepage = "https://fedramp.gov/docs/20x"
+
+[project.theme]
+custom_dir = "overrides"
+logo = "assets/fedramp-logo-just-letters.svg"
+language = "en"
+features = [
+    "announce.dismiss",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.top",
+    "navigation.tracking",
+    "navigation.path",
+    "search.highlight",
+    "toc.follow",
+]
+
+[project.theme.icon.admonition]
+abstract = "fontawesome/solid/gavel"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+tables = {}
+
+[project.markdown_extensions.toc]
+permalink =  true
+
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji" 
+emoji_generator = "zensical.extensions.emoji.to_svg"

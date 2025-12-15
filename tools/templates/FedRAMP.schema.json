@@ -58,6 +58,10 @@
                 "type": "string",
                 "description": "Description of the release"
               },
+              "machine_readable_link": {"type": "string",
+                "description": "A link to the machine readable JSON for this specific release.",
+                "format": "uri"
+              },
               "public_comment": {
                 "type": "boolean",
                 "description": "Indicates if the release was made available for public comment."

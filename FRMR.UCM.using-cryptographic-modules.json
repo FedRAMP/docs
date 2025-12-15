@@ -1,0 +1,117 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "FedRAMP.schema.json",
+    "info": {
+        "name": "Using Cryptographic Modules",
+        "short_name": "UCM",
+        "effective": {
+            "rev5": {
+                "is": "no"
+            },
+            "20x": {
+                "is": "required",
+                "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+                "current_status": "Phase 2 Pilot",
+                "start_date": "2025-11-18",
+                "end_date": "2026-03-31",
+                "comments": [
+                    "Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.",
+                    "Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review."
+                ]
+            }
+        },
+        "releases": [
+            {
+                "id": "25.11C",
+                "published_date": "2025-12-01",
+                "description": "No material changes to content; replaced references to \"standard\" with \"process\" or \"documentation\" as appropriate.",
+                "public_comment": false,
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/ced2160b22455ed26a11bf697be8f0ae3e1e5dff/data/FRMR.UCM.using-cryptographic-modules.json"
+            },
+            {
+                "id": "25.11B",
+                "published_date": "2025-11-24",
+                "description": "No material changes to content; updated JSON structure with additional information about Rev5 application added.",
+                "public_comment": false,
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a37618fccf49d6b3406d90edf2125dc6cfcba140/data/FRMR.UCM.using-cryptographic-modules.json"
+            },
+            {
+                "id": "25.11A",
+                "published_date": "2025-11-18",
+                "description": "Initial release of simplified 20x version of this existing FedRAMP policy.",
+                "public_comment": false,
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f10df15d0dfb152cb736a26a7ddda8927011696e/FRMR.UCM.using-cryptographic-modules.json"
+            }
+        ],
+        "front_matter": {
+            "purpose": "This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x style and clarifies the implementation expectations for FedRAMP 20x.\n\nThe notable change from the default Rev5 Policy for Cryptographic Module Selection and Use is that the use of cryptographic modules (or update streams) validated under the NIST Cryptographic Module Validation Program are not explicitly required when cryptographic modules are used to protect federal customer data in cloud service offerings seeking FedRAMP authorization at the Moderate impact level. This acknowledges that not all Moderate impact federal customer data is considered \u201csensitive\u201d and allows both cloud service providers and agency customers to make risk-based decisions about their use of Moderate impact services for agency use cases that do not include sensitive data.\n\nFedRAMP recommends that cloud service providers seeking FedRAMP authorization at the Moderate impact level use such cryptographic modules whenever technically feasible and reasonable but acknowledges there may be sound reasons not to do so across the board at the Moderate impact level. As always, the reasoning and justification for such decisions must be documented by the cloud service provider."
+        }
+    },
+    "FRR": {
+        "UCM": {
+            "base": {
+                "id": "FRR-UCM",
+                "application": "These requirements and recommendations apply ALWAYS to ALL FedRAMP Authorized cloud services based on the current Effective Date(s) and Overall Applicability of this document.",
+                "name": "Requirements & Recommendations",
+                "requirements": [
+                    {
+                        "id": "FRR-UCM-01",
+                        "statement": "Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect _federal customer data_, including whether these modules are validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.",
+                        "name": "Cryptographic Module Documentation",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-UCM-02",
+                        "statement": "Providers SHOULD configure _agency_ tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.",
+                        "name": "Use of Validated Cryptographic Modules",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-UCM-03",
+                        "statement": "Providers SHOULD use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+                        "name": "Update Streams (Moderate)",
+                        "impact": {
+                            "low": false,
+                            "moderate": true,
+                            "high": false
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    },
+                    {
+                        "id": "FRR-UCM-04",
+                        "statement": "Providers MUST use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect _federal customer data_.",
+                        "impact": {
+                            "low": false,
+                            "moderate": false,
+                            "high": true
+                        },
+                        "name": "Update Streams (High)",
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    }
+                ]
+            }
+        }
+    }
+}

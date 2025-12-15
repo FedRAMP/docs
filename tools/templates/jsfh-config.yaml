@@ -1,5 +1,5 @@
 link_to_reused_ref: false
-template_name: md
+template_name: js
 description_is_markdown: true
 expand_buttons: true
 show_toc: false

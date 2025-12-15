@@ -1,0 +1,334 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "FedRAMP.schema.json",
+    "info": {
+        "name": "FedRAMP Security Inbox",
+        "short_name": "FSI",
+        "effective": {
+            "rev5": {
+                "is": "required",
+                "signup_url": "",
+                "current_status": "Wide Release",
+                "start_date": "2026-01-05",
+                "end_date": "2027-12-22",
+                "comments": [
+                    "These requirements apply after January 5, 2026, to all FedRAMP Rev5 cloud services that are listed in the FedRAMP Marketplace."
+                ],
+                "warnings": [
+                    "**FedRAMP will begin enforcement of this process after January 5, 2026 with an Emergency Test.**",
+                    "Beginning 2026-03-01, corrective action will include public notification that the provider is not meeting the expectations of this process.",
+                    "Beginning 2026-05-01, corrective action will include complete removal from the FedRAMP Marketplace.",
+                    "Beginning 2026-07-01, corrective action will include complete removal from the FedRAMP Marketplace and a ban on FedRAMP authorization for three months."
+                ]
+            },
+            "20x": {
+                "is": "required",
+                "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+                "current_status": "Phase 2 Pilot",
+                "start_date": "2025-11-18",
+                "end_date": "2026-03-31",
+                "comments": [
+                    "Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.",
+                    "Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review."
+                ]
+            }
+        },
+        "releases": [
+            {
+                "id": "25.11C",
+                "published_date": "2025-12-01",
+                "description": "Fixed a typo in FRR-FSI-13; no changes to requirements/etc.",
+                "public_comment": false,
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/f9ab33eb6457f6035b6e20cb13d900bdfb671d1d/data/FRMR.FSI.fedramp-security-inbox.json"
+            },
+            {
+                "id": "25.11A",
+                "published_date": "2025-11-18",
+                "description": "Initial Release of the FedRAMP Security Inbox requirements for both 20x and Rev5.",
+                "public_comment": true,
+                "related_rfcs": [
+                    {
+                        "start_date": "2025-09-29",
+                        "end_date": "2025-11-14",
+                        "id": "0018",
+                        "url": "https://www.fedramp.gov/rfcs/0018/",
+                        "discussion_url": "https://github.com/FedRAMP/community/discussions/92",
+                        "short_name": "rfc-0018-fedramp-security-inbox",
+                        "full_name": "FedRAMP RFC-0018: Security Inbox Requirements"
+                    }
+                ],
+                "machine_readable_link": "https://raw.githubusercontent.com/FedRAMP/docs/a64c08e2aab10c1cc9b0076e5e773297e01ea59c/data/FRMR.FSI.fedramp-security-inbox.json"
+            }
+        ],
+        "front_matter": {
+            "authority": [
+                {
+                  "reference": "OMB Memorandum M-24-15 on Modernizing FedRAMP",
+                  "reference_url": "https://www.fedramp.gov/docs/authority/m-24-15",
+                  "description": "section VII (a) (17) states that GSA must \"position FedRAMP as a central point of contact to the commercial cloud sector for Government-wide communications or requests for risk management information concerning commercial cloud providers used by Federal agencies.\""
+                }
+            ],
+            "purpose": "FedRAMP must have a reliable way to directly contact security and compliance staff operating all FedRAMP Authorized cloud service offerings without tracking individual contacts or maintaining provider-specific logins to customer support portals. These requirements for a FedRAMP Security Inbox apply to all cloud service providers to ensure this direct reliable path remains open, especially in the event of critical security issues.\n\nThis set of requirements focus specifically on communication that comes from FedRAMP and includes three categories of communication:\n\n1. Emergency communications that will only be used during an emergency where response times are critical to protecting the confidentiality, integrity, and availability of federal customer data; this communication path will occasionally be tested by FedRAMP.\n\n2. Important communications that may require an elevated response due to a sensitive or potentially disruptive situation, typically related to ongoing authorization or other concerns.\n\n3. General communications that include all other messages from FedRAMP that may be managed by a cloud service provider following their standard operational process.\n\nAll Emergency and Important messages sent by FedRAMP will include specific actions, timeframes expected for action, and an explanation of the corrective actions that FedRAMP will take if the timeframes are not met. Failure to take timely action as required by Emergency communications will result in corrective action from FedRAMP.\n\nFedRAMP will conduct strictly controlled tests of response to emergency communications regularly and provide public notice of these tests in advance. The response times for these tests will be tracked by FedRAMP and made publicly available.\n\nThis set of requirements and recommendations include explicit requirements that FedRAMP will follow to ensure important communications or those sent during emergencies can be routed by cloud service providers separately from general communications.",
+            "expected_outcomes": [
+                "FedRAMP will follow a consistent and repeatable process to communicate with cloud service providers, especially when sending important or emergency messages.",
+                "Cloud service providers will always receive messages from FedRAMP and prioritize the review and response to important or emergency messages."
+            ]
+        }
+    },
+    "FRR": {
+        "FSI": {
+            "base": {
+                "id": "FRR-FSI",
+                "name": "Requirements & Recommendations",
+                "application": "These requirements apply ALWAYS to FedRAMP and ALL cloud services listed in the FedRAMP Marketplace based on the current Effective Date(s) and Overall Applicability of this document.",
+                "requirements": [
+                    {
+                        "id": "FRR-FSI-01",
+                        "statement": "FedRAMP MUST send messages to cloud service providers using an official @fedramp.gov or @gsa.gov email address with properly configured Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication Reporting and Conformance (DMARC) email authentication.",
+                        "name": "Verified Emails",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "note": "Anyone at GSA can send email from @fedramp.gov or @gsa.gov - FedRAMP team members will typically have \"FedRAMP\" or \"Q20B\" in their name but this is not universal or enforceable. The nature of government enterprise IT services makes it difficult for FedRAMP to isolate FedRAMP-specific team members with enforceable identifiers. ",
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-02",
+                        "statement": "FedRAMP MUST convey the criticality of the message in the subject line using one of the following designators if the message requires an elevated response:",
+                        "name": "Criticality Designators",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST",
+                        "following_information": [
+                            "**Emergency:** There is a potential incident or crisis such that FedRAMP requires an extremely urgent response; emergency messages will contain aggressive timeframes for response and failure to meet these timeframes will result in corrective action.",
+                            "**Emergency Test:** FedRAMP requires an extremely urgent response to confirm the functionality and effectiveness of the FedRAMP Security Inbox; emergency test messages will contain aggressive timeframes for response and failure to meet these timeframes will result in corrective action.",
+                            "**Important:** There is an important issue that FedRAMP requires the cloud service provider to address; important messages will contain reasonable timeframes for response and failure to meet these timeframes may result in corrective action."
+                        ],
+                        "note": "Messages sent by FedRAMP without one of these designators are considered general communications and do not require an elevated response; these may be resolved in the normal course of business by the cloud service provider."
+                    },
+                    {
+                        "id": "FRR-FSI-03",
+                        "statement": "FedRAMP MUST send Emergency and Emergency Test designated messages from fedramp_security@gsa.gov OR fedramp_security@fedramp.gov.",
+                        "name": "Sender Addresses",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-04",
+                        "statement": "FedRAMP MUST post a public notice at least 10 business days in advance of sending an Emergency Test message; such notices MUST include explanation of the _likely_ expected actions and timeframes for the Emergency Test message.",
+                        "name": "Public Notice of Emergency Tests",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-05",
+                        "statement": "FedRAMP MUST clearly specify the required actions in the body of messages that require an elevated response.",
+                        "name": "Required Actions",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-06",
+                        "statement": "FedRAMP MUST clearly specify the expected timeframe for completing required actions in the body of messages that require an elevated response; timeframes for actions will vary depending on the situation but the default timeframes to provide an estimated resolution time for Emergency and Emergency Test designated messages will be as follows:",
+                        "name": "Response Timeframes",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST",
+                        "following_information": [
+                            "**High Impact:** within 12 hours",
+                            "**Moderate Impact:** by 3:00 p.m. Eastern Time on the 2nd business day",
+                            "**Low Impact:** by 3:00 p.m. Eastern Time on the 3rd business day"
+                        ],
+                        "note": "Note: High impact cloud service providers are expected to address Emergency messages (including tests) from FedRAMP with a response time appropriate to operating a service where failure to respond rapidly might have a severe or catastrophic adverse effect on the U.S. Government; some Emergency messages may require faster responses and all such messages should be addressed as quickly as possible."
+                    },
+                    {
+                        "id": "FRR-FSI-07",
+                        "statement": "FedRAMP MUST clearly specify the corrective actions that will result from failure to complete the required actions in the body of messages that require an elevated response; such actions may vary from negative ratings in the FedRAMP Marketplace to suspension of FedRAMP authorization depending on the severity of the event.",
+                        "name": "Corrective Actions",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-08",
+                        "statement": "FedRAMP MAY track and publicly share the time required by cloud service providers to take the actions specified in messages that require an elevated response.",
+                        "name": "Response Metrics",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "FedRAMP"
+                        ],
+                        "primary_key_word": "MAY"
+                    },
+                    {
+                        "id": "FRR-FSI-09",
+                        "statement": "Providers MUST establish and maintain an email address to receive messages from FedRAMP; this inbox is a _FedRAMP Security Inbox_ (FSI).",
+                        "name": "FedRAMP Security Inbox",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST",
+                        "notes": [
+                            "Unless otherwise notified, FedRAMP will use the listed Security E-mail on the Marketplace for these notifications.",
+                            "If a provider establishes a new inbox in response to this guidance that is different from the Security E-Mail then they must follow the requirements in FRR-FSI-12 to notify FedRAMP."
+                        ]
+                    },
+                    {
+                        "id": "FRR-FSI-10",
+                        "statement": "Providers MUST treat any email originating from an @fedramp.gov or @gsa.gov email address as if it was sent from FedRAMP by default; if such a message is confirmed to originate from someone other than FedRAMP then _FedRAMP Security Inbox_ requirements no longer apply.",
+                        "name": "Receiving Messages",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-11",
+                        "statement": "Providers MUST receive and respond to email messages from FedRAMP without disruption and without requiring additional actions from FedRAMP.",
+                        "name": "Response",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST",
+                        "note": "Note: This requirement is intended to prevent cloud service providers from requiring FedRAMP to respond to a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message."
+                    },
+                    {
+                        "id": "FRR-FSI-12",
+                        "statement": "Providers MUST immediately notify FedRAMP of any changes in addressing for their _FedRAMP Security Inbox_ by emailing info@fedramp.gov with the name and FedRAMP ID of the cloud service offering and the updated email address.",
+                        "name": "Notification of Changes",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-13",
+                        "statement": "Providers SHOULD _promptly_ and automatically acknowledge the receipt of messages received from FedRAMP in their _FedRAMP Security Inbox_.",
+                        "name": "Acknowledgment of Receipt",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST"
+                    },
+                    {
+                        "id": "FRR-FSI-14",
+                        "statement": "Providers MUST complete the required actions in Emergency or Emergency Test designated messages sent by FedRAMP within the timeframe included in the message.",
+                        "name": "Required Response for Emergency Messages",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST",
+                        "note": "Timeframes may vary by impact level of the _cloud service offering_."
+                    },
+                    {
+                        "id": "FRR-FSI-15",
+                        "statement": "Providers MUST route Emergency designated messages sent by FedRAMP to a senior security official for their awareness.",
+                        "name": "Routing",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "MUST",
+                        "note": "Senior security officials are determined by the provider."
+                    },
+                    {
+                        "id": "FRR-FSI-16",
+                        "statement": "Providers SHOULD complete the required actions in Important designated messages sent by FedRAMP within the timeframe specified in the message.",
+                        "name": "Recommended Response for Important Messages",
+                        "note": "Timeframes may vary by impact level of the _cloud service offering_.",
+                        "impact": {
+                            "low": true,
+                            "moderate": true,
+                            "high": true
+                        },
+                        "affects": [
+                            "Providers"
+                        ],
+                        "primary_key_word": "SHOULD"
+                    }
+                ]
+            }
+        }
+    }
+}
