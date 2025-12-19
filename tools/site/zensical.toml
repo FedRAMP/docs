@@ -8,6 +8,42 @@ docs_dir = "static/markdown/"
 site_url = "https://fedramp.gov/docs/"
 nav = [
     { "Overview" = "index.md" },
+    { "Authority & Responsibility" = [
+        "authority/index.md",        
+        { "Foundational Authority" = [
+            { "FedRAMP Authorization Act" = [
+                "authority/law/index.md",
+                { "Definitions" = "authority/law/definitions.md"},
+                { "GSA" = "authority/law/gsa.md"},
+                { "FedRAMP Board" = "authority/law/board.md"},
+                { "Independent Assessment" = "authority/law/assessment.md"},
+                { "Agencies" = "authority/law/agencies.md"},
+                { "OMB" = "authority/law/omb.md"},
+                { "Reports to Congress" = "authority/law/reports.md"},
+                { "FSCAC" = "authority/law/fscac.md"},
+            ]},
+            { "M-24-15" = [
+                "authority/m-24-15/index.md",
+                {"Background" = "authority/m-24-15/background.md"},
+                {"Vision" = "authority/m-24-15/vision.md"},
+                {"Scope of FedRAMP" = "authority/m-24-15/scope.md"},
+                {"The FedRAMP Authorization Process" = "authority/m-24-15/process.md"},
+                {"Automation and Efficiency" = "authority/m-24-15/automation.md"},
+                {"Continuous Monitoring" = "authority/m-24-15/monitoring.md"},
+                {"Roles and Responsibilities" = "authority/m-24-15/roles.md"},
+                {"Industry Engagement" = "authority/m-24-15/industry.md"},
+                {"Implementation" = "authority/m-24-15/implementation.md"},
+                {"Rescissions" = "authority/m-24-15/rescissions.md"},
+                {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
+            ]},
+        ] },
+        { "Related Guidance" = [
+            { "Scope of FedRAMP" = "authority/scope.md" },
+        ]},
+        { "Historical" = [
+            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md"},
+        ]}
+    ] },
     { "FedRAMP 20x" = [
         "20x/index.md",
         { "Background" = [
@@ -92,43 +128,7 @@ nav = [
                 { "Collaborative Continuous Monitoring" = "rev5/balance/collaborative-continuous-monitoring.md" },
             ] },
         ] },
-    ] },
-    { "Authority & Responsibility" = [
-        "authority/index.md",        
-        { "Foundational Authority" = [
-            { "FedRAMP Authorization Act" = [
-                "authority/law/index.md",
-                { "Definitions" = "authority/law/definitions.md"},
-                { "GSA" = "authority/law/gsa.md"},
-                { "FedRAMP Board" = "authority/law/board.md"},
-                { "Independent Assessment" = "authority/law/assessment.md"},
-                { "Agencies" = "authority/law/agencies.md"},
-                { "OMB" = "authority/law/omb.md"},
-                { "Reports to Congress" = "authority/law/reports.md"},
-                { "FSCAC" = "authority/law/fscac.md"},
-            ]},
-            { "M-24-15" = [
-                "authority/m-24-15/index.md",
-                {"Background" = "authority/m-24-15/background.md"},
-                {"Vision" = "authority/m-24-15/vision.md"},
-                {"Scope of FedRAMP" = "authority/m-24-15/scope.md"},
-                {"The FedRAMP Authorization Process" = "authority/m-24-15/process.md"},
-                {"Automation and Efficiency" = "authority/m-24-15/automation.md"},
-                {"Continuous Monitoring" = "authority/m-24-15/monitoring.md"},
-                {"Roles and Responsibilities" = "authority/m-24-15/roles.md"},
-                {"Industry Engagement" = "authority/m-24-15/industry.md"},
-                {"Implementation" = "authority/m-24-15/implementation.md"},
-                {"Rescissions" = "authority/m-24-15/rescissions.md"},
-                {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
-            ]},
-        ] },
-        { "Related Guidance" = [
-            { "Scope of FedRAMP" = "authority/scope.md" },
-        ]},
-        { "Historical" = [
-            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md"},
-        ]}
-    ] },
+    ] },    
     { "// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two" },
 ]
 

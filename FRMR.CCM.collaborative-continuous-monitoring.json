@@ -441,19 +441,17 @@
                         "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a)."
                     },
                     {
-                        "id": "FRR-CCM-AG-06",
-                        "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about _authorization data_.",
-                        "name": "No Additional Requirements",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Agencies"
-                        ],
-                        "primary_key_word": "MUST NOT",
-                        "note": "This is a statory requirement in 44 USC \u00a7 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization."
+                      "id": "FRR-CCM-AG-06",
+                      "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about _authorization data_.",
+                      "name": "No Additional Requirements",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Agencies"],
+                      "primary_key_word": "MUST NOT",
+                      "note": "This is a statutory requirement in 44 USC \u00a7 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization."
                     },
                     {
                         "id": "FRR-CCM-AG-07",
