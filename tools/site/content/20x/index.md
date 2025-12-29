@@ -24,7 +24,7 @@ materials.
 
 | Low Impact | Moderate Impact |
 | ---------- | --------------- |
-| 60         | 65              |
+| 56         | 61              |
 
 ### Authorization by FedRAMP Requirements and Recommendations
 

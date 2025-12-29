@@ -93,7 +93,7 @@ async function generateSummary() {
   }
 
   // Correctly locate the 'data' directory from the project root.
-  const dataDirPath = path.join(process.cwd(), "data");
+  const dataDirPath = path.join(process.cwd(), "..");
   const overallSummary: Summary = {};
   const finalOutput: KSIFinalOutput = {
     overallSummary: {},
