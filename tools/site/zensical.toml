@@ -1,7 +1,7 @@
 
 [project]
 site_name = "FedRAMP Documentation"
-site_description = "An experimental FedRAMP Documentation site."
+site_description = "The official repository for modern FedRAMP policy and documentation."
 site_author = "pete@fedramp.gov"
 site_dir = "static/html/"
 docs_dir = "static/markdown/"

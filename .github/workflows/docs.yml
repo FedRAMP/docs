@@ -26,7 +26,7 @@ jobs:
       - name: Install Bun dependencies
         run: bun install
         working-directory: tools
-      - run: pip install zensical 
+      - run: pip install zensical mkdocs-ultralytics-plugin
       - name: Run Bun build
         run: bun run build
         working-directory: tools
