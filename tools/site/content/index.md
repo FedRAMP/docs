@@ -23,6 +23,6 @@ Materials on this site are divided into three sections:
 
 | Section | Descriptions |
 | -- | -- |
+| [Authority & Responsibility](authority/index.md) | Background on the statutory authority for FedRAMP, related policies, and the statutory responsibilities of FedRAMP and federal agencies. |
 | [20x](20x/index.md) | Requirements and recommendations for FedRAMP 20x |
 | [Rev5](rev5/index.md) | Playbooks and Balance Improvement Releases for FedRAMP Rev5 |
-| [Authority & Responsibility](authority/index.md) | Background on the statutory authority for FedRAMP, related policies, and the statutory responsibilities of FedRAMP and federal agencies. |
