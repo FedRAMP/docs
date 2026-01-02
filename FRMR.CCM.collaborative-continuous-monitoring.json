@@ -106,11 +106,11 @@
                         ],
                         "primary_key_word": "MUST",
                         "following_information": [
-                            "Changes to _authorization data_",
-                            "Planned changes to _authorization data_ during at least the next 3 months",
-                            "_Accepted vulnerabilities",
-                            "_Transformative_ changes",
-                            "Updated recommendations or best practices for security, configuration, usage, or similar aspects of the _cloud service offering_"
+                          "Changes to _authorization data_",
+                          "Planned changes to _authorization data_ during at least the next 3 months",
+                          "_Accepted vulnerabilities_",
+                          "_Transformative_ changes",
+                          "Updated recommendations or best practices for security, configuration, usage, or similar aspects of the _cloud service offering_"
                         ]
                     },
                     {

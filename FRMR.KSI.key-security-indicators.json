@@ -1751,7 +1751,7 @@
         {
           "id": "KSI-INR-01",
           "name": "Incident Response Procedures",
-          "statement": "_Persistently_ review of the effectiveness of documented incident response procedures.",
+          "statement": "_Persistently_ review the effectiveness of documented incident response procedures.",
           "impact": {
             "low": true,
             "moderate": true
