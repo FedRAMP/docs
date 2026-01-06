@@ -240,19 +240,17 @@
                         "primary_key_word": "MUST"
                     },
                     {
-                        "id": "FRR-FSI-11",
-                        "statement": "Providers MUST receive and respond to email messages from FedRAMP without disruption and without requiring additional actions from FedRAMP.",
-                        "name": "Response",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST",
-                        "note": "Note: This requirement is intended to prevent cloud service providers from requiring FedRAMP to respond to a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message."
+                      "id": "FRR-FSI-11",
+                      "statement": "Providers MUST receive and respond to email messages from FedRAMP without disruption and without requiring additional actions from FedRAMP.",
+                      "name": "Response",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "MUST",
+                      "note": "This requirement is intended to prevent cloud service providers from requiring FedRAMP to respond to a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message."
                     },
                     {
                         "id": "FRR-FSI-12",
