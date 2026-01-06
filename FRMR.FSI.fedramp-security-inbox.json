@@ -267,18 +267,16 @@
                         "primary_key_word": "MUST"
                     },
                     {
-                        "id": "FRR-FSI-13",
-                        "statement": "Providers SHOULD _promptly_ and automatically acknowledge the receipt of messages received from FedRAMP in their _FedRAMP Security Inbox_.",
-                        "name": "Acknowledgment of Receipt",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-FSI-13",
+                      "statement": "Providers SHOULD _promptly_ and automatically acknowledge the receipt of messages received from FedRAMP in their _FedRAMP Security Inbox_.",
+                      "name": "Acknowledgment of Receipt",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "SHOULD"
                     },
                     {
                         "id": "FRR-FSI-14",

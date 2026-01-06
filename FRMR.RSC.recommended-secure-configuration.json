@@ -122,32 +122,28 @@
                       "primary_key_word": "SHOULD"
                     },
                     {
-                        "id": "FRR-RSC-04",
-                        "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
-                        "name": "Secure Defaults on Provisioning",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-RSC-04",
+                      "statement": "Providers SHOULD set all settings to their recommended secure defaults for _top-level administrative accounts_ and _privileged accounts_ when initially provisioned.",
+                      "name": "Secure Defaults on Provisioning",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "SHOULD"
                     },
                     {
-                        "id": "FRR-RSC-05",
-                        "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
-                        "name": "Comparison Capability",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-RSC-05",
+                      "statement": "Providers SHOULD offer the capability to compare all current settings for _top-level administrative accounts_ and _privileged accounts_ to the recommended secure defaults.",
+                      "name": "Comparison Capability",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "SHOULD"
                     },
                     {
                         "id": "FRR-RSC-06",

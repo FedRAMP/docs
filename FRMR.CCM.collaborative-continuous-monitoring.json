@@ -172,32 +172,28 @@
                         "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from _agencies_ and ensure FedRAMP has access to this information. It is generally in the provider\u2019s interest to update this addendum frequently throughout the quarter."
                     },
                     {
-                        "id": "FRR-CCM-06",
-                        "statement": "Providers MUST NOT irresponsibly disclose sensitive information in an _Ongoing Authorization Report_ that would _likely_ have an adverse effect on the _cloud service offering_.",
-                        "name": "Protect Sensitive Information",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-CCM-06",
+                      "statement": "Providers MUST NOT irresponsibly disclose sensitive information in an _Ongoing Authorization Report_ that would _likely_ have an adverse effect on the _cloud service offering_.",
+                      "name": "Protect Sensitive Information",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "MUST NOT"
                     },
                     {
-                        "id": "FRR-CCM-07",
-                        "statement": "Providers MAY responsibly share some or all of the information an _Ongoing Authorization Report_ publicly or with other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
-                        "name": "Responsible Public Sharing",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-CCM-07",
+                      "statement": "Providers MAY responsibly share some or all of the information an _Ongoing Authorization Report_ publicly or with other parties if the provider determines doing so will NOT _likely_ have an adverse effect on the _cloud service offering_.",
+                      "name": "Responsible Public Sharing",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "MAY"
                     }
                 ]
             },

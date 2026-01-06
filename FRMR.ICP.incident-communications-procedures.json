@@ -118,18 +118,16 @@
                         "primary_key_word": "MUST"
                     },
                     {
-                        "id": "FRR-ICP-06",
-                        "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.",
-                        "name": "Responsible Disclosure",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-ICP-06",
+                      "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about _incidents_ that would _likely_ increase the impact of the _incident_, but MUST disclose sufficient information for informed risk-based decision-making to _all necessary parties_.",
+                      "name": "Responsible Disclosure",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "MUST NOT"
                     },
                     {
                         "id": "FRR-ICP-07",
