@@ -110,18 +110,16 @@
                         "primary_key_word": "MUST"
                     },
                     {
-                        "id": "FRR-RSC-03",
-                        "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
-                        "name": "Privileged Accounts Security Settings Guidance",
-                        "impact": {
-                            "low": true,
-                            "moderate": true,
-                            "high": true
-                        },
-                        "affects": [
-                            "Providers"
-                        ],
-                        "primary_key_word": "MUST"
+                      "id": "FRR-RSC-03",
+                      "statement": "Providers SHOULD create and maintain guidance that explains security-related settings that can be operated only by _privileged accounts_ and their security implications.",
+                      "name": "Privileged Accounts Security Settings Guidance",
+                      "impact": {
+                        "low": true,
+                        "moderate": true,
+                        "high": true
+                      },
+                      "affects": ["Providers"],
+                      "primary_key_word": "SHOULD"
                     },
                     {
                         "id": "FRR-RSC-04",
