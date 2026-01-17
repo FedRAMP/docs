@@ -193,7 +193,7 @@
         "high": true
       }
     },
-    "ADS-ACC-PGD": {
+    "ADS-CSP-PGD": {
       "fka": "FRR-ADS-AC-01",
       "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to _authorization data_ stored in the _trust center_.",
       "affects": ["Providers"],
@@ -205,7 +205,7 @@
         "high": true
       }
     },
-    "ADS-ACC-PCA": {
+    "ADS-CSP-PCA": {
       "fka": "FRR-ADS-AC-02",
       "statement": "Providers SHOULD share at least the _authorization package_ with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.  ",
       "affects": ["Providers"],
@@ -217,7 +217,7 @@
         "high": true
       }
     },
-    "ADS-TCC-TCA": {
+    "ADS-TRC-TCA": {
       "fka": "FRR-ADS-TC-01",
       "statement": "_Trust centers_ MUST be included as an _information resource_ included in the _cloud service offering_ for assessment if FRR-MAS-01 applies. ",
       "affects": ["Providers"],
@@ -229,7 +229,7 @@
         "high": true
       }
     },
-    "ADS-TCC-HMR": {
+    "ADS-TRC-HMR": {
       "fka": "FRR-ADS-TC-02",
       "statement": "_Trust centers_ SHOULD make _authorization data_ available to view and download in both human-readable and _machine-readable_ formats",
       "affects": ["Providers"],
@@ -241,7 +241,7 @@
         "high": true
       }
     },
-    "ADS-TCC-PAC": {
+    "ADS-TRC-PAC": {
       "fka": "FRR-ADS-TC-03",
       "statement": "_Trust centers_ MUST provide documented programmatic access to all _authorization data_, including programmatic access to human-readable materials.",
       "affects": ["Providers"],
@@ -253,7 +253,7 @@
         "high": true
       }
     },
-    "ADS-TCC-SSM": {
+    "ADS-TRC-SSM": {
       "fka": "FRR-ADS-TC-04",
       "statement": "_Trust centers_ SHOULD include features that encourage all necessary parties to provision and manage access to _authorization data_ for their users and services directly.",
       "affects": ["Providers"],
@@ -265,7 +265,7 @@
         "high": true
       }
     },
-    "ADS-TCC-ACI": {
+    "ADS-TRC-ACI": {
       "fka": "FRR-ADS-TC-05",
       "statement": "_Trust centers_ MUST maintain an inventory and history of federal agency users or systems with access to _authorization data_ and MUST make this information available to FedRAMP without interruption. ",
       "affects": ["Providers"],
@@ -277,7 +277,7 @@
         "high": true
       }
     },
-    "ADS-TCC-ACL": {
+    "ADS-TRC-ACL": {
       "fka": "FRR-ADS-TC-06",
       "statement": "_Trust centers_ MUST log access to _authorization data_ and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
       "affects": ["Providers"],
@@ -289,7 +289,7 @@
         "high": true
       }
     },
-    "ADS-TCC-RSP": {
+    "ADS-TRC-RSP": {
       "fka": "FRR-ADS-TC-07",
       "statement": "_Trust centers_ SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
       "affects": ["Providers"],
@@ -301,7 +301,7 @@
         "high": true
       }
     },
-    "ADS-EXC-LSM": {
+    "ADS-CSP-LSM": {
       "fka": "FRR-ADS-EX-01",
       "statement": "Providers of FedRAMP Rev5 Authorized _cloud service offerings_ at FedRAMP High using a legacy self-managed repository for _authorization data_ MAY ignore the requirements in this Authorization Data Sharing document until future notice.",
       "affects": ["Providers"],
