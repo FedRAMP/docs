@@ -344,7 +344,7 @@
           "primary_key_word": "MAY"
         },
         "CCM-QTR-MTG": {
-          "fka": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
+          "fkas": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies; providers who do not host Quarterly Reviews MUST clearly state this and explain this decision in the authorization data available to all necessary parties required by FRR-ADS-06 and FRR-ADS-07",
@@ -1102,26 +1102,30 @@
           "note": "FedRAMP will make the final authorization decision based on the assessor's findings and other relevant information."
         },
         "PVA-CSO-NMV": {
-          "fka": ["FRR-PVA-TF-LO-01", "FRR-PVA-TF-MO-01"],
+          "fkas": ["FRR-PVA-TF-LO-01", "FRR-PVA-TF-MO-01"],
           "statement": "Providers MUST complete the validation processes for Key Security Indicators of non-machine-based information resources at least once every 3 months.",
           "name": "Non-Machine Validation",
           "affects": ["Providers"],
           "primary_key_word": "MUST"
         },
         "PVA-CSO-PMV": {
-          "fka": ["FRR-PVA-TF-LO-02", "FRR-PVA-TF-MO-02"],
+          "fkas": ["FRR-PVA-TF-LO-02", "FRR-PVA-TF-MO-02"],
           "varies_by_level": {
             "low": {
               "statement": "Providers MUST complete the validation processes for Key Security Indicators of machine-based information resources at least once every 7 days.",
-              "key_word": "MUST",
+              "primary_key_word": "MUST",
               "timeframe_type": "days",
               "timeframe_num": 7
             },
             "moderate": {
               "statement": "Providers MUST complete the validation processes for Key Security Indicators of machine-based information resources at least once every 3 days.",
-              "key_word": "MUST",
+              "primary_key_word": "MUST",
               "timeframe_type": "days",
               "timeframe_num": 3
+            },
+            "high": {
+              "statement": "Providers SHOULD plan for this requirement to be more frequent at 20x High but the anticipated requirements for this FRR have not yet been established for 20x High.",
+              "primary_key_word": "SHOULD"
             }
           },
           "name": "Persistent Machine Validation",
@@ -1535,21 +1539,21 @@
           "name": "Option to Opt Out",
           "statement": "Providers MUST allow agency customers to OPT OUT of transformative changes whenever feasible.",
           "affects": ["Providers"],
-          "primary_key_word": "MUST",
-          "SCN-CSO-CAP": {
-            "id": "FRR-SCN-EX-01",
-            "name": "Corrective Action Plan Conditions",
-            "statement": "Providers MAY be required to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
-            "affects": ["Providers"],
-            "primary_key_word": "MAY"
-          },
-          "SCN-CSO-EMG": {
-            "id": "FRR-SCN-EX-02",
-            "name": "Emergency Changes",
-            "statement": "Providers MAY execute significant changes (including transformative changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.",
-            "affects": ["Providers"],
-            "primary_key_word": "MAY"
-          }
+          "primary_key_word": "MUST"
+        },
+        "SCN-CSO-CAP": {
+          "fka": "FRR-SCN-EX-01",
+          "name": "Corrective Action Plan Conditions",
+          "statement": "Providers MAY be required to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
+          "affects": ["Providers"],
+          "primary_key_word": "MAY"
+        },
+        "SCN-CSO-EMG": {
+          "fka": "FRR-SCN-EX-02",
+          "name": "Emergency Changes",
+          "statement": "Providers MAY execute significant changes (including transformative changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.",
+          "affects": ["Providers"],
+          "primary_key_word": "MAY"
         }
       }
     }
@@ -1599,7 +1603,7 @@
           "primary_key_word": "SHOULD"
         },
         "UCM-CSO-UVM": {
-          "fka": ["FRR-UCM-03", "FRR-UCM-04"],
+          "fkas": ["FRR-UCM-03", "FRR-UCM-04"],
           "varies_by_level": {
             "low": {
               "statement": "Providers MAY use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect federal customer data.",
@@ -1676,7 +1680,9 @@
       },
       "labels": {
         "CSO": "These requirements and recommendations apply to all cloud service offerings following the Vulnerability Detection and Response process.",
-        "AGM": "These requirements and recommends for agencies apply to all agencies reusing a FedRAMP Certification or Validation for a cloud service offering following the Vulnerability Detection and Response process."
+        "AGM": "These requirements and recommendations for agencies apply to all agencies reusing a FedRAMP Certification or Validation for a cloud service offering following the Vulnerability Detection and Response process.",
+        "TFR": "These requirements and recommendations apply to timeframes for vulnerability detection and response.",
+        "RPT": "These requirements and recommendations apply to reporting related to vulnerability detection and response."
       }
     },
     "data": {
@@ -1925,7 +1931,7 @@
           "primary_key_word": "MUST"
         },
         "VDR-TFR-MRH": {
-          "fka": ["FRR-VDR-TF-LO-01", "FRR-VDR-TF-MO-01", "FRR-VDR-TF-HI-01"],
+          "fkas": ["FRR-VDR-TF-LO-01", "FRR-VDR-TF-MO-01", "FRR-VDR-TF-HI-01"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD make all recent historical vulnerability detection and response activity available in a machine-readable format for automated retrieval by all necessary parties (e.g. using an API service or similar); this information SHOULD be updated persistently, at least once every month.",
@@ -1950,7 +1956,7 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-PSD": {
-          "fka": ["FRR-VDR-TF-LO-02", "FRR-VDR-TF-MO-02", "FRR-VDR-TF-HI-02"],
+          "fkas": ["FRR-VDR-TF-LO-02", "FRR-VDR-TF-MO-02", "FRR-VDR-TF-HI-02"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD persistently perform vulnerability detection on representative samples of similar machine-based information resources, at least once every 7 days.",
@@ -1975,7 +1981,7 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-PDD": {
-          "fka": ["FRR-VDR-TF-LO-03", "FRR-VDR-TF-MO-03", "FRR-VDR-TF-HI-03"],
+          "fkas": ["FRR-VDR-TF-LO-03", "FRR-VDR-TF-MO-03", "FRR-VDR-TF-HI-03"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD persistently perform vulnerability detection on all information resources that are likely to drift, at least once every month.",
@@ -2025,7 +2031,7 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-EVU": {
-          "fka": ["FRR-VDR-TF-LO-05", "FRR-VDR-TF-MO-05", "FRR-VDR-TF-HI-05"],
+          "fkas": ["FRR-VDR-TF-LO-05", "FRR-VDR-TF-MO-05", "FRR-VDR-TF-HI-05"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by FRR-VDR-07, FRR-VDR-08, and FRR-VDR-09 within 7 days of detection.",
@@ -2050,7 +2056,7 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-MRV": {
-          "fka": ["FRR-VDR-TF-LO-06", "FRR-VDR-TF-MO-07", "FRR-VDR-TF-HI-08"],
+          "fkas": ["FRR-VDR-TF-LO-06", "FRR-VDR-TF-MO-07", "FRR-VDR-TF-HI-08"],
           "varies_by_level": {
             "low": {
               "statement": "Providers SHOULD partially mitigate, fully mitigate, or remediate vulnerabilities to a lower potential adverse impact within the timeframes from evaluation shown below (in days), factoring for the current potential adverse impact, internet reachability, and likely exploitability:",
@@ -2118,7 +2124,7 @@
               "pain_timeframes": [
                 {
                   "pain": 5,
-                  "max_days_irv_lev": ".5",
+                  "max_days_irv_lev": 0.5,
                   "max_days_nirv_lev": 1,
                   "max_days_nlev": 8
                 },
@@ -2147,13 +2153,13 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-RMN": {
-          "fka": ["FRR-VDR-TF-LO-07", "FRR-VDR-TF-MO-09", "FRR-VDR-TF-HI-09"],
+          "fkas": ["FRR-VDR-TF-LO-07", "FRR-VDR-TF-MO-09", "FRR-VDR-TF-HI-09"],
           "statement": "Providers SHOULD mitigate or remediate remaining vulnerabilities during routine operations as determined necessary by the provider.",
           "name": "Remaining Vulnerabilities",
           "affects": ["Providers"]
         },
         "VDR-TFR-IRI": {
-          "fka": ["FRR-VDR-TF-MO-06", "FRR-VDR-TF-HI-06"],
+          "fkas": ["FRR-VDR-TF-MO-06", "FRR-VDR-TF-HI-06"],
           "varies_by_level": {
             "low": {
               "statement": "Providers MAY treat internet-reachable likely exploitable vulnerabilities with a potential adverse impact of N4 or N5 as a security incident until they are partially mitigated to N3 or below.",
@@ -2172,7 +2178,7 @@
           "affects": ["Providers"]
         },
         "VDR-TFR-NRI": {
-          "fka": ["FRR-VDR-TF-HI-07"],
+          "fkas": ["FRR-VDR-TF-HI-07"],
           "varies_by_level": {
             "low": {
               "statement": "Providers MAY treat likely exploitable vulnerabilities that are NOT internet-reachable with a potential adverse impact of N5 as a security incident until they are partially mitigated to N4 or below.",
