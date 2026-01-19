@@ -3115,6 +3115,1264 @@
           }
         }
       }
+    },
+    "KSI": {
+      "info": {
+        "name": "Key Security Indicators",
+        "short_name": "KSI",
+        "web_name": "key-security-indicators",
+        "effective": {
+          "rev5": {
+            "is": "no"
+          },
+          "20x": {
+            "is": "required",
+            "signup_url": "https://www.fedramp.gov/20x/phase-two/participate/",
+            "current_status": "Phase 2 Pilot",
+            "start_date": "2025-11-18",
+            "end_date": "2026-03-31",
+            "comments": [
+              "Phase 1 pilot authorizations have one year from authorization to fully address this process but must demonstrate continuous quarterly progress.",
+              "Phase 2 Pilot participants must demonstrate significant progress towards addressing this process prior to submission for authorization review."
+            ]
+          }
+        },
+        "front_matter": {
+          "authority": [
+            {
+              "reference": "OMB Circular A-130",
+              "reference_url": "https://whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf",
+              "description": "Appendix I states \"Agencies may also develop overlays for specific types of information or communities of interest (e.g., all web-based applications, all health care-related systems) as part of the security control selection process. Overlays provide a specification of security or privacy controls, control enhancements, supplemental guidance, and other supporting information as part of the tailoring process, that is intended to complement (and further refine) security control baselines. The overlay may be more stringent or less stringent than the original security control baseline and can be applied to multiple information systems.\""
+            },
+            {
+              "reference": "NIST SP 800-53B",
+              "reference_url": "https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final",
+              "description": "Section 2.5 states \"As the number of controls in [SP 800-53] grows in response to an increasingly sophisticated threat space, it is important for organizations to have the ability to describe key capabilities needed to protect organizational missions and business functions, and to subsequently select controls that\u2014if properly designed, developed, and implemented\u2014produce such capabilities. The use of capabilities simplifies how the protection problem is viewed conceptually. Using the construct of a capability provides a method of grouping controls that are employed for a common purpose or to achieve a common objective.\" This section later states \"Ultimately, authorization decisions (i.e., risk acceptance decisions) are made based on the degree to which the desired capabilities have been effectively achieved.\""
+            },
+            {
+              "reference": "NIST SP 800-53A",
+              "reference_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+              "description": "Section 3.5 states \"When organizations employ the concept of capabilities, automated and manual assessments account for all security and privacy controls that comprise the security and privacy capabilities. Assessors are aware of how the controls work together to provide such capabilities.\""
+            },
+            {
+              "reference": "FedRAMP Authorization Act (44 USC \u00a7 3609 (a) (1))",
+              "reference_url": "https://fedramp.gov/docs/authority/law/#a-roles-and-responsibilities",
+              "description": "requires that the Administrator of the General Services Administration shall \"in consultation with the [DHS] Secretary, develop, coordinate, and implement a process to support agency review, reuse, and standardization, where appropriate, of security assessments of cloud computing products and services...\" 44 USC \u00a7 3609 (c) (2) further states that \"the [GSA] Administrator shall establish a means for the automation of security assessments and reviews.\"",
+              "delegation": "These responsibilities are delegated to the FedRAMP Director",
+              "delegation_url": "https://www.gsa.gov/directives-library/gsa-delegations-of-authority-fedramp"
+            }
+          ],
+          "purpose": "Modern cloud services use automated or code-driven configuration management and control planes to ensure predictable, repeatable, reliable, and secure outcomes during deployment and operation. The majority of a service security assessment can take place continuously via automated validation for simple cloud-native services if the need for a traditional control-by-control narrative approach is removed.",
+          "expected_outcomes": [
+            "Cloud service providers following commercial security best practices will be able to meet and validate FedRAMP security requirements with the application of simple changes and automated capabilities",
+            "Third-party independent assessors will have a simpler framework to assess security and implementation decisions based on engineering decisions in context",
+            "Federal agencies will be able to easily, quickly, and effectively review and consume security information about the service to make informed risk-based authorization to operate decisions based on their planned use case"
+          ]
+        },
+        "labels": {
+          "CSO": {
+            "description": "These requirements and recommendations apply to ALL cloud service offerings for FedRAMP Validation.",
+            "name": "Cloud Service Offerings"
+          }
+        }
+      },
+      "data": {
+        "20x": {
+          "CSO": {
+            "KSI-CSO-AKI": {
+              "fka": "FRR-KSI-01",
+              "statement": "Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
+              "name": "Application of Key Security Indicators",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "impact": {
+                "low": true,
+                "moderate": true
+              }
+            },
+            "KSI-CSO-SUM": {
+              "fka": "FRR-KSI-02",
+              "statement": "Providers MUST maintain simple high-level summaries of at least the following for each Key Security Indicator:",
+              "following_information": [
+                "Goals for how it will be implemented and validated, including clear pass/fail criteria and traceability",
+                "The consolidated _information resources_ that will be validated (this should include consolidated summaries such as \"all employees with privileged access that are members of the Admin group\")",
+                "The machine-based processes for _validation_ and the _persistent_ cycle on which they will be performed (or an explanation of why this doesn't apply)",
+                "The non-machine-based processes for _validation_ and the _persistent_ cycle on which they will be performed (or an explanation of why this doesn't apply)",
+                "Current implementation status",
+                "Any clarifications or responses to the assessment summary"
+              ],
+              "name": "Implementation Summaries",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "impact": {
+                "low": true,
+                "moderate": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "KSI": {
+    "AFR": {
+      "id": "KSI-AFR",
+      "name": "Authorization by FedRAMP",
+      "web_name": "authorization-by-fedramp",
+      "short_name": "AFR",
+      "theme": "A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.",
+      "indicators": {
+        "KSI-AFR-MAS": {
+          "fka": "KSI-AFR-01",
+          "name": "Minimum Assessment Scope",
+          "statement": "Apply the FedRAMP Minimum Assessment Scope (MAS) to identify and document the scope of the cloud service offering to be assessed for FedRAMP authorization and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-1",
+            "ac-21",
+            "at-1",
+            "au-1",
+            "ca-1",
+            "cm-1",
+            "cp-1",
+            "cp-2.1",
+            "cp-2.8",
+            "cp-4.1",
+            "ia-1",
+            "ir-1",
+            "ma-1",
+            "mp-1",
+            "pe-1",
+            "pl-1",
+            "pl-2",
+            "pl-4",
+            "pl-4.1",
+            "ps-1",
+            "ra-1",
+            "ra-9",
+            "sa-1",
+            "sc-1",
+            "si-1",
+            "sr-1",
+            "sr-2",
+            "sr-3",
+            "sr-11"
+          ],
+          "reference": "Minimum Assessment Scope",
+          "reference_url": "https://fedramp.gov/docs/20x/minimum-assessment-scope"
+        },
+        "KSI-AFR-KSI": {
+          "fka": "KSI-AFR-02",
+          "name": "Key Security Indicators",
+          "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Key Security Indicators",
+          "reference_url": "https://fedramp.gov/docs/20x/key-security-indicators",
+          "note": "This KSI is not intended to create an infinite loop; unlike other KSI-AFR themed indicators, this KSI is addressed by otherwise addressing all the KSIs. Providers and assessors may use this KSI to summarize the approach, coverage, status, etc. but are not expected to include all KSIs within this KSI in an infinite loop."
+        },
+        "KSI-AFR-ADS": {
+          "fka": "KSI-AFR-03",
+          "name": "Authorization Data Sharing",
+          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) process and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Authorization Data Sharing",
+          "reference_url": "https://fedramp.gov/docs/20x/authorization-data-sharing",
+          "controls": [
+            "ac-3",
+            "ac-4",
+            "au-2",
+            "au-3",
+            "au-6",
+            "ca-2",
+            "ir-4",
+            "ra-5",
+            "sc-8"
+          ]
+        },
+        "KSI-AFR-VDR": {
+          "fka": "KSI-AFR-04",
+          "name": "Vulnerability Detection and Response",
+          "statement": "Document the vulnerability detection and vulnerability response methodology used within the cloud service offering in alignment with the FedRAMP Vulnerability Detection and Response (VDR) process and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Vulnerability Detection and Response",
+          "reference_url": "https://fedramp.gov/docs/20x/vulnerability-detection-and-response",
+          "controls": [
+            "ca-2",
+            "ca-7",
+            "ca-7.6",
+            "ir-1",
+            "ir-4",
+            "ir-4.1",
+            "ir-5",
+            "ir-5.1",
+            "ir-6",
+            "ir-6.1",
+            "ir-6.2",
+            "pm-3",
+            "pm-5",
+            "pm-31",
+            "ra-2",
+            "ra-2.1",
+            "ra-3",
+            "ra-3.3",
+            "ra-5",
+            "ra-5.2",
+            "ra-5.3",
+            "ra-5.4",
+            "ra-5.5",
+            "ra-5.6",
+            "ra-5.7",
+            "ra-5.11",
+            "ra-9",
+            "ra-10",
+            "si-2",
+            "si-2.1",
+            "si-2.2",
+            "si-2.4",
+            "si-2.5",
+            "si-3",
+            "si-3.1",
+            "si-3.2",
+            "si-4",
+            "si-4.2",
+            "si-4.3",
+            "si-4.7",
+            "ca-7.4",
+            "ra-5",
+            "ra-7"
+          ]
+        },
+        "KSI-AFR-SCN": {
+          "fka": "KSI-AFR-05",
+          "name": "Significant Change Notifications",
+          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) process and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Significant Change Notifications",
+          "reference_url": "https://fedramp.gov/docs/20x/significant-change-notifications",
+          "controls": [
+            "ca-7.4",
+            "cm-3.4",
+            "cm-4",
+            "cm-7.1",
+            "au-5",
+            "ca-5",
+            "ca-7",
+            "ra-5",
+            "ra-5.2",
+            "sa-22",
+            "si-2",
+            "si-2.2",
+            "si-3",
+            "si-5",
+            "si-7.7",
+            "si-10",
+            "si-11"
+          ]
+        },
+        "KSI-AFR-CCM": {
+          "fka": "KSI-AFR-06",
+          "name": "Collaborative Continuous Monitoring",
+          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) process and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Collaborative Continuous Monitoring",
+          "reference_url": "https://fedramp.gov/docs/20x/collaborative-continuous-monitoring"
+        },
+        "KSI-AFR-RSC": {
+          "fka": "KSI-AFR-07",
+          "name": "Recommended Secure Configuration",
+          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance process and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Recommended Secure Configuration",
+          "reference_url": "https://fedramp.gov/docs/20x/recommended-secure-configuration"
+        },
+        "KSI-AFR-FSI": {
+          "fka": "KSI-AFR-08",
+          "name": "FedRAMP Security Inbox",
+          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "FedRAMP Security Inbox",
+          "reference_url": "https://fedramp.gov/docs/20x/fedramp-security-inbox"
+        },
+        "KSI-AFR-PVA": {
+          "fka": "KSI-AFR-09",
+          "name": "Persistent Validation and Assessment",
+          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) process, and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Persistent Validation and Assessment",
+          "reference_url": "https://fedramp.gov/docs/20x/persistent-validation-and-assessment"
+        },
+        "KSI-AFR-ICP": {
+          "fka": "KSI-AFR-10",
+          "name": "Incident Communications Procedures",
+          "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Incident Communications Procedures",
+          "reference_url": "https://fedramp.gov/docs/20x/incident-communications-procedures"
+        },
+        "KSI-AFR-UCM": {
+          "fka": "KSI-AFR-11",
+          "name": "Using Cryptographic Modules",
+          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) guidance and persistently address all related requirements and recommendations.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "reference": "Using Cryptographic Modules",
+          "reference_url": "https://fedramp.gov/docs/20x/using-cryptographic-modules"
+        }
+      }
+    },
+    "CED": {
+      "id": "KSI-CED",
+      "name": "Cybersecurity Education",
+      "web_name": "cybersecurity-education",
+      "short_name": "CED",
+      "theme": "A secure cloud service provider will educate their employees on cybersecurity measures, testing them _persistently_ to ensure their knowledge is satisfactory.",
+      "indicators": {
+        "KSI-CED-GTR": {
+          "fka": "KSI-CED-01",
+          "name": "General Training",
+          "statement": "_Persistently_ review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
+          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
+          "impact": {
+            "low": true,
+            "moderate": true
+          }
+        },
+        "KSI-CED-RST": {
+          "fka": "KSI-CED-02",
+          "name": "Role-Specific Training",
+          "statement": "_Persistently_ review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"]
+        },
+        "KSI-CED-DET": {
+          "fka": "KSI-CED-03",
+          "name": "Development and Engineering Training",
+          "statement": "_Persistently_ review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cp-3", "ir-2", "ps-6"]
+        },
+        "KSI-CED-IRT": {
+          "id": "KSI-CED-04",
+          "name": "Incident Response and Disaster Recovery Training",
+          "statement": "_Persistently_ review the effectiveness of role-specific training given to staff involved with incident response or disaster recovery.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        }
+      }
+    },
+    "CMT": {
+      "id": "KSI-CMT",
+      "name": "Change Management",
+      "web_name": "change-management",
+      "short_name": "CMT",
+      "theme": "A secure cloud service provider will ensure that all changes are properly documented and configuration baselines are updated accordingly.",
+      "indicators": {
+        "KSI-CMT-LMC": {
+          "fka": "KSI-CMT-01",
+          "name": "Log and Monitor Changes",
+          "statement": "Log and monitor modifications to the cloud service offering.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "au-2",
+            "cm-3",
+            "cm-3.2",
+            "cm-4.2",
+            "cm-6",
+            "cm-8.3",
+            "ma-2"
+          ]
+        },
+        "KSI-CMT-RVC": {
+          "fka": "KSI-CMT-02",
+          "name": "Redeploy Version Controlled Resources",
+          "statement": "Execute changes to _machine-based_ _information resources_ through redeployment of version controlled immutable resources rather than direct modification wherever possible.",
+          "controls": [
+            "cm-2",
+            "cm-3",
+            "cm-5",
+            "cm-6",
+            "cm-7",
+            "cm-8.1",
+            "si-3"
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          }
+        },
+        "KSI-CMT-ATV": {
+          "fka": "KSI-CMT-03",
+          "name": "Automated Testing and Validation",
+          "statement": "Automate persistent testing and validation of changes throughout deployment.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cm-3", "cm-3.2", "cm-4.2", "si-2"]
+        },
+        "KSI-CMT-CMP": {
+          "id": "KSI-CMT-04",
+          "name": "Change Management Procedures",
+          "statement": "_Persistently_ review the effectiveness of documented change management procedures.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cm-3", "cm-3.2", "cm-3.4", "cm-5", "cm-7.1", "cm-9"]
+        }
+      }
+    },
+    "CNA": {
+      "id": "KSI-CNA",
+      "name": "Cloud Native Architecture",
+      "web_name": "cloud-native-architecture",
+      "short_name": "CNA",
+      "theme": "A secure _cloud service offering_ will use cloud native architecture and design principles to enforce and enhance the confidentiality, integrity and availability of the system.",
+      "indicators": {
+        "KSI-CNA-RNT": {
+          "fka": "KSI-CNA-01",
+          "name": "Restrict Network Traffic",
+          "statement": "_Persistently_ ensure all _machine-based_ _information resources_ are configured to limit inbound and outbound network traffic.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ac-17.3", "ca-9", "cm-7.1", "sc-7.5", "si-8"]
+        },
+        "KSI-CNA-ATS": {
+          "fka": "KSI-CNA-02",
+          "name": "Attack Surface",
+          "statement": "_Persistently_ ensure _machine-based_ _information resources_ have a minimal attack surface and that lateral movement is minimized if compromised.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-17.3",
+            "ac-18.1",
+            "ac-18.3",
+            "ac-20.1",
+            "ca-9",
+            "sc-7.3",
+            "sc-7.4",
+            "sc-7.5",
+            "sc-7.8",
+            "sc-8",
+            "sc-10",
+            "si-10",
+            "si-11",
+            "si-16"
+          ]
+        },
+        "KSI-CNA-ETF": {
+          "fka": "KSI-CNA-03",
+          "name": "Enforce Traffic Flow",
+          "statement": "Use logical networking and related capabilities to enforce traffic flow controls.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-12",
+            "ac-17.3",
+            "ca-9",
+            "sc-4",
+            "sc-7",
+            "sc-7.7",
+            "sc-8",
+            "sc-10"
+          ]
+        },
+        "KSI-CNA-IMI": {
+          "fka": "KSI-CNA-04",
+          "name": "Immutable Infrastructure",
+          "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cm-2", "si-3"]
+        },
+        "KSI-CNA-UWA": {
+          "fka": "KSI-CNA-05",
+          "name": "Unwanted Activity",
+          "statement": "_Persistently_ review the effectiveness of protection against denial of service attacks and other unwanted activity.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["sc-5", "si-8", "si-8.2"]
+        },
+        "KSI-CNA-HAV": {
+          "fka": "KSI-CNA-06",
+          "name": "High Availability",
+          "statement": "Appropriately optimize _machine-based_ _information resources_ for high availability and rapid recovery.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        },
+        "KSI-CNA-HBP": {
+          "fka": "KSI-CNA-07",
+          "name": "Host Best Practices",
+          "statement": "_Persistently_ ensure cloud-native _machine-based_ _information resources_ are implemented based on the host provider's best practices and documented guidance.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ac-17.3", "cm-2", "pl-10"]
+        },
+        "KSI-CNA-AEN": {
+          "fka": "KSI-CNA-08",
+          "name": "Automated Enforcement",
+          "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": ["ca-2.1", "ca-7.1"]
+        }
+      }
+    },
+    "IAM": {
+      "id": "KSI-IAM",
+      "web_name": "identity-and-access-management",
+      "short_name": "IAM",
+      "name": "Identity and Access Management",
+      "theme": "A secure _cloud service offering_ will protect user data, control access, and apply zero trust principles.",
+      "indicators": {
+        "KSI-IAM-MFA": {
+          "fka": "KSI-IAM-01",
+          "name": "Phishing-Resistant MFA",
+          "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2",
+            "ia-2",
+            "ia-2.1",
+            "ia-2.2",
+            "ia-2.8",
+            "ia-5",
+            "ia-8",
+            "sc-23"
+          ]
+        },
+        "KSI-IAM-PLA": {
+          "fka": "KSI-IAM-02",
+          "name": "Passwordless Authentication",
+          "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2",
+            "ac-3",
+            "ia-2.1",
+            "ia-2.2",
+            "ia-2.8",
+            "ia-5.1",
+            "ia-5.2",
+            "ia-5.6",
+            "ia-6"
+          ]
+        },
+        "KSI-IAM-NUA": {
+          "fka": "KSI-IAM-03",
+          "name": "Non-User Accounts",
+          "statement": "Enforce appropriately secure authentication methods for non-user accounts and services.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2",
+            "ac-2.2",
+            "ac-4",
+            "ac-6.5",
+            "ia-3",
+            "ia-5.2",
+            "ra-5.5"
+          ]
+        },
+        "KSI-IAM-JIT": {
+          "fka": "KSI-IAM-04",
+          "name": "Just-in-Time Authorization",
+          "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2",
+            "ac-2.1",
+            "ac-2.2",
+            "ac-2.3",
+            "ac-2.4",
+            "ac-2.6",
+            "ac-3",
+            "ac-4",
+            "ac-5",
+            "ac-6",
+            "ac-6.1",
+            "ac-6.2",
+            "ac-6.5",
+            "ac-6.7",
+            "ac-6.9",
+            "ac-6.10",
+            "ac-7",
+            "ac-20.1",
+            "ac-17",
+            "au-9.4",
+            "cm-5",
+            "cm-7",
+            "cm-7.2",
+            "cm-7.5",
+            "cm-9",
+            "ia-4",
+            "ia-4.4",
+            "ia-7",
+            "ps-2",
+            "ps-3",
+            "ps-4",
+            "ps-5",
+            "ps-6",
+            "ps-9",
+            "ra-5.5",
+            "sc-2",
+            "sc-23",
+            "sc-39"
+          ]
+        },
+        "KSI-IAM-LPR": {
+          "fka": "KSI-IAM-05",
+          "name": "Least Privilege",
+          "statement": "_Persistently_ ensure that identity and access management employs measures to ensure each user or device can only access the resources they need.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2.5",
+            "ac-2.6",
+            "ac-3",
+            "ac-4",
+            "ac-6",
+            "ac-12",
+            "ac-14",
+            "ac-17",
+            "ac-17.1",
+            "ac-17.2",
+            "ac-17.3",
+            "ac-20",
+            "ac-20.1",
+            "cm-2.7",
+            "cm-9",
+            "ia-2",
+            "ia-3",
+            "ia-4",
+            "ia-4.4",
+            "ia-5.2",
+            "ia-5.6",
+            "ia-11",
+            "ps-2",
+            "ps-3",
+            "ps-4",
+            "ps-5",
+            "ps-6",
+            "sc-4",
+            "sc-20",
+            "sc-21",
+            "sc-22",
+            "sc-23",
+            "sc-39",
+            "si-3"
+          ]
+        },
+        "KSI-IAM-SUS": {
+          "fka": "KSI-IAM-06",
+          "name": "Suspicious Activity",
+          "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
+          "controls": [
+            "ac-2",
+            "ac-2.1",
+            "ac-2.3",
+            "ac-2.13",
+            "ac-7",
+            "ps-4",
+            "ps-8"
+          ],
+          "impact": {
+            "low": true,
+            "moderate": true
+          }
+        },
+        "KSI-IAM-AAM": {
+          "fka": "KSI-IAM-07",
+          "name": "Automated Account Management",
+          "statement": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2.2",
+            "ac-2.3",
+            "ac-2.13",
+            "ac-6.7",
+            "ia-4.4",
+            "ia-12",
+            "ia-12.2",
+            "ia-12.3",
+            "ia-12.5"
+          ]
+        }
+      }
+    },
+    "INR": {
+      "id": "KSI-INR",
+      "name": "Incident Response",
+      "web_name": "incident-response",
+      "short_name": "INR",
+      "theme": "A secure _cloud service offering_ will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+      "indicators": {
+        "KSI-INR-IRP": {
+          "fka": "KSI-INR-01",
+          "name": "Incident Response Procedures",
+          "statement": "_Persistently_ review the effectiveness of documented incident response procedures.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ir-4",
+            "ir-4.1",
+            "ir-6",
+            "ir-6.1",
+            "ir-6.3",
+            "ir-7",
+            "ir-7.1",
+            "ir-8",
+            "ir-8.1",
+            "si-4.5"
+          ]
+        },
+        "KSI-INR-RPI": {
+          "fka": "KSI-INR-02",
+          "name": "Review Past Incidents",
+          "statement": "_Persistently_ review past incidents for patterns or _vulnerabilities_.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"]
+        },
+        "KSI-INR-AAR": {
+          "fka": "KSI-INR-03",
+          "name": "After Action Reports",
+          "statement": "Generate incident after action reports and _persistently_ incorporate lessons learned.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"]
+        }
+      }
+    },
+    "MLA": {
+      "id": "KSI-MLA",
+      "name": "Monitoring, Logging, and Auditing",
+      "web_name": "monitoring-logging-and-auditing",
+      "short_name": "MLA",
+      "theme": "A secure _cloud service offering_ will monitor, log, and audit all important events, activity, and changes.",
+      "indicators": {
+        "KSI-MLA-SIM": {
+          "fka": "KSI-MLA-01",
+          "name": "Security Information and Event Management (SIEM)",
+          "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-17.1",
+            "ac-20.1",
+            "au-2",
+            "au-3",
+            "au-3.1",
+            "au-4",
+            "au-5",
+            "au-6.1",
+            "au-6.3",
+            "au-7",
+            "au-7.1",
+            "au-8",
+            "au-9",
+            "au-11",
+            "ir-4.1",
+            "si-4.2",
+            "si-4.4",
+            "si-7.7"
+          ]
+        },
+        "KSI-MLA-AUL": {
+          "fka": "KSI-MLA-02",
+          "name": "Audit Logging",
+          "statement": "_Persistently_ review and audit logs.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2.4",
+            "ac-6.9",
+            "au-2",
+            "au-6",
+            "au-6.1",
+            "si-4",
+            "si-4.4"
+          ]
+        },
+        "KSI-MLA-EVC": {
+          "fka": "KSI-MLA-05",
+          "name": "Evaluate Configuration",
+          "statement": "_Persistently_ evaluate and test the configuration of _machine-based_ _information resources_, especially infrastructure as code.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ca-7", "cm-2", "cm-6", "si-7.7"]
+        },
+        "KSI-MLA-EVT": {
+          "fka": "KSI-MLA-07",
+          "name": "Event Types",
+          "statement": "Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2.4",
+            "ac-6.9",
+            "ac-17.1",
+            "ac-20.1",
+            "au-2",
+            "au-7.1",
+            "au-12",
+            "si-4.4",
+            "si-4.5",
+            "si-7.7"
+          ]
+        },
+        "KSI-MLA-LDA": {
+          "fka": "KSI-MLA-08",
+          "name": "Log Data Access",
+          "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": ["si-11"]
+        }
+      }
+    },
+    "PIY": {
+      "id": "KSI-PIY",
+      "name": "Policy and Inventory",
+      "web_name": "policy-and-inventory",
+      "short_name": "PIY",
+      "theme": "A secure _cloud service offering_ will have intentional, organized, universal guidance for how every _information resource_, including personnel, is secured.",
+      "indicators": {
+        "KSI-PIY-INV": {
+          "fka": "KSI-PIY-01",
+          "name": "Automated Inventory",
+          "statement": "Use authoritative sources to automatically generate real-time inventories of all information resources when needed.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "cm-2.2",
+            "cm-7.5",
+            "cm-8",
+            "cm-8.1",
+            "cm-12",
+            "cm-12.1",
+            "cp-2.8"
+          ]
+        },
+        "KSI-PIY-VDP": {
+          "fka": "KSI-PIY-03",
+          "name": "Vulnerability Disclosure Program",
+          "statement": "_Persistently_ review the effectiveness of the provider's vulnerability disclosure program.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ra-5.11"]
+        },
+        "KSI-PIY-SBD": {
+          "fka": "KSI-PIY-04",
+          "name": "Secure by Design in the SDLC",
+          "statement": "_Persistently_ review the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-5",
+            "au-3.3",
+            "cm-3.4",
+            "pl-8",
+            "pm-7",
+            "sa-3",
+            "sa-8",
+            "sc-4",
+            "sc-18",
+            "si-10",
+            "si-11",
+            "si-16"
+          ]
+        },
+        "KSI-PIY-SIE": {
+          "fka": "KSI-PIY-06",
+          "name": "Security Investment Effectiveness",
+          "statement": "_Persistently_ review the effectiveness of the organization's investments in achieving security objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-5",
+            "ca-2",
+            "cp-2.1",
+            "cp-4.1",
+            "ir-3.2",
+            "pm-3",
+            "sa-2",
+            "sa-3",
+            "sr-2.1"
+          ]
+        },
+        "KSI-PIY-EXS": {
+          "fka": "KSI-PIY-08",
+          "name": "Executive Support",
+          "statement": "_Persistently_ review executive support for achieving the organization's security objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": []
+        }
+      }
+    },
+    "RPL": {
+      "id": "KSI-RPL",
+      "name": "Recovery Planning",
+      "web_name": "recovery-planning",
+      "short_name": "RPL",
+      "theme": "A secure _cloud service offering_ will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
+      "indicators": {
+        "KSI-RPL-RCO": {
+          "fka": "KSI-RPL-01",
+          "name": "Recovery Objectives",
+          "statement": "_Persistently_ review desired Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cp-2.3", "cp-10"]
+        },
+        "KSI-RPL-RCP": {
+          "fka": "KSI-RPL-02",
+          "name": "Recovery Plan",
+          "statement": "_Persistently_ review the alignment of recovery plans with defined recovery objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "cp-2",
+            "cp-2.1",
+            "cp-2.3",
+            "cp-4.1",
+            "cp-6",
+            "cp-6.1",
+            "cp-6.3",
+            "cp-7",
+            "cp-7.1",
+            "cp-7.2",
+            "cp-7.3",
+            "cp-8",
+            "cp-8.1",
+            "cp-8.2",
+            "cp-10",
+            "cp-10.2"
+          ]
+        },
+        "KSI-RPL-ABO": {
+          "fka": "KSI-RPL-03",
+          "name": "Align Backups with Objectives",
+          "statement": "_Persistently_ review the alignment of machine-based information resource backups with defined recovery objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["cm-2.3", "cp-6", "cp-9", "cp-10", "cp-10.2", "si-12"]
+        },
+        "KSI-RPL-RCT": {
+          "fka": "KSI-RPL-04",
+          "name": "Recovery Testing",
+          "statement": "_Persistently_ test the capability to recover from incidents and contingencies, including alignment with defined recovery objectives.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "cp-2.1",
+            "cp-2.3",
+            "cp-4",
+            "cp-4.1",
+            "cp-6",
+            "cp-6.1",
+            "cp-9.1",
+            "cp-10",
+            "ir-3",
+            "ir-3.2"
+          ]
+        }
+      }
+    },
+    "SVC": {
+      "id": "KSI-SVC",
+      "name": "Service Configuration",
+      "web_name": "service-configuration",
+      "short_name": "SVC",
+      "theme": "A secure _cloud service offering_ will follow FedRAMP encryption policies, continuously verify _information resource_ integrity, and restrict access to _third-party information resources_.",
+      "indicators": {
+        "KSI-SVC-PNI": {
+          "fka": "KSI-SVC-01",
+          "name": "Persistent Improvement",
+          "statement": "Implement improvements based on persistent evaluation of information resources for opportunities to improve security.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "cm-7.1",
+            "cm-12.1",
+            "ma-2",
+            "pl-8",
+            "sc-7",
+            "sc-39",
+            "si-2.2",
+            "si-4",
+            "sr-10"
+          ]
+        },
+        "KSI-SVC-SNT": {
+          "fka": "KSI-SVC-02",
+          "name": "Secure Network Traffic",
+          "statement": "Encrypt or otherwise secure network traffic.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-1",
+            "ac-17.2",
+            "cp-9.8",
+            "sc-8",
+            "sc-8.1",
+            "sc-13",
+            "sc-20",
+            "sc-21",
+            "sc-22",
+            "sc-23"
+          ]
+        },
+        "KSI-SVC-ACM": {
+          "fka": "KSI-SVC-04",
+          "name": "Automate Configuration Management",
+          "statement": "Manage configuration of machine-based information resources using automation.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-2.4",
+            "cm-2",
+            "cm-2.2",
+            "cm-2.3",
+            "cm-6",
+            "cm-7.1",
+            "pl-9",
+            "pl-10",
+            "sa-5",
+            "si-5",
+            "sr-10"
+          ]
+        },
+        "KSI-SVC-VRI": {
+          "fka": "KSI-SVC-05",
+          "name": "Validate Resource Integrity",
+          "statement": "Use cryptographic methods to validate the integrity of machine-based information resources.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "cm-2.2",
+            "cm-8.3",
+            "sc-13",
+            "sc-23",
+            "si-7",
+            "si-7.1",
+            "sr-10"
+          ]
+        },
+        "KSI-SVC-ASM": {
+          "fka": "KSI-SVC-06",
+          "name": "Automate Secret Management",
+          "statement": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": ["ac-17.2", "ia-5.2", "ia-5.6", "sc-12", "sc-17"]
+        },
+        "KSI-SVC-PRR": {
+          "fka": "KSI-SVC-08",
+          "name": "Prevent Residual Risk",
+          "statement": "_Persistently_ review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would _likely_ negatively affect the confidentiality, integrity, or availability of _federal customer data_.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": ["sc-4"]
+        },
+        "KSI-SVC-VCM": {
+          "fka": "KSI-SVC-09",
+          "name": "Validate Communications",
+          "statement": "Persistently validate the authenticity and integrity of communications between _machine-based_ _information resources_ using automation.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": ["sc-23", "si-7.1"]
+        },
+        "KSI-SVC-UDR": {
+          "fka": "KSI-SVC-10",
+          "name": "Unwanted Data Removal",
+          "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage.",
+          "impact": {
+            "low": false,
+            "moderate": true
+          },
+          "controls": ["si-12.3", "si-18.4"]
+        }
+      }
+    },
+    "TPR": {
+      "id": "KSI-TPR",
+      "name": "Third-Party Information Resources",
+      "web_name": "third-party-information-resources",
+      "short_name": "TPR",
+      "theme": "A secure _cloud service offering_ will understand, monitor, and manage supply chain risks from _third-party information resources_.",
+      "indicators": {
+        "KSI-TPR-MAN": {
+          "fka": "KSI-TPR-03",
+          "name": "Supply Chain Risk Management",
+          "statement": "_Persistently_ identify, review, and mitigate potential supply chain risks.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-20",
+            "ra-3.1",
+            "sa-9",
+            "sa-10",
+            "sa-11",
+            "sa-15.3",
+            "sa-22",
+            "si-7.1",
+            "sr-5",
+            "sr-6",
+            "ca-7.4",
+            "sc-18"
+          ]
+        },
+        "KSI-TPR-MON": {
+          "fka": "KSI-TPR-04",
+          "name": "Supply Chain Risk Monitoring",
+          "statement": "Automatically monitor third party software _information resources_ for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
+          "impact": {
+            "low": true,
+            "moderate": true
+          },
+          "controls": [
+            "ac-20",
+            "ca-3",
+            "ir-6.3",
+            "ps-7",
+            "ra-5",
+            "sa-9",
+            "si-5",
+            "sr-5",
+            "sr-6",
+            "sr-8"
+          ]
+        }
+      }
     }
   }
 }

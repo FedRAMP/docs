@@ -6,10 +6,22 @@
 ### {{@key}}
 {{/if}}
 
-??? abstract "**ID:** {{@key}}"
-        
-    sekrit info
+{{#if updated}}  
+??? abstract "{{@key}}"
 
+      
+    **Changelog:**
+
+    {{#each updated}}
+    - **{{this.date}}:** {{this.comment}}
+      {{#if this.prev}}
+      
+        **Was:** {{this.prev}}
+      {{/if}}
+    {{/each}}
+{{else}}
+!!! abstract "{{@key}}"
+{{/if}}
 
 !!! quote ""
 
@@ -67,6 +79,21 @@
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
+{{!-- START KSI TEMPLATE CONTENT --}}
+{{#if (stringEquals type "KSI")}}
+# {{name}}
+
+!!! info ""
+
+    {{theme}}
+
+{{#each indicators}}
+
+{{> blockForFRR}}
+
+{{/each}}
+{{else}}
+{{!-- ######################################################################## --}}
 {{!-- START MAIN TEMPLATE CONTENT --}}
 # {{info.name}}
 
@@ -97,20 +124,18 @@
   {{/if}}
 {{/if}}
 
-{{info.front_matter.purpose}}
-
-!!! abstract "Background & Authority"
+??? abstract "Background & Authority"
 {{#each info.front_matter.authority}}
     - [{{reference}}]({{reference_url}}) {{description}}
 {{/each}}
+
+{{info.front_matter.purpose}}
 
 ---
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
 {{!-- Requirements section (FRR) --}}
 {{#if (stringEquals type "FRR")}}
-
-
 {{#if data.both}}
   {{#each data.both}}
     {{#with (lookup ../info.labels @key) as | labels |}}
@@ -158,6 +183,36 @@
 {{/if}}
 {{/if}}
 
+
+{{!-- ######################################################################## --}}
+{{!-- begin KSI block --}}
+{{#if (stringEquals info.short_name "KSI")}}
+
+---
+## Key Security Indicator Themes
+
+!!! info ""
+   
+    Key Security Indicators (KSIs) apply to all cloud service offerings seeking a 
+    FedRAMP 20x Validation; each KSI must be addressed as specified in the KSI
+    requirements and recommendations above.
+
+    Key Security Indicators are grouped into themes for ease of review. Each theme
+    is displayed on a separate page to simplify transition between themes and
+    finding specific KSIs.
+
+{{#if ksiInfo}}{{#each ksiInfo}}
+### [{{name}}](key-security-indicators/{{web_name}})
+
+!!! quote ""
+
+    {{description}}
+
+{{/each}}{{/if}}
+
+{{/if}}
+{{!-- end KSI block --}}
+{{!-- ######################################################################## --}}
 {{!-- ending FRR --}}
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
@@ -168,9 +223,10 @@
   {{#each data.both}}
 ### {{term}}
 
+{{#if updated}}  
 ??? abstract "**ID:** {{@key}}"
 
-    {{#if updated}}    
+      
     **Changelog:**
 
     {{#each updated}}
@@ -179,7 +235,10 @@
       
         **Was:** {{this.prev}}
       {{/if}}
-    {{/each}}{{/if}}
+    {{/each}}
+{{else}}
+!!! abstract "**ID:** {{@key}}"
+{{/if}}
 
 
 
@@ -209,10 +268,6 @@
 {{/if}}
   {{/each}}
 {{/if}}
-
-
-
-
-
-
 {{/if}}
+{{/if}}
+{{!-- end FRR and FRD block from if KSI start --}}

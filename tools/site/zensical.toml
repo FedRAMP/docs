@@ -9,66 +9,80 @@ site_url = "https://fedramp.gov/docs/"
 nav = [
     { "Overview" = "index.md" },
     { "Authority & Responsibility" = [
-        "authority/index.md",        
+        "authority/index.md",
         { "Foundational Authority" = [
             { "FedRAMP Authorization Act" = [
                 "authority/law/index.md",
-                { "Definitions" = "authority/law/definitions.md"},
-                { "GSA" = "authority/law/gsa.md"},
-                { "FedRAMP Board" = "authority/law/board.md"},
-                { "Independent Assessment" = "authority/law/assessment.md"},
-                { "Agencies" = "authority/law/agencies.md"},
-                { "OMB" = "authority/law/omb.md"},
-                { "Reports to Congress" = "authority/law/reports.md"},
-                { "FSCAC" = "authority/law/fscac.md"},
-            ]},
+                { "Definitions" = "authority/law/definitions.md" },
+                { "GSA" = "authority/law/gsa.md" },
+                { "FedRAMP Board" = "authority/law/board.md" },
+                { "Independent Assessment" = "authority/law/assessment.md" },
+                { "Agencies" = "authority/law/agencies.md" },
+                { "OMB" = "authority/law/omb.md" },
+                { "Reports to Congress" = "authority/law/reports.md" },
+                { "FSCAC" = "authority/law/fscac.md" },
+            ] },
             { "M-24-15" = [
                 "authority/m-24-15/index.md",
-                {"Background" = "authority/m-24-15/background.md"},
-                {"Vision" = "authority/m-24-15/vision.md"},
-                {"Scope of FedRAMP" = "authority/m-24-15/scope.md"},
-                {"The FedRAMP Authorization Process" = "authority/m-24-15/process.md"},
-                {"Automation and Efficiency" = "authority/m-24-15/automation.md"},
-                {"Continuous Monitoring" = "authority/m-24-15/monitoring.md"},
-                {"Roles and Responsibilities" = "authority/m-24-15/roles.md"},
-                {"Industry Engagement" = "authority/m-24-15/industry.md"},
-                {"Implementation" = "authority/m-24-15/implementation.md"},
-                {"Rescissions" = "authority/m-24-15/rescissions.md"},
-                {"Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md"},
-            ]},
+                { "Background" = "authority/m-24-15/background.md" },
+                { "Vision" = "authority/m-24-15/vision.md" },
+                { "Scope of FedRAMP" = "authority/m-24-15/scope.md" },
+                { "The FedRAMP Authorization Process" = "authority/m-24-15/process.md" },
+                { "Automation and Efficiency" = "authority/m-24-15/automation.md" },
+                { "Continuous Monitoring" = "authority/m-24-15/monitoring.md" },
+                { "Roles and Responsibilities" = "authority/m-24-15/roles.md" },
+                { "Industry Engagement" = "authority/m-24-15/industry.md" },
+                { "Implementation" = "authority/m-24-15/implementation.md" },
+                { "Rescissions" = "authority/m-24-15/rescissions.md" },
+                { "Policy and Program Implementation Assistance" = "authority/m-24-15/assistance.md" },
+            ] },
         ] },
         { "Related Guidance" = [
             { "Scope of FedRAMP" = "authority/scope.md" },
-        ]},
+        ] },
         { "Historical" = [
-            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md"},
-        ]}
+            { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md" },
+        ] },
     ] },
     { "FedRAMP 20x" = [
         "20x/index.md",
-        { "Background" = [
+        { "Foundation" = [
             { "Documentation Guidelines" = "20x/guidelines.md" },
             { "Definitions" = "20x/fedramp-definitions.md" },
+                        { "Key Security Indicators" = [
+                "20x/key-security-indicators/index.md",
+                { "Authorization by FedRAMP" = "20x/key-security-indicators/authorization-by-fedramp.md" },
+                { "Change Management" = "20x/key-security-indicators/change-management.md" },
+                { "Cloud-Native Architecture" = "20x/key-security-indicators/cloud-native-architecture.md" },
+                { "Cybersecurity Education" = "20x/key-security-indicators/cybersecurity-education.md" },
+                { "Identity and Access Management" = "20x/key-security-indicators/identity-and-access-management.md" },
+                { "Incident Response" = "20x/key-security-indicators/incident-response.md" },
+                { "Monitoring, Logging, and Auditing" = "20x/key-security-indicators/monitoring-logging-and-auditing.md" },
+                { "Policy and Inventory" = "20x/key-security-indicators/policy-and-inventory.md" },
+                { "Recovery Planning" = "20x/key-security-indicators/recovery-planning.md" },
+                { "Service Configuration" = "20x/key-security-indicators/service-configuration.md" },
+                { "Third Party Information Resources" = "20x/key-security-indicators/third-party-information-resources.md" },
+
+            ] },
         ] },
-        { "Foundation" = [
-            { "Key Security Indicators" = "20x/key-security-indicators.md" },            
-        ] },
-        { "Structure" = [
+        { "Processes" = [
             { "Authorization Data Sharing" = "20x/authorization-data-sharing.md" },
             { "Collaborative Continuous Monitoring" = "20x/collaborative-continuous-monitoring.md" },
             { "FedRAMP Security Inbox" = "20x/fedramp-security-inbox.md" },
             { "Incident Communications Procedures" = "20x/incident-communications-procedures.md" },
-            { "Minimum Assessment Scope" = "20x/minimum-assessment-scope.md" },            
+            { "Minimum Assessment Scope" = "20x/minimum-assessment-scope.md" },
             { "Persistent Validation and Assessment" = "20x/persistent-validation-and-assessment.md" },
             { "Recommended Secure Configuration" = "20x/recommended-secure-configuration.md" },
             { "Significant Change Notifications" = "20x/significant-change-notifications.md" },
             { "Using Cryptographic Modules" = "20x/using-cryptographic-modules.md" },
             { "Vulnerability Detection and Response" = "20x/vulnerability-detection-and-response.md" },
         ] },
-        { "Phase 1 (Archive)" = [
-            { "P1 Archive Overview" = "20x/phase1/intro.md" },
-            { "P1 Key Security Indicators" = "20x/phase1/key-security-indicators.md" },
-            { "P1 Minimum Assessment Standard" = "20x/phase1/minimum-assessment-standard.md" },
+        { "Archive" = [
+            { "Phase 1" = [
+                { "P1 Archive Overview" = "20x/phase1/intro.md" },
+                { "P1 Key Security Indicators" = "20x/phase1/key-security-indicators.md" },
+                { "P1 Minimum Assessment Standard" = "20x/phase1/minimum-assessment-standard.md" },
+            ] },
         ] },
     ] },
     { "FedRAMP Rev5" = [
@@ -128,7 +142,7 @@ nav = [
                 { "Collaborative Continuous Monitoring" = "rev5/balance/collaborative-continuous-monitoring.md" },
             ] },
         ] },
-    ] },    
+    ] },
     { "// Return to fedramp.gov" = "/" },
 ]
 
@@ -152,11 +166,12 @@ features = [
     "navigation.instant",
     "navigation.instant.prefetch",
     "navigation.instant.progress",
+    "navigation.path",
     "navigation.sections",
     "navigation.tabs",
+    "navigation.tabs.sticky",
     "navigation.top",
     "navigation.tracking",
-    "navigation.path",
     "search.highlight",
     "toc.follow",
 ]
@@ -185,12 +200,12 @@ md_in_html = {}
 tables = {}
 
 [project.markdown_extensions.toc]
-permalink =  true
+permalink = true
 
 [project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
 [project.markdown_extensions.pymdownx.emoji]
-emoji_index = "zensical.extensions.emoji.twemoji" 
+emoji_index = "zensical.extensions.emoji.twemoji"
 emoji_generator = "zensical.extensions.emoji.to_svg"

@@ -48,23 +48,68 @@ function buildMarkdown() {
   const template = Handlebars.compile(templateSource);
 
   if (!fs.existsSync(path.join(OUTPUT_DIR, "20x"))) {
-    fs.mkdirSync(path.join(OUTPUT_DIR, "20x"), { recursive: true });
+    fs.mkdirSync(path.join(OUTPUT_DIR, "20x", "key-security-indicators"), {
+      recursive: true,
+    });
   }
   if (!fs.existsSync(path.join(OUTPUT_DIR, "rev5", "balance"))) {
     fs.mkdirSync(path.join(OUTPUT_DIR, "rev5", "balance"), { recursive: true });
   }
 
+  // process KSI stuff
+  const ksiInfo = {};
+  for (const theme in jsonContent.KSI) {
+    const themeData = jsonContent.KSI[theme];
+    console.log(`Processing KSI theme: ${theme}`);
+
+    const markdown = template({ ...themeData, version: "20x", type: "KSI" });
+    const filename = `${themeData.web_name}.md`;
+    const outputPath = path.join(
+      OUTPUT_DIR,
+      "20x",
+      "key-security-indicators",
+      filename,
+    );
+
+    fs.writeFileSync(outputPath, markdown);
+
+    ksiInfo[theme] = {
+      id: themeData.id,
+      web_name: themeData.web_name,
+      name: themeData.name,
+      description: themeData.theme,
+    };
+    console.log(`  [20x] - Generated: ${outputPath}`);
+  }
+
+  // process FRR stuffs
   for (const sectionKey in jsonContent.FRR) {
     const section = jsonContent.FRR[sectionKey];
     console.log(`Processing section: ${sectionKey}`);
 
     if (section.info.effective["20x"].is) {
-      const markdown = template({ ...section, version: "20x", type: "FRR" });
-      const filename = `${section.info.web_name}.md`;
-      const outputPath = path.join(OUTPUT_DIR, "20x", filename);
-
-      fs.writeFileSync(outputPath, markdown);
-      console.log(`  [20x] - Generated: ${outputPath}`);
+      const markdown = template({
+        ...section,
+        version: "20x",
+        type: "FRR",
+        ksiInfo: ksiInfo,
+      });
+      if (section.info.short_name === "KSI") {
+        const filename = "index.md";
+        const outputPath = path.join(
+          OUTPUT_DIR,
+          "20x",
+          "key-security-indicators",
+          filename,
+        );
+        fs.writeFileSync(outputPath, markdown);
+        console.log(`  [20x] - Generated: ${outputPath}`);
+      } else {
+        const filename = `${section.info.web_name}.md`;
+        const outputPath = path.join(OUTPUT_DIR, "20x", filename);
+        fs.writeFileSync(outputPath, markdown);
+        console.log(`  [20x] - Generated: ${outputPath}`);
+      }
     }
 
     if (section.info.effective.rev5.is) {
@@ -79,7 +124,6 @@ function buildMarkdown() {
 
   // Render Definitions
   console.log(`Processing definitions...`);
-
   const markdown = template({
     ...jsonContent.FRD,
     version: "20x",
