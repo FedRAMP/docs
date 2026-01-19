@@ -154,10 +154,15 @@ function buildMarkdown() {
     type: "FRD",
   });
   const filename = `${jsonContent.FRD.info.web_name}.md`;
-  const outputPath = path.join(OUTPUT_DIR, "20x", filename);
+  let outputPath = path.join(OUTPUT_DIR, "20x", filename);
 
   fs.writeFileSync(outputPath, markdown);
   console.log(`  [20x] - Generated: ${outputPath}`);
+  
+  outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
+  fs.writeFileSync(outputPath, markdown);
+  console.log(`  [rev5] - Generated: ${outputPath}`);
+
 
   console.log("Markdown build complete.");
 }

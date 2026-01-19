@@ -12,42 +12,62 @@ requirements.
     requirements and recommendations. All of the materials on this page are
     generated automatically from these machine-readable materials.
 
-## Total Requirements and Recommendations
+## FedRAMP Defined Terms
 
-The tables below have summary information about the number of Key Security
-Indicators, requirements, and recommendations included in 20x Phase 2
-materials.
+FedRAMP has created authoritative definitions for a number of terms used
+within these materials; everyone should be familiar with these definitions
+to best understand the materials. In some cases these definitions may
+explain that FedRAMP applies a different context than folks are used to when
+using a specific word.
 
-### Key Security Indicators
+If a term is not defined by FedRAMP then the rules of common plain language
+apply - don't overthink it.
 
-!!! info "Key Security Indicators only apply to cloud service providers."
+## Capitalized Key Words
 
-| Low Impact | Moderate Impact |
-| ---------- | --------------- |
-| 56         | 61              |
+The capitalized key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+documentation are to be interpreted as described in
+[IETF RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-### Authorization by FedRAMP Requirements and Recommendations
+!!! warning "Confusion over SHOULD"
 
-All requirements and recommendations must be addressed prior to submission for
-authorization.
+    The use of "SHOULD" does not just make something optional for fun - there
+    must be a valid reason not to implement a recommendation that has been
+    carefully weighed. For FedRAMP 20x, cloud service providers MUST document
+    this reasoning in their authorization package.
 
-#### Providers
+    Cloud service providers who do not implement recommendations may also be
+    assessed as being less secure than those who do and may be less likely
+    to be reused by federal agencies.
 
-| Keyword    | Low     | Moderate |
-| ---------- | ------- | -------- |
-| MUST       | 89      | 90       |
-| SHOULD     | 38      | 39       |
-| MUST NOT   | 3       | 3        |
-| SHOULD NOT | 4       | 4        |
-| MAY        | 14      | 14       |
-| **Total**  | **148** | **150**  |
+??? quote "RFC 2119 Key Word Summary"
 
-#### Assessors
+    1. MUST This word, or the terms "REQUIRED" or "SHALL", mean that the
+    definition is an absolute requirement of the specification.
 
-| Keyword   | Low    | Moderate |
-| --------- | ------ | -------- |
-| MUST      | 10     | 10       |
-| SHOULD    | 3      | 3        |
-| MUST NOT  | 2      | 2        |
-| MAY       | 2      | 2        |
-| **Total** | **17** | **17**   |
+    2. MUST NOT   This phrase, or the phrase "SHALL NOT", mean that the
+    definition is an absolute prohibition of the specification.
+
+    3. SHOULD   This word, or the adjective "RECOMMENDED", mean that there
+    may exist valid reasons in particular circumstances to ignore a
+    particular item, but the full implications must be understood and
+    carefully weighed before choosing a different course.
+
+    4. SHOULD NOT   This phrase, or the phrase "NOT RECOMMENDED" mean that
+    there may exist valid reasons in particular circumstances when the
+    particular behavior is acceptable or even useful, but the full
+    implications should be understood and the case carefully weighed
+    before implementing any behavior described with this label.
+
+    5. MAY   This word, or the adjective "OPTIONAL", mean that an item is
+    truly optional.  One vendor may choose to include the item because a
+    particular marketplace requires it or because the vendor feels that
+    it enhances the product while another vendor may omit the same item.
+    An implementation which does not include a particular option MUST be
+    prepared to interoperate with another implementation which does
+    include the option, though perhaps with reduced functionality. In the
+    same vein an implementation which does include a particular option
+    MUST be prepared to interoperate with another implementation which
+    does not include the option (except, of course, for the feature the
+    option provides.)
