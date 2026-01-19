@@ -27,8 +27,8 @@ Handlebars.registerHelper("controlfreak", (controlId) => {
   const baseUrl = "https://controlfreak.risk-redux.io/controls/";
 
   if (controlId.includes(".")) {
-    const [main, sub] = controlId.split(".");
-    const [prefix, num] = main.split("-");
+    const [main = "", sub = ""] = controlId.split(".");
+    const [prefix = "", num = ""] = main.split("-");
 
     const paddedMain = num.padStart(2, "0");
     const paddedSub = sub.padStart(2, "0");
@@ -36,7 +36,7 @@ Handlebars.registerHelper("controlfreak", (controlId) => {
     const formatted = `${prefix.toUpperCase()}-${paddedMain}(${paddedSub})`;
     return new Handlebars.SafeString(baseUrl + formatted);
   } else {
-    const [prefix, num] = controlId.split("-");
+    const [prefix = "", num = ""] = controlId.split("-");
 
     const paddedNum = num.padStart(2, "0");
 
@@ -78,7 +78,7 @@ function buildMarkdown() {
   }
 
   // process KSI stuff
-  const ksiInfo = {};
+  const ksiInfo: Record<string, any> = {};
   for (const theme in jsonContent.KSI) {
     const themeData = jsonContent.KSI[theme];
     console.log(`Processing KSI theme: ${theme}`);
