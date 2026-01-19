@@ -9,7 +9,8 @@
 {{#if updated}}  
 ??? abstract "{{@key}}"
 
-      
+    {{#if fka}}**Former ID:** {{fka}}{{/if}}
+
     **Changelog:**
 
     {{#each updated}}
@@ -234,6 +235,7 @@
 {{#if updated}}  
 ??? abstract "**ID:** {{@key}}"
 
+    {{#if fka}}**Former ID:** {{fka}}{{/if}}
       
     **Changelog:**
 
