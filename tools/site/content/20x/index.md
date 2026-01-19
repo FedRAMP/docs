@@ -1,4 +1,4 @@
-# 20x Phase 2
+# 20x Phase 2 Pilot
 
 This page is the authoritative location for FedRAMP 20x Phase 2 pilot
 requirements.

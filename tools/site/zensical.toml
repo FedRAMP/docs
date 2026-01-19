@@ -7,7 +7,6 @@ site_dir = "static/html/"
 docs_dir = "static/markdown/"
 site_url = "https://fedramp.gov/docs/"
 nav = [
-    { "Overview" = "index.md" },
     { "Authority & Responsibility" = [
         "authority/index.md",
         { "Foundational Authority" = [
@@ -142,11 +141,11 @@ nav = [
             ] },
         ] },
     ] },
-    { "// Return to fedramp.gov" = "/" },
+    { "--> return to fedramp.gov" = "/" },
 ]
 
 [project.extra]
-homepage = "https://fedramp.gov/docs/20x"
+homepage = "/"
 
 [project.theme]
 custom_dir = "overrides"
@@ -179,11 +178,14 @@ features = [
 abstract = "fontawesome/solid/gavel"
 
 [[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
+
 [[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"

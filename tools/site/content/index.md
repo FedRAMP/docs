@@ -17,12 +17,17 @@ linked to, and are always up to date.
     As documents are migrated we will provide redirects to their new location
     whenever possible.
 
-## Sections
-
-Materials on this site are divided into three sections:
-
-| Section | Descriptions |
-| -- | -- |
-| [Authority & Responsibility](authority/index.md) | Background on the statutory authority for FedRAMP, related policies, and the statutory responsibilities of FedRAMP and federal agencies. |
-| [20x](20x/index.md) | Requirements and recommendations for FedRAMP 20x |
-| [Rev5](rev5/index.md) | Playbooks and Balance Improvement Releases for FedRAMP Rev5 |
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/20x-sunrise.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+  }
+</style>
