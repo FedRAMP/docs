@@ -90,6 +90,7 @@ nav = [
     { "FedRAMP Rev5" = [
         "rev5/index.md",
         { "Cloud Service Providers" = [
+            "rev5/playbook/csp/index.md",
             { "Getting Started" = [
                 "rev5/playbook/csp/authorization/getting-started.md",
                 { "Rev5 Authorization" = "rev5/playbook/csp/authorization/agency-authorization-path.md" },
@@ -116,15 +117,13 @@ nav = [
             ] },
         ] },
         { "Agencies" = [
-            { "Rev5 Agency Authorization" = [
-                { "Why Use FedRAMP" = "rev5/playbook/agency/authorization/intro.md" },
-                { "The FedRAMP Marketplace" = "rev5/playbook/agency/authorization/marketplace.md" },
-                { "Liaison Program" = "rev5/playbook/agency/authorization/liaison-program.md" },
-                { "Sponsoring Authorizations" = "rev5/playbook/agency/authorization/sponsoring.md" },
-                { "Preparation" = "rev5/playbook/agency/authorization/preparation.md" },
-                { "Authorization" = "rev5/playbook/agency/authorization/authorization.md" },
-                { "Continuous Monitoring" = "rev5/playbook/agency/authorization/continuous-monitoring.md" },
-            ] },
+            "rev5/playbook/agency/authorization/index.md",
+            { "The FedRAMP Marketplace" = "rev5/playbook/agency/authorization/marketplace.md" },
+            { "Liaison Program" = "rev5/playbook/agency/authorization/liaison-program.md" },
+            { "Sponsoring Authorizations" = "rev5/playbook/agency/authorization/sponsoring.md" },
+            { "Preparation" = "rev5/playbook/agency/authorization/preparation.md" },
+            { "Authorization" = "rev5/playbook/agency/authorization/authorization.md" },
+            { "Continuous Monitoring" = "rev5/playbook/agency/authorization/continuous-monitoring.md" },
         ] },
         { "Balance Improvement Releases" = [
 
@@ -172,7 +171,7 @@ features = [
     "navigation.top",
     "navigation.tracking",
     "search.highlight",
-    "toc.follow"
+    "toc.follow",
 ]
 
 [project.theme.icon]
