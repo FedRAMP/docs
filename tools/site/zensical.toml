@@ -181,18 +181,16 @@ repo = "fontawesome/brands/github"
 abstract = "fontawesome/solid/gavel"
 
 [[project.theme.palette]]
-media = "(prefers-color-scheme: dark)"
-scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
-
-
-[[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
 
 [project.markdown_extensions]
 abbr = {}
