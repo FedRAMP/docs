@@ -129,7 +129,7 @@ nav = [
             ] },
         ] },
     ] },    
-    { "// Return to fedramp.gov" = "https://fedramp.gov/20x/phase-two" },
+    { "// Return to fedramp.gov" = "/" },
 ]
 
 [project.extra]

@@ -9,7 +9,7 @@ const JSON_FILE = path.join(
   "../FRMR.requirements-and-recommendations.json",
 );
 const TEMPLATE_FILE = path.join(ROOT_DIR, "templates/zensical-template.hbs");
-const OUTPUT_DIR = path.join(ROOT_DIR, "site/static/markdown/20x");
+const OUTPUT_DIR = path.join(ROOT_DIR, "site/static/markdown");
 
 // Register Helpers
 Handlebars.registerHelper("stringEquals", (a, b) => a === b);
@@ -47,23 +47,33 @@ function buildMarkdown() {
   const templateSource = fs.readFileSync(TEMPLATE_FILE, "utf-8");
   const template = Handlebars.compile(templateSource);
 
-  if (!fs.existsSync(OUTPUT_DIR)) {
-    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  if (!fs.existsSync(path.join(OUTPUT_DIR, "20x"))) {
+    fs.mkdirSync(path.join(OUTPUT_DIR, "20x"), { recursive: true });
+  }
+  if (!fs.existsSync(path.join(OUTPUT_DIR, "rev5", "balance"))) {
+    fs.mkdirSync(path.join(OUTPUT_DIR, "rev5", "balance"), { recursive: true });
   }
 
-  for (const sectionKey in jsonContent) {
-    const section = jsonContent[sectionKey];
+  for (const sectionKey in jsonContent.FRR) {
+    const section = jsonContent.FRR[sectionKey];
     console.log(`Processing section: ${sectionKey}`);
 
-    try {
+    if (section.info.effective["20x"].is) {
       const markdown = template({ ...section, version: "20x" });
       const filename = `${section.info.web_name}.md`;
-      const outputPath = path.join(OUTPUT_DIR, filename);
+      const outputPath = path.join(OUTPUT_DIR, "20x", filename);
 
       fs.writeFileSync(outputPath, markdown);
-      console.log(`  Generated: ${outputPath}`);
-    } catch (e) {
-      console.error(`  Error generating markdown for ${sectionKey}:`, e);
+      console.log(`  [20x] - Generated: ${outputPath}`);
+    }
+
+    if (section.info.effective.rev5.is) {
+      const markdown = template({ ...section, version: "rev5" });
+      const filename = `${section.info.web_name}.md`;
+      const outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
+
+      fs.writeFileSync(outputPath, markdown);
+      console.log(`  [rev5] Generated: ${outputPath}`);
     }
   }
 
