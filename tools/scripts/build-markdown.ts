@@ -59,7 +59,7 @@ function buildMarkdown() {
     console.log(`Processing section: ${sectionKey}`);
 
     if (section.info.effective["20x"].is) {
-      const markdown = template({ ...section, version: "20x" });
+      const markdown = template({ ...section, version: "20x", type: "FRR" });
       const filename = `${section.info.web_name}.md`;
       const outputPath = path.join(OUTPUT_DIR, "20x", filename);
 
@@ -68,7 +68,7 @@ function buildMarkdown() {
     }
 
     if (section.info.effective.rev5.is) {
-      const markdown = template({ ...section, version: "rev5" });
+      const markdown = template({ ...section, version: "rev5", type: "FRR" });
       const filename = `${section.info.web_name}.md`;
       const outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
 
@@ -76,6 +76,20 @@ function buildMarkdown() {
       console.log(`  [rev5] Generated: ${outputPath}`);
     }
   }
+
+  // Render Definitions
+  console.log(`Processing definitions...`);
+
+  const markdown = template({
+    ...jsonContent.FRD,
+    version: "20x",
+    type: "FRD",
+  });
+  const filename = `${jsonContent.FRD.info.web_name}.md`;
+  const outputPath = path.join(OUTPUT_DIR, "20x", filename);
+
+  fs.writeFileSync(outputPath, markdown);
+  console.log(`  [20x] - Generated: ${outputPath}`);
 
   console.log("Markdown build complete.");
 }
