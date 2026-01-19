@@ -81,6 +81,25 @@
 
     **Reference:** [{{reference}}]({{reference_url}})
 {{/if}}
+{{#if this.examples}}
+          {{#each this.examples}}
+
+    ??? tip "{{this.id}}"
+
+        **Key Tests:**
+
+          {{#each this.key_tests}}
+        - {{this}}
+          {{/each}}
+
+        **Examples:**
+
+          {{#each this.examples}}
+        - {{this}}
+          {{/each}}          
+          {{/each}}
+        {{/if}}
+
 {{/inline}}
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
