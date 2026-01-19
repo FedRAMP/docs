@@ -6,6 +6,8 @@ site_author = "pete@fedramp.gov"
 site_dir = "static/html/"
 docs_dir = "static/markdown/"
 site_url = "https://fedramp.gov/docs/"
+repo_url = "https://github.com/fedramp/docs"
+repo_name = "FedRAMP/docs"
 nav = [
     { "Authority & Responsibility" = [
         "authority/index.md",
@@ -141,7 +143,7 @@ nav = [
             ] },
         ] },
     ] },
-    { "--> return to fedramp.gov" = "/" },
+    { "--> return to FedRAMP.gov" = "/" },
 ]
 
 [project.extra]
@@ -167,12 +169,14 @@ features = [
     "navigation.path",
     "navigation.sections",
     "navigation.tabs",
-    "navigation.tabs.sticky",
     "navigation.top",
     "navigation.tracking",
     "search.highlight",
-    "toc.follow",
+    "toc.follow"
 ]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
 
 [project.theme.icon.admonition]
 abstract = "fontawesome/solid/gavel"
