@@ -19,5 +19,8 @@ FRR = FedRAMP Requirements & Recommendations
 - technical assistance rolled up into the appropriate FRR
 - restructured a bunch of stuff in the TFR section to vary by level instead of having separate requirements
 
+# NOTES TO SELF
 
+- gotta change all the references to old FRR-##'s 
+- port the "example" functionality from FRA
 

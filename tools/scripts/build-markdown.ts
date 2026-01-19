@@ -24,6 +24,30 @@ Handlebars.registerHelper("uppercase", (s) => {
   return s.toUpperCase();
 });
 
+Handlebars.registerHelper("controlfreak", (controlId) => {
+  if (typeof controlId !== "string") return controlId;
+
+  const baseUrl = "https://controlfreak.risk-redux.io/controls/";
+
+  if (controlId.includes(".")) {
+    const [main, sub] = controlId.split(".");
+    const [prefix, num] = main.split("-");
+
+    const paddedMain = num.padStart(2, "0");
+    const paddedSub = sub.padStart(2, "0");
+
+    const formatted = `${prefix.toUpperCase()}-${paddedMain}(${paddedSub})`;
+    return new Handlebars.SafeString(baseUrl + formatted);
+  } else {
+    const [prefix, num] = controlId.split("-");
+
+    const paddedNum = num.padStart(2, "0");
+
+    const formatted = `${prefix.toUpperCase()}-${paddedNum}`;
+    return new Handlebars.SafeString(baseUrl + formatted);
+  }
+});
+
 function buildMarkdown() {
   console.log("Building markdown files...");
 
@@ -112,7 +136,7 @@ function buildMarkdown() {
       }
     }
 
-    if (section.info.effective.rev5.is) {
+    if (section.info.effective.rev5.is != "no") {
       const markdown = template({ ...section, version: "rev5", type: "FRR" });
       const filename = `${section.info.web_name}.md`;
       const outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);

@@ -72,6 +72,14 @@
     - _{{this}}_
   {{/each}}
 {{/if}}
+{{#if controls}}
+
+    **Related SP 800-53 Controls:** {{#each controls}}[{{ uppercase this }}]({{controlfreak this}}){{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
+{{#if reference}}
+
+    **Reference:** [{{reference}}]({{reference_url}})
+{{/if}}
 {{/inline}}
 {{!-- ######################################################################## --}}
 {{!-- ######################################################################## --}}
@@ -202,7 +210,7 @@
     finding specific KSIs.
 
 {{#if ksiInfo}}{{#each ksiInfo}}
-### [{{name}}](key-security-indicators/{{web_name}})
+### [{{name}}]({{web_name}}/)
 
 !!! quote ""
 
