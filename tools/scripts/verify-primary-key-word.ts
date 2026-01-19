@@ -46,7 +46,7 @@ function validateRequirementObject(
  */
 function validateFRMRFile() {
   const rootDir = path.join(process.cwd(), "..");
-  const fileName = "FRMR.requirements-and-recommendations.json";
+  const fileName = "FRMR.documentation.json";
   const filePath = path.join(rootDir, fileName);
 
   console.log(`Scanning ${fileName}...\n`);

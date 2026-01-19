@@ -1,7 +1,7 @@
 {
   "info": {
-    "title": "FedRAMP Machine-Readable Requirements and Recommendations",
-    "description": "This datafile contains FedRAMP Requirements and Recommendations (FRR) for cloud service providers seeking FedRAMP Authorization. The FRR outlines the mandatory requirements and best practices that providers must adhere to in order to convey the security of their cloud services within the federal government ecosystem.",
+    "title": "FedRAMP Machine-Readable Documentation",
+    "description": "This datafile contains FedRAMP documentation for cloud service providers seeking FedRAMP Authorization. This includes definitions, requirements, recommendations, and key security indicators.",
     "version": "0.9.0-beta",
     "last_updated": "2025-01-19"
   },

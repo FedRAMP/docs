@@ -4,10 +4,7 @@ import Handlebars from "handlebars";
 import { glob } from "glob";
 
 const ROOT_DIR = process.cwd();
-const JSON_FILE = path.join(
-  ROOT_DIR,
-  "../FRMR.requirements-and-recommendations.json",
-);
+const JSON_FILE = path.join(ROOT_DIR, "../FRMR.documentation.json");
 const TEMPLATE_FILE = path.join(ROOT_DIR, "templates/zensical-template.hbs");
 const OUTPUT_DIR = path.join(ROOT_DIR, "site/static/markdown");
 
