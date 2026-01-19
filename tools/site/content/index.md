@@ -1,21 +1,24 @@
-# FedRAMP Documentation
+---
+title: FR
+---
 
-This site contains digital-first FedRAMP documentation and playbooks
-focused on the traditional FedRAMP Rev5 authorization path. These materials
-replace traditional off-line documents (such as PDF or DOCX) with responsive
-on-line materials that can be viewed on a variety of devices, directly
-linked to, and are always up to date.
+# A fresh take on FedRAMP Documentation
 
-!!! info "Modernization in Progress!"
+<p style="font-size: 1.2em; line-height: 1.6;">
+This section contains digital-first FedRAMP documentation including
+definitions, requirements, recommendations, key security indicators, laws,
+memorandums, and playbooks.
+</p>
 
-    FedRAMP is working incrementally to migrate legacy documentation to this
-    site. Most legacy Rev5 materials still require downloading off-line
-    documents and are available in the 
-    [Rev5 Documents and Templates](https://www.fedramp.gov/rev5/documents-templates/) 
-    section of this site.
+These materials replace traditional off-line documents (such as PDF or DOCX)
+with responsive on-line materials that can be viewed on a variety of devices,
+directly linked to, and are always up to date.
 
-    As documents are migrated we will provide redirects to their new location
-    whenever possible.
+!!! danger ""
+
+    :lucide-construction: **This section is under active development and things may change unexpectedly.** :lucide-construction:
+
+    Thank you for your patience!
 
 <style>
   body::before {
