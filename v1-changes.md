@@ -23,4 +23,5 @@ FRR = FedRAMP Requirements & Recommendations
 
 - gotta change all the references to old FRR-##'s 
 - port the "example" functionality from FRA
+- consider a different approach to explicit ordering, right now things are ordered by hand in the JSON data but it might seem haphazard 
 

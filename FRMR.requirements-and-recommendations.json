@@ -3260,14 +3260,6 @@
           "reference": "Minimum Assessment Scope",
           "reference_url": "https://fedramp.gov/docs/20x/minimum-assessment-scope"
         },
-        "KSI-AFR-KSI": {
-          "fka": "KSI-AFR-02",
-          "name": "Key Security Indicators",
-          "statement": "Set security goals for the cloud service offering based on FedRAMP 20x Phase Two Key Security Indicators (KSIs - you are here), develop automated validation of status and progress to the greatest extent possible, and persistently address all related requirements and recommendations.",
-          "reference": "Key Security Indicators",
-          "reference_url": "https://fedramp.gov/docs/20x/key-security-indicators",
-          "note": "This KSI is not intended to create an infinite loop; unlike other KSI-AFR themed indicators, this KSI is addressed by otherwise addressing all the KSIs. Providers and assessors may use this KSI to summarize the approach, coverage, status, etc. but are not expected to include all KSIs within this KSI in an infinite loop."
-        },
         "KSI-AFR-ADS": {
           "fka": "KSI-AFR-03",
           "name": "Authorization Data Sharing",
