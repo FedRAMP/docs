@@ -156,8 +156,13 @@ function buildMarkdown() {
   fs.writeFileSync(outputPath, markdown);
   console.log(`  [20x] - Generated: ${outputPath}`);
   
+    const markdown5 = template({
+      ...jsonContent.FRD,
+      version: "rev5",
+      type: "FRD",
+    });
   outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
-  fs.writeFileSync(outputPath, markdown);
+  fs.writeFileSync(outputPath, markdown5);
   console.log(`  [rev5] - Generated: ${outputPath}`);
 
 

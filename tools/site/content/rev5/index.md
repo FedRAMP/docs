@@ -1,6 +1,5 @@
 # FedRAMP Rev5 Documentation and Playbooks
 
-
 <div class="grid cards" style ="font-size: 1.1em;" markdown>
 
 - :material-airplane-takeoff: __[Getting Started with FedRAMP Rev5](playbook/csp/authorization/getting-started.md)__ for cloud service providers
