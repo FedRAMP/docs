@@ -72,3 +72,16 @@ The `KSI` object is keyed by **Domain ID** (e.g., `IAM`, `VDR`).
 *   `controls`: An array of NIST SP 800-53 control identifiers (e.g., `ac-2`, `ia-5`).
 *   `reference`: Links to external or internal documentation.
 
+**Integration Tip**: Use the `controls` array to map FedRAMP 20x capabilities back to legacy NIST-based GRC tools.
+
+## 4. Timeframe Attributes in Requirements
+
+Some requirements within the `FRR` section, particularly those that vary by impact level (`varies_by_level`), may include structured timeframe data to facilitate automated validation or reporting.
+
+### Data Layout
+When a requirement object (or a level-specific object within `varies_by_level`) includes timeframe constraints, it will have the following fields:
+
+*   `timeframe_type`: The unit of time (e.g., `days`, `month`).
+*   `timeframe_num`: The numeric value associated with the unit (e.g., `7`, `1`).
+
+**Integration Tip**: These fields allow programmatic extraction of deadlines or frequencies without parsing the natural language `statement`. For example, a requirement with `timeframe_type: "days"` and `timeframe_num: 7` implies a weekly cadence.

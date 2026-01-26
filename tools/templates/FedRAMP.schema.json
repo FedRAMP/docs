@@ -282,6 +282,21 @@
             "additionalProperties": false
           }
         },
+        "timeframe_type": { "type": "string" },
+        "timeframe_num": { "type": "number" },
+        "notification": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["party", "method", "target"],
+            "properties": {
+              "party": { "type": "string" },
+              "method": { "type": "string" },
+              "target": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
         "reference": { "type": "string" },
         "reference_url": { "type": "string", "format": "uri" },
         "impact": {
