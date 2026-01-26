@@ -916,11 +916,13 @@
               "fka": "FRR-ADS-01",
               "statement": "Providers MUST publicly share up-to-date information about the cloud service offering in both human-readable and machine-readable formats, including at least:",
               "terms": [
-                "cloud service offering",
-                "machine-readable",
-                "trust center"
+                "Cloud Service Offering",
+                "Machine-Readable",
+                "Trust Center"
               ],
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Public Information",
               "primary_key_word": "MUST",
               "following_information": [
@@ -947,8 +949,13 @@
             "ADS-CSO-CBF": {
               "fka": "FRR-ADS-02",
               "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and machine-readable formats when authorization data is provided in both formats; Providers SHOULD generate human-readable and machine-readable data from the same source at the same time OR generate human-readable formats directly from machine-readable data.",
-              "affects": ["Providers"],
-              "terms": ["machine-readable", "authorization data"],
+              "affects": [
+                "Providers"
+              ],
+              "terms": [
+                "Authorization data",
+                "Machine-Readable"
+              ],
               "name": "Consistency Between Formats",
               "primary_key_word": "MUST",
               "updated": [
@@ -961,8 +968,13 @@
             "ADS-CSO-DSL": {
               "fka": "FRR-ADS-03",
               "statement": "Providers MUST share a detailed list of specific services and their impact levels that are included in the cloud service offering using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying authorization data.",
-              "terms": ["cloud service offering", "authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Detailed Service List",
               "primary_key_word": "MUST",
               "updated": [
@@ -975,8 +987,14 @@
             "ADS-CSO-USH": {
               "fka": "FRR-ADS-04",
               "statement": "Providers MUST share authorization data with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers.",
-              "terms": ["authorization data", "all necessary parties"],
-              "affects": ["Providers"],
+              "terms": [
+                "Agency",
+                "All Necessary Parties",
+                "Authorization data"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Uninterrupted Sharing",
               "primary_key_word": "MUST",
               "note": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access authorization data or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
@@ -990,8 +1008,14 @@
             "ADS-CSO-RIS": {
               "fka": "FRR-ADS-05",
               "statement": "Providers MUST provide sufficient information in authorization data to support authorization decisions but SHOULD NOT include sensitive information that would likely enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the cloud service offering.",
-              "terms": ["authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering",
+                "Likely"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Responsible Information Sharing",
               "primary_key_word": "MUST",
               "note": "This is not a license to exclude accurate risk information, but specifics that would likely lead to compromise should be abstracted. A breach of confidentiality with authorization data should be anticipated by a secure cloud service provider.",
@@ -1023,8 +1047,14 @@
             "ADS-CSO-UCP": {
               "fka": "FRR-ADS-06",
               "statement": "Providers of FedRAMP Rev5 Authorized cloud service offerings MUST share authorization data via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible trust center.",
-              "terms": ["authorization data", "trust center"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering",
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "USDA Connect Community Portal",
               "primary_key_word": "MUST",
               "updated": [
@@ -1038,11 +1068,14 @@
               "fka": "FRR-ADS-07",
               "statement": "Providers of FedRAMP 20x Authorized cloud service offerings MUST use a FedRAMP-compatible trust center to store and share authorization data with all necessary parties.",
               "terms": [
-                "authorization data",
-                "trust center",
-                "all necessary parties"
+                "All Necessary Parties",
+                "Authorization data",
+                "Cloud Service Offering",
+                "Trust Center"
               ],
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "FedRAMP-Compatible Trust Centers",
               "primary_key_word": "MUST",
               "updated": [
@@ -1056,11 +1089,13 @@
               "fka": "FRR-ADS-08",
               "statement": "Providers MUST notify all necessary parties when migrating to a trust center and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the trust center to obtain authorization data.",
               "terms": [
-                "all necessary parties",
-                "trust center",
-                "authorization data"
+                "All Necessary Parties",
+                "Authorization data",
+                "Trust Center"
               ],
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Trust Center Migration",
               "primary_key_word": "MUST",
               "updated": [
@@ -1073,8 +1108,13 @@
             "ADS-CSO-HAD": {
               "fka": "FRR-ADS-09",
               "statement": "Providers MUST make historical versions of authorization data available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
-              "terms": ["authorization data", "all necessary parties"],
-              "affects": ["Providers"],
+              "terms": [
+                "All Necessary Parties",
+                "Authorization data"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Historical Authorization Data",
               "primary_key_word": "MUST",
               "updated": [
@@ -1088,11 +1128,13 @@
               "fka": "FRR-ADS-AC-01",
               "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to authorization data stored in the trust center.",
               "terms": [
-                "authorization data",
-                "all necessary parties",
-                "trust center"
+                "All Necessary Parties",
+                "Authorization data",
+                "Trust Center"
               ],
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "name": "Public Guidance",
               "updated": [
@@ -1105,8 +1147,13 @@
             "ADS-CSO-AGA": {
               "fka": "FRR-ADS-AC-02",
               "statement": "Providers SHOULD share the authorization package with agencies upon request.",
-              "terms": ["authorization package", "agency"],
-              "affects": ["Providers"],
+              "terms": [
+                "Agency",
+                "Authorization Package"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Agency Access",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1118,7 +1165,9 @@
             },
             "ADS-CSO-AAD": {
               "statement": "Providers MUST notify FedRAMP within 5 business days of denying an agency access request for authorization data.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Agency Access Denial",
               "primary_key_word": "MUST",
               "updated": [
@@ -1126,13 +1175,22 @@
                   "date": "2026-01-19",
                   "comment": "Split from FRR-ADS-AC-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Authorization data"
               ]
             },
             "ADS-CSO-LSM": {
               "fka": "FRR-ADS-EX-01",
               "statement": "Providers of FedRAMP Rev5 Authorized cloud service offerings at FedRAMP High using a legacy self-managed repository for authorization data MAY ignore the requirements in this Authorization Data Sharing document until future notice.",
-              "terms": ["authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Legacy Self-Managed Repository Exception",
               "primary_key_word": "MAY",
               "updated": [
@@ -1147,11 +1205,13 @@
             "ADS-TRC-TCA": {
               "fka": "FRR-ADS-TC-01",
               "statement": "Trust centers MUST be included as an information resource included in the cloud service offering for assessment if MAS-CSO-CSO applies.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "terms": [
-                "trust center",
-                "information resource",
-                "cloud service offering"
+                "Cloud Service Offering",
+                "Information Resource",
+                "Trust Center"
               ],
               "name": "Trust Center Assessment",
               "primary_key_word": "MUST",
@@ -1165,8 +1225,14 @@
             "ADS-TRC-HMR": {
               "fka": "FRR-ADS-TC-02",
               "statement": "Trust centers SHOULD make authorization data available to view and download in both human-readable and machine-readable formats.",
-              "terms": ["authorization data", "machine-readable"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Machine-Readable",
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Human and Machine-Readable",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1179,8 +1245,13 @@
             "ADS-TRC-PAC": {
               "fka": "FRR-ADS-TC-03",
               "statement": "Trust centers MUST provide documented programmatic access to all authorization data, including programmatic access to human-readable materials.",
-              "terms": ["trust center", "authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Programmatic Access",
               "primary_key_word": "MUST",
               "updated": [
@@ -1194,11 +1265,13 @@
               "fka": "FRR-ADS-TC-04",
               "statement": "Trust centers SHOULD include features that encourage all necessary parties to provision and manage access to authorization data for their users and services directly.",
               "terms": [
-                "trust center",
-                "all necessary parties",
-                "authorization data"
+                "All Necessary Parties",
+                "Authorization data",
+                "Trust Center"
               ],
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Self-Service Access Management",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1211,8 +1284,14 @@
             "ADS-TRC-AAI": {
               "fka": "FRR-ADS-TC-05",
               "statement": "Trust centers MUST maintain an inventory and history of federal agency users or systems with access to authorization data and MUST make this information available to FedRAMP without interruption.",
-              "terms": ["trust center", "agency", "authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Agency",
+                "Authorization data",
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Agency Access Inventory",
               "primary_key_word": "MUST",
               "updated": [
@@ -1225,8 +1304,13 @@
             "ADS-TRC-ACL": {
               "fka": "FRR-ADS-TC-06",
               "statement": "Trust centers MUST log access to authorization data and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
-              "terms": ["trust center", "authorization data"],
-              "affects": ["Providers"],
+              "terms": [
+                "Authorization data",
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Access Logging",
               "primary_key_word": "MUST",
               "updated": [
@@ -1239,8 +1323,12 @@
             "ADS-TRC-RSP": {
               "fka": "FRR-ADS-TC-07",
               "statement": "Trust centers SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
-              "terms": ["trust center"],
-              "affects": ["Providers"],
+              "terms": [
+                "Trust Center"
+              ],
+              "affects": [
+                "Providers"
+              ],
               "name": "Responsive Performance",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1327,15 +1415,18 @@
               "fka": "FRR-CCM-01",
               "statement": "Providers MUST make an Ongoing Authorization Report available to all necessary parties every 3 months, in a consistent format that is human readable, covering the entire period since the previous summary; this report MUST include high-level summaries of at least the following information:",
               "terms": [
+                "Accepted Vulnerability",
+                "All Necessary Parties",
+                "Authorization data",
+                "Cloud Service Offering",
                 "Ongoing Authorization Report (OAR)",
-                "all necessary parties",
-                "authorization data",
-                "accepted vulnerability",
-                "transformative",
-                "cloud service offering"
+                "Transformative",
+                "Vulnerability"
               ],
               "name": "Report Availability",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "following_information": [
                 "Changes to authorization data",
@@ -1354,9 +1445,14 @@
             "CCM-OAR-ASR": {
               "fka": "FRR-CCM-02",
               "statement": "Providers SHOULD establish a regular 3 month cycle for Ongoing Authorization Reports that is spread out from the beginning, middle, or end of each quarter.",
-              "terms": ["Ongoing Authorization Report (OAR)"],
+              "terms": [
+                "Agency",
+                "Regularly"
+              ],
               "name": "Avoiding Simultaneous Reports",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their Ongoing Authorization Reports during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle.",
               "updated": [
@@ -1370,11 +1466,13 @@
               "fka": "FRR-CCM-03",
               "statement": "Providers MUST publicly include the target date for their next Ongoing Authorization Report with the authorization data required by ADS-CSO-PUB.",
               "terms": [
-                "Ongoing Authorization Report (OAR)",
-                "authorization data"
+                "Authorization data",
+                "Ongoing Authorization Report (OAR)"
               ],
               "name": "Next Report Date",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1387,11 +1485,13 @@
               "fka": "FRR-CCM-04",
               "statement": "Providers MUST establish and share an asynchronous mechanism for all necessary parties to provide feedback or ask questions about each Ongoing Authorization Report.",
               "terms": [
-                "Ongoing Authorization Report (OAR)",
-                "all necessary parties"
+                "All Necessary Parties",
+                "Ongoing Authorization Report (OAR)"
               ],
               "name": "Feedback Mechanism",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1403,9 +1503,14 @@
             "CCM-OAR-AFS": {
               "fka": "FRR-CCM-05",
               "statement": "Providers MUST maintain an anonymized and desensitized summary of the feedback, questions, and answers about each Ongoing Authorization Report as an addendum to the Ongoing Authorization Report.",
-              "terms": ["Ongoing Authorization Report (OAR)"],
+              "terms": [
+                "Agency",
+                "Ongoing Authorization Report (OAR)"
+              ],
               "name": "Anonymized Feedback Summary",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from agencies and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter.",
               "updated": [
@@ -1419,11 +1524,14 @@
               "fka": "FRR-CCM-06",
               "statement": "Providers MUST NOT irresponsibly disclose sensitive information in an Ongoing Authorization Report that would likely have an adverse effect on the cloud service offering.",
               "terms": [
-                "Ongoing Authorization Report (OAR)",
-                "cloud service offering"
+                "Cloud Service Offering",
+                "Likely",
+                "Ongoing Authorization Report (OAR)"
               ],
               "name": "Limit Sensitive Information",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -1436,12 +1544,14 @@
               "fka": "FRR-CCM-07",
               "statement": "Providers MAY responsibly share some or all of the information an Ongoing Authorization Report publicly or with other parties if the provider determines doing so will NOT likely have an adverse effect on the cloud service offering.",
               "terms": [
-                "Ongoing Authorization Report (OAR)",
-                "likely",
-                "cloud service offering"
+                "Cloud Service Offering",
+                "Likely",
+                "Ongoing Authorization Report (OAR)"
               ],
               "name": "Responsible Public Sharing",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1453,7 +1563,10 @@
           },
           "QTR": {
             "CCM-QTR-MTG": {
-              "fkas": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
+              "fkas": [
+                "FRR-CCM-QR-01",
+                "FRR-CCM-QR-02"
+              ],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies; providers who do not host Quarterly Reviews MUST clearly state this and explain this decision in the authorization data available to all necessary parties required by ADS-CSO-UCP and ADS-CSO-FCT",
@@ -1475,25 +1588,29 @@
                 }
               },
               "terms": [
-                "Quarterly Review",
-                "all necessary parties",
-                "Ongoing Authorization Report (OAR)",
-                "authorization data",
-                "agency"
+                "Agency",
+                "All Necessary Parties",
+                "Authorization data",
+                "Quarterly Review"
               ],
               "name": "Quarterly Review Meeting",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST"
             },
             "CCM-QTR-RSW": {
               "fka": "FRR-CCM-QR-03",
               "statement": "Providers SHOULD regularly schedule Quarterly Reviews to occur at least 3 business days after releasing an Ongoing Authorization Report AND within 10 business days of such release.",
               "terms": [
+                "Ongoing Authorization Report (OAR)",
                 "Quarterly Review",
-                "Ongoing Authorization Report (OAR)"
+                "Regularly"
               ],
               "name": "Review Scheduling Window",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1505,9 +1622,15 @@
             "CCM-QTR-NID": {
               "fka": "FRR-CCM-QR-04",
               "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a Quarterly Review that would likely have an adverse effect on the cloud service offering.",
-              "terms": ["Quarterly Review", "likely", "cloud service offering"],
+              "terms": [
+                "Cloud Service Offering",
+                "Likely",
+                "Quarterly Review"
+              ],
               "name": "No Irresponsible Disclosure",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -1520,12 +1643,14 @@
               "fka": "FRR-CCM-QR-05",
               "statement": "Providers MUST include either a registration link or a downloadable calendar file with meeting information for Quarterly Reviews in the authorization data available to all necessary parties required by ADS-CSO-UCP and ADS-CSO-FCT.",
               "terms": [
-                "Quarterly Review",
-                "authorization data",
-                "all necessary parties"
+                "All Necessary Parties",
+                "Authorization data",
+                "Quarterly Review"
               ],
               "name": "Meeting Registration Info",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1537,9 +1662,14 @@
             "CCM-QTR-NRD": {
               "fka": "FRR-CCM-QR-06",
               "statement": "Providers MUST publicly include the target date for their next Quarterly Review with the authorization data required by ADS-CSO-PUB.",
-              "terms": ["Quarterly Review", "authorization data"],
+              "terms": [
+                "Authorization data",
+                "Quarterly Review"
+              ],
               "name": "Next Review Date",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1551,9 +1681,14 @@
             "CCM-QTR-ACT": {
               "fka": "FRR-CCM-QR-07",
               "statement": "Providers SHOULD include additional information in Quarterly Reviews that the provider determines is of interest, use, or otherwise relevant to agencies.",
-              "terms": ["Quarterly Review", "agency"],
+              "terms": [
+                "Agency",
+                "Quarterly Review"
+              ],
               "name": "Additional Content",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1565,9 +1700,15 @@
             "CCM-QTR-RTP": {
               "fka": "FRR-CCM-QR-08",
               "statement": "Providers SHOULD NOT invite third parties to attend Quarterly Reviews intended for agencies unless they have specific relevance.",
-              "terms": ["Quarterly Review", "agency"],
+              "terms": [
+                "Agency",
+                "Likely",
+                "Quarterly Review"
+              ],
               "name": "Restrict Third Parties",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD NOT",
               "note": "This is because agencies are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default.",
               "updated": [
@@ -1581,12 +1722,14 @@
               "fka": "FRR-CCM-QR-09",
               "statement": "Providers SHOULD record or transcribe Quarterly Reviews and make such available to all necessary parties with other authorization data required by ADS-CSO-UCP and ADS-CSO-FCT.",
               "terms": [
-                "Quarterly Review",
-                "all necessary parties",
-                "authorization data"
+                "All Necessary Parties",
+                "Authorization data",
+                "Quarterly Review"
               ],
               "name": "Record/Transcribe Reviews",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1599,13 +1742,15 @@
               "fka": "FRR-CCM-QR-10",
               "statement": "Providers MAY responsibly share recordings or transcriptions of Quarterly Reviews with the public or other parties ONLY if the provider removes all agency information (comments, questions, names, etc.) AND determines sharing will NOT likely have an adverse effect on the cloud service offering.",
               "terms": [
-                "Quarterly Review",
-                "agency",
-                "likely",
-                "cloud service offering"
+                "Agency",
+                "Cloud Service Offering",
+                "Likely",
+                "Quarterly Review"
               ],
               "name": "Share Recordings Responsibly",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1617,9 +1762,15 @@
             "CCM-QTR-SCR": {
               "fka": "FRR-CCM-QR-11",
               "statement": "Providers MAY responsibly share content prepared for a Quarterly Review with the public or other parties if the provider determines doing so will NOT likely have an adverse effect on the cloud service offering.",
-              "terms": ["Quarterly Review", "likely", "cloud service offering"],
+              "terms": [
+                "Cloud Service Offering",
+                "Likely",
+                "Quarterly Review"
+              ],
               "name": "Share Content Responsibly",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1634,12 +1785,14 @@
               "fka": "FRR-CCM-AG-01",
               "statement": "Agencies MUST review each Ongoing Authorization Report to understand how changes to the cloud service offering may impact the previously agreed-upon risk tolerance documented in the agency's Authorization to Operate of a federal information system that includes the cloud service offering in its boundary.",
               "terms": [
-                "agency",
-                "Ongoing Authorization Report (OAR)",
-                "cloud service offering"
+                "Agency",
+                "Cloud Service Offering",
+                "Ongoing Authorization Report (OAR)"
               ],
               "name": "Review Ongoing Reports",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "MUST",
               "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15.",
               "updated": [
@@ -1653,14 +1806,15 @@
               "fka": "FRR-CCM-AG-02",
               "statement": "Agencies SHOULD consider the Security Category noted in their Authorization to Operate of the federal information system that includes the cloud service offering in its boundary and assign appropriate information security resources for reviewing Ongoing Authorization Reports, attending Quarterly Reviews, and other ongoing authorization data.",
               "terms": [
-                "agency",
-                "cloud service offering",
-                "Ongoing Authorization Report (OAR)",
-                "Quarterly Review",
-                "authorization data"
+                "Agency",
+                "Authorization data",
+                "Cloud Service Offering",
+                "Quarterly Review"
               ],
               "name": "Consider Security Category",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1687,12 +1841,13 @@
                 }
               },
               "terms": [
-                "agency",
-                "Ongoing Authorization Report (OAR)",
-                "Quarterly Review",
-                "cloud service offering"
+                "Agency",
+                "Cloud Service Offering",
+                "Quarterly Review"
               ],
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "updated": [
                 {
                   "date": "2026-01-19",
@@ -1704,14 +1859,16 @@
               "fka": "FRR-CCM-AG-04",
               "statement": "Agencies SHOULD formally notify the provider if the information presented in an Ongoing Authorization Report, Quarterly Review, or other ongoing authorization data causes significant concerns that may lead the agency to remove the cloud service offering from operation.",
               "terms": [
-                "agency",
+                "Agency",
+                "Authorization data",
+                "Cloud Service Offering",
                 "Ongoing Authorization Report (OAR)",
-                "Quarterly Review",
-                "authorization data",
-                "cloud service offering"
+                "Quarterly Review"
               ],
               "name": "Notify Provider of Concerns",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1724,14 +1881,16 @@
               "fka": "FRR-CCM-AG-05",
               "statement": "Agencies MUST notify FedRAMP by sending a notification to info@fedramp.gov if the information presented in an Ongoing Authorization Report, Quarterly Review, or other ongoing authorization data causes significant concerns that may lead the agency to stop operation of the cloud service offering.",
               "terms": [
-                "agency",
+                "Agency",
+                "Authorization data",
+                "Cloud Service Offering",
                 "Ongoing Authorization Report (OAR)",
-                "Quarterly Review",
-                "authorization data",
-                "cloud service offering"
+                "Quarterly Review"
               ],
               "name": "Notify FedRAMP of Concerns",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "MUST",
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
@@ -1744,9 +1903,14 @@
             "CCM-AGM-NAR": {
               "fka": "FRR-CCM-AG-06",
               "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about authorization data.",
-              "terms": ["agency", "authorization data"],
+              "terms": [
+                "Agency",
+                "Authorization data"
+              ],
               "name": "No Additional Requirements",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "MUST NOT",
               "note": "This is a statutory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization.",
               "updated": [
@@ -1759,9 +1923,13 @@
             "CCM-AGM-NFA": {
               "fka": "FRR-CCM-AG-07",
               "statement": "Agencies MUST inform FedRAMP after requesting any additional information or materials from a cloud service provider beyond those FedRAMP requires by sending a notification to info@fedramp.gov.",
-              "terms": ["agency"],
+              "terms": [
+                "Agency"
+              ],
               "name": "Notify FedRAMP After Requests",
-              "affects": ["Agencies"],
+              "affects": [
+                "Agencies"
+              ],
               "primary_key_word": "MUST",
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
@@ -1872,6 +2040,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "FedRAMP Security Inbox",
+                "Incident",
+                "Vulnerability Response"
               ]
             },
             "FSI-FRP-SND": {
@@ -1902,6 +2075,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Likely"
               ]
             },
             "FSI-FRP-RQA": {
@@ -1917,6 +2093,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Vulnerability Response"
               ]
             },
             "FSI-FRP-RSP": {
@@ -1938,6 +2117,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Catastrophic Adverse Effect",
+                "Vulnerability Response"
               ]
             },
             "FSI-FRP-COR": {
@@ -1953,6 +2136,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Vulnerability Response"
               ]
             },
             "FSI-FRP-RPM": {
@@ -1968,6 +2154,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Vulnerability Response"
               ]
             }
           },
@@ -1989,6 +2178,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "FedRAMP Security Inbox"
               ]
             },
             "FSI-CSO-RCV": {
@@ -2004,6 +2196,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "FedRAMP Security Inbox"
               ]
             },
             "FSI-CSO-RSP": {
@@ -2020,6 +2215,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Vulnerability Response"
               ]
             },
             "FSI-CSO-NOC": {
@@ -2035,6 +2233,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "FedRAMP Security Inbox"
               ]
             },
             "FSI-CSO-ACK": {
@@ -2050,6 +2252,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "FedRAMP Security Inbox",
+                "Promptly"
               ]
             },
             "FSI-CSO-EMR": {
@@ -2066,6 +2272,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering"
               ]
             },
             "FSI-CSO-SNR": {
@@ -2098,6 +2307,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering"
               ]
             }
           }
@@ -2151,6 +2363,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Incident"
               ]
             },
             "ICP-CSO-IRA": {
@@ -2166,6 +2381,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Incident"
               ]
             },
             "ICP-CSO-IRC": {
@@ -2181,6 +2400,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Incident"
               ]
             },
             "ICP-CSO-ICU": {
@@ -2196,6 +2418,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "All Necessary Parties",
+                "Incident"
               ]
             },
             "ICP-CSO-RPT": {
@@ -2211,6 +2438,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Incident",
+                "Trust Center"
               ]
             },
             "ICP-CSO-RSD": {
@@ -2226,6 +2457,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Incident",
+                "Likely"
               ]
             },
             "ICP-CSO-FIR": {
@@ -2248,6 +2484,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Incident",
+                "Vulnerability Response"
               ]
             },
             "ICP-CSO-AUR": {
@@ -2263,6 +2503,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Incident"
               ]
             },
             "ICP-CSO-HRM": {
@@ -2278,6 +2522,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Incident",
+                "Machine-Readable"
               ]
             }
           }
@@ -2373,12 +2621,21 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Federal Customer Data",
+                "Handle",
+                "Information Resource",
+                "Likely"
               ]
             },
             "MAS-CSO-TPR": {
               "fka": "FRR-MAS-02",
               "statement": "Providers MUST include the configuration and usage of third-party information resources, ONLY IF MAS-CSO-CSO APPLIES.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Third-Party Information Resources",
               "primary_key_word": "MUST",
               "note": "Information resources (including third-party information resources) that do not meet the conditions in MAS-CSO-CSO are not included in the cloud service offering for FedRAMP (MAS-CSO-TPR).",
@@ -2387,12 +2644,19 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Information Resource",
+                "Third-party Information Resource"
               ]
             },
             "MAS-CSO-NFR": {
               "fka": "FRR-MAS-03",
               "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to federal customer data from the configuration and usage of non-FedRAMP authorized third-party information resources, ONLY IF MAS-CSO-CSO APPLIES.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Non-FedRAMP Authorized Third-Party Information Resources",
               "primary_key_word": "MUST",
               "updated": [
@@ -2400,12 +2664,19 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Federal Customer Data",
+                "Information Resource",
+                "Third-party Information Resource"
               ]
             },
             "MAS-CSO-MDI": {
               "fka": "FRR-MAS-04",
               "statement": "Providers MUST include metadata (including metadata about federal customer data), ONLY IF MAS-CSO-CSO APPLIES.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Metadata Inclusion",
               "primary_key_word": "MUST",
               "updated": [
@@ -2413,12 +2684,17 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Federal Customer Data"
               ]
             },
             "MAS-CSO-FLO": {
               "fka": "FRR-MAS-05",
               "statement": "Providers MUST clearly identify, document, and explain information flows and impact levels for ALL information resources, ONLY IF MAS-CSO-CSO APPLIES.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Information Flows and Impact Levels",
               "primary_key_word": "MUST",
               "note": "Information resources (including third-party information resources) MAY vary by impact level as appropriate to the level of information handled or impacted by the information resource (MAS-CSO-FLO).",
@@ -2427,6 +2703,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Handle",
+                "Information Resource",
+                "Third-party Information Resource"
               ]
             },
             "MAS-CSO-SUP": {
@@ -2442,6 +2723,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Authorization Package",
+                "Cloud Service Offering",
+                "Information Resource"
               ]
             }
           }
@@ -2507,13 +2793,22 @@
               "fka": "FRR-PVA-01",
               "name": "Persistent Validation",
               "statement": "Providers MUST persistently perform validation of their Key Security Indicators following the processes and cycles documented for their cloud service offering per KSI-CSO-SUM; this process is called persistent validation and is part of vulnerability detection.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Persistent Validation",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "PVA-CSO-FAV": {
@@ -2529,6 +2824,13 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Persistent Validation",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "PVA-CSO-RPV": {
@@ -2544,6 +2846,13 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Persistent Validation",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "PVA-CSO-TSC": {
@@ -2559,6 +2868,14 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Assessors",
+                "Initial FedRAMP Assessment",
+                "Persistent FedRAMP Assessment",
+                "Persistent Validation",
+                "Persistently",
+                "Significant change"
               ]
             },
             "PVA-CSO-IVV": {
@@ -2578,6 +2895,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Authorization data",
+                "Persistent Validation"
               ]
             },
             "PVA-CSO-CVA": {
@@ -2594,6 +2915,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Assessors",
+                "Cloud Service Offering",
+                "Persistent Validation"
               ]
             },
             "PVA-CSO-PTE": {
@@ -2609,13 +2935,19 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Assessors",
+                "Persistent Validation"
               ]
             },
             "PVA-CSO-RIV": {
               "fka": "FRR-PVA-08",
               "name": "Receiving Independent Advice",
               "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPO-AMA).",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
               "updated": [
@@ -2623,6 +2955,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Persistent Validation"
               ]
             },
             "PVA-CSO-NMV": {
@@ -2635,7 +2970,12 @@
               "affects": [
                 "Providers"
               ],
-              "primary_key_word": "MUST"
+              "primary_key_word": "MUST",
+              "terms": [
+                "Information Resource",
+                "Machine-Based (information resources)",
+                "Persistent Validation"
+              ]
             },
             "PVA-CSO-PMV": {
               "fkas": [
@@ -2663,6 +3003,11 @@
               "name": "Persistent Machine Validation",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Information Resource",
+                "Machine-Based (information resources)",
+                "Persistent Validation"
               ]
             }
           },
@@ -2671,13 +3016,18 @@
               "fka": "FRR-PVA-09",
               "name": "Assessors May Advise",
               "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSO-RIV).",
-              "affects": ["Assessors"],
+              "affects": [
+                "Assessors"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Persistent Validation"
               ]
             },
             "PVA-TPO-EVP": {
@@ -2698,6 +3048,12 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Information Resource",
+                "Machine-Based (information resources)",
+                "Persistent Validation"
               ]
             },
             "PVA-TPO-API": {
@@ -2804,6 +3160,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering"
               ]
             },
             "PVA-TPO-NOR": {
@@ -2820,6 +3180,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering"
               ]
             }
           }
@@ -2896,6 +3259,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Top-level administrative account"
               ]
             },
             "RSC-CSO-ASG": {
@@ -2911,6 +3278,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Top-level administrative account"
               ]
             },
             "RSC-CSO-PAG": {
@@ -2926,6 +3296,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Privileged account"
               ]
             },
             "RSC-CSO-SDP": {
@@ -2941,6 +3314,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Privileged account",
+                "Top-level administrative account"
               ]
             },
             "RSC-CSO-CMP": {
@@ -2956,6 +3333,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Privileged account",
+                "Top-level administrative account"
               ]
             },
             "RSC-CSO-EXP": {
@@ -2971,6 +3352,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Machine-Readable"
               ]
             },
             "RSC-CSO-API": {
@@ -3001,6 +3385,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Machine-Readable"
               ]
             },
             "RSC-CSO-PUB": {
@@ -3031,6 +3418,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Privileged account",
+                "Top-level administrative account"
               ]
             }
           }
@@ -3126,6 +3517,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "All Necessary Parties",
+                "Significant change"
               ]
             },
             "SCN-CSO-PAD": {
@@ -3164,6 +3560,13 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Adaptive",
+                "Impact Categorization",
+                "Routine Recurring",
+                "Significant change",
+                "Transformative"
               ]
             },
             "SCN-CSO-MAR": {
@@ -3179,6 +3582,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties"
               ]
             },
             "SCN-CSO-HIS": {
@@ -3194,6 +3600,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Significant change"
               ]
             },
             "SCN-CSO-NOM": {
@@ -3224,6 +3634,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Machine-Readable",
+                "Significant change"
               ]
             },
             "SCN-CSO-INF": {
@@ -3251,6 +3665,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Persistent Validation",
+                "Significant change"
               ]
             },
             "SCN-CSO-ARI": {
@@ -3266,6 +3684,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Significant change"
               ]
             },
             "SCN-CSO-CAP": {
@@ -3281,6 +3702,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Significant change"
               ]
             },
             "SCN-CSO-EMG": {
@@ -3296,6 +3720,12 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Incident",
+                "Significant change",
+                "Transformative"
               ]
             }
           },
@@ -3348,6 +3778,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Routine Recurring",
+                "Significant change"
               ]
             }
           },
@@ -3389,6 +3823,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Adaptive",
+                "All Necessary Parties"
               ]
             }
           },
@@ -3424,6 +3862,12 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Persistent Validation",
+                "Significant change",
+                "Transformative"
               ]
             },
             "SCN-TRF-NIP": {
@@ -3439,6 +3883,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Transformative"
               ]
             },
             "SCN-TRF-NFP": {
@@ -3454,6 +3902,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Transformative"
               ]
             },
             "SCN-TRF-NAF": {
@@ -3472,6 +3924,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Transformative"
               ]
             },
             "SCN-TRF-NAV": {
@@ -3492,6 +3948,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Persistent Validation",
+                "Transformative"
               ]
             },
             "SCN-TRF-UPD": {
@@ -3507,6 +3968,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Transformative"
               ]
             },
             "SCN-TRF-OPT": {
@@ -3522,6 +3986,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Transformative"
               ]
             }
           }
@@ -3575,6 +4043,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Federal Customer Data",
+                "Persistent Validation"
               ]
             },
             "UCM-CSO-CAT": {
@@ -3590,6 +4062,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Persistent Validation"
               ]
             },
             "UCM-CSO-UVM": {
@@ -3615,7 +4091,11 @@
               "affects": [
                 "Providers"
               ],
-              "primary_key_word": "SHOULD"
+              "primary_key_word": "SHOULD",
+              "terms": [
+                "Federal Customer Data",
+                "Persistent Validation"
+              ]
             }
           }
         }
@@ -3699,7 +4179,9 @@
             "VDR-CSO-DET": {
               "fka": "FRR-VDR-01",
               "statement": "Providers MUST systematically, persistently, and promptly discover and identify vulnerabilities within their cloud service offering using appropriate techniques such as assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other relevant capabilities; this process is called vulnerability detection.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Vulnerability Detection",
               "primary_key_word": "MUST",
               "updated": [
@@ -3707,12 +4189,21 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Persistently",
+                "Promptly",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-RES": {
               "fka": "FRR-VDR-02",
               "statement": "Providers MUST systematically, persistently, and promptly track, evaluate, monitor, mitigate, remediate, assess exploitation of, report, and otherwise manage all detected vulnerabilities within their cloud service offering; this process is called vulnerability response.",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "name": "Vulnerability Response",
               "primary_key_word": "MUST",
               "note": "If it is not possible to fully mitigate or remediate detected vulnerabilities, providers SHOULD instead partially mitigate vulnerabilities promptly, progressively, and persistently.",
@@ -3721,52 +4212,87 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Persistently",
+                "Promptly",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-CSO-SIR": {
               "fka": "FRR-VDR-04",
               "statement": "Providers MAY sample effectively identical information resources, especially machine-based information resources, when performing vulnerability detection UNLESS doing so would decrease the efficiency or effectiveness of vulnerability detection.",
               "name": "Sampling Identical Resources",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Information Resource",
+                "Machine-Based (information resources)",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-GRV": {
               "fka": "FRR-VDR-05",
               "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to identify logical groupings of affected information resources that may improve the efficiency and effectiveness of vulnerability response by consolidating further activity; requirements and recommendations in this process are then applied to these consolidated groupings of vulnerabilities instead of each individual detected instance.",
               "name": "Grouping Vulnerabilities",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Information Resource",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-CSO-EFP": {
               "fka": "FRR-VDR-06",
               "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are false positive vulnerabilities.",
               "name": "Evaluate False Positives",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "False Positive Vulnerability",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-ELX": {
               "fka": "FRR-VDR-07",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are likely exploitable vulnerabilities.",
               "name": "Evaluate Exploitability",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "note": "The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.\n\nThe proof, ultimately, is in the pudding - providers who regularly evaluate vulnerabilities as not likely exploitable without careful consideration are more likely to suffer from an adverse impact where the root cause was an exploited vulnerability that was improperly evaluated. If done recklessly or deliberately, such actions will have a potential adverse impact on a provider's FedRAMP authorization.",
               "updated": [
@@ -3774,13 +4300,24 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Regularly",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-EIR": {
               "fka": "FRR-VDR-08",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are internet-reachable vulnerabilities.",
               "name": "Evaluate Internet-Reachability",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "notes": [
                 "FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload.",
@@ -3793,13 +4330,21 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Internet-Reachable Vulnerability (IRV)",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-EPA": {
               "fka": "FRR-VDR-09",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to estimate the potential adverse impact of exploitation on government customers AND assign one of the following potential adverse impact ratings:",
               "name": "Estimate Potential Adverse Impact",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "following_information_bullets": [
                 "**N1**: Exploitation could be expected to have negligible adverse effects on one or more agencies that use the cloud service offering.",
@@ -3813,13 +4358,26 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Catastrophic Adverse Effect",
+                "Cloud Service Offering",
+                "Limited Adverse Effect",
+                "Negligible Adverse Effect",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Serious Adverse Effect",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-EFA": {
               "fka": "FRR-VDR-10",
               "statement": "Providers SHOULD consider at least the following factors when considering the context of the cloud service offering to evaluate detected vulnerabilities:",
               "name": "Evaluation Factors",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "following_information": [
                 "**Criticality**: How important are the systems or information that might be impacted by the vulnerability?",
@@ -3836,117 +4394,181 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Fully Mitigated Vulnerability",
+                "Likely",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-DOC": {
               "fka": "FRR-VDR-11",
               "statement": "Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this process; this documentation MUST be included in the authorization data for the cloud service offering.",
               "name": "Documenting Reasons",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Authorization data",
+                "Cloud Service Offering"
               ]
             },
             "VDR-CSO-DFR": {
               "fka": "FRR-VDR-AY-02",
               "statement": "Providers SHOULD make design and architecture decisions for their cloud service offering that mitigate the risk of vulnerabilities by default AND decrease the risk and complexity of vulnerability detection and response.",
               "name": "Design For Resilience",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-CSO-ADT": {
               "fka": "FRR-VDR-AY-03",
               "statement": "Providers SHOULD use automated services to improve and streamline vulnerability detection and response.",
               "name": "Automate Detection",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-CSO-DAC": {
               "fka": "FRR-VDR-AY-04",
               "statement": "Providers SHOULD automatically perform vulnerability detection on representative samples of new or significantly changed information resources.",
               "name": "Detection After Changes",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Information Resource",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-CSO-MSP": {
               "fka": "FRR-VDR-AY-05",
               "statement": "Providers SHOULD NOT weaken the security of information resources to facilitate vulnerability scanning or assessment activities.",
               "name": "Maintain Security Postures",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Information Resource",
+                "Vulnerability"
               ]
             },
             "VDR-CSO-AKE": {
               "fka": "FRR-VDR-AY-06",
               "statement": "Providers SHOULD NOT deploy or otherwise activate new machine-based information resources with Known Exploited Vulnerabilities.",
               "name": "Avoid Known Exploited Vulnerabilities",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Information Resource",
+                "Known Exploited Vulnerability (KEV)",
+                "Machine-Based (information resources)",
+                "Vulnerability"
               ]
             },
             "VDR-CSO-ARP": {
               "fka": "FRR-VDR-EX-01",
               "statement": "Providers MAY be required to share additional vulnerability information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.",
               "name": "Additional Reporting Requirements",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Vulnerability"
               ]
             },
             "VDR-CSO-ADV": {
               "fka": "FRR-VDR-EX-02",
               "statement": "Providers MAY be required to provide additional information or details about vulnerabilities, including sensitive information that would likely lead to exploitation, as part of review, response or investigation by necessary parties.",
               "name": "Additional Details",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MAY",
               "updated": [
                 {
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Likely",
+                "Vulnerability",
+                "Vulnerability Response"
               ]
             },
             "VDR-CSO-DNR": {
               "fka": "FRR-VDR-EX-03",
               "statement": "Providers MUST NOT use this process to reject requests for additional information from necessary parties which also include law enforcement, Congress, and Inspectors General.",
               "name": "Do Not Reject Requests",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -3970,6 +4592,14 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Authorization data",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-RPT-HLO": {
@@ -3985,13 +4615,21 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-RPT-NID": {
               "fka": "FRR-VDR-RP-03",
               "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about vulnerabilities that would likely lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
               "name": "No Irresponsible Disclosure",
-              "affects": ["Providers"],
+              "affects": [
+                "Providers"
+              ],
               "primary_key_word": "MUST NOT",
               "note": "See VDR-CSO-ARP, VDR-CSO-ADV, and VDR-CSO-DNR for exceptions to this requirement.",
               "updated": [
@@ -3999,6 +4637,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Likely",
+                "Vulnerability"
               ]
             },
             "VDR-RPT-RPD": {
@@ -4014,6 +4657,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Likely",
+                "Vulnerability"
               ]
             },
             "VDR-RPT-VDT": {
@@ -4042,6 +4689,20 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Cloud Service Offering",
+                "Federal Customer Data",
+                "Internet-Reachable Vulnerability (IRV)",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Overdue Vulnerability",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-RPT-AVI": {
@@ -4067,6 +4728,19 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Cloud Service Offering",
+                "Federal Customer Data",
+                "Internet-Reachable Vulnerability (IRV)",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             }
           },
@@ -4084,6 +4758,12 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-TFR-KEV": {
@@ -4101,6 +4781,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Known Exploited Vulnerability (KEV)",
+                "Vulnerability"
               ]
             },
             "VDR-TFR-MAV": {
@@ -4116,6 +4800,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Vulnerability"
               ]
             },
             "VDR-TFR-MRH": {
@@ -4147,6 +4835,14 @@
               "name": "Machine-Readable History",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Machine-Readable",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
               ]
             },
             "VDR-TFR-PSD": {
@@ -4178,6 +4874,13 @@
               "name": "Persistent Sample Detection",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Information Resource",
+                "Machine-Based (information resources)",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-TFR-PDD": {
@@ -4209,6 +4912,14 @@
               "name": "Persistent Drift Detection",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Drift",
+                "Information Resource",
+                "Likely",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-TFR-PCD": {
@@ -4242,6 +4953,14 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Drift",
+                "Information Resource",
+                "Likely",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-TFR-EVU": {
@@ -4273,6 +4992,10 @@
               "name": "Evaluate Vulnerabilities Quickly",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Vulnerability",
+                "Vulnerability Detection"
               ]
             },
             "VDR-TFR-MRV": {
@@ -4376,6 +5099,11 @@
               "name": "Mitigate and Remediate Vulnerabilities Promptly",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Likely",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability"
               ]
             },
             "VDR-TFR-RMN": {
@@ -4388,6 +5116,9 @@
               "name": "Remaining Vulnerabilities",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Vulnerability"
               ]
             },
             "VDR-TFR-IRI": {
@@ -4412,6 +5143,13 @@
               "name": "Internet-Reachable Incidents",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Incident",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability"
               ]
             },
             "VDR-TFR-NRI": {
@@ -4435,6 +5173,13 @@
               "name": "Non-Internet-Reachable Incidents",
               "affects": [
                 "Providers"
+              ],
+              "terms": [
+                "Incident",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability"
               ]
             }
           },
@@ -4453,6 +5198,12 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability"
               ]
             },
             "VDR-AGM-MAP": {
@@ -4468,6 +5219,11 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Vulnerability"
               ]
             },
             "VDR-AGM-DRE": {
@@ -4484,6 +5240,9 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency"
               ]
             },
             "VDR-AGM-NFR": {
@@ -4500,6 +5259,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Agency",
+                "Vulnerability"
               ]
             }
           }
@@ -4613,6 +5376,10 @@
                   "date": "2026-01-19",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ],
+              "terms": [
+                "Machine-Based (information resources)",
+                "Persistent Validation"
               ]
             }
           }

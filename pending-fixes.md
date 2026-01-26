@@ -5,3 +5,5 @@
 - update the schema >_>
 
 - tag rules with action types like notify
+
+- response is really tied into vulnerability response which is confusing in the FSI with automated terms
