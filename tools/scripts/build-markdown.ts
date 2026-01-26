@@ -21,6 +21,11 @@ Handlebars.registerHelper("uppercase", (s) => {
   return s.toUpperCase();
 });
 
+Handlebars.registerHelper("termlink", (s) => {
+  if (typeof s !== "string") return s;
+  return s.toLowerCase().replace(/\s+/g, "-");
+});
+
 Handlebars.registerHelper("controlfreak", (controlId) => {
   if (typeof controlId !== "string") return controlId;
 

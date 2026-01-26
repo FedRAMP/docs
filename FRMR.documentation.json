@@ -915,9 +915,12 @@
             "ADS-CSO-PUB": {
               "fka": "FRR-ADS-01",
               "statement": "Providers MUST publicly share up-to-date information about the cloud service offering in both human-readable and machine-readable formats, including at least:",
-              "affects": [
-                "Providers"
+              "terms": [
+                "cloud service offering",
+                "machine-readable",
+                "trust center"
               ],
+              "affects": ["Providers"],
               "name": "Public Information",
               "primary_key_word": "MUST",
               "following_information": [
@@ -944,9 +947,8 @@
             "ADS-CSO-CBF": {
               "fka": "FRR-ADS-02",
               "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and machine-readable formats when authorization data is provided in both formats; Providers SHOULD generate human-readable and machine-readable data from the same source at the same time OR generate human-readable formats directly from machine-readable data.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
+              "terms": ["machine-readable", "authorization data"],
               "name": "Consistency Between Formats",
               "primary_key_word": "MUST",
               "updated": [
@@ -959,9 +961,8 @@
             "ADS-CSO-DSL": {
               "fka": "FRR-ADS-03",
               "statement": "Providers MUST share a detailed list of specific services and their impact levels that are included in the cloud service offering using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP authorization without requesting access to underlying authorization data.",
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["cloud service offering", "authorization data"],
+              "affects": ["Providers"],
               "name": "Detailed Service List",
               "primary_key_word": "MUST",
               "updated": [
@@ -973,10 +974,9 @@
             },
             "ADS-CSO-USH": {
               "fka": "FRR-ADS-04",
-              "statement": "Providers MUST share authorization data with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers. ",
-              "affects": [
-                "Providers"
-              ],
+              "statement": "Providers MUST share authorization data with all necessary parties without interruption, including at least FedRAMP, CISA, and agency customers.",
+              "terms": ["authorization data", "all necessary parties"],
+              "affects": ["Providers"],
               "name": "Uninterrupted Sharing",
               "primary_key_word": "MUST",
               "note": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access authorization data or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
@@ -989,10 +989,9 @@
             },
             "ADS-CSO-RIS": {
               "fka": "FRR-ADS-05",
-              "statement": "Providers MUST provide sufficient information in authorization data to support authorization decisions but SHOULD NOT include sensitive information that would likely enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the cloud service offering. ",
-              "affects": [
-                "Providers"
-              ],
+              "statement": "Providers MUST provide sufficient information in authorization data to support authorization decisions but SHOULD NOT include sensitive information that would likely enable a threat actor to gain unauthorized access, cause harm, disrupt operations, or otherwise have a negative adverse impact on the cloud service offering.",
+              "terms": ["authorization data"],
+              "affects": ["Providers"],
               "name": "Responsible Information Sharing",
               "primary_key_word": "MUST",
               "note": "This is not a license to exclude accurate risk information, but specifics that would likely lead to compromise should be abstracted. A breach of confidentiality with authorization data should be anticipated by a secure cloud service provider.",
@@ -1024,9 +1023,8 @@
             "ADS-CSO-UCP": {
               "fka": "FRR-ADS-06",
               "statement": "Providers of FedRAMP Rev5 Authorized cloud service offerings MUST share authorization data via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible trust center.",
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["authorization data", "trust center"],
+              "affects": ["Providers"],
               "name": "USDA Connect Community Portal",
               "primary_key_word": "MUST",
               "updated": [
@@ -1039,9 +1037,12 @@
             "ADS-CSO-FCT": {
               "fka": "FRR-ADS-07",
               "statement": "Providers of FedRAMP 20x Authorized cloud service offerings MUST use a FedRAMP-compatible trust center to store and share authorization data with all necessary parties.",
-              "affects": [
-                "Providers"
+              "terms": [
+                "authorization data",
+                "trust center",
+                "all necessary parties"
               ],
+              "affects": ["Providers"],
               "name": "FedRAMP-Compatible Trust Centers",
               "primary_key_word": "MUST",
               "updated": [
@@ -1054,10 +1055,13 @@
             "ADS-CSO-TCM": {
               "fka": "FRR-ADS-08",
               "statement": "Providers MUST notify all necessary parties when migrating to a trust center and MUST provide information in their existing USDA Connect Community Portal secure folders explaining how to use the trust center to obtain authorization data.",
-              "affects": [
-                "Providers"
+              "terms": [
+                "all necessary parties",
+                "trust center",
+                "authorization data"
               ],
-              "name": "Trust Center Migration Notification",
+              "affects": ["Providers"],
+              "name": "Trust Center Migration",
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1069,9 +1073,8 @@
             "ADS-CSO-HAD": {
               "fka": "FRR-ADS-09",
               "statement": "Providers MUST make historical versions of authorization data available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["authorization data", "all necessary parties"],
+              "affects": ["Providers"],
               "name": "Historical Authorization Data",
               "primary_key_word": "MUST",
               "updated": [
@@ -1084,9 +1087,12 @@
             "ADS-CSO-PGD": {
               "fka": "FRR-ADS-AC-01",
               "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to authorization data stored in the trust center.",
-              "affects": [
-                "Providers"
+              "terms": [
+                "authorization data",
+                "all necessary parties",
+                "trust center"
               ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "name": "Public Guidance",
               "updated": [
@@ -1096,27 +1102,37 @@
                 }
               ]
             },
-            "ADS-CSO-PCA": {
+            "ADS-CSO-AGA": {
               "fka": "FRR-ADS-AC-02",
-              "statement": "Providers SHOULD share at least the authorization package with prospective agency customers upon request and MUST notify FedRAMP within five business days if a prospective agency customer request is denied.",
-              "affects": [
-                "Providers"
-              ],
-              "name": "Prospective Customer Access",
+              "statement": "Providers SHOULD share the authorization package with agencies upon request.",
+              "terms": ["authorization package", "agency"],
+              "affects": ["Providers"],
+              "name": "Agency Access",
               "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2026-01-19",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Split into ADS-CSO-AGA and ADS-CSO-AAD; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
+                }
+              ]
+            },
+            "ADS-CSO-AAD": {
+              "statement": "Providers MUST notify FedRAMP within 5 business days of denying an agency access request for authorization data.",
+              "affects": ["Providers"],
+              "name": "Agency Access Denial",
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2026-01-19",
+                  "comment": "Split from FRR-ADS-AC-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
               ]
             },
             "ADS-CSO-LSM": {
               "fka": "FRR-ADS-EX-01",
               "statement": "Providers of FedRAMP Rev5 Authorized cloud service offerings at FedRAMP High using a legacy self-managed repository for authorization data MAY ignore the requirements in this Authorization Data Sharing document until future notice.",
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["authorization data"],
+              "affects": ["Providers"],
               "name": "Legacy Self-Managed Repository Exception",
               "primary_key_word": "MAY",
               "updated": [
