@@ -1,24 +1,20 @@
-# FedRAMP Machine Readable (FRMR) Documentation
+<a href="https://fedramp.gov/docs"><img src="tools/site/overrides/assets/fedramp-docs-logo.jpg" alt="FedRAMP Logo" width="75%" border=0></a>
 
-## Human-readable versions of this documentation are now hosted at https://fedramp.gov/docs!
+## Machine-Readable
 
+FedRAMP Machine-Readable (FRMR) requirements, recommendations, definitions, and key security indicators for FedRAMP 20x and FedRAMP Rev5 Balance Improvement Releases are available in this repository. These materials are the authoritative source of truth for FedRAMP processes. 
 
-This repository contains:
+Stakeholders are **strongly encouraged** to directly integrate FRMR docs with their GRC engineering and automation systems as this is the most effective way to always have the latest version with additional enrichment.
 
-1. Machine-readable FedRAMP documentation for 20x
-2. Tools and templates to convert FRMR JSON into enriched markdown
-3. A [Zensical](https://zensical.org/about)-based static site renderer for viewing 
+| Available Materials | Description |
+| -- | -- |
+| [FRMR.documentation.json](FRMR.documentation.json) | This file contains core FedRAMP 20x requirements, recommendations, definitions, and key security indicators. Each process in this file also includes applicability (including to Rev5) and additional metadata like update history. |
+| [FRMR.md](FRMR.md) | Additional information on the structure of the FRMR docs. |
 
-## Using the JSON Data
+---
 
-The public is strongly encouraged to develop supporting systems that read FRMR docs directly, especially for integration in tools. Nothing beyond the JSON files in the root directory are necessary to begin leveraging these files.
+### [Go to fedramp.gov/docs](https://fedramp.gov/docs) for a human-readable web version of these docs.
 
-FedRAMP is actively and aggressively developing and improving the JSON structure and associated metadata to improve the value of FRMR docs and may occasionally make breaking changes during the 20x pilots. FedRAMP will be seeking feedback during Phase Two and Phase Three for opportunities to improve and may open this repository up to public contribution.
+---
 
-#### Generate documentation for the JSON Schema
-If you are trying to understand the FRMR JSON Schema it might be helpfull to review the documentation generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans). To generate documentation for the FRMR JSON schema.
-
-    pip install json-schema-for-humans 
-    generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json FedRAMP.schema.html
-
-Then open the `FedRAMP.schema.html` file in your browser.
+Other content in this repository includes traditional FedRAMP documentation in enriched markdown and the [related scaffolding](tools/README.md) to develop and build the static documentation site.
