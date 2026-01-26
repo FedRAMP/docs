@@ -1563,10 +1563,7 @@
           },
           "QTR": {
             "CCM-QTR-MTG": {
-              "fkas": [
-                "FRR-CCM-QR-01",
-                "FRR-CCM-QR-02"
-              ],
+              "fkas": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies; providers who do not host Quarterly Reviews MUST clearly state this and explain this decision in the authorization data available to all necessary parties required by ADS-CSO-UCP and ADS-CSO-FCT",
@@ -1594,10 +1591,7 @@
                 "Quarterly Review"
               ],
               "name": "Quarterly Review Meeting",
-              "affects": [
-                "Providers"
-              ],
-              "primary_key_word": "MUST"
+              "affects": ["Providers"]
             },
             "CCM-QTR-RSW": {
               "fka": "FRR-CCM-QR-03",
@@ -4069,10 +4063,7 @@
               ]
             },
             "UCM-CSO-UVM": {
-              "fkas": [
-                "FRR-UCM-03",
-                "FRR-UCM-04"
-              ],
+              "fkas": ["FRR-UCM-03", "FRR-UCM-04"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers MAY use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect federal customer data.",
@@ -4088,14 +4079,8 @@
                 }
               },
               "name": "Using Validated Cryptographic Modules",
-              "affects": [
-                "Providers"
-              ],
-              "primary_key_word": "SHOULD",
-              "terms": [
-                "Federal Customer Data",
-                "Persistent Validation"
-              ]
+              "affects": ["Providers"],
+              "terms": ["Federal Customer Data", "Persistent Validation"]
             }
           }
         }
@@ -5113,13 +5098,10 @@
                 "FRR-VDR-TF-HI-09"
               ],
               "statement": "Providers SHOULD mitigate or remediate remaining vulnerabilities during routine operations as determined necessary by the provider.",
+              "primary_key_word": "SHOULD",
               "name": "Remaining Vulnerabilities",
-              "affects": [
-                "Providers"
-              ],
-              "terms": [
-                "Vulnerability"
-              ]
+              "affects": ["Providers"],
+              "terms": ["Vulnerability"]
             },
             "VDR-TFR-IRI": {
               "fkas": [
@@ -5926,7 +5908,7 @@
         "KSI-CNA-AEN": {
           "fka": "KSI-CNA-08",
           "name": "Automated Enforcement",
-          "variesbylevel": {
+          "varies_by_level": {
             "low": {
               "statement": "**Optional:** Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
             },
@@ -5934,10 +5916,7 @@
               "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
             }
           },
-          "controls": [
-            "ca-2.1",
-            "ca-7.1"
-          ],
+          "controls": ["ca-2.1", "ca-7.1"],
           "updated": [
             {
               "date": "2026-01-19",
@@ -6327,7 +6306,7 @@
         "KSI-MLA-LDA": {
           "fka": "KSI-MLA-08",
           "name": "Log Data Access",
-          "variesbylevel": {
+          "varies_by_level": {
             "low": {
               "statement": "**Optional:** Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
             },
@@ -6335,9 +6314,7 @@
               "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
             }
           },
-          "controls": [
-            "si-11"
-          ],
+          "controls": ["si-11"],
           "updated": [
             {
               "date": "2026-01-19",
@@ -6661,7 +6638,7 @@
         "KSI-SVC-PRR": {
           "fka": "KSI-SVC-08",
           "name": "Prevent Residual Risk",
-          "variesbylevel": {
+          "varies_by_level": {
             "low": {
               "statement": "**Optional:** Persistently review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would likely negatively affect the confidentiality, integrity, or availability of federal customer data."
             },
@@ -6669,9 +6646,7 @@
               "statement": "Persistently review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would likely negatively affect the confidentiality, integrity, or availability of federal customer data."
             }
           },
-          "controls": [
-            "sc-4"
-          ],
+          "controls": ["sc-4"],
           "updated": [
             {
               "date": "2026-01-19",
@@ -6682,7 +6657,7 @@
         "KSI-SVC-VCM": {
           "fka": "KSI-SVC-09",
           "name": "Validate Communications",
-          "variesbylevel": {
+          "varies_by_level": {
             "low": {
               "statement": "**Optional:** Persistently validate the authenticity and integrity of communications between machine-based information resources using automation."
             },
@@ -6690,10 +6665,7 @@
               "statement": "Persistently validate the authenticity and integrity of communications between machine-based information resources using automation."
             }
           },
-          "controls": [
-            "sc-23",
-            "si-7.1"
-          ],
+          "controls": ["sc-23", "si-7.1"],
           "updated": [
             {
               "date": "2026-01-19",
@@ -6704,7 +6676,7 @@
         "KSI-SVC-UDR": {
           "fka": "KSI-SVC-10",
           "name": "Unwanted Data Removal",
-          "variesbylevel": {
+          "varies_by_level": {
             "low": {
               "statement": "**Optional:** Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
             },
@@ -6712,10 +6684,7 @@
               "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
             }
           },
-          "controls": [
-            "si-12.3",
-            "si-18.4"
-          ],
+          "controls": ["si-12.3", "si-18.4"],
           "updated": [
             {
               "date": "2026-01-19",

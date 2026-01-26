@@ -1,611 +1,387 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "schema.json",
-  "title": "FedRAMP Machine Readable Requirements Schema",
-  "description": "This schema defines the structure for FedRAMP Machine Readable Requirements documents. It is currently in rapid development and may change frequently.",
+  "$id": "https://fedramp.gov/schema/documentation.json",
+  "title": "FedRAMP Machine-Readable Documentation Schema",
   "type": "object",
-  "required": ["info"],
+  "required": ["info", "FRD", "FRR", "KSI"],
   "properties": {
     "info": {
       "type": "object",
-      "description": "Information about the document including version information, general purpose, and other meta data.",
-      "required": ["name", "short_name", "releases", "front_matter"],
-      "additionalProperties": false,
+      "required": ["title", "description", "version", "last_updated"],
       "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the document or policy"
-        },
-        "short_name": {
-          "type": "string",
-          "pattern": "^[A-Z]{3}$",
-          "description": "3 character abbreviation assigned to this document. Used as part of the key for included objects."
-        },
-        "effective": {
-          "type": "object",
-          "description": "When this document or its current release is effective for specific authorization paths (e.g. 20x, Rev5).",
-          "additionalProperties": false,
-          "properties": {
-            "20x": { "$ref": "#/$defs/effective" },
-            "rev5": { "$ref": "#/$defs/effective" }
-          }
-        },
-        "releases": {
-          "type": "array",
-          "description": "An array of both past and future releases of this document.",
-          "items": {
-            "type": "object",
-            "description": "A specific release or release draft",
-            "required": [
-              "id",
-              "published_date",
-              "description",
-              "public_comment"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^\\d{2}\\.\\d{2}[A-Z](?:\\s?DRAFT)?$",
-                "description": "Unique identifier for the release in the format ##.##A. 'draft' may be appended to denote future releases."
-              },
-              "published_date": {
-                "type": ["string", "null"],
-                "format": "date",
-                "description": "A valid date string indicating the date that the changes in this release were published, or null for draft releases"
-              },
-              "description": {
-                "type": "string",
-                "description": "Description of the release"
-              },
-              "machine_readable_link": {"type": "string",
-                "description": "A link to the machine readable JSON for this specific release.",
-                "format": "uri"
-              },
-              "public_comment": {
-                "type": "boolean",
-                "description": "Indicates if the release was made available for public comment."
-              },
-              "related_rfcs": {
-                "type": "array",
-                "description": "Requests for Comment related to this specific release.",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "start_date",
-                    "end_date",
-                    "id",
-                    "url",
-                    "short_name",
-                    "full_name",
-                    "discussion_url"
-                  ],
-                  "additionalProperties": false,
-                  "properties": {
-                    "start_date": {
-                      "type": ["string", "null"],
-                      "format": "date",
-                      "description": "Date the RFC was opened or null"
-                    },
-                    "end_date": {
-                      "type": ["string", "null"],
-                      "format": "date",
-                      "description": "Date the RFC was closed or null"
-                    },
-                    "id": {
-                      "type": "string",
-                      "description": "RFC unique ID. Usually a 4 digit number like 0015."
-                    },
-                    "url": {
-                      "type": "string",
-                      "format": "uri",
-                      "description": "The URL for the RFC"
-                    },
-                    "discussion_url": {
-                      "type": "string",
-                      "format": "uri",
-                      "description": "URL for the github feedback on he RFC."
-                    },
-                    "short_name": {
-                      "type": "string",
-                      "description": "Abbreviation for the RFC"
-                    },
-                    "full_name": {
-                      "type": "string",
-                      "description": "Full title of the RFC"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "front_matter": {
-          "type": "object",
-          "description": "Meta data about the document",
-          "required": ["purpose"],
-          "properties": {
-            "authority": {
-              "type": "array",
-              "description": "An array for references to specific laws, OMB Memos, or other regulatory documentation defining the legal authority behind the documented standard",
-              "items": {
-                "type": "object",
-                "description": "A specific reference to a law, OMB Memo, or other regulatory documentation defining one of the legal authorities behind the documented standard",
-                "required": ["reference", "reference_url", "description"],
-                "additionalProperties": false,
-                "properties": {
-                  "reference": {
-                    "type": "string",
-                    "description": "The name of the referenced law, OMB Memo, or other regulatory documentation"
-                  },
-                  "reference_url": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Link to the law, OMB Memo, or other regulatory documentation"
-                  },
-                  "description": {
-                    "type": "string",
-                    "description": "Relevent text from the law, OMB Memo, or other regulatory documentation"
-                  },
-                  "delegation": {
-                    "type": "string",
-                    "description": "The role or organization to which the referenced authority is assigned."
-                  },
-                  "delegation_url": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "Link to the role or organization to which the referenced authority is assigned."
-                  }
-                }
-              }
-            },
-            "purpose": {
-              "type": "string",
-              "description": "The purpose of the document"
-            },
-            "expected_outcomes": {
-              "type": "array",
-              "description": "The expected outcomes of the document",
-              "items": { "type": "string" }
-            }
-          }
-        }
-      }
-    },
-    "FRA": {
-      "type": "object",
-      "description": "FedRAMP Technical Assistance Documents. Each document is identified by a 3 character abbreviation.",
-      "additionalProperties": false,
-      "patternProperties": {
-        "^[A-Z]{3}$": {
-          "type": "object",
-          "$ref": "#/$defs/assistance_document"
-        }
-      }
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "version": { "type": "string" },
+        "last_updated": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
     },
     "FRD": {
       "type": "object",
-      "description": "FedRAMP Definitions. Each document is identified by a 3 character abbreviation.",
-      "patternProperties": {
-        "^[A-Z]{3}$": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["id", "term", "definition"],
-            "additionalProperties": false,
-            "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^FRD-[A-Z]{3}-\\d{2}$",
-                "description": "FedRAMP definition ID in the format FRD-AAA-##"
-              },
-              "term": { "type": "string", "description": "Term being defined" },
-              "alts": {
-                "type": "array",
-                "description": "Alternate terms (synonyms)",
-                "items": { "type": "string" }
-              },
-              "definition": {
-                "type": "string",
-                "description": "The meaning of the listed term and any synonyms"
-              },
-              "note": { "type": "string", "description": "" },
-              "reference": { "type": "string", "description": "" },
-              "reference_url": {
-                "type": "string",
-                "format": "uri",
-                "description": ""
-              },
-              "notes": {
-                "type": "array",
-                "description": "",
-                "items": { "type": "string", "description": "" }
-              }
-            }
-          }
-        }
-      }
+      "required": ["info", "data"],
+      "properties": {
+        "info": { "$ref": "#/$defs/document_info" },
+        "data": { "$ref": "#/$defs/data_container_frd" }
+      },
+      "additionalProperties": false
     },
     "FRR": {
       "type": "object",
       "patternProperties": {
         "^[A-Z]{3}$": {
           "type": "object",
-          "required": ["base"],
-          "additionalProperties": false,
+          "required": ["info", "data"],
           "properties": {
-            "base": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The base requirements section for the document."
-            },
-            "exceptions": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The exceptions requirements section for the document."
-            },
-            "routine_recurring": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The requirements for routine recurring changes."
-            },
-            "adaptive": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The requirements for adaptive changes."
-            },
-            "transformative": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The requirements for transformative changes."
-            },
-            "impact": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The impact requirements section for the document."
-            },
-            "application": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The application requirements section for the document."
-            },
-            "id": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The id requirements section for the document."
-            },
-            "access_control": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The access control requirements section for the document."
-            },
-            "trust_center": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The trust center requirements section for the document."
-            },
-            "apply": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The apply requirements section for the document."
-            },
-            "reporting": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The reporting requirements section for the document."
-            },
-            "timeframes": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The timeframe section for the document."
-            },
-            "timeframe-low": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for low vulnerabilities."
-            },
-            "timeframe-moderate": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for moderate vulnerabilities."
-            },
-            "timeframe-high": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The timeframe requirements for high vulnerabilities."
-            },
-            "agencies": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The agencies requirements section for the document."
-            },
-            "quarterly_reviews": {
-              "$ref": "#/$defs/requirement_section",
-              "description": "The quarterly reviews requirements section for the document."
-            }
-          }
+            "info": { "$ref": "#/$defs/document_info" },
+            "data": { "$ref": "#/$defs/data_container_frr" }
+          },
+          "additionalProperties": false
         }
-      }
+      },
+      "additionalProperties": false
     },
     "KSI": {
       "type": "object",
-      "additionalProperties": false,
       "patternProperties": {
         "^[A-Z]{3}$": {
           "type": "object",
-          "description": "A collection of KSIs on a related topic",
-          "required": ["id", "name", "theme", "indicators"],
-          "additionalProperties": false,
+          "required": [
+            "id",
+            "name",
+            "web_name",
+            "short_name",
+            "theme",
+            "indicators"
+          ],
           "properties": {
             "id": { "type": "string", "pattern": "^KSI-[A-Z]{3}$" },
             "name": { "type": "string" },
+            "web_name": { "type": "string" },
+            "short_name": { "type": "string", "pattern": "^[A-Z]{3}$" },
             "theme": { "type": "string" },
-            "referenced_fr": { "type": "array", "items": { "type": "string" } },
             "indicators": {
-              "type": "array",
-              "description": "Key Security Indicator.",
-              "items": {
-                "type": "object",
-                "required": ["id", "statement", "impact"],
-                "additionalProperties": false,
-                "properties": {
-                  "id": {
-                    "type": "string",
-                    "pattern": "^KSI-[A-Z]{3}-\\d{2}$"
-                  },
-                  "name": { "type": "string" },
-                  "statement": { "type": "string" },
-                  "controls": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "required": ["control_id", "title"],
-                      "additionalProperties": false,
-                      "properties": {
-                        "control_id": { "type": "string" },
-                        "title": { "type": "string" }
-                      }
-                    }
-                  },
-                  "impact": {
-                    "type": "object",
-                    "required": ["low", "moderate"],
-                    "properties": {
-                      "low": { "type": "boolean" },
-                      "moderate": { "type": "boolean" },
-                      "high": { "type": "boolean" }
-                    }
-                  },
-                  "referenced_fr": {
-                    "type": "array",
-                    "items": { "type": "string" }
-                  },
-                  "note": { "type": "string" },
-                  "retired": { "type": "boolean" },
-                  "reference_url": { "type": "string", "format": "uri" },
-                  "reference": { "type": "string" }
+              "type": "object",
+              "patternProperties": {
+                "^KSI-[A-Z]{3}-[A-Z0-9]{3}$": {
+                  "$ref": "#/$defs/ksi_indicator"
                 }
-              }
+              },
+              "additionalProperties": false
             }
-          }
+          },
+          "additionalProperties": false
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "$defs": {
-    "assistance_example": {
+    "document_info": {
       "type": "object",
-      "required": ["id", "key_tests", "examples"],
-      "additionalProperties": false,
+      "required": ["name", "short_name", "web_name", "effective", "front_matter"],
       "properties": {
-        "id": { "type": "string", "minLength": 1 },
-        "key_tests": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "type": "string", "minLength": 1 }
-        },
-        "examples": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "type": "string", "minLength": 1 }
-        },
-        "referenced_fr": { "type": "array", "items": { "type": "string" } }
-      }
-    },
-    "assistance_requirement": {
-      "type": "object",
-      "required": ["id", "statement", "impact"],
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^FRA-[A-Z]{3}-(?:\\d{2}|[A-Z]{2})$"
-        },
-        "applies_to": { "type": "string" },
-        "statement": { "type": "string" },
-        "impact": {
+        "name": { "type": "string" },
+        "short_name": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "web_name": { "type": "string" },
+        "effective": {
           "type": "object",
-          "required": ["low", "moderate"],
           "properties": {
-            "low": { "type": "boolean" },
-            "moderate": { "type": "boolean" },
-            "high": { "type": "boolean" }
-          }
+            "rev5": { "$ref": "#/$defs/effective_entry" },
+            "20x": { "$ref": "#/$defs/effective_entry" }
+          },
+          "additionalProperties": false
         },
-        "referenced_fr": { "type": "array", "items": { "type": "string" } },
-        "examples": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/$defs/assistance_example" }
+        "front_matter": { "$ref": "#/$defs/front_matter" },
+        "labels": {
+          "type": "object",
+          "patternProperties": {
+            "^[A-Z]{3}$": {
+              "type": "object",
+              "required": ["name", "description"],
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
         }
-      }
+      },
+      "additionalProperties": false
     },
-    "assistance_document": {
+    "effective_entry": {
       "type": "object",
-      "required": ["id", "purpose", "requirements"],
-      "additionalProperties": false,
-      "properties": {
-        "id": { "type": "string", "pattern": "^FRA-[A-Z]{3}$" },
-        "disclaimer": { "type": "string" },
-        "purpose": { "type": "string" },
-        "referenced_fr": { "type": "array", "items": { "type": "string" } },
-        "requirements": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/$defs/assistance_requirement" }
-        }
-      }
-    },
-    "effective": {
-      "type": "object",
-      "additionalProperties": false,
       "required": ["is"],
       "properties": {
-        "signup_url": {
-          "type": "string",
-          "description": "URL for signups, pilot enrollment, or further information. May be an empty string if not provided."
-        },
-        "is": {
-          "type": "string",
-          "enum": ["required", "optional", "no"]
-        },
-        "current_status": {
-          "type": "string",
-          "description": "Human-readable status for this release target (e.g., 'Closed Beta', 'Phase Two Pilot')."
-        },
-        "start_date": {
-          "type": "string",
-          "format": "date",
-          "description": "Start date for this release target."
-        },
-        "end_date": {
-          "type": "string",
-          "format": "date",
-          "description": "End date for this release target."
-        },
-        "comments": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "Additional comments or notes about this release target."
-        },
-        "warnings": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "Warnings about this release target."
-        }
-      }
+        "is": { "type": "string", "enum": ["required", "optional", "no"] },
+        "signup_url": { "type": "string" },
+        "current_status": { "type": "string" },
+        "start_date": { "type": "string", "format": "date" },
+        "end_date": { "type": "string", "format": "date" },
+        "comments": { "type": "array", "items": { "type": "string" } },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
     },
-    "requirement_section": {
+    "front_matter": {
       "type": "object",
-      "required": ["application", "requirements", "id"],
       "properties": {
-        "application": { "type": "string" },
-        "id": { "type": "string" },
-        "requirements": {
+        "authority": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["reference", "reference_url", "description"],
+            "properties": {
+              "reference": { "type": "string" },
+              "reference_url": { "type": "string", "format": "uri" },
+              "description": { "type": "string" },
+              "delegation": { "type": "string" },
+              "delegation_url": { "type": "string", "format": "uri" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "purpose": { "type": "string" },
+        "expected_outcomes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "data_container_frd": {
+      "type": "object",
+      "properties": {
+        "20x": { "$ref": "#/$defs/frd_definitions_map" },
+        "rev5": { "$ref": "#/$defs/frd_definitions_map" },
+        "both": { "$ref": "#/$defs/frd_definitions_map" }
+      },
+      "additionalProperties": false
+    },
+    "frd_definitions_map": {
+      "type": "object",
+      "patternProperties": {
+        "^FRD-[A-Z]{3}$": { "$ref": "#/$defs/frd_definition" }
+      },
+      "additionalProperties": false
+    },
+    "frd_definition": {
+      "type": "object",
+      "required": ["term", "definition"],
+      "properties": {
+        "fka": { "type": "string" },
+        "term": { "type": "string" },
+        "alts": { "type": "array", "items": { "type": "string" } },
+        "definition": { "type": "string" },
+        "note": { "type": "string" },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "reference": { "type": "string" },
+        "reference_url": { "type": "string", "format": "uri" },
+        "referenceurl": { "type": "string", "format": "uri" },
+        "updated": { "$ref": "#/$defs/updated_list" }
+      },
+      "additionalProperties": false
+    },
+    "data_container_frr": {
+      "type": "object",
+      "properties": {
+        "20x": { "$ref": "#/$defs/frr_requirements_map" },
+        "rev5": { "$ref": "#/$defs/frr_requirements_map" },
+        "both": { "$ref": "#/$defs/frr_requirements_map" }
+      },
+      "additionalProperties": false
+    },
+    "frr_requirements_map": {
+      "type": "object",
+      "patternProperties": {
+        "^[A-Z]{3}$": {
+          "type": "object",
+          "patternProperties": {
+            "^[A-Z]{3}-[A-Z]{3}-[A-Z0-9]{3}$": {
+              "$ref": "#/$defs/frr_requirement"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "frr_requirement": {
+      "type": "object",
+      "required": ["name", "affects"],
+      "oneOf": [
+        {
+          "properties": { "statement": {}, "primary_key_word": {} },
+          "required": ["statement", "primary_key_word"]
+        },
+        {
+          "properties": { "varies_by_level": {} },
+          "required": ["varies_by_level"],
+          "not": {
+            "required": ["primary_key_word"]
+          }
+        }
+      ],
+      "properties": {
+        "fka": { "type": "string" },
+        "fkas": { "type": "array", "items": { "type": "string" } },
+        "statement": { "type": "string" },
+        "terms": { "type": "array", "items": { "type": "string" } },
+        "affects": { "type": "array", "items": { "type": "string" } },
+        "name": { "type": "string" },
+        "primary_key_word": {
+          "$ref": "#/$defs/primary_key_word_enum"
+        },
+        "following_information": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "following_information_bullets": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "updated": { "$ref": "#/$defs/updated_list" },
+        "note": { "type": "string" },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "key_tests", "examples"],
+            "properties": {
+              "id": { "type": "string" },
+              "key_tests": { "type": "array", "items": { "type": "string" } },
+              "examples": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "varies_by_level": {
+          "type": "object",
+          "properties": {
+            "low": { "$ref": "#/$defs/frr_requirement_level" },
+            "moderate": { "$ref": "#/$defs/frr_requirement_level" },
+            "high": { "$ref": "#/$defs/frr_requirement_level" }
+          },
+          "additionalProperties": false
+        },
+        "pain_timeframes": {
           "type": "array",
           "items": {
             "type": "object",
             "required": [
-              "id",
-              "statement",
-              "affects",
-              "primary_key_word",
-              "impact"
+              "pain",
+              "max_days_irv_lev",
+              "max_days_nirv_lev",
+              "max_days_nlev"
             ],
-            "additionalProperties": false,
             "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^FRR-[A-Z]{3}(?:-[A-Z]{2})*-\\d{2}$"
-              },
-              "name": { "type": "string" },
-              "statement": { "type": "string" },
-              "affects": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "Providers",
-                    "Agencies",
-                    "All",
-                    "FedRAMP",
-                    "Assessors"
-                  ]
-                }
-              },
-              "primary_key_word": {
-                "type": "string",
-                "enum": [
-                  "MUST",
-                  "SHOULD",
-                  "MAY",
-                  "SHOULD NOT",
-                  "MUST NOT",
-                  "NONE"
-                ]
-              },
-              "referenced_fr": {
-                "type": "array",
-                "items": { "type": "string" }
-              },
-              "is_interim": { "type": "boolean" },
-              "following_information": {
-                "type": "array",
-                "items": { "type": "string" }
-              },
-              "following_information_bullets": {
-                "type": "array",
-                "items": { "type": "string" }
-              },
-              "note": { "type": "string" },
-              "notes": { "type": "array", "items": { "type": "string" } },
-              "pain_timeframes": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "pain",
-                    "max_days_irv_lev",
-                    "max_days_nirv_lev",
-                    "max_days_nlev"
-                  ],
-                  "additionalProperties": false,
-                  "properties": {
-                    "pain": { "type": "integer", "minimum": 0 },
-                    "max_days_irv_lev": {
-                      "anyOf": [
-                        { "type": "integer", "minimum": 0 },
-                        { "type": "string" }
-                      ]
-                    },
-                    "max_days_nirv_lev": { "type": "integer", "minimum": 0 },
-                    "max_days_nlev": { "type": "integer", "minimum": 0 }
-                  }
-                },
-                "uniqueItems": true
-              },
-              "reference": { "type": "string" },
-              "reference_url": { "type": "string", "format": "uri" },
-              "applies_to": { "type": "string" },
-              "impact": {
-                "type": "object",
-                "required": ["low", "moderate"],
-                "additionalProperties": false,
-                "properties": {
-                  "low": { "type": "boolean" },
-                  "moderate": { "type": "boolean" },
-                  "high": { "type": "boolean" }
-                }
-              },
-              "examples": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "object",
-                  "required": ["id", "key_tests", "examples"],
-                  "additionalProperties": false,
-                  "properties": {
-                    "id": { "type": "string", "minLength": 1 },
-                    "key_tests": {
-                      "type": "array",
-                      "minItems": 1,
-                      "items": { "type": "string", "minLength": 1 }
-                    },
-                    "examples": {
-                      "type": "array",
-                      "minItems": 1,
-                      "items": { "type": "string", "minLength": 1 }
-                    }
-                  }
-                }
-              }
-            }
+              "pain": { "type": "integer" },
+              "max_days_irv_lev": { "type": "number" },
+              "max_days_nirv_lev": { "type": "number" },
+              "max_days_nlev": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "reference": { "type": "string" },
+        "reference_url": { "type": "string", "format": "uri" },
+        "impact": {
+          "type": "object",
+          "properties": {
+            "low": { "type": "boolean" },
+            "moderate": { "type": "boolean" },
+            "high": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "frr_requirement_level": {
+      "type": "object",
+      "required": ["primary_key_word"],
+      "properties": {
+        "statement": { "type": "string" },
+        "primary_key_word": { "$ref": "#/$defs/primary_key_word_enum" },
+        "timeframe_type": { "type": "string" },
+        "timeframe_num": { "type": "number" },
+        "pain_timeframes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "pain",
+              "max_days_irv_lev",
+              "max_days_nirv_lev",
+              "max_days_nlev"
+            ],
+            "properties": {
+              "pain": { "type": "integer" },
+              "max_days_irv_lev": { "type": "number" },
+              "max_days_nirv_lev": { "type": "number" },
+              "max_days_nlev": { "type": "number" }
+            },
+            "additionalProperties": false
           }
         }
+      },
+      "additionalProperties": false
+    },
+    "ksi_indicator": {
+      "type": "object",
+      "required": ["name"],
+      "oneOf": [
+        {
+          "properties": { "statement": {} },
+          "required": ["statement"]
+        },
+        {
+          "properties": { "varies_by_level": {} },
+          "required": ["varies_by_level"]
+        }
+      ],
+      "properties": {
+        "fka": { "type": "string" },
+        "name": { "type": "string" },
+        "statement": { "type": "string" },
+        "controls": { "type": "array", "items": { "type": "string" } },
+        "reference": { "type": "string" },
+        "reference_url": { "type": "string", "format": "uri" },
+        "updated": { "$ref": "#/$defs/updated_list" },
+        "varies_by_level": {
+          "type": "object",
+          "properties": {
+            "low": { "$ref": "#/$defs/ksi_indicator_level" },
+            "moderate": { "$ref": "#/$defs/ksi_indicator_level" },
+            "high": { "$ref": "#/$defs/ksi_indicator_level" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "ksi_indicator_level": {
+      "type": "object",
+      "required": ["statement"],
+      "properties": {
+        "statement": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "primary_key_word_enum": {
+      "type": "string",
+      "description": "Defines the primary keyword for a requirement or indicator, indicating its strength.",
+      "enum": ["MUST", "SHOULD", "MAY", "MUST NOT", "SHOULD NOT"]
+    },
+    "updated_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "comment"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "comment": { "type": "string" }
+        },
+        "additionalProperties": false
       }
     }
   }
