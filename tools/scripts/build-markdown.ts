@@ -23,7 +23,10 @@ Handlebars.registerHelper("uppercase", (s) => {
 
 Handlebars.registerHelper("termlink", (s) => {
   if (typeof s !== "string") return s;
-  return s.toLowerCase().replace(/\s+/g, "-");
+  return s
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z-]/g, "");
 });
 
 Handlebars.registerHelper("controlfreak", (controlId) => {
