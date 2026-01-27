@@ -31,7 +31,6 @@
 
 !!! quote ""
 
-
 {{#if varies_by_level}}
   {{#each varies_by_level}}
     === "{{ucfirst @key}}"
@@ -61,6 +60,13 @@
     - {{this}}
     {{/each}}
   {{/if}}
+{{/if}}
+{{#if danger}} 
+
+    ---
+
+    !!! danger "{{danger}}"
+
 {{/if}}
 {{#if note}}
 
@@ -190,6 +196,9 @@
 {{> blockForFRR}}
     {{/each}}
   {{/each}}
+
+---  
+
 {{/if}}
 {{/if}}
 
@@ -205,15 +214,15 @@
     {{#each this}}
 {{> blockForFRR}}
     {{/each}}
-  {{/each}}  
+  {{/each}} 
+
+---  
+
 {{/if}}
 {{/if}}
 
 {{#if data.both}}
   {{#each data.both}}
-
----
-
     {{#with (lookup ../info.labels @key) as | labels |}}
 ## {{labels.name}}
 

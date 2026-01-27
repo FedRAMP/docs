@@ -1811,7 +1811,7 @@
             "name": "General Provider Responsibilities"
           },
           "FRP": {
-            "description": "These requirements and recommendations apply to FedRAMP when communicating with cloud service offerings in the FedRAMP Marketplace.",
+            "description": "These requirements and recommendations apply to FedRAMP when communicating with cloud service providers.",
             "name": "FedRAMP's Responsibilities"
           }
         }
@@ -1835,7 +1835,7 @@
             },
             "FSI-FRP-CDS": {
               "fka": "FRR-FSI-02",
-              "statement": "FedRAMP MUST convey the criticality of the message in the subject line using one of the following designators if the message requires an elevated reaction:",
+              "statement": "FedRAMP MUST convey the criticality of the message in the subject line, IF the message requires an elevated reaction, using one of the following designators:",
               "name": "Criticality Designators",
               "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
@@ -1848,15 +1848,15 @@
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Reframed for clarity; changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": ["FedRAMP Security Inbox", "Incident"]
             },
-            "FSI-FRP-SND": {
+            "FSI-FRP-UFS": {
               "fka": "FRR-FSI-03",
               "statement": "FedRAMP MUST send Emergency and Emergency Test designated messages from fedramp_security@gsa.gov OR fedramp_security@fedramp.gov.",
-              "name": "Sender Addresses",
+              "name": "Use FedRAMP_Security Email in Emergencies",
               "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
@@ -1887,6 +1887,10 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
+              "notes": [
+                "Public notice may include blog posts, social media posts, announcements during Community Updates, or e-blasts.",
+                "As this process matures, additional confirmed options may become available."
+              ],
               "terms": ["Likely"]
             },
             "FSI-FRP-RQA": {
@@ -1902,10 +1906,10 @@
                 }
               ]
             },
-            "FSI-FRP-RSP": {
+            "FSI-FRP-ERT": {
               "fka": "FRR-FSI-06",
               "statement": "FedRAMP MUST clearly specify the expected timeframe for completing required actions in the body of messages that require an elevated reaction; timeframes for actions will vary depending on the situation but the default timeframes to provide an estimated resolution time for Emergency and Emergency Test designated messages will be as follows:",
-              "name": "Reaction Timeframes",
+              "name": "Elevated Reaction Timeframes",
               "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "following_information": [
@@ -1925,7 +1929,7 @@
             "FSI-FRP-COR": {
               "fka": "FRR-FSI-07",
               "statement": "FedRAMP MUST clearly specify the corrective actions that will result from failure to complete the required actions in the body of messages that require an elevated reaction; such actions may vary from negative ratings in the FedRAMP Marketplace to suspension of FedRAMP authorization depending on the severity of the event.",
-              "name": "Corrective Actions",
+              "name": "Explain Corrective Actions",
               "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
@@ -1966,6 +1970,7 @@
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
+              "danger": "Be careful using a personal email tied to an individual for this inbox due to the significant risk to future communications after a change in personnel!",
               "terms": ["FedRAMP Security Inbox"]
             },
             "FSI-CSO-NOC": {
@@ -1989,10 +1994,10 @@
               ],
               "terms": ["Cloud Service Offering", "FedRAMP Security Inbox"]
             },
-            "FSI-CSO-FEA": {
+            "FSI-CSO-TFG": {
               "fka": "FRR-FSI-10",
               "statement": "Providers MUST treat any email originating from an @fedramp.gov or @gsa.gov email address as if it was sent from FedRAMP by default; if such a message is confirmed to originate from someone other than FedRAMP then FedRAMP Security Inbox requirements no longer apply.",
-              "name": "FedRAMP Email Addresses",
+              "name": "Trust @fedramp.gov and @gsa.gov",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
@@ -2006,7 +2011,7 @@
             "FSI-CSO-RCV": {
               "fka": "FRR-FSI-11",
               "statement": "Providers MUST receive and react to email messages from FedRAMP without disruption and without requiring additional actions from FedRAMP.",
-              "name": "Receiving Messages",
+              "name": "Receive Email Without Disruption",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "This requirement is intended to prevent cloud service providers from requiring FedRAMP to complete a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message.",
@@ -2017,24 +2022,10 @@
                 }
               ]
             },
-            "FSI-CSO-ACK": {
-              "fka": "FRR-FSI-13",
-              "statement": "Providers SHOULD promptly and automatically acknowledge the receipt of messages received from FedRAMP in their FedRAMP Security Inbox.",
-              "name": "Acknowledgment of Receipt",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["FedRAMP Security Inbox", "Promptly"]
-            },
-            "FSI-CSO-EMA": {
+            "FSI-CSO-CRA": {
               "fka": "FRR-FSI-14",
               "statement": "Providers MUST complete the required actions in Emergency or Emergency Test designated messages sent by FedRAMP within the timeframe included in the message.",
-              "name": "Emergency Message Actions",
+              "name": "Complete Required Actions",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "Timeframes may vary by impact level of the cloud service offering.",
@@ -2073,6 +2064,20 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
+            },
+            "FSI-CSO-ACK": {
+              "fka": "FRR-FSI-13",
+              "statement": "Providers SHOULD promptly and automatically acknowledge the receipt of messages received from FedRAMP in their FedRAMP Security Inbox.",
+              "name": "Acknowledge Receipt",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["FedRAMP Security Inbox", "Promptly"]
             }
           }
         }
