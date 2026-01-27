@@ -2369,11 +2369,11 @@
       "data": {
         "both": {
           "CSO": {
-            "MAS-CSO-IAS": {
+            "MAS-CSO-IIR": {
               "fka": "FRR-MAS-01",
-              "statement": "Providers MUST identify a set of information resources to assess for FedRAMP authorization that includes all information resources that are likely to handle federal customer data or likely to impact the confidentiality, integrity, or availability of federal customer data handled by the cloud service offering.",
+              "statement": "Providers MUST identify a set of information resources to assess for FedRAMP authorization that includes all information resources that are likely to handle federal customer data or likely to impact the confidentiality, integrity, or availability of federal customer data handled by the cloud service offering; this set of information resources is the cloud service offering.",
               "affects": ["Providers"],
-              "name": "Identify Assessment Scope",
+              "name": "Identify Information Resources",
               "primary_key_word": "MUST",
               "notes": [
                 "Certain categories of cloud computing products and services are specified as entirely outside the scope of FedRAMP by the Director of the Office of Management and Budget. All such products and services are therefore not included in the cloud service offering for FedRAMP. For more, see https://fedramp.gov/scope.",
@@ -2383,7 +2383,7 @@
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Added notes from former AY sections; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
@@ -2394,35 +2394,41 @@
                 "Likely"
               ]
             },
-            "MAS-CSO-TPR": {
-              "fka": "FRR-MAS-02",
-              "statement": "Providers MUST include the configuration and usage of third-party information resources, ONLY IF MAS-CSO-IAS APPLIES.",
+            "MAS-CSO-FLO": {
+              "fka": "FRR-MAS-05",
+              "statement": "Providers MUST clearly identify, document, and explain information flows and security objectives for ALL information resources or sets of information resources in the cloud service offering.",
               "affects": ["Providers"],
-              "name": "Third-Party Information Resources",
+              "name": "Information Flows and Security Objectives",
               "primary_key_word": "MUST",
-              "note": "Information resources (including third-party information resources) that do not meet the conditions in MAS-CSO-IAS are not included in the cloud service offering for FedRAMP (MAS-CSO-TPR).",
+              "note": "Information resources (including third-party information resources) MAY vary by security objectives as appropriate to the level of information handled or impacted by the information resource.",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Updated wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
-                "Cloud Service Offering",
+                "Handle",
                 "Information Resource",
                 "Third-party Information Resource"
               ]
             },
-            "MAS-CSO-NFR": {
-              "fka": "FRR-MAS-03",
-              "statement": "Providers MUST clearly identify and document the justification, mitigation measures, compensating controls, and potential impact to federal customer data from the configuration and usage of non-FedRAMP authorized third-party information resources, ONLY IF MAS-CSO-IAS APPLIES.",
+            "MAS-CSO-TPR": {
+              "fkas": ["FRR-MAS-03", "FRR-MAS-02"],
+              "statement": "Providers MUST address the potential impact to federal customer data from third-party information resources used by the cloud service offering, ONLY IF MAS-CSO-IIR APPLIES, by documenting the following information about each applicable third-party information resource:",
+              "following_information": [
+                "General usage and configuration",
+                "Explanation or justification for use",
+                "Mitigation measures in place to reduce the potential impact to federal customer data",
+                "Compensating controls in place to reduce the potential impact to federal customer data"
+              ],
               "affects": ["Providers"],
-              "name": "Non-FedRAMP Third-Party Resources",
+              "name": "Third-Party Information Resources",
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Rephrased w/ following information, updated application to all third-party resources and merged with former FRR-MAS-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
@@ -2433,54 +2439,36 @@
             },
             "MAS-CSO-MDI": {
               "fka": "FRR-MAS-04",
-              "statement": "Providers MUST include metadata (including metadata about federal customer data), ONLY IF MAS-CSO-IAS APPLIES.",
+              "statement": "Providers MUST include metadata (including metadata about federal customer data) in the Minimum Assessment Scope ONLY IF MAS-CSO-IIR APPLIES.",
               "affects": ["Providers"],
               "name": "Metadata Inclusion",
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": ["Federal Customer Data"]
             },
-            "MAS-CSO-FLO": {
-              "fka": "FRR-MAS-05",
-              "statement": "Providers MUST clearly identify, document, and explain information flows and impact levels for ALL information resources, ONLY IF MAS-CSO-IAS APPLIES.",
-              "affects": ["Providers"],
-              "name": "Information Flows and Impact Levels",
-              "primary_key_word": "MUST",
-              "note": "Information resources (including third-party information resources) MAY vary by impact level as appropriate to the level of information handled or impacted by the information resource (MAS-CSO-FLO).",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Handle",
-                "Information Resource",
-                "Third-party Information Resource"
-              ]
-            },
             "MAS-CSO-SUP": {
               "fka": "FRR-MAS-EX-01",
-              "statement": "Providers MAY include documentation of information resources beyond the cloud service offering, or even entirely outside the scope of FedRAMP, in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the cloud service offering.",
+              "statement": "Providers MAY include additional materials about other information resources that are not part of the cloud service offering in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the cloud service offering.",
               "affects": ["Providers"],
               "name": "Supplemental Information",
               "primary_key_word": "MAY",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
                 "Authorization Package",
                 "Cloud Service Offering",
                 "Information Resource"
-              ]
+              ],
+              "note": "This is intended to allow inclusion of things like security materials for apps, supplemental marketing collateral, and other information that is not part of the cloud service offering but may be useful to agencies."
             }
           }
         }
@@ -5275,9 +5263,9 @@
             }
           ]
         },
-        "KSI-CNA-ATS": {
+        "KSI-CNA-MAT": {
           "fka": "KSI-CNA-02",
-          "name": "Attack Surface",
+          "name": "Minimize Attack Surface",
           "statement": "Persistently ensure machine-based information resources have a minimal attack surface and that lateral movement is minimized if compromised.",
           "controls": [
             "ac-17.3",
@@ -5302,9 +5290,9 @@
             }
           ]
         },
-        "KSI-CNA-ETF": {
+        "KSI-CNA-ULN": {
           "fka": "KSI-CNA-03",
-          "name": "Enforce Traffic Flow",
+          "name": "Use Logical Networking",
           "statement": "Use logical networking and related capabilities to enforce traffic flow controls.",
           "controls": [
             "ac-12",
@@ -5325,7 +5313,7 @@
         },
         "KSI-CNA-IMI": {
           "fka": "KSI-CNA-04",
-          "name": "Immutable Infrastructure",
+          "name": "Immutable Infrastructure by Default",
           "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
           "controls": ["cm-2", "si-3"],
           "updated": [
@@ -5371,9 +5359,9 @@
             }
           ]
         },
-        "KSI-CNA-AEN": {
+        "KSI-CNA-ASE": {
           "fka": "KSI-CNA-08",
-          "name": "Automated Enforcement",
+          "name": "Automated Security Enforcement",
           "varies_by_level": {
             "low": {
               "statement": "**Optional:** Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
@@ -5422,8 +5410,8 @@
         },
         "KSI-IAM-PLA": {
           "fka": "KSI-IAM-02",
-          "name": "Passwordless Authentication",
-          "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA.",
+          "name": "Passwordless Methods",
+          "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA for authentication.",
           "controls": [
             "ac-2",
             "ac-3",
@@ -5563,7 +5551,7 @@
         "KSI-IAM-SUS": {
           "fka": "KSI-IAM-06",
           "name": "Suspicious Activity",
-          "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
+          "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity.",
           "controls": [
             "ac-2",
             "ac-2.1",
