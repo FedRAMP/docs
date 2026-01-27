@@ -1131,7 +1131,6 @@
                 }
               ]
             },
-
             "ADS-TRC-AAI": {
               "fka": "FRR-ADS-TC-05",
               "statement": "Trust centers MUST maintain an inventory and history of federal agency users or systems with access to authorization data and MUST make this information available to FedRAMP without interruption.",
@@ -1285,7 +1284,7 @@
           "OAR": {
             "CCM-OAR-AVL": {
               "fka": "FRR-CCM-01",
-              "statement": "Providers MUST make an Ongoing Authorization Report available to all necessary parties every 3 months, in a consistent format that is human readable, covering the entire period since the previous summary; this report MUST include high-level summaries of at least the following information:",
+              "statement": "Providers MUST make an Ongoing Authorization Report available to all necessary parties every 3 months, covering the entire period since the previous summary, in a consistent format that is human readable; this report MUST include high-level summaries of at least the following information:",
               "terms": [
                 "Accepted Vulnerability",
                 "All Necessary Parties",
@@ -1308,28 +1307,13 @@
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "CCM-OAR-ASR": {
-              "fka": "FRR-CCM-02",
-              "statement": "Providers SHOULD establish a regular 3 month cycle for Ongoing Authorization Reports that is spread out from the beginning, middle, or end of each quarter.",
-              "terms": ["Agency", "Regularly"],
-              "name": "Avoiding Simultaneous Reports",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their Ongoing Authorization Reports during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle.",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Re-ordered phrasing; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             },
             "CCM-OAR-NRD": {
               "fka": "FRR-CCM-03",
-              "statement": "Providers MUST publicly include the target date for their next Ongoing Authorization Report with the authorization data required by ADS-CSO-PUB.",
+              "statement": "Providers MUST publicly include the target date for their next Ongoing Authorization Report with other public authorization data.",
               "terms": [
                 "Authorization data",
                 "Ongoing Authorization Report (OAR)"
@@ -1340,7 +1324,7 @@
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             },
@@ -1354,10 +1338,11 @@
               "name": "Feedback Mechanism",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
+              "note": "This could be email by default but providers are encouraged to consider something more interactive as appropriate.",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Added note; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             },
@@ -1394,6 +1379,21 @@
                 }
               ]
             },
+            "CCM-OAR-SOR": {
+              "fka": "FRR-CCM-02",
+              "statement": "Providers SHOULD establish a regular 3 month cycle for Ongoing Authorization Reports that is spread out from the beginning, middle, or end of each quarter.",
+              "terms": ["Agency", "Regularly"],
+              "name": "Spread Out Reports",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their Ongoing Authorization Reports during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle.",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
             "CCM-OAR-RPS": {
               "fka": "FRR-CCM-07",
               "statement": "Providers MAY responsibly share some or all of the information an Ongoing Authorization Report publicly or with other parties if the provider determines doing so will NOT likely have an adverse effect on the cloud service offering.",
@@ -1418,7 +1418,7 @@
               "fkas": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
               "varies_by_level": {
                 "low": {
-                  "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies; providers who do not host Quarterly Reviews MUST clearly state this and explain this decision in the authorization data available to all necessary parties required by ADS-CSL-UCP and ADS-CSO-FCT",
+                  "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies.",
                   "primary_key_word": "SHOULD",
                   "timeframe_type": "months",
                   "timeframe_num": 3
@@ -1443,41 +1443,15 @@
                 "Quarterly Review"
               ],
               "name": "Quarterly Review Meeting",
-              "affects": ["Providers"]
-            },
-            "CCM-QTR-RSW": {
-              "fka": "FRR-CCM-QR-03",
-              "statement": "Providers SHOULD regularly schedule Quarterly Reviews to occur at least 3 business days after releasing an Ongoing Authorization Report AND within 10 business days of such release.",
-              "terms": [
-                "Ongoing Authorization Report (OAR)",
-                "Quarterly Review",
-                "Regularly"
-              ],
-              "name": "Review Scheduling Window",
               "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Combined requirements and recommendations that varied by impact level into a single set with minor wording modification as appropriate."
                 }
               ]
             },
-            "CCM-QTR-NID": {
-              "fka": "FRR-CCM-QR-04",
-              "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a Quarterly Review that would likely have an adverse effect on the cloud service offering.",
-              "terms": ["Cloud Service Offering", "Likely", "Quarterly Review"],
-              "name": "No Irresponsible Disclosure",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST NOT",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "CCM-QTR-MRI": {
+            "CCM-QTR-REG": {
               "fka": "FRR-CCM-QR-05",
               "statement": "Providers MUST include either a registration link or a downloadable calendar file with meeting information for Quarterly Reviews in the authorization data available to all necessary parties required by ADS-CSL-UCP and ADS-CSO-FCT.",
               "terms": [
@@ -1497,11 +1471,43 @@
             },
             "CCM-QTR-NRD": {
               "fka": "FRR-CCM-QR-06",
-              "statement": "Providers MUST publicly include the target date for their next Quarterly Review with the authorization data required by ADS-CSO-PUB.",
+              "statement": "Providers MUST publicly include the target date for their next Quarterly Review with other public authorization data.",
               "terms": ["Authorization data", "Quarterly Review"],
               "name": "Next Review Date",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-QTR-NID": {
+              "fka": "FRR-CCM-QR-04",
+              "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a Quarterly Review that would likely have an adverse effect on the cloud service offering.",
+              "terms": ["Cloud Service Offering", "Likely", "Quarterly Review"],
+              "name": "No Irresponsible Disclosure",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST NOT",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-QTR-SAR": {
+              "fka": "FRR-CCM-QR-03",
+              "statement": "Providers SHOULD regularly schedule Quarterly Reviews to occur at least 3 business days after releasing an Ongoing Authorization Report AND within 10 business days of such release.",
+              "terms": [
+                "Ongoing Authorization Report (OAR)",
+                "Quarterly Review",
+                "Regularly"
+              ],
+              "name": "Schedule Around Reports",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -1523,24 +1529,9 @@
                 }
               ]
             },
-            "CCM-QTR-RTP": {
-              "fka": "FRR-CCM-QR-08",
-              "statement": "Providers SHOULD NOT invite third parties to attend Quarterly Reviews intended for agencies unless they have specific relevance.",
-              "terms": ["Agency", "Likely", "Quarterly Review"],
-              "name": "Restrict Third Parties",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD NOT",
-              "note": "This is because agencies are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default.",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
             "CCM-QTR-RTR": {
               "fka": "FRR-CCM-QR-09",
-              "statement": "Providers SHOULD record or transcribe Quarterly Reviews and make such available to all necessary parties with other authorization data required by ADS-CSL-UCP and ADS-CSO-FCT.",
+              "statement": "Providers SHOULD record or transcribe Quarterly Reviews and make such available to all necessary parties with other authorization data.",
               "terms": [
                 "All Necessary Parties",
                 "Authorization data",
@@ -1549,6 +1540,21 @@
               "name": "Record/Transcribe Reviews",
               "affects": ["Providers"],
               "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Simplified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-QTR-RTP": {
+              "fka": "FRR-CCM-QR-08",
+              "statement": "Providers SHOULD NOT invite third parties to attend Quarterly Reviews intended for agencies unless they have specific relevance.",
+              "terms": ["Agency", "Likely", "Quarterly Review"],
+              "name": "Restrict Third Parties",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD NOT",
+              "note": "This is because agencies are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default.",
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -1603,6 +1609,71 @@
               "affects": ["Agencies"],
               "primary_key_word": "MUST",
               "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15.",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-AGM-NFR": {
+              "fka": "FRR-CCM-AG-05",
+              "statement": "Agencies MUST notify FedRAMP by sending an email to info@fedramp.gov if the information presented in an Ongoing Authorization Report, Quarterly Review, or other ongoing authorization data causes significant concerns that may lead the agency to stop operation of the cloud service offering.",
+              "terms": [
+                "Agency",
+                "Authorization data",
+                "Cloud Service Offering",
+                "Ongoing Authorization Report (OAR)",
+                "Quarterly Review"
+              ],
+              "notification": [
+                {
+                  "party": "FedRAMP",
+                  "method": "email",
+                  "target": "info@fedramp.gov"
+                }
+              ],
+              "name": "Notify FedRAMP of Concerns",
+              "affects": ["Agencies"],
+              "primary_key_word": "MUST",
+              "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-AGM-NFA": {
+              "fka": "FRR-CCM-AG-07",
+              "statement": "Agencies MUST notify FedRAMP after requesting any additional information or materials from a cloud service provider beyond those FedRAMP requires by sending an email to info@fedramp.gov.",
+              "terms": ["Agency"],
+              "notification": [
+                {
+                  "party": "FedRAMP",
+                  "method": "email",
+                  "target": "info@fedramp.gov"
+                }
+              ],
+              "name": "Notify FedRAMP After Requests",
+              "affects": ["Agencies"],
+              "primary_key_word": "MUST",
+              "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Clarified notification requirements; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "CCM-AGM-NAR": {
+              "fka": "FRR-CCM-AG-06",
+              "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about authorization data.",
+              "terms": ["Agency", "Authorization data"],
+              "name": "No Additional Requirements",
+              "affects": ["Agencies"],
+              "primary_key_word": "MUST NOT",
+              "note": "This is a statutory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization.",
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -1679,71 +1750,6 @@
                 {
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "CCM-AGM-NFR": {
-              "fka": "FRR-CCM-AG-05",
-              "statement": "Agencies MUST notify FedRAMP by sending an email to info@fedramp.gov if the information presented in an Ongoing Authorization Report, Quarterly Review, or other ongoing authorization data causes significant concerns that may lead the agency to stop operation of the cloud service offering.",
-              "terms": [
-                "Agency",
-                "Authorization data",
-                "Cloud Service Offering",
-                "Ongoing Authorization Report (OAR)",
-                "Quarterly Review"
-              ],
-              "notification": [
-                {
-                  "party": "FedRAMP",
-                  "method": "email",
-                  "target": "info@fedramp.gov"
-                }
-              ],
-              "name": "Notify FedRAMP of Concerns",
-              "affects": ["Agencies"],
-              "primary_key_word": "MUST",
-              "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "CCM-AGM-NAR": {
-              "fka": "FRR-CCM-AG-06",
-              "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about authorization data.",
-              "terms": ["Agency", "Authorization data"],
-              "name": "No Additional Requirements",
-              "affects": ["Agencies"],
-              "primary_key_word": "MUST NOT",
-              "note": "This is a statutory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization.",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "CCM-AGM-NFA": {
-              "fka": "FRR-CCM-AG-07",
-              "statement": "Agencies MUST notify FedRAMP after requesting any additional information or materials from a cloud service provider beyond those FedRAMP requires by sending an email to info@fedramp.gov.",
-              "terms": ["Agency"],
-              "notification": [
-                {
-                  "party": "FedRAMP",
-                  "method": "email",
-                  "target": "info@fedramp.gov"
-                }
-              ],
-              "name": "Notify FedRAMP After Requests",
-              "affects": ["Agencies"],
-              "primary_key_word": "MUST",
-              "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Clarified notification requirements; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             }
