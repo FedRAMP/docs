@@ -171,18 +171,21 @@
 {{!-- ######################################################################## --}}
 {{!-- Requirements section (FRR) --}}
 {{#if (stringEquals type "FRR")}}
-{{#if data.both}}
-  {{#each data.both}}
+
+{{#if (stringEquals version "rev5")}}
+{{#if data.rev5}}
+  {{#each data.rev5}}
     {{#with (lookup ../info.labels @key) as | labels |}}
 ## {{labels.name}}
 
-!!! info ""
-    {{labels.description}}
+{{labels.description}}
+
     {{/with}}
     {{#each this}}
 {{> blockForFRR}}
     {{/each}}
   {{/each}}
+{{/if}}
 {{/if}}
 
 {{#if (stringEquals version "20x")}}
@@ -191,8 +194,8 @@
     {{#with (lookup ../info.labels @key) as | labels |}}
 ## {{labels.name}}
 
-!!! info ""
-    {{labels.description}}  
+{{labels.description}} 
+
     {{/with}}
     {{#each this}}
 {{> blockForFRR}}
@@ -201,20 +204,21 @@
 {{/if}}
 {{/if}}
 
-{{#if (stringEquals version "rev5")}}
-{{#if data.rev5}}
-  {{#each data.rev5}}
+{{#if data.both}}
+  {{#each data.both}}
+
+---
+
     {{#with (lookup ../info.labels @key) as | labels |}}
 ## {{labels.name}}
 
-!!! info ""
-    {{labels.description}}  
+{{labels.description}}
+
     {{/with}}
     {{#each this}}
 {{> blockForFRR}}
     {{/each}}
   {{/each}}
-{{/if}}
 {{/if}}
 {{/if}}
 
