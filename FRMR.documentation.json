@@ -2532,13 +2532,13 @@
             "PVA-CSO-VAL": {
               "fka": "FRR-PVA-01",
               "name": "Persistent Validation",
-              "statement": "Providers MUST persistently perform validation of their Key Security Indicators following the processes and cycles documented for their cloud service offering per KSI-CSO-SUM; this process is called persistent validation and is part of vulnerability detection.",
+              "statement": "Providers MUST persistently perform validation of their Key Security Indicators; this process is called persistent validation and is part of vulnerability detection.",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
