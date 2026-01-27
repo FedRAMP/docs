@@ -2105,8 +2105,16 @@
           }
         },
         "front_matter": {
-          "purpose": "This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures (https://www.fedramp.gov/docs/rev5/csp/continuous-monitoring/intro) to the simpler FedRAMP 20x style and clarifies the expectations for FedRAMP 20x.\n\nThe only notable change from the default Rev5 Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats."
+          "purpose": "This set of requirements and recommendations converts the existing FedRAMP Incident Communications Procedures to the simpler FedRAMP 20x style and clarifies the expectations for FedRAMP 20x.\n\nThe only notable change from the default Incident Communications Procedures for 20x is the addition of a recommendation that incident information be made available in both human-readable and machine-readable formats.",
+          "authority": [
+            {
+              "reference": "FedRAMP Incident Communications Procedures",
+              "reference_url": "https://www.fedramp.gov/docs/rev5/playbook/csp/continuous-monitoring/incident-communication/",
+              "description": ""
+            }
+          ]
         },
+
         "labels": {
           "CSO": {
             "description": "These requirements and recommendations apply to all FedRAMP 20x Validated cloud service offerings.",
@@ -2129,6 +2137,15 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
+              "notification": [
+                {
+                  "party": "FedRAMP",
+                  "method": "email",
+                  "target": "info@fedramp.gov"
+                }
+              ],
+              "timeframe_type": "hours",
+              "timeframe_num": 1,
               "terms": ["Incident"]
             },
             "ICP-CSO-IRA": {
@@ -2143,6 +2160,15 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
+              "notification": [
+                {
+                  "party": "Agencies",
+                  "method": "various",
+                  "target": "various"
+                }
+              ],
+              "timeframe_type": "hours",
+              "timeframe_num": 1,
               "terms": ["Agency", "Incident"]
             },
             "ICP-CSO-IRC": {
@@ -2151,12 +2177,23 @@
               "name": "Incident Reporting to CISA",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
+              "notification": [
+                {
+                  "party": "CISA",
+                  "method": "web",
+                  "target": "https://myservices.cisa.gov/irf"
+                }
+              ],
+              "timeframe_type": "hours",
+              "timeframe_num": 1,
               "updated": [
                 {
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
+              "reference": "CISA IRF Incident Reporting System",
+              "reference_url": "https://myservices.cisa.gov/irf",
               "terms": ["Incident"]
             },
             "ICP-CSO-ICU": {
@@ -2169,6 +2206,13 @@
                 {
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "notification": [
+                {
+                  "party": "all necessary parties",
+                  "method": "various",
+                  "target": "various"
                 }
               ],
               "terms": ["Agency", "All Necessary Parties", "Incident"]
@@ -2186,20 +2230,6 @@
                 }
               ],
               "terms": ["Incident", "Trust Center"]
-            },
-            "ICP-CSO-RSD": {
-              "fka": "FRR-ICP-06",
-              "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about incidents that would likely increase the impact of the incident, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
-              "name": "Responsible Disclosure",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST NOT",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["All Necessary Parties", "Incident", "Likely"]
             },
             "ICP-CSO-FIR": {
               "fka": "FRR-ICP-07",
@@ -2221,6 +2251,20 @@
                 }
               ],
               "terms": ["Incident", "Vulnerability Response"]
+            },
+            "ICP-CSO-RSD": {
+              "fka": "FRR-ICP-06",
+              "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about incidents that would likely increase the impact of the incident, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
+              "name": "Responsible Disclosure",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST NOT",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["All Necessary Parties", "Incident", "Likely"]
             },
             "ICP-CSO-AUR": {
               "fka": "FRR-ICP-08",
