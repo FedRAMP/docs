@@ -3105,60 +3105,45 @@
           "TRF": {
             "description": "These requirements and recommends apply to all transformative significant changes.",
             "name": "Transformative Changes"
+          },
+          "FRP": {
+            "description": "These requirements and recommendations apply to FedRAMP and may result in indirect application to cloud service providers.",
+            "name": "FedRAMP's Responsibilities"
           }
         }
       },
       "data": {
         "both": {
+          "FRP": {
+            "SCN-FRP-CAP": {
+              "fka": "FRR-SCN-EX-01",
+              "name": "Corrective Action Plan Conditions",
+              "statement": "FedRAMP MAY require providers to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
+              "affects": ["FedRAMP"],
+              "primary_key_word": "MAY",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Moved to FRP; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Significant change"]
+            }
+          },
           "CSO": {
-            "SCN-CSO-NTF": {
-              "fka": "FRR-SCN-01",
-              "statement": "Providers MUST notify all necessary parties when Significant Change Notifications are required, including at least FedRAMP and all agency customers. Providers MAY share Significant Change Notifications publicly or with other parties.",
-              "name": "Notifications",
-              "affects": ["Providers"],
-              "notification": [
-                {
-                  "party": "all necessary parties",
-                  "method": "update",
-                  "target": "authorization data"
-                }
-              ],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Agency", "All Necessary Parties", "Significant change"]
-            },
-            "SCN-CSO-PAD": {
-              "fka": "FRR-SCN-02",
-              "statement": "Providers MUST follow the procedures documented in their security plan to plan, evaluate, test, perform, assess, and document changes.",
-              "name": "Procedures and Documentation",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
             "SCN-CSO-EVA": {
-              "fka": "FRR-SCN-03",
-              "statement": "Providers MUST evaluate and type label all significant changes, then follow FedRAMP requirements for the type.",
+              "fkas": ["FRR-SCN-01", "FRR-SCN-02", "FRR-SCN-03"],
+              "statement": "Providers MUST evaluate all potential significant changes to determine the type of significant change and apply the appropriate Significant Change Notification requirements and recommendations.",
               "name": "Evaluate Changes",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "following_information": [
-                "Is it a significant change?",
-                "If it is, is it a routine recurring change?",
-                "If it is not, is it an impact categorization change?",
-                "If it is not, is it a transformative change?",
-                "If it is not, then it is an adaptive change."
+                "Is it a significant change? --> Continue evaluation and follow the Significant Change Notification process.",
+                "If it is, is it an impact categorization change?  --> This requires a new assessment and cannot be done under the Significant Change Notification process.",
+                "If it is not, is it a routine recurring change? --> Follow the Routine Recurring Change process (SCN-CSO-RTR).",
+                "If it is not, is it a transformative change? --> Follow the Transformative Change process (SCN-CSO-TRF).",
+                "If it is not, then it is an adaptive change --> Follow the Adaptive Change process (SCN-CSO-ADP)."
               ],
-              "note": "Once a change has been identified as a significant change in general, FedRAMP recommends next determining if a change is of the type routine recurring. If it is not, work down from the highest impact to lowest to identify the type of change.",
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -3176,57 +3161,16 @@
             "SCN-CSO-MAR": {
               "fka": "FRR-SCN-04",
               "name": "Maintain Audit Records",
-              "statement": "Providers MUST maintain auditable records of these activities and make them available to all necessary parties.",
+              "statement": "Providers MUST maintain auditable records of significant change evaluation activities and make them available to all necessary parties.",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": ["All Necessary Parties"]
-            },
-            "SCN-CSO-HIS": {
-              "fka": "FRR-SCN-05",
-              "name": "Historical Notifications",
-              "statement": "Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["All Necessary Parties", "Significant change"]
-            },
-            "SCN-CSO-NOM": {
-              "fka": "FRR-SCN-07",
-              "name": "Notification Mechanisms",
-              "statement": "Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.",
-              "affects": ["Providers"],
-              "primary_key_word": "MAY",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "SCN-CSO-HRM": {
-              "fka": "FRR-SCN-08",
-              "name": "Human and Machine-Readable",
-              "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Machine-Readable", "Significant change"]
             },
             "SCN-CSO-INF": {
               "fka": "FRR-SCN-09",
@@ -3254,6 +3198,35 @@
               ],
               "terms": ["Persistent Validation", "Significant change"]
             },
+            "SCN-CSO-HIS": {
+              "fka": "FRR-SCN-05",
+              "name": "Historical Notifications",
+              "statement": "Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["All Necessary Parties", "Significant change"]
+            },
+
+            "SCN-CSO-HRM": {
+              "fka": "FRR-SCN-08",
+              "name": "Human and Machine-Readable",
+              "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Machine-Readable", "Significant change"]
+            },
             "SCN-CSO-ARI": {
               "fka": "FRR-SCN-10",
               "name": "Additional Relevant Information",
@@ -3268,10 +3241,10 @@
               ],
               "terms": ["Significant change"]
             },
-            "SCN-CSO-CAP": {
-              "fka": "FRR-SCN-EX-01",
-              "name": "Corrective Action Plan Conditions",
-              "statement": "Providers MAY be required to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
+            "SCN-CSO-NOM": {
+              "fka": "FRR-SCN-07",
+              "name": "Notification Mechanisms",
+              "statement": "Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.",
               "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
@@ -3279,8 +3252,7 @@
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
-              ],
-              "terms": ["Significant change"]
+              ]
             },
             "SCN-CSO-EMG": {
               "fka": "FRR-SCN-EX-02",
@@ -3403,42 +3375,19 @@
             }
           },
           "TRF": {
-            "SCN-TRF-TPR": {
-              "fka": "FRR-SCN-TR-01",
-              "name": "Third-Party Review",
-              "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting transformative changes if human validation is necessary. This review SHOULD be limited to security decisions that require human validation. Providers MUST document this decision and justification.",
+            "SCN-TRF-OPT": {
+              "fka": "FRR-SCN-TR-07",
+              "name": "Option to Opt Out",
+              "statement": "Providers MUST allow agency customers to OPT OUT of transformative changes whenever feasible.",
               "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "note": "Activities that match the transformative significant change type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without transformative changes, while hyperscale providers may release multiple transformative changes per year.",
-              "examples": [
-                {
-                  "id": "Tips on transformative changes",
-                  "key_tests": [
-                    "Alters the service risk profile or require new or significantly different actions to address customer responsibilities",
-                    "Requires significant new design, development and testing with discrete associated project planning, budget, marketing, etc.",
-                    "Requires extensive updates to security assessments, documentation, and how a large number of security requirements are met and validated"
-                  ],
-                  "examples": [
-                    "The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)",
-                    "Increasing the security categorization of a service within the offering that actively handles federal customer data (does NOT include impact change of entire offering - see impact categorization change)",
-                    "Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)",
-                    "Datacenter migration where large amounts of federal customer data is moved across boundaries different from normal day-to-day operations",
-                    "Adding a new AI-based capability that impacts federal customer data in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal customer data)"
-                  ]
-                }
-              ],
+              "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering",
-                "Persistent Validation",
-                "Significant change",
-                "Transformative"
-              ]
+              "terms": ["Agency", "Transformative"]
             },
             "SCN-TRF-NIP": {
               "fka": "FRR-SCN-TR-02",
@@ -3560,19 +3509,42 @@
               ],
               "terms": ["Transformative"]
             },
-            "SCN-TRF-OPT": {
-              "fka": "FRR-SCN-TR-07",
-              "name": "Option to Opt Out",
-              "statement": "Providers MUST allow agency customers to OPT OUT of transformative changes whenever feasible.",
+            "SCN-TRF-TPR": {
+              "fka": "FRR-SCN-TR-01",
+              "name": "Third-Party Review",
+              "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting transformative changes if human validation is necessary; such reviews SHOULD be limited to security decisions that require human validation.",
               "affects": ["Providers"],
-              "primary_key_word": "MUST",
+              "primary_key_word": "SHOULD",
+              "note": "Activities that match the transformative significant change type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without transformative changes, while hyperscale providers may release multiple transformative changes per year.",
+              "examples": [
+                {
+                  "id": "Tips on transformative changes",
+                  "key_tests": [
+                    "Alters the service risk profile or require new or significantly different actions to address customer responsibilities",
+                    "Requires significant new design, development and testing with discrete associated project planning, budget, marketing, etc.",
+                    "Requires extensive updates to security assessments, documentation, and how a large number of security requirements are met and validated"
+                  ],
+                  "examples": [
+                    "The addition, removal, or replacement of a critical third party service that handles a significant portion of information (e.g., IaaS change)",
+                    "Increasing the security categorization of a service within the offering that actively handles federal customer data (does NOT include impact change of entire offering - see impact categorization change)",
+                    "Replacement of underlying management planes or paradigm shift in workload orchestration (e.g., bare-metal servers or virtual machines to containers, migration to kubernetes)",
+                    "Datacenter migration where large amounts of federal customer data is moved across boundaries different from normal day-to-day operations",
+                    "Adding a new AI-based capability that impacts federal customer data in a different way than existing services or capabilities (such as integrating a new third-party service or training on federal customer data)"
+                  ]
+                }
+              ],
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": ["Agency", "Transformative"]
+              "terms": [
+                "Cloud Service Offering",
+                "Persistent Validation",
+                "Significant change",
+                "Transformative"
+              ]
             }
           }
         }
