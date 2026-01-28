@@ -2116,16 +2116,16 @@
         },
 
         "labels": {
-          "CSO": {
+          "CSX": {
             "description": "These requirements and recommendations apply to all FedRAMP 20x Validated cloud service offerings.",
-            "name": "General Provider Responsibilities"
+            "name": "20x-Specific Provider Responsibilities"
           }
         }
       },
       "data": {
         "20x": {
-          "CSO": {
-            "ICP-CSO-IRF": {
+          "CSX": {
+            "ICP-CSX-IRF": {
               "fka": "FRR-ICP-01",
               "statement": "Providers MUST responsibly report incidents to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.",
               "name": "Incident Reporting to FedRAMP",
@@ -2148,7 +2148,7 @@
               "timeframe_num": 1,
               "terms": ["Incident"]
             },
-            "ICP-CSO-IRA": {
+            "ICP-CSX-IRA": {
               "fka": "FRR-ICP-02",
               "statement": "Providers MUST responsibly report incidents to all agency customers within 1 hour of identification using the incident communications points of contact provided by each agency customer.",
               "name": "Incident Reporting to Agencies",
@@ -2171,7 +2171,7 @@
               "timeframe_num": 1,
               "terms": ["Agency", "Incident"]
             },
-            "ICP-CSO-IRC": {
+            "ICP-CSX-IRC": {
               "fka": "FRR-ICP-03",
               "statement": "Providers MUST responsibly report incidents to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. ",
               "name": "Incident Reporting to CISA",
@@ -2196,7 +2196,7 @@
               "reference_url": "https://myservices.cisa.gov/irf",
               "terms": ["Incident"]
             },
-            "ICP-CSO-ICU": {
+            "ICP-CSX-ICU": {
               "fka": "FRR-ICP-04",
               "statement": "Providers MUST update all necessary parties, including at least FedRAMP, CISA (if applicable), and all agency customers, at least once per calendar day until the incident is resolved and recovery is complete.",
               "name": "Incident Updates",
@@ -2217,7 +2217,7 @@
               ],
               "terms": ["Agency", "All Necessary Parties", "Incident"]
             },
-            "ICP-CSO-RPT": {
+            "ICP-CSX-RPT": {
               "fka": "FRR-ICP-05",
               "statement": "Providers MUST make incident report information available in their secure FedRAMP repository (such as USDA Connect) or trust center.",
               "name": "Incident Report Availability",
@@ -2231,7 +2231,7 @@
               ],
               "terms": ["Incident", "Trust Center"]
             },
-            "ICP-CSO-FIR": {
+            "ICP-CSX-FIR": {
               "fka": "FRR-ICP-07",
               "statement": "Providers MUST provide a final report once the incident is resolved and recovery is complete that describes at least:",
               "name": "Final Incident Report",
@@ -2252,7 +2252,7 @@
               ],
               "terms": ["Incident", "Vulnerability Response"]
             },
-            "ICP-CSO-RSD": {
+            "ICP-CSX-RSD": {
               "fka": "FRR-ICP-06",
               "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about incidents that would likely increase the impact of the incident, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
               "name": "Responsible Disclosure",
@@ -2266,7 +2266,7 @@
               ],
               "terms": ["All Necessary Parties", "Incident", "Likely"]
             },
-            "ICP-CSO-AUR": {
+            "ICP-CSX-AUR": {
               "fka": "FRR-ICP-08",
               "statement": "Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).",
               "name": "Automated Reporting",
@@ -2280,7 +2280,7 @@
               ],
               "terms": ["All Necessary Parties", "Incident"]
             },
-            "ICP-CSO-HRM": {
+            "ICP-CSX-HRM": {
               "fka": "FRR-ICP-09",
               "statement": "Providers SHOULD make incident report information available in consistent human-readable and machine-readable formats.",
               "name": "Human and Machine-Readable",
@@ -2516,20 +2516,20 @@
           ]
         },
         "labels": {
-          "CSO": {
+          "CSX": {
             "description": "These requirements and recommendations apply to all FedRAMP Validated cloud service offerings.",
-            "name": "General Provider Responsibilities"
+            "name": "20x-Specific Provider Responsibilities"
           },
-          "TPO": {
+          "TPX": {
             "description": "These requirements and recommendations apply to all assessors performing verification and validation for FedRAMP Validated cloud service offerings.",
-            "name": "General Assessor Responsibilities"
+            "name": "20x-Specific Assessor Responsibilities"
           }
         }
       },
       "data": {
         "20x": {
-          "CSO": {
-            "PVA-CSO-VAL": {
+          "CSX": {
+            "PVA-CSX-VAL": {
               "fka": "FRR-PVA-01",
               "name": "Persistent Validation",
               "statement": "Providers MUST persistently perform validation of their Key Security Indicators; this process is called persistent validation and is part of vulnerability detection.",
@@ -2549,16 +2549,16 @@
                 "Vulnerability Detection"
               ]
             },
-            "PVA-CSO-FAV": {
+            "PVA-CSX-FAV": {
               "fka": "FRR-PVA-02",
-              "name": "Failures As Vulnerabilities",
-              "statement": "Providers MUST treat failures detected during persistent validation and failures of the persistent validation process as vulnerabilities, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response process for such findings.",
+              "name": "Issues As Vulnerabilities",
+              "statement": "Providers MUST treat issues detected during persistent validation and failures of the persistent validation process as vulnerabilities, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response process for such findings.",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
@@ -2569,7 +2569,7 @@
                 "Vulnerability Response"
               ]
             },
-            "PVA-CSO-RPV": {
+            "PVA-CSX-RPV": {
               "fka": "FRR-PVA-03",
               "statement": "Providers MUST include persistent validation activity in the reports on vulnerability detection and response activity required by the FedRAMP Vulnerability Detection and Response process.",
               "name": "Report Persistent Validation",
@@ -2589,28 +2589,7 @@
                 "Vulnerability Response"
               ]
             },
-            "PVA-CSO-TSC": {
-              "fka": "FRR-PVA-04",
-              "name": "Track Significant Changes",
-              "statement": "Providers MUST track significant changes that impact their Key Security Indicator goals and validation processes while following the requirements and recommendations in the FedRAMP Significant Change Notification process; if such significant changes are not properly tracked and supplied to all necessary assessors then a full Initial FedRAMP Assessment may be required in place of the expected Persistent FedRAMP Assessment.",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "All Necessary Assessors",
-                "Initial FedRAMP Assessment",
-                "Persistent FedRAMP Assessment",
-                "Persistent Validation",
-                "Persistently",
-                "Significant change"
-              ]
-            },
-            "PVA-CSO-IVV": {
+            "PVA-CSX-IVV": {
               "fka": "FRR-PVA-05",
               "name": "Independent Verification and Validation",
               "statement": "Providers MUST have the implementation of their goals and validation processes assessed by a FedRAMP-recognized independent assessor OR by FedRAMP directly AND MUST include the results of this assessment in their authorization data without modification.",
@@ -2628,55 +2607,7 @@
               ],
               "terms": ["Authorization data", "Persistent Validation"]
             },
-            "PVA-CSO-CVA": {
-              "fka": "FRR-PVA-06",
-              "name": "Complete Validation Assessment",
-              "statement": "Providers MUST ensure a complete assessment of validation procedures (including underlying code, pipelines, configurations, automation tools, etc.) for the cloud service offering by all necessary assessors.",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "note": "",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "All Necessary Assessors",
-                "Cloud Service Offering",
-                "Persistent Validation"
-              ]
-            },
-            "PVA-CSO-PTE": {
-              "fka": "FRR-PVA-07",
-              "name": "Provide Technical Evidence",
-              "statement": "Providers SHOULD provide technical explanations, demonstrations, and other relevant supporting information to all necessary assessors for the technical capabilities they employ to meet Key Security Indicators and to provide validation.",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["All Necessary Assessors", "Persistent Validation"]
-            },
-            "PVA-CSO-RIA": {
-              "fka": "FRR-PVA-08",
-              "name": "Receiving Independent Advice",
-              "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPO-AMA).",
-              "affects": ["Providers"],
-              "primary_key_word": "MAY",
-              "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Persistent Validation"]
-            },
-            "PVA-CSO-NMV": {
+            "PVA-CSX-NMV": {
               "fkas": ["FRR-PVA-TF-LO-01", "FRR-PVA-TF-MO-01"],
               "statement": "Providers MUST complete the validation processes for Key Security Indicators of non-machine-based information resources at least once every 3 months.",
               "name": "Non-Machine Validation",
@@ -2688,7 +2619,7 @@
                 "Persistent Validation"
               ]
             },
-            "PVA-CSO-PMV": {
+            "PVA-CSX-PMV": {
               "fkas": ["FRR-PVA-TF-LO-02", "FRR-PVA-TF-MO-02"],
               "varies_by_level": {
                 "low": {
@@ -2715,15 +2646,28 @@
                 "Machine-Based (information resources)",
                 "Persistent Validation"
               ]
-            }
-          },
-          "TPO": {
-            "PVA-TPO-AMA": {
-              "fka": "FRR-PVA-09",
-              "name": "Assessors May Advise",
-              "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSO-RIA).",
-              "affects": ["Assessors"],
+            },
+            "PVA-CSX-PTE": {
+              "fka": "FRR-PVA-07",
+              "name": "Provide Technical Evidence",
+              "statement": "Providers SHOULD provide technical explanations, demonstrations, and other relevant supporting information to all necessary assessors for the technical capabilities they employ to meet Key Security Indicators and to provide validation.",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["All Necessary Assessors", "Persistent Validation"]
+            },
+            "PVA-CSX-RAD": {
+              "fka": "FRR-PVA-08",
+              "name": "Receiving Advice",
+              "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPX-AMA).",
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
+              "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -2731,11 +2675,13 @@
                 }
               ],
               "terms": ["Persistent Validation"]
-            },
-            "PVA-TPO-EVP": {
+            }
+          },
+          "TPX": {
+            "PVA-TPX-UNP": {
               "fka": "FRR-PVA-10",
-              "name": "Evaluate Validation Processes",
-              "statement": "Assessors MUST evaluate the underlying processes (both machine-based and non-machine-based) that providers use to validate Key Security Indicators; this evaluation should include at least:",
+              "name": "Underlying Processes",
+              "statement": "Assessors MUST verify and validate the underlying processes (both machine-based and non-machine-based) that providers use to validate Key Security Indicators; this should include at least:",
               "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "following_information": [
@@ -2746,7 +2692,7 @@
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
@@ -2756,33 +2702,33 @@
                 "Persistent Validation"
               ]
             },
-            "PVA-TPO-API": {
+            "PVA-TPX-PDK": {
               "fka": "FRR-PVA-11",
-              "name": "Assess Process Implementation",
-              "statement": "Assessors MUST evaluate the implementation of processes derived from Key Security Indicators to determine whether or not the provider has accurately documented their process and goals.",
+              "name": "Processes Derived from Key Security Indicators",
+              "statement": "Assessors MUST verify and validate the implementation of processes derived from Key Security Indicators to determine whether or not the provider has accurately documented their process and goals.",
               "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             },
-            "PVA-TPO-AOC": {
+            "PVA-TPX-OUC": {
               "fka": "FRR-PVA-12",
-              "name": "Assess Outcome Consistency",
-              "statement": "Assessors MUST evaluate whether or not the underlying processes are consistently creating the desired security outcome documented by the provider.",
+              "name": "Outcome Consistency",
+              "statement": "Assessors MUST verify and validate whether or not the underlying processes are consistently creating the desired security outcome documented by the provider.",
               "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
             },
-            "PVA-TPO-MME": {
+            "PVA-TPX-MME": {
               "fka": "FRR-PVA-13",
               "name": "Mixed Methods Evaluation",
               "statement": "Assessors MUST perform evaluation using a combination of quantitative and expert qualitative assessment as appropriate AND document which is applied to which aspect of the assessment.",
@@ -2795,35 +2741,9 @@
                 }
               ]
             },
-            "PVA-TPO-EPE": {
-              "fka": "FRR-PVA-14",
-              "name": "Engage Provider Experts",
-              "statement": "Assessors SHOULD engage provider experts in discussion to understand the decisions made by the provider and inform expert qualitative assessment, and SHOULD perform independent research to test such information as part of the expert qualitative assessment process.",
-              "affects": ["Assessors"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "PVA-TPO-ASE": {
-              "fka": "FRR-PVA-15",
-              "name": "Avoid Static Evidence",
-              "statement": "Assessors MUST NOT rely on screenshots, configuration dumps, or other static output as evidence EXCEPT when evaluating the accuracy and reliability of a process that generates such artifacts.",
-              "affects": ["Assessors"],
-              "primary_key_word": "MUST NOT",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "PVA-TPO-VPA": {
+            "PVA-TPX-PAD": {
               "fka": "FRR-PVA-16",
-              "name": "Verify Procedure Adherence",
+              "name": "Procedure Adherence",
               "statement": "Assessors MUST assess whether or not procedures are consistently followed, including the processes in place to ensure this occurs, without relying solely on the existence of a procedure document for assessing if appropriate processes and procedures are in place.",
               "note": "This includes evaluating tests or plans for activities that may occur in the future but have not yet occurred.",
               "affects": ["Assessors"],
@@ -2835,9 +2755,9 @@
                 }
               ]
             },
-            "PVA-TPO-SUM": {
+            "PVA-TPX-SUM": {
               "fka": "FRR-PVA-17",
-              "name": "Deliver Assessment Summary",
+              "name": "Assessment Summary",
               "statement": "Assessors MUST deliver a high-level summary of their assessment process and findings for each Key Security Indicator; this summary will be included in the authorization data for the cloud service offering.",
               "affects": ["Assessors"],
               "primary_key_word": "MUST",
@@ -2849,7 +2769,20 @@
               ],
               "terms": ["Authorization data", "Cloud Service Offering"]
             },
-            "PVA-TPO-NOR": {
+            "PVA-TPX-STE": {
+              "fka": "FRR-PVA-15",
+              "name": "Static Evidence",
+              "statement": "Assessors MUST NOT rely on screenshots, configuration dumps, or other static output as evidence EXCEPT when evaluating the accuracy and reliability of a process that generates such artifacts.",
+              "affects": ["Assessors"],
+              "primary_key_word": "MUST NOT",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "PVA-TPX-NOR": {
               "fka": "FRR-PVA-18",
               "name": "No Overall Recommendation",
               "statement": "Assessors MUST NOT deliver an overall recommendation on whether or not the cloud service offering meets the requirements for FedRAMP authorization.",
@@ -2863,6 +2796,33 @@
                 }
               ],
               "terms": ["Cloud Service Offering"]
+            },
+            "PVA-TPX-PEX": {
+              "fka": "FRR-PVA-14",
+              "name": "Provider Experts",
+              "statement": "Assessors SHOULD engage provider experts in discussion to understand the decisions made by the provider and inform expert qualitative assessment, and SHOULD perform independent research to test such information as part of the expert qualitative assessment process.",
+              "affects": ["Assessors"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "PVA-TPX-SHA": {
+              "fka": "FRR-PVA-09",
+              "name": "Sharing Advice",
+              "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSX-RIA).",
+              "affects": ["Assessors"],
+              "primary_key_word": "MAY",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Persistent Validation"]
             }
           }
         }
