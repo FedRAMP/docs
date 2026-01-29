@@ -224,6 +224,7 @@
         "fka": { "type": "string" },
         "fkas": { "type": "array", "items": { "type": "string" } },
         "statement": { "type": "string" },
+        "danger": { "type": "string" },
         "terms": { "type": "array", "items": { "type": "string" } },
         "affects": { "type": "array", "items": { "type": "string" } },
         "name": { "type": "string" },

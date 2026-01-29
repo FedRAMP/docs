@@ -4,3 +4,4 @@
 
 - re-read all requirements and their primary name, assess if primary name should be changed (had gemini do a first pass but it's not perfect)
 
+- whew just KSIs left now
