@@ -823,7 +823,6 @@
               "terms": [
                 "All Necessary Parties",
                 "Authorization data",
-                "Cloud Service Offering",
                 "Trust Center"
               ],
               "affects": ["Providers"],
@@ -863,7 +862,6 @@
               "terms": [
                 "All Necessary Parties",
                 "Authorization data",
-                "Cloud Service Offering",
                 "Trust Center"
               ],
               "affects": ["Providers"],
@@ -883,11 +881,7 @@
             "ADS-CSL-UCP": {
               "fka": "FRR-ADS-06",
               "statement": "Providers MUST share authorization data via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible trust center.",
-              "terms": [
-                "Authorization data",
-                "Cloud Service Offering",
-                "Trust Center"
-              ],
+              "terms": ["Authorization data", "Trust Center"],
               "affects": ["Providers"],
               "name": "USDA Connect",
               "primary_key_word": "MUST",
@@ -933,6 +927,7 @@
               "terms": [
                 "Cloud Service Offering",
                 "Machine-Readable",
+                "Ongoing Authorization Report (OAR)",
                 "Trust Center"
               ],
               "affects": ["Providers"],
@@ -1102,9 +1097,9 @@
               "fka": "FRR-ADS-04",
               "statement": "Trust centers MUST share authorization data with all necessary parties without interruption.",
               "terms": [
-                "Agency",
                 "All Necessary Parties",
-                "Authorization data"
+                "Authorization data",
+                "Trust Center"
               ],
               "affects": ["Providers"],
               "name": "Uninterrupted Sharing",
@@ -1436,12 +1431,7 @@
                   "timeframe_num": 3
                 }
               },
-              "terms": [
-                "Agency",
-                "All Necessary Parties",
-                "Authorization data",
-                "Quarterly Review"
-              ],
+              "terms": ["Agency", "All Necessary Parties", "Quarterly Review"],
               "name": "Quarterly Review Meeting",
               "affects": ["Providers"],
               "updated": [
@@ -2063,7 +2053,8 @@
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
-              ]
+              ],
+              "terms": ["Cloud Service Offering"]
             },
             "FSI-CSO-ACK": {
               "fka": "FRR-FSI-13",
@@ -2114,7 +2105,6 @@
             }
           ]
         },
-
         "labels": {
           "CSX": {
             "description": "These requirements and recommendations apply to all FedRAMP 20x Validated cloud service offerings.",
@@ -2408,6 +2398,7 @@
                 }
               ],
               "terms": [
+                "Cloud Service Offering",
                 "Handle",
                 "Information Resource",
                 "Third-party Information Resource"
@@ -2432,6 +2423,7 @@
                 }
               ],
               "terms": [
+                "Cloud Service Offering",
                 "Federal Customer Data",
                 "Information Resource",
                 "Third-party Information Resource"
@@ -2464,6 +2456,7 @@
                 }
               ],
               "terms": [
+                "Agency",
                 "Authorization Package",
                 "Cloud Service Offering",
                 "Information Resource"
@@ -2542,7 +2535,6 @@
                 }
               ],
               "terms": [
-                "Cloud Service Offering",
                 "Persistent Validation",
                 "Persistently",
                 "Vulnerability",
@@ -2713,7 +2705,8 @@
                   "date": "2100-12-31",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
-              ]
+              ],
+              "terms": ["Persistent Validation"]
             },
             "PVA-TPX-OUC": {
               "fka": "FRR-PVA-12",
@@ -2726,7 +2719,8 @@
                   "date": "2100-12-31",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
-              ]
+              ],
+              "terms": ["Persistent Validation"]
             },
             "PVA-TPX-MME": {
               "fka": "FRR-PVA-13",
@@ -2908,6 +2902,7 @@
               ],
               "terms": [
                 "Cloud Service Offering",
+                "Privileged account",
                 "Top-level administrative account"
               ]
             },
@@ -2922,7 +2917,8 @@
                   "comment": "This requirement is new in v-0.9.0 to clarify expectations."
                 }
               ],
-              "note": "These instructions may appear in a variety of ways; it is up to the provider to do so in the most appropriate and effective ways for their specific customer needs."
+              "note": "These instructions may appear in a variety of ways; it is up to the provider to do so in the most appropriate and effective ways for their specific customer needs.",
+              "terms": ["Authorization Package"]
             },
             "RSC-CSO-PUB": {
               "fka": "FRR-RSC-09",
@@ -3170,7 +3166,7 @@
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": ["All Necessary Parties"]
+              "terms": ["All Necessary Parties", "Significant change"]
             },
             "SCN-CSO-INF": {
               "fka": "FRR-SCN-09",
@@ -3212,7 +3208,6 @@
               ],
               "terms": ["All Necessary Parties", "Significant change"]
             },
-
             "SCN-CSO-HRM": {
               "fka": "FRR-SCN-08",
               "name": "Human and Machine-Readable",
@@ -3575,16 +3570,16 @@
           "purpose": "This set of requirements and recommendations converts the existing FedRAMP Policy for Cryptographic Module Selection and Use (https://www.fedramp.gov/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf) to the simpler FedRAMP 20x style and clarifies the implementation expectations for FedRAMP 20x.\n\nThe notable change from the default Rev5 Policy for Cryptographic Module Selection and Use is that the use of cryptographic modules (or update streams) validated under the NIST Cryptographic Module Validation Program are not explicitly required when cryptographic modules are used to protect federal customer data in cloud service offerings seeking FedRAMP authorization at the Moderate impact level. This acknowledges that not all Moderate impact federal customer data is considered “sensitive” and allows both cloud service providers and agency customers to make risk-based decisions about their use of Moderate impact services for agency use cases that do not include sensitive data.\n\nFedRAMP recommends that cloud service providers seeking FedRAMP authorization at the Moderate impact level use such cryptographic modules whenever technically feasible and reasonable but acknowledges there may be sound reasons not to do so across the board at the Moderate impact level. As always, the reasoning and justification for such decisions must be documented by the cloud service provider."
         },
         "labels": {
-          "CSO": {
+          "CSX": {
             "description": "These requirements and recommendations apply to all FedRAMP Validated cloud service offerings.",
-            "name": "General Provider Responsibilities"
+            "name": "20x-Specific Provider Responsibilities"
           }
         }
       },
       "data": {
         "20x": {
-          "CSO": {
-            "UCM-CSO-CMD": {
+          "CSX": {
+            "UCM-CSX-CMD": {
               "fka": "FRR-UCM-01",
               "statement": "Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect federal customer data, including whether these modules are validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.",
               "name": "Cryptographic Module Documentation",
@@ -3598,21 +3593,7 @@
               ],
               "terms": ["Federal Customer Data", "Persistent Validation"]
             },
-            "UCM-CSO-CAT": {
-              "fka": "FRR-UCM-02",
-              "statement": "Providers SHOULD configure agency tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.",
-              "name": "Configuration of Agency Tenants",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Agency", "Persistent Validation"]
-            },
-            "UCM-CSO-UVM": {
+            "UCM-CSX-UVM": {
               "fkas": ["FRR-UCM-03", "FRR-UCM-04"],
               "varies_by_level": {
                 "low": {
@@ -3631,6 +3612,20 @@
               "name": "Using Validated Cryptographic Modules",
               "affects": ["Providers"],
               "terms": ["Federal Customer Data", "Persistent Validation"]
+            },
+            "UCM-CSX-CAT": {
+              "fka": "FRR-UCM-02",
+              "statement": "Providers SHOULD configure agency tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.",
+              "name": "Configuration of Agency Tenants",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Agency", "Persistent Validation"]
             }
           }
         }
@@ -3705,11 +3700,53 @@
           "RPT": {
             "description": "These requirements and recommendations apply to reporting related to vulnerability detection and response.",
             "name": "Reporting"
+          },
+          "EVA": {
+            "description": "These requirements and recommendations apply to the evaluation of vulnerabilities.",
+            "name": "Evaluation"
+          },
+          "FRP": {
+            "description": "These requirements and recommendations apply to FedRAMP when setting expectations for specific cloud service providers.",
+            "name": "FedRAMP's Responsibilities"
+          },
+          "BST": {
+            "description": "These recommendations for best practices apply to all cloud service providers.",
+            "name": "Best Practices"
           }
         }
       },
       "data": {
         "both": {
+          "FRP": {
+            "VDR-FRP-ARP": {
+              "fka": "FRR-VDR-EX-01",
+              "statement": "FedRAMP MAY require providers to share additional vulnerability information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.",
+              "name": "Additional Requirements",
+              "affects": ["FedRAMP"],
+              "primary_key_word": "MAY",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Agency", "Vulnerability"]
+            },
+            "VDR-FRP-ADV": {
+              "fka": "FRR-VDR-EX-02",
+              "statement": "FedRAMP MAY required providers to share additional information or details about vulnerabilities, including sensitive information that would likely lead to exploitation, as part of review, response or investigation by necessary parties.",
+              "name": "Sensitive Details",
+              "affects": ["FedRAMP"],
+              "primary_key_word": "MAY",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Likely", "Vulnerability", "Vulnerability Response"]
+            }
+          },
           "CSO": {
             "VDR-CSO-DET": {
               "fka": "FRR-VDR-01",
@@ -3753,75 +3790,36 @@
                 "Vulnerability Response"
               ]
             },
-            "VDR-CSO-SIR": {
-              "fka": "FRR-VDR-04",
-              "statement": "Providers MAY sample effectively identical information resources, especially machine-based information resources, when performing vulnerability detection UNLESS doing so would decrease the efficiency or effectiveness of vulnerability detection.",
-              "name": "Sampling Identical Resources",
+            "VDR-CSO-DOC": {
+              "fka": "FRR-VDR-11",
+              "statement": "Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this process; this documentation MUST be included in the authorization data for the cloud service offering.",
+              "name": "Documentation for Recommendations",
               "affects": ["Providers"],
-              "primary_key_word": "MAY",
+              "primary_key_word": "MUST",
               "updated": [
                 {
                   "date": "2100-12-31",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Information Resource",
-                "Machine-Based (information resources)",
-                "Vulnerability",
-                "Vulnerability Detection"
-              ]
-            },
-            "VDR-CSO-GRV": {
-              "fka": "FRR-VDR-05",
-              "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to identify logical groupings of affected information resources that may improve the efficiency and effectiveness of vulnerability response by consolidating further activity; requirements and recommendations in this process are then applied to these consolidated groupings of vulnerabilities instead of each individual detected instance.",
-              "name": "Grouping Vulnerabilities",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Cloud Service Offering",
-                "Information Resource",
-                "Vulnerability",
-                "Vulnerability Detection",
-                "Vulnerability Response"
-              ]
-            },
-            "VDR-CSO-EFP": {
-              "fka": "FRR-VDR-06",
-              "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are false positive vulnerabilities.",
-              "name": "Evaluate False Positives",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Cloud Service Offering",
-                "False Positive Vulnerability",
-                "Vulnerability",
-                "Vulnerability Detection"
-              ]
-            },
-            "VDR-CSO-ELX": {
+              "terms": ["Authorization data", "Cloud Service Offering"]
+            }
+          },
+          "EVA": {
+            "VDR-EVA-ELX": {
               "fka": "FRR-VDR-07",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are likely exploitable vulnerabilities.",
               "name": "Evaluate Exploitability",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
-              "note": "The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.\n\nThe proof, ultimately, is in the pudding - providers who regularly evaluate vulnerabilities as not likely exploitable without careful consideration are more likely to suffer from an adverse impact where the root cause was an exploited vulnerability that was improperly evaluated. If done recklessly or deliberately, such actions will have a potential adverse impact on a provider's FedRAMP authorization.",
+              "notes": [
+                "The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.",
+                "The proof, ultimately, is in the pudding - providers who regularly evaluate vulnerabilities as not likely exploitable without careful consideration are more likely to suffer from an adverse impact where the root cause was an exploited vulnerability that was improperly evaluated. If done recklessly or deliberately, such actions will have a potential adverse impact on a provider's FedRAMP authorization."
+              ],
               "updated": [
                 {
                   "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                  "comment": "Updated note from technical assistance; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
               "terms": [
@@ -3834,7 +3832,7 @@
                 "Vulnerability Detection"
               ]
             },
-            "VDR-CSO-EIR": {
+            "VDR-EVA-EIR": {
               "fka": "FRR-VDR-08",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are internet-reachable vulnerabilities.",
               "name": "Evaluate Internet-Reachability",
@@ -3859,7 +3857,7 @@
                 "Vulnerability Detection"
               ]
             },
-            "VDR-CSO-EPA": {
+            "VDR-EVA-EPA": {
               "fka": "FRR-VDR-09",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to estimate the potential adverse impact of exploitation on government customers AND assign one of the following potential adverse impact ratings:",
               "name": "Estimate Potential Adverse Impact",
@@ -3890,7 +3888,46 @@
                 "Vulnerability Detection"
               ]
             },
-            "VDR-CSO-EFA": {
+            "VDR-EVA-GRV": {
+              "fka": "FRR-VDR-05",
+              "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to identify logical groupings of affected information resources that may improve the efficiency and effectiveness of vulnerability response by consolidating further activity; requirements and recommendations in this process are then applied to these consolidated groupings of vulnerabilities instead of each individual detected instance.",
+              "name": "Group Vulnerabilities",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Information Resource",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
+              ]
+            },
+            "VDR-EVA-EFP": {
+              "fka": "FRR-VDR-06",
+              "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are false positive vulnerabilities.",
+              "name": "Evaluate False Positives",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "False Positive Vulnerability",
+                "Vulnerability",
+                "Vulnerability Detection"
+              ]
+            },
+            "VDR-EVA-EFA": {
               "fka": "FRR-VDR-10",
               "statement": "Providers SHOULD consider at least the following factors when considering the context of the cloud service offering to evaluate detected vulnerabilities:",
               "name": "Evaluation Factors",
@@ -3919,22 +3956,10 @@
                 "Vulnerability",
                 "Vulnerability Detection"
               ]
-            },
-            "VDR-CSO-DOC": {
-              "fka": "FRR-VDR-11",
-              "statement": "Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this process; this documentation MUST be included in the authorization data for the cloud service offering.",
-              "name": "Documenting Reasons",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Authorization data", "Cloud Service Offering"]
-            },
-            "VDR-CSO-DFR": {
+            }
+          },
+          "BST": {
+            "VDR-BST-DFR": {
               "fka": "FRR-VDR-AY-02",
               "statement": "Providers SHOULD make design and architecture decisions for their cloud service offering that mitigate the risk of vulnerabilities by default AND decrease the risk and complexity of vulnerability detection and response.",
               "name": "Design For Resilience",
@@ -3953,7 +3978,7 @@
                 "Vulnerability Response"
               ]
             },
-            "VDR-CSO-ADT": {
+            "VDR-BST-ADT": {
               "fka": "FRR-VDR-AY-03",
               "statement": "Providers SHOULD use automated services to improve and streamline vulnerability detection and response.",
               "name": "Automate Detection",
@@ -3971,10 +3996,10 @@
                 "Vulnerability Response"
               ]
             },
-            "VDR-CSO-DAC": {
+            "VDR-BST-DAC": {
               "fka": "FRR-VDR-AY-04",
               "statement": "Providers SHOULD automatically perform vulnerability detection on representative samples of new or significantly changed information resources.",
-              "name": "Detection After Changes",
+              "name": "Detect After Changes",
               "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
@@ -3989,10 +4014,10 @@
                 "Vulnerability Detection"
               ]
             },
-            "VDR-CSO-MSP": {
+            "VDR-BST-MSP": {
               "fka": "FRR-VDR-AY-05",
-              "statement": "Providers SHOULD NOT weaken the security of information resources to facilitate vulnerability scanning or assessment activities.",
-              "name": "Maintain Security Postures",
+              "statement": "Providers SHOULD NOT weaken the security of information resources to facilitate vulnerability scanning, detection, or assessment activities.",
+              "name": "Maintain Security",
               "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "updated": [
@@ -4003,10 +4028,10 @@
               ],
               "terms": ["Information Resource", "Vulnerability"]
             },
-            "VDR-CSO-AKE": {
+            "VDR-BST-AKE": {
               "fka": "FRR-VDR-AY-06",
               "statement": "Providers SHOULD NOT deploy or otherwise activate new machine-based information resources with Known Exploited Vulnerabilities.",
-              "name": "Avoid Known Exploited Vulnerabilities",
+              "name": "Avoid KEVs",
               "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "updated": [
@@ -4022,10 +4047,10 @@
                 "Vulnerability"
               ]
             },
-            "VDR-CSO-ARP": {
-              "fka": "FRR-VDR-EX-01",
-              "statement": "Providers MAY be required to share additional vulnerability information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.",
-              "name": "Additional Reporting Requirements",
+            "VDR-BST-SIR": {
+              "fka": "FRR-VDR-04",
+              "statement": "Providers MAY sample effectively identical information resources, especially machine-based information resources, when performing vulnerability detection UNLESS doing so would decrease the efficiency or effectiveness of vulnerability detection.",
+              "name": "Sampling",
               "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
@@ -4034,180 +4059,11 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": ["Agency", "Vulnerability"]
-            },
-            "VDR-CSO-ADV": {
-              "fka": "FRR-VDR-EX-02",
-              "statement": "Providers MAY be required to provide additional information or details about vulnerabilities, including sensitive information that would likely lead to exploitation, as part of review, response or investigation by necessary parties.",
-              "name": "Additional Details",
-              "affects": ["Providers"],
-              "primary_key_word": "MAY",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Likely", "Vulnerability", "Vulnerability Response"]
-            },
-            "VDR-CSO-DNR": {
-              "fka": "FRR-VDR-EX-03",
-              "statement": "Providers MUST NOT use this process to reject requests for additional information from necessary parties which also include law enforcement, Congress, and Inspectors General.",
-              "name": "Do Not Reject Requests",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST NOT",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            }
-          },
-          "RPT": {
-            "VDR-RPT-PER": {
-              "fka": "FRR-VDR-RP-01",
-              "statement": "Providers MUST report vulnerability detection and response activity to all necessary parties persistently, summarizing ALL activity since the previous report; these reports are authorization data and are subject to the FedRAMP Authorization Data Sharing (ADS) process.",
-              "name": "Persistent Reporting",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
               "terms": [
-                "All Necessary Parties",
-                "Authorization data",
-                "Persistently",
+                "Information Resource",
+                "Machine-Based (information resources)",
                 "Vulnerability",
-                "Vulnerability Detection",
-                "Vulnerability Response"
-              ]
-            },
-            "VDR-RPT-HLO": {
-              "fka": "FRR-VDR-RP-02",
-              "statement": "Providers SHOULD include high-level overviews of ALL vulnerability detection and response activities conducted during this period for the cloud service offering; this includes vulnerability disclosure programs, bug bounty programs, penetration testing, assessments, etc.",
-              "name": "High-Level Overviews",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Cloud Service Offering",
-                "Vulnerability",
-                "Vulnerability Detection",
-                "Vulnerability Response"
-              ]
-            },
-            "VDR-RPT-NID": {
-              "fka": "FRR-VDR-RP-03",
-              "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about vulnerabilities that would likely lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
-              "name": "No Irresponsible Disclosure",
-              "affects": ["Providers"],
-              "primary_key_word": "MUST NOT",
-              "note": "See VDR-CSO-ARP, VDR-CSO-ADV, and VDR-CSO-DNR for exceptions to this requirement.",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["All Necessary Parties", "Likely", "Vulnerability"]
-            },
-            "VDR-RPT-RPD": {
-              "fka": "FRR-VDR-RP-04",
-              "statement": "Providers MAY responsibly disclose vulnerabilities publicly or with other parties if the provider determines doing so will NOT likely lead to exploitation.",
-              "name": "Responsible Public Disclosure",
-              "affects": ["Providers"],
-              "primary_key_word": "MAY",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Likely", "Vulnerability"]
-            },
-            "VDR-RPT-VDT": {
-              "fka": "FRR-VDR-RP-05",
-              "statement": "Providers MUST include the following information (if applicable) on detected vulnerabilities when reporting on vulnerability detection and response activity, UNLESS it is an accepted vulnerability:",
-              "name": "Vulnerability Details",
-              "following_information": [
-                "Provider's internally assigned tracking identifier",
-                "Time and source of the detection",
-                "Time of completed evaluation",
-                "Is it an internet-reachable vulnerability or not?",
-                "Is it a likely exploitable vulnerability or not?",
-                "Historically and currently estimated potential adverse impact of exploitation",
-                "Time and level of each completed and evaluated reduction in potential adverse impact",
-                "Estimated time and target level of next reduction in potential adverse impact",
-                "Is it currently or is it likely to become an overdue vulnerability or not? If so, explain.",
-                "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the vulnerability",
-                "Final disposition of the vulnerability"
-              ],
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Accepted Vulnerability",
-                "Agency",
-                "Cloud Service Offering",
-                "Federal Customer Data",
-                "Internet-Reachable Vulnerability (IRV)",
-                "Likely",
-                "Likely Exploitable Vulnerability (LEV)",
-                "Overdue Vulnerability",
-                "Potential Adverse Impact (of vulnerability exploitation)",
-                "Vulnerability",
-                "Vulnerability Detection",
-                "Vulnerability Response"
-              ]
-            },
-            "VDR-RPT-AVI": {
-              "fka": "FRR-VDR-RP-06",
-              "statement": "Providers MUST include the following information on accepted vulnerabilities when reporting on vulnerability detection and response activity:",
-              "name": "Accepted Vulnerability Info",
-              "following_information": [
-                "Provider's internally assigned tracking identifier",
-                "Time and source of the detection",
-                "Time of completed evaluation",
-                "Is it an internet-reachable vulnerability or not?",
-                "Is it a likely exploitable vulnerability or not?",
-                "Currently estimated potential adverse impact of exploitation",
-                "Explanation of why this is an accepted vulnerability",
-                "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the accepted vulnerability"
-              ],
-              "affects": ["Providers"],
-              "primary_key_word": "MUST",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": [
-                "Accepted Vulnerability",
-                "Agency",
-                "Cloud Service Offering",
-                "Federal Customer Data",
-                "Internet-Reachable Vulnerability (IRV)",
-                "Likely",
-                "Likely Exploitable Vulnerability (LEV)",
-                "Potential Adverse Impact (of vulnerability exploitation)",
-                "Vulnerability",
-                "Vulnerability Detection",
-                "Vulnerability Response"
+                "Vulnerability Detection"
               ]
             }
           },
@@ -4215,9 +4071,11 @@
             "VDR-TFR-MHR": {
               "fka": "FRR-VDR-TF-01",
               "statement": "Providers MUST report vulnerability detection and response activity to all necessary parties in a consistent format that is human readable at least monthly.",
-              "name": "Monthly Human-Readable",
+              "name": "Monthly Activity Report",
               "affects": ["Providers"],
               "primary_key_word": "MUST",
+              "timeframe_type": "month",
+              "timeframe_num": 1,
               "updated": [
                 {
                   "date": "2100-12-31",
@@ -4230,22 +4088,6 @@
                 "Vulnerability Detection",
                 "Vulnerability Response"
               ]
-            },
-            "VDR-TFR-KEV": {
-              "fka": "FRR-VDR-TF-02",
-              "statement": "Providers SHOULD remediate Known Exploited Vulnerabilities according to the due dates in the CISA Known Exploited Vulnerabilities Catalog (even if the vulnerability has been fully mitigated) as required by CISA Binding Operational Directive (BOD) 22-01 or any successor guidance from CISA.",
-              "name": "Remediate KEVs",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "reference": "CISA BOD 22-01",
-              "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "terms": ["Known Exploited Vulnerability (KEV)", "Vulnerability"]
             },
             "VDR-TFR-MAV": {
               "fka": "FRR-VDR-TF-03",
@@ -4262,6 +4104,22 @@
                 }
               ],
               "terms": ["Accepted Vulnerability", "Vulnerability"]
+            },
+            "VDR-TFR-KEV": {
+              "fka": "FRR-VDR-TF-02",
+              "statement": "Providers SHOULD remediate Known Exploited Vulnerabilities according to the due dates in the CISA Known Exploited Vulnerabilities Catalog (even if the vulnerability has been fully mitigated) as required by CISA Binding Operational Directive (BOD) 22-01 or any successor guidance from CISA.",
+              "name": "Remediate KEVs",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "reference": "CISA BOD 22-01",
+              "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Known Exploited Vulnerability (KEV)", "Vulnerability"]
             },
             "VDR-TFR-MRH": {
               "fkas": [
@@ -4289,7 +4147,7 @@
                   "timeframe_num": 7
                 }
               },
-              "name": "Machine-Readable History",
+              "name": "Historical Activity",
               "affects": ["Providers"],
               "terms": [
                 "All Necessary Parties",
@@ -4420,19 +4278,19 @@
               ],
               "varies_by_level": {
                 "low": {
-                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-CSO-ELX, VDR-CSO-EIR, and VDR-CSO-EPA within 7 days of detection.",
+                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-EVA (Evaluation) within 7 days of detection.",
                   "primary_key_word": "SHOULD",
                   "timeframe_type": "days",
                   "timeframe_num": 7
                 },
                 "moderate": {
-                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-CSO-ELX, VDR-CSO-EIR, and VDR-CSO-EPA within 5 days of detection.",
+                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-EVA (Evaluation) within 5 days of detection.",
                   "primary_key_word": "SHOULD",
                   "timeframe_type": "days",
                   "timeframe_num": 5
                 },
                 "high": {
-                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-CSO-ELX, VDR-CSO-EIR, and VDR-CSO-EPA within 2 days of detection.",
+                  "statement": "Providers SHOULD evaluate ALL vulnerabilities as required by VDR-EVA (Evaluation) within 2 days of detection.",
                   "primary_key_word": "SHOULD",
                   "timeframe_type": "days",
                   "timeframe_num": 2
@@ -4540,7 +4398,7 @@
                   ]
                 }
               },
-              "name": "Prompt Vulnerability Remediation",
+              "name": "Mitigation and Remediation Expectations",
               "affects": ["Providers"],
               "terms": [
                 "Likely",
@@ -4613,6 +4471,153 @@
               ]
             }
           },
+          "RPT": {
+            "VDR-RPT-PER": {
+              "fka": "FRR-VDR-RP-01",
+              "statement": "Providers MUST report vulnerability detection and response activity to all necessary parties persistently, summarizing ALL activity since the previous report; these reports are authorization data and are subject to the FedRAMP Authorization Data Sharing (ADS) process.",
+              "name": "Persistent Reporting",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "All Necessary Parties",
+                "Authorization data",
+                "Persistently",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
+              ]
+            },
+            "VDR-RPT-NID": {
+              "fka": "FRR-VDR-RP-03",
+              "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about vulnerabilities that would likely lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
+              "name": "Responsible Disclosure",
+              "affects": ["Providers"],
+              "primary_key_word": "MUST NOT",
+              "note": "This requirement will be superseded in the event of formal action related to an investigation or corrective action plan.",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["All Necessary Parties", "Likely", "Vulnerability"]
+            },
+            "VDR-RPT-VDT": {
+              "fka": "FRR-VDR-RP-05",
+              "statement": "Providers MUST include the following information (if applicable) on detected vulnerabilities when reporting on vulnerability detection and response activity, UNLESS it is an accepted vulnerability:",
+              "name": "Vulnerability Details",
+              "following_information": [
+                "Provider's internally assigned tracking identifier",
+                "Time and source of the detection",
+                "Time of completed evaluation",
+                "Is it an internet-reachable vulnerability or not?",
+                "Is it a likely exploitable vulnerability or not?",
+                "Historically and currently estimated potential adverse impact of exploitation",
+                "Time and level of each completed and evaluated reduction in potential adverse impact",
+                "Estimated time and target level of next reduction in potential adverse impact",
+                "Is it currently or is it likely to become an overdue vulnerability or not? If so, explain.",
+                "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the vulnerability",
+                "Final disposition of the vulnerability"
+              ],
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Cloud Service Offering",
+                "Federal Customer Data",
+                "Internet-Reachable Vulnerability (IRV)",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Overdue Vulnerability",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
+              ]
+            },
+            "VDR-RPT-AVI": {
+              "fka": "FRR-VDR-RP-06",
+              "statement": "Providers MUST include the following information on accepted vulnerabilities when reporting on vulnerability detection and response activity:",
+              "name": "Accepted Vulnerability Info",
+              "following_information": [
+                "Provider's internally assigned tracking identifier",
+                "Time and source of the detection",
+                "Time of completed evaluation",
+                "Is it an internet-reachable vulnerability or not?",
+                "Is it a likely exploitable vulnerability or not?",
+                "Currently estimated potential adverse impact of exploitation",
+                "Explanation of why this is an accepted vulnerability",
+                "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the accepted vulnerability"
+              ],
+              "affects": ["Providers"],
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "Accepted Vulnerability",
+                "Agency",
+                "Cloud Service Offering",
+                "Federal Customer Data",
+                "Internet-Reachable Vulnerability (IRV)",
+                "Likely",
+                "Likely Exploitable Vulnerability (LEV)",
+                "Potential Adverse Impact (of vulnerability exploitation)",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
+              ]
+            },
+            "VDR-RPT-HLO": {
+              "fka": "FRR-VDR-RP-02",
+              "statement": "Providers SHOULD include high-level overviews of ALL vulnerability detection and response activities conducted during this period for the cloud service offering; this includes vulnerability disclosure programs, bug bounty programs, penetration testing, assessments, etc.",
+              "name": "High-Level Overviews",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": [
+                "Cloud Service Offering",
+                "Vulnerability",
+                "Vulnerability Detection",
+                "Vulnerability Response"
+              ]
+            },
+            "VDR-RPT-RPD": {
+              "fka": "FRR-VDR-RP-04",
+              "statement": "Providers MAY responsibly disclose vulnerabilities publicly or with other parties if the provider determines doing so will NOT likely lead to exploitation.",
+              "name": "Responsible Public Disclosure",
+              "affects": ["Providers"],
+              "primary_key_word": "MAY",
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ],
+              "terms": ["Likely", "Vulnerability"]
+            }
+          },
           "AGM": {
             "VDR-AGM-RVR": {
               "fka": "FRR-VDR-AG-01",
@@ -4665,7 +4670,7 @@
             },
             "VDR-AGM-NFR": {
               "fka": "FRR-VDR-AG-04",
-              "statement": "Agencies MUST inform FedRAMP after requesting any additional vulnerability information or materials from a cloud service provider beyond those FedRAMP requires by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
+              "statement": "Agencies MUST notify FedRAMP after requesting any additional vulnerability information or materials from a cloud service provider beyond those FedRAMP requires by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
               "name": "Notify FedRAMP",
               "note": "This is an OMB policy; agencies are required to notify FedRAMP in OMB Memorandum M-24-15 section IV (a).",
               "affects": ["Agencies"],
@@ -4676,7 +4681,14 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": ["Agency", "Vulnerability"]
+              "terms": ["Agency", "Vulnerability"],
+              "notification": [
+                {
+                  "party": "FedRAMP",
+                  "method": "email",
+                  "target": "info@fedramp.gov"
+                }
+              ]
             }
           }
         }
