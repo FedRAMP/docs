@@ -63,7 +63,7 @@ nav = [
                 { "Policy and Inventory" = "20x/key-security-indicators/policy-and-inventory.md" },
                 { "Recovery Planning" = "20x/key-security-indicators/recovery-planning.md" },
                 { "Service Configuration" = "20x/key-security-indicators/service-configuration.md" },
-                { "Third Party Information Resources" = "20x/key-security-indicators/third-party-information-resources.md" },
+                { "Supply Chain Risk" = "20x/key-security-indicators/supply-chain-risk.md" },
 
             ] },
         ] },

@@ -5092,7 +5092,7 @@
       "indicators": {
         "KSI-CMT-LMC": {
           "fka": "KSI-CMT-01",
-          "name": "Log and Monitor Changes",
+          "name": "Logging Changes",
           "statement": "Log and monitor modifications to the cloud service offering.",
           "controls": [
             "au-2",
@@ -5110,9 +5110,9 @@
             }
           ]
         },
-        "KSI-CMT-RVC": {
+        "KSI-CMT-RMV": {
           "fka": "KSI-CMT-02",
-          "name": "Redeploy Version Controlled Resources",
+          "name": "Redeploying vs Modifying",
           "statement": "Execute changes to machine-based information resources through redeployment of version controlled immutable resources rather than direct modification wherever possible.",
           "controls": [
             "cm-2",
@@ -5130,11 +5130,11 @@
             }
           ]
         },
-        "KSI-CMT-ATV": {
-          "fka": "KSI-CMT-03",
-          "name": "Automated Testing and Validation",
-          "statement": "Automate persistent testing and validation of changes throughout deployment.",
-          "controls": ["cm-3", "cm-3.2", "cm-4.2", "si-2"],
+        "KSI-CMT-RVP": {
+          "fka": "KSI-CMT-04",
+          "name": "Reviewing Change Procedures",
+          "statement": "Persistently review the effectiveness of documented change management procedures.",
+          "controls": ["cm-3", "cm-3.2", "cm-3.4", "cm-5", "cm-7.1", "cm-9"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5142,11 +5142,11 @@
             }
           ]
         },
-        "KSI-CMT-CMP": {
-          "fka": "KSI-CMT-04",
-          "name": "Change Management Procedures",
-          "statement": "Persistently review the effectiveness of documented change management procedures.",
-          "controls": ["cm-3", "cm-3.2", "cm-3.4", "cm-5", "cm-7.1", "cm-9"],
+        "KSI-CMT-VTD": {
+          "fka": "KSI-CMT-03",
+          "name": "Validating Throughout Deployment",
+          "statement": "Automate persistent testing and validation of changes throughout deployment.",
+          "controls": ["cm-3", "cm-3.2", "cm-4.2", "si-2"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5163,11 +5163,42 @@
       "short_name": "CNA",
       "theme": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the confidentiality, integrity and availability of the system.",
       "indicators": {
-        "KSI-CNA-RNT": {
-          "fka": "KSI-CNA-01",
-          "name": "Restrict Network Traffic",
-          "statement": "Persistently ensure all machine-based information resources are configured to limit inbound and outbound network traffic.",
-          "controls": ["ac-17.3", "ca-9", "cm-7.1", "sc-7.5", "si-8"],
+        "KSI-CNA-EIS": {
+          "fka": "KSI-CNA-08",
+          "name": "Enforcing Intended State",
+          "varies_by_level": {
+            "low": {
+              "statement": "**Optional:** Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
+            },
+            "moderate": {
+              "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
+            }
+          },
+          "controls": ["ca-2.1", "ca-7.1"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CNA-HAV": {
+          "fka": "KSI-CNA-06",
+          "name": "Optimizing for Availability",
+          "statement": "Appropriately optimize machine-based information resources for high availability and rapid recovery.",
+          "controls": [],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CNA-IBP": {
+          "fka": "KSI-CNA-07",
+          "name": "Implementing Best Practices",
+          "statement": "Persistently ensure cloud-native machine-based information resources are implemented based on the host provider's best practices and documented guidance.",
+          "controls": ["ac-17.3", "cm-2", "pl-10"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5177,7 +5208,7 @@
         },
         "KSI-CNA-MAT": {
           "fka": "KSI-CNA-02",
-          "name": "Minimize Attack Surface",
+          "name": "Minimizing Attack Surface",
           "statement": "Persistently ensure machine-based information resources have a minimal attack surface and that lateral movement is minimized if compromised.",
           "controls": [
             "ac-17.3",
@@ -5202,9 +5233,33 @@
             }
           ]
         },
+        "KSI-CNA-RNT": {
+          "fka": "KSI-CNA-01",
+          "name": "Restricting Network Traffic",
+          "statement": "Persistently ensure all machine-based information resources are configured to limit inbound and outbound network traffic.",
+          "controls": ["ac-17.3", "ca-9", "cm-7.1", "sc-7.5", "si-8"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CNA-RVP": {
+          "fka": "KSI-CNA-05",
+          "name": "Reviewing Protections",
+          "statement": "Persistently review the effectiveness of protection against denial of service attacks and other unwanted activity.",
+          "controls": ["sc-5", "si-8", "si-8.2"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-CNA-ULN": {
           "fka": "KSI-CNA-03",
-          "name": "Use Logical Networking",
+          "name": "Using Logical Networking",
           "statement": "Use logical networking and related capabilities to enforce traffic flow controls.",
           "controls": [
             "ac-12",
@@ -5223,66 +5278,11 @@
             }
           ]
         },
-        "KSI-CNA-IMI": {
+        "KSI-CNA-UMI": {
           "fka": "KSI-CNA-04",
-          "name": "Immutable Infrastructure by Default",
+          "name": "Using Immutable Infrastructure",
           "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
           "controls": ["cm-2", "si-3"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CNA-UWA": {
-          "fka": "KSI-CNA-05",
-          "name": "Unwanted Activity",
-          "statement": "Persistently review the effectiveness of protection against denial of service attacks and other unwanted activity.",
-          "controls": ["sc-5", "si-8", "si-8.2"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CNA-HAV": {
-          "fka": "KSI-CNA-06",
-          "name": "High Availability",
-          "statement": "Appropriately optimize machine-based information resources for high availability and rapid recovery.",
-          "controls": [],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CNA-HBP": {
-          "fka": "KSI-CNA-07",
-          "name": "Host Best Practices",
-          "statement": "Persistently ensure cloud-native machine-based information resources are implemented based on the host provider's best practices and documented guidance.",
-          "controls": ["ac-17.3", "cm-2", "pl-10"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CNA-ASE": {
-          "fka": "KSI-CNA-08",
-          "name": "Automated Security Enforcement",
-          "varies_by_level": {
-            "low": {
-              "statement": "**Optional:** Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
-            },
-            "moderate": {
-              "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
-            }
-          },
-          "controls": ["ca-2.1", "ca-7.1"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5299,33 +5299,9 @@
       "short_name": "CED",
       "theme": "A secure cloud service provider will educate their employees on cybersecurity measures, testing them persistently to ensure their knowledge is satisfactory.",
       "indicators": {
-        "KSI-CED-GTR": {
-          "fka": "KSI-CED-01",
-          "name": "General Training",
-          "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
-          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CED-RST": {
-          "fka": "KSI-CED-02",
-          "name": "Role-Specific Training",
-          "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
-          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
         "KSI-CED-DET": {
           "fka": "KSI-CED-03",
-          "name": "Development and Engineering Training",
+          "name": "Reviewing Development and Engineering Training",
           "statement": "Persistently review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
           "controls": ["cp-3", "ir-2", "ps-6"],
           "updated": [
@@ -5335,11 +5311,35 @@
             }
           ]
         },
+        "KSI-CED-RGT": {
+          "fka": "KSI-CED-01",
+          "name": "Reviewing General Training",
+          "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
+          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-CED-RRT": {
           "fka": "KSI-CED-04",
-          "name": "Response and Recovery Training",
+          "name": "Reviewing Response and Recovery Training",
           "statement": "Persistently review the effectiveness of role-specific training given to staff involved with incident response or disaster recovery.",
           "controls": [],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CED-RST": {
+          "fka": "KSI-CED-02",
+          "name": "Reviewing Role-Specific Training",
+          "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
+          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5350,62 +5350,6 @@
       }
     },
 
-    "INR": {
-      "id": "KSI-INR",
-      "name": "Incident Response",
-      "web_name": "incident-response",
-      "short_name": "INR",
-      "theme": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
-      "indicators": {
-        "KSI-INR-IRP": {
-          "fka": "KSI-INR-01",
-          "name": "Incident Response Procedures",
-          "statement": "Persistently review the effectiveness of documented incident response procedures.",
-          "controls": [
-            "ir-4",
-            "ir-4.1",
-            "ir-6",
-            "ir-6.1",
-            "ir-6.3",
-            "ir-7",
-            "ir-7.1",
-            "ir-8",
-            "ir-8.1",
-            "si-4.5"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-INR-RPI": {
-          "fka": "KSI-INR-02",
-          "name": "Review Past Incidents",
-          "statement": "Persistently review past incidents for patterns or vulnerabilities.",
-          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-INR-AAR": {
-          "fka": "KSI-INR-03",
-          "name": "After Action Reports",
-          "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
-          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        }
-      }
-    },
     "IAM": {
       "id": "KSI-IAM",
       "web_name": "identity-and-access-management",
@@ -5413,19 +5357,20 @@
       "name": "Identity and Access Management",
       "theme": "A secure cloud service offering will protect user data, control access, and apply zero trust principles.",
       "indicators": {
-        "KSI-IAM-MFA": {
-          "fka": "KSI-IAM-01",
-          "name": "Phishing-Resistant MFA",
-          "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.",
+        "KSI-IAM-AAM": {
+          "fka": "KSI-IAM-07",
+          "name": "Automating Account Management",
+          "statement": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
           "controls": [
-            "ac-2",
-            "ia-2",
-            "ia-2.1",
-            "ia-2.2",
-            "ia-2.8",
-            "ia-5",
-            "ia-8",
-            "sc-23"
+            "ac-2.2",
+            "ac-2.3",
+            "ac-2.13",
+            "ac-6.7",
+            "ia-4.4",
+            "ia-12",
+            "ia-12.2",
+            "ia-12.3",
+            "ia-12.5"
           ],
           "updated": [
             {
@@ -5434,9 +5379,9 @@
             }
           ]
         },
-        "KSI-IAM-PLA": {
+        "KSI-IAM-APM": {
           "fka": "KSI-IAM-02",
-          "name": "Passwordless Methods",
+          "name": "Adopting Passwordless Methods",
           "statement": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA for authentication.",
           "controls": [
             "ac-2",
@@ -5456,18 +5401,45 @@
             }
           ]
         },
-        "KSI-IAM-NUA": {
-          "fka": "KSI-IAM-03",
-          "name": "Non-User Accounts",
-          "statement": "Enforce appropriately secure authentication methods for non-user accounts and services.",
+        "KSI-IAM-ELP": {
+          "fka": "KSI-IAM-05",
+          "name": "Ensuring Least Privilege",
+          "statement": "Persistently ensure that identity and access management employs measures to ensure each user or device can only access the resources they need.",
           "controls": [
-            "ac-2",
-            "ac-2.2",
+            "ac-2.5",
+            "ac-2.6",
+            "ac-3",
             "ac-4",
-            "ac-6.5",
+            "ac-6",
+            "ac-12",
+            "ac-14",
+            "ac-17",
+            "ac-17.1",
+            "ac-17.2",
+            "ac-17.3",
+            "ac-20",
+            "ac-20.1",
+            "cm-2.7",
+            "cm-9",
+            "ia-2",
             "ia-3",
+            "ia-4",
+            "ia-4.4",
             "ia-5.2",
-            "ra-5.5"
+            "ia-5.6",
+            "ia-11",
+            "ps-2",
+            "ps-3",
+            "ps-4",
+            "ps-5",
+            "ps-6",
+            "sc-4",
+            "sc-20",
+            "sc-21",
+            "sc-22",
+            "sc-23",
+            "sc-39",
+            "si-3"
           ],
           "updated": [
             {
@@ -5478,7 +5450,7 @@
         },
         "KSI-IAM-JIT": {
           "fka": "KSI-IAM-04",
-          "name": "Just-in-Time Authorization",
+          "name": "Authorizing Just-in-Time",
           "statement": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services.",
           "controls": [
             "ac-2",
@@ -5527,45 +5499,20 @@
             }
           ]
         },
-        "KSI-IAM-LPR": {
-          "fka": "KSI-IAM-05",
-          "name": "Least Privilege",
-          "statement": "Persistently ensure that identity and access management employs measures to ensure each user or device can only access the resources they need.",
+
+        "KSI-IAM-MFA": {
+          "fka": "KSI-IAM-01",
+          "name": "Enforcing Phishing-Resistant MFA",
+          "statement": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication.",
           "controls": [
-            "ac-2.5",
-            "ac-2.6",
-            "ac-3",
-            "ac-4",
-            "ac-6",
-            "ac-12",
-            "ac-14",
-            "ac-17",
-            "ac-17.1",
-            "ac-17.2",
-            "ac-17.3",
-            "ac-20",
-            "ac-20.1",
-            "cm-2.7",
-            "cm-9",
+            "ac-2",
             "ia-2",
-            "ia-3",
-            "ia-4",
-            "ia-4.4",
-            "ia-5.2",
-            "ia-5.6",
-            "ia-11",
-            "ps-2",
-            "ps-3",
-            "ps-4",
-            "ps-5",
-            "ps-6",
-            "sc-4",
-            "sc-20",
-            "sc-21",
-            "sc-22",
-            "sc-23",
-            "sc-39",
-            "si-3"
+            "ia-2.1",
+            "ia-2.2",
+            "ia-2.8",
+            "ia-5",
+            "ia-8",
+            "sc-23"
           ],
           "updated": [
             {
@@ -5574,9 +5521,31 @@
             }
           ]
         },
+
+        "KSI-IAM-SNU": {
+          "fka": "KSI-IAM-03",
+          "name": "Securing Non-User Authentication",
+          "statement": "Enforce appropriately secure authentication methods for non-user accounts and services.",
+          "controls": [
+            "ac-2",
+            "ac-2.2",
+            "ac-4",
+            "ac-6.5",
+            "ia-3",
+            "ia-5.2",
+            "ra-5.5"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+
         "KSI-IAM-SUS": {
           "fka": "KSI-IAM-06",
-          "name": "Suspicious Activity",
+          "name": "Responding to Suspicious Activity",
           "statement": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity.",
           "controls": [
             "ac-2",
@@ -5593,22 +5562,56 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
+        }
+      }
+    },
+    "INR": {
+      "id": "KSI-INR",
+      "name": "Incident Response",
+      "web_name": "incident-response",
+      "short_name": "INR",
+      "theme": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+      "indicators": {
+        "KSI-INR-AAR": {
+          "fka": "KSI-INR-03",
+          "name": "Generating After Action Reports",
+          "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
         },
-        "KSI-IAM-AAM": {
-          "fka": "KSI-IAM-07",
-          "name": "Automated Account Management",
-          "statement": "Securely manage the lifecycle and privileges of all accounts, roles, and groups, using automation.",
+        "KSI-INR-RIR": {
+          "fka": "KSI-INR-01",
+          "name": "Reviewing Incident Response Procedures",
+          "statement": "Persistently review the effectiveness of documented incident response procedures.",
           "controls": [
-            "ac-2.2",
-            "ac-2.3",
-            "ac-2.13",
-            "ac-6.7",
-            "ia-4.4",
-            "ia-12",
-            "ia-12.2",
-            "ia-12.3",
-            "ia-12.5"
+            "ir-4",
+            "ir-4.1",
+            "ir-6",
+            "ir-6.1",
+            "ir-6.3",
+            "ir-7",
+            "ir-7.1",
+            "ir-8",
+            "ir-8.1",
+            "si-4.5"
           ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-INR-RPI": {
+          "fka": "KSI-INR-02",
+          "name": "Reviewing Past Incidents",
+          "statement": "Persistently review past incidents for patterns or vulnerabilities.",
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5625,9 +5628,63 @@
       "short_name": "MLA",
       "theme": "A secure cloud service offering will monitor, log, and audit all important events, activity, and changes.",
       "indicators": {
-        "KSI-MLA-SIM": {
+        "KSI-MLA-ALA": {
+          "fka": "KSI-MLA-08",
+          "name": "Authorizing Log Access",
+          "varies_by_level": {
+            "low": {
+              "statement": "**Optional:** Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
+            },
+            "moderate": {
+              "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
+            }
+          },
+          "controls": ["si-11"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-MLA-EVC": {
+          "fka": "KSI-MLA-05",
+          "name": "Evaluating Configurations",
+          "statement": "Persistently evaluate and test the configuration of machine-based information resources, especially infrastructure as code.",
+          "controls": ["ca-7", "cm-2", "cm-6", "si-7.7"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-MLA-LET": {
+          "fka": "KSI-MLA-07",
+          "name": "Logging Event Types",
+          "statement": "Maintain a list of information resources and event types that will be logged, monitored, and audited, then do so.",
+          "controls": [
+            "ac-2.4",
+            "ac-6.9",
+            "ac-17.1",
+            "ac-20.1",
+            "au-2",
+            "au-7.1",
+            "au-12",
+            "si-4.4",
+            "si-4.5",
+            "si-7.7"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-MLA-OSM": {
           "fka": "KSI-MLA-01",
-          "name": "Security Information and Event Management (SIEM)",
+          "name": "Operating SIEM Capability",
           "statement": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistent logging of events, activities, and changes.",
           "controls": [
             "ac-17.1",
@@ -5656,9 +5713,9 @@
             }
           ]
         },
-        "KSI-MLA-AUL": {
+        "KSI-MLA-RVL": {
           "fka": "KSI-MLA-02",
-          "name": "Audit Logging",
+          "name": "Reviewing Logs",
           "statement": "Persistently review and audit logs.",
           "controls": [
             "ac-2.4",
@@ -5675,60 +5732,6 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
-        },
-        "KSI-MLA-EVC": {
-          "fka": "KSI-MLA-05",
-          "name": "Evaluate Configuration",
-          "statement": "Persistently evaluate and test the configuration of machine-based information resources, especially infrastructure as code.",
-          "controls": ["ca-7", "cm-2", "cm-6", "si-7.7"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-MLA-EVT": {
-          "fka": "KSI-MLA-07",
-          "name": "Event Types",
-          "statement": "Maintain a list of information resources and event types that will be monitored, logged, and audited, then do so.",
-          "controls": [
-            "ac-2.4",
-            "ac-6.9",
-            "ac-17.1",
-            "ac-20.1",
-            "au-2",
-            "au-7.1",
-            "au-12",
-            "si-4.4",
-            "si-4.5",
-            "si-7.7"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-MLA-LDA": {
-          "fka": "KSI-MLA-08",
-          "name": "Log Data Access",
-          "varies_by_level": {
-            "low": {
-              "statement": "**Optional:** Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
-            },
-            "moderate": {
-              "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
-            }
-          },
-          "controls": ["si-11"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
         }
       }
     },
@@ -5739,9 +5742,9 @@
       "short_name": "PIY",
       "theme": "A secure cloud service offering will have intentional, organized, universal guidance for how every information resource, including personnel, is secured.",
       "indicators": {
-        "KSI-PIY-INV": {
+        "KSI-PIY-GIV": {
           "fka": "KSI-PIY-01",
-          "name": "Automated Inventory",
+          "name": "Generating Inventories",
           "statement": "Use authoritative sources to automatically generate real-time inventories of all information resources when needed.",
           "controls": [
             "cm-2.2",
@@ -5759,11 +5762,11 @@
             }
           ]
         },
-        "KSI-PIY-VDP": {
-          "fka": "KSI-PIY-03",
-          "name": "Vulnerability Disclosure Program",
-          "statement": "Persistently review the effectiveness of the provider's vulnerability disclosure program.",
-          "controls": ["ra-5.11"],
+        "KSI-PIY-RES": {
+          "fka": "KSI-PIY-08",
+          "name": "Reviewing Executive Support",
+          "statement": "Persistently review executive support for achieving the organization's security objectives.",
+          "controls": [],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5771,9 +5774,31 @@
             }
           ]
         },
-        "KSI-PIY-SSD": {
+        "KSI-PIY-RIS": {
+          "fka": "KSI-PIY-06",
+          "name": "Reviewing Investments in Security",
+          "statement": "Persistently review the effectiveness of the organization's investments in achieving security objectives.",
+          "controls": [
+            "ac-5",
+            "ca-2",
+            "cp-2.1",
+            "cp-4.1",
+            "ir-3.2",
+            "pm-3",
+            "sa-2",
+            "sa-3",
+            "sr-2.1"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-PIY-RSD": {
           "fka": "KSI-PIY-04",
-          "name": "Secure Software Development",
+          "name": "Reviewing Security in the SDLC",
           "statement": "Persistently review the effectiveness of building security and privacy considerations into the Software Development Lifecycle and aligning with CISA Secure By Design principles.",
           "controls": [
             "ac-5",
@@ -5796,33 +5821,11 @@
             }
           ]
         },
-        "KSI-PIY-SIE": {
-          "fka": "KSI-PIY-06",
-          "name": "Security Investment Effectiveness",
-          "statement": "Persistently review the effectiveness of the organization's investments in achieving security objectives.",
-          "controls": [
-            "ac-5",
-            "ca-2",
-            "cp-2.1",
-            "cp-4.1",
-            "ir-3.2",
-            "pm-3",
-            "sa-2",
-            "sa-3",
-            "sr-2.1"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-PIY-EXS": {
-          "fka": "KSI-PIY-08",
-          "name": "Executive Support",
-          "statement": "Persistently review executive support for achieving the organization's security objectives.",
-          "controls": [],
+        "KSI-PIY-RVD": {
+          "fka": "KSI-PIY-03",
+          "name": "Reviewing Vulnerability Disclosures",
+          "statement": "Persistently review the effectiveness of the provider's vulnerability disclosure program.",
+          "controls": ["ra-5.11"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5839,11 +5842,11 @@
       "short_name": "RPL",
       "theme": "A secure cloud service offering will define, maintain, and test incident response plan(s) and recovery capabilities to ensure minimal service disruption and data loss during incidents and contingencies.",
       "indicators": {
-        "KSI-RPL-RCO": {
-          "fka": "KSI-RPL-01",
-          "name": "Recovery Objectives",
-          "statement": "Persistently review desired Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
-          "controls": ["cp-2.3", "cp-10"],
+        "KSI-RPL-ABO": {
+          "fka": "KSI-RPL-03",
+          "name": "Aligning Backups with Objectives",
+          "statement": "Persistently review the alignment of machine-based information resource backups with defined recovery objectives.",
+          "controls": ["cm-2.3", "cp-6", "cp-9", "cp-10", "cp-10.2", "si-12"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5851,9 +5854,9 @@
             }
           ]
         },
-        "KSI-RPL-RCP": {
+        "KSI-RPL-ARP": {
           "fka": "KSI-RPL-02",
-          "name": "Recovery Plan",
+          "name": "Aligning Recovery Plan",
           "statement": "Persistently review the alignment of recovery plans with defined recovery objectives.",
           "controls": [
             "cp-2",
@@ -5880,11 +5883,11 @@
             }
           ]
         },
-        "KSI-RPL-ABO": {
-          "fka": "KSI-RPL-03",
-          "name": "Align Backups with Objectives",
-          "statement": "Persistently review the alignment of machine-based information resource backups with defined recovery objectives.",
-          "controls": ["cm-2.3", "cp-6", "cp-9", "cp-10", "cp-10.2", "si-12"],
+        "KSI-RPL-RRO": {
+          "fka": "KSI-RPL-01",
+          "name": "Reviewing Recovery Objectives",
+          "statement": "Persistently review desired Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
+          "controls": ["cp-2.3", "cp-10"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5892,9 +5895,9 @@
             }
           ]
         },
-        "KSI-RPL-RCT": {
+        "KSI-RPL-TRC": {
           "fka": "KSI-RPL-04",
-          "name": "Recovery Testing",
+          "name": "Testing Recovery Capabilities",
           "statement": "Persistently test the capability to recover from incidents and contingencies, including alignment with defined recovery objectives.",
           "controls": [
             "cp-2.1",
@@ -5924,54 +5927,9 @@
       "short_name": "SVC",
       "theme": "A secure cloud service offering will follow FedRAMP encryption policies, continuously verify information resource integrity, and restrict access to third-party information resources.",
       "indicators": {
-        "KSI-SVC-PNI": {
-          "fka": "KSI-SVC-01",
-          "name": "Persistent Improvement",
-          "statement": "Implement improvements based on persistent evaluation of information resources for opportunities to improve security.",
-          "controls": [
-            "cm-7.1",
-            "cm-12.1",
-            "ma-2",
-            "pl-8",
-            "sc-7",
-            "sc-39",
-            "si-2.2",
-            "si-4",
-            "sr-10"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-SVC-SNT": {
-          "fka": "KSI-SVC-02",
-          "name": "Secure Network Traffic",
-          "statement": "Encrypt or otherwise secure network traffic.",
-          "controls": [
-            "ac-1",
-            "ac-17.2",
-            "cp-9.8",
-            "sc-8",
-            "sc-8.1",
-            "sc-13",
-            "sc-20",
-            "sc-21",
-            "sc-22",
-            "sc-23"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
         "KSI-SVC-ACM": {
           "fka": "KSI-SVC-04",
-          "name": "Automate Configuration Management",
+          "name": "Automating Configuration Management",
           "statement": "Manage configuration of machine-based information resources using automation.",
           "controls": [
             "ac-2.4",
@@ -5993,29 +5951,9 @@
             }
           ]
         },
-        "KSI-SVC-VRI": {
-          "fka": "KSI-SVC-05",
-          "name": "Validate Resource Integrity",
-          "statement": "Use cryptographic methods to validate the integrity of machine-based information resources.",
-          "controls": [
-            "cm-2.2",
-            "cm-8.3",
-            "sc-13",
-            "sc-23",
-            "si-7",
-            "si-7.1",
-            "sr-10"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
         "KSI-SVC-ASM": {
           "fka": "KSI-SVC-06",
-          "name": "Automate Secret Management",
+          "name": "Automating Secret Management",
           "statement": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
           "controls": ["ac-17.2", "ia-5.2", "ia-5.6", "sc-12", "sc-17"],
           "updated": [
@@ -6025,9 +5963,31 @@
             }
           ]
         },
+        "KSI-SVC-EIS": {
+          "fka": "KSI-SVC-01",
+          "name": "Evaluating and Improving Security",
+          "statement": "Implement improvements based on persistent evaluation of information resources for opportunities to improve security.",
+          "controls": [
+            "cm-7.1",
+            "cm-12.1",
+            "ma-2",
+            "pl-8",
+            "sc-7",
+            "sc-39",
+            "si-2.2",
+            "si-4",
+            "sr-10"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-SVC-PRR": {
           "fka": "KSI-SVC-08",
-          "name": "Prevent Residual Risk",
+          "name": "Preventing Residual Risk",
           "varies_by_level": {
             "low": {
               "statement": "**Optional:** Persistently review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would likely negatively affect the confidentiality, integrity, or availability of federal customer data."
@@ -6044,9 +6004,51 @@
             }
           ]
         },
+        "KSI-SVC-RUD": {
+          "fka": "KSI-SVC-10",
+          "name": "Removing Unwanted Data",
+          "varies_by_level": {
+            "low": {
+              "statement": "**Optional:** Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
+            },
+            "moderate": {
+              "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
+            }
+          },
+          "controls": ["si-12.3", "si-18.4"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-SVC-SNT": {
+          "fka": "KSI-SVC-02",
+          "name": "Securing Network Traffic",
+          "statement": "Encrypt or otherwise secure network traffic.",
+          "controls": [
+            "ac-1",
+            "ac-17.2",
+            "cp-9.8",
+            "sc-8",
+            "sc-8.1",
+            "sc-13",
+            "sc-20",
+            "sc-21",
+            "sc-22",
+            "sc-23"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-SVC-VCM": {
           "fka": "KSI-SVC-09",
-          "name": "Validate Communications",
+          "name": "Validating Communications",
           "varies_by_level": {
             "low": {
               "statement": "**Optional:** Persistently validate the authenticity and integrity of communications between machine-based information resources using automation."
@@ -6063,18 +6065,19 @@
             }
           ]
         },
-        "KSI-SVC-UDR": {
-          "fka": "KSI-SVC-10",
-          "name": "Unwanted Data Removal",
-          "varies_by_level": {
-            "low": {
-              "statement": "**Optional:** Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
-            },
-            "moderate": {
-              "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
-            }
-          },
-          "controls": ["si-12.3", "si-18.4"],
+        "KSI-SVC-VRI": {
+          "fka": "KSI-SVC-05",
+          "name": "Validating Resource Integrity",
+          "statement": "Use cryptographic methods to validate the integrity of machine-based information resources.",
+          "controls": [
+            "cm-2.2",
+            "cm-8.3",
+            "sc-13",
+            "sc-23",
+            "si-7",
+            "si-7.1",
+            "sr-10"
+          ],
           "updated": [
             {
               "date": "2100-12-31",
@@ -6084,16 +6087,16 @@
         }
       }
     },
-    "TPR": {
-      "id": "KSI-TPR",
-      "name": "Third-Party Information Resources",
-      "web_name": "third-party-information-resources",
-      "short_name": "TPR",
+    "SCR": {
+      "id": "KSI-SCR",
+      "name": "Supply Chain Risk",
+      "web_name": "supply-chain-risk",
+      "short_name": "SCR",
       "theme": "A secure cloud service offering will understand, monitor, and manage supply chain risks from third-party information resources.",
       "indicators": {
-        "KSI-TPR-MAN": {
+        "KSI-SCR-MIT": {
           "fka": "KSI-TPR-03",
-          "name": "Supply Chain Risk Management",
+          "name": "Mitigating Supply Chain Risk",
           "statement": "Persistently identify, review, and mitigate potential supply chain risks.",
           "controls": [
             "ac-20",
@@ -6112,13 +6115,13 @@
           "updated": [
             {
               "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+              "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
         },
-        "KSI-TPR-MON": {
+        "KSI-RSC-MON": {
           "fka": "KSI-TPR-04",
-          "name": "Supply Chain Risk Monitoring",
+          "name": "Monitoring Supply Chain Risk",
           "statement": "Automatically monitor third party software information resources for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
           "controls": [
             "ac-20",
@@ -6135,7 +6138,7 @@
           "updated": [
             {
               "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+              "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
         }
