@@ -2107,7 +2107,7 @@
         },
         "labels": {
           "CSX": {
-            "description": "These requirements and recommendations apply to all FedRAMP 20x Validated cloud service offerings.",
+            "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
             "name": "20x-Specific Provider Responsibilities"
           }
         }
@@ -2510,11 +2510,11 @@
         },
         "labels": {
           "CSX": {
-            "description": "These requirements and recommendations apply to all FedRAMP Validated cloud service offerings.",
+            "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
             "name": "20x-Specific Provider Responsibilities"
           },
           "TPX": {
-            "description": "These requirements and recommendations apply to all assessors performing verification and validation for FedRAMP Validated cloud service offerings.",
+            "description": "These requirements and recommendations apply to all assessors performing verification and validation for the 20x path.",
             "name": "20x-Specific Assessor Responsibilities"
           }
         }
@@ -3571,7 +3571,7 @@
         },
         "labels": {
           "CSX": {
-            "description": "These requirements and recommendations apply to all FedRAMP Validated cloud service offerings.",
+            "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
             "name": "20x-Specific Provider Responsibilities"
           }
         }
@@ -4748,33 +4748,16 @@
           ]
         },
         "labels": {
-          "CSO": {
-            "description": "These requirements and recommendations apply to ALL cloud service offerings for FedRAMP Validation.",
-            "name": "General Provider Responsibilities"
+          "CSX": {
+            "description": "These requirements and recommendations apply to all cloud service offerings following the 20x path.",
+            "name": "20x-Specific Provider Responsibilities"
           }
         }
       },
       "data": {
         "20x": {
-          "CSO": {
-            "KSI-CSO-AKI": {
-              "fka": "FRR-KSI-01",
-              "statement": "Cloud service providers SHOULD apply ALL Key Security Indicators to ALL aspects of their _cloud service offering_ that are within the FedRAMP Minimum Assessment Scope.",
-              "name": "Application of Key Security Indicators",
-              "affects": ["Providers"],
-              "primary_key_word": "SHOULD",
-              "impact": {
-                "low": true,
-                "moderate": true
-              },
-              "updated": [
-                {
-                  "date": "2100-12-31",
-                  "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ]
-            },
-            "KSI-CSO-SUM": {
+          "CSX": {
+            "KSI-CSX-SUM": {
               "fka": "FRR-KSI-02",
               "statement": "Providers MUST maintain simple high-level summaries of at least the following for each Key Security Indicator:",
               "following_information": [
@@ -4802,6 +4785,51 @@
                 "Machine-Based (information resources)",
                 "Persistent Validation"
               ]
+            },
+            "KSI-CSX-MAS": {
+              "fka": "FRR-KSI-01",
+              "statement": "Providers SHOULD apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.",
+              "name": "Application within MAS",
+              "affects": ["Providers"],
+              "primary_key_word": "SHOULD",
+              "impact": {
+                "low": true,
+                "moderate": true
+              },
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "Removed unnecessary cloud service at the beginning; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                }
+              ]
+            },
+            "KSI-CSX-ORD": {
+              "statement": "Providers MAY use the following order of criticality for approaching Authorization by FedRAMP Key Security Indicators for an initial authorization package:",
+              "following_information": [
+                "Minimum Assessment Scope (MAS)",
+                "Authorization Data Sharing (ADS)",
+                "Using Cryptographic Modules (UCM)",
+                "Vulnerability Detection and Response (VDR)",
+                "Significant Change Notifications (SCN)",
+                "Persistent Validation and Assessment (PVA)",
+                "Recommended Secure Configuration (RSC)",
+                "Collaborative Continuous Monitoring (CCM)",
+                "FedRAMP Security Inbox (FSI)",
+                "Incident Communications Procedures (ICP)"
+              ],
+              "name": "AFR Order of Criticality",
+              "affects": ["Providers"],
+              "primary_key_word": "MAY",
+              "impact": {
+                "low": true,
+                "moderate": true
+              },
+              "updated": [
+                {
+                  "date": "2100-12-31",
+                  "comment": "This recommendation is new in v-0.9.0 to clarify expectations."
+                }
+              ]
             }
           }
         }
@@ -4816,6 +4844,69 @@
       "short_name": "AFR",
       "theme": "A secure cloud service provider seeking FedRAMP authorization will address all FedRAMP 20x requirements and recommendations, including government-specific requirements for maintaining a secure system and reporting on activities to government customers.",
       "indicators": {
+        "KSI-AFR-ADS": {
+          "fka": "KSI-AFR-03",
+          "name": "Authorization Data Sharing",
+          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) process and persistently address all related requirements and recommendations.",
+          "reference": "Authorization Data Sharing",
+          "reference_url": "https://fedramp.gov/docs/20x/authorization-data-sharing",
+          "controls": [
+            "ac-3",
+            "ac-4",
+            "au-2",
+            "au-3",
+            "au-6",
+            "ca-2",
+            "ir-4",
+            "ra-5",
+            "sc-8"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-CCM": {
+          "fka": "KSI-AFR-06",
+          "name": "Collaborative Continuous Monitoring",
+          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) process and persistently address all related requirements and recommendations.",
+          "reference": "Collaborative Continuous Monitoring",
+          "reference_url": "https://fedramp.gov/docs/20x/collaborative-continuous-monitoring",
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-FSI": {
+          "fka": "KSI-AFR-08",
+          "name": "FedRAMP Security Inbox",
+          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
+          "reference": "FedRAMP Security Inbox",
+          "reference_url": "https://fedramp.gov/docs/20x/fedramp-security-inbox",
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-ICP": {
+          "fka": "KSI-AFR-10",
+          "name": "Incident Communications Procedures",
+          "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
+          "reference": "Incident Communications Procedures",
+          "reference_url": "https://fedramp.gov/docs/20x/incident-communications-procedures",
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-AFR-MAS": {
           "fka": "KSI-AFR-01",
           "name": "Minimum Assessment Scope",
@@ -4860,23 +4951,70 @@
             }
           ]
         },
-        "KSI-AFR-ADS": {
-          "fka": "KSI-AFR-03",
-          "name": "Authorization Data Sharing",
-          "statement": "Determine how authorization data will be shared with all necessary parties in alignment with the FedRAMP Authorization Data Sharing (ADS) process and persistently address all related requirements and recommendations.",
-          "reference": "Authorization Data Sharing",
-          "reference_url": "https://fedramp.gov/docs/20x/authorization-data-sharing",
+        "KSI-AFR-PVA": {
+          "fka": "KSI-AFR-09",
+          "name": "Persistent Validation and Assessment",
+          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) process, and persistently address all related requirements and recommendations.",
+          "reference": "Persistent Validation and Assessment",
+          "reference_url": "https://fedramp.gov/docs/20x/persistent-validation-and-assessment",
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-RSC": {
+          "fka": "KSI-AFR-07",
+          "name": "Recommended Secure Configuration",
+          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance process and persistently address all related requirements and recommendations.",
+          "reference": "Recommended Secure Configuration",
+          "reference_url": "https://fedramp.gov/docs/20x/recommended-secure-configuration",
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-SCN": {
+          "fka": "KSI-AFR-05",
+          "name": "Significant Change Notifications",
+          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) process and persistently address all related requirements and recommendations.",
+          "reference": "Significant Change Notifications",
+          "reference_url": "https://fedramp.gov/docs/20x/significant-change-notifications",
           "controls": [
-            "ac-3",
-            "ac-4",
-            "au-2",
-            "au-3",
-            "au-6",
-            "ca-2",
-            "ir-4",
+            "ca-7.4",
+            "cm-3.4",
+            "cm-4",
+            "cm-7.1",
+            "au-5",
+            "ca-5",
+            "ca-7",
             "ra-5",
-            "sc-8"
+            "ra-5.2",
+            "sa-22",
+            "si-2",
+            "si-2.2",
+            "si-3",
+            "si-5",
+            "si-7.7",
+            "si-10",
+            "si-11"
           ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-AFR-UCM": {
+          "fka": "KSI-AFR-11",
+          "name": "Using Cryptographic Modules",
+          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) guidance and persistently address all related requirements and recommendations.",
+          "reference": "Using Cryptographic Modules",
+          "reference_url": "https://fedramp.gov/docs/20x/using-cryptographic-modules",
           "updated": [
             {
               "date": "2100-12-31",
@@ -4941,176 +5079,10 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
-        },
-        "KSI-AFR-SCN": {
-          "fka": "KSI-AFR-05",
-          "name": "Significant Change Notifications",
-          "statement": "Determine how significant changes will be tracked and how all necessary parties will be notified in alignment with the FedRAMP Significant Change Notifications (SCN) process and persistently address all related requirements and recommendations.",
-          "reference": "Significant Change Notifications",
-          "reference_url": "https://fedramp.gov/docs/20x/significant-change-notifications",
-          "controls": [
-            "ca-7.4",
-            "cm-3.4",
-            "cm-4",
-            "cm-7.1",
-            "au-5",
-            "ca-5",
-            "ca-7",
-            "ra-5",
-            "ra-5.2",
-            "sa-22",
-            "si-2",
-            "si-2.2",
-            "si-3",
-            "si-5",
-            "si-7.7",
-            "si-10",
-            "si-11"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-CCM": {
-          "fka": "KSI-AFR-06",
-          "name": "Collaborative Continuous Monitoring",
-          "statement": "Maintain a plan and process for providing Ongoing Authorization Reports and Quarterly Reviews for all necessary parties in alignment with the FedRAMP Collaborative Continuous Monitoring (CCM) process and persistently address all related requirements and recommendations.",
-          "reference": "Collaborative Continuous Monitoring",
-          "reference_url": "https://fedramp.gov/docs/20x/collaborative-continuous-monitoring",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-RSC": {
-          "fka": "KSI-AFR-07",
-          "name": "Recommended Secure Configuration",
-          "statement": "Develop secure by default configurations and provide guidance for secure configuration of the cloud service offering to customers in alignment with the FedRAMP Recommended Secure Configuration (RSC) guidance process and persistently address all related requirements and recommendations.",
-          "reference": "Recommended Secure Configuration",
-          "reference_url": "https://fedramp.gov/docs/20x/recommended-secure-configuration",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-FSI": {
-          "fka": "KSI-AFR-08",
-          "name": "FedRAMP Security Inbox",
-          "statement": "Operate a secure inbox to receive critical communication from FedRAMP and other government entities in alignment with FedRAMP Security Inbox (FSI) requirements and persistently address all related requirements and recommendations.",
-          "reference": "FedRAMP Security Inbox",
-          "reference_url": "https://fedramp.gov/docs/20x/fedramp-security-inbox",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-PVA": {
-          "fka": "KSI-AFR-09",
-          "name": "Persistent Validation and Assessment",
-          "statement": "Persistently validate, assess, and report on the effectiveness and status of security decisions and policies that are implemented within the cloud service offering in alignment with the FedRAMP 20x Persistent Validation and Assessment (PVA) process, and persistently address all related requirements and recommendations.",
-          "reference": "Persistent Validation and Assessment",
-          "reference_url": "https://fedramp.gov/docs/20x/persistent-validation-and-assessment",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-ICP": {
-          "fka": "KSI-AFR-10",
-          "name": "Incident Communications Procedures",
-          "statement": "Integrate FedRAMP's Incident Communications Procedures (ICP) into incident response procedures and persistently address all related requirements and recommendations.",
-          "reference": "Incident Communications Procedures",
-          "reference_url": "https://fedramp.gov/docs/20x/incident-communications-procedures",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-AFR-UCM": {
-          "fka": "KSI-AFR-11",
-          "name": "Using Cryptographic Modules",
-          "statement": "Ensure that cryptographic modules used to protect potentially sensitive federal customer data are selected and used in alignment with the FedRAMP 20x Using Cryptographic Modules (UCM) guidance and persistently address all related requirements and recommendations.",
-          "reference": "Using Cryptographic Modules",
-          "reference_url": "https://fedramp.gov/docs/20x/using-cryptographic-modules",
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
         }
       }
     },
-    "CED": {
-      "id": "KSI-CED",
-      "name": "Cybersecurity Education",
-      "web_name": "cybersecurity-education",
-      "short_name": "CED",
-      "theme": "A secure cloud service provider will educate their employees on cybersecurity measures, testing them persistently to ensure their knowledge is satisfactory.",
-      "indicators": {
-        "KSI-CED-GTR": {
-          "fka": "KSI-CED-01",
-          "name": "General Training",
-          "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
-          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CED-RST": {
-          "fka": "KSI-CED-02",
-          "name": "Role-Specific Training",
-          "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
-          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CED-DET": {
-          "fka": "KSI-CED-03",
-          "name": "Development and Engineering Training",
-          "statement": "Persistently review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
-          "controls": ["cp-3", "ir-2", "ps-6"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CED-RRT": {
-          "fka": "KSI-CED-04",
-          "name": "Response and Recovery Training",
-          "statement": "Persistently review the effectiveness of role-specific training given to staff involved with incident response or disaster recovery.",
-          "controls": [],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        }
-      }
-    },
+
     "CMT": {
       "id": "KSI-CMT",
       "name": "Change Management",
@@ -5311,6 +5283,120 @@
             }
           },
           "controls": ["ca-2.1", "ca-7.1"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        }
+      }
+    },
+    "CED": {
+      "id": "KSI-CED",
+      "name": "Cybersecurity Education",
+      "web_name": "cybersecurity-education",
+      "short_name": "CED",
+      "theme": "A secure cloud service provider will educate their employees on cybersecurity measures, testing them persistently to ensure their knowledge is satisfactory.",
+      "indicators": {
+        "KSI-CED-GTR": {
+          "fka": "KSI-CED-01",
+          "name": "General Training",
+          "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
+          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CED-RST": {
+          "fka": "KSI-CED-02",
+          "name": "Role-Specific Training",
+          "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
+          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CED-DET": {
+          "fka": "KSI-CED-03",
+          "name": "Development and Engineering Training",
+          "statement": "Persistently review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
+          "controls": ["cp-3", "ir-2", "ps-6"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-CED-RRT": {
+          "fka": "KSI-CED-04",
+          "name": "Response and Recovery Training",
+          "statement": "Persistently review the effectiveness of role-specific training given to staff involved with incident response or disaster recovery.",
+          "controls": [],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        }
+      }
+    },
+
+    "INR": {
+      "id": "KSI-INR",
+      "name": "Incident Response",
+      "web_name": "incident-response",
+      "short_name": "INR",
+      "theme": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
+      "indicators": {
+        "KSI-INR-IRP": {
+          "fka": "KSI-INR-01",
+          "name": "Incident Response Procedures",
+          "statement": "Persistently review the effectiveness of documented incident response procedures.",
+          "controls": [
+            "ir-4",
+            "ir-4.1",
+            "ir-6",
+            "ir-6.1",
+            "ir-6.3",
+            "ir-7",
+            "ir-7.1",
+            "ir-8",
+            "ir-8.1",
+            "si-4.5"
+          ],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-INR-RPI": {
+          "fka": "KSI-INR-02",
+          "name": "Review Past Incidents",
+          "statement": "Persistently review past incidents for patterns or vulnerabilities.",
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
+          "updated": [
+            {
+              "date": "2100-12-31",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
+        "KSI-INR-AAR": {
+          "fka": "KSI-INR-03",
+          "name": "After Action Reports",
+          "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
           "updated": [
             {
               "date": "2100-12-31",
@@ -5523,62 +5609,6 @@
             "ia-12.3",
             "ia-12.5"
           ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        }
-      }
-    },
-    "INR": {
-      "id": "KSI-INR",
-      "name": "Incident Response",
-      "web_name": "incident-response",
-      "short_name": "INR",
-      "theme": "A secure cloud service offering will document, report, and analyze security incidents to ensure regulatory compliance and continuous security improvement.",
-      "indicators": {
-        "KSI-INR-IRP": {
-          "fka": "KSI-INR-01",
-          "name": "Incident Response Procedures",
-          "statement": "Persistently review the effectiveness of documented incident response procedures.",
-          "controls": [
-            "ir-4",
-            "ir-4.1",
-            "ir-6",
-            "ir-6.1",
-            "ir-6.3",
-            "ir-7",
-            "ir-7.1",
-            "ir-8",
-            "ir-8.1",
-            "si-4.5"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-INR-RPI": {
-          "fka": "KSI-INR-02",
-          "name": "Review Past Incidents",
-          "statement": "Persistently review past incidents for patterns or vulnerabilities.",
-          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-INR-AAR": {
-          "fka": "KSI-INR-03",
-          "name": "After Action Reports",
-          "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
-          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
           "updated": [
             {
               "date": "2100-12-31",
