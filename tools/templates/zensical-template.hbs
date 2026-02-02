@@ -114,8 +114,13 @@
 {{#if terms}}
 
     ---
-
+{{#if (stringEquals @root.info.name "Key Security Indicators")}}
+    **Terms:** {{#each terms}}[{{this}}](../fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+     {{else if (stringEquals @root.type "KSI")}}
+    **Terms:** {{#each terms}}[{{this}}](../fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+      {{else}}
     **Terms:** {{#each terms}}[{{this}}](fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+  {{/if}}
 {{/if}}
 
 {{/inline}}
@@ -240,7 +245,6 @@
 {{!-- ######################################################################## --}}
 {{!-- begin KSI block --}}
 {{#if (stringEquals info.short_name "KSI")}}
-
 ## Key Security Indicator Themes
 
 !!! info ""

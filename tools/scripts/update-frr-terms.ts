@@ -61,8 +61,18 @@ interface FRRSection {
 interface DocumentationJson {
   info: any;
   FRD: FRDSection;
-  FRR: Record<string, FRRSection>;
-  KSI: any; // Not directly used for this task
+  FRR: Record<string, FRRSection>; // FRR is a record of sections, each containing data
+  KSI: Record<
+    string,
+    {
+      // KSI is a record of themes
+      id: string;
+      web_name: string;
+      name: string;
+      theme: string;
+      indicators: FRRRule[] | Record<string, FRRRule>; // Each indicator within a KSI theme is an FRRRule
+    }
+  >;
 }
 
 /**
@@ -185,7 +195,10 @@ async function processDocumentationJson(): Promise<void> {
             const foundFrdIds = new Set<string>();
 
             // Iterate through all FRD terms and their alternatives to find matches in the rule's text
-            for (const [termOrAlt, primaryTermString] of frdTermToIdMap.entries()) {
+            for (const [
+              termOrAlt,
+              primaryTermString,
+            ] of frdTermToIdMap.entries()) {
               const regex = new RegExp(`\\b${escapeRegExp(termOrAlt)}\\b`, "g");
               if (regex.test(combinedRuleText)) {
                 foundFrdIds.add(primaryTermString);
@@ -211,6 +224,84 @@ async function processDocumentationJson(): Promise<void> {
                 rulesUpdated++;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  // 5. Iterate through each indicator in the KSI section and identify referenced FRD terms.
+  console.log("\nProcessing KSI indicators...");
+  for (const themeKey in jsonContent.KSI) {
+    const ksiTheme = jsonContent.KSI[themeKey];
+    if (ksiTheme && ksiTheme.indicators) {
+      const indicatorsToProcess = Array.isArray(ksiTheme.indicators)
+        ? ksiTheme.indicators
+        : Object.values(ksiTheme.indicators);
+
+      for (const indicator of indicatorsToProcess) {
+        if (!indicator) continue;
+        rulesProcessed++; // Count KSI indicators as rules processed
+        // Use the indicator's name if available, otherwise a generic ID
+        const indicatorId =
+          indicator.name || `KSI Indicator (Theme: ${themeKey})`;
+
+        const indicatorTextParts: string[] = [];
+
+        // Collect all relevant text fields from the current indicator
+        if (indicator.statement) indicatorTextParts.push(indicator.statement);
+        if (indicator.note) indicatorTextParts.push(indicator.note);
+        // Join array elements into a single string for searching
+        if (indicator.following_information)
+          indicatorTextParts.push(indicator.following_information.join(" "));
+        if (indicator.following_information_bullets)
+          indicatorTextParts.push(
+            indicator.following_information_bullets.join(" "),
+          );
+
+        // Handle statements within 'varies_by_level' for different impact levels
+        if (indicator.varies_by_level) {
+          if (indicator.varies_by_level.low?.statement)
+            indicatorTextParts.push(indicator.varies_by_level.low.statement);
+          if (indicator.varies_by_level.moderate?.statement)
+            indicatorTextParts.push(
+              indicator.varies_by_level.moderate.statement,
+            );
+          if (indicator.varies_by_level.high?.statement)
+            indicatorTextParts.push(indicator.varies_by_level.high.statement);
+        }
+
+        // Combine all text parts into a single lowercase string for case-insensitive searching
+        const combinedIndicatorText = indicatorTextParts
+          .join(" ")
+          .toLowerCase();
+        const foundFrdIds = new Set<string>();
+
+        // Iterate through all FRD terms and their alternatives to find matches in the indicator's text
+        for (const [termOrAlt, primaryTermString] of frdTermToIdMap.entries()) {
+          const regex = new RegExp(`\\b${escapeRegExp(termOrAlt)}\\b`, "g");
+          if (regex.test(combinedIndicatorText)) {
+            foundFrdIds.add(primaryTermString);
+          }
+        }
+
+        // Convert the set of unique FRD_IDs to a sorted array
+        const newTermsArray = Array.from(foundFrdIds).sort();
+        const hasChanged = !arraysEqual(indicator.terms || [], newTermsArray);
+
+        if (!updateMode) {
+          if (hasChanged) {
+            console.log(`[WILL UPDATE] KSI Indicator: ${indicatorId}`);
+            console.log(`  Current: ${JSON.stringify(indicator.terms || [])}`);
+            console.log(`  New:     ${JSON.stringify(newTermsArray)}`);
+          } else {
+            console.log(`[NO CHANGE]   KSI Indicator: ${indicatorId}`);
+          }
+        } else {
+          // Only update the indicator if the 'terms' array has changed to avoid unnecessary modifications
+          if (hasChanged) {
+            indicator.terms = newTermsArray;
+            rulesUpdated++;
           }
         }
       }
