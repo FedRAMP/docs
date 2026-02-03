@@ -13,7 +13,7 @@ These policies apply directly to Rev5 cloud service offerings and are **mandator
 | Policy | Effective Date(s) |
 | -- | -- |
 | [FedRAMP Security Inbox](fedramp-security-inbox) | January 5, 2026 | 
-| [Recommended Secure Configuration](recommended-secure-configuration) | March 1, 2026 |
+| [Secure Configuration Guide](secure-configuration-guide) _(formerly called "Recommended Secure Configuration")_ | March 1, 2026 |
 
 ## Optional Balance for Rev5
 

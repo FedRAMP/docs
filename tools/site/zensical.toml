@@ -74,7 +74,7 @@ nav = [
             { "Incident Communications Procedures" = "20x/incident-communications-procedures.md" },
             { "Minimum Assessment Scope" = "20x/minimum-assessment-scope.md" },
             { "Persistent Validation and Assessment" = "20x/persistent-validation-and-assessment.md" },
-            { "Recommended Secure Configuration" = "20x/recommended-secure-configuration.md" },
+            { "Secure Configuration Guide" = "20x/secure-configuration-guide.md" },
             { "Significant Change Notifications" = "20x/significant-change-notifications.md" },
             { "Using Cryptographic Modules" = "20x/using-cryptographic-modules.md" },
             { "Vulnerability Detection and Response" = "20x/vulnerability-detection-and-response.md" },
@@ -130,7 +130,7 @@ nav = [
             "rev5/balance/index.md",
             { "Definitions" = "rev5/balance/fedramp-definitions.md" },
             { "Mandatory for Rev5" = [
-                { "Recommended Secure Configuration" = "rev5/balance/recommended-secure-configuration.md" },
+                { "Secure Configuration Guide" = "rev5/balance/secure-configuration-guide.md" },
                 { "FedRAMP Security Inbox" = "rev5/balance/fedramp-security-inbox.md" },
             ] },
             { "Optional for Rev5" = [
