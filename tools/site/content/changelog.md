@@ -22,13 +22,20 @@ requirements and recommendations. Some requirements and recommendations have
 been updated for clarity or reorganized but in general **there are no significant
 changes to the guidance itself.**
 
+!!! abstract "Phase 2 pilot participants are not required to update!"
+
+    20x Phase 2 pilot participants 
+    [may continue to use v0.4.0 names and ids](https://github.com/FedRAMP/docs/tree/ref-v0.4.0-alpha).
+    The authorization package for pilot participants should be updated to v0.9.0 or a subsequent
+    version within 3 months of receiving a pilot authorization.
+
 ### Specific Changes of Note
 
-1. The Minimum Assessment Scope has been simplified considerably.
+1. The **Recommended Secure Configuration** was renamed to **Secure Configuration Guide** and simplified by combining a few requirements and recommendations for clarity and establishing a separate Enhanced Capabilities section for recommendations.
 
-2. The `Recommended Secure Configuration` process has been renamed to `Secure Configuration Guide`; this has been simplified by combining a few requirements and recommendations for clarity and establishing a separate `Enhanced Capabilities` section for recommendations.
+2. The **Minimum Assessment Scope** has been simplified considerably.
 
-3. The FedRAMP Security Inbox has been updated to generally change use of "respond" (or similar) to "react" (or similar) to clarify that a reply via email is not always the expected reaction.
+3. The **FedRAMP Security Inbox** has been updated to generally change use of "respond" (or similar) to "react" (or similar) to clarify that a reply via email is not always the expected reaction.
 
 ### General Display Changes
 

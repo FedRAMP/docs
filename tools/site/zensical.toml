@@ -9,6 +9,11 @@ site_url = "https://fedramp.gov/docs/"
 repo_url = "https://github.com/fedramp/docs"
 repo_name = "FedRAMP/docs"
 nav = [
+    { "General Info" = [
+        "index.md",
+        { "Documentation Changelog" = "changelog.md" },
+        { "FedRAMP Logos" = "logos.md" },
+    ] },
     { "Authority & Responsibility" = [
         "authority/index.md",
         { "Foundational Authority" = [
@@ -44,13 +49,8 @@ nav = [
         ] },
         { "Historical" = [
             { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md" },
-        ] }        
-    ] },
-    { "General Info" = [
-        "index.md",
-            { "Documentation Changelog" = "changelog.md" },
-            { "FedRAMP Logos" = "logos.md"}
         ] },
+    ] },
     { "FedRAMP 20x" = [
         "20x/index.md",
         { "Foundation" = [
@@ -155,7 +155,7 @@ homepage = "/"
 
 [project.theme]
 custom_dir = "overrides"
-logo = "assets/fedramp-logo-just-letters.svg"
+logo = "assets/secondary_logo.png"
 language = "en"
 features = [
     "announce.dismiss",
