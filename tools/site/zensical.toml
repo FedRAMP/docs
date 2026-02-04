@@ -44,8 +44,12 @@ nav = [
         ] },
         { "Historical" = [
             { "Rescinded 2011 Memo" = "authority/rescinded-2011-fedramp-memo.md" },
-        ] },
+        ] }        
     ] },
+    { "General Info" = [
+        "index.md",
+            { "Documentation Changelog" = "changelog.md" },
+        ] },
     { "FedRAMP 20x" = [
         "20x/index.md",
         { "Foundation" = [

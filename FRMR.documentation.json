@@ -60,7 +60,7 @@
           "definition": "A vulnerability that the provider does not intend to fully mitigate or remediate, OR that has not or will not be fully mitigated or remediated within the maximum overdue period recommended or required by FedRAMP.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -75,7 +75,7 @@
           "note": "Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -92,7 +92,7 @@
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -107,7 +107,7 @@
           "note": "This process identifies the requirements for an assessment and authorization performed by FedRAMP prior to any agency use of the cloud service offering, therefore agency assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials agency authorization teams need to assess the cloud service offering for agency use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -121,7 +121,7 @@
           "definition": "All entities whose interests are affected directly by activity related to a specific cloud service offering in the context of a FedRAMP authorization. This always includes FedRAMP and any agency customer who is operating the cloud service offering, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential agency customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -139,7 +139,7 @@
           "note": "In FedRAMP documentation, authorization package always refers to a FedRAMP authorization package unless otherwise specified.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -154,7 +154,7 @@
           "note": "In FedRAMP documentation, authorization data always refers to FedRAMP authorization data unless otherwise specified.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -169,7 +169,7 @@
           "definition": "A severe negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in a severe degradation in the availability or performance of services within the cloud service offering for 24+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a majority of the federal customer data stored within the cloud service offering.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -184,7 +184,7 @@
           "definition": "A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Scope.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -200,7 +200,7 @@
           "definition": "Changes to information resources that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -216,7 +216,7 @@
           "note": "This only applies if the vulnerability is not and was not present; a remediated vulnerability or a fully mitigated vulnerability cannot also be a false positive vulnerability.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -232,7 +232,7 @@
           "definition": "An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -247,7 +247,7 @@
           "note": "In the context of FedRAMP authorization, \"federal customer data\" ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific agencies may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the agency; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -262,7 +262,7 @@
           "definition": "A vulnerability where the likelihood of exploitation or potential adverse impact of exploitation has been reduced from the original evaluation until either are negligible, but the vulnerability is still detected.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -279,7 +279,7 @@
           "definition": "Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -293,7 +293,7 @@
           "definition": "The type of significant change that is likely to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -310,7 +310,7 @@
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -328,7 +328,7 @@
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -343,7 +343,7 @@
           "definition": "The first full assessment of a cloud service offering seeking FedRAMP authorization, coordinated by the provider with all necessary assessors, that results in a FedRAMP authorization.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -366,7 +366,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -385,7 +385,7 @@
           "referenceurl": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -400,7 +400,7 @@
           "definition": "A reasonable degree of probability based on context.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -423,7 +423,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -438,7 +438,7 @@
           "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the cloud service offering for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the federal customer data stored within the cloud service offering by only a few relevant users.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -454,7 +454,7 @@
           "note": "All other information resources that do not rely on computers are non-machine-based information resources.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -470,7 +470,7 @@
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -485,7 +485,7 @@
           "definition": "A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the cloud service offering; OR (ii) result in degradation of the availability or performance of services within the cloud service offering for only a few relevant users.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -501,7 +501,7 @@
           "definition": "A regular report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -516,7 +516,7 @@
           "definition": "A vulnerability that the provider intends to fully mitigate or remediate but has not or will not do so within the time frames recommended or required by FedRAMP.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -531,7 +531,7 @@
           "definition": "A vulnerability where the likelihood or potential adverse impact of exploitation has been reduced from the original evaluation but the risk of exploitation still exists and the vulnerability is still detected.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -546,7 +546,7 @@
           "definition": "Follow-on assessments of a cloud service offering focused on Key Security Indicators, coordinated by the provider with all necessary assessors, to maintain a FedRAMP authorization or change its impact categorization.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -565,7 +565,7 @@
           "definition": "The systematic and persistent process of validating that information resources within a cloud service offering are operating in a secure manner as expected by the goals and objectives outlined by the provider against FedRAMP Key Security Indicators.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -581,7 +581,7 @@
           "note": "The use of persistently indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of \"continuous\" in federal information security policies.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -596,7 +596,7 @@
           "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -612,7 +612,7 @@
           "note": "Any references to privileged accounts in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to privileged accounts.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -628,7 +628,7 @@
           "note": "The use of promptly in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a cloud service offering.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -643,7 +643,7 @@
           "definition": "A regular synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -658,7 +658,7 @@
           "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -673,7 +673,7 @@
           "definition": "A vulnerability that has been neutralized or eliminated and is no longer detected.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -687,7 +687,7 @@
           "definition": "The type of significant change that regularly and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -702,7 +702,7 @@
           "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the cloud service offering, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the federal customer data stored within the cloud service offering.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -719,7 +719,7 @@
           "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -734,7 +734,7 @@
           "definition": "Any information resource that is not entirely included in the assessment for the cloud service offering seeking authorization.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -750,7 +750,7 @@
           "note": "Any references to top-level administrative accounts in FedRAMP materials should be presumed to apply to top-level administrative roles or other similar capabilities that are used to assign top-level administrative account privileges.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -765,7 +765,7 @@
           "note": "Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -781,7 +781,7 @@
           "note": "In FedRAMP documentation, all references to trust centers indicate FedRAMP-compatible trust centers unless otherwise specified.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -798,7 +798,7 @@
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -817,7 +817,7 @@
           "note": "This definition applies to other forms such as \"detect vulnerabilities\" or simply \"detection\" / \"detected\" used in FedRAMP materials.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -836,7 +836,7 @@
           "note": "This definition applies to other forms such as \"respond to vulnerabilities\" or simply \"response\" / \"responded\" used in FedRAMP materials.",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -937,7 +937,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Modified to must for 20x, clarified wider application; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -959,7 +959,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -976,7 +976,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Modified to should, clarified wider application; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -994,7 +994,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1019,7 +1019,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1058,7 +1058,7 @@
               "note": "Generally, this information should be available on a public webpage.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Added requirements from other processes; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
               ]
@@ -1072,7 +1072,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed impact levels to security objectives; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1086,7 +1086,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Simplified statement; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
               ]
@@ -1123,7 +1123,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Added technical assistance; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1137,7 +1137,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1157,7 +1157,7 @@
               "name": "Public Guidance",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1171,7 +1171,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Split into ADS-CSO-AGA and ADS-CSO-AAD; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
               ]
@@ -1183,7 +1183,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Split from FRR-ADS-AC-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
                 }
               ],
@@ -1214,7 +1214,7 @@
               "note": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access authorization data or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed unnecessary specification of necessary parties; changed from provider to trust center responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1228,7 +1228,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1242,7 +1242,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1256,7 +1256,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1274,7 +1274,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1292,7 +1292,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1306,7 +1306,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1408,7 +1408,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Re-ordered phrasing; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1425,7 +1425,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1443,7 +1443,7 @@
               "note": "This could be email by default but providers are encouraged to consider something more interactive as appropriate.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Added note; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1458,7 +1458,7 @@
               "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from agencies and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1476,7 +1476,7 @@
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1491,7 +1491,7 @@
               "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their Ongoing Authorization Reports during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1509,7 +1509,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1543,7 +1543,7 @@
               "affects": ["Providers"],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Combined requirements and recommendations that varied by impact level into a single set with minor wording modification as appropriate."
                 }
               ]
@@ -1561,7 +1561,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1575,7 +1575,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1589,7 +1589,7 @@
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1607,7 +1607,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1621,7 +1621,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1639,7 +1639,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Simplified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1654,7 +1654,7 @@
               "note": "This is because agencies are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1673,7 +1673,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1687,7 +1687,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1708,7 +1708,7 @@
               "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1736,7 +1736,7 @@
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1758,7 +1758,7 @@
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified notification requirements; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1773,7 +1773,7 @@
               "note": "This is a statutory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1792,7 +1792,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1818,7 +1818,7 @@
               "affects": ["Agencies"],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1845,7 +1845,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1925,7 +1925,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1944,7 +1944,7 @@
               "note": "Messages sent by FedRAMP without one of these designators are considered general communications and do not require an elevated reaction; these may be resolved in the normal course of business by the cloud service provider.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Reframed for clarity; changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -1958,7 +1958,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -1980,7 +1980,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -1998,7 +1998,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2017,7 +2017,7 @@
               "note": "High impact cloud service providers are expected to address Emergency messages (including tests) from FedRAMP with a reaction time appropriate to operating a service where failure to react rapidly might have a severe or catastrophic adverse effect on the U.S. Government; some Emergency messages may require faster reaction and all such messages should be addressed as quickly as possible.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2031,7 +2031,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2044,7 +2044,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2063,7 +2063,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2085,7 +2085,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2099,7 +2099,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2114,7 +2114,7 @@
               "note": "This requirement is intended to prevent cloud service providers from requiring FedRAMP to complete a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2128,7 +2128,7 @@
               "note": "Timeframes may vary by impact level of the cloud service offering.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2143,7 +2143,7 @@
               "note": "Senior security officials are determined by the provider.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2157,7 +2157,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2171,7 +2171,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2230,7 +2230,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2253,7 +2253,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2285,7 +2285,7 @@
               "timeframe_num": 1,
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2301,7 +2301,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2322,7 +2322,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2343,7 +2343,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2357,7 +2357,7 @@
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2371,7 +2371,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2385,7 +2385,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2479,7 +2479,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Added notes from former AY sections; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2500,7 +2500,7 @@
               "note": "Information resources (including third-party information resources) MAY vary by security objectives as appropriate to the level of information handled or impacted by the information resource.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Updated wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2525,7 +2525,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Rephrased w/ following information, updated application to all third-party resources and merged with former FRR-MAS-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2544,7 +2544,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2558,7 +2558,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2637,7 +2637,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2656,7 +2656,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2676,7 +2676,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2700,7 +2700,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2754,7 +2754,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2769,7 +2769,7 @@
               "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2790,7 +2790,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2809,7 +2809,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2823,7 +2823,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2837,7 +2837,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2851,7 +2851,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2864,7 +2864,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2878,7 +2878,7 @@
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2892,7 +2892,7 @@
               "note": "FedRAMP will make the final authorization decision based on the assessor's findings and other relevant information.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -2906,7 +2906,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -2919,7 +2919,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3006,7 +3006,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Combined all required and recommended SCG information; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3023,7 +3023,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "This requirement is new in v-0.9.0 to clarify expectations."
                 }
               ],
@@ -3038,7 +3038,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -3051,7 +3051,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3070,7 +3070,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3087,7 +3087,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3101,7 +3101,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -3114,7 +3114,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed unnecessary recommended; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3128,7 +3128,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3229,7 +3229,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Moved to FRP; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3252,7 +3252,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3272,7 +3272,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3298,7 +3298,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3312,7 +3312,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3326,7 +3326,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3340,7 +3340,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3354,7 +3354,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ]
@@ -3367,7 +3367,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3423,7 +3423,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3472,7 +3472,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3488,7 +3488,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3511,7 +3511,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3534,7 +3534,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3560,7 +3560,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3588,7 +3588,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3608,7 +3608,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3640,7 +3640,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3697,7 +3697,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3731,7 +3731,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3836,7 +3836,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3850,7 +3850,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3866,7 +3866,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3887,7 +3887,7 @@
               "note": "If it is not possible to fully mitigate or remediate detected vulnerabilities, providers SHOULD instead partially mitigate vulnerabilities promptly, progressively, and persistently.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3908,7 +3908,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3928,7 +3928,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Updated note from technical assistance; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3954,7 +3954,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -3980,7 +3980,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4004,7 +4004,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4024,7 +4024,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4053,7 +4053,7 @@
               ],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4075,7 +4075,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4094,7 +4094,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4112,7 +4112,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4130,7 +4130,7 @@
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4148,7 +4148,7 @@
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4167,7 +4167,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4190,7 +4190,7 @@
               "timeframe_num": 1,
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4211,7 +4211,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4227,7 +4227,7 @@
               "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4369,7 +4369,7 @@
               "affects": ["Providers"],
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4592,7 +4592,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4614,7 +4614,7 @@
               "note": "This requirement will be superseded in the event of formal action related to an investigation or corrective action plan.",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4641,7 +4641,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4678,7 +4678,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4704,7 +4704,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4723,7 +4723,7 @@
               "primary_key_word": "MAY",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4740,7 +4740,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4759,7 +4759,7 @@
               "primary_key_word": "SHOULD",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4774,7 +4774,7 @@
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4789,7 +4789,7 @@
               "primary_key_word": "MUST",
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4889,7 +4889,7 @@
               },
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4910,7 +4910,7 @@
               },
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "Removed unnecessary cloud service at the beginning; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
@@ -4939,7 +4939,7 @@
               },
               "updated": [
                 {
-                  "date": "2100-12-31",
+                  "date": "2026-02-04",
                   "comment": "This recommendation is new in v-0.9.0 to clarify expectations."
                 }
               ],
@@ -4988,7 +4988,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5006,7 +5006,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/collaborative-continuous-monitoring",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5020,7 +5020,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/fedramp-security-inbox",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5034,7 +5034,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/incident-communications-procedures",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5079,7 +5079,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/minimum-assessment-scope",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5093,7 +5093,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/persistent-validation-and-assessment",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5111,7 +5111,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/secure-configuration-guide",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5144,7 +5144,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5162,7 +5162,7 @@
           "reference_url": "https://fedramp.gov/docs/20x/using-cryptographic-modules",
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5221,7 +5221,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5257,7 +5257,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5268,7 +5268,7 @@
         "KSI-CMT-RMV": {
           "fka": "KSI-CMT-02",
           "name": "Redeploying vs Modifying",
-          "statement": "Execute changes to machine-based information resources through redeployment of version controlled immutable resources rather than direct modification wherever possible.",
+          "statement": "Execute changes to machine-based information resources through redeployment of version controlled immutable resources rather than direct modification wherever reasonable.",
           "controls": [
             "cm-2",
             "cm-3",
@@ -5280,7 +5280,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5303,7 +5303,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5323,7 +5323,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5341,6 +5341,18 @@
       "short_name": "CNA",
       "theme": "A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the confidentiality, integrity and availability of the system.",
       "indicators": {
+        "KSI-CNA-DFP": {
+          "fka": "KSI-CNA-04",
+          "name": "Defining Functionality and Privileges",
+          "statement": "Strictly define the functionality and privileges for infrastructure and services.",
+          "controls": ["cm-2", "si-3"],
+          "updated": [
+            {
+              "date": "2026-02-04",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ]
+        },
         "KSI-CNA-EIS": {
           "fka": "KSI-CNA-08",
           "name": "Enforcing Intended State",
@@ -5352,13 +5364,10 @@
               "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
             }
           },
-          "controls": [
-            "ca-2.1",
-            "ca-7.1"
-          ],
+          "controls": ["ca-2.1", "ca-7.1"],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5368,34 +5377,14 @@
             "Persistently"
           ]
         },
-        "KSI-CNA-HAV": {
-          "fka": "KSI-CNA-06",
-          "name": "Optimizing for Availability",
-          "statement": "Appropriately optimize machine-based information resources for high availability and rapid recovery.",
-          "controls": [],
-          "updated": [
-            {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ],
-          "terms": [
-            "Information Resource",
-            "Machine-Based (information resources)"
-          ]
-        },
         "KSI-CNA-IBP": {
           "fka": "KSI-CNA-07",
           "name": "Implementing Best Practices",
           "statement": "Persistently ensure cloud-native machine-based information resources are implemented based on the host provider's best practices and documented guidance.",
-          "controls": [
-            "ac-17.3",
-            "cm-2",
-            "pl-10"
-          ],
+          "controls": ["ac-17.3", "cm-2", "pl-10"],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5427,7 +5416,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5437,20 +5426,30 @@
             "Persistently"
           ]
         },
+        "KSI-CNA-OFA": {
+          "fka": "KSI-CNA-06",
+          "name": "Optimizing for Availability",
+          "statement": "Appropriately optimize machine-based information resources for high availability and rapid recovery.",
+          "controls": [],
+          "updated": [
+            {
+              "date": "2026-02-04",
+              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            }
+          ],
+          "terms": [
+            "Information Resource",
+            "Machine-Based (information resources)"
+          ]
+        },
         "KSI-CNA-RNT": {
           "fka": "KSI-CNA-01",
           "name": "Restricting Network Traffic",
           "statement": "Persistently ensure all machine-based information resources are configured to limit inbound and outbound network traffic.",
-          "controls": [
-            "ac-17.3",
-            "ca-9",
-            "cm-7.1",
-            "sc-7.5",
-            "si-8"
-          ],
+          "controls": ["ac-17.3", "ca-9", "cm-7.1", "sc-7.5", "si-8"],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5464,20 +5463,14 @@
           "fka": "KSI-CNA-05",
           "name": "Reviewing Protections",
           "statement": "Persistently review the effectiveness of protection against denial of service attacks and other unwanted activity.",
-          "controls": [
-            "sc-5",
-            "si-8",
-            "si-8.2"
-          ],
+          "controls": ["sc-5", "si-8", "si-8.2"],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CNA-ULN": {
           "fka": "KSI-CNA-03",
@@ -5495,22 +5488,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
-              "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            }
-          ]
-        },
-        "KSI-CNA-UMI": {
-          "fka": "KSI-CNA-04",
-          "name": "Using Immutable Infrastructure",
-          "statement": "Use immutable infrastructure with strictly defined functionality and privileges by default.",
-          "controls": [
-            "cm-2",
-            "si-3"
-          ],
-          "updated": [
-            {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5535,7 +5513,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5557,7 +5535,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5572,7 +5550,7 @@
           "controls": [],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5594,7 +5572,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5628,7 +5606,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5650,7 +5628,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5697,7 +5675,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5751,7 +5729,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5772,7 +5750,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5792,7 +5770,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5812,7 +5790,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5841,7 +5819,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5868,7 +5846,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5891,7 +5869,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5926,7 +5904,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -5943,7 +5921,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -5971,7 +5949,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6005,7 +5983,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -6025,7 +6003,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6057,7 +6035,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6072,7 +6050,7 @@
           "controls": [],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6097,7 +6075,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6125,7 +6103,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6142,7 +6120,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6174,7 +6152,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6208,7 +6186,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6226,7 +6204,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6252,7 +6230,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6289,7 +6267,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6311,7 +6289,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6336,7 +6314,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6361,7 +6339,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6389,7 +6367,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6417,7 +6395,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ]
@@ -6439,7 +6417,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6465,7 +6443,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6504,7 +6482,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
@@ -6530,7 +6508,7 @@
           ],
           "updated": [
             {
-              "date": "2100-12-31",
+              "date": "2026-02-04",
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],

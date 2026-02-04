@@ -371,7 +371,8 @@
             "high": { "$ref": "#/$defs/ksi_indicator_level" }
           },
           "additionalProperties": false
-        }
+        },
+        "terms": { "type": "array", "items": { "type": "string" } }
       },
       "additionalProperties": false
     },

@@ -4,22 +4,6 @@ title: FR
 
 # A fresh take on FedRAMP Documentation
 
-<p style="font-size: 1.2em; line-height: 1.6;">
-This section contains digital-first FedRAMP documentation including
-definitions, requirements, recommendations, key security indicators, laws,
-memorandums, and playbooks.
-</p>
-
-These materials replace traditional off-line documents (such as PDF or DOCX)
-with responsive on-line materials that can be viewed on a variety of devices,
-directly linked to, and are always up to date.
-
-!!! danger ""
-
-    :lucide-construction: **This section is under active development and things may change unexpectedly.** :lucide-construction:
-
-    Thank you for your patience!
-
 <style>
   body::before {
     content: "";
@@ -34,3 +18,22 @@ directly linked to, and are always up to date.
     z-index: -1;
   }
 </style>
+
+<p style="font-size: 1.2em; line-height: 1.6;">
+This section contains digital-first FedRAMP documentation including
+definitions, requirements, recommendations, key security indicators, laws,
+memorandums, and playbooks.
+</p>
+
+These materials replace traditional off-line documents (such as PDF or DOCX)
+with responsive on-line materials that can be viewed on a variety of devices,
+directly linked to, and are always up to date.
+
+!!! danger ""
+
+    :lucide-construction: **[This section is under active development and things may change unexpectedly](changelog.md).** :lucide-construction:
+
+    Thank you for your patience!
+
+---
+
