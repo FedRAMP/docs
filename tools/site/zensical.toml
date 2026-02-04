@@ -49,6 +49,7 @@ nav = [
     { "General Info" = [
         "index.md",
             { "Documentation Changelog" = "changelog.md" },
+            { "FedRAMP Logos" = "logos.md"}
         ] },
     { "FedRAMP 20x" = [
         "20x/index.md",
