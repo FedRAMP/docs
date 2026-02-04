@@ -1,3 +1,151 @@
+{{!-- Define some reusable in-line blocks before the actual main content --}}
+{{#*inline "blockForFRR"}}
+{{#if name}}
+### {{name}}
+{{else}}
+### {{@key}}
+{{/if}}
+
+{{#if updated}}  
+??? abstract "{{@key}}"
+
+    {{#if fka}}**Former ID:** {{fka}}{{/if}}
+
+    **Changelog:**
+
+    {{#each updated}}
+    - **{{this.date}}:** {{this.comment}}
+      {{#if this.prev}}
+      
+        **Was:** {{this.prev}}
+      {{/if}}
+    {{/each}}
+{{else}}
+!!! abstract "{{@key}}"
+{{/if}}
+
+{{#if notification}}
+!!! warning "This FRR includes a notification requirement!"
+{{/if}}
+
+
+!!! quote ""
+
+{{#if varies_by_level}}
+  {{#each varies_by_level}}
+    === "{{ucfirst @key}}"
+        {{this.statement}}
+
+        {{#if this.pain_timeframes}}
+        
+        | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
+        |-------------------------|-----------|------------|------|
+          {{#each pain_timeframes}}
+        | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
+          {{/each}}
+        {{/if}}
+
+  {{/each}}      
+{{else}}
+    {{statement}}
+  {{#if following_information}}
+    {{#each following_information}}
+
+    1. {{this}}
+    {{/each}}
+  {{/if}}
+  {{#if following_information_bullets}}
+    {{#each following_information_bullets}}
+
+    - {{this}}
+    {{/each}}
+  {{/if}}
+{{/if}}
+{{#if danger}} 
+
+    ---
+
+    !!! danger "{{danger}}"
+
+{{/if}}
+{{#if note}}
+
+    ---
+
+    _**Note:** {{note}}_
+{{/if}}
+{{#if notes}}
+
+    ---
+
+    _**Notes:**_
+
+  {{#each notes}}
+    - _{{this}}_
+  {{/each}}
+{{/if}}
+{{#if controls}}
+
+    **Related SP 800-53 Controls:** {{#each controls}}[{{ uppercase this }}]({{controlfreak this}}){{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
+{{#if reference}}
+
+    **Reference:** [{{reference}}]({{reference_url}})
+{{/if}}
+{{#if this.examples}}
+          {{#each this.examples}}
+
+    ??? tip "{{this.id}}"
+
+        **Key Tests:**
+
+          {{#each this.key_tests}}
+        - {{this}}
+          {{/each}}
+
+        **Examples:**
+
+          {{#each this.examples}}
+        - {{this}}
+          {{/each}}          
+          {{/each}}
+        {{/if}}
+
+{{#if terms}}
+
+    ---
+{{#if (stringEquals @root.info.name "Key Security Indicators")}}
+    **Terms:** {{#each terms}}[{{this}}](../fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+     {{else if (stringEquals @root.type "KSI")}}
+    **Terms:** {{#each terms}}[{{this}}](../fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+      {{else}}
+    **Terms:** {{#each terms}}[{{this}}](fedramp-definitions/#{{termlink this}}){ data-preview }{{#unless @last}}, {{/unless}}{{/each}}
+  {{/if}}
+{{/if}}
+
+{{/inline}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- START KSI TEMPLATE CONTENT --}}
+{{#if (stringEquals type "KSI")}}
+# {{name}}
+
+!!! info ""
+
+    {{theme}}
+
+{{#each indicators}}
+
+{{> blockForFRR}}
+
+{{/each}}
+{{else}}
+{{!-- ######################################################################## --}}
+{{!-- START MAIN TEMPLATE CONTENT --}}
 # {{info.name}}
 
 {{#if (stringEquals version "20x")}}
@@ -16,271 +164,167 @@
       {{/each}}
       
       {{#if info.effective.rev5.signup_url}}
-      - **Beta Sign-up Form:** [{{info.effective.rev5.signup_url}}]({{info.effective.rev5.signup_url}})
+      - **Sign-up Form:** [{{info.effective.rev5.signup_url}}]({{info.effective.rev5.signup_url}})
       {{/if}}
 
-{{#if info.effective.rev5.warnings}}
+  {{#if info.effective.rev5.warnings}}
 !!! danger "Mandatory Adoption for Rev5"
     {{#each info.effective.rev5.warnings}}
     - {{this}}
     {{/each}}
+  {{/if}}
 {{/if}}
-{{/if}}
-
-{{info.front_matter.purpose}}
-
-??? tip "Version {{info.releases.[0].id}} published on {{info.releases.[0].published_date}} " 
-    **History:**
-
-    | ID | Published | Description |  |
-    |----|-----------|-------------|-------|
-    {{#each info.releases}}
-        | {{this.id}} | {{this.published_date}} {: nowrap}| {{this.description}} | {{#if this.machine_readable_link}} [:fontawesome-solid-cloud-arrow-down:]({{this.machine_readable_link}} "Download machine-readable JSON for release {{this.id}} published on {{this.published_date}}") {{/if}} |
-    {{/each}}
-
 
 ??? abstract "Background & Authority"
 {{#each info.front_matter.authority}}
     - [{{reference}}]({{reference_url}}) {{description}}
 {{/each}}
 
+{{info.front_matter.purpose}}
+
 ---
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
+{{!-- Requirements section (FRR) --}}
+{{#if (stringEquals type "FRR")}}
 
+{{#if (stringEquals version "rev5")}}
+{{#if data.rev5}}
+  {{#each data.rev5}}
+    {{#with (lookup ../info.labels @key) as | labels |}}
+## {{labels.name}}
+
+{{labels.description}}
+
+    {{/with}}
+    {{#each this}}
+{{> blockForFRR}}
+    {{/each}}
+  {{/each}}
+
+---  
+
+{{/if}}
+{{/if}}
+
+{{#if (stringEquals version "20x")}}
+{{#if data.20x}}
+  {{#each data.20x}}
+    {{#with (lookup ../info.labels @key) as | labels |}}
+## {{labels.name}}
+
+{{labels.description}} 
+
+    {{/with}}
+    {{#each this}}
+{{> blockForFRR}}
+    {{/each}}
+  {{/each}} 
+
+---  
+
+{{/if}}
+{{/if}}
+
+{{#if data.both}}
+  {{#each data.both}}
+    {{#with (lookup ../info.labels @key) as | labels |}}
+## {{labels.name}}
+
+{{labels.description}}
+
+    {{/with}}
+    {{#each this}}
+{{> blockForFRR}}
+    {{/each}}
+  {{/each}}
+{{/if}}
+{{/if}}
+
+
+{{!-- ######################################################################## --}}
+{{!-- begin KSI block --}}
+{{#if (stringEquals info.short_name "KSI")}}
+## Key Security Indicator Themes
+
+!!! info ""
+   
+    Key Security Indicators (KSIs) apply to all cloud service offerings following 
+    the 20x path; each KSI must be addressed as specified in the KSI
+    requirements and recommendations above.
+
+    Key Security Indicators are grouped into themes for ease of review. Each theme
+    is displayed on a separate page to simplify transition between themes and
+    finding specific KSIs.
+
+{{#if ksiInfo}}{{#each ksiInfo}}
+### [{{name}}]({{web_name}}/)
+
+!!! quote ""
+
+    {{description}}
+
+{{/each}}{{/if}}
+
+{{/if}}
+{{!-- end KSI block --}}
+{{!-- ######################################################################## --}}
+{{!-- ending FRR --}}
+{{!-- ######################################################################## --}}
+{{!-- ######################################################################## --}}
 {{!-- Definitions section (FRD) --}}
-{{#if FRD}}
+{{#if (stringEquals type "FRD")}}
 
-  {{#each FRD}}
-    {{#FRDSorted this}}
+{{#if data.both}}
+  {{#each data.both}}
 ### {{term}}
+
+{{#if updated}}  
+??? abstract "**ID:** {{@key}}"
+
+    {{#if fka}}**Former ID:** {{fka}}{{/if}}
+      
+    **Changelog:**
+
+    {{#each updated}}
+    - **{{this.date}}:** {{this.comment}}
+      {{#if this.prev}}
+      
+        **Was:** {{this.prev}}
+      {{/if}}
+    {{/each}}
+{{else}}
+!!! abstract "**ID:** {{@key}}"
+{{/if}}
+
+
 
 !!! quote ""
     {{definition}}
+
+    ---
+
       {{#if note}}
 
-    **Note:** {{note}}
+    _**Note:** {{note}}_
       {{/if}}
       {{#if notes}}
 
-    **Notes:**
+    _**Notes:**_
         {{#each notes}}
 
-    - {{this}}
+    - _{{this}}_
         {{/each}}
       {{/if}}      
       {{#if reference}}
-    [**Reference:** {{reference}}]({{reference_url}})
+    **Reference:** [{{reference}}]({{reference_url}})
 {{/if}}
 {{#if alts}}
 
     **Also:** {{#each alts}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
 {{/if}}
-
-    **ID:** {{id}}
-    {{/FRDSorted}}
-
-  {{/each}}
-
-{{/if}}
-
-
-
-
-
-
-
-
-{{!-- Requirements section (FRR) --}}
-
-{{#if FRR}}
-
-  {{#each FRR}}
-    {{#each this}}
-        
-{{#if this.name}}
-## {{this.name}}
-{{else}}
-## {{this.id}}
-{{/if}}
-
-!!! info ""
-    {{this.application}}
-      {{#each requirements}}
-
-{{#if this.name}}
-### {{this.id}} {{this.name}}
-{{else}}
-### {{this.id}}
-{{/if}}
-
-!!! quote ""
-    {{this.statement}}
-        {{#if following_information}}
-          {{#each following_information}}
-
-    1. {{this}}
-          {{/each}}
-        {{/if}}
-        {{#if following_information_bullets}}
-          {{#each following_information_bullets}}
-
-    - {{this}}
-          {{/each}}
-        {{/if}}        
-        {{#if pain_timeframes}}
-        
-
-    | Potential Adverse Impact | LEV + IRV | LEV + NIRV | NLEV |
-    |-------------------------|-----------|------------|------|
-          {{#each pain_timeframes}}
-    | N{{this.pain}} | {{this.max_days_irv_lev}}|{{this.max_days_nirv_lev}} | {{this.max_days_nlev}}|
-          {{/each}}
-        {{/if}}
-      {{#if note}}
-
-    **Note:** {{note}}
-      {{/if}}
-
-      {{#if notes}}
-
-    **Notes:**
-        {{#each notes}}
-
-    - {{this}}
-        {{/each}}
-      {{/if}}  
-
-      {{#if impact}}
-      {{!-- this is super messy but ok for now --}}
-    **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
-      {{/if}}
-    
-    {{/each}}
-
----   
-
-    {{/each}}      
-
-  {{/each}}
-
-{{/if}}
-
-
-{{!-- KSIs have a different structure that is added afterwards --}}
-
-{{#if KSI}}
-## Key Security Indicators
-  {{#each KSI}}
-    {{#with this}}
-### {{name}}
-
-!!! info ""
-    {{theme}}
-
-      {{#each indicators}}
-{{#if name}}      
-#### {{id}} {{name}}
-{{else}}
-{{#if retired}}
-#### {{id}} (Retired)
-{{else}}
-#### {{id}}
-{{/if}}
-{{/if}}
-
-{{#if retired}}
-!!! note "This KSI ID was retired in the 20x Phase Two Pilot"
-{{else}}
-!!! quote ""
-{{/if}}
-
-{{#if statement}}
-    {{statement}}
-{{/if}}
-{{#if following_information}}
-          {{#each following_information}}
-
-    1. {{this}}
-          {{/each}}
-        {{/if}}
-      {{#if note}}
-
-    **Note:** {{note}}
-      {{/if}}
-      {{#if notes}}
-
-    **_Notes:_**
-        {{#each notes}}
-
-    - {{this}}
-        {{/each}}
-      {{/if}}  
-
-        {{#if controls}}
-
-    **Related SP 800-53 Controls:** {{#each controls}}{{ uppercase control_id }}{{#unless @last}}, {{/unless}}{{/each}}
-    {{/if}}
-        {{#if impact}}
- {{#if reference}}
-
-    **Reference:** [{{reference}}]({{reference_url}})
-{{/if}}
-
-          {{#unless retired}}
-        {{!-- this is super messy but ok for now --}}
-      **Applies to:** {{#if impact.low}}Low{{#if impact.moderate}}, {{/if}}{{/if}}{{#if impact.moderate}}Moderate{{#if
-        impact.high}}, {{/if}}{{/if}}{{#if impact.high}}High{{/if}}
-          {{/unless}}      
-
-        {{/if}}
-
-      {{/each}}
-    {{/with}}
----
-  {{/each}}
-
-{{/if}}
-
-
-{{!-- Maybe this has some technical assistance? FRA --}}
-{{#if FRA}}
-# Technical assistance
-
-  {{#each FRA}}
-### {{id}}
-
-**Purpose:** {{this.purpose}}
-
-**Disclaimer:** {{this.disclaimer}}
-
-**{{this.application}}**
-    {{#each requirements}}
-
-#### {{this.id}}
-
-{{this.statement}}
-
-        {{#if this.examples}}
-          {{#each this.examples}}
-##### {{this.id}}
-
-Key Tests:
-
-          {{#each this.key_tests}}
-- {{this}}
-          {{/each}}
-
-Examples:
-
-          {{#each this.examples}}
-- {{this}}
-          {{/each}}
-          
-          {{/each}}
-        {{/if}}
-
----   
-    
-    {{/each}}      
-  
   {{/each}}
 {{/if}}
+{{/if}}
+{{/if}}
+{{!-- end FRR and FRD block from if KSI start --}}

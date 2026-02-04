@@ -16,13 +16,37 @@ A common barrier to success is a poorly written, incomplete, inaccurate, and/or 
 
 ### Criteria for Document Acceptance
 
-- **Clarity**:Logical presentation of material Current dates and timely content Non-standard terms, phrases, acronyms, and abbreviations defined No ambiguous statements or content Correct grammar and free from awkward phrases, typographical errors, spelling errors, missing words, or incorrect page and section numbers Readable figure text Sharp and legible figure graphics.
+####  **Clarity**
 
-- **Completeness**: Includes accurate, detailed, and informative content that is consistent with FedRAMP requirements Includes all appropriate sections of FedRAMP templates Includes all attachments and appendices Includes tables of contents, list of tables, and list of figures, where applicable Includes figures with required information, correct labels, and keys to color and line formats.                                                                              
+- Logical presentation of material
+- Current dates and timely content
+- Non-standard terms, phrases, acronyms, and abbreviations defined 
+- No ambiguous statements or content 
+- Correct grammar and free from awkward phrases, typographical errors, spelling errors, missing words, or incorrect page and section numbers 
+- Readable figure text 
+- Sharp and legible figure graphics.
 
-- **Conciseness**: Content and complexity relevant to the audience No superfluous words or phrases.
+#### **Completeness**
 
-- **Consistency**: Correct and consistent format Correct and continuous section numbering Terms with the same meaning throughout the document Items that are referred to by the same name or description throughout the document Level of detail and presentation style that are the same throughout the document Material that does not contradict predecessor documents All material in subsequent documents based in the predecessor document Figure content that agrees with text.
+- Includes accurate, detailed, and informative content that is consistent with FedRAMP requirements 
+- Includes all appropriate sections of FedRAMP templates 
+- Includes all attachments and appendices 
+- Includes tables of contents, list of tables, and list of figures, where applicable Includes figures with required information, correct labels, and keys to color and line formats.                                                                              
+
+#### **Conciseness**
+
+- Content and complexity relevant to the audience
+- No superfluous words or phrases.
+
+#### **Consistency**
+
+- Correct and consistent format 
+- Correct and continuous section numbering 
+- Terms with the same meaning throughout the document 
+- Items that are referred to by the same name or description throughout the document Level of detail and presentation style that are the same throughout the document 
+- Material that does not contradict predecessor documents 
+- All material in subsequent documents based in the predecessor document 
+- Figure content that agrees with text.
 
 ## Writing the SSP
 

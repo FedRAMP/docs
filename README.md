@@ -1,64 +1,22 @@
-# FedRAMP Machine Readable (FRMR) Documentation
-
-## Human-readable versions of this documentation are now hosted at https://fedramp.gov/docs!
-
-
-This repository contains:
-
-1. Machine-readable FedRAMP documentation for 20x
-2. Tools and templates to convert FRMR JSON into enriched markdown
-3. A [Zensical](https://zensical.org/about)-based static site renderer for viewing 
-
-> **Please Note:** This repository previously contained basic markdown for direct viewing but moving forward FedRAMP will focus on enriched markdown for increased viewability.
-
-## Using the JSON Data
-
-The public is strongly encouraged to develop supporting systems that read FRMR docs directly, especially for integration in tools. Nothing beyond the JSON files in the root directory are necessary to begin leveraging these files.
-
-FedRAMP is actively and aggressively developing and improving the JSON structure and associated metadata to improve the value of FRMR docs and may occasionally make breaking changes during the 20x pilots. FedRAMP will be seeking feedback during Phase Two and Phase Three for opportunities to improve and may open this repository up to public contribution.
-
-## Building the Static Site
-
-This is very much a work in progress.
-
-### Installing dependencies
-We use several tools to support the development and build process.  At a minimum you will need to install [bun](https://bun.com/docs/installation) and the [zensical](https://zensical.org/docs/get-started/) python library. **Zensical requires a python version >= 3.10.**
-
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip install zensical
-
-    curl -fsSL https://bun.com/install | bash
-
-### Testing
-
-There is a simple test suite that can be run with `bun test` once bun is installed. This test suite will validate the FRMR JSON files in the root folder against the schema in `tools/templates/FedRAMP.schema.json`.
-
-    cd tools
-    bun test
-
-
-#### Preview
-
-```
-cd tools/site
-zensical serve
-```
-https://localhost:8000/docs/
+<a href="https://fedramp.gov/docs"><img src="tools/site/overrides/assets/fedramp-docs-logo.jpg" alt="FedRAMP Logo" width="75%" border=0></a>
 
 
 
-#### Generate documentation for the JSON Schema
-If you are trying to understand the FRMR JSON Schema it might be helpfull to review the documentation generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans). To generate documentation for the FRMR JSON schema.
 
-    pip install json-schema-for-humans 
-    generate-schema-doc --config-file tools/templates/jsfh-config.yaml tools/templates/FedRAMP.schema.json FedRAMP.schema.html
+👩‍💼 👨‍💻 🤜 The human-readable version is at [fedramp.gov/docs](https://fedramp.gov/docs). 🤛 🧑‍💻 👨‍💼
 
-Then open the `FedRAMP.schema.html` file in your browser.
+## FedRAMP Machine-Readable (FRMR) Docs
 
-### Building
+FedRAMP Machine-Readable requirements, recommendations, definitions, and key security indicators for FedRAMP 20x and FedRAMP Rev5 Balance Improvement Releases are available in this repository. These materials are the authoritative source of truth for FedRAMP processes. 
 
-```
-cd tools
-bun run build
-```
+Stakeholders are **strongly encouraged** to directly integrate FRMR docs with their GRC engineering and automation systems as this is the most effective way to always have the latest version with additional enrichment.
+
+| Available Materials | Description |
+| -- | -- |
+| [FRMR.documentation.json](FRMR.documentation.json) | This file contains core FedRAMP 20x requirements, recommendations, definitions, and key security indicators. Each process in this file also includes applicability (including to Rev5) and additional metadata like update history. |
+| [FRMR.md](FRMR.md) | Additional information on the structure of the FRMR docs. |
+
+
+---
+
+Other content in this repository includes traditional FedRAMP documentation in enriched markdown and the [related scaffolding](tools/README.md) to develop and build the static documentation site.

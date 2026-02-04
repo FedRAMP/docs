@@ -9,74 +9,127 @@ const KEYWORDS = ["MUST NOT", "SHOULD NOT", "MUST", "SHOULD", "MAY"];
 const KEYWORD_REGEX = new RegExp(`\\b(${KEYWORDS.join("|")})\\b`);
 
 /**
- * Recursively finds all "requirements" arrays within the FRR object structure.
+ * Validates a single requirement object (or sub-object like a level variant).
  */
-function findRequirements(obj: any): any[] {
-  let results: any[] = [];
-  if (!obj || typeof obj !== "object") return results;
+function validateRequirementObject(
+  obj: any,
+  id: string,
+  context: string,
+): boolean {
+  if (!obj || typeof obj !== "object") return false;
 
-  if (Array.isArray(obj.requirements)) {
-    results.push(...obj.requirements);
-  }
+  if (
+    typeof obj.statement === "string" &&
+    typeof obj.primary_key_word === "string"
+  ) {
+    // Find the first occurrence of a keyword in the statement
+    const match = obj.statement.match(KEYWORD_REGEX);
+    const extractedKeyword = match ? match[0] : null;
 
-  for (const key in obj) {
-    if (
-      Object.prototype.hasOwnProperty.call(obj, key) &&
-      key !== "requirements"
-    ) {
-      results = results.concat(findRequirements(obj[key]));
+    if (extractedKeyword !== obj.primary_key_word) {
+      console.warn(`[WARNING] Keyword Mismatch found in ${context}`);
+      console.warn(`  ID:               ${id}`);
+      console.warn(
+        `  Statement says:   "${extractedKeyword || "NO KEYWORD FOUND"}"`,
+      );
+      console.warn(`  Primary Key Word: "${obj.primary_key_word}"`);
+      console.warn(`  Full Statement:   "${obj.statement}"`);
+      console.warn("-".repeat(50));
+      return true;
     }
   }
-  return results;
+  return false;
 }
 
 /**
- * Main function to scan the directory and validate JSON files.
+ * Main function to scan the file and validate JSON content.
  */
-function validateFrmrFiles() {
-const rootDir = path.join(process.cwd(), "..");
-  const files = fs
-    .readdirSync(rootDir)
-    .filter((f) => f.startsWith("FRMR") && f.endsWith(".json"));
+function validateFRMRFile() {
+  const rootDir = path.join(process.cwd(), "..");
+  const fileName = "FRMR.documentation.json";
+  const filePath = path.join(rootDir, fileName);
 
-  console.log(`Scanning ${files.length} FRMR files...\n`);
+  console.log(`Scanning ${fileName}...\n`);
 
-  files.forEach((file) => {
-    const filePath = path.join(rootDir, file);
-    let content;
+  if (!fs.existsSync(filePath)) {
+    console.error(`File not found: ${filePath}`);
+    return;
+  }
 
-    try {
-      content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    } catch (err) {
-      console.error(`Error parsing ${file}:`, err);
-      return;
-    }
+  let content;
+  try {
+    content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch (err) {
+    console.error(`Error parsing ${fileName}:`, err);
+    return;
+  }
 
-    if (!content.FRR) return;
+  let errorsFound = false;
 
-    const requirements = findRequirements(content.FRR);
+  // Iterate through top-level sections (e.g., "ADS", "CCM")
+  for (const sectionKey in content) {
+    if (Object.prototype.hasOwnProperty.call(content, sectionKey)) {
+      const section = content[sectionKey];
 
-    requirements.forEach((req) => {
-      if (req.statement && req.primary_key_word) {
-        // Find the first occurrence of a keyword in the statement
-        const match = req.statement.match(KEYWORD_REGEX);
-        const extractedKeyword = match ? match[0] : null;
+      // Check if section has 'data' property
+      if (section && section.data && typeof section.data === "object") {
+        // Iterate through data contexts (e.g., "both", "20x")
+        for (const contextKey in section.data) {
+          if (Object.prototype.hasOwnProperty.call(section.data, contextKey)) {
+            const requirements = section.data[contextKey];
 
-        if (extractedKeyword !== req.primary_key_word) {
-          console.warn(`[WARNING] Keyword Mismatch found in ${file}`);
-          console.warn(`  ID:               ${req.id}`);
-          console.warn(
-            `  Statement says:   "${extractedKeyword || "NO KEYWORD FOUND"}"`
-          );
-          console.warn(`  Primary Key Word: "${req.primary_key_word}"`);
-          console.warn(`  Full Statement:   "${req.statement}"`);
-          console.warn("-".repeat(50));
+            // Iterate through individual requirements (e.g., "ADS-CSO-PUB")
+            for (const reqId in requirements) {
+              if (Object.prototype.hasOwnProperty.call(requirements, reqId)) {
+                const req = requirements[reqId];
+
+                // Validate the main requirement
+                if (
+                  validateRequirementObject(
+                    req,
+                    reqId,
+                    `${fileName} -> ${sectionKey} -> ${contextKey}`,
+                  )
+                ) {
+                  errorsFound = true;
+                }
+
+                // Check for varies_by_level
+                if (
+                  req.varies_by_level &&
+                  typeof req.varies_by_level === "object"
+                ) {
+                  for (const level in req.varies_by_level) {
+                    if (
+                      Object.prototype.hasOwnProperty.call(
+                        req.varies_by_level,
+                        level,
+                      )
+                    ) {
+                      if (
+                        validateRequirementObject(
+                          req.varies_by_level[level],
+                          reqId,
+                          `${fileName} -> ${sectionKey} -> ${contextKey} -> ${level}`,
+                        )
+                      ) {
+                        errorsFound = true;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
-    });
-  });
+    }
+  }
 
+  if (!errorsFound) {
+    console.log("No mismatches found - good job. :)");
+  }
   console.log("Validation complete.");
 }
 
-validateFrmrFiles();
+validateFRMRFile();

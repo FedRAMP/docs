@@ -1,28 +1,39 @@
-# FedRAMP Documentation
+---
+title: FR
+---
 
-This site contains digital-first FedRAMP documentation and playbooks
-focused on the traditional FedRAMP Rev5 authorization path. These materials
-replace traditional off-line documents (such as PDF or DOCX) with responsive
-on-line materials that can be viewed on a variety of devices, directly
-linked to, and are always up to date.
+# A fresh take on FedRAMP Documentation
 
-!!! info "Modernization in Progress!"
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/20x-sunrise.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+  }
+</style>
 
-    FedRAMP is working incrementally to migrate legacy documentation to this
-    site. Most legacy Rev5 materials still require downloading off-line
-    documents and are available in the 
-    [Rev5 Documents and Templates](https://www.fedramp.gov/rev5/documents-templates/) 
-    section of this site.
+<p style="font-size: 1.2em; line-height: 1.6;">
+This section contains digital-first FedRAMP documentation including
+definitions, requirements, recommendations, key security indicators, laws,
+memorandums, and playbooks.
+</p>
 
-    As documents are migrated we will provide redirects to their new location
-    whenever possible.
+These materials replace traditional off-line documents (such as PDF or DOCX)
+with responsive on-line materials that can be viewed on a variety of devices,
+directly linked to, and are always up to date.
 
-## Sections
+!!! danger ""
 
-Materials on this site are divided into three sections:
+    :lucide-construction: **[This section is under active development and things may change unexpectedly](changelog.md).** :lucide-construction:
 
-| Section | Descriptions |
-| -- | -- |
-| [Authority & Responsibility](authority/index.md) | Background on the statutory authority for FedRAMP, related policies, and the statutory responsibilities of FedRAMP and federal agencies. |
-| [20x](20x/index.md) | Requirements and recommendations for FedRAMP 20x |
-| [Rev5](rev5/index.md) | Playbooks and Balance Improvement Releases for FedRAMP Rev5 |
+    Thank you for your patience!
+
+---
+

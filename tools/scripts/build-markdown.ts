@@ -3,153 +3,195 @@ import * as path from "path";
 import Handlebars from "handlebars";
 import { glob } from "glob";
 
-Handlebars.registerHelper('FRDSorted', function(array, options) {
-  const sortedArray = [...array].sort((a, b) => {
-    const termA = a.term || '';
-    const termB = b.term || '';
-    if (termA < termB) return -1;
-    if (termA > termB) return 1;
-    return 0;
-  });
+const ROOT_DIR = process.cwd();
+const JSON_FILE = path.join(ROOT_DIR, "../FRMR.documentation.json");
+const TEMPLATE_FILE = path.join(ROOT_DIR, "templates/zensical-template.hbs");
+const OUTPUT_DIR = path.join(ROOT_DIR, "site/static/markdown");
 
-  let result = '';
-  for (let i = 0; i < sortedArray.length; i++) {
-    result += options.fn(sortedArray[i]);
+// Register Helpers
+Handlebars.registerHelper("stringEquals", (a, b) => a === b);
+
+Handlebars.registerHelper("ucfirst", (s) => {
+  if (typeof s !== "string") return s;
+  return s.charAt(0).toUpperCase() + s.slice(1);
+});
+
+Handlebars.registerHelper("uppercase", (s) => {
+  if (typeof s !== "string") return s;
+  return s.toUpperCase();
+});
+
+Handlebars.registerHelper("termlink", (s) => {
+  if (typeof s !== "string") return s;
+  return s
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z-]/g, "");
+});
+
+Handlebars.registerHelper("controlfreak", (controlId) => {
+  if (typeof controlId !== "string") return controlId;
+
+  const baseUrl = "https://controlfreak.risk-redux.io/controls/";
+
+  if (controlId.includes(".")) {
+    const [main = "", sub = ""] = controlId.split(".");
+    const [prefix = "", num = ""] = main.split("-");
+
+    const paddedMain = num.padStart(2, "0");
+    const paddedSub = sub.padStart(2, "0");
+
+    const formatted = `${prefix.toUpperCase()}-${paddedMain}(${paddedSub})`;
+    return new Handlebars.SafeString(baseUrl + formatted);
+  } else {
+    const [prefix = "", num = ""] = controlId.split("-");
+
+    const paddedNum = num.padStart(2, "0");
+
+    const formatted = `${prefix.toUpperCase()}-${paddedNum}`;
+    return new Handlebars.SafeString(baseUrl + formatted);
   }
-  return result;
 });
 
-Handlebars.registerHelper("uppercase", function (str) {
-  return str ? str.toUpperCase() : "";
-});
+function buildMarkdown() {
+  console.log("Building markdown files...");
 
-Handlebars.registerHelper("ucfirst", function (str) {
-  if (!str) {
-    return ""; // Handle null or undefined strings
+  if (!fs.existsSync(JSON_FILE)) {
+    console.error(`JSON file not found: ${JSON_FILE}`);
+    process.exit(1);
   }
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-});
+  if (!fs.existsSync(TEMPLATE_FILE)) {
+    console.error(`Template file not found: ${TEMPLATE_FILE}`);
+    process.exit(1);
+  }
 
-Handlebars.registerHelper("stringEquals", function (str1, str2) {
-  return str1 === str2;
-});
-
-async function convertFRMRToMarkdown(
-  jsonFilePath: string,
-  templateFilePath: string,
-  outputFilePath: string,
-  baseName: string
-) {
+  let jsonContent;
   try {
-    // Read the JSON data
-    const jsonData = await fs.readJSON(jsonFilePath);
+    jsonContent = JSON.parse(fs.readFileSync(JSON_FILE, "utf-8"));
+  } catch (e) {
+    console.error("Failed to parse JSON file:", e);
+    process.exit(1);
+  }
 
-    // Read the Handlebars template
-    const templateContent = await fs.readFile(templateFilePath, "utf-8");
+  const templateSource = fs.readFileSync(TEMPLATE_FILE, "utf-8");
+  const template = Handlebars.compile(templateSource);
 
-    // Compile the Handlebars template
-    const compiledTemplate = Handlebars.compile(templateContent);
+  if (!fs.existsSync(path.join(OUTPUT_DIR, "20x"))) {
+    fs.mkdirSync(path.join(OUTPUT_DIR, "20x", "key-security-indicators"), {
+      recursive: true,
+    });
+  }
+  if (!fs.existsSync(path.join(OUTPUT_DIR, "rev5", "balance"))) {
+    fs.mkdirSync(path.join(OUTPUT_DIR, "rev5", "balance"), { recursive: true });
+  }
 
-    // Render the template for the default (20x) version
-    const markdown = compiledTemplate({ ...jsonData, version: "20x" });
+  // process KSI stuff
+  const ksiInfo: Record<string, any> = {};
+  for (const theme in jsonContent.KSI) {
+    const themeData = jsonContent.KSI[theme];
+    console.log(`Processing KSI theme: ${theme}`);
 
-    // Write the markdown to the output file
-    await fs.writeFile(outputFilePath, markdown);
+    const markdown = template({ ...themeData, version: "20x", type: "KSI" });
+    const filename = `${themeData.web_name}.md`;
+    const outputPath = path.join(
+      OUTPUT_DIR,
+      "20x",
+      "key-security-indicators",
+      filename,
+    );
 
-    // If this FRMR file indicates a Rev5 release, also write a copy to ../../markdown/rev5
-    try {
-      if (jsonData?.info?.rev5 !== "no") {
-        // Render the template for the rev5 version
-        const rev5Markdown = compiledTemplate({ ...jsonData, version: "rev5" });
+    fs.writeFileSync(outputPath, markdown);
 
-        const rev5Dir = path.join(
-          __dirname,
-          "../site/static/markdown/rev5/balance"
+    ksiInfo[theme] = {
+      id: themeData.id,
+      web_name: themeData.web_name,
+      name: themeData.name,
+      description: themeData.theme,
+    };
+    console.log(`  [20x] - Generated: ${outputPath}`);
+  }
+
+  // process FRR stuffs
+  for (const sectionKey in jsonContent.FRR) {
+    const section = jsonContent.FRR[sectionKey];
+    console.log(`Processing section: ${sectionKey}`);
+
+    if (section.info.effective["20x"].is) {
+      const markdown = template({
+        ...section,
+        version: "20x",
+        type: "FRR",
+        ksiInfo: ksiInfo,
+      });
+      if (section.info.short_name === "KSI") {
+        const filename = "index.md";
+        const outputPath = path.join(
+          OUTPUT_DIR,
+          "20x",
+          "key-security-indicators",
+          filename,
         );
-        const rev5FilePath = path.join(rev5Dir, path.basename(outputFilePath));
-        await fs.writeFile(rev5FilePath, rev5Markdown);
-        console.log(`Also wrote Rev5 copy to ${rev5FilePath}`);
+        fs.writeFileSync(outputPath, markdown);
+        console.log(`  [20x] - Generated: ${outputPath}`);
+      } else {
+        const filename = `${section.info.web_name}.md`;
+        const outputPath = path.join(OUTPUT_DIR, "20x", filename);
+        fs.writeFileSync(outputPath, markdown);
+        console.log(`  [20x] - Generated: ${outputPath}`);
       }
-    } catch (err) {
-      console.error("Error writing Rev5 copy:", err);
     }
 
-    console.log(`Successfully converted ${jsonFilePath} to ${outputFilePath}`);
-  } catch (error) {
-    console.error("Error converting FRMR to Markdown:", error);
+    if (section.info.effective.rev5.is != "no") {
+      const markdown = template({ ...section, version: "rev5", type: "FRR" });
+      const filename = `${section.info.web_name}.md`;
+      const outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
+
+      fs.writeFileSync(outputPath, markdown);
+      console.log(`  [rev5] Generated: ${outputPath}`);
+    }
   }
+
+  // Render Definitions
+  console.log(`Processing definitions...`);
+  const markdown = template({
+    ...jsonContent.FRD,
+    version: "20x",
+    type: "FRD",
+  });
+  const filename = `${jsonContent.FRD.info.web_name}.md`;
+  let outputPath = path.join(OUTPUT_DIR, "20x", filename);
+
+  fs.writeFileSync(outputPath, markdown);
+  console.log(`  [20x] - Generated: ${outputPath}`);
+  
+    const markdown5 = template({
+      ...jsonContent.FRD,
+      version: "rev5",
+      type: "FRD",
+    });
+  outputPath = path.join(OUTPUT_DIR, "rev5", "balance", filename);
+  fs.writeFileSync(outputPath, markdown5);
+  console.log(`  [rev5] - Generated: ${outputPath}`);
+
+
+  console.log("Markdown build complete.");
 }
+
+buildMarkdown();
 
 (async () => {
   try {
-    const outputDirs = [
-      path.join(__dirname, "../site/static/markdown/20x"),
-      path.join(__dirname, "../site/static/markdown/rev5/balance"),
-      path.join(__dirname, "../site/static/markdown/"),
-    ];
+    const overrideSrcDir = path.join(__dirname, "../site/content/");
+    const overrideDestDir = path.join(__dirname, "../site/static/markdown/");
 
-    try {
-      await Promise.all(outputDirs.map((dir) => fs.ensureDir(dir)));
-    } catch (err) {
-      console.error("Error creating output directories:", err);
-      process.exit(1);
+    // Check if the source directory exists before attempting to copy
+    if (await fs.pathExists(overrideSrcDir)) {
+      await fs.copy(overrideSrcDir, overrideDestDir, { overwrite: true });
+      console.log(`Successfully copied override files to ${overrideDestDir}`);
+    } else {
+      console.log("No override directory found, skipping copy.");
     }
-
-    const pattern = path.join(__dirname, "../..", "FRMR*.json");
-    const files = await glob(pattern);
-
-    if (files.length === 0) {
-      console.error("No FRMR JSON files found.");
-      return;
-    }
-
-    const templateFilePath = path.join(
-      __dirname,
-      "../templates",
-      "zensical-template.hbs"
-    );
-
-    for (const jsonFilePath of files) {
-      const baseName = path.basename(jsonFilePath, ".json");
-      let outputFileName = baseName.startsWith("FRMR-")
-        ? baseName.substring(5) + ".md"
-        : baseName + ".md";
-
-      // Remove "FRMR.TLA." prefix from filenames
-      if (outputFileName.startsWith("FRMR.")) {
-        const parts = outputFileName.split(".");
-        if (parts.length > 2) {
-          outputFileName = parts.slice(2).join(".");
-        }
-      }
-
-      const outputDir = path.join(__dirname, "../site/static/markdown/20x/");
-      const outputFilePath = path.join(outputDir, outputFileName);
-
-      await convertFRMRToMarkdown(
-        jsonFilePath,
-        templateFilePath,
-        outputFilePath,
-        baseName
-      );
-    }
-
-    // Copy override files
-    try {
-      const overrideSrcDir = path.join(__dirname, "../site/content/");
-      const overrideDestDir = path.join(__dirname, "../site/static/markdown/");
-
-      // Check if the source directory exists before attempting to copy
-      if (await fs.pathExists(overrideSrcDir)) {
-        await fs.copy(overrideSrcDir, overrideDestDir, { overwrite: true });
-        console.log(`Successfully copied override files to ${overrideDestDir}`);
-      } else {
-        console.log("No override directory found, skipping copy.");
-      }
-    } catch (err) {
-      console.error("Error copying override files:", err);
-    }
-  } catch (error) {
-    console.error("Error processing files:", error);
+  } catch (err) {
+    console.error("Error copying override files:", err);
   }
 })();

@@ -1,4 +1,4 @@
-## Why Use FedRAMP
+# Why Use FedRAMP
 
 !!! abstract "FedRAMP is mandatory for federal agencies!"
 
