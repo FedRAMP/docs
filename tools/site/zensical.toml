@@ -147,7 +147,7 @@ nav = [
             ] },
         ] },
     ] },
-    { "--> return to FedRAMP.gov" = "/" },
+    { "--> return to FedRAMP.gov" = "https://fedramp.gov/" },
 ]
 
 [project.extra]
