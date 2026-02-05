@@ -29,6 +29,8 @@ changes to the guidance itself.**
     The authorization package for pilot participants should be updated to v0.9.0 or a subsequent
     version within 3 months of receiving a pilot authorization.
 
+    The human-readable version of the v0.4.0 alpha documents are available at [https://fedramp.github.io/docs-alpha/20x](https://fedramp.github.io/docs-alpha/20x).
+
 ### Specific Changes of Note
 
 1. The **Recommended Secure Configuration** was renamed to **Secure Configuration Guide** and simplified by combining a few requirements and recommendations for clarity and establishing a separate Enhanced Capabilities section for recommendations.
