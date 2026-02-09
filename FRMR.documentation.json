@@ -2656,11 +2656,15 @@
             "PVA-CSX-RAD": {
               "fka": "FRR-PVA-08",
               "name": "Receiving Advice",
-              "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPX-AMA).",
+              "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPX-SHA).",
               "affects": ["Providers"],
               "primary_key_word": "MAY",
               "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
               "updated": [
+                {
+                  "date": "2026-02-09",
+                  "comment": "Fixed incorrect reference to old FRR by changing PVA-TPX-AMA to PVA-TPX-SHA; no material changes."
+                },
                 {
                   "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
@@ -2807,10 +2811,14 @@
             "PVA-TPX-SHA": {
               "fka": "FRR-PVA-09",
               "name": "Sharing Advice",
-              "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSX-RIA).",
+              "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSX-RAD).",
               "affects": ["Assessors"],
               "primary_key_word": "MAY",
               "updated": [
+                {
+                  "date": "2026-02-09",
+                  "comment": "Fixed incorrect reference to old FRR by changing PVA-CSX-RIA to PVA-CSX-RAD; no material changes."
+                },
                 {
                   "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
