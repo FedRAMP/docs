@@ -53,10 +53,7 @@
         "FRD-ACV": {
           "fka": "FRD-ALL-31",
           "term": "Accepted Vulnerability",
-          "alts": [
-            "accepted vulnerability",
-            "accepted vulnerabilities"
-          ],
+          "alts": ["accepted vulnerability", "accepted vulnerabilities"],
           "definition": "A vulnerability that the provider does not intend to fully mitigate or remediate, OR that has not or will not be fully mitigated or remediated within the maximum overdue period recommended or required by FedRAMP.",
           "updated": [
             {
@@ -68,9 +65,7 @@
         "FRD-ADP": {
           "fka": "FRD-ALL-10",
           "term": "Adaptive",
-          "alts": [
-            "adaptive"
-          ],
+          "alts": ["adaptive"],
           "definition": "The type of significant change that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.",
           "note": "Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.",
           "updated": [
@@ -83,10 +78,7 @@
         "FRD-AGY": {
           "fka": "FRD-ALL-19",
           "term": "Agency",
-          "alts": [
-            "agency",
-            "agencies"
-          ],
+          "alts": ["agency", "agencies"],
           "definition": "Has the meaning given in 44 U.S. Code § 3502 (1), which is \"any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.\"",
           "reference": "44 U.S. Code § 3502 (1)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
@@ -100,9 +92,7 @@
         "FRD-ANA": {
           "fka": "FRD-ALL-46",
           "term": "All Necessary Assessors",
-          "alts": [
-            "all necessary assessors"
-          ],
+          "alts": ["all necessary assessors"],
           "definition": "All entities who participate in the FedRAMP assessment of a cloud service offering in the context of a FedRAMP program authorization. This always includes FedRAMP and any FedRAMP recognized independent assessor contracted by the provider to perform a FedRAMP assessment.",
           "note": "This process identifies the requirements for an assessment and authorization performed by FedRAMP prior to any agency use of the cloud service offering, therefore agency assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials agency authorization teams need to assess the cloud service offering for agency use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.",
           "updated": [
@@ -115,9 +105,7 @@
         "FRD-ANP": {
           "fka": "FRD-ALL-18",
           "term": "All Necessary Parties",
-          "alts": [
-            "all necessary parties"
-          ],
+          "alts": ["all necessary parties"],
           "definition": "All entities whose interests are affected directly by activity related to a specific cloud service offering in the context of a FedRAMP authorization. This always includes FedRAMP and any agency customer who is operating the cloud service offering, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential agency customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.",
           "updated": [
             {
@@ -129,10 +117,7 @@
         "FRD-AUP": {
           "fka": "FRD-ALL-14",
           "term": "Authorization Package",
-          "alts": [
-            "authorization package",
-            "authorization packages"
-          ],
+          "alts": ["authorization package", "authorization packages"],
           "definition": "Has meaning from 44 USC § 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
           "reference": "44 USC § 3607 (b)(8)",
           "reference_url": "https://fedramp.gov/docs/authority/law/#b-additional-definitions",
@@ -147,9 +132,7 @@
         "FRD-AUD": {
           "fka": "FRD-ALL-15",
           "term": "Authorization data",
-          "alts": [
-            "authorization data"
-          ],
+          "alts": ["authorization data"],
           "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a cloud service offering, including the authorization package. ",
           "note": "In FedRAMP documentation, authorization data always refers to FedRAMP authorization data unless otherwise specified.",
           "updated": [
@@ -177,10 +160,7 @@
         "FRD-CSO": {
           "fka": "FRD-ALL-06",
           "term": "Cloud Service Offering",
-          "alts": [
-            "cloud service offering",
-            "cloud service offerings"
-          ],
+          "alts": ["cloud service offering", "cloud service offerings"],
           "definition": "A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Scope.",
           "updated": [
             {
@@ -192,11 +172,7 @@
         "FRD-DFT": {
           "fka": "FRD-ALL-39",
           "term": "Drift",
-          "alts": [
-            "drift",
-            "drifts",
-            "drifting"
-          ],
+          "alts": ["drift", "drifts", "drifting"],
           "definition": "Changes to information resources that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.",
           "updated": [
             {
@@ -224,11 +200,7 @@
         "FRD-FSI": {
           "fka": "FRD-ALL-45",
           "term": "FedRAMP Security Inbox",
-          "alts": [
-            "security inbox",
-            "security inboxes",
-            "FSI"
-          ],
+          "alts": ["security inbox", "security inboxes", "FSI"],
           "definition": "An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.",
           "updated": [
             {
@@ -240,9 +212,7 @@
         "FRD-FCD": {
           "fka": "FRD-ALL-01",
           "term": "Federal Customer Data",
-          "alts": [
-            "federal customer data"
-          ],
+          "alts": ["federal customer data"],
           "definition": "All electronic information, content, and materials that an agency or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.",
           "note": "In the context of FedRAMP authorization, \"federal customer data\" ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific agencies may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the agency; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.",
           "updated": [
@@ -270,12 +240,7 @@
         "FRD-HAN": {
           "fka": "FRD-ALL-03",
           "term": "Handle",
-          "alts": [
-            "handle",
-            "handles",
-            "handled",
-            "handling"
-          ],
+          "alts": ["handle", "handles", "handled", "handling"],
           "definition": "Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.",
           "updated": [
             {
@@ -287,9 +252,7 @@
         "FRD-IPC": {
           "fka": "FRD-ALL-12",
           "term": "Impact Categorization",
-          "alts": [
-            "impact categorization"
-          ],
+          "alts": ["impact categorization"],
           "definition": "The type of significant change that is likely to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).",
           "updated": [
             {
@@ -301,10 +264,7 @@
         "FRD-INT": {
           "fka": "FRD-ALL-40",
           "term": "Incident",
-          "alts": [
-            "incident",
-            "incidents"
-          ],
+          "alts": ["incident", "incidents"],
           "definition": "Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is \"an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].\"",
           "reference": "44 USC § 3552 (b)(2)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552",
@@ -318,10 +278,7 @@
         "FRD-IRS": {
           "fka": "FRD-ALL-02",
           "term": "Information Resource",
-          "alts": [
-            "information resource",
-            "information resources"
-          ],
+          "alts": ["information resource", "information resources"],
           "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\" This includes any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from non-machine-based information resources like organizational policies, procedures, employees, etc. to machine-based information resources like hardware, software, cloud services, code, etc.",
           "note": "Information resources are either machine-based or non-machine-based; any requirement or recommendation that references information resources without specifying a type is inclusive of all information resources.",
           "reference": "44 USC § 3502 (6)",
@@ -336,10 +293,7 @@
         "FRD-IFA": {
           "fka": "FRD-ALL-48",
           "term": "Initial FedRAMP Assessment",
-          "alts": [
-            "initial FedRAMP assessment",
-            "IFRA"
-          ],
+          "alts": ["initial FedRAMP assessment", "IFRA"],
           "definition": "The first full assessment of a cloud service offering seeking FedRAMP authorization, coordinated by the provider with all necessary assessors, that results in a FedRAMP authorization.",
           "updated": [
             {
@@ -393,10 +347,7 @@
         "FRD-LKY": {
           "fka": "FRD-ALL-04",
           "term": "Likely",
-          "alts": [
-            "likely",
-            "likelihood"
-          ],
+          "alts": ["likely", "likelihood"],
           "definition": "A reasonable degree of probability based on context.",
           "updated": [
             {
@@ -431,10 +382,7 @@
         "FRD-LAE": {
           "fka": "FRD-ALL-34",
           "term": "Limited Adverse Effect",
-          "alts": [
-            "limited adverse effect",
-            "limited adverse effects"
-          ],
+          "alts": ["limited adverse effect", "limited adverse effects"],
           "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the cloud service offering for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the federal customer data stored within the cloud service offering by only a few relevant users.",
           "updated": [
             {
@@ -446,10 +394,7 @@
         "FRD-MBI": {
           "fka": "FRD-ALL-50",
           "term": "Machine-Based (information resources)",
-          "alts": [
-            "machine-based",
-            "machine based"
-          ],
+          "alts": ["machine-based", "machine based"],
           "definition": "Any information technology information resource—including systems, processes, software, hardware, services, cloud-native capabilities, and any other such capability, component, or resource—that relies primarily on mechanical or electronic devices (i.e. computers) for operation.",
           "note": "All other information resources that do not rely on computers are non-machine-based information resources.",
           "updated": [
@@ -462,9 +407,7 @@
         "FRD-MRD": {
           "fka": "FRD-ALL-17",
           "term": "Machine-Readable",
-          "alts": [
-            "machine-readable"
-          ],
+          "alts": ["machine-readable"],
           "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"machine-readable\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
           "reference": "44 U.S. Code § 3502 (18)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
@@ -478,10 +421,7 @@
         "FRD-NAE": {
           "fka": "FRD-ALL-35",
           "term": "Negligible Adverse Effect",
-          "alts": [
-            "negligible adverse effect",
-            "negligible adverse effects"
-          ],
+          "alts": ["negligible adverse effect", "negligible adverse effects"],
           "definition": "A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the cloud service offering; OR (ii) result in degradation of the availability or performance of services within the cloud service offering for only a few relevant users.",
           "updated": [
             {
@@ -493,11 +433,7 @@
         "FRD-OAR": {
           "fka": "FRD-ALL-43",
           "term": "Ongoing Authorization Report (OAR)",
-          "alts": [
-            "ongoing authorization report",
-            "OAR",
-            "OARs"
-          ],
+          "alts": ["ongoing authorization report", "OAR", "OARs"],
           "definition": "A regular report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
@@ -509,10 +445,7 @@
         "FRD-ODV": {
           "fka": "FRD-ALL-30",
           "term": "Overdue Vulnerability",
-          "alts": [
-            "overdue vulnerability",
-            "overdue vulnerabilities"
-          ],
+          "alts": ["overdue vulnerability", "overdue vulnerabilities"],
           "definition": "A vulnerability that the provider intends to fully mitigate or remediate but has not or will not do so within the time frames recommended or required by FedRAMP.",
           "updated": [
             {
@@ -539,10 +472,7 @@
         "FRD-PFA": {
           "fka": "FRD-ALL-49",
           "term": "Persistent FedRAMP Assessment",
-          "alts": [
-            "persistent FedRAMP assessment",
-            "PFRA"
-          ],
+          "alts": ["persistent FedRAMP assessment", "PFRA"],
           "definition": "Follow-on assessments of a cloud service offering focused on Key Security Indicators, coordinated by the provider with all necessary assessors, to maintain a FedRAMP authorization or change its impact categorization.",
           "updated": [
             {
@@ -573,10 +503,7 @@
         "FRD-PER": {
           "fka": "FRD-ALL-38",
           "term": "Persistently",
-          "alts": [
-            "persistently",
-            "persistent"
-          ],
+          "alts": ["persistently", "persistent"],
           "definition": "Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. ",
           "note": "The use of persistently indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of \"continuous\" in federal information security policies.",
           "updated": [
@@ -589,10 +516,7 @@
         "FRD-PAI": {
           "fka": "FRD-ALL-36",
           "term": "Potential Adverse Impact (of vulnerability exploitation)",
-          "alts": [
-            "potential adverse impact",
-            "potential adverse impacts"
-          ],
+          "alts": ["potential adverse impact", "potential adverse impacts"],
           "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
           "updated": [
             {
@@ -604,10 +528,7 @@
         "FRD-PAC": {
           "fka": "FRD-ALL-42",
           "term": "Privileged account",
-          "alts": [
-            "privileged account",
-            "privileged accounts"
-          ],
+          "alts": ["privileged account", "privileged accounts"],
           "definition": "An account with elevated privileges that enables administrative functions over some aspect of the cloud service offering that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.",
           "note": "Any references to privileged accounts in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to privileged accounts.",
           "updated": [
@@ -620,10 +541,7 @@
         "FRD-PRO": {
           "fka": "FRD-ALL-37",
           "term": "Promptly",
-          "alts": [
-            "promptly",
-            "prompt"
-          ],
+          "alts": ["promptly", "prompt"],
           "definition": "Without unnecessary delay.",
           "note": "The use of promptly in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a cloud service offering.",
           "updated": [
@@ -636,10 +554,7 @@
         "FRD-QTR": {
           "fka": "FRD-ALL-44",
           "term": "Quarterly Review",
-          "alts": [
-            "quarterly review",
-            "quarterly reviews"
-          ],
+          "alts": ["quarterly review", "quarterly reviews"],
           "definition": "A regular synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
@@ -651,10 +566,7 @@
         "FRD-RGL": {
           "fka": "FRD-ALL-07",
           "term": "Regularly",
-          "alts": [
-            "regularly",
-            "regular"
-          ],
+          "alts": ["regularly", "regular"],
           "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.",
           "updated": [
             {
@@ -666,10 +578,7 @@
         "FRD-RMV": {
           "fka": "FRD-ALL-26",
           "term": "Remediated Vulnerability",
-          "alts": [
-            "remediated vulnerability",
-            "remediated vulnerabilities"
-          ],
+          "alts": ["remediated vulnerability", "remediated vulnerabilities"],
           "definition": "A vulnerability that has been neutralized or eliminated and is no longer detected.",
           "updated": [
             {
@@ -681,9 +590,7 @@
         "FRD-RTR": {
           "fka": "FRD-ALL-09",
           "term": "Routine Recurring",
-          "alts": [
-            "routine recurring"
-          ],
+          "alts": ["routine recurring"],
           "definition": "The type of significant change that regularly and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.",
           "updated": [
             {
@@ -695,10 +602,7 @@
         "FRD-SAE": {
           "fka": "FRD-ALL-33",
           "term": "Serious Adverse Effect",
-          "alts": [
-            "serious adverse effect",
-            "serious adverse effects"
-          ],
+          "alts": ["serious adverse effect", "serious adverse effects"],
           "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the cloud service offering, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the federal customer data stored within the cloud service offering.",
           "updated": [
             {
@@ -710,10 +614,7 @@
         "FRD-SGC": {
           "fka": "FRD-ALL-08",
           "term": "Significant change",
-          "alts": [
-            "significant change",
-            "significant changes"
-          ],
+          "alts": ["significant change", "significant changes"],
           "definition": "Has the meaning given in NIST SP 800-37 Rev. 2 which is \"a change that is likely to substantively affect the security or privacy posture of a system.\"",
           "reference": "NIST SP 800-37 Rev. 2",
           "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
@@ -758,9 +659,7 @@
         "FRD-TRF": {
           "fka": "FRD-ALL-11",
           "term": "Transformative",
-          "alts": [
-            "transformative"
-          ],
+          "alts": ["transformative"],
           "definition": "The type of significant change that introduces substantive potential security risks that are likely to affect existing risk determinations and must be assessed in depth.",
           "note": "Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.",
           "updated": [
@@ -773,10 +672,7 @@
         "FRD-TRC": {
           "fka": "FRD-ALL-16",
           "term": "Trust Center",
-          "alts": [
-            "trust center",
-            "trust centers"
-          ],
+          "alts": ["trust center", "trust centers"],
           "definition": "A secure repository or service used by cloud service providers to store and share authorization data. Trust centers are the complete and definitive source for authorization data and must meet the requirements outlined in the FedRAMP Authorization Data Sharing process to be FedRAMP-compatible.",
           "note": "In FedRAMP documentation, all references to trust centers indicate FedRAMP-compatible trust centers unless otherwise specified.",
           "updated": [
@@ -789,10 +685,7 @@
         "FRD-VUL": {
           "fka": "FRD-ALL-20",
           "term": "Vulnerability",
-          "alts": [
-            "vulnerability",
-            "vulnerabilities"
-          ],
+          "alts": ["vulnerability", "vulnerabilities"],
           "definition": "Has the meaning given to \"security vulnerability\" in 6 USC § 650 (25), which is \"any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.\" This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).",
           "reference": "6 USC § 650 (25)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650",
@@ -5261,9 +5154,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Cloud Service Offering"
-          ]
+          "terms": ["Cloud Service Offering"]
         },
         "KSI-CMT-RMV": {
           "fka": "KSI-CMT-02",
@@ -5293,44 +5184,27 @@
           "fka": "KSI-CMT-04",
           "name": "Reviewing Change Procedures",
           "statement": "Persistently review the effectiveness of documented change management procedures.",
-          "controls": [
-            "cm-3",
-            "cm-3.2",
-            "cm-3.4",
-            "cm-5",
-            "cm-7.1",
-            "cm-9"
-          ],
+          "controls": ["cm-3", "cm-3.2", "cm-3.4", "cm-5", "cm-7.1", "cm-9"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CMT-VTD": {
           "fka": "KSI-CMT-03",
           "name": "Validating Throughout Deployment",
           "statement": "Automate persistent testing and validation of changes throughout deployment.",
-          "controls": [
-            "cm-3",
-            "cm-3.2",
-            "cm-4.2",
-            "si-2"
-          ],
+          "controls": ["cm-3", "cm-3.2", "cm-4.2", "si-2"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistent Validation",
-            "Persistently"
-          ]
+          "terms": ["Persistent Validation", "Persistently"]
         }
       }
     },
@@ -5506,42 +5380,27 @@
           "fka": "KSI-CED-03",
           "name": "Reviewing Development and Engineering Training",
           "statement": "Persistently review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
-          "controls": [
-            "cp-3",
-            "ir-2",
-            "ps-6"
-          ],
+          "controls": ["cp-3", "ir-2", "ps-6"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CED-RGT": {
           "fka": "KSI-CED-01",
           "name": "Reviewing General Training",
           "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
-          "controls": [
-            "at-2",
-            "at-2.2",
-            "at-2.3",
-            "at-3.5",
-            "at-4",
-            "ir-2.3"
-          ],
+          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CED-RRT": {
           "fka": "KSI-CED-04",
@@ -5554,31 +5413,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability Response"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"]
         },
         "KSI-CED-RST": {
           "fka": "KSI-CED-02",
           "name": "Reviewing Role-Specific Training",
           "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
-          "controls": [
-            "at-2",
-            "at-2.3",
-            "at-3",
-            "sr-11.1"
-          ],
+          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         }
       }
     },
@@ -5679,9 +5527,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-IAM-JIT": {
           "fka": "KSI-IAM-04",
@@ -5794,9 +5640,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Vulnerability Response"
-          ]
+          "terms": ["Vulnerability Response"]
         }
       }
     },
@@ -5811,22 +5655,14 @@
           "fka": "KSI-INR-03",
           "name": "Generating After Action Reports",
           "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
-          "controls": [
-            "ir-3",
-            "ir-4",
-            "ir-4.1",
-            "ir-8"
-          ],
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently"
-          ]
+          "terms": ["Incident", "Persistently"]
         },
         "KSI-INR-RIR": {
           "fka": "KSI-INR-01",
@@ -5850,34 +5686,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability Response"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"]
         },
         "KSI-INR-RPI": {
           "fka": "KSI-INR-02",
           "name": "Reviewing Past Incidents",
           "statement": "Persistently review past incidents for patterns or vulnerabilities.",
-          "controls": [
-            "ir-3",
-            "ir-4",
-            "ir-4.1",
-            "ir-5",
-            "ir-8"
-          ],
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability"]
         }
       }
     },
@@ -5899,9 +5721,7 @@
               "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
             }
           },
-          "controls": [
-            "si-11"
-          ],
+          "controls": ["si-11"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -5913,12 +5733,7 @@
           "fka": "KSI-MLA-05",
           "name": "Evaluating Configurations",
           "statement": "Persistently evaluate and test the configuration of machine-based information resources, especially infrastructure as code.",
-          "controls": [
-            "ca-7",
-            "cm-2",
-            "cm-6",
-            "si-7.7"
-          ],
+          "controls": ["ca-7", "cm-2", "cm-6", "si-7.7"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -5953,9 +5768,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource"
-          ]
+          "terms": ["Information Resource"]
         },
         "KSI-MLA-OSM": {
           "fka": "KSI-MLA-01",
@@ -6007,9 +5820,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         }
       }
     },
@@ -6039,9 +5850,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource"
-          ]
+          "terms": ["Information Resource"]
         },
         "KSI-PIY-RES": {
           "fka": "KSI-PIY-08",
@@ -6054,9 +5863,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RIS": {
           "fka": "KSI-PIY-06",
@@ -6079,9 +5886,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RSD": {
           "fka": "KSI-PIY-04",
@@ -6107,27 +5912,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RVD": {
           "fka": "KSI-PIY-03",
           "name": "Reviewing Vulnerability Disclosures",
           "statement": "Persistently review the effectiveness of the provider's vulnerability disclosure program.",
-          "controls": [
-            "ra-5.11"
-          ],
+          "controls": ["ra-5.11"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently",
-            "Vulnerability"
-          ]
+          "terms": ["Persistently", "Vulnerability"]
         }
       }
     },
@@ -6142,14 +5940,7 @@
           "fka": "KSI-RPL-03",
           "name": "Aligning Backups with Objectives",
           "statement": "Persistently review the alignment of machine-based information resource backups with defined recovery objectives.",
-          "controls": [
-            "cm-2.3",
-            "cp-6",
-            "cp-9",
-            "cp-10",
-            "cp-10.2",
-            "si-12"
-          ],
+          "controls": ["cm-2.3", "cp-6", "cp-9", "cp-10", "cp-10.2", "si-12"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6190,27 +5981,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-RPL-RRO": {
           "fka": "KSI-RPL-01",
           "name": "Reviewing Recovery Objectives",
           "statement": "Persistently review desired Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
-          "controls": [
-            "cp-2.3",
-            "cp-10"
-          ],
+          "controls": ["cp-2.3", "cp-10"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-RPL-TRC": {
           "fka": "KSI-RPL-04",
@@ -6234,10 +6018,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently"
-          ]
+          "terms": ["Incident", "Persistently"]
         }
       }
     },
@@ -6280,22 +6061,14 @@
           "fka": "KSI-SVC-06",
           "name": "Automating Secret Management",
           "statement": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
-          "controls": [
-            "ac-17.2",
-            "ia-5.2",
-            "ia-5.6",
-            "sc-12",
-            "sc-17"
-          ],
+          "controls": ["ac-17.2", "ia-5.2", "ia-5.6", "sc-12", "sc-17"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Regularly"
-          ]
+          "terms": ["Regularly"]
         },
         "KSI-SVC-EIS": {
           "fka": "KSI-SVC-01",
@@ -6318,10 +6091,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource",
-            "Persistently"
-          ]
+          "terms": ["Information Resource", "Persistently"]
         },
         "KSI-SVC-PRR": {
           "fka": "KSI-SVC-08",
@@ -6334,9 +6104,7 @@
               "statement": "Persistently review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would likely negatively affect the confidentiality, integrity, or availability of federal customer data."
             }
           },
-          "controls": [
-            "sc-4"
-          ],
+          "controls": ["sc-4"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6361,21 +6129,14 @@
               "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
             }
           },
-          "controls": [
-            "si-12.3",
-            "si-18.4"
-          ],
+          "controls": ["si-12.3", "si-18.4"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Agency",
-            "Federal Customer Data",
-            "Promptly"
-          ]
+          "terms": ["Agency", "Federal Customer Data", "Promptly"]
         },
         "KSI-SVC-SNT": {
           "fka": "KSI-SVC-02",
@@ -6411,10 +6172,7 @@
               "statement": "Persistently validate the authenticity and integrity of communications between machine-based information resources using automation."
             }
           },
-          "controls": [
-            "sc-23",
-            "si-7.1"
-          ],
+          "controls": ["sc-23", "si-7.1"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6486,11 +6244,9 @@
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
-        "KSI-RSC-MON": {
+        "KSI-SCR-MON": {
           "fka": "KSI-TPR-04",
           "name": "Monitoring Supply Chain Risk",
           "statement": "Automatically monitor third party software information resources for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
@@ -6508,14 +6264,15 @@
           ],
           "updated": [
             {
+              "date": "2026-02-09",
+              "comment": "Renamed from incorrect KSI-RSC-MON to KSI-SCR-MON; no material changes."
+            },
+            {
               "date": "2026-02-04",
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource",
-            "Vulnerability"
-          ]
+          "terms": ["Information Resource", "Vulnerability"]
         }
       }
     }
