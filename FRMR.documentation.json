@@ -6490,7 +6490,7 @@
             "Persistently"
           ]
         },
-        "KSI-RSC-MON": {
+        "KSI-SCR-MON": {
           "fka": "KSI-TPR-04",
           "name": "Monitoring Supply Chain Risk",
           "statement": "Automatically monitor third party software information resources for upstream vulnerabilities using mechanisms that may include contractual notification requirements or active monitoring services.",
