@@ -1,0 +1,2568 @@
+{
+  "mapping-collection": {
+    "uuid": "59b0d61e-7852-5da4-8812-156d0edd5a1e",
+    "metadata": {
+      "title": "FedRAMP KSI to NIST SP 800-53 Rev 5 Mapping",
+      "last-modified": "2025-01-19T00:00:00.000Z",
+      "version": "0.9.0-beta",
+      "oscal-version": "1.2.0",
+      "roles": [
+        {
+          "id": "publisher",
+          "title": "Document Publisher"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "443a7e84-a59f-52ae-9ebf-a458e531b757",
+          "type": "organization",
+          "name": "Federal Risk and Authorization Management Program (FedRAMP)",
+          "short-name": "FedRAMP",
+          "links": [
+            {
+              "href": "https://www.fedramp.gov",
+              "rel": "homepage"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "publisher",
+          "party-uuids": [
+            "443a7e84-a59f-52ae-9ebf-a458e531b757"
+          ]
+        }
+      ]
+    },
+    "provenance": {
+      "method": "hybrid",
+      "matching-rationale": "functional",
+      "status": "complete",
+      "mapping-description": "Maps FedRAMP Key Security Indicators to NIST SP 800-53 Rev 5 controls. KSI indicators aggregate multiple NIST controls into security outcomes."
+    },
+    "mappings": [
+      {
+        "uuid": "b07c600e-7488-57b9-8549-3a95c8b9b9e9",
+        "source-resource": {
+          "type": "catalog",
+          "href": "./fedramp-frmr-catalog.json"
+        },
+        "target-resource": {
+          "type": "catalog",
+          "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json"
+        },
+        "maps": [
+          {
+            "uuid": "6e4b4e76-c840-50d7-9dba-1db092501d2e",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-afr-ads"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8"
+              }
+            ]
+          },
+          {
+            "uuid": "bb469d4c-2414-594c-bfb2-a31ced1bf69a",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-afr-mas"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-21"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "mp-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pe-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-3"
+              }
+            ]
+          },
+          {
+            "uuid": "bc6fb7fc-0019-52dd-b124-e682d1ce92f0",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-afr-scn"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.7"
+              }
+            ]
+          },
+          {
+            "uuid": "9da13f7e-ecb0-5e38-b9fa-fd4d1993c4c5",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-afr-vdr"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-31"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.11"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.7"
+              }
+            ]
+          },
+          {
+            "uuid": "dda321c4-73af-5075-a268-88983cf069a6",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cmt-lmc"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-4.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-2"
+              }
+            ]
+          },
+          {
+            "uuid": "5f52011a-403e-5c3e-a547-772a709c9c27",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cmt-rmv"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              }
+            ]
+          },
+          {
+            "uuid": "fa202dda-2b10-56fa-9e71-c2e39c2a1143",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cmt-rvp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-9"
+              }
+            ]
+          },
+          {
+            "uuid": "531498ea-257a-53e2-95f0-2f176d1d5a8c",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cmt-vtd"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-4.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2"
+              }
+            ]
+          },
+          {
+            "uuid": "5ed51165-3bbf-53b0-990d-d942b9db99aa",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-dfp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              }
+            ]
+          },
+          {
+            "uuid": "a4212ac9-266e-5402-b231-d2bf6587dd88",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-eis"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7.1"
+              }
+            ]
+          },
+          {
+            "uuid": "c0151403-5d56-5e8c-b363-556b7a857361",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-ibp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-10"
+              }
+            ]
+          },
+          {
+            "uuid": "b1fdc014-f64f-5e3d-a70a-3dd3d1e7b262",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-mat"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-18.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-18.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-16"
+              }
+            ]
+          },
+          {
+            "uuid": "0ffcc65b-5634-5f69-891c-9391e763744c",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-rnt"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-8"
+              }
+            ]
+          },
+          {
+            "uuid": "2ffc9626-dac1-5697-b48f-a4e3bed2b8aa",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-rvp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sc-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-8.2"
+              }
+            ]
+          },
+          {
+            "uuid": "cf730b62-506a-58c7-a0fe-485bdd307d09",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-cna-uln"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8"
+              }
+            ]
+          },
+          {
+            "uuid": "758a1137-2198-5a9c-a4b2-a7cd6ab59a43",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-ced-det"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-6"
+              }
+            ]
+          },
+          {
+            "uuid": "34139bda-81a4-5c72-9bfa-76fd157654ef",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-ced-rgt"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "at-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-3.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-2.3"
+              }
+            ]
+          },
+          {
+            "uuid": "ed989123-c6bd-59ba-a09a-68c4a9504d94",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-ced-rst"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "at-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "at-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-11.1"
+              }
+            ]
+          },
+          {
+            "uuid": "f6ab62e3-e920-5f2a-b0ba-1861baff230c",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-aam"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2.13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-12.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-12.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-12.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4.4"
+              }
+            ]
+          },
+          {
+            "uuid": "afed3f76-36d6-5f24-a4e0-906864d480cd",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-apm"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-6"
+              }
+            ]
+          },
+          {
+            "uuid": "3108d4ee-df70-568b-85d7-3beadb38bb7d",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-elp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-14"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-21"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-3"
+              }
+            ]
+          },
+          {
+            "uuid": "cf99b775-9671-5b1e-92c5-7d10158ef9e0",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-jit"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.10"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-9.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-4.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              }
+            ]
+          },
+          {
+            "uuid": "18756c7f-e30d-5943-b3a2-f0b0f3b73443",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-mfa"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-2.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              }
+            ]
+          },
+          {
+            "uuid": "5d0a96d1-b2e9-5897-bc96-70cabc1e2bdf",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-snu"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5.5"
+              }
+            ]
+          },
+          {
+            "uuid": "004c890d-d367-53bc-bd25-c1ccb32e21a9",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-iam-sus"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.13"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-8"
+              }
+            ]
+          },
+          {
+            "uuid": "61e81d52-7907-5e9c-8ee8-5aaa7dc94a3c",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-inr-aar"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ]
+          },
+          {
+            "uuid": "44703a3c-8af4-5a1a-907b-e41b2664408a",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-inr-rir"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.5"
+              }
+            ]
+          },
+          {
+            "uuid": "859ee15b-ab88-57e3-90e0-6e42883339f3",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-inr-rpi"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ir-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-8"
+              }
+            ]
+          },
+          {
+            "uuid": "19016db5-ca29-541c-b3c5-801b8555845d",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-mla-ala"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "si-11"
+              }
+            ]
+          },
+          {
+            "uuid": "ea8f3918-c603-5041-a70e-9df8cd017518",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-mla-evc"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ca-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.7"
+              }
+            ]
+          },
+          {
+            "uuid": "8eb4e9c4-8d1b-5c31-829c-973e30de38e3",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-mla-let"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-2.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.9"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.7"
+              }
+            ]
+          },
+          {
+            "uuid": "322dc189-7966-5d57-9538-5b44784ae80d",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-mla-osm"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-20.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-3.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.7"
+              }
+            ]
+          },
+          {
+            "uuid": "dce3ca65-8c03-5bea-a408-3eec85011568",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-mla-rvl"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-6.9"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4.4"
+              }
+            ]
+          },
+          {
+            "uuid": "40d1ce75-90a3-51ac-a2f2-be5e3ca2f5cf",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-piy-giv"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-12.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.5"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.8"
+              }
+            ]
+          },
+          {
+            "uuid": "2ab2d1b5-d05b-52ed-8866-6ff4e9a08fe3",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-piy-ris"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-3.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-2.1"
+              }
+            ]
+          },
+          {
+            "uuid": "8b6593c3-f3b3-5ad9-8211-bf0d92e3e21a",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-piy-rsd"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "au-3.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-3.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "pm-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-16"
+              }
+            ]
+          },
+          {
+            "uuid": "dde21472-808e-547f-9447-c074756a84e7",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-piy-rvd"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ra-5.11"
+              }
+            ]
+          },
+          {
+            "uuid": "e4933383-206c-5575-9724-1b5e87d01d09",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-rpl-abo"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-10.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-12"
+              }
+            ]
+          },
+          {
+            "uuid": "12984045-34b7-51e6-bf91-f9f17a891f98",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-rpl-arp"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-10.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-7.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-7.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-8.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-8.2"
+              }
+            ]
+          },
+          {
+            "uuid": "b2dce504-c8ce-5c2b-9a5d-25d96e83ca1e",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-rpl-rro"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.3"
+              }
+            ]
+          },
+          {
+            "uuid": "ce415527-490b-5e4a-9acf-5a9bec62fe6d",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-rpl-trc"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cp-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-4.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-6.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-3.2"
+              }
+            ]
+          },
+          {
+            "uuid": "5ac90038-af5a-5eaa-8c85-3d611039f1f5",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-acm"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-2.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-2.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-10"
+              }
+            ]
+          },
+          {
+            "uuid": "90130828-7396-5e5e-9567-2a913eaafecf",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-asm"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-17.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "ia-5.6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-12"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-17"
+              }
+            ]
+          },
+          {
+            "uuid": "5ce56846-74d4-510d-8fe8-52aa30fd5ec8",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-eis"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-12.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ma-2"
+              },
+              {
+                "type": "control",
+                "id-ref": "pl-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-39"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-4"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-10"
+              }
+            ]
+          },
+          {
+            "uuid": "f519f886-af25-5d1f-9924-9a3d9fa6fe07",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-prr"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sc-4"
+              }
+            ]
+          },
+          {
+            "uuid": "f5d2a887-26a3-5d47-8959-456693079b87",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-rud"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "si-12.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-18.4"
+              }
+            ]
+          },
+          {
+            "uuid": "89275ff6-656b-58c7-89c1-422321262de7",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-snt"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-1"
+              },
+              {
+                "type": "control",
+                "id-ref": "ac-17.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cp-9.8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-21"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-8.1"
+              }
+            ]
+          },
+          {
+            "uuid": "3bb1cf5e-ba55-568a-8718-58bfd8532b85",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-vcm"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.1"
+              }
+            ]
+          },
+          {
+            "uuid": "2e4b695d-1ee3-5ed1-829c-462ddeeda038",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-svc-vri"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "cm-2.2"
+              },
+              {
+                "type": "control",
+                "id-ref": "cm-8.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-13"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-23"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-10"
+              }
+            ]
+          },
+          {
+            "uuid": "42489e52-0a6a-5b83-b507-8b1b8b86a1dc",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-scr-mit"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-7.4"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-3.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-10"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-11"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-15.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-22"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "sc-18"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-7.1"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              }
+            ]
+          },
+          {
+            "uuid": "38a4d478-b41e-5229-a554-ae7a856d3bc6",
+            "relationship": "superset-of",
+            "sources": [
+              {
+                "type": "control",
+                "id-ref": "ksi-scr-mon"
+              }
+            ],
+            "targets": [
+              {
+                "type": "control",
+                "id-ref": "ac-20"
+              },
+              {
+                "type": "control",
+                "id-ref": "ca-3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ir-6.3"
+              },
+              {
+                "type": "control",
+                "id-ref": "ps-7"
+              },
+              {
+                "type": "control",
+                "id-ref": "ra-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sa-9"
+              },
+              {
+                "type": "control",
+                "id-ref": "si-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-5"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-6"
+              },
+              {
+                "type": "control",
+                "id-ref": "sr-8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

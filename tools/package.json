@@ -19,7 +19,8 @@
   "scripts": {
     "build": "bun run clean && bun run scripts/build-markdown.ts && cd site && zensical build --clean && python postprocess.py",
     "clean": "/bin/rm -rf site/static/markdown/* && /bin/rm -rf site/static/html/*",
-    "watch": "bunx nodemon"
+    "watch": "bunx nodemon",
+    "build:oscal": "bun run scripts/build-oscal.ts"
   },
   "nodemonConfig": {
     "verbose": true,

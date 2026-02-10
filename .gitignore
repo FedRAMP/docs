@@ -1,6 +1,8 @@
 # dependencies (bun install)
 node_modules
 tools/node_modules
+# oscal-cli toolchain (downloaded, not source)
+tools/oscal-cli/
 # output
 out
 dist
