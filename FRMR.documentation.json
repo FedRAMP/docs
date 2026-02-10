@@ -2,8 +2,8 @@
   "info": {
     "title": "FedRAMP Machine-Readable Documentation",
     "description": "This datafile contains FedRAMP documentation for cloud service providers seeking FedRAMP Authorization. This includes definitions, requirements, recommendations, and key security indicators.",
-    "version": "0.9.0-beta",
-    "last_updated": "2025-01-19"
+    "version": "0.9.1-beta",
+    "last_updated": "2026-02-10"
   },
   "FRD": {
     "info": {
