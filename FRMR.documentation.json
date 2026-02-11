@@ -2,8 +2,8 @@
   "info": {
     "title": "FedRAMP Machine-Readable Documentation",
     "description": "This datafile contains FedRAMP documentation for cloud service providers seeking FedRAMP Authorization. This includes definitions, requirements, recommendations, and key security indicators.",
-    "version": "0.9.1-beta",
-    "last_updated": "2026-02-10"
+    "version": "0.9.2-beta",
+    "last_updated": "2026-02-11"
   },
   "FRD": {
     "info": {
@@ -857,27 +857,6 @@
                 }
               ]
             },
-            "ADS-CSX-UTC": {
-              "statement": "Providers SHOULD use a FedRAMP-compatible trust center to store and share authorization data with all necessary parties.",
-              "terms": [
-                "All Necessary Parties",
-                "Authorization data",
-                "Trust Center"
-              ],
-              "affects": ["Providers"],
-              "name": "Use Trust Centers",
-              "primary_key_word": "SHOULD",
-              "updated": [
-                {
-                  "date": "2026-02-04",
-                  "comment": "Modified to should, clarified wider application; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-                }
-              ],
-              "notes": [
-                "Requirements and recommendations for FedRAMP-compatible trust centers are explained in ADS-TRC.",
-                "This recommendation only applies to FedRAMP Rev5 (it is required for FedRAMP 20x)."
-              ]
-            },
             "ADS-CSL-UCP": {
               "fka": "FRR-ADS-06",
               "statement": "Providers MUST share authorization data via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible trust center.",
@@ -915,6 +894,32 @@
                   "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
+              ]
+            },
+            "ADS-CSL-UTC": {
+              "fka": "ADS-CSX-UTC",
+              "statement": "Providers SHOULD use a FedRAMP-compatible trust center to store and share authorization data with all necessary parties.",
+              "terms": [
+                "All Necessary Parties",
+                "Authorization data",
+                "Trust Center"
+              ],
+              "affects": ["Providers"],
+              "name": "Use Trust Centers",
+              "primary_key_word": "SHOULD",
+              "updated": [
+                {
+                  "date": "2026-02-04",
+                  "comment": "Modified to should, clarified wider application; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                },
+                {
+                  "date": "2026-02-11",
+                  "comment": "Auto-fix: key \"ADS-CSX-UTC\" middle segment did not match parent \"CSL\". Renamed to \"ADS-CSL-UTC\"."
+                }
+              ],
+              "notes": [
+                "Requirements and recommendations for FedRAMP-compatible trust centers are explained in ADS-TRC.",
+                "This recommendation only applies to FedRAMP Rev5 (it is required for FedRAMP 20x)."
               ]
             }
           }
@@ -1037,8 +1042,8 @@
             }
           },
           "UTC": {
-            "ADS-CSO-PGD": {
-              "fka": "FRR-ADS-AC-01",
+            "ADS-UTC-PGD": {
+              "fkas": ["FRR-ADS-AC-01", "ADS-CSO-PGD"],
               "statement": "Providers MUST publicly provide plain-language policies and guidance for all necessary parties that explains how they can obtain and manage access to authorization data stored in the trust center.",
               "terms": [
                 "All Necessary Parties",
@@ -1052,11 +1057,15 @@
                 {
                   "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+                },
+                {
+                  "date": "2026-02-11",
+                  "comment": "Auto-fix: key \"ADS-CSO-PGD\" middle segment did not match parent \"UTC\". Renamed to \"ADS-UTC-PGD\"."
                 }
               ]
             },
-            "ADS-CSO-AGA": {
-              "fka": "FRR-ADS-AC-02",
+            "ADS-UTC-AGA": {
+              "fkas": ["FRR-ADS-AC-02", "ADS-CSO-AGA"],
               "statement": "Providers SHOULD share the authorization package with agencies upon request.",
               "terms": ["Agency", "Authorization Package"],
               "affects": ["Providers"],
@@ -1066,10 +1075,15 @@
                 {
                   "date": "2026-02-04",
                   "comment": "Split into ADS-CSO-AGA and ADS-CSO-AAD; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
+                },
+                {
+                  "date": "2026-02-11",
+                  "comment": "Auto-fix: key \"ADS-CSO-AGA\" middle segment did not match parent \"UTC\". Renamed to \"ADS-UTC-AGA\"."
                 }
               ]
             },
-            "ADS-CSO-AAD": {
+            "ADS-UTC-AAD": {
+              "fka": "ADS-CSO-AAD",
               "statement": "Providers MUST notify FedRAMP by email to info@fedramp.gov within 5 business days of denying an agency access request for authorization data.",
               "affects": ["Providers"],
               "name": "Agency Access Denial",
@@ -1078,6 +1092,10 @@
                 {
                   "date": "2026-02-04",
                   "comment": "Split from FRR-ADS-AC-02; removed italics and changed the ID as part of new standardization in v0.9.0-beta."
+                },
+                {
+                  "date": "2026-02-11",
+                  "comment": "Auto-fix: key \"ADS-CSO-AAD\" middle segment did not match parent \"UTC\". Renamed to \"ADS-UTC-AAD\"."
                 }
               ],
               "terms": ["Agency", "Authorization data"],
