@@ -92,8 +92,16 @@ Go to https://localhost:8000 and watch the magic happen as you make changes.
 To integrate with the fedramp.gov site you will need to build the latest and copy it over to that repo for now. Build steps include:
 
 ```
-cd docs/tools
+cd tools
 bun run build
+
+# check out the fedramp.gov repo, sync develop, create new branch
+
+cd static/docs
+/bin/rm -rf *
+cp -pr ~/github/docs/tools/site/static/html/* ./
+
+# commit, push, PR into develop, wait for develop to be deployed
 ```
 
 Then copy everything from `docs/tools/static/html/` to `fedramp.gov/static/docs/` in the fedramp.gov repo and PR as normal.
