@@ -53,10 +53,7 @@
         "FRD-ACV": {
           "fka": "FRD-ALL-31",
           "term": "Accepted Vulnerability",
-          "alts": [
-            "accepted vulnerability",
-            "accepted vulnerabilities"
-          ],
+          "alts": ["accepted vulnerability", "accepted vulnerabilities"],
           "definition": "A vulnerability that the provider does not intend to fully mitigate or remediate, OR that has not or will not be fully mitigated or remediated within the maximum overdue period recommended or required by FedRAMP.",
           "updated": [
             {
@@ -68,9 +65,7 @@
         "FRD-ADP": {
           "fka": "FRD-ALL-10",
           "term": "Adaptive",
-          "alts": [
-            "adaptive"
-          ],
+          "alts": ["adaptive"],
           "definition": "The type of significant change that does not routinely recur but does not introduce substantive potential security risks that need to be assessed in depth.",
           "note": "Adaptive changes typically require careful planning that focuses on engineering execution instead of customer adoption, can be verified with minor changes to existing automated validation procedures, and do not require large changes to operational procedures, deployment plans, or documentation.",
           "updated": [
@@ -83,10 +78,7 @@
         "FRD-AGY": {
           "fka": "FRD-ALL-19",
           "term": "Agency",
-          "alts": [
-            "agency",
-            "agencies"
-          ],
+          "alts": ["agency", "agencies"],
           "definition": "Has the meaning given in 44 U.S. Code § 3502 (1), which is \"any executive department, military department, Government corporation, Government controlled corporation, or other establishment in the executive branch of the Government (including the Executive Office of the President), or any independent regulatory agency, but does not include—(A) the Government Accountability Office; (B) Federal Election Commission; (C) the governments of the District of Columbia and of the territories and possessions of the United States, and their various subdivisions; or (D) Government-owned contractor-operated facilities, including laboratories engaged in national defense research and production activities.\"",
           "reference": "44 U.S. Code § 3502 (1)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
@@ -100,9 +92,7 @@
         "FRD-ANA": {
           "fka": "FRD-ALL-46",
           "term": "All Necessary Assessors",
-          "alts": [
-            "all necessary assessors"
-          ],
+          "alts": ["all necessary assessors"],
           "definition": "All entities who participate in the FedRAMP assessment of a cloud service offering in the context of a FedRAMP program authorization. This always includes FedRAMP and any FedRAMP recognized independent assessor contracted by the provider to perform a FedRAMP assessment.",
           "note": "This process identifies the requirements for an assessment and authorization performed by FedRAMP prior to any agency use of the cloud service offering, therefore agency assessment teams are not included in the FedRAMP assessment and authorization. The resulting FedRAMP authorization package will include all the materials agency authorization teams need to assess the cloud service offering for agency use, including evidence. Program authorization is an authorization path defined in Section IV (c) of OMB Memorandum M-24-15.",
           "updated": [
@@ -115,9 +105,7 @@
         "FRD-ANP": {
           "fka": "FRD-ALL-18",
           "term": "All Necessary Parties",
-          "alts": [
-            "all necessary parties"
-          ],
+          "alts": ["all necessary parties"],
           "definition": "All entities whose interests are affected directly by activity related to a specific cloud service offering in the context of a FedRAMP authorization. This always includes FedRAMP and any agency customer who is operating the cloud service offering, but may include additional parties depending on agreements made by the cloud service provider (such as consultants or third-party assessors). Potential agency customers or third-party cloud service providers should also be included in most cases but this is not a mandatory requirement under FedRAMP as ultimately the cloud service provider may choose who they wish to do business with.",
           "updated": [
             {
@@ -129,10 +117,7 @@
         "FRD-AUP": {
           "fka": "FRD-ALL-14",
           "term": "Authorization Package",
-          "alts": [
-            "authorization package",
-            "authorization packages"
-          ],
+          "alts": ["authorization package", "authorization packages"],
           "definition": "Has meaning from 44 USC § 3607 (b)(8) which is \"the essential information that can be used by an agency to determine whether to authorize the operation of an information system or the use of a designated set of common controls for all cloud computing products and services authorized by FedRAMP.\"",
           "reference": "44 USC § 3607 (b)(8)",
           "reference_url": "https://fedramp.gov/docs/authority/law/#b-additional-definitions",
@@ -147,9 +132,7 @@
         "FRD-AUD": {
           "fka": "FRD-ALL-15",
           "term": "Authorization data",
-          "alts": [
-            "authorization data"
-          ],
+          "alts": ["authorization data"],
           "definition": "The collective information required by FedRAMP for initial and ongoing assessment and authorization of a cloud service offering, including the authorization package. ",
           "note": "In FedRAMP documentation, authorization data always refers to FedRAMP authorization data unless otherwise specified.",
           "updated": [
@@ -177,10 +160,7 @@
         "FRD-CSO": {
           "fka": "FRD-ALL-06",
           "term": "Cloud Service Offering",
-          "alts": [
-            "cloud service offering",
-            "cloud service offerings"
-          ],
+          "alts": ["cloud service offering", "cloud service offerings"],
           "definition": "A specific, packaged cloud computing product or service provided by a cloud service provider that can be used by a customer. FedRAMP assessment and authorization of the cloud computing product or service is based on the Minimum Assessment Scope.",
           "updated": [
             {
@@ -192,11 +172,7 @@
         "FRD-DFT": {
           "fka": "FRD-ALL-39",
           "term": "Drift",
-          "alts": [
-            "drift",
-            "drifts",
-            "drifting"
-          ],
+          "alts": ["drift", "drifts", "drifting"],
           "definition": "Changes to information resources that cause deviations from the intended and assessed state; common forms of drift include changes to configurations, deployed software, privileges, running processes, and availability.",
           "updated": [
             {
@@ -224,11 +200,7 @@
         "FRD-FSI": {
           "fka": "FRD-ALL-45",
           "term": "FedRAMP Security Inbox",
-          "alts": [
-            "security inbox",
-            "security inboxes",
-            "FSI"
-          ],
+          "alts": ["security inbox", "security inboxes", "FSI"],
           "definition": "An email address that meets the requirements outlined in the FedRAMP Security Inbox requirements.",
           "updated": [
             {
@@ -240,9 +212,7 @@
         "FRD-FCD": {
           "fka": "FRD-ALL-01",
           "term": "Federal Customer Data",
-          "alts": [
-            "federal customer data"
-          ],
+          "alts": ["federal customer data"],
           "definition": "All electronic information, content, and materials that an agency or its authorized users upload, store, or otherwise provide to a cloud service for processing or storage. This does NOT include account information, service metadata, analytics, telemetry, or other similar metadata generated by the cloud service provider.",
           "note": "In the context of FedRAMP authorization, \"federal customer data\" ONLY ever refers to data owned by federal agency customers. Agreements and contracts with specific agencies may require providers to protect additional data or even transfer ownshership of telemetry or usage data to the agency; always consult a lawyer that is familiar with company agreements and contracts when determining the scope of federal customer data.",
           "updated": [
@@ -270,12 +240,7 @@
         "FRD-HAN": {
           "fka": "FRD-ALL-03",
           "term": "Handle",
-          "alts": [
-            "handle",
-            "handles",
-            "handled",
-            "handling"
-          ],
+          "alts": ["handle", "handles", "handled", "handling"],
           "definition": "Has the plain language meaning inclusive of any possible action taken with information, such as access, collect, control, create, display, disclose, disseminate, dispose, maintain, manipulate, process, receive, review, store, transmit, use... etc.",
           "updated": [
             {
@@ -287,9 +252,7 @@
         "FRD-IPC": {
           "fka": "FRD-ALL-12",
           "term": "Impact Categorization",
-          "alts": [
-            "impact categorization"
-          ],
+          "alts": ["impact categorization"],
           "definition": "The type of significant change that is likely to increase or decrease the impact level categorization for the entire cloud service offering (e.g. from low to moderate or from high to moderate).",
           "updated": [
             {
@@ -301,10 +264,7 @@
         "FRD-INT": {
           "fka": "FRD-ALL-40",
           "term": "Incident",
-          "alts": [
-            "incident",
-            "incidents"
-          ],
+          "alts": ["incident", "incidents"],
           "definition": "Has the meaning given in 44 USC § 3552 (b)(2) applied to federal customer data, which is \"an occurrence that (A) actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of [federal customer data]; or (B) constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies [related to federal customer data].\"",
           "reference": "44 USC § 3552 (b)(2)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapII-sec3552",
@@ -318,10 +278,7 @@
         "FRD-IRS": {
           "fka": "FRD-ALL-02",
           "term": "Information Resource",
-          "alts": [
-            "information resource",
-            "information resources"
-          ],
+          "alts": ["information resource", "information resources"],
           "definition": "Has the meaning from 44 USC § 3502 (6): \"information and related resources, such as personnel, equipment, funds, and information technology.\" This includes any aspect of the cloud service offering, both technical and managerial, including everything that makes up the business of the offering from non-machine-based information resources like organizational policies, procedures, employees, etc. to machine-based information resources like hardware, software, cloud services, code, etc.",
           "note": "Information resources are either machine-based or non-machine-based; any requirement or recommendation that references information resources without specifying a type is inclusive of all information resources.",
           "reference": "44 USC § 3502 (6)",
@@ -336,10 +293,7 @@
         "FRD-IFA": {
           "fka": "FRD-ALL-48",
           "term": "Initial FedRAMP Assessment",
-          "alts": [
-            "initial FedRAMP assessment",
-            "IFRA"
-          ],
+          "alts": ["initial FedRAMP assessment", "IFRA"],
           "definition": "The first full assessment of a cloud service offering seeking FedRAMP authorization, coordinated by the provider with all necessary assessors, that results in a FedRAMP authorization.",
           "updated": [
             {
@@ -393,10 +347,7 @@
         "FRD-LKY": {
           "fka": "FRD-ALL-04",
           "term": "Likely",
-          "alts": [
-            "likely",
-            "likelihood"
-          ],
+          "alts": ["likely", "likelihood"],
           "definition": "A reasonable degree of probability based on context.",
           "updated": [
             {
@@ -431,10 +382,7 @@
         "FRD-LAE": {
           "fka": "FRD-ALL-34",
           "term": "Limited Adverse Effect",
-          "alts": [
-            "limited adverse effect",
-            "limited adverse effects"
-          ],
+          "alts": ["limited adverse effect", "limited adverse effects"],
           "definition": "A minor negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in degradation of the availability or performance of services within the cloud service offering for a minority of relevant users; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a small amount of the federal customer data stored within the cloud service offering by only a few relevant users.",
           "updated": [
             {
@@ -446,10 +394,7 @@
         "FRD-MBI": {
           "fka": "FRD-ALL-50",
           "term": "Machine-Based (information resources)",
-          "alts": [
-            "machine-based",
-            "machine based"
-          ],
+          "alts": ["machine-based", "machine based"],
           "definition": "Any information technology information resource—including systems, processes, software, hardware, services, cloud-native capabilities, and any other such capability, component, or resource—that relies primarily on mechanical or electronic devices (i.e. computers) for operation.",
           "note": "All other information resources that do not rely on computers are non-machine-based information resources.",
           "updated": [
@@ -462,9 +407,7 @@
         "FRD-MRD": {
           "fka": "FRD-ALL-17",
           "term": "Machine-Readable",
-          "alts": [
-            "machine-readable"
-          ],
+          "alts": ["machine-readable"],
           "definition": "Has the meaning from 44 U.S. Code § 3502 (18) which is \"the term \"machine-readable\", when used with respect to data, means data in a format that can be easily processed by a computer without human intervention while ensuring no semantic meaning is lost\"",
           "reference": "44 U.S. Code § 3502 (18)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2023-title44/USCODE-2023-title44-chap35-subchapI-sec3502",
@@ -478,10 +421,7 @@
         "FRD-NAE": {
           "fka": "FRD-ALL-35",
           "term": "Negligible Adverse Effect",
-          "alts": [
-            "negligible adverse effect",
-            "negligible adverse effects"
-          ],
+          "alts": ["negligible adverse effect", "negligible adverse effects"],
           "definition": "A small negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in minor inconvenience when accessing or using services within the cloud service offering; OR (ii) result in degradation of the availability or performance of services within the cloud service offering for only a few relevant users.",
           "updated": [
             {
@@ -493,11 +433,7 @@
         "FRD-OAR": {
           "fka": "FRD-ALL-43",
           "term": "Ongoing Authorization Report (OAR)",
-          "alts": [
-            "ongoing authorization report",
-            "OAR",
-            "OARs"
-          ],
+          "alts": ["ongoing authorization report", "OAR", "OARs"],
           "definition": "A regular report that is supplied by FedRAMP Authorized cloud service providers to agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
@@ -509,10 +445,7 @@
         "FRD-ODV": {
           "fka": "FRD-ALL-30",
           "term": "Overdue Vulnerability",
-          "alts": [
-            "overdue vulnerability",
-            "overdue vulnerabilities"
-          ],
+          "alts": ["overdue vulnerability", "overdue vulnerabilities"],
           "definition": "A vulnerability that the provider intends to fully mitigate or remediate but has not or will not do so within the time frames recommended or required by FedRAMP.",
           "updated": [
             {
@@ -539,10 +472,7 @@
         "FRD-PFA": {
           "fka": "FRD-ALL-49",
           "term": "Persistent FedRAMP Assessment",
-          "alts": [
-            "persistent FedRAMP assessment",
-            "PFRA"
-          ],
+          "alts": ["persistent FedRAMP assessment", "PFRA"],
           "definition": "Follow-on assessments of a cloud service offering focused on Key Security Indicators, coordinated by the provider with all necessary assessors, to maintain a FedRAMP authorization or change its impact categorization.",
           "updated": [
             {
@@ -573,10 +503,7 @@
         "FRD-PER": {
           "fka": "FRD-ALL-38",
           "term": "Persistently",
-          "alts": [
-            "persistently",
-            "persistent"
-          ],
+          "alts": ["persistently", "persistent"],
           "definition": "Occurring in a firm, steady way that is repeated over a long period of time in spite of obstacles or difficulties. Persistent activities may vary between actors, may occur irregularly, and may include interruptions or waiting periods between cycles. These attributes of persistent activities should be intentional, understood, and documented; the status of persistent activities will always be known. ",
           "note": "The use of persistently indicates a process that may not always occur continuously (without interruption or gaps) or regularly (on a consistent, predictable basis) but will repeat frequently in cycles. It aligns generally with historical misuse of \"continuous\" in federal information security policies.",
           "updated": [
@@ -589,10 +516,7 @@
         "FRD-PAI": {
           "fka": "FRD-ALL-36",
           "term": "Potential Adverse Impact (of vulnerability exploitation)",
-          "alts": [
-            "potential adverse impact",
-            "potential adverse impacts"
-          ],
+          "alts": ["potential adverse impact", "potential adverse impacts"],
           "definition": "The estimated cumulative effect of unauthorized access, disruption, harm, or other adverse impact to agencies that _likely_ could result if a threat actor exploits a _vulnerability_ in the _cloud service offering_; as estimated following FedRAMP recommendations and requirements.",
           "updated": [
             {
@@ -604,10 +528,7 @@
         "FRD-PAC": {
           "fka": "FRD-ALL-42",
           "term": "Privileged account",
-          "alts": [
-            "privileged account",
-            "privileged accounts"
-          ],
+          "alts": ["privileged account", "privileged accounts"],
           "definition": "An account with elevated privileges that enables administrative functions over some aspect of the cloud service offering that may affect the confidentiality, integrity, or availability of information beyond those given to normal users; levels of privilege may vary wildly.",
           "note": "Any references to privileged accounts in FedRAMP materials should be presumed to apply to privileged roles or other similar capabilities that are used to assign privileges to privileged accounts.",
           "updated": [
@@ -620,10 +541,7 @@
         "FRD-PRO": {
           "fka": "FRD-ALL-37",
           "term": "Promptly",
-          "alts": [
-            "promptly",
-            "prompt"
-          ],
+          "alts": ["promptly", "prompt"],
           "definition": "Without unnecessary delay.",
           "note": "The use of promptly in FedRAMP materials frames conveys a need for urgent action where the expected time frame will vary by circumstance but earlier action is more likely to improve security outcomes and increase the security posture of a cloud service offering.",
           "updated": [
@@ -636,10 +554,7 @@
         "FRD-QTR": {
           "fka": "FRD-ALL-44",
           "term": "Quarterly Review",
-          "alts": [
-            "quarterly review",
-            "quarterly reviews"
-          ],
+          "alts": ["quarterly review", "quarterly reviews"],
           "definition": "A regular synchronous meeting hosted by a FedRAMP Authorized cloud service provider for agency customers, aligned to the requirements and recommendations in the FedRAMP Collaborative Continuous Monitoring process.",
           "updated": [
             {
@@ -651,10 +566,7 @@
         "FRD-RGL": {
           "fka": "FRD-ALL-07",
           "term": "Regularly",
-          "alts": [
-            "regularly",
-            "regular"
-          ],
+          "alts": ["regularly", "regular"],
           "definition": "Performing the activity on a consistent, predictable, and repeated basis, at set intervals, automatically if possible, following a documented plan. These intervals may vary as appropriate between different requirements.",
           "updated": [
             {
@@ -666,10 +578,7 @@
         "FRD-RMV": {
           "fka": "FRD-ALL-26",
           "term": "Remediated Vulnerability",
-          "alts": [
-            "remediated vulnerability",
-            "remediated vulnerabilities"
-          ],
+          "alts": ["remediated vulnerability", "remediated vulnerabilities"],
           "definition": "A vulnerability that has been neutralized or eliminated and is no longer detected.",
           "updated": [
             {
@@ -681,9 +590,7 @@
         "FRD-RTR": {
           "fka": "FRD-ALL-09",
           "term": "Routine Recurring",
-          "alts": [
-            "routine recurring"
-          ],
+          "alts": ["routine recurring"],
           "definition": "The type of significant change that regularly and routinely recurs as part of ongoing operations, vulnerability mitigation, or vulnerability remediation.",
           "updated": [
             {
@@ -695,10 +602,7 @@
         "FRD-SAE": {
           "fka": "FRD-ALL-33",
           "term": "Serious Adverse Effect",
-          "alts": [
-            "serious adverse effect",
-            "serious adverse effects"
-          ],
+          "alts": ["serious adverse effect", "serious adverse effects"],
           "definition": "A significant negative impact on an organization caused by the loss of confidentiality, integrity, or availability of its information. At a minimum, this includes effects that would likely: (i) result in intermittent or ongoing degradation in the availability or performance of services within the cloud service offering, causing unpredictable interruptions to operations for 12+ hours; OR (ii) directly or indirectly result in unauthorized access, disclosure, or modification of a minority of the federal customer data stored within the cloud service offering.",
           "updated": [
             {
@@ -710,10 +614,7 @@
         "FRD-SGC": {
           "fka": "FRD-ALL-08",
           "term": "Significant change",
-          "alts": [
-            "significant change",
-            "significant changes"
-          ],
+          "alts": ["significant change", "significant changes"],
           "definition": "Has the meaning given in NIST SP 800-37 Rev. 2 which is \"a change that is likely to substantively affect the security or privacy posture of a system.\"",
           "reference": "NIST SP 800-37 Rev. 2",
           "reference_url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final",
@@ -758,9 +659,7 @@
         "FRD-TRF": {
           "fka": "FRD-ALL-11",
           "term": "Transformative",
-          "alts": [
-            "transformative"
-          ],
+          "alts": ["transformative"],
           "definition": "The type of significant change that introduces substantive potential security risks that are likely to affect existing risk determinations and must be assessed in depth.",
           "note": "Transformative changes typically introduce major features or capabilities that may change how a customer uses the service (in whole or in part) and require extensive updates to security assessments, operational procedures, deployment plans, and documentation.",
           "updated": [
@@ -773,10 +672,7 @@
         "FRD-TRC": {
           "fka": "FRD-ALL-16",
           "term": "Trust Center",
-          "alts": [
-            "trust center",
-            "trust centers"
-          ],
+          "alts": ["trust center", "trust centers"],
           "definition": "A secure repository or service used by cloud service providers to store and share authorization data. Trust centers are the complete and definitive source for authorization data and must meet the requirements outlined in the FedRAMP Authorization Data Sharing process to be FedRAMP-compatible.",
           "note": "In FedRAMP documentation, all references to trust centers indicate FedRAMP-compatible trust centers unless otherwise specified.",
           "updated": [
@@ -789,10 +685,7 @@
         "FRD-VUL": {
           "fka": "FRD-ALL-20",
           "term": "Vulnerability",
-          "alts": [
-            "vulnerability",
-            "vulnerabilities"
-          ],
+          "alts": ["vulnerability", "vulnerabilities"],
           "definition": "Has the meaning given to \"security vulnerability\" in 6 USC § 650 (25), which is \"any attribute of hardware, software, process, or procedure that could enable or facilitate the defeat of [...] management, operational, and technical controls used to protect against an unauthorized effort to adversely affect the confidentiality, integrity, and availability of an information system or its information.\" This includes gaps in Rev5 controls and 20x Key Security Indicators, software vulnerabilities, misconfigurations, exposures, weak credentials, insecure services, and all other such potential weaknesses in protection (intentional or unintentional).",
           "reference": "6 USC § 650 (25)",
           "reference_url": "https://www.govinfo.gov/app/details/USCODE-2024-title6/USCODE-2024-title6-chap1-subchapXVIII-sec650",
@@ -932,9 +825,7 @@
                 "Authorization data",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Use Trust Centers",
               "primary_key_word": "MUST",
               "updated": [
@@ -955,13 +846,8 @@
             "ADS-CSL-LRE": {
               "fka": "FRR-ADS-EX-01",
               "statement": "Providers of FedRAMP Rev5 Authorized cloud service offerings at FedRAMP High using a legacy self-managed repository for authorization data MAY ignore the Authorization Data Sharing process until future notice.",
-              "terms": [
-                "Authorization data",
-                "Cloud Service Offering"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Authorization data", "Cloud Service Offering"],
+              "affects": ["Providers"],
               "name": "Legacy Repository Exception",
               "primary_key_word": "MAY",
               "updated": [
@@ -974,13 +860,8 @@
             "ADS-CSL-UCP": {
               "fka": "FRR-ADS-06",
               "statement": "Providers MUST share authorization data via the USDA Connect Community Portal UNLESS they use a FedRAMP-compatible trust center.",
-              "terms": [
-                "Authorization data",
-                "Trust Center"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Authorization data", "Trust Center"],
+              "affects": ["Providers"],
               "name": "USDA Connect",
               "primary_key_word": "MUST",
               "updated": [
@@ -1005,9 +886,7 @@
                   "target": "authorization data"
                 }
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Trust Center Migration",
               "primary_key_word": "MUST",
               "updated": [
@@ -1024,9 +903,7 @@
                 "Authorization data",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Use Trust Centers",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1057,9 +934,7 @@
                 "Ongoing Authorization Report (OAR)",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Public Information",
               "primary_key_word": "MUST",
               "following_information": [
@@ -1088,13 +963,8 @@
             "ADS-CSO-SVC": {
               "fka": "FRR-ADS-03",
               "statement": "Providers MUST publicly share a detailed list of specific services and their security objectives that are included in the cloud service offering using clear feature or service names that align with standard public marketing materials; this list MUST be complete enough for a potential customer to determine which services are and are not included in the FedRAMP Minimum Assessment Scope without requesting access to underlying authorization data.",
-              "terms": [
-                "Authorization data",
-                "Cloud Service Offering"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Authorization data", "Cloud Service Offering"],
+              "affects": ["Providers"],
               "name": "Service List",
               "primary_key_word": "MUST",
               "updated": [
@@ -1107,13 +977,8 @@
             "ADS-CSO-CBF": {
               "fka": "FRR-ADS-02",
               "statement": "Providers MUST use automation to ensure information remains consistent between human-readable and machine-readable formats when authorization data is provided in both formats.",
-              "affects": [
-                "Providers"
-              ],
-              "terms": [
-                "Authorization data",
-                "Machine-Readable"
-              ],
+              "affects": ["Providers"],
+              "terms": ["Authorization data", "Machine-Readable"],
               "name": "Consistency Between Formats",
               "primary_key_word": "MUST",
               "updated": [
@@ -1131,9 +996,7 @@
                 "Cloud Service Offering",
                 "Likely"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Responsible Information Sharing",
               "primary_key_word": "MUST",
               "note": "This is not a license to exclude accurate risk information, but specifics that would likely lead to compromise should be abstracted. A breach of confidentiality with authorization data should be anticipated by a secure cloud service provider.",
@@ -1165,13 +1028,8 @@
             "ADS-CSO-HAD": {
               "fka": "FRR-ADS-09",
               "statement": "Providers MUST make historical versions of authorization data available for three years to all necessary parties UNLESS otherwise specified by applicable FedRAMP requirements; deltas between versions MAY be consolidated quarterly.",
-              "terms": [
-                "All Necessary Parties",
-                "Authorization data"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["All Necessary Parties", "Authorization data"],
+              "affects": ["Providers"],
               "name": "Historical Authorization Data",
               "primary_key_word": "MUST",
               "updated": [
@@ -1191,9 +1049,7 @@
                 "Authorization data",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "name": "Public Guidance",
               "updated": [
@@ -1210,13 +1066,8 @@
             "ADS-UTC-AGA": {
               "fka": "FRR-ADS-AC-02",
               "statement": "Providers SHOULD share the authorization package with agencies upon request.",
-              "terms": [
-                "Agency",
-                "Authorization Package"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Agency", "Authorization Package"],
+              "affects": ["Providers"],
               "name": "Agency Access",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1232,9 +1083,7 @@
             },
             "ADS-UTC-AAD": {
               "statement": "Providers MUST notify FedRAMP by email to info@fedramp.gov within 5 business days of denying an agency access request for authorization data.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Agency Access Denial",
               "primary_key_word": "MUST",
               "updated": [
@@ -1247,10 +1096,7 @@
                   "comment": "Auto-fix: key \"ADS-CSO-AAD\" middle segment did not match parent \"UTC\". Renamed to \"ADS-UTC-AAD\"."
                 }
               ],
-              "terms": [
-                "Agency",
-                "Authorization data"
-              ],
+              "terms": ["Agency", "Authorization data"],
               "timeframe_type": "bizdays",
               "timeframe_num": 5,
               "notification": [
@@ -1271,9 +1117,7 @@
                 "Authorization data",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Uninterrupted Sharing",
               "primary_key_word": "MUST",
               "note": "\"Without interruption\" means that parties should not have to request manual approval each time they need to access authorization data or go through a complicated process. The preferred way of ensuring access without interruption is to use on-demand just-in-time access provisioning.",
@@ -1287,13 +1131,8 @@
             "ADS-TRC-PAC": {
               "fka": "FRR-ADS-TC-03",
               "statement": "Trust centers MUST provide documented programmatic access to all authorization data, including programmatic access to human-readable materials.",
-              "terms": [
-                "Authorization data",
-                "Trust Center"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Authorization data", "Trust Center"],
+              "affects": ["Providers"],
               "name": "Programmatic Access",
               "primary_key_word": "MUST",
               "updated": [
@@ -1306,14 +1145,8 @@
             "ADS-TRC-AAI": {
               "fka": "FRR-ADS-TC-05",
               "statement": "Trust centers MUST maintain an inventory and history of federal agency users or systems with access to authorization data and MUST make this information available to FedRAMP without interruption.",
-              "terms": [
-                "Agency",
-                "Authorization data",
-                "Trust Center"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Agency", "Authorization data", "Trust Center"],
+              "affects": ["Providers"],
               "name": "Agency Access Inventory",
               "primary_key_word": "MUST",
               "updated": [
@@ -1326,13 +1159,8 @@
             "ADS-TRC-ACL": {
               "fka": "FRR-ADS-TC-06",
               "statement": "Trust centers MUST log access to authorization data and store summaries of access for at least six months; such information, as it pertains to specific parties, SHOULD be made available upon request by those parties.",
-              "terms": [
-                "Authorization data",
-                "Trust Center"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Authorization data", "Trust Center"],
+              "affects": ["Providers"],
               "name": "Access Logging",
               "primary_key_word": "MUST",
               "updated": [
@@ -1350,9 +1178,7 @@
                 "Machine-Readable",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Human and Machine-Readable",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1370,9 +1196,7 @@
                 "Authorization data",
                 "Trust Center"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Self-Service Access Management",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1385,12 +1209,8 @@
             "ADS-TRC-RSP": {
               "fka": "FRR-ADS-TC-07",
               "statement": "Trust centers SHOULD deliver responsive performance during normal operating conditions and minimize service disruptions.",
-              "terms": [
-                "Trust Center"
-              ],
-              "affects": [
-                "Providers"
-              ],
+              "terms": ["Trust Center"],
+              "affects": ["Providers"],
               "name": "Responsive Performance",
               "primary_key_word": "SHOULD",
               "updated": [
@@ -1486,9 +1306,7 @@
                 "Vulnerability"
               ],
               "name": "Report Availability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "following_information": [
                 "Changes to authorization data",
@@ -1512,9 +1330,7 @@
                 "Ongoing Authorization Report (OAR)"
               ],
               "name": "Next Report Date",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1531,9 +1347,7 @@
                 "Ongoing Authorization Report (OAR)"
               ],
               "name": "Feedback Mechanism",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "This could be email by default but providers are encouraged to consider something more interactive as appropriate.",
               "updated": [
@@ -1546,14 +1360,9 @@
             "CCM-OAR-AFS": {
               "fka": "FRR-CCM-05",
               "statement": "Providers MUST maintain an anonymized and desensitized summary of the feedback, questions, and answers about each Ongoing Authorization Report as an addendum to the Ongoing Authorization Report.",
-              "terms": [
-                "Agency",
-                "Ongoing Authorization Report (OAR)"
-              ],
+              "terms": ["Agency", "Ongoing Authorization Report (OAR)"],
               "name": "Anonymized Feedback Summary",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "This is intended to encourage sharing of information and decrease the burden on the cloud service provider - providing this summary will reduce duplicate questions from agencies and ensure FedRAMP has access to this information. It is generally in the provider’s interest to update this addendum frequently throughout the quarter.",
               "updated": [
@@ -1572,9 +1381,7 @@
                 "Ongoing Authorization Report (OAR)"
               ],
               "name": "Limit Sensitive Information",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -1586,14 +1393,9 @@
             "CCM-OAR-SOR": {
               "fka": "FRR-CCM-02",
               "statement": "Providers SHOULD establish a regular 3 month cycle for Ongoing Authorization Reports that is spread out from the beginning, middle, or end of each quarter.",
-              "terms": [
-                "Agency",
-                "Regularly"
-              ],
+              "terms": ["Agency", "Regularly"],
               "name": "Spread Out Reports",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "note": "This recommendation is intended to discourage hundreds of cloud service providers from releasing their Ongoing Authorization Reports during the first or last week of each quarter because that is the easiest way for a single provider to track this deliverable; the result would overwhelm agencies with many cloud services. Widely used cloud service providers are encouraged to work with their customers to identify ideal timeframes for this cycle.",
               "updated": [
@@ -1612,9 +1414,7 @@
                 "Ongoing Authorization Report (OAR)"
               ],
               "name": "Responsible Public Sharing",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1626,10 +1426,7 @@
           },
           "QTR": {
             "CCM-QTR-MTG": {
-              "fkas": [
-                "FRR-CCM-QR-01",
-                "FRR-CCM-QR-02"
-              ],
+              "fkas": ["FRR-CCM-QR-01", "FRR-CCM-QR-02"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers SHOULD host a synchronous Quarterly Review every 3 months, open to all necessary parties, to review aspects of the most recent Ongoing Authorization Reports that the provider determines are of the most relevance to agencies.",
@@ -1650,15 +1447,9 @@
                   "timeframe_num": 3
                 }
               },
-              "terms": [
-                "Agency",
-                "All Necessary Parties",
-                "Quarterly Review"
-              ],
+              "terms": ["Agency", "All Necessary Parties", "Quarterly Review"],
               "name": "Quarterly Review Meeting",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "updated": [
                 {
                   "date": "2026-02-04",
@@ -1675,9 +1466,7 @@
                 "Quarterly Review"
               ],
               "name": "Meeting Registration Info",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1689,14 +1478,9 @@
             "CCM-QTR-NRD": {
               "fka": "FRR-CCM-QR-06",
               "statement": "Providers MUST publicly include the target date for their next Quarterly Review with other public authorization data.",
-              "terms": [
-                "Authorization data",
-                "Quarterly Review"
-              ],
+              "terms": ["Authorization data", "Quarterly Review"],
               "name": "Next Review Date",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -1708,15 +1492,9 @@
             "CCM-QTR-NID": {
               "fka": "FRR-CCM-QR-04",
               "statement": "Providers MUST NOT irresponsibly disclose sensitive information in a Quarterly Review that would likely have an adverse effect on the cloud service offering.",
-              "terms": [
-                "Cloud Service Offering",
-                "Likely",
-                "Quarterly Review"
-              ],
+              "terms": ["Cloud Service Offering", "Likely", "Quarterly Review"],
               "name": "No Irresponsible Disclosure",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -1734,9 +1512,7 @@
                 "Regularly"
               ],
               "name": "Schedule Around Reports",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1748,14 +1524,9 @@
             "CCM-QTR-ACT": {
               "fka": "FRR-CCM-QR-07",
               "statement": "Providers SHOULD include additional information in Quarterly Reviews that the provider determines is of interest, use, or otherwise relevant to agencies.",
-              "terms": [
-                "Agency",
-                "Quarterly Review"
-              ],
+              "terms": ["Agency", "Quarterly Review"],
               "name": "Additional Content",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1773,9 +1544,7 @@
                 "Quarterly Review"
               ],
               "name": "Record/Transcribe Reviews",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1787,15 +1556,9 @@
             "CCM-QTR-RTP": {
               "fka": "FRR-CCM-QR-08",
               "statement": "Providers SHOULD NOT invite third parties to attend Quarterly Reviews intended for agencies unless they have specific relevance.",
-              "terms": [
-                "Agency",
-                "Likely",
-                "Quarterly Review"
-              ],
+              "terms": ["Agency", "Likely", "Quarterly Review"],
               "name": "Restrict Third Parties",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "note": "This is because agencies are less likely to actively participate in meetings with third parties; the cloud service provider's independent assessor should be considered relevant by default.",
               "updated": [
@@ -1815,9 +1578,7 @@
                 "Quarterly Review"
               ],
               "name": "Share Recordings Responsibly",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1829,15 +1590,9 @@
             "CCM-QTR-SCR": {
               "fka": "FRR-CCM-QR-11",
               "statement": "Providers MAY responsibly share content prepared for a Quarterly Review with the public or other parties if the provider determines doing so will NOT likely have an adverse effect on the cloud service offering.",
-              "terms": [
-                "Cloud Service Offering",
-                "Likely",
-                "Quarterly Review"
-              ],
+              "terms": ["Cloud Service Offering", "Likely", "Quarterly Review"],
               "name": "Share Content Responsibly",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -1857,9 +1612,7 @@
                 "Ongoing Authorization Report (OAR)"
               ],
               "name": "Review Ongoing Reports",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "MUST",
               "note": "This is required by 44 USC § 35, OMB A-130, FIPS-200, and M-24-15.",
               "updated": [
@@ -1887,9 +1640,7 @@
                 }
               ],
               "name": "Notify FedRAMP of Concerns",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "MUST",
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
@@ -1902,9 +1653,7 @@
             "CCM-AGM-NFA": {
               "fka": "FRR-CCM-AG-07",
               "statement": "Agencies MUST notify FedRAMP after requesting any additional information or materials from a cloud service provider beyond those FedRAMP requires by sending an email to info@fedramp.gov.",
-              "terms": [
-                "Agency"
-              ],
+              "terms": ["Agency"],
               "notification": [
                 {
                   "party": "FedRAMP",
@@ -1913,9 +1662,7 @@
                 }
               ],
               "name": "Notify FedRAMP After Requests",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "MUST",
               "note": "Agencies are required to notify FedRAMP by OMB Memorandum M-24-15 section IV (a).",
               "updated": [
@@ -1928,14 +1675,9 @@
             "CCM-AGM-NAR": {
               "fka": "FRR-CCM-AG-06",
               "statement": "Agencies MUST NOT place additional security requirements on cloud service providers beyond those required by FedRAMP UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such; this does not apply to seeking clarification or asking general questions about authorization data.",
-              "terms": [
-                "Agency",
-                "Authorization data"
-              ],
+              "terms": ["Agency", "Authorization data"],
               "name": "No Additional Requirements",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "MUST NOT",
               "note": "This is a statutory requirement in 44 USC § 3613 (e) related to the Presumption of Adequacy for a FedRAMP authorization.",
               "updated": [
@@ -1955,9 +1697,7 @@
                 "Quarterly Review"
               ],
               "name": "Consider Security Category",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -1983,14 +1723,8 @@
                   "primary_key_word": "SHOULD"
                 }
               },
-              "terms": [
-                "Agency",
-                "Cloud Service Offering",
-                "Quarterly Review"
-              ],
-              "affects": [
-                "Agencies"
-              ],
+              "terms": ["Agency", "Cloud Service Offering", "Quarterly Review"],
+              "affects": ["Agencies"],
               "updated": [
                 {
                   "date": "2026-02-04",
@@ -2016,9 +1750,7 @@
                 }
               ],
               "name": "Notify Provider of Concerns",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -2097,9 +1829,7 @@
               "fka": "FRR-FSI-01",
               "statement": "FedRAMP MUST send messages to cloud service providers using an official @fedramp.gov or @gsa.gov email address with properly configured Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication Reporting and Conformance (DMARC) email authentication.",
               "name": "Verified Emails",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "note": "Anyone at GSA can send email from @fedramp.gov or @gsa.gov - FedRAMP team members will typically have \"FedRAMP\" or \"Q20B\" in their name but this is not universal or enforceable. The nature of government enterprise IT services makes it difficult for FedRAMP to isolate FedRAMP-specific team members with enforceable identifiers.",
               "primary_key_word": "MUST",
               "updated": [
@@ -2113,9 +1843,7 @@
               "fka": "FRR-FSI-02",
               "statement": "FedRAMP MUST convey the criticality of the message in the subject line, IF the message requires an elevated reaction, using one of the following designators:",
               "name": "Criticality Designators",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "following_information": [
                 "**Emergency:** There is a potential incident or crisis such that FedRAMP requires an extremely urgent reaction; emergency messages will contain aggressive timeframes for reaction and failure to meet these timeframes will result in corrective action.",
@@ -2129,18 +1857,13 @@
                   "comment": "Reframed for clarity; changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "FedRAMP Security Inbox",
-                "Incident"
-              ]
+              "terms": ["FedRAMP Security Inbox", "Incident"]
             },
             "FSI-FRP-UFS": {
               "fka": "FRR-FSI-03",
               "statement": "FedRAMP MUST send Emergency and Emergency Test designated messages from fedramp_security@gsa.gov OR fedramp_security@fedramp.gov.",
               "name": "Use FedRAMP_Security Email in Emergencies",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2162,9 +1885,7 @@
                   "target": "fedramp.gov"
                 }
               ],
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2176,17 +1897,13 @@
                 "Public notice may include blog posts, social media posts, announcements during Community Updates, or e-blasts.",
                 "As this process matures, additional confirmed options may become available."
               ],
-              "terms": [
-                "Likely"
-              ]
+              "terms": ["Likely"]
             },
             "FSI-FRP-RQA": {
               "fka": "FRR-FSI-05",
               "statement": "FedRAMP MUST clearly specify the required actions in the body of messages that require an elevated reaction.",
               "name": "Required Actions",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2199,9 +1916,7 @@
               "fka": "FRR-FSI-06",
               "statement": "FedRAMP MUST clearly specify the expected timeframe for completing required actions in the body of messages that require an elevated reaction; timeframes for actions will vary depending on the situation but the default timeframes to provide an estimated resolution time for Emergency and Emergency Test designated messages will be as follows:",
               "name": "Elevated Reaction Timeframes",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "following_information": [
                 "**High Impact:** within 12 hours",
@@ -2215,17 +1930,13 @@
                   "comment": "Changed response to reaction for clarity; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Catastrophic Adverse Effect"
-              ]
+              "terms": ["Catastrophic Adverse Effect"]
             },
             "FSI-FRP-COR": {
               "fka": "FRR-FSI-07",
               "statement": "FedRAMP MUST clearly specify the corrective actions that will result from failure to complete the required actions in the body of messages that require an elevated reaction; such actions may vary from negative ratings in the FedRAMP Marketplace to suspension of FedRAMP authorization depending on the severity of the event.",
               "name": "Explain Corrective Actions",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2238,9 +1949,7 @@
               "fka": "FRR-FSI-08",
               "statement": "FedRAMP MAY track and publicly share the time required by cloud service providers to take the actions specified in messages that require an elevated reaction.",
               "name": "Reaction Metrics",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -2255,9 +1964,7 @@
               "fka": "FRR-FSI-09",
               "statement": "Providers MUST establish and maintain an email address to receive messages from FedRAMP; this inbox is a FedRAMP Security Inbox (FSI).",
               "name": "Maintain a FedRAMP Security Inbox",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "Unless otherwise notified, FedRAMP will use the listed Security Email on the Marketplace for these notifications.",
@@ -2270,17 +1977,13 @@
                 }
               ],
               "danger": "Be careful using a personal email tied to an individual for this inbox due to the significant risk to future communications after a change in personnel!",
-              "terms": [
-                "FedRAMP Security Inbox"
-              ]
+              "terms": ["FedRAMP Security Inbox"]
             },
             "FSI-CSO-NOC": {
               "fka": "FRR-FSI-12",
               "statement": "Providers MUST immediately notify FedRAMP of any changes in addressing for their FedRAMP Security Inbox by emailing info@fedramp.gov with the name and FedRAMP ID of the cloud service offering and the updated email address.",
               "name": "Notification of Changes",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "notification": [
                 {
                   "party": "FedRAMP",
@@ -2295,18 +1998,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering",
-                "FedRAMP Security Inbox"
-              ]
+              "terms": ["Cloud Service Offering", "FedRAMP Security Inbox"]
             },
             "FSI-CSO-TFG": {
               "fka": "FRR-FSI-10",
               "statement": "Providers MUST treat any email originating from an @fedramp.gov or @gsa.gov email address as if it was sent from FedRAMP by default; if such a message is confirmed to originate from someone other than FedRAMP then FedRAMP Security Inbox requirements no longer apply.",
               "name": "Trust @fedramp.gov and @gsa.gov",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2314,17 +2012,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "FedRAMP Security Inbox"
-              ]
+              "terms": ["FedRAMP Security Inbox"]
             },
             "FSI-CSO-RCV": {
               "fka": "FRR-FSI-11",
               "statement": "Providers MUST receive and react to email messages from FedRAMP without disruption and without requiring additional actions from FedRAMP.",
               "name": "Receive Email Without Disruption",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "This requirement is intended to prevent cloud service providers from requiring FedRAMP to complete a CAPTCHA, log into a customer portal, or otherwise take service-specific actions that might prevent the security team from receiving the message.",
               "updated": [
@@ -2338,9 +2032,7 @@
               "fka": "FRR-FSI-14",
               "statement": "Providers MUST complete the required actions in Emergency or Emergency Test designated messages sent by FedRAMP within the timeframe included in the message.",
               "name": "Complete Required Actions",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "Timeframes may vary by impact level of the cloud service offering.",
               "updated": [
@@ -2349,17 +2041,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering"
-              ]
+              "terms": ["Cloud Service Offering"]
             },
             "FSI-CSO-EMR": {
               "fka": "FRR-FSI-15",
               "statement": "Providers MUST route Emergency designated messages sent by FedRAMP to a senior security official for their awareness.",
               "name": "Emergency Message Routing",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "note": "Senior security officials are determined by the provider.",
               "updated": [
@@ -2374,9 +2062,7 @@
               "statement": "Providers SHOULD complete the required actions in Important designated messages sent by FedRAMP within the timeframe specified in the message.",
               "name": "Important Message Actions",
               "note": "Timeframes may vary by impact level of the cloud service offering.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -2384,17 +2070,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering"
-              ]
+              "terms": ["Cloud Service Offering"]
             },
             "FSI-CSO-ACK": {
               "fka": "FRR-FSI-13",
               "statement": "Providers SHOULD promptly and automatically acknowledge the receipt of messages received from FedRAMP in their FedRAMP Security Inbox.",
               "name": "Acknowledge Receipt",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -2402,10 +2084,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "FedRAMP Security Inbox",
-                "Promptly"
-              ]
+              "terms": ["FedRAMP Security Inbox", "Promptly"]
             }
           }
         }
@@ -2456,9 +2135,7 @@
               "fka": "FRR-ICP-01",
               "statement": "Providers MUST responsibly report incidents to FedRAMP within 1 hour of identification by sending an email to fedramp_security@fedramp.gov or fedramp_security@gsa.gov.",
               "name": "Incident Reporting to FedRAMP",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2475,17 +2152,13 @@
               ],
               "timeframe_type": "hours",
               "timeframe_num": 1,
-              "terms": [
-                "Incident"
-              ]
+              "terms": ["Incident"]
             },
             "ICP-CSX-IRA": {
               "fka": "FRR-ICP-02",
               "statement": "Providers MUST responsibly report incidents to all agency customers within 1 hour of identification using the incident communications points of contact provided by each agency customer.",
               "name": "Incident Reporting to Agencies",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2502,18 +2175,13 @@
               ],
               "timeframe_type": "hours",
               "timeframe_num": 1,
-              "terms": [
-                "Agency",
-                "Incident"
-              ]
+              "terms": ["Agency", "Incident"]
             },
             "ICP-CSX-IRC": {
               "fka": "FRR-ICP-03",
               "statement": "Providers MUST responsibly report incidents to CISA within 1 hour of identification if the incident is confirmed or suspected to be the result of an attack vector listed at https://www.cisa.gov/federal-incident-notification-guidelines#attack-vectors-taxonomy, following the CISA Federal Incident Notification Guidelines at https://www.cisa.gov/federal-incident-notification-guidelines, by using the CISA Incident Reporting System at https://myservices.cisa.gov/irf. ",
               "name": "Incident Reporting to CISA",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notification": [
                 {
@@ -2532,17 +2200,13 @@
               ],
               "reference": "CISA IRF Incident Reporting System",
               "reference_url": "https://myservices.cisa.gov/irf",
-              "terms": [
-                "Incident"
-              ]
+              "terms": ["Incident"]
             },
             "ICP-CSX-ICU": {
               "fka": "FRR-ICP-04",
               "statement": "Providers MUST update all necessary parties, including at least FedRAMP, CISA (if applicable), and all agency customers, at least once per calendar day until the incident is resolved and recovery is complete.",
               "name": "Incident Updates",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2557,19 +2221,13 @@
                   "target": "various"
                 }
               ],
-              "terms": [
-                "Agency",
-                "All Necessary Parties",
-                "Incident"
-              ]
+              "terms": ["Agency", "All Necessary Parties", "Incident"]
             },
             "ICP-CSX-RPT": {
               "fka": "FRR-ICP-05",
               "statement": "Providers MUST make incident report information available in their secure FedRAMP repository (such as USDA Connect) or trust center.",
               "name": "Incident Report Availability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2577,18 +2235,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Incident",
-                "Trust Center"
-              ]
+              "terms": ["Incident", "Trust Center"]
             },
             "ICP-CSX-FIR": {
               "fka": "FRR-ICP-07",
               "statement": "Providers MUST provide a final report once the incident is resolved and recovery is complete that describes at least:",
               "name": "Final Incident Report",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "following_information": [
                 "What occurred",
@@ -2603,18 +2256,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Incident",
-                "Vulnerability Response"
-              ]
+              "terms": ["Incident", "Vulnerability Response"]
             },
             "ICP-CSX-RSD": {
               "fka": "FRR-ICP-06",
               "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about incidents that would likely increase the impact of the incident, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
               "name": "Responsible Disclosure",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -2622,19 +2270,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Incident",
-                "Likely"
-              ]
+              "terms": ["All Necessary Parties", "Incident", "Likely"]
             },
             "ICP-CSX-AUR": {
               "fka": "FRR-ICP-08",
               "statement": "Providers SHOULD use automated mechanisms for reporting incidents and providing updates to all necessary parties (including CISA).",
               "name": "Automated Reporting",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -2642,18 +2284,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Incident"
-              ]
+              "terms": ["All Necessary Parties", "Incident"]
             },
             "ICP-CSX-HRM": {
               "fka": "FRR-ICP-09",
               "statement": "Providers SHOULD make incident report information available in consistent human-readable and machine-readable formats.",
               "name": "Human and Machine-Readable",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -2661,10 +2298,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Incident",
-                "Machine-Readable"
-              ]
+              "terms": ["Incident", "Machine-Readable"]
             }
           }
         }
@@ -2744,9 +2378,7 @@
             "MAS-CSO-IIR": {
               "fka": "FRR-MAS-01",
               "statement": "Providers MUST identify a set of information resources to assess for FedRAMP authorization that includes all information resources that are likely to handle federal customer data or likely to impact the confidentiality, integrity, or availability of federal customer data handled by the cloud service offering; this set of information resources is the cloud service offering.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Identify Information Resources",
               "primary_key_word": "MUST",
               "notes": [
@@ -2771,9 +2403,7 @@
             "MAS-CSO-FLO": {
               "fka": "FRR-MAS-05",
               "statement": "Providers MUST clearly identify, document, and explain information flows and security objectives for ALL information resources or sets of information resources in the cloud service offering.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Information Flows and Security Objectives",
               "primary_key_word": "MUST",
               "note": "Information resources (including third-party information resources) MAY vary by security objectives as appropriate to the level of information handled or impacted by the information resource.",
@@ -2791,10 +2421,7 @@
               ]
             },
             "MAS-CSO-TPR": {
-              "fkas": [
-                "FRR-MAS-03",
-                "FRR-MAS-02"
-              ],
+              "fkas": ["FRR-MAS-03", "FRR-MAS-02"],
               "statement": "Providers MUST address the potential impact to federal customer data from third-party information resources used by the cloud service offering, ONLY IF MAS-CSO-IIR APPLIES, by documenting the following information about each applicable third-party information resource:",
               "following_information": [
                 "General usage and configuration",
@@ -2802,9 +2429,7 @@
                 "Mitigation measures in place to reduce the potential impact to federal customer data",
                 "Compensating controls in place to reduce the potential impact to federal customer data"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Third-Party Information Resources",
               "primary_key_word": "MUST",
               "updated": [
@@ -2823,9 +2448,7 @@
             "MAS-CSO-MDI": {
               "fka": "FRR-MAS-04",
               "statement": "Providers MUST include metadata (including metadata about federal customer data) in the Minimum Assessment Scope ONLY IF MAS-CSO-IIR APPLIES.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Metadata Inclusion",
               "primary_key_word": "MUST",
               "updated": [
@@ -2834,16 +2457,12 @@
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Federal Customer Data"
-              ]
+              "terms": ["Federal Customer Data"]
             },
             "MAS-CSO-SUP": {
               "fka": "FRR-MAS-EX-01",
               "statement": "Providers MAY include additional materials about other information resources that are not part of the cloud service offering in a FedRAMP assessment and authorization package supplement; these resources will not be FedRAMP authorized and MUST be clearly marked and separated from the cloud service offering.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Supplemental Information",
               "primary_key_word": "MAY",
               "updated": [
@@ -2923,9 +2542,7 @@
               "fka": "FRR-PVA-01",
               "name": "Persistent Validation",
               "statement": "Providers MUST persistently perform validation of their Key Security Indicators; this process is called persistent validation and is part of vulnerability detection.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2944,9 +2561,7 @@
               "fka": "FRR-PVA-02",
               "name": "Issues As Vulnerabilities",
               "statement": "Providers MUST treat issues detected during persistent validation and failures of the persistent validation process as vulnerabilities, then follow the requirements and recommendations in the FedRAMP Vulnerability Detection and Response process for such findings.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2966,9 +2581,7 @@
               "fka": "FRR-PVA-03",
               "statement": "Providers MUST include persistent validation activity in the reports on vulnerability detection and response activity required by the FedRAMP Vulnerability Detection and Response process.",
               "name": "Report Persistent Validation",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -2988,9 +2601,7 @@
               "fka": "FRR-PVA-05",
               "name": "Independent Verification and Validation",
               "statement": "Providers MUST have the implementation of their goals and validation processes assessed by a FedRAMP-recognized independent assessor OR by FedRAMP directly AND MUST include the results of this assessment in their authorization data without modification.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "The option for assessment by FedRAMP directly is limited to cloud services that are explicitly prioritized by FedRAMP, in consultation with the FedRAMP Board and the federal Chief Information Officers Council. During 20x Phase Two this includes AI services that meet certain criteria as shown at https://fedramp.gov/ai.",
@@ -3002,21 +2613,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Authorization data",
-                "Persistent Validation"
-              ]
+              "terms": ["Authorization data", "Persistent Validation"]
             },
             "PVA-CSX-NMV": {
-              "fkas": [
-                "FRR-PVA-TF-LO-01",
-                "FRR-PVA-TF-MO-01"
-              ],
+              "fkas": ["FRR-PVA-TF-LO-01", "FRR-PVA-TF-MO-01"],
               "statement": "Providers MUST complete the validation processes for Key Security Indicators of non-machine-based information resources at least once every 3 months.",
               "name": "Non-Machine Validation",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "terms": [
                 "Information Resource",
@@ -3025,10 +2628,7 @@
               ]
             },
             "PVA-CSX-PMV": {
-              "fkas": [
-                "FRR-PVA-TF-LO-02",
-                "FRR-PVA-TF-MO-02"
-              ],
+              "fkas": ["FRR-PVA-TF-LO-02", "FRR-PVA-TF-MO-02"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers MUST complete the validation processes for Key Security Indicators of machine-based information resources at least once every 7 days.",
@@ -3048,9 +2648,7 @@
                 }
               },
               "name": "Persistent Machine Validation",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Information Resource",
                 "Machine-Based (information resources)",
@@ -3061,9 +2659,7 @@
               "fka": "FRR-PVA-07",
               "name": "Provide Technical Evidence",
               "statement": "Providers SHOULD provide technical explanations, demonstrations, and other relevant supporting information to all necessary assessors for the technical capabilities they employ to meet Key Security Indicators and to provide validation.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3071,18 +2667,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Assessors",
-                "Persistent Validation"
-              ]
+              "terms": ["All Necessary Assessors", "Persistent Validation"]
             },
             "PVA-CSX-RAD": {
               "fka": "FRR-PVA-08",
               "name": "Receiving Advice",
               "statement": "Providers MAY ask for and accept advice from their assessor during assessment regarding techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-TPX-SHA).",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "note": "The related A2LA requirements are waived for FedRAMP 20x Phase Two assessments.",
               "updated": [
@@ -3095,9 +2686,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Persistent Validation"
-              ]
+              "terms": ["Persistent Validation"]
             }
           },
           "TPX": {
@@ -3105,9 +2694,7 @@
               "fka": "FRR-PVA-10",
               "name": "Underlying Processes",
               "statement": "Assessors MUST verify and validate the underlying processes (both machine-based and non-machine-based) that providers use to validate Key Security Indicators; this should include at least:",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "following_information": [
                 "The effectiveness, completeness, and integrity of the automated processes that perform validation of the cloud service offering's security posture.",
@@ -3131,9 +2718,7 @@
               "fka": "FRR-PVA-11",
               "name": "Processes Derived from Key Security Indicators",
               "statement": "Assessors MUST verify and validate the implementation of processes derived from Key Security Indicators to determine whether or not the provider has accurately documented their process and goals.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3141,17 +2726,13 @@
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Persistent Validation"
-              ]
+              "terms": ["Persistent Validation"]
             },
             "PVA-TPX-OUC": {
               "fka": "FRR-PVA-12",
               "name": "Outcome Consistency",
               "statement": "Assessors MUST verify and validate whether or not the underlying processes are consistently creating the desired security outcome documented by the provider.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3159,17 +2740,13 @@
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Persistent Validation"
-              ]
+              "terms": ["Persistent Validation"]
             },
             "PVA-TPX-MME": {
               "fka": "FRR-PVA-13",
               "name": "Mixed Methods Evaluation",
               "statement": "Assessors MUST perform evaluation using a combination of quantitative and expert qualitative assessment as appropriate AND document which is applied to which aspect of the assessment.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3183,9 +2760,7 @@
               "name": "Procedure Adherence",
               "statement": "Assessors MUST assess whether or not procedures are consistently followed, including the processes in place to ensure this occurs, without relying solely on the existence of a procedure document for assessing if appropriate processes and procedures are in place.",
               "note": "This includes evaluating tests or plans for activities that may occur in the future but have not yet occurred.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3198,9 +2773,7 @@
               "fka": "FRR-PVA-17",
               "name": "Assessment Summary",
               "statement": "Assessors MUST deliver a high-level summary of their assessment process and findings for each Key Security Indicator; this summary will be included in the authorization data for the cloud service offering.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3208,18 +2781,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Authorization data",
-                "Cloud Service Offering"
-              ]
+              "terms": ["Authorization data", "Cloud Service Offering"]
             },
             "PVA-TPX-STE": {
               "fka": "FRR-PVA-15",
               "name": "Static Evidence",
               "statement": "Assessors MUST NOT rely on screenshots, configuration dumps, or other static output as evidence EXCEPT when evaluating the accuracy and reliability of a process that generates such artifacts.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST NOT",
               "updated": [
                 {
@@ -3232,9 +2800,7 @@
               "fka": "FRR-PVA-18",
               "name": "No Overall Recommendation",
               "statement": "Assessors MUST NOT deliver an overall recommendation on whether or not the cloud service offering meets the requirements for FedRAMP authorization.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MUST NOT",
               "note": "FedRAMP will make the final authorization decision based on the assessor's findings and other relevant information.",
               "updated": [
@@ -3243,17 +2809,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering"
-              ]
+              "terms": ["Cloud Service Offering"]
             },
             "PVA-TPX-PEX": {
               "fka": "FRR-PVA-14",
               "name": "Provider Experts",
               "statement": "Assessors SHOULD engage provider experts in discussion to understand the decisions made by the provider and inform expert qualitative assessment, and SHOULD perform independent research to test such information as part of the expert qualitative assessment process.",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3266,9 +2828,7 @@
               "fka": "FRR-PVA-09",
               "name": "Sharing Advice",
               "statement": "Assessors MAY share advice with providers they are assessing about techniques and procedures that will improve their security posture or the effectiveness, clarity, and accuracy of their validation and reporting procedures for Key Security Indicators, UNLESS doing so might compromise the objectivity and integrity of the assessment (see also PVA-CSX-RAD).",
-              "affects": [
-                "Assessors"
-              ],
+              "affects": ["Assessors"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -3280,9 +2840,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Persistent Validation"
-              ]
+              "terms": ["Persistent Validation"]
             }
           }
         }
@@ -3349,11 +2907,7 @@
         "both": {
           "CSO": {
             "SCG-CSO-RSC": {
-              "fkas": [
-                "FRR-RSC-01",
-                "FRR-RSC-02",
-                "FRR-RSC-03"
-              ],
+              "fkas": ["FRR-RSC-01", "FRR-RSC-02", "FRR-RSC-03"],
               "statement": "Providers MUST create, maintain, and make available recommendations for securely configuring their cloud services (the Secure Configuration Guide) that includes at least the following information:",
               "following_information": [
                 "Required: Instructions on how to securely access, configure, operate, and decommission top-level administrative accounts that control enterprise access to the entire cloud service offering.",
@@ -3361,9 +2915,7 @@
                 "Recommended: Explanations of security-related settings that can be operated only by privileged accounts and their security implications."
               ],
               "name": "Recommended Secure Configuration",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "These requirements and recommendations refer to this guidance as a Secure Configuration Guide but cloud service providers may make this guidance available in various appropriate forms that provide the best customer experience.",
@@ -3384,9 +2936,7 @@
             "SCG-CSO-AUP": {
               "statement": "Providers MUST include instructions in the FedRAMP authorization package that explain how to obtain and use the Secure Configuration Guide.",
               "name": "Use Instructions",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3395,17 +2945,13 @@
                 }
               ],
               "note": "These instructions may appear in a variety of ways; it is up to the provider to do so in the most appropriate and effective ways for their specific customer needs.",
-              "terms": [
-                "Authorization Package"
-              ]
+              "terms": ["Authorization Package"]
             },
             "SCG-CSO-PUB": {
               "fka": "FRR-RSC-09",
               "statement": "Providers SHOULD make the Secure Configuration Guide available publicly.",
               "name": "Public Guidance",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3418,9 +2964,7 @@
               "fka": "FRR-RSC-04",
               "statement": "Providers SHOULD set all settings to their recommended secure defaults for top-level administrative accounts and privileged accounts when initially provisioned.",
               "name": "Secure Defaults",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3439,9 +2983,7 @@
               "fka": "FRR-RSC-05",
               "statement": "Providers SHOULD offer the capability to compare all current settings for top-level administrative accounts and privileged accounts to the recommended secure defaults.",
               "name": "Comparison Capability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3458,9 +3000,7 @@
               "fka": "FRR-RSC-06",
               "statement": "Providers SHOULD offer the capability to export all security settings in a machine-readable format.",
               "name": "Export Capability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3468,17 +3008,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Machine-Readable"
-              ]
+              "terms": ["Machine-Readable"]
             },
             "SCG-ENH-API": {
               "fka": "FRR-RSC-07",
               "statement": "Providers SHOULD offer the capability to view and adjust security settings via an API or similar capability.",
               "name": "API Capability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3491,9 +3027,7 @@
               "fka": "FRR-RSC-08",
               "statement": "Providers SHOULD also provide the Secure Configuration Guide in a machine-readable format that can be used by customers or third-party tools to compare against current settings.",
               "name": "Machine-Readable Guidance",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3501,17 +3035,13 @@
                   "comment": "Removed unnecessary recommended; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Machine-Readable"
-              ]
+              "terms": ["Machine-Readable"]
             },
             "SCG-ENH-VRH": {
               "fka": "FRR-RSC-10",
               "statement": "Providers SHOULD provide versioning and a release history for recommended secure default settings for top-level administrative accounts and privileged accounts as they are adjusted over time.",
               "name": "Versioning and Release History",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -3612,9 +3142,7 @@
               "fka": "FRR-SCN-EX-01",
               "name": "Corrective Action Plan Conditions",
               "statement": "FedRAMP MAY require providers to delay significant changes beyond the standard Significant Change Notification period and/or submit significant changes for approval in advance as a condition of a formal FedRAMP Corrective Action Plan or other agreement.",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -3622,23 +3150,15 @@
                   "comment": "Moved to FRP; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Significant change"
-              ]
+              "terms": ["Significant change"]
             }
           },
           "CSO": {
             "SCN-CSO-EVA": {
-              "fkas": [
-                "FRR-SCN-01",
-                "FRR-SCN-02",
-                "FRR-SCN-03"
-              ],
+              "fkas": ["FRR-SCN-01", "FRR-SCN-02", "FRR-SCN-03"],
               "statement": "Providers MUST evaluate all potential significant changes to determine the type of significant change and apply the appropriate Significant Change Notification requirements and recommendations.",
               "name": "Evaluate Changes",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "following_information": [
                 "Is it a significant change? --> Continue evaluation and follow the Significant Change Notification process.",
@@ -3665,9 +3185,7 @@
               "fka": "FRR-SCN-04",
               "name": "Maintain Audit Records",
               "statement": "Providers MUST maintain auditable records of significant change evaluation activities and make them available to all necessary parties.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3675,10 +3193,7 @@
                   "comment": "Clarified wording; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Significant change"
-              ]
+              "terms": ["All Necessary Parties", "Significant change"]
             },
             "SCN-CSO-INF": {
               "fka": "FRR-SCN-09",
@@ -3696,9 +3211,7 @@
                 "Copy of the business or security impact analysis",
                 "Name and title of approver"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3706,18 +3219,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Persistent Validation",
-                "Significant change"
-              ]
+              "terms": ["Persistent Validation", "Significant change"]
             },
             "SCN-CSO-HIS": {
               "fka": "FRR-SCN-05",
               "name": "Historical Notifications",
               "statement": "Providers MUST keep historical Significant Change Notifications available to all necessary parties at least until the service completes its next annual assessment.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3725,18 +3233,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Significant change"
-              ]
+              "terms": ["All Necessary Parties", "Significant change"]
             },
             "SCN-CSO-HRM": {
               "fka": "FRR-SCN-08",
               "name": "Human and Machine-Readable",
               "statement": "Providers MUST make ALL Significant Change Notifications and related audit records available in similar human-readable and compatible machine-readable formats.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3744,18 +3247,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Machine-Readable",
-                "Significant change"
-              ]
+              "terms": ["Machine-Readable", "Significant change"]
             },
             "SCN-CSO-ARI": {
               "fka": "FRR-SCN-10",
               "name": "Additional Relevant Information",
               "statement": "Providers MAY include additional relevant information in Significant Change Notifications.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -3763,17 +3261,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Significant change"
-              ]
+              "terms": ["Significant change"]
             },
             "SCN-CSO-NOM": {
               "fka": "FRR-SCN-07",
               "name": "Notification Mechanisms",
               "statement": "Providers MAY notify necessary parties in a variety of ways as long as the mechanism for notification is clearly documented and easily accessible.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -3786,9 +3280,7 @@
               "fka": "FRR-SCN-EX-02",
               "name": "Emergency Changes",
               "statement": "Providers MAY execute significant changes (including transformative changes) during an emergency or incident without meeting Significant Change Notification requirements in advance ONLY if absolutely necessary. In such emergencies, providers MUST follow all relevant procedures, notify all necessary parties, retroactively provide all Significant Change Notification materials, and complete appropriate assessment after the incident.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -3809,9 +3301,7 @@
               "fka": "FRR-SCN-RR-01",
               "name": "No Notification Requirements",
               "statement": "Providers SHOULD NOT make formal Significant Change Notifications for routine recurring changes; this type of change is exempted from the notification requirements of this process.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "notes": [
                 "Activities that match the routine recurring significant change type are performed regularly and routinely by cloud service providers to address flaws or vulnerabilities, address incidents, and generally perform the typical maintenance and service delivery changes expected during day-to-day operations.",
@@ -3854,10 +3344,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Routine Recurring",
-                "Significant change"
-              ]
+              "terms": ["Routine Recurring", "Significant change"]
             }
           },
           "ADP": {
@@ -3877,9 +3364,7 @@
                   "target": "authorization data"
                 }
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "Activities that match the adaptive significant change type are a frequent and normal part of iteratively improving a service by deploying new functionality or modifying existing functionality in a way that is typically transparent to customers and does not introduce significant new security risks.",
@@ -3908,10 +3393,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Adaptive",
-                "All Necessary Parties"
-              ]
+              "terms": ["Adaptive", "All Necessary Parties"]
             }
           },
           "TRF": {
@@ -3919,9 +3401,7 @@
               "fka": "FRR-SCN-TR-07",
               "name": "Option to Opt Out",
               "statement": "Providers MUST allow agency customers to OPT OUT of transformative changes whenever feasible.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -3929,18 +3409,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Agency",
-                "Transformative"
-              ]
+              "terms": ["Agency", "Transformative"]
             },
             "SCN-TRF-NIP": {
               "fka": "FRR-SCN-TR-02",
               "name": "Notification of Initial Plans",
               "statement": "Providers MUST notify all necessary parties of initial plans for transformative changes at least 30 business days before starting transformative changes.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "timeframe_type": "bizdays",
               "timeframe_num": 30,
               "notification": [
@@ -3957,18 +3432,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Transformative"
-              ]
+              "terms": ["All Necessary Parties", "Transformative"]
             },
             "SCN-TRF-NFP": {
               "fka": "FRR-SCN-TR-03",
               "name": "Notification of Final Plans",
               "statement": "Providers MUST notify all necessary parties of final plans for transformative changes at least 10 business days before starting transformative changes.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "timeframe_type": "bizdays",
               "timeframe_num": 10,
               "notification": [
@@ -3985,10 +3455,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Transformative"
-              ]
+              "terms": ["All Necessary Parties", "Transformative"]
             },
             "SCN-TRF-NAF": {
               "fka": "FRR-SCN-TR-04",
@@ -4006,9 +3473,7 @@
                   "target": "authorization data"
                 }
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -4016,10 +3481,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Transformative"
-              ]
+              "terms": ["All Necessary Parties", "Transformative"]
             },
             "SCN-TRF-NAV": {
               "fka": "FRR-SCN-TR-05",
@@ -4039,9 +3501,7 @@
                   "target": "authorization data"
                 }
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -4059,9 +3519,7 @@
               "fka": "FRR-SCN-TR-06",
               "name": "Update Documentation",
               "statement": "Providers MUST publish updated service documentation and other materials to reflect transformative changes within 30 business days after finishing transformative changes.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "timeframe_type": "bizdays",
               "timeframe_num": 30,
               "primary_key_word": "MUST",
@@ -4071,17 +3529,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Transformative"
-              ]
+              "terms": ["Transformative"]
             },
             "SCN-TRF-TPR": {
               "fka": "FRR-SCN-TR-01",
               "name": "Third-Party Review",
               "statement": "Providers SHOULD engage a third-party assessor to review the scope and impact of the planned change before starting transformative changes if human validation is necessary; such reviews SHOULD be limited to security decisions that require human validation.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "note": "Activities that match the transformative significant change type are rare for a cloud service offering, adjusted for the size, scale, and complexity of the service. Small cloud service offerings may go years without transformative changes, while hyperscale providers may release multiple transformative changes per year.",
               "examples": [
@@ -4156,9 +3610,7 @@
               "fka": "FRR-UCM-01",
               "statement": "Providers MUST document the cryptographic modules used in each service (or groups of services that use the same modules) where cryptographic services are used to protect federal customer data, including whether these modules are validated under the NIST Cryptographic Module Validation Program or are update streams of such modules.",
               "name": "Cryptographic Module Documentation",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -4166,16 +3618,10 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Federal Customer Data",
-                "Persistent Validation"
-              ]
+              "terms": ["Federal Customer Data", "Persistent Validation"]
             },
             "UCM-CSX-UVM": {
-              "fkas": [
-                "FRR-UCM-03",
-                "FRR-UCM-04"
-              ],
+              "fkas": ["FRR-UCM-03", "FRR-UCM-04"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers MAY use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when using cryptographic services to protect federal customer data.",
@@ -4191,21 +3637,14 @@
                 }
               },
               "name": "Using Validated Cryptographic Modules",
-              "affects": [
-                "Providers"
-              ],
-              "terms": [
-                "Federal Customer Data",
-                "Persistent Validation"
-              ]
+              "affects": ["Providers"],
+              "terms": ["Federal Customer Data", "Persistent Validation"]
             },
             "UCM-CSX-CAT": {
               "fka": "FRR-UCM-02",
               "statement": "Providers SHOULD configure agency tenants by default to use cryptographic services that use cryptographic modules or update streams of cryptographic modules with active validations under the NIST Cryptographic Module Validation Program when such modules are available.",
               "name": "Configuration of Agency Tenants",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4213,10 +3652,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Agency",
-                "Persistent Validation"
-              ]
+              "terms": ["Agency", "Persistent Validation"]
             }
           }
         }
@@ -4313,9 +3749,7 @@
               "fka": "FRR-VDR-EX-01",
               "statement": "FedRAMP MAY require providers to share additional vulnerability information, alternative reports, or to report at an alternative frequency as a condition of a FedRAMP Corrective Action Plan or other agreements with federal agencies.",
               "name": "Additional Requirements",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -4323,18 +3757,13 @@
                   "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Agency",
-                "Vulnerability"
-              ]
+              "terms": ["Agency", "Vulnerability"]
             },
             "VDR-FRP-ADV": {
               "fka": "FRR-VDR-EX-02",
               "statement": "FedRAMP MAY required providers to share additional information or details about vulnerabilities, including sensitive information that would likely lead to exploitation, as part of review, response or investigation by necessary parties.",
               "name": "Sensitive Details",
-              "affects": [
-                "FedRAMP"
-              ],
+              "affects": ["FedRAMP"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -4342,20 +3771,14 @@
                   "comment": "Changed to FedRAMP responsibility; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Likely",
-                "Vulnerability",
-                "Vulnerability Response"
-              ]
+              "terms": ["Likely", "Vulnerability", "Vulnerability Response"]
             }
           },
           "CSO": {
             "VDR-CSO-DET": {
               "fka": "FRR-VDR-01",
               "statement": "Providers MUST systematically, persistently, and promptly discover and identify vulnerabilities within their cloud service offering using appropriate techniques such as assessment, scanning, threat intelligence, vulnerability disclosure mechanisms, bug bounties, supply chain monitoring, and other relevant capabilities; this process is called vulnerability detection.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Vulnerability Detection",
               "primary_key_word": "MUST",
               "updated": [
@@ -4375,9 +3798,7 @@
             "VDR-CSO-RES": {
               "fka": "FRR-VDR-02",
               "statement": "Providers MUST systematically, persistently, and promptly track, evaluate, monitor, mitigate, remediate, assess exploitation of, report, and otherwise manage all detected vulnerabilities within their cloud service offering; this process is called vulnerability response.",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "name": "Vulnerability Response",
               "primary_key_word": "MUST",
               "note": "If it is not possible to fully mitigate or remediate detected vulnerabilities, providers SHOULD instead partially mitigate vulnerabilities promptly, progressively, and persistently.",
@@ -4400,9 +3821,7 @@
               "fka": "FRR-VDR-11",
               "statement": "Providers MUST document the reason and resulting implications for their customers when choosing not to meet FedRAMP recommendations in this process; this documentation MUST be included in the authorization data for the cloud service offering.",
               "name": "Documentation for Recommendations",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -4410,10 +3829,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Authorization data",
-                "Cloud Service Offering"
-              ]
+              "terms": ["Authorization data", "Cloud Service Offering"]
             }
           },
           "EVA": {
@@ -4421,9 +3837,7 @@
               "fka": "FRR-VDR-07",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are likely exploitable vulnerabilities.",
               "name": "Evaluate Exploitability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "The simple reality is that most traditional vulnerabilities discovered by scanners or during assessment are not likely to be exploitable; exploitation typically requires an unrealistic set of circumstances that will not occur during normal operation. The likelihood of exploitation will vary depending on so many factors that FedRAMP will not recommend a specific framework for approaching this beyond the recommendations and requirements in this document.",
@@ -4447,9 +3861,7 @@
               "fka": "FRR-VDR-08",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are internet-reachable vulnerabilities.",
               "name": "Evaluate Internet-Reachability",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "notes": [
                 "FedRAMP focuses on internet-reachable (rather than internet-accessible) to ensure that any service that might receive a payload from the internet is prioritized if that service has a vulnerability that can be triggered by processing the data in the payload.",
@@ -4474,9 +3886,7 @@
               "fka": "FRR-VDR-09",
               "statement": "Providers MUST evaluate detected vulnerabilities, considering the context of the cloud service offering, to estimate the potential adverse impact of exploitation on government customers AND assign one of the following potential adverse impact ratings:",
               "name": "Estimate Potential Adverse Impact",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "following_information_bullets": [
                 "**N1**: Exploitation could be expected to have negligible adverse effects on one or more agencies that use the cloud service offering.",
@@ -4507,9 +3917,7 @@
               "fka": "FRR-VDR-05",
               "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to identify logical groupings of affected information resources that may improve the efficiency and effectiveness of vulnerability response by consolidating further activity; requirements and recommendations in this process are then applied to these consolidated groupings of vulnerabilities instead of each individual detected instance.",
               "name": "Group Vulnerabilities",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4529,9 +3937,7 @@
               "fka": "FRR-VDR-06",
               "statement": "Providers SHOULD evaluate detected vulnerabilities, considering the context of the cloud service offering, to determine if they are false positive vulnerabilities.",
               "name": "Evaluate False Positives",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4550,9 +3956,7 @@
               "fka": "FRR-VDR-10",
               "statement": "Providers SHOULD consider at least the following factors when considering the context of the cloud service offering to evaluate detected vulnerabilities:",
               "name": "Evaluation Factors",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "following_information": [
                 "**Criticality**: How important are the systems or information that might be impacted by the vulnerability?",
@@ -4584,9 +3988,7 @@
               "fka": "FRR-VDR-AY-02",
               "statement": "Providers SHOULD make design and architecture decisions for their cloud service offering that mitigate the risk of vulnerabilities by default AND decrease the risk and complexity of vulnerability detection and response.",
               "name": "Design For Resilience",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4605,9 +4007,7 @@
               "fka": "FRR-VDR-AY-03",
               "statement": "Providers SHOULD use automated services to improve and streamline vulnerability detection and response.",
               "name": "Automate Detection",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4625,9 +4025,7 @@
               "fka": "FRR-VDR-AY-04",
               "statement": "Providers SHOULD automatically perform vulnerability detection on representative samples of new or significantly changed information resources.",
               "name": "Detect After Changes",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -4645,9 +4043,7 @@
               "fka": "FRR-VDR-AY-05",
               "statement": "Providers SHOULD NOT weaken the security of information resources to facilitate vulnerability scanning, detection, or assessment activities.",
               "name": "Maintain Security",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
@@ -4665,9 +4061,7 @@
               "fka": "FRR-VDR-AY-06",
               "statement": "Providers SHOULD NOT deploy or otherwise activate new machine-based information resources with Known Exploited Vulnerabilities.",
               "name": "Avoid KEVs",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
@@ -4686,9 +4080,7 @@
               "fka": "FRR-VDR-04",
               "statement": "Providers MAY sample effectively identical information resources, especially machine-based information resources, when performing vulnerability detection UNLESS doing so would decrease the efficiency or effectiveness of vulnerability detection.",
               "name": "Sampling",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -4709,9 +4101,7 @@
               "fka": "FRR-VDR-TF-01",
               "statement": "Providers MUST report vulnerability detection and response activity to all necessary parties in a consistent format that is human readable at least monthly.",
               "name": "Monthly Activity Report",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "timeframe_type": "month",
               "timeframe_num": 1,
@@ -4734,9 +4124,7 @@
               "timeframe_type": "days",
               "timeframe_num": 192,
               "name": "Mark Accepted Vulnerabilities",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -4744,18 +4132,13 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Accepted Vulnerability",
-                "Vulnerability"
-              ]
+              "terms": ["Accepted Vulnerability", "Vulnerability"]
             },
             "VDR-TFR-KEV": {
               "fka": "FRR-VDR-TF-02",
               "statement": "Providers SHOULD remediate Known Exploited Vulnerabilities according to the due dates in the CISA Known Exploited Vulnerabilities Catalog (even if the vulnerability has been fully mitigated) as required by CISA Binding Operational Directive (BOD) 22-01 or any successor guidance from CISA.",
               "name": "Remediate KEVs",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "reference": "CISA BOD 22-01",
               "reference_url": "https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities",
@@ -4765,10 +4148,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Known Exploited Vulnerability (KEV)",
-                "Vulnerability"
-              ]
+              "terms": ["Known Exploited Vulnerability (KEV)", "Vulnerability"]
             },
             "VDR-TFR-MRH": {
               "fkas": [
@@ -4797,9 +4177,7 @@
                 }
               },
               "name": "Historical Activity",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "All Necessary Parties",
                 "Machine-Readable",
@@ -4836,9 +4214,7 @@
                 }
               },
               "name": "Persistent Sample Detection",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Information Resource",
                 "Machine-Based (information resources)",
@@ -4874,9 +4250,7 @@
                 }
               },
               "name": "Persistent Drift Detection",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Drift",
                 "Information Resource",
@@ -4909,9 +4283,7 @@
                 }
               },
               "name": "Persistent Complete Detection",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "updated": [
                 {
                   "date": "2026-02-04",
@@ -4954,13 +4326,8 @@
                 }
               },
               "name": "Evaluate Vulnerabilities Quickly",
-              "affects": [
-                "Providers"
-              ],
-              "terms": [
-                "Vulnerability",
-                "Vulnerability Detection"
-              ]
+              "affects": ["Providers"],
+              "terms": ["Vulnerability", "Vulnerability Detection"]
             },
             "VDR-TFR-PVR": {
               "fkas": [
@@ -5061,9 +4428,7 @@
                 }
               },
               "name": "Mitigation and Remediation Expectations",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Likely",
                 "Potential Adverse Impact (of vulnerability exploitation)",
@@ -5079,18 +4444,11 @@
               "statement": "Providers SHOULD mitigate or remediate remaining vulnerabilities during routine operations as determined necessary by the provider.",
               "primary_key_word": "SHOULD",
               "name": "Remaining Vulnerabilities",
-              "affects": [
-                "Providers"
-              ],
-              "terms": [
-                "Vulnerability"
-              ]
+              "affects": ["Providers"],
+              "terms": ["Vulnerability"]
             },
             "VDR-TFR-IRI": {
-              "fkas": [
-                "FRR-VDR-TF-MO-06",
-                "FRR-VDR-TF-HI-06"
-              ],
+              "fkas": ["FRR-VDR-TF-MO-06", "FRR-VDR-TF-HI-06"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers MAY treat internet-reachable likely exploitable vulnerabilities with a potential adverse impact of N4 or N5 as a security incident until they are partially mitigated to N3 or below.",
@@ -5106,9 +4464,7 @@
                 }
               },
               "name": "Internet-Reachable Incidents",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Incident",
                 "Likely",
@@ -5118,9 +4474,7 @@
               ]
             },
             "VDR-TFR-NRI": {
-              "fkas": [
-                "FRR-VDR-TF-HI-07"
-              ],
+              "fkas": ["FRR-VDR-TF-HI-07"],
               "varies_by_level": {
                 "low": {
                   "statement": "Providers MAY treat likely exploitable vulnerabilities that are NOT internet-reachable with a potential adverse impact of N5 as a security incident until they are partially mitigated to N4 or below.",
@@ -5136,9 +4490,7 @@
                 }
               },
               "name": "Non-Internet-Reachable Incidents",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "terms": [
                 "Incident",
                 "Likely",
@@ -5153,9 +4505,7 @@
               "fka": "FRR-VDR-RP-01",
               "statement": "Providers MUST report vulnerability detection and response activity to all necessary parties persistently, summarizing ALL activity since the previous report; these reports are authorization data and are subject to the FedRAMP Authorization Data Sharing (ADS) process.",
               "name": "Persistent Reporting",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -5176,9 +4526,7 @@
               "fka": "FRR-VDR-RP-03",
               "statement": "Providers MUST NOT irresponsibly disclose specific sensitive information about vulnerabilities that would likely lead to exploitation, but MUST disclose sufficient information for informed risk-based decision-making to all necessary parties.",
               "name": "Responsible Disclosure",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST NOT",
               "note": "This requirement will be superseded in the event of formal action related to an investigation or corrective action plan.",
               "updated": [
@@ -5187,11 +4535,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "All Necessary Parties",
-                "Likely",
-                "Vulnerability"
-              ]
+              "terms": ["All Necessary Parties", "Likely", "Vulnerability"]
             },
             "VDR-RPT-VDT": {
               "fka": "FRR-VDR-RP-05",
@@ -5210,9 +4554,7 @@
                 "Any supplementary information the provider responsibly determines will help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the vulnerability",
                 "Final disposition of the vulnerability"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -5249,9 +4591,7 @@
                 "Explanation of why this is an accepted vulnerability",
                 "Any supplementary information the provider determines will responsibly help federal agencies assess or mitigate the risk to their federal customer data within the cloud service offering resulting from the accepted vulnerability"
               ],
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -5277,9 +4617,7 @@
               "fka": "FRR-VDR-RP-02",
               "statement": "Providers SHOULD include high-level overviews of ALL vulnerability detection and response activities conducted during this period for the cloud service offering; this includes vulnerability disclosure programs, bug bounty programs, penetration testing, assessments, etc.",
               "name": "High-Level Overviews",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -5298,9 +4636,7 @@
               "fka": "FRR-VDR-RP-04",
               "statement": "Providers MAY responsibly disclose vulnerabilities publicly or with other parties if the provider determines doing so will NOT likely lead to exploitation.",
               "name": "Responsible Public Disclosure",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "updated": [
                 {
@@ -5308,10 +4644,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Likely",
-                "Vulnerability"
-              ]
+              "terms": ["Likely", "Vulnerability"]
             }
           },
           "AGM": {
@@ -5320,9 +4653,7 @@
               "statement": "Agencies SHOULD review the information provided in vulnerability reports at appropriate and reasonable intervals commensurate with the expectations and risk posture indicated by their Authorization to Operate, and SHOULD use automated processing and filtering of machine readable information from cloud service providers.",
               "name": "Review Vulnerability Reports",
               "note": "FedRAMP recommends that agencies only review overdue and accepted vulnerabilities with a potential adverse impact of N3 or higher unless the cloud service provider recommends mitigations or the service is included in a higher risk federal information system. Furthermore, accepted vulnerabilities generally only need to be reviewed when they are added or during an updated risk assessment due to changes in the agency’s use or authorization.",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -5341,9 +4672,7 @@
               "fka": "FRR-VDR-AG-02",
               "statement": "Agencies SHOULD use vulnerability information reported by the Provider to maintain Plans of Action & Milestones for agency security programs when relevant according to agency security policies (such as if the agency takes action to mitigate the risk of exploitation or authorized the continued use of a cloud service with accepted vulnerabilities that put agency information systems at risk).",
               "name": "Maintain Agency POA&M",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "SHOULD",
               "updated": [
                 {
@@ -5351,20 +4680,14 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Accepted Vulnerability",
-                "Agency",
-                "Vulnerability"
-              ]
+              "terms": ["Accepted Vulnerability", "Agency", "Vulnerability"]
             },
             "VDR-AGM-DRE": {
               "fka": "FRR-VDR-AG-03",
               "statement": "Agencies SHOULD NOT request additional information from cloud service providers that is not required by this FedRAMP process UNLESS the head of the agency or an authorized delegate makes a determination that there is a demonstrable need for such.",
               "name": "Do Not Request Extra Info",
               "note": "This is related to the Presumption of Adequacy directed by 44 USC § 3613 (e).",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "SHOULD NOT",
               "updated": [
                 {
@@ -5372,18 +4695,14 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Agency"
-              ]
+              "terms": ["Agency"]
             },
             "VDR-AGM-NFR": {
               "fka": "FRR-VDR-AG-04",
               "statement": "Agencies MUST notify FedRAMP after requesting any additional vulnerability information or materials from a cloud service provider beyond those FedRAMP requires by sending a notification to [info@fedramp.gov](mailto:info@fedramp.gov).",
               "name": "Notify FedRAMP",
               "note": "This is an OMB policy; agencies are required to notify FedRAMP in OMB Memorandum M-24-15 section IV (a).",
-              "affects": [
-                "Agencies"
-              ],
+              "affects": ["Agencies"],
               "primary_key_word": "MUST",
               "updated": [
                 {
@@ -5391,10 +4710,7 @@
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Agency",
-                "Vulnerability"
-              ],
+              "terms": ["Agency", "Vulnerability"],
               "notification": [
                 {
                   "party": "FedRAMP",
@@ -5482,9 +4798,7 @@
                 "Any clarifications or responses to the assessment summary"
               ],
               "name": "Implementation Summaries",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MUST",
               "impact": {
                 "low": true,
@@ -5505,9 +4819,7 @@
               "fka": "FRR-KSI-01",
               "statement": "Providers SHOULD apply ALL Key Security Indicators to ALL aspects of their cloud service offering that are within the FedRAMP Minimum Assessment Scope.",
               "name": "Application within MAS",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "SHOULD",
               "impact": {
                 "low": true,
@@ -5519,9 +4831,7 @@
                   "comment": "Removed unnecessary cloud service at the beginning; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
                 }
               ],
-              "terms": [
-                "Cloud Service Offering"
-              ]
+              "terms": ["Cloud Service Offering"]
             },
             "KSI-CSX-ORD": {
               "statement": "Providers MAY use the following order of criticality for approaching Authorization by FedRAMP Key Security Indicators for an initial authorization package:",
@@ -5538,9 +4848,7 @@
                 "Incident Communications Procedures (ICP)"
               ],
               "name": "AFR Order of Criticality",
-              "affects": [
-                "Providers"
-              ],
+              "affects": ["Providers"],
               "primary_key_word": "MAY",
               "impact": {
                 "low": true,
@@ -5619,11 +4927,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "All Necessary Parties",
-            "Persistently",
-            "Quarterly Review"
-          ]
+          "terms": ["All Necessary Parties", "Persistently", "Quarterly Review"]
         },
         "KSI-AFR-FSI": {
           "fka": "KSI-AFR-08",
@@ -5637,10 +4941,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "FedRAMP Security Inbox",
-            "Persistently"
-          ]
+          "terms": ["FedRAMP Security Inbox", "Persistently"]
         },
         "KSI-AFR-ICP": {
           "fka": "KSI-AFR-10",
@@ -5654,11 +4955,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability Response"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"]
         },
         "KSI-AFR-MAS": {
           "fka": "KSI-AFR-01",
@@ -5703,10 +5000,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Cloud Service Offering",
-            "Persistently"
-          ]
+          "terms": ["Cloud Service Offering", "Persistently"]
         },
         "KSI-AFR-PVA": {
           "fka": "KSI-AFR-09",
@@ -5738,10 +5032,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Cloud Service Offering",
-            "Persistently"
-          ]
+          "terms": ["Cloud Service Offering", "Persistently"]
         },
         "KSI-AFR-SCN": {
           "fka": "KSI-AFR-05",
@@ -5792,10 +5083,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Federal Customer Data",
-            "Persistently"
-          ]
+          "terms": ["Federal Customer Data", "Persistently"]
         },
         "KSI-AFR-VDR": {
           "fka": "KSI-AFR-04",
@@ -5889,9 +5177,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Cloud Service Offering"
-          ]
+          "terms": ["Cloud Service Offering"]
         },
         "KSI-CMT-RMV": {
           "fka": "KSI-CMT-02",
@@ -5921,44 +5207,27 @@
           "fka": "KSI-CMT-04",
           "name": "Reviewing Change Procedures",
           "statement": "Persistently review the effectiveness of documented change management procedures.",
-          "controls": [
-            "cm-3",
-            "cm-3.2",
-            "cm-3.4",
-            "cm-5",
-            "cm-7.1",
-            "cm-9"
-          ],
+          "controls": ["cm-3", "cm-3.2", "cm-3.4", "cm-5", "cm-7.1", "cm-9"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CMT-VTD": {
           "fka": "KSI-CMT-03",
           "name": "Validating Throughout Deployment",
           "statement": "Automate persistent testing and validation of changes throughout deployment.",
-          "controls": [
-            "cm-3",
-            "cm-3.2",
-            "cm-4.2",
-            "si-2"
-          ],
+          "controls": ["cm-3", "cm-3.2", "cm-4.2", "si-2"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistent Validation",
-            "Persistently"
-          ]
+          "terms": ["Persistent Validation", "Persistently"]
         }
       }
     },
@@ -5973,10 +5242,7 @@
           "fka": "KSI-CNA-04",
           "name": "Defining Functionality and Privileges",
           "statement": "Strictly define the functionality and privileges for infrastructure and services.",
-          "controls": [
-            "cm-2",
-            "si-3"
-          ],
+          "controls": ["cm-2", "si-3"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -5995,10 +5261,7 @@
               "statement": "Use automated services to persistently assess the security posture of all machine-based information resources and automatically enforce their intended operational state."
             }
           },
-          "controls": [
-            "ca-2.1",
-            "ca-7.1"
-          ],
+          "controls": ["ca-2.1", "ca-7.1"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6015,11 +5278,7 @@
           "fka": "KSI-CNA-07",
           "name": "Implementing Best Practices",
           "statement": "Persistently ensure cloud-native machine-based information resources are implemented based on the host provider's best practices and documented guidance.",
-          "controls": [
-            "ac-17.3",
-            "cm-2",
-            "pl-10"
-          ],
+          "controls": ["ac-17.3", "cm-2", "pl-10"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6084,13 +5343,7 @@
           "fka": "KSI-CNA-01",
           "name": "Restricting Network Traffic",
           "statement": "Persistently ensure all machine-based information resources are configured to limit inbound and outbound network traffic.",
-          "controls": [
-            "ac-17.3",
-            "ca-9",
-            "cm-7.1",
-            "sc-7.5",
-            "si-8"
-          ],
+          "controls": ["ac-17.3", "ca-9", "cm-7.1", "sc-7.5", "si-8"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6107,20 +5360,14 @@
           "fka": "KSI-CNA-05",
           "name": "Reviewing Protections",
           "statement": "Persistently review the effectiveness of protection against denial of service attacks and other unwanted activity.",
-          "controls": [
-            "sc-5",
-            "si-8",
-            "si-8.2"
-          ],
+          "controls": ["sc-5", "si-8", "si-8.2"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CNA-ULN": {
           "fka": "KSI-CNA-03",
@@ -6156,42 +5403,27 @@
           "fka": "KSI-CED-03",
           "name": "Reviewing Development and Engineering Training",
           "statement": "Persistently review the effectiveness of role-specific training given to development and engineering staff that covers best practices for delivering secure software.",
-          "controls": [
-            "cp-3",
-            "ir-2",
-            "ps-6"
-          ],
+          "controls": ["cp-3", "ir-2", "ps-6"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CED-RGT": {
           "fka": "KSI-CED-01",
           "name": "Reviewing General Training",
           "statement": "Persistently review the effectiveness of training given to all employees on policies, procedures, and security-related topics.",
-          "controls": [
-            "at-2",
-            "at-2.2",
-            "at-2.3",
-            "at-3.5",
-            "at-4",
-            "ir-2.3"
-          ],
+          "controls": ["at-2", "at-2.2", "at-2.3", "at-3.5", "at-4", "ir-2.3"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-CED-RRT": {
           "fka": "KSI-CED-04",
@@ -6204,31 +5436,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability Response"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"]
         },
         "KSI-CED-RST": {
           "fka": "KSI-CED-02",
           "name": "Reviewing Role-Specific Training",
           "statement": "Persistently review the effectiveness of role-specific training given to employees in high risk roles, including at least roles with privileged access.",
-          "controls": [
-            "at-2",
-            "at-2.3",
-            "at-3",
-            "sr-11.1"
-          ],
+          "controls": ["at-2", "at-2.3", "at-3", "sr-11.1"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         }
       }
     },
@@ -6329,9 +5550,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-IAM-JIT": {
           "fka": "KSI-IAM-04",
@@ -6444,9 +5663,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Vulnerability Response"
-          ]
+          "terms": ["Vulnerability Response"]
         }
       }
     },
@@ -6461,22 +5678,14 @@
           "fka": "KSI-INR-03",
           "name": "Generating After Action Reports",
           "statement": "Generate incident after action reports and persistently incorporate lessons learned.",
-          "controls": [
-            "ir-3",
-            "ir-4",
-            "ir-4.1",
-            "ir-8"
-          ],
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-8"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently"
-          ]
+          "terms": ["Incident", "Persistently"]
         },
         "KSI-INR-RIR": {
           "fka": "KSI-INR-01",
@@ -6500,34 +5709,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability Response"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"]
         },
         "KSI-INR-RPI": {
           "fka": "KSI-INR-02",
           "name": "Reviewing Past Incidents",
           "statement": "Persistently review past incidents for patterns or vulnerabilities.",
-          "controls": [
-            "ir-3",
-            "ir-4",
-            "ir-4.1",
-            "ir-5",
-            "ir-8"
-          ],
+          "controls": ["ir-3", "ir-4", "ir-4.1", "ir-5", "ir-8"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently",
-            "Vulnerability"
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability"]
         }
       }
     },
@@ -6549,9 +5744,7 @@
               "statement": "Use a least-privileged, role and attribute-based, and just-in-time access authorization model for access to log data based on organizationally defined data sensitivity."
             }
           },
-          "controls": [
-            "si-11"
-          ],
+          "controls": ["si-11"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6563,12 +5756,7 @@
           "fka": "KSI-MLA-05",
           "name": "Evaluating Configurations",
           "statement": "Persistently evaluate and test the configuration of machine-based information resources, especially infrastructure as code.",
-          "controls": [
-            "ca-7",
-            "cm-2",
-            "cm-6",
-            "si-7.7"
-          ],
+          "controls": ["ca-7", "cm-2", "cm-6", "si-7.7"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6603,9 +5791,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource"
-          ]
+          "terms": ["Information Resource"]
         },
         "KSI-MLA-OSM": {
           "fka": "KSI-MLA-01",
@@ -6657,9 +5843,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         }
       }
     },
@@ -6689,9 +5873,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource"
-          ]
+          "terms": ["Information Resource"]
         },
         "KSI-PIY-RES": {
           "fka": "KSI-PIY-08",
@@ -6704,9 +5886,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RIS": {
           "fka": "KSI-PIY-06",
@@ -6729,9 +5909,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RSD": {
           "fka": "KSI-PIY-04",
@@ -6757,27 +5935,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-PIY-RVD": {
           "fka": "KSI-PIY-03",
           "name": "Reviewing Vulnerability Disclosures",
           "statement": "Persistently review the effectiveness of the provider's vulnerability disclosure program.",
-          "controls": [
-            "ra-5.11"
-          ],
+          "controls": ["ra-5.11"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently",
-            "Vulnerability"
-          ]
+          "terms": ["Persistently", "Vulnerability"]
         }
       }
     },
@@ -6792,14 +5963,7 @@
           "fka": "KSI-RPL-03",
           "name": "Aligning Backups with Objectives",
           "statement": "Persistently review the alignment of machine-based information resource backups with defined recovery objectives.",
-          "controls": [
-            "cm-2.3",
-            "cp-6",
-            "cp-9",
-            "cp-10",
-            "cp-10.2",
-            "si-12"
-          ],
+          "controls": ["cm-2.3", "cp-6", "cp-9", "cp-10", "cp-10.2", "si-12"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -6840,27 +6004,20 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-RPL-RRO": {
           "fka": "KSI-RPL-01",
           "name": "Reviewing Recovery Objectives",
           "statement": "Persistently review desired Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
-          "controls": [
-            "cp-2.3",
-            "cp-10"
-          ],
+          "controls": ["cp-2.3", "cp-10"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-RPL-TRC": {
           "fka": "KSI-RPL-04",
@@ -6884,10 +6041,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Incident",
-            "Persistently"
-          ]
+          "terms": ["Incident", "Persistently"]
         }
       }
     },
@@ -6930,22 +6084,14 @@
           "fka": "KSI-SVC-06",
           "name": "Automating Secret Management",
           "statement": "Automate management, protection, and regular rotation of digital keys, certificates, and other secrets.",
-          "controls": [
-            "ac-17.2",
-            "ia-5.2",
-            "ia-5.6",
-            "sc-12",
-            "sc-17"
-          ],
+          "controls": ["ac-17.2", "ia-5.2", "ia-5.6", "sc-12", "sc-17"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Regularly"
-          ]
+          "terms": ["Regularly"]
         },
         "KSI-SVC-EIS": {
           "fka": "KSI-SVC-01",
@@ -6968,10 +6114,7 @@
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource",
-            "Persistently"
-          ]
+          "terms": ["Information Resource", "Persistently"]
         },
         "KSI-SVC-PRR": {
           "fka": "KSI-SVC-08",
@@ -6984,9 +6127,7 @@
               "statement": "Persistently review plans, procedures, and the state of information resources after making changes to limit and remove unwanted residual elements that would likely negatively affect the confidentiality, integrity, or availability of federal customer data."
             }
           },
-          "controls": [
-            "sc-4"
-          ],
+          "controls": ["sc-4"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -7011,21 +6152,14 @@
               "statement": "Remove unwanted federal customer data promptly when requested by an agency in alignment with customer agreements, including from backups if appropriate; this typically applies when a customer spills information or when a customer seeks to remove information from a service due to a change in usage."
             }
           },
-          "controls": [
-            "si-12.3",
-            "si-18.4"
-          ],
+          "controls": ["si-12.3", "si-18.4"],
           "updated": [
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Agency",
-            "Federal Customer Data",
-            "Promptly"
-          ]
+          "terms": ["Agency", "Federal Customer Data", "Promptly"]
         },
         "KSI-SVC-SNT": {
           "fka": "KSI-SVC-02",
@@ -7061,10 +6195,7 @@
               "statement": "Persistently validate the authenticity and integrity of communications between machine-based information resources using automation."
             }
           },
-          "controls": [
-            "sc-23",
-            "si-7.1"
-          ],
+          "controls": ["sc-23", "si-7.1"],
           "updated": [
             {
               "date": "2026-02-04",
@@ -7136,9 +6267,7 @@
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Persistently"
-          ]
+          "terms": ["Persistently"]
         },
         "KSI-SCR-MON": {
           "fka": "KSI-TPR-04",
@@ -7166,10 +6295,7 @@
               "comment": "Renamed theme to Supply Chain Risk; removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
             }
           ],
-          "terms": [
-            "Information Resource",
-            "Vulnerability"
-          ]
+          "terms": ["Information Resource", "Vulnerability"]
         }
       }
     }

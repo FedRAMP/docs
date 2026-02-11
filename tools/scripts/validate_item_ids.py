@@ -53,6 +53,24 @@ def ensure_updated_entry(obj: Dict[str, Any], comment: str, entry_date: str) -> 
     obj["updated"] = [updated, entry]
 
 
+def increment_version(version: str) -> str:
+    """Increment semantic version by 0.0.1"""
+    # Split on first dot to separate main version from potential suffix
+    if '-' in version:
+        main_version, suffix = version.split('-', 1)
+        parts = main_version.split('.')
+        if len(parts) >= 3:
+            parts[2] = str(int(parts[2]) + 1)
+            return '.'.join(parts) + '-' + suffix
+        return version
+    else:
+        parts = version.split('.')
+        if len(parts) >= 3:
+            parts[2] = str(int(parts[2]) + 1)
+            return '.'.join(parts)
+        return version
+
+
 def fix_data_block(
     data_block: Dict[str, Any],
     *,
@@ -103,6 +121,14 @@ def fix_data_block(
                     node[new_key] = item
 
                     if is_mapping(item):
+                        if 'fka' in item.keys():
+                            item['fkas'] = [item['fka'], new_key]
+                            item.pop('fka')
+                        elif 'fkas' in item.keys():
+                            item['fkas'].append(new_key)
+                        else:
+                            item['fka'] = new_key
+
                         ensure_updated_entry(
                             item,
                             comment=(
@@ -190,10 +216,28 @@ def main() -> int:
     else:
         out_path = args.output or args.input.with_suffix(".fixed.json")
 
-    out_path.write_text(
-        json.dumps(fixed, indent=2, ensure_ascii=False, sort_keys=args.sort_keys) + "\n",
-        encoding="utf-8",
-    )
+    import subprocess
+
+    fixed_count = sum(1 for f in fixes if f["status"] == "fixed")
+    skipped = sum(1 for f in fixes if f["status"] == "skipped_collision")
+    
+    if fixed_count > 0:
+        # Increment version if we fixed anything and update last_updated
+        current_version = fixed.get("info", {}).get("version", "0.0.0")
+        fixed.setdefault("info", {})["version"] = increment_version(current_version)
+        fixed.setdefault("info", {})["last_updated"] = args.date
+
+    json_output = json.dumps(fixed, indent=2, ensure_ascii=False, sort_keys=args.sort_keys) + "\n"
+    out_path.write_text(json_output, encoding="utf-8")
+
+    try:
+        subprocess.run(
+            ["prettier", "--write", str(out_path)],
+            check=True,
+            capture_output=True,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
 
     if args.report:
         args.report.write_text(
@@ -213,8 +257,6 @@ def main() -> int:
         )
 
     # Minimal console summary
-    fixed_count = sum(1 for f in fixes if f["status"] == "fixed")
-    skipped = sum(1 for f in fixes if f["status"] == "skipped_collision")
     print(f"Wrote: {out_path}")
     print(f"Fixed keys: {fixed_count}")
     if skipped:
