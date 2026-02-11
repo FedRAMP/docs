@@ -17,6 +17,11 @@ Install dependencies using Bun:
 ```bash
 bun install
 ```
+Install zensical using pip:
+
+```bash
+pip install zensical
+```
 
 ## Scripts
 
