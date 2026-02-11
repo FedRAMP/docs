@@ -26,7 +26,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-ID_KEY_RE = re.compile(r"^([A-Za-z0-9]+)-([A-Za-z0-9]+)-([A-Za-z0-9]+)$")
+ID_KEY_RE = re.compile(r"^([A-Z]+)-([A-Z]+)-([A-Z]+)$")
 
 
 def is_mapping(x: Any) -> bool:
