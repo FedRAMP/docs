@@ -22,7 +22,7 @@ During the Partnership Establishment phase, the federal agency agrees to partner
 
 - Understand the sensitivity of the data that will be used with the CSO. To categorize your data, review the [_NIST Federal Information Processing Standards (FIPS) Publication 199_](https://csrc.nist.gov/publications/detail/fips/199/final), _Standards for Security Categorization of Federal Information and Information Systems._
 
-- Review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/products?sort=productName) to see if there is a CSO that meets your mission needs and is able to provide the right level of security given the data.
+- Review the [FedRAMP Marketplace](https://fedramp.gov/marketplace/#!/products?sort=productName) to see if there is a CSO that meets your mission needs and is able to provide the right level of security given the data.
 
 - If you find a CSO that meets your mission needs, but is not on the FedRAMP Marketplace, meet with the associated CSP to determine the organization's willingness and commitment to pursue a FedRAMP authorization. If the CSP would like to learn more about the FedRAMP process, direct them to the [FedRAMP CSP Authorization Playbook](../../csp/authorization/getting-started.md). If the CSP has not already done so, instruct the CSP to complete FedRAMP's [CSP Information Form](https://docs.google.com/forms/d/e/1FAIpQLScU4_x5UK53d0PUUDsOdqWyzUvAN1-yFJ1NxffT7PkGkCiuPg/viewform). Completing the form will generate a unique FedRAMP ID for the system that will stay with the offering for the lifecycle of their FedRAMP journey.
 
@@ -58,7 +58,7 @@ The purpose of the Planning phase is to set up the authorization for success. Th
 
   - Determine the federal agency's approach for reviewing the authorization package as described below:
 
-    1. **Just-In-Time Linear Approach:** Each FedRAMP deliverable builds upon another, starting with the SSP. The SSP and appendices, security assessment plan (SAP), and security assessment report (SAR) are completed in a linear fashion, obtaining feedback from the federal agency once each deliverable is produced. In turn, modifications are made to each deliverable, based on the federal agency's review. Once the deliverable is finalized and accepted by the federal agency, work begins on the next deliverable. 
+    1. **Just-In-Time Linear Approach:** Each FedRAMP deliverable builds upon another, starting with the SSP. The SSP and appendices, security assessment plan (SAP), and security assessment report (SAR) are completed in a linear fashion, obtaining feedback from the federal agency once each deliverable is produced. In turn, modifications are made to each deliverable, based on the federal agency's review. Once the deliverable is finalized and accepted by the federal agency, work begins on the next deliverable.
     2. **All Deliverables Provided Simultaneously:** All FedRAMP deliverables (i.e., SSP/appendices, SAP, SAR, and Plan of Action and Milestones (POA&M)) are completed and submitted to the federal agency at once. The federal agency reviews all deliverables together and works collaboratively with the CSP and 3PAO.
 
 !!! tip "FedRAMP Recommendation"
@@ -68,12 +68,12 @@ The purpose of the Planning phase is to set up the authorization for success. Th
 
 ### Work Breakdown Structure and In Process Request
 
-As your federal agency finalizes the Authorization Planning phase, complete the following actions:  
+As your federal agency finalizes the Authorization Planning phase, complete the following actions:
 Complete a [Work Breakdown Structure](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx) (WBS) and submit a [FedRAMP In-Process Request](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-In-Process-Request-Template.docx) to FedRAMP via [intake@fedramp.gov](mailto:intake@fedramp.gov). The completion of this form indicates to FedRAMP that your federal agency is ready to begin coordinating a kickoff meeting with the CSP and 3PAO (optional and recommended). It also indicates that you have reviewed and approved the WBS, and 3PAO testing is scheduled within six (6) months. Instruct your CSP to begin working on the kickoff meeting presentation. Kickoff Requirements can be found on the FedRAMP website.
 
 ### Kickoff Meeting
 
-The purpose of the [kickoff meeting](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-Kickoff-SAR-Debrief-Guidance.pdf) is to formally begin the FedRAMP agency authorization process by introducing key team members, reviewing the CSO, and ensuring all stakeholders are aligned on the overall process. Review FedRAMP's Kickoff Briefing guidance to understand the full scope of a FedRAMP facilitated kickoff meeting.  
+The purpose of the [kickoff meeting](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-Kickoff-SAR-Debrief-Guidance.pdf) is to formally begin the FedRAMP agency authorization process by introducing key team members, reviewing the CSO, and ensuring all stakeholders are aligned on the overall process. Review FedRAMP's Kickoff Briefing guidance to understand the full scope of a FedRAMP facilitated kickoff meeting.
 At the conclusion of the kickoff meeting, all stakeholders will have a shared understanding of:
 
 - The overall authorization process, milestones, deliverables, roles and responsibilities, and schedule.

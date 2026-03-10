@@ -86,7 +86,7 @@ supports and promotes the program within the Federal community.
     The FedRAMP Marketplace shows cloud computing products and services that are
     in progress or have completed a FedRAMP authorization. For additional
     information, refer to:
-    [https://marketplace.fedramp.gov](https://marketplace.fedramp.gov/).
+    [https://fedramp.gov/marketplace](https://fedramp.gov/marketplace/).
 
 [^4]:
     Refer to NIST FIPS 199, _Standards for Security Categorization of Federal

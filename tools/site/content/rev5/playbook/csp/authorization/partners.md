@@ -76,7 +76,7 @@ independence, and FedRAMP knowledge requirements to perform required independent
 security assessments. However, a federal agency may choose to use their
 Independent Verification and Validation (IV&V) organization to assess a CSO.
 FedRAMP recognized 3PAOs can be found on the
-[FedRAMP Marketplace](https://marketplace.fedramp.gov/assessors).
+[FedRAMP Marketplace](https://fedramp.gov/marketplace/assessors).
 
 !!! info "Agency approved independent assessment"
 

@@ -12,7 +12,7 @@ The CSP will then develop a POA&M based on the SAR findings. The POA&M documents
 
 ### (1) Agency Review of Security Authorization Package
 
-During this phase, the federal agency team conducts a review of the CSO authorization package that includes: the SSP and appendices, SAP, SAR, and POA&M. The purpose of the review is to ensure that the authorization package clearly and accurately reflects the security posture of the CSO in order for the federal agency authorizing official (AO) to make an informed risk-based authorization decision.  
+During this phase, the federal agency team conducts a review of the CSO authorization package that includes: the SSP and appendices, SAP, SAR, and POA&M. The purpose of the review is to ensure that the authorization package clearly and accurately reflects the security posture of the CSO in order for the federal agency authorizing official (AO) to make an informed risk-based authorization decision.
 FedRAMP recommends establishing a regular cadence of meetings that include the federal agency, CSP, and 3PAO throughout the quality and risk review in order to address federal agency questions and concerns in real time. This might include longer in-person working sessions to address specific areas of the CSO.
 
 ### (2) SAR Debrief
@@ -47,11 +47,11 @@ The purpose of the [SAR debrief](https://www.fedramp.gov/resources/templates/Fed
 
 - **Prior to the SAR Debrief:** Review the final SAR and POA&M prior to the SAR debrief meeting and record any questions for the CSP and 3PAO during the meeting.
 
-- **During the SAR Debrief:** Raise questions if anything is unclear. The federal agency should walk away from the SAR debrief with a clear understanding of the scope of testing, the CSP's plan and timeline for remediating any residual risk, and any areas that will require federal agency risk acceptance. Describe the federal agency's process for completing the quality and risk review of the authorization package and the process for reaching an authorization decision and granting an ATO. 
+- **During the SAR Debrief:** Raise questions if anything is unclear. The federal agency should walk away from the SAR debrief with a clear understanding of the scope of testing, the CSP's plan and timeline for remediating any residual risk, and any areas that will require federal agency risk acceptance. Describe the federal agency's process for completing the quality and risk review of the authorization package and the process for reaching an authorization decision and granting an ATO.
 
 ### (3) Remediation
 
-To ensure the authorization package clearly and accurately reflects the security and risk posture of the CSO, the CSP and 3PAO may be required to address documentation gaps or inconsistencies identified by the federal agency review team.  
+To ensure the authorization package clearly and accurately reflects the security and risk posture of the CSO, the CSP and 3PAO may be required to address documentation gaps or inconsistencies identified by the federal agency review team.
 Examples include:
 
 - Inconsistencies across SSP control narratives.
@@ -64,15 +64,15 @@ Examples include:
 
 In addition, the CSP may be asked to remediate or mitigate open risks in order to achieve an acceptable level of risk for the federal agency AO.
 
-In some cases, the 3PAO may be required to perform delta testing to validate risk remediations or perform additional testing if the federal agency review team identifies gaps in the initial assessment scope, e.g. if the 3PAO failed to validate the encryption status of federal data/metadata at rest and in transit or failed to test a component essential to the operation of the CSO.  
+In some cases, the 3PAO may be required to perform delta testing to validate risk remediations or perform additional testing if the federal agency review team identifies gaps in the initial assessment scope, e.g. if the 3PAO failed to validate the encryption status of federal data/metadata at rest and in transit or failed to test a component essential to the operation of the CSO.
 
-The federal agency's review of remediation work can happen on an iterative, or linear basis, depending on the federal agency's preference. It is important to maintain constant communication between the federal agency and CSP throughout the remediation process to ensure that the gaps and other areas of concern are being addressed to the federal agency's satisfaction.  
+The federal agency's review of remediation work can happen on an iterative, or linear basis, depending on the federal agency's preference. It is important to maintain constant communication between the federal agency and CSP throughout the remediation process to ensure that the gaps and other areas of concern are being addressed to the federal agency's satisfaction.
 
 At the end of the Remediation phase, the federal agency, CSP, and 3PAO should conduct a formal close-out meeting to review all changes, address questions in real time, and obtain approval to move forward to the final review and ATO phase.
 
 ### (4) Agency Final Review and ATO
 
-During this phase, the federal agency review team finalizes its review of the authorization package, and the federal agency AO issues an ATO for the CSO. FedRAMP provides an [_ATO letter template_](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx) that federal agency AOs are encouraged to use. The ATO letter is sent to the CSP and [ato-letter@fedramp.gov](mailto:ato-letter@fedramp.gov).  
+During this phase, the federal agency review team finalizes its review of the authorization package, and the federal agency AO issues an ATO for the CSO. FedRAMP provides an [_ATO letter template_](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx) that federal agency AOs are encouraged to use. The ATO letter is sent to the CSP and [ato-letter@fedramp.gov](mailto:ato-letter@fedramp.gov).
 
 The process for closing out the review and issuing an ATO varies from federal agency to agency. The implementation, testing, and documentation of customer controls in the federal agency's GRC tool typically occurs during this phase, but may occur later in the authorization process after the ATO for the CSO is issued. As described in the [Authorization Planning](preparation.md#authorization-planning) section of this playbook, the federal agency's process and timeline for reaching an authorization decision and issuing an ATO should be defined early in the process and communicated to all stakeholders to manage expectations.
 
@@ -81,7 +81,7 @@ The process for closing out the review and issuing an ATO varies from federal ag
 
 Once the federal agency AO issues the ATO letter, FedRAMP performs a review of the authorization package to determine suitability for government-wide reuse. The scope of FedRAMP's review includes:
 
-- A quality review to ensure the authorization package is complete and required deliverables were developed in accordance with FedRAMP guidance. While the initial authorizing agency conducts a quality review of the authorization package, FedRAMP's review is considered ‘a final set of eyes' to ensure uniformity across all packages listed on the [FedRAMP Marketplace](https://marketplace.fedramp.gov/products).
+- A quality review to ensure the authorization package is complete and required deliverables were developed in accordance with FedRAMP guidance. While the initial authorizing agency conducts a quality review of the authorization package, FedRAMP's review is considered ‘a final set of eyes' to ensure uniformity across all packages listed on the [FedRAMP Marketplace](https://fedramp.gov/marketplace/products).
 - A risk review to ensure that all security deficiencies and weaknesses are correctly enumerated across package deliverables..
 
 After the ATO letter is received, the following steps are performed to get to a FedRAMP Authorized designation:
