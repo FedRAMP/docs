@@ -40,7 +40,7 @@ The Cybersecurity and Infrastructure Security Agency (CISA) coordinates with the
 
 ### Independent Assessment Organizations
 
-Independent assessors perform initial and annual assessments of cloud systems, as well as out-of-cycle assessments associated with significant changes. Most CSPs use a FedRAMP recognized Third Party Assessment Organization (3PAO) that meets the necessary quality, independence, and knowledge requirements to perform independent security assessments. A list of FedRAMP recognized 3PAOs can be found on the [FedRAMP Marketplace](https://fedramp.gov/marketplace/products).
+Independent assessors perform initial and annual assessments of cloud systems, as well as out-of-cycle assessments associated with significant changes. Most CSPs use a FedRAMP recognized Third Party Assessment Organization (3PAO) that meets the necessary quality, independence, and knowledge requirements to perform independent security assessments. A list of FedRAMP recognized 3PAOs can be found on the [FedRAMP Marketplace](https://fedramp.gov/marketplace/assessors).
 
 With approval by the agency AO, CSPs may choose to use an independent assessment organization that is not recognized by FedRAMP, such as an agency's Independent Verification and Validation (IV&V) team. When using an agency's IV&V team or other third-party assessor that is not a FedRAMP recognized 3PAO, the agency AO must attest to the independence of the assessment organization. In addition, the assessor must comply with FedRAMP requirements and guidance, and use FedRAMP provided templates.
 

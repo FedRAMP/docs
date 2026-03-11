@@ -29,7 +29,7 @@ consider partnering with a systems integrator who has experience and a federal
 government customer base. Conversely, if you already have a federal government
 footprint and are looking to expand, FedRAMP authorization can be a business
 development driver. FedRAMP provides cross-government visibility on the
-[FedRAMP Marketplace](https://fedramp.gov/marketplace/products) and provides a
+[FedRAMP Marketplace](https://fedramp.gov/marketplace) and provides a
 single security package that can be leveraged by multiple federal agencies for
 review.
 

@@ -81,7 +81,7 @@ The process for closing out the review and issuing an ATO varies from federal ag
 
 Once the federal agency AO issues the ATO letter, FedRAMP performs a review of the authorization package to determine suitability for government-wide reuse. The scope of FedRAMP's review includes:
 
-- A quality review to ensure the authorization package is complete and required deliverables were developed in accordance with FedRAMP guidance. While the initial authorizing agency conducts a quality review of the authorization package, FedRAMP's review is considered ‘a final set of eyes' to ensure uniformity across all packages listed on the [FedRAMP Marketplace](https://fedramp.gov/marketplace/products).
+- A quality review to ensure the authorization package is complete and required deliverables were developed in accordance with FedRAMP guidance. While the initial authorizing agency conducts a quality review of the authorization package, FedRAMP's review is considered ‘a final set of eyes' to ensure uniformity across all packages listed on the [FedRAMP Marketplace](https://fedramp.gov/marketplace/).
 - A risk review to ensure that all security deficiencies and weaknesses are correctly enumerated across package deliverables..
 
 After the ATO letter is received, the following steps are performed to get to a FedRAMP Authorized designation:

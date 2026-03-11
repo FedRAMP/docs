@@ -1,6 +1,6 @@
 # The FedRAMP Marketplace
 
-The [FedRAMP Marketplace](https://fedramp.gov/marketplace/products) provides a searchable, sortable database of cloud service offerings (CSOs) that have achieved a FedRAMP designation. Federal agencies can use the FedRAMP Marketplace to find secure cloud tools that meet their mission needs.
+The [FedRAMP Marketplace](https://fedramp.gov/marketplace) provides a searchable, sortable database of cloud service offerings (CSOs) that have achieved a FedRAMP designation. Federal agencies can use the FedRAMP Marketplace to find secure cloud tools that meet their mission needs.
 Federal agencies are encouraged to use the FedRAMP Marketplace as a resource to:
 
 - Research CSOs that are FedRAMP Authorized, FedRAMP Ready, or FedRAMP In Process

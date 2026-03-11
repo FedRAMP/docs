@@ -22,7 +22,7 @@ During the Partnership Establishment phase, the federal agency agrees to partner
 
 - Understand the sensitivity of the data that will be used with the CSO. To categorize your data, review the [_NIST Federal Information Processing Standards (FIPS) Publication 199_](https://csrc.nist.gov/publications/detail/fips/199/final), _Standards for Security Categorization of Federal Information and Information Systems._
 
-- Review the [FedRAMP Marketplace](https://fedramp.gov/marketplace/#!/products?sort=productName) to see if there is a CSO that meets your mission needs and is able to provide the right level of security given the data.
+- Review the [FedRAMP Marketplace](https://fedramp.gov/marketplace/) to see if there is a CSO that meets your mission needs and is able to provide the right level of security given the data.
 
 - If you find a CSO that meets your mission needs, but is not on the FedRAMP Marketplace, meet with the associated CSP to determine the organization's willingness and commitment to pursue a FedRAMP authorization. If the CSP would like to learn more about the FedRAMP process, direct them to the [FedRAMP CSP Authorization Playbook](../../csp/authorization/getting-started.md). If the CSP has not already done so, instruct the CSP to complete FedRAMP's [CSP Information Form](https://docs.google.com/forms/d/e/1FAIpQLScU4_x5UK53d0PUUDsOdqWyzUvAN1-yFJ1NxffT7PkGkCiuPg/viewform). Completing the form will generate a unique FedRAMP ID for the system that will stay with the offering for the lifecycle of their FedRAMP journey.
 

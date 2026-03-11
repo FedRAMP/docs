@@ -17,7 +17,7 @@ its service offering. The Readiness Assessment Report (RAR) documents the CSP's
 capability to meet federal security requirements.
 
 CSPs that achieve the FedRAMP Ready designation are listed on
-[FedRAMP's Marketplace](https://fedramp.gov/marketplace/products). Agencies use
+[FedRAMP's Marketplace](https://fedramp.gov/marketplace). Agencies use
 the FedRAMP Marketplace to research cloud services that meet their
 organizational requirements. FedRAMP Ready makes valuable information about the
 service offering's security available for potential federal agency customers via the
