@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>FedRAMP Machine Readable Documentation JSON Editor</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='columns'>
+        <h1 class='col-md-12'>FedRAMP Machine Readable Documentation JSON Editor</h1>
+    </div>
+
+    <div class='columns'>
+        <div class='column col-md-12'>
+            <button id='save' class='tiny' disabled>Save to Github</button>
+            <button id='restore' class='secondary tiny'>Restore to Default</button>
+            <button id="download" class='tiny'>Download</button>
+        </div>
+    </div>
+    <div class='columns'>
+        <div class='column col-md-12' id='editor'></div>
+    </div>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const schemaUrl = params.get('schema') || 'https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/tools/templates/FedRAMP.schema.json';
+    console.log("schemaURL = " + schemaUrl);
+    const dataSource = params.get('data') || 'https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/FRMR.documentation.json';
+    console.log("dataSource = " + dataSource);
+
+    const editor = document.getElementById('editor');
+
+    const schemaPromise = fetch(schemaUrl).then(response => response.json());
+    const dataPromise = dataSource ? fetch(dataSource).then(response => response.ok ? response.json() : null) : Promise.resolve(null);
+
+    Promise.all([schemaPromise, dataPromise]).then(([schema, data]) => {
+        const options = {
+            schema: schema,
+            theme: 'bootstrap5',
+            iconlib: 'bootstrap5',
+            ajax: true,
+            disable_properties: true,
+            prompt_before_delete: true,
+            // object_layout: 'grid'
+        };
+        if (data) {
+            options.startval = data;
+        }
+
+        const jseditor = new JSONEditor(editor, options);
+
+        jseditor.defaults.editors.object.options.collapsed = true;
+
+        // Function to handle GitHub API Push
+        async function saveToGitHub(content, token, owner, repo, filename) {
+            const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`;
+            const jsonString = JSON.stringify(content, null, 2);
+            // Encode to Base64 handling UTF-8 characters
+            const contentBase64 = btoa(decodeURIComponent(encodeURIComponent(jsonString)));
+
+            try {
+                // 1. Check if file exists to get SHA (required for updates)
+                let sha = null;
+                const checkReq = await fetch(url, {
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (checkReq.ok) {
+                    const fileData = await checkReq.json();
+                    sha = fileData.sha;
+                }
+
+                // 2. Push (Create or Update)
+                const body = {
+                    message: `Update ${filename} from Assessment Tool`,
+                    content: contentBase64
+                };
+                if (sha) {
+                    body.sha = sha;
+                }
+
+                const pushReq = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                if (pushReq.ok) {
+                    alert(`Successfully pushed ${filename} to GitHub repo ${owner}/${repo}`);
+                } else {
+                    const errorData = await pushReq.json();
+                    alert(`Failed to push to GitHub: ${errorData.message}`);
+                }
+            } catch (error) {
+                alert(`Error interacting with GitHub: ${error.message}`);
+            }
+        }
+
+        function handleDownloadButtonClick(e) {
+                e.preventDefault();
+                const output = jseditor.getValue();
+
+                const blob = new Blob([JSON.stringify(output, null, 2)], {
+                    type: "application/json;charset=utf-8"
+                });
+
+                if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                    window.navigator.msSaveOrOpenBlob(blob, dataSource);
+                } else {
+                    const a = document.createElement('a');
+                    a.download = dataSource || 'fedramp-assessment.json';
+                    a.href = URL.createObjectURL(blob);
+                    a.dataset.downloadurl = ['text/plain', a.download, a.href].join(':');
+
+                    a.dispatchEvent(new MouseEvent('click', {
+                        'view': window,
+                        'bubbles': true,
+                        'cancelable': false
+                    }));
+                }
+            }
+
+        function handleSaveButtonClick(e) {
+                    e.preventDefault();
+                    const output = jseditor.getValue();
+
+                    // Trigger GitHub Push (New Logic)
+                    const token = document.getElementById('gh-token').value;
+                    const owner = document.getElementById('gh-owner').value;
+                    const repo = document.getElementById('gh-repo').value;
+
+                    if (token && owner && repo) {
+                        saveToGitHub(output, token, owner, repo, dataSource || 'fedramp-assessment.json');
+                    }
+                }
+
+
+        jseditor.on('ready', function () {
+            // Hook up the Restore to Default button
+            document.getElementById('save').addEventListener('click', handleSaveButtonClick);
+            // Hook up the Restore to Default button
+            document.getElementById('restore').addEventListener('click', function () {jseditor.setValue(data)});
+            // Hook up the Download button
+            document.getElementById('download').addEventListener('click', handleDownloadButtonClick);
+        });
+
+        // Hook up the validation indicator to update its status whenever the editor changes
+        jseditor.on('change', function () {
+            // Get an array of errors from the validator
+            const errors = editor.validate();
+
+            const indicator = document.getElementById('valid_indicator');
+
+            // Not valid
+            if (errors.length) {
+                indicator.className = 'label alert';
+                indicator.textContent = 'not valid';
+            }
+            // Valid
+            else {
+                indicator.className = 'label success';
+                indicator.textContent = 'valid';
+            }
+        });
+    });
+</script>
+</body>
+</html>
