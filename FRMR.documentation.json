@@ -1713,21 +1713,25 @@
               "name": "Senior Security Reviewer",
               "varies_by_level": {
                 "low": {
-                  "statement": "Agencies MAY designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Category of Low.",
+                  "statement": "Agencies MAY designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Objective of Low.",
                   "primary_key_word": "MAY"
                 },
                 "moderate": {
-                  "statement": "Agencies MAY designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Category of Moderate.",
+                  "statement": "Agencies MAY designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Objective of Moderate.",
                   "primary_key_word": "MAY"
                 },
                 "high": {
-                  "statement": "Agencies SHOULD designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Category of High.",
+                  "statement": "Agencies SHOULD designate a senior information security official to review Ongoing Authorization Reports and represent the agency at Quarterly Reviews for cloud service offerings included in agency information systems with a Security Objective of High.",
                   "primary_key_word": "SHOULD"
                 }
               },
               "terms": ["Agency", "Cloud Service Offering", "Quarterly Review"],
               "affects": ["Agencies"],
               "updated": [
+                {
+                  "date": "2026-03-17",
+                  "comment": "Changed mention of Security Category to security objective and added Low and Moderate."
+                },
                 {
                   "date": "2026-02-04",
                   "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
