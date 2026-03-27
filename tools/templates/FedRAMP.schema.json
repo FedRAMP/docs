@@ -372,7 +372,8 @@
           },
           "additionalProperties": false
         },
-        "terms": { "type": "array", "items": { "type": "string" } }
+        "terms": { "type": "array", "items": { "type": "string" } },
+        "agency_responsibility": { "type": "array", "items": { "type": "string" } }
       },
       "additionalProperties": false
     },

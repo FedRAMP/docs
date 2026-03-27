@@ -5103,12 +5103,19 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
           "terms": [
             "All Necessary Parties",
             "Persistently",
             "Significant change"
+          ],
+          "agency_responsibility": [
+            "Incorporate change notifications provided by the Cloud Service Provider into Agency change management solutions."
           ]
         },
         "KSI-AFR-UCM": {
@@ -5179,6 +5186,10 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
           "terms": [
@@ -5187,6 +5198,9 @@
             "Vulnerability",
             "Vulnerability Detection",
             "Vulnerability Response"
+          ],
+          "agency_responsibility": [
+            "Integrate vulnerability data provided by the Cloud Service Provider into Agency vulnerability management solutions."
           ]
         }
       }
@@ -5215,9 +5229,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Cloud Service Offering"]
+          "terms": ["Cloud Service Offering"],
+          "agency_responsibility": [
+            "Integrate change logs from the Cloud Service Provider into Agency change management solutions."
+          ]
         },
         "KSI-CMT-RMV": {
           "fka": "KSI-CMT-02",
@@ -5519,7 +5540,15 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
+          ],
+          "agency_responsibility": [
+            "Designate an Access Control Manager (ACM) to manage the lifecycle and privileges of all accounts, roles, and groups.",
+            "Document requirements for role assignment, review, and revocation"
           ]
         },
         "KSI-IAM-APM": {
@@ -5588,9 +5617,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Persistently"]
+          "terms": ["Persistently"],
+          "agency_responsibility": [
+            "Persistently review accounts and roles to ensure they are properly assigned."
+          ]
         },
         "KSI-IAM-JIT": {
           "fka": "KSI-IAM-04",
@@ -5681,7 +5717,14 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
+          ],
+          "agency_responsibility": [
+            "Ensure that secrets such as API keys or digital certificates are stored securely and are not accessible to anyone other than the intended recipient. ."
           ]
         },
         "KSI-IAM-SUS": {
@@ -5701,9 +5744,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Vulnerability Response"]
+          "terms": ["Vulnerability Response"],
+          "agency_responsibility": [
+            "Continuously monitor and review privileged accounts for suspicious activity."
+          ]
         }
       }
     },
@@ -5723,9 +5773,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Incident", "Persistently"]
+          "terms": ["Incident", "Persistently"],
+          "agency_responsibility": [
+            "Determine when and how to conduct after action analysys for Cloud Service incidents."
+          ]
         },
         "KSI-INR-RIR": {
           "fka": "KSI-INR-01",
@@ -5747,9 +5804,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Incident", "Persistently", "Vulnerability Response"]
+          "terms": ["Incident", "Persistently", "Vulnerability Response"],
+          "agency_responsibility": [
+            "Include CLoud service incident response procedures in reviews of agency incident response plans."
+          ]
         },
         "KSI-INR-RPI": {
           "fka": "KSI-INR-02",
@@ -5760,9 +5824,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Incident", "Persistently", "Vulnerability"]
+          "terms": ["Incident", "Persistently", "Vulnerability"],
+          "agency_responsibility": [
+            "Determine when and how to conduct after action analysys for Cloud Service incidents."
+          ]
         }
       }
     },
@@ -5829,9 +5900,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Information Resource"]
+          "terms": ["Information Resource"],
+          "agency_responsibility": [
+            "Identify and document the types of events recieved from the Cloud Service Provider that will be logged, monitored, and audited."
+          ]
         },
         "KSI-MLA-OSM": {
           "fka": "KSI-MLA-01",
@@ -5881,9 +5959,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Persistently"]
+          "terms": ["Persistently"],
+          "agency_responsibility": [
+            "Determine how often logs will be reviewed and audited"
+          ]
         }
       }
     },
@@ -6079,9 +6164,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Incident", "Persistently"]
+          "terms": ["Incident", "Persistently"],
+          "agency_responsibility": [
+            "Include cloud service failures in incident table top and other incident tests."
+          ]
         }
       }
     },
@@ -6129,9 +6221,16 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
+            },
+            {
+              "date": "2026-03-27",
+              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Regularly"]
+          "terms": ["Regularly"],
+          "agency_responsibility": [
+            "Ensure that secrets such as API keys or digital certificates are rotated regularly."
+          ]
         },
         "KSI-SVC-EIS": {
           "fka": "KSI-SVC-01",

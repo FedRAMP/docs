@@ -88,6 +88,14 @@
 
     **Related SP 800-53 Controls:** {{#each controls}}[{{ uppercase this }}]({{controlfreak this}}){{#unless @last}}, {{/unless}}{{/each}}
 {{/if}}
+
+{{#if agency_responsibility}}
+    **Agency Responsibility:**
+    {{#each agency_responsibility}}
+
+    - {{ this }}
+    {{/each}}
+{{/if}}
 {{#if reference}}
 
     **Reference:** [{{reference}}]({{reference_url}})
