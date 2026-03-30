@@ -5115,7 +5115,7 @@
             "Significant change"
           ],
           "agency_responsibility": [
-            "Incorporate change notifications provided by the Cloud Service Provider into Agency change management solutions."
+            "Update the Agency Change Management process to incorporate change notifications provided by the Cloud Service Provider. Changes should be included in the Agency Change Log and should leverage existing notification systems in the agency process to notify all necessary parties."
           ]
         },
         "KSI-AFR-UCM": {
@@ -5200,7 +5200,7 @@
             "Vulnerability Response"
           ],
           "agency_responsibility": [
-            "Integrate vulnerability data provided by the Cloud Service Provider into Agency vulnerability management solutions."
+            "Integrate vulnerability data provided by the Cloud Service Provider into Agency SIEM solutions."
           ]
         }
       }
@@ -5237,7 +5237,7 @@
           ],
           "terms": ["Cloud Service Offering"],
           "agency_responsibility": [
-            "Integrate change logs from the Cloud Service Provider into Agency change management solutions."
+            "Update the Agency Change Management process to incorporate change notifications provided by the Cloud Service Provider. Changes should be included in the Agency Change Log and should leverage existing notification systems in the agency process to notify all necessary parties."
           ]
         },
         "KSI-CMT-RMV": {
@@ -5547,8 +5547,9 @@
             }
           ],
           "agency_responsibility": [
-            "Designate an Access Control Manager (ACM) to manage the lifecycle and privileges of all accounts, roles, and groups.",
-            "Document requirements for role assignment, review, and revocation"
+            "Designate an Access Control Manager (ACM) for the Cloud System. This individual and any designated backup are accountable for controlling access to the Cloud Service for Agency users and managing the lifecycle and privileges of all accounts, roles, and groups. The Access Control Manager will be responsible for ensuring that the Cloud System is configured to enforce the policies and procedures defined in the Cloud Service Agreement.",
+            "Restrict access to Top-level administrative account(s) to the Access Control Manager and any designated backup.",
+            "Document Agency policies and procedures for role assignment, review, and revocation within the cloud service offering."
           ]
         },
         "KSI-IAM-APM": {
@@ -5625,7 +5626,9 @@
           ],
           "terms": ["Persistently"],
           "agency_responsibility": [
-            "Persistently review accounts and roles to ensure they are properly assigned."
+            "Persistently review accounts and roles assigned to Agency Users.",
+            "Restrict access to Agency Users to the minimum required privileges.",
+            "Document Agency policies and procedures for role assignment, review, and revocation within the cloud service offering."
           ]
         },
         "KSI-IAM-JIT": {
@@ -5724,7 +5727,9 @@
             }
           ],
           "agency_responsibility": [
-            "Ensure that secrets such as API keys or digital certificates are stored securely and are not accessible to anyone other than the intended recipient. ."
+            "Ensure that secrets such as API keys or digital certificates used by Agency Systems are stored securely.",
+            "Restrict access to secrets such as API keys or digital certificates used by Agency Systems.",
+            "Document Agency policies and procedures for managing secrets such as API keys or digital certificates used by Agency Systems."
           ]
         },
         "KSI-IAM-SUS": {
@@ -5752,7 +5757,9 @@
           ],
           "terms": ["Vulnerability Response"],
           "agency_responsibility": [
-            "Continuously monitor and review privileged accounts for suspicious activity."
+            "Continuously monitor and review privileged accounts assigned to Agency Users for suspicious activity.",
+            "Restrict access to Agency Users with privileged access in response to suspicious activity.",
+            "Document Agency policies and procedures for managing privileged accounts assigned to Agency Users."
           ]
         }
       }
@@ -5781,7 +5788,9 @@
           ],
           "terms": ["Incident", "Persistently"],
           "agency_responsibility": [
-            "Determine when and how to conduct after action analysis for Cloud Service incidents."
+            "When incidents are reported by the cloud service provider, the Agency should determine if any other agency systems may have been impacted and report the additional impact as appropriate.",
+            "Participate in incident response activities to ensure that the Agency is aware of and responds to any incidents that may impact the Agency.",
+            "Participate in after action reporting activities and address any issues identified in Agency processes and procedures."
           ]
         },
         "KSI-INR-RIR": {
@@ -5812,7 +5821,7 @@
           ],
           "terms": ["Incident", "Persistently", "Vulnerability Response"],
           "agency_responsibility": [
-            "Include CLoud service incident response procedures in reviews of agency incident response plans."
+            "Update Agency Incident Response and Continuity of Government plans to include Cloud service incident response procedures."
           ]
         },
         "KSI-INR-RPI": {
@@ -5824,16 +5833,9 @@
             {
               "date": "2026-02-04",
               "comment": "Removed italics and changed the ID as part of new standardization in v0.9.0-beta; no material changes."
-            },
-            {
-              "date": "2026-03-27",
-              "comment": "Added agency responsibility element."
             }
           ],
-          "terms": ["Incident", "Persistently", "Vulnerability"],
-          "agency_responsibility": [
-            "Determine when and how to conduct after action analysis for Cloud Service incidents."
-          ]
+          "terms": ["Incident", "Persistently", "Vulnerability"]
         }
       }
     },
@@ -5908,6 +5910,7 @@
           ],
           "terms": ["Information Resource"],
           "agency_responsibility": [
+            "Integrate the Cloud Service Provider's logging and monitoring capabilities into the Agency's existing logging and monitoring capabilities.",
             "Identify and document the types of events received from the Cloud Service Provider that will be logged, monitored, and audited."
           ]
         },
@@ -5967,7 +5970,7 @@
           ],
           "terms": ["Persistently"],
           "agency_responsibility": [
-            "Determine how often logs will be reviewed and audited"
+            "Develop and implement automated alerts to respond to common or critical events received from the Cloud Service Provider."
           ]
         }
       }
@@ -6172,7 +6175,7 @@
           ],
           "terms": ["Incident", "Persistently"],
           "agency_responsibility": [
-            "Include cloud service failures in incident table top and other incident tests."
+            "Include Cloud Service interruptions and failures in Agency Incident Response and Continuity of Government tests."
           ]
         }
       }
@@ -6229,7 +6232,7 @@
           ],
           "terms": ["Regularly"],
           "agency_responsibility": [
-            "Ensure that secrets such as API keys or digital certificates are rotated regularly."
+            "Ensure that secrets such as API keys or digital certificates are rotated automatically."
           ]
         },
         "KSI-SVC-EIS": {

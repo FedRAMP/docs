@@ -7,6 +7,7 @@ type JsonObject = { [key: string]: JsonValue };
 type AgencyResponsibilityObject = JsonObject & {
   name?: unknown;
   agency_responsibility?: unknown;
+  affects?: unknown;
 };
 
 function isJsonObject(value: JsonValue): value is JsonObject {
@@ -14,7 +15,14 @@ function isJsonObject(value: JsonValue): value is JsonObject {
 }
 
 function isAgencyResponsibilityObject(value: JsonValue): value is AgencyResponsibilityObject {
-  return isJsonObject(value) && "agency_responsibility" in value;
+  if (!isJsonObject(value)) return false;
+
+  const hasAgencyResponsibility = "agency_responsibility" in value;
+  const hasAgenciesInAffects =
+    Array.isArray(value.affects) &&
+    value.affects.some((item) => item === "Agencies");
+
+  return hasAgencyResponsibility || hasAgenciesInAffects;
 }
 
 function findAgencyResponsibility(root: JsonValue): Array<[string, AgencyResponsibilityObject]> {
@@ -60,8 +68,14 @@ async function main(): Promise<number> {
     const name = typeof obj.name === "string" ? obj.name : "";
     output += `## ${objKey} - ${name}\n\n`;
 
-    for (const item of toStringArray(obj.agency_responsibility)) {
-      output += `- ${item}\n`;
+    const responsibilitySource = "agency_responsibility" in obj ? obj.agency_responsibility : obj.statement;
+    const items = toStringArray(responsibilitySource);
+    if (items.length > 0) {
+      for (const item of items) {
+        output += `- ${item}\n`;
+      }
+    } else if (typeof responsibilitySource === "string") {
+      output += `- ${responsibilitySource}\n`;
     }
 
     output += "\n";
