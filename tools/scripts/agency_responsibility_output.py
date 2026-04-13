@@ -1,6 +1,9 @@
 import json
+import os
 
-with open("/Users/danielechandler/PycharmProjects/docs/FRMR.documentation.json") as f:
+base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+with open(os.path.join(base_dir, "FRMR.documentation.json")) as f:
     frmr_dict = json.load(f)
 
 ksi_dict = frmr_dict["KSI"]
