@@ -1,0 +1,795 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fedramp.gov/schema/ssp.json",
+  "title": "FedRAMP System Security Plan Requirements Inventory",
+  "type": "object",
+  "required": [
+    "System Information", "System Owner", "Assignment of Security Responsibility", "Leveraged FedRAMP-Authorized Services", "External Systems and Services Not Having FedRAMP Authorization", "Illustrated Architecture and Narratives", "Services, Ports, and Protocols", "Cryptographic Modules Implemented for Data At Rest (DAR) and Data In Transit (DIT)", "Separation of Duties", "Appendix A: FedRAMP Security Controls ", "Appendix B: Related Acronyms ", "Appendix C: Security Policies and Procedures ",
+    "Appendix D: User Guide ", "Appendix E: Digital Identity Worksheet", "Appendix F: Rules of Behavior", "Appendix G: Information System Contingency Plan (ISCP)", "Appendix H: Configuration Management Plan (CMP)", "Appendix I: Incident Response Plan (IRP)", "Appendix J: CIS and CRM Workbook", "Appendix K: FIPS 199 Worksheet ", "Appendix L: CSO-Specific Required Laws and Regulations", "Appendix M: Integrated Inventory Workbook", "Appendix N: Continuous Monitoring Plan", "Appendix O: POA&M",
+    "Appendix P: Supply Chain Risk Management Plan (SCRMP)", "Appendix Q: Cryptographic Module Table"
+  ],
+  "properties": {
+    "System Information": {
+      "type": "object",
+      "description": "Provides a summary of the key attributes of the CSO.",
+      "properties": {
+        "CSP Name": {
+          "type": "string",
+          "description": "The name of the Cloud Service Provider (CSP) hosting the system."
+        },
+        "CSO Name": {
+          "type": "string",
+          "description": "The name of the Cloud Service Offering (CSO) providing the system."
+        },
+        "FedRAMP Package ID": {
+          "type": "string",
+          "description": "The FedRAMP Package ID of the system."
+        },
+        "Service Model": {
+          "type": "string",
+          "description": "Choose Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), Low-Impact Software as a Service (LI-SaaS), or some combination of these.\nSee the FedRAMP CSP Playbook, Volume I, Section 7 (Deployment Models) for definitions of the deployment models and make selection based on intended use case.\nFor Hybrid Cloud, in the 'General System Description', describe how the service solution varies. For example, if part of the solution is provided for a single agency (private cloud) and part is provided for several agencies (government-only community).\nFor Government-only Community Cloud, in the 'General System Description', define the members of the community (e.g., any combination of federal in addition to state government, local government, tribal government, research institutions, federal contractors, or government contractors).",
+          "enum": ["IaaS", "PaaS", "SaaS", "IaaS/PaaS", "IaaS/PaaS/SaaS", "IaaS/SaaS", "PaaS/SaaS", "LI-SaaS"]
+        },
+        "Digital Identity Level (DIL) Determination (SSP Appendix E):": {
+          "type": "string",
+          "description": "The level of digital identity assurance (DIL) that the system meets.",
+          "enum": ["IAL3/FAL3/AAL3", "IAL2/FAL2/AAL2", "IAL1/FAL1/AAL1"]
+        },
+        "FIPS PUB 199 Level (SSP Appendix K)": {
+          "type": "string",
+          "description": "The FIPS PUB 199 Level of the system.",
+          "enum": ["High", "Moderate", "Low", "LI-SaaS"]
+        },
+        "Fully Operational as of": {
+          "type": "string",
+          "description": "The date (MM/DD/YYYY) the system is fully operational.\n'Fully operational' means there are no 'gaps' in the security control baseline implementations for the system. The CSP attests that the security controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements.",
+          "format": "date"
+        },
+        "Deployment Model": {
+          "type": "string",
+          "enum": ["Public Cloud", "Government-Only Cloud", "Hybrid Cloud"],
+          "description": "Choose Public Cloud, Government-Only Cloud, or Hybrid Cloud."
+        },
+        "Authorization Path": {
+          "type": "string",
+          "enum": ["Agency", "Program"]
+        },
+        "General System Description": {
+          "type": "string",
+          "description": "Provide a description of all services and features that are included as part of this CSO and within the authorization boundary. The description should only include those items inside the service boundary that have been independent assessor (IA) tested as part of this assessment. This general description will be the service description that is used on the FedRAMP Marketplace. Keep in mind the following: \n●\tA service description should incorporate the functional characteristics of a CSO.\n●\tA service description should not include marketing language and is not meant to be a place where a company should be promoting or showcasing company accomplishments.\n●\tA service description should provide a representation of the services, features or components that have been tested and accredited as part of a CSO’s authorization boundary.\n●\tA service description should note the intended user base specifics, as indicated above, for Hybrid and Government-only Community Cloud CSOs.\n"
+        }
+      }
+    },
+    "System Owner": {
+      "type": "object",
+      "description": "The following individual is identified as the system owner or functional proponent/advocate for this system. The system owner is the official responsible for the overall procurement, development, integration, modification, or operation and maintenance of an information system.",
+      "properties": {
+        "type": "object",
+        "$ref": "#/$defs/person"
+      }
+    },
+    "Assignment of Security Responsibility": {
+      "type": "object",
+      "description": "The following individuals are identified as the individuals responsible for the security of the system.",
+      "properties": {
+        "Information System Security Officer": {
+          "type": "object",
+          "properties": {
+            "$ref": "#/$defs/person"
+          }
+        },
+        "Additional System Security with key security responsibilities ": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/person"
+          }
+        }
+      },
+      "required": ["Information System Security Officer"]
+    },
+    "Leveraged FedRAMP-Authorized Services": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/leveraged_fedramp_service"
+      },
+      "description": "Include all functions, services, features, and APIs that are leveraged from FedRAMP Authorized CSOs. The FedRAMP Marketplace is the authoritative source for identifying CSOs and their services that are FedRAMP Authorized."
+    },
+    "External Systems and Services Not Having FedRAMP Authorization": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/leveraged_service"
+      },
+      "description": "Identify all connections to external systems and services lacking FedRAMP authorization. Do not include the FedRAMP Authorized services"
+    },
+    "Illustrated Architecture and Narratives": {
+      "type": "array",
+      "description": "Diagram the system architecture and provide narratives for each component.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Component Name": {
+            "type": "string"
+          },
+          "Component Type": {
+            "type": "string",
+            "enum": ["Application", "Database", "Network", "Storage", "Other"]
+          },
+          "Component Description": {
+            "type": "string"
+          },
+          "Component Architecture": {
+            "type": "string"
+          },
+          "Component Narrative": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Services, Ports, and Protocols": {
+      "type": "object",
+      "properties": {
+        "Service Name": {
+          "type": "string"
+        },
+        "Port #": {
+          "type": "integer"
+        },
+        "Transport Protocol": {
+          "type": "string",
+          "enum": ["TCP", "UDP", "ICMP", "HTTP", "HTTPS", "SMTP", "POP3", "IMAP", "LDAP", "DNS", "NTP", "SSH", "FTP", "RDP", "Other"],
+          "description": "If selecting Other, provide the protocol name in the Purpose column."
+        },
+        "Reference #": {
+          "type": "string",
+          "description": "Match this number to the reference number (“Ref #”) column in Appendix Q."
+        },
+        "Purpose": {
+          "type": "string",
+          "description": "Provide a general description of how it is used in the CSO, such as for Web access or database connection."
+        },
+        "Used By": {
+          "type": "string",
+          "description": "List the CSO components accessed by this port and the stated purpose."
+        }
+      }
+    },
+    "Separation of Duties": {
+      "type": "object",
+      "description": "Security control AC-5, Separation of Duties, requires that CSPs identify and document the roles of all individuals who access the system and define the access authorizations that support protections from bad actors, employee collusion, fraud, etc. before damage occurs.",
+      "$comment": "This section sems crazy!?!"
+    },
+    "Appendix A: FedRAMP Security Controls ": {
+      "type": "object"
+    },
+    "Appendix B: Related Acronyms ": {
+      "type": "array",
+      "description": "Document CSO/CSP-specific acronyms in this appendix. They should also be spelled out, when first used, in the SSP. The format for this appendix is at the CSP’s discretion.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Acronym": {
+            "type": "string"
+          },
+          "Definition": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Appendix C: Security Policies and Procedures ": {
+      "type": "array",
+      "description": "Document CSO/CSP-specific security policies and procedures in this appendix. They should also be referenced in the SSP. The format for this appendix is at the CSP’s discretion. At least one policy and procedure must be defined for each control family (dash one control).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Policy/Procedure Name": {
+            "type": "string"
+          },
+          "Description": {
+            "type": "string"
+          },
+          "Control Family": {
+            "type": "string",
+            "enum": ["AC", "AT", "AU", "CA", "CM", "CP", "IA", "IR", "MA", "MP", "PE", "PL", "PM", "PS", "PT", "RA", "SA", "SC", "SI", "SR"]
+          },
+          "document": {
+            "$ref": "#/$defs/referencedDocument"
+          }
+        }
+      }
+    },
+    "Appendix D: User Guide ": {
+      "type": "array",
+      "description": "The user guide explains how agency customers will use the system (e.g., if a system has a self-service portal, the user guide must explain how to use the portal). \nFedRAMP does not provide a template for the User Guide. Many CSPs provide guidance and instructions to agency customers via a dynamic website versus a separate static document. This is perfectly acceptable. Be sure to note the website address below. If the information is not publicly accessible, include instructions for requesting access.\n",
+      "items": {
+        "type": "object",
+        "properties": {
+          "document": {
+            "$ref": "#/$defs/referencedDocument"
+          }
+        }
+      }
+    },
+    "Appendix E: Digital Identity Worksheet": {
+      "type": "object",
+      "$comment": "I never understood this part."
+    },
+    "Appendix F: Rules of Behavior": {
+      "type": "array",
+      "description": "Security control PL-4 requires CSPs to develop Rules of Behavior (RoB) that establish and describe the responsibilities and expected behavior related to the use of a CSO. Multiple RoB documents may be needed for different roles (internal users, external users, privileged users, non-privileged users, etc).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Role": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "RoB": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Appendix G: Information System Contingency Plan (ISCP)": {
+      "type": "object",
+      "description": "FedRAMP provides an Information System Contingency Plan (ISCP) template that must be used by a CSP. \nA CSP is responsible for establishing general procedures for recovering their CSO after a service disruption. Security control CP-2 requires CSPs to develop a contingency plan for their CSO. The ISCP establishes comprehensive procedures to recover a CSO quickly and effectively following a service disruption.\nKeystroke-level procedures are not commonly included in the ISCP. These procedures are typically considered system sensitive and are only shared when required for audits and assessments.\nTIP: A business impact analysis (BIA) is required as Appendix M of the ISCP. FedRAMP does not provide a BIA template; however, NIST SP 800-34, Contingency Planning Guide for Federal Information Systems, includes a sample BIA template, in Appendix B.\nNOTE: Security control CP-4 requires CSPs to test the ISCP, at least annually, and document the results in a test report as well as coordinate the review and approvals of test plans (prior to execution) and test results. The test report must be included in the ISCP. CSPs must conduct a test of the ISCP prior to achieving a FedRAMP authorization and at least annually, thereafter, as part of continuous monitoring.\nDelete this and all other instructional text from your final version of this document.\n",
+      "properties": {
+        "Backup System Components": {
+          "type": "object",
+          "description": "The hardware and software components used to create the backups",
+          "properties": {
+            "Software Used": {
+              "type": "string"
+            },
+            "Hardware Used": {
+              "type": "string"
+            },
+            "Frequency": {
+              "type": "string"
+            },
+            "Backup Type": {
+              "type": "string"
+            },
+            "Retention Period": {
+              "type": "string"
+            }
+          }
+        },
+        "Back-Up Storage Location": {
+          "type": "object",
+          "description": "Back-Up Storage Location shows the offsite storage facility location of current backups",
+          "Primary Storage Location": {
+            "type": "object",
+            "$ref": "#/$defs/Storage Site"
+          },
+          "Alternate Storage Locations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "$ref": "#/$defs/Storage Site"
+            }
+          }
+        },
+        "Back-Up Processing Location": {
+          "type": "object",
+          "description": "Alternate Processing Site Information",
+          "Primary Storage Location": {
+            "type": "object",
+            "$ref": "#/$defs/Processing Site"
+          },
+          "Alternate Storage Locations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "$ref": "#/$defs/Processing Site"
+            }
+          }
+        }
+      }
+    },
+    "Appendix H: Configuration Management Plan (CMP)": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix I: Incident Response Plan (IRP)": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix J: CIS and CRM Workbook": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix K: FIPS 199 Worksheet ": {
+      "type": "object",
+      "properties": {
+        "Confidentiality": {
+          "$ref": "#/$defs/FIPS_199_worksheet_level"
+        },
+        "Integrity": {
+          "$ref": "#/$defs/FIPS_199_worksheet_level"
+        },
+        "Availability": {
+          "$ref": "#/$defs/FIPS_199_worksheet_level"
+        }
+      }
+    },
+    "Appendix L: CSO-Specific Required Laws and Regulations": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix M: Integrated Inventory Workbook": {
+      "type": "object",
+      "properties": {
+        "Asset Inventory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AssetInventoryRecord"
+          },
+          "description": "Host and other assets such as Virtual Machines, Network devices, and containers"
+        },
+        "Software Inventory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SoftwareInventoryRecord"
+          },
+          "description": "Software including databases used within teh environment"
+        }
+      }
+    },
+    "Appendix N: Continuous Monitoring Plan": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix P: Supply Chain Risk Management Plan (SCRMP)": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    },
+    "Appendix Q: Cryptographic Module Table": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "document": {
+          "$ref": "#/$defs/referencedDocument"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "person": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Company/Organization": {
+          "type": "string"
+        },
+        "Address": {
+          "type": "string",
+          "description": "Address, City, State and Zip"
+        },
+        "Phone Number": {
+          "type": "string",
+          "format": "phone"
+        },
+        "Email": {
+          "type": "string",
+          "format": "email"
+        }
+      }
+    },
+    "leveraged_fedramp_service": {
+      "type": "object",
+      "properties": {
+        "FedRAMP ID": {
+          "type": "string",
+          "description": "The FedRAMP ID of the service as it appears on the FedRAMP Marketplace."
+        },
+        "Description of Leveraged Service": {
+          "type": "string",
+          "description": "Description of how the service is used, including the service provider and the service level agreement (SLA)."
+        },
+        "Agreements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Any type of agreement between a CSP and the leveraged CSP vendors who support products (e.g., End User Licensing Agreement (EULA), Service-Level Agreement (SLA), App License Agreement, Contract, etc.)."
+        },
+        "Authorized Users/Authentication": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The user roles (e.g., SecOps Engineers) authorized to access the service, and provide the authentication method."
+        }
+      }
+    },
+    "leveraged_service": {
+      "type": "object",
+      "description": "Identify all connections to external systems and services lacking FedRAMP authorization. Do not include the FedRAMP Authorized services",
+      "properties": {
+        "Service Type": {
+          "type": "string",
+          "enum": ["Non-FedRAMP Authorized Cloud Services", "Corporate Shared Services", "Update Services for In-Boundary Software/Services"],
+          "description": "Choose Non-FedRAMP Authorized Cloud Services, Corporate Shared Services, or Update Services for In-Boundary Software/Services.\n●\tCorporate services are those systems and services that are owned by the CSP in an environment controlled and operated by the CSP. They may include support services used exclusively by the CSO or that are shared with corporate users/resources. External cloud services used to support the corporate environment are not considered corporate services; since they are not under the full control of the CSP, such services are considered external cloud services. When corporate services are used, be sure to note:\na.\tWhere the service is hosted (in a corporate data center or in another cloud)\nb.\tThe use case of the specific service and who has access to it\n"
+        },
+        "Service ID": {
+          "type": "string",
+          "description": "The Unique ID of the service. This could be the name of the service or any other unique identifier such as a URI."
+        },
+        "Description of Leveraged Service": {
+          "type": "string",
+          "description": "Description of how the service is used, including the service provider and the service level agreement (SLA)."
+        },
+        "Agreements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Any type of agreement between a CSP and the leveraged CSP vendors who support products (e.g., End User Licensing Agreement (EULA), Service-Level Agreement (SLA), App License Agreement, Contract, etc.)."
+        },
+        "Authorized Users/Authentication": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The user roles (e.g., SecOps Engineers) authorized to access the service, and provide the authentication method."
+        },
+        "Connection Details": {
+          "type": "string",
+          "description": "Provide connectivity details. Specifically, note whether inbound, outbound, or both."
+        },
+        "Still Supported": {
+          "type": "string",
+          "enum": ["Yes", "No"],
+          "description": "Is this product still supported by the manufacturer?"
+        },
+        "Data Types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List the data types and metadata types transmitted to, stored, or processed by the system/service, including federal data and sensitive system data. This column is based on the NIST 800-60 Vol. II data types for the system."
+        },
+        "Data Categorization": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["Low", "Moderate", "High"]
+          },
+          "description": "Identify the security impact level of the data (Low, Moderate, High) in accordance with FIPS 199 & NIST 800-60 Vol. 2."
+        },
+        "Other Compliance Programs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List any certifications for this service (e.g., PCI SOC 2, CSA STAR Level 2, etc.), and provide the certification date. If FISMA authorized, that should also be specifically noted."
+        },
+        "Service Description": {
+          "type": "string",
+          "description": "Describe the purpose of the external system/service; specifically, provide reasons for connectivity (e.g., system monitoring, system alerting, download updates, etc.)"
+        },
+        "Hosting Environment": {
+          "type": "string",
+          "description": "Describe the hosting environment (e.g., corporate network, IaaS, or self-hosted)."
+        },
+        "Risks/Impacts/Mitigations": {
+          "type": "array",
+          "description": "Describe potential risks introduced by the external system/service and impact to the CSO or federal data if the CIA of the system/service is compromised. Describe any mitigations or compensating controls in place to reduce risk.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "FIPS_199_worksheet_level": {
+      "type": "object",
+      "properties": {
+        "Base Level": {
+          "type": "string",
+          "enum": ["High", "Moderate", "Low"]
+        },
+        "Selected Level": {
+          "type": "string",
+          "enum": ["High", "Moderate", "Low"]
+        },
+        "Adjustment Justification": {
+          "type": "string",
+          "description": "Required if the selected level is different from the base level."
+        }
+      }
+    },
+    "AssetInventoryRecord": {
+      "type": "object",
+      "properties": {
+        "UNIQUE ASSET IDENTIFIER": {
+          "type": "string"
+        },
+        "IPv4 or IPv6 Address": {
+          "type": "string"
+        },
+        "Virtual": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "Public": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "DNS Name or URL": {
+          "type": "string"
+        },
+        "NetBIOS Name": {
+          "type": "string"
+        },
+        "MAC Address": {
+          "type": "string"
+        },
+        "Authenticated Scan": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "Baseline Configuration Name": {
+          "type": "string"
+        },
+        "OS Name and Version": {
+          "type": "string"
+        },
+        "Location": {
+          "type": "string"
+        },
+        "Asset Type": {
+          "type": "string"
+        },
+        "Hardware Make/Model": {
+          "type": "string"
+        },
+        "In Latest Scan": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "Patch Level": {
+          "type": "string"
+        },
+        "Diagram Label": {
+          "type": "string"
+        },
+        "Comments": {
+          "type": "string"
+        },
+        "Serial #/Asset Tag#": {
+          "type": "string"
+        },
+        "VLAN/Network ID": {
+          "type": "string"
+        },
+        "System Administrator/ Owner": {
+          "type": "string"
+        },
+        "Function": {
+          "type": "string"
+        },
+        "End-of-Life": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "SoftwareInventoryRecord": {
+      "type": "object",
+      "properties": {
+        "UNIQUE ASSET IDENTIFIER": {
+          "type": "string"
+        },
+        "Baseline Configuration Name": {
+          "type": "string"
+        },
+        "Software/ Database Vendor": {
+          "type": "string"
+        },
+        "Software/ Database Name & Version": {
+          "type": "string"
+        },
+        "Patch Level": {
+          "type": "string"
+        },
+        "Comments": {
+          "type": "string"
+        },
+        "Application Administrator/ Owner": {
+          "type": "string"
+        },
+        "Function": {
+          "type": "string"
+        },
+        "End-of-Life": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "referencedDocument": {
+      "type": "object",
+      "properties": {
+        "Document Name": {
+          "type": "string"
+        },
+        "Document URL": {
+          "type": "string"
+        },
+        "Document Description": {
+          "type": "string"
+        },
+        "Document Type": {
+          "type": "string",
+          "enum": ["Policy", "Procedure", "Other"]
+        },
+        "Document Content (Base64)": {
+          "type": "string"
+        }
+      },
+      "required": ["Document Name", "Document Description"]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "Street Address": {
+          "type": "string"
+        },
+        "Site Name": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "State": {
+          "type": "string"
+        },
+        "Zip": {
+          "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        },
+        "Points of Contact": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "$ref": "#/$defs/person"
+            }
+          }
+        }
+      }
+    },
+    "Storage Site": {
+      "type": "object",
+      "properties": {
+        "Site Location": {
+          "type": "object",
+          "$ref": "#/$defs/location"
+        },
+        "Distance from primary facility": {
+          "type": "string"
+        },
+        "Ownership": {
+          "type": "string",
+          "enum": ["Owned", "Third Party"],
+          "description": "Is the storage facility owned by the organization or is a third-party storage provider?"
+        },
+        "Delivery Process": {
+          "type": "string",
+          "description": "Delivery schedule and procedures for packaging media for delivery to alternate storage facility"
+        },
+        "Retrieval Process": {
+          "type": "string",
+          "description": "Procedures for retrieving media from the alternate storage facility"
+        },
+        "Persons Authorized To Retrieve": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/person"
+          },
+          "description": "List of individuals authorized to retrieve media from the alternate storage facility"
+        },
+        "Access Problems": {
+          "type": "string",
+          "description": "Potential accessibility problems to the alternate storage site in the event of a widespread disruption or disaster (e.g., roads that might be closed, anticipate traffic)"
+        },
+        "Migration Steps": {
+          "type": "string",
+          "description": "Mitigation steps to access alternate storage site in the event of a widespread disruption or disaster"
+        },
+        "Data Types": {
+          "type": "array",
+          "description": "Types of data located at alternate storage site, including databases, application software, operating systems, and other critical information system software",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Processing Site": {
+      "type": "object",
+      "properties": {
+        "Site Location": {
+          "type": "object",
+          "$ref": "#/$defs/location"
+        },
+        "Distance from primary facility": {
+          "type": "string"
+        },
+        "Ownership": {
+          "type": "string",
+          "enum": ["Owned", "Third Party"],
+          "description": "Is the storage facility owned by the organization or is a third-party storage provider?"
+        },
+        "Process": {
+          "type": "string",
+          "description": "Procedures for accessing and using the alternate processing site, and access security features of alternate processing site"
+        },
+        "Persons Authorized": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/person"
+          },
+          "description": "Names and contact information for those persons authorized to go to alternate processing site"
+        },
+        "Type of Site": {
+          "type": "string",
+          "description": "Type of Site\nType of Site\tDescription\nCold Sites\tCold Sites are typically facilities with adequate space and infrastructure (electric power, telecommunications connections, and environmental controls) to support information system recovery activities.\nWarm Sites\tWarm Sites are partially equipped office spaces that contain some or all of the system hardware, software, telecommunications, and power sources.\nHot Sites\tHot Sites are facilities appropriately sized to support system requirements and configured with the necessary system hardware, supporting infrastructure, and support personnel.\nMirrored Sites\tMirrored Sites are fully redundant facilities with automated real-time information mirroring. Mirrored sites are identical to the primary site in all technical respects.\n",
+          "enum": ["Cold Site", "Warm Site", "Hot Site", "Mirrored Site"]
+        },
+        "Migration Steps": {
+          "type": "string",
+          "description": "Mitigation steps to access alternate storage site in the event of a widespread disruption or disaster"
+        },
+        "Data Types": {
+          "type": "array",
+          "description": "Types of data located at alternate storage site, including databases, application software, operating systems, and other critical information system software",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
