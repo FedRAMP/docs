@@ -1,69 +1,81 @@
 {
   "RV5": {
-    "CA07": {
-      "info": {
-        "name": "CA-7 Continuous Monitoring ",
-        "short_name": "CA-07",
-        "web_name": "continuous-monitoring",
-        "effective": {
-          "rev5": {
-            "is": "required",
-            "start_date": "2026-02-02",
-            "end_date": "2026-05-22",
-            "comments": ["These requirements will be effective at 2pm on the first business day of the fifth month after they have been published as a formal update; this will ensure all providers have at least 4 months to adjust to final clarifications and failure measures."]
+    "CA": {
+      "RV5-CA-CA07": {
+        "info": {
+          "name": "CA-7 Continuous Monitoring ",
+          "short_name": "CA-07",
+          "web_name": "continuous-monitoring",
+          "effective": {
+            "rev5": {
+              "is": "required",
+              "start_date": "2026-02-02",
+              "end_date": "2026-05-22",
+              "comments": ["These requirements will be effective at 2pm on the first business day of the fifth month after they have been published as a formal update; this will ensure all providers have at least 4 months to adjust to final clarifications and failure measures."]
+            }
+          }
+        },
+        "front_matter": {
+          "authority": ["Is this necessary"],
+          "purpose": "Provide clarifications and updates to the CA-7 Continuous Monitoring control for all FedRAMP Rev5 baselines to ensure cloud service providers with multiple agency customers provide sufficient information to support ongoing authorization to all agency customers.",
+          "expected_outcomes": []
+        },
+        "labels": {
+          "RV5": {
+            "description": "NIST SP 800-53 Rev5 controls",
+            "name": "NIST SP 800-53 Rev5"
+          },
+          "CA": {
+            "description": "Certifications and Authorizations control family",
+            "name": "Certifications and Authorizations"
+          },
+          "CA07": {
+            "description": "CA-7 Continuous Monitoring",
+            "name": "CA-7 Continuous Monitoring"
+          },
+          "VLN": {
+            "description": "Vulnerability Reporting",
+            "name": "Vulnerability Reporting"
+          },
+          "CCM": {
+            "description": "Collaborative Continuous Monitoring",
+            "name": "Collaborative Continuous Monitoring"
           }
         }
       },
-      "front_matter": {
-        "authority": ["Is this necessary"],
-        "purpose": "Provide clarifications and updates to the CA-7 Continuous Monitoring control for all FedRAMP Rev5 baselines to ensure cloud service providers with multiple agency customers provide sufficient information to support ongoing authorization to all agency customers.",
-        "expected_outcomes": []
-      },
-      "labels": {
+      "data": {
         "RV5": {
-          "description": "Rev5",
-          "name": "Rev5"
-        },
-        "CA07": {
-          "description": "CA-7 Continuous Monitoring",
-          "name": "CA-7 Continuous Monitoring"
-        },
-        "VLN": {
-          "description": "Vulnerability Reporting",
-          "name": "Vulnerability Reporting"
-        },
-        "CCM": {
-          "description": "Collaborative Continuous Monitoring",
-          "name": "Collaborative Continuous Monitoring"
-        }
-      }
-    },
-    "data": {
-      "rev5": {
-        "CA07": {
-          "RV5-CA07-VLN": {
-            "statement": "Providers MUST share vulnerability information with all agency customers and FedRAMP by implementing at least one of the following:\n\n (1) Implement the Vulnerability Detection and Response Balance Improvement Release for Rev5 (either in Beta or Wide Release).\n (2) Share Operating System, Database, Web Application, Container, and Service Configuration Scans, at least monthly. Share all scans performed by an Independent Assessor, at least annually. Share updated Plans of Action and Milestones, at least monthly. POA&Ms have a required FedRAMP Template and if you are leveraging the FedRAMP Managed Repository (Connect.gov) there is a required folder for POA&M placement.  Ensure you are placing your POA&Ms within the correct folder in their native format.",
-            "terms": ["Vulnerability Reporting", "Collaborative Continuous Monitoring"],
-            "affects": ["Providers"],
-            "name": "CA-07-Vulnerability Reporting",
-            "primary_key_word": "MUST",
-            "updated": [
-              {"date":  "2026-02-26", "comment": "Updated Guidance"}
-            ]
-          },
-          "RV5-CA07-CCM": {
-            "statement": "Providers MUST provide recurring monitoring information (including meetings) to all agency customers and FedRAMP by implementing one of the following collaborative continuous monitoring processes:\n\n(1) Implement the Collaborative Continuous Monitoring Balance Improvement Release for Rev5 (either in Beta or Wide Release).\n(2) Implement the traditional collaborative continuous monitoring approach as described in the FedRAMP Rev5 Continuous Monitoring Playbook or successor materials.",
-            "terms": ["Collaborative Continuous Monitoring"],
-            "affects": ["Providers"],
-            "name": "CA-07-Continuous Monitoring",
-            "primary_key_word": "MUST",
-            "updated": [
-              {"date":  "2026-02-26", "comment": "Updated Guidance"}
-            ]
-          },
-          "failure_measures": "These failure measures and corrective actions do not apply if the provider is following the Collaborative Continuous Monitoring Balance Improvement Release process; failure measures and corrective actions outlined in that process will apply instead.\n\nAny of the following will constitute a failure that will trigger corrective action for providers that have not implemented the Collaborative Continuous Monitoring Balance Improvement Release:\n\nFailure to host a traditional monthly ConMon meeting open to all agency customers (RV5-CA07-CCM) and FedRAMP during any given month.\nFailure to share required vulnerability information (RV5-CA07-VLN) with all agency customers and FedRAMP during any given month, including updates to the Plans of Action & Milestones if applicable (providers implementing the Vulnerability Detection and Response Balance Improvement Release do not maintain Plans of Action & Milestones).",
-          "corrective_actions": "These requirements will be enforced over a 12 month period that resets after each failure (meaning a provider must go 12 months without failures to clear the corrective actions) as follows:\n\nFirst failure: FedRAMP will notify the provider and request a Corrective Action Plan. FedRAMP will notify all agencies. Providers will be granted a one month grace period for implementation after submitting the initial Corrective Action Plan.\nSecond failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 2 times.\nThird failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 3 times. FedRAMP will move the cloud service offering into the “Remediation” status on the FedRAMP Marketplace and publicly summarize the failures leading to corrective action.\nFourth failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 4 times and is pending revocation of FedRAMP authorization. FedRAMP will maintain the cloud service offering in the “Remediation” status on the FedRAMP Marketplace with a public summary of the failures.\nFifth failure: FedRAMP will notify the provider and revoke their FedRAMP authorization. FedRAMP will notify all agencies that the provider failed 5 times in 12 months and their FedRAMP authorization has been revoked. The cloud service offering will be removed from the FedRAMP Marketplace and will not be reconsidered for FedRAMP authorization for a period of 12 months.",
-          "notes": []
+          "CA07": {
+            "RV5-CA07-VLN": {
+              "statement": "Providers MUST share vulnerability information with all agency customers and FedRAMP by implementing at least one of the following:\n\n (1) Implement the Vulnerability Detection and Response Balance Improvement Release for Rev5 (either in Beta or Wide Release).\n (2) Share Operating System, Database, Web Application, Container, and Service Configuration Scans, at least monthly. Share all scans performed by an Independent Assessor, at least annually. Share updated Plans of Action and Milestones, at least monthly. POA&Ms have a required FedRAMP Template and if you are leveraging the FedRAMP Managed Repository (Connect.gov) there is a required folder for POA&M placement.  Ensure you are placing your POA&Ms within the correct folder in their native format.",
+              "terms": ["Vulnerability Reporting", "Collaborative Continuous Monitoring"],
+              "affects": ["Providers"],
+              "name": "CA-07-Vulnerability Reporting",
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2026-02-26",
+                  "comment": "Updated Guidance"
+                }
+              ]
+            },
+            "RV5-CA07-CCM": {
+              "statement": "Providers MUST provide recurring monitoring information (including meetings) to all agency customers and FedRAMP by implementing one of the following collaborative continuous monitoring processes:\n\n(1) Implement the Collaborative Continuous Monitoring Balance Improvement Release for Rev5 (either in Beta or Wide Release).\n(2) Implement the traditional collaborative continuous monitoring approach as described in the FedRAMP Rev5 Continuous Monitoring Playbook or successor materials.",
+              "terms": ["Collaborative Continuous Monitoring"],
+              "affects": ["Providers"],
+              "name": "CA-07-Continuous Monitoring",
+              "primary_key_word": "MUST",
+              "updated": [
+                {
+                  "date": "2026-02-26",
+                  "comment": "Updated Guidance"
+                }
+              ]
+            },
+            "failure_measures": "These failure measures and corrective actions do not apply if the provider is following the Collaborative Continuous Monitoring Balance Improvement Release process; failure measures and corrective actions outlined in that process will apply instead.\n\nAny of the following will constitute a failure that will trigger corrective action for providers that have not implemented the Collaborative Continuous Monitoring Balance Improvement Release:\n\nFailure to host a traditional monthly ConMon meeting open to all agency customers (RV5-CA07-CCM) and FedRAMP during any given month.\nFailure to share required vulnerability information (RV5-CA07-VLN) with all agency customers and FedRAMP during any given month, including updates to the Plans of Action & Milestones if applicable (providers implementing the Vulnerability Detection and Response Balance Improvement Release do not maintain Plans of Action & Milestones).",
+            "corrective_actions": "These requirements will be enforced over a 12 month period that resets after each failure (meaning a provider must go 12 months without failures to clear the corrective actions) as follows:\n\nFirst failure: FedRAMP will notify the provider and request a Corrective Action Plan. FedRAMP will notify all agencies. Providers will be granted a one month grace period for implementation after submitting the initial Corrective Action Plan.\nSecond failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 2 times.\nThird failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 3 times. FedRAMP will move the cloud service offering into the “Remediation” status on the FedRAMP Marketplace and publicly summarize the failures leading to corrective action.\nFourth failure: FedRAMP will notify the provider and request an updated Corrective Action Plan. FedRAMP will notify all agencies that the provider has failed 4 times and is pending revocation of FedRAMP authorization. FedRAMP will maintain the cloud service offering in the “Remediation” status on the FedRAMP Marketplace with a public summary of the failures.\nFifth failure: FedRAMP will notify the provider and revoke their FedRAMP authorization. FedRAMP will notify all agencies that the provider failed 5 times in 12 months and their FedRAMP authorization has been revoked. The cloud service offering will be removed from the FedRAMP Marketplace and will not be reconsidered for FedRAMP authorization for a period of 12 months.",
+            "notes": []
+          }
         }
       }
     }
