@@ -5,7 +5,7 @@ if __name__ == "__main__":
         site_dir="static/html",  # Your build output directory
         docs_dir="static/markdown",  # Your source docs directory
         site_url="https://fedramp.gov/docs",
-        default_image="https://www.fedramp.gov/feature-background.jpg",
+        default_image="https://www.fedramp.gov/thumbnail-image.png",
         default_author="pete@fedramp.gov",
         add_desc=True,
         add_image=True,
