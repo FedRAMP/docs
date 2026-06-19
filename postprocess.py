@@ -2,9 +2,9 @@ from plugin import postprocess_site
 
 if __name__ == "__main__":
     postprocess_site(
-        site_dir="static/html",  # Your build output directory
-        docs_dir="static/markdown",  # Your source docs directory
-        site_url="https://fedramp.gov/docs",
+        site_dir="html",
+        docs_dir="content",
+        site_url="https://fedramp.gov/legacy/",
         default_image="https://www.fedramp.gov/feature-background.jpg",
         default_author="pete@fedramp.gov",
         add_desc=True,
