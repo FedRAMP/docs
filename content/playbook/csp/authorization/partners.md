@@ -14,16 +14,14 @@
 Responsible for providing a unified process to stakeholders, FedRAMP is a key
 partner for cloud service providers (CSPs) researching or seeking FedRAMP
 authorization for their CSO. Its responsibilities include stewardship of the
-FedRAMP authorization process and enabling services to be reused across the
-federal government by providing a secure repository of FedRAMP Authorized
+FedRAMP Certification process and enabling services to be reused across the
+federal government by providing a secure repository of FedRAMP Certified
 packages. FedRAMP coordinates with multiple groups who represent various
-interests and who play complementary roles within the FedRAMP ecosystem. To
-learn more about the groups that make up FedRAMP, visit the
-[FedRAMP Governance](https://www.fedramp.gov/governance/) page.
+interests and who play complementary roles within the FedRAMP ecosystem.
 
 #### FedRAMP Secure Repository
 
-To enable reuse of FedRAMP Authorized packages and continuous monitoring
+To enable reuse of FedRAMP Certified packages and continuous monitoring
 (ConMon) deliverables, FedRAMP manages a secure repository on USDA Connect.gov
 for cloud offerings categorized at LI-SaaS, Low, or Moderate.
 
@@ -32,7 +30,7 @@ working on their behalf, may request temporary (60-day) access to a CSO's
 repository for the purpose of reviewing the authorization package in order to
 inform a risk-based authorization decision. Access requests are submitted to
 FedRAMP via the
-[_FedRAMP Package Access Request Form_](https://www.fedramp.gov/resources/documents/Agency_Package_Request_Form.pdf).
+_FedRAMP Package Access Request Form_.
 In addition to the form, agency contractors must sign the nondisclosure
 agreement embedded as an attachment within the form.
 
@@ -47,7 +45,7 @@ repository must submit a FedRAMP Package Access Request Form; however, the form
 may be used to request access to multiple CSO repositories.
 
 CSPs with cloud offerings categorized at High must establish and maintain a
-secure repository in an environment that is FedRAMP Authorized at High, or in an
+secure repository in an environment that is FedRAMP Certified at High, or in an
 environment that is fully owned, maintained, and operated by the CSP. FedRAMP
 facilitates access to a CSO's High repository via the FedRAMP Package Access
 Request Form; however, it is the CSP's responsibility to provision and control
@@ -55,7 +53,7 @@ access to the information.
 
 ## Federal Agencies
 
-CSPs partner with a federal agency throughout the initial FedRAMP authorization
+CSPs partner with a federal agency throughout the initial FedRAMP Certification
 process. Agencies are responsible for reviewing CSP-developed security packages.
 Ultimately, a federal agency's authorizing official (AO) must accept the risk
 associated with the use of a cloud system through the issuance of an ATO for

@@ -21,7 +21,7 @@ _\* Document must be submitted in the FedRAMP-provided template_
 
 ### Things to Consider
 
-- Did the 3PAO use the FedRAMP template to prepare the SAP? The current SAP template can be found on the [FedRAMP Templates](https://www.fedramp.gov/rev5/documents-templates/) webpage.
+- Did the 3PAO use the FedRAMP template to prepare the SAP?
 
 - Are all applicable artifacts listed above included with the SAP?
 
@@ -31,4 +31,4 @@ _\* Document must be submitted in the FedRAMP-provided template_
 
 - Does the test schedule reflect the agreed upon schedule?
 
-- Is the penetration test plan and methodology document consistent with the [_FedRAMP Penetration Test Guidance_](https://www.fedramp.gov/resources/documents/CSP_Penetration_Test_Guidance.pdf)?
+

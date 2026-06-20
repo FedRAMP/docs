@@ -14,8 +14,8 @@
     OMB Memorandum M-24-15 mandated changes to the continuous monitoring process for cloud services that will impact all agencies. FedRAMP is working to produce updated agency processes to meet these statutory and policy requirements and support agency adoption. If a cloud service provider has been approved to adopt one of the modernized processes then agencies will have a different - easier - experience with those providers.
 
 
-Throughout the Authorization phase, CSPs are required to maintain the system, which includes performing ConMon activities. The CSP's ability to demonstrate a mature ConMon process is one of the areas evaluated during the 3PAO's assessment and during the federal agency and FedRAMP's review of the authorization package. Failure to demonstrate a mature ConMon process will prevent or delay a FedRAMP Authorized designation.
-Once the Authorization phase is complete and the CSO achieves a FedRAMP Authorized designation, the CSP:
+Throughout the Authorization phase, CSPs are required to maintain the system, which includes performing ConMon activities. The CSP's ability to demonstrate a mature ConMon process is one of the areas evaluated during the 3PAO's assessment and during the federal agency and FedRAMP's review of the authorization package. Failure to demonstrate a mature ConMon process will prevent or delay a FedRAMP Certified designation.
+Once the Authorization phase is complete and the CSO achieves a FedRAMP Certified designation, the CSP:
 
 - Continuously monitors the security posture of the CSO.
 
@@ -47,4 +47,4 @@ CSPs with more than one federal agency customer are required to implement a coll
 
     - Status of annual assessment.
 
-- **Continuous Monitoring Accountability:** Think about how you will hold the CSP accountable for meeting ConMon requirements. The [Performance Management](../../csp/continuous-monitoring/performance-management.md) section of the FedRAMP Continuous Monitoring Playbook provides recommended actions the agency AO may take when a FedRAMP Authorized CSP fails to maintain an adequate ConMon capability.
+- **Continuous Monitoring Accountability:** Think about how you will hold the CSP accountable for meeting ConMon requirements. The [Performance Management](../../csp/continuous-monitoring/performance-management.md) section of the FedRAMP Continuous Monitoring Playbook provides recommended actions the agency AO may take when a FedRAMP Certified CSP fails to maintain an adequate ConMon capability.

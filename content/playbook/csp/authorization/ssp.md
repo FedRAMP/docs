@@ -11,7 +11,7 @@
 
 The SSP is the "security blueprint" for the CSO. A well-written SSP allows the reviewer to follow between the system's architecture, data flows, security control implementations, and authorization boundary. After reviewing the SSP, a federal agency AO (or designee) should have a strong understanding of how federal data is transmitted to, from, and within the system; where the data is processed and stored; and how the data is protected from a process and technical perspective.
 
-FedRAMP provides a [single SSP template](https://www.fedramp.gov/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx) that must be used for each baseline: Li-SaaS, Low, Moderate, and High. Specific controls are documented in Appendix A for each baseline.
+FedRAMP provides a single SSP template that must be used for each baseline: Li-SaaS, Low, Moderate, and High. Specific controls are documented in Appendix A for each baseline.
 
 !!! tip "Telling a Story"
 
@@ -68,13 +68,13 @@ Before implementing and documenting security controls, CSPs must clearly define 
 The authorization boundary diagram (ABD) is a visual representation of the system services, components, and devices that make up the authorization boundary for the CSO. To help federal agency AOs understand areas that may require risk-acceptance, or areas where the federal agency has responsibility (i.e., everything excluded from the authorization boundary), the ABD also depicts all _external_ systems or services that provide functionality to the CSO or are used to manage and operate the CSO. This includes underlying authorized IaaS/PaaS offerings, system interconnections, APIs, external cloud services, corporate-shared services, and update services (e.g., malware signatures and OS updates).
 
 To properly define the authorization boundary, CSPs need to understand how and where federal data and metadata flow through and within the CSO. To that end, CSPs should begin by developing data flow diagrams (DFDs) that depict how federal data and sensitive system data flows internal and external to the CSO.
-To understand how to define the authorization boundary, CSPs must review the [FedRAMP Authorization Boundary Guidance](https://www.fedramp.gov/resources/documents/CSP_A_FedRAMP_Authorization_Boundary_Guidance.pdf). To understand the level of detail that must be provided in the ABD, DFD and network diagram, carefully review the instructional text in section 8 of the SSP, _Illustrated Architecture and Narratives_.
+To understand how to define the authorization boundary, CSPs must review the FedRAMP Certification Boundary Guidance. To understand the level of detail that must be provided in the ABD, DFD and network diagram, carefully review the instructional text in section 8 of the SSP, _Illustrated Architecture and Narratives_.
 
 ## SSP Appendices
 
 This section summarizes the required appendices for a complete SSP. CSPs should understand the information required to complete each document and, where applicable, align and update existing organizational policy and processes to meet requirements outlined in the SSP appendices (e.g., Appendix I: Incident Response Plan, Appendix H: Configuration Management Plan, etc.). Instructions for each appendix are included within the SSP template; however, detailed guidance on how to properly document security controls is provided in the sections that follow.
 
-These appendices can be downloaded from the Rev5 [Documents & Templates](https://fedramp.gov/rev5/documents-templates) section of this website:
+These appendices can be downloaded from the Rev5 section of this website:
 
 - Appendix A: FedRAMP Security Controls\*
 - Appendix B: Related Acronyms
@@ -149,7 +149,7 @@ The FedRAMP SSP Appendix A template includes a control summary information table
 
 - **Control Origination:** All controls originate from a system or from a business process. It is important to correctly describe the control origination so that it is clear who is responsible for implementing, managing, and monitoring the control. Definitions and examples for each control origination can be found in Table A-1, _Control Origination and Definitions_.
 
-  - If the system is inheriting a control from a FedRAMP Authorized IaaS/PaaS, select the "inherited" box and provide the name and FedRAMP ID of the underlying IaaS/PaaS along with the date of authorization. Controls can only be inherited from a pre-existing FedRAMP authorization. If the CSO is hosted in an IaaS/PaaS not authorized by FedRAMP, there is no leveraging/inheritance relationship. In this scenario, the CSP is responsible for the entire stack, and the underlying components must be defined as part of the CSO's authorization boundary as system interconnections and external services.
+  - If the system is inheriting a control from a FedRAMP Certified IaaS/PaaS, select the "inherited" box and provide the name and FedRAMP ID of the underlying IaaS/PaaS along with the date of authorization. Controls can only be inherited from a pre-existing FedRAMP Certification. If the CSO is hosted in an IaaS/PaaS not authorized by FedRAMP, there is no leveraging/inheritance relationship. In this scenario, the CSP is responsible for the entire stack, and the underlying components must be defined as part of the CSO's authorization boundary as system interconnections and external services.
 
     !!! tip "Describe Inheritance"
 
@@ -175,7 +175,7 @@ The control implementation statement is the written narrative that describes wha
 
 !!! tip "Verbs Matter"
 
-    Pay attention to the verbs in each of the control requirements. For example, IR-5 requires the CSP to _track_ and _document_ security incidents. In the control implementation statement for IR-5, CSPs must describe the process/tools employed to _track_ incidents, as well as the process/tools employed to _document_ incidents. To ensure that all control requirements are implemented and adequately addressed in the implementation statement, CSPs are encouraged to review the assessment objectives defined for each control in the FedRAMP Security Requirements Traceability Matrix  (SAR Appendix B). Templates for the LI-SaaS, Low, Moderate, and High baselines are available on the [Document & Templates](https://www.fedramp.gov/rev5/documents-templates/) page of the FedRAMP website.
+    Pay attention to the verbs in each of the control requirements. For example, IR-5 requires the CSP to _track_ and _document_ security incidents. In the control implementation statement for IR-5, CSPs must describe the process/tools employed to _track_ incidents, as well as the process/tools employed to _document_ incidents. To ensure that all control requirements are implemented and adequately addressed in the implementation statement, CSPs are encouraged to review the assessment objectives defined for each control in the FedRAMP Security Requirements Traceability Matrix  (SAR Appendix B). Templates for the LI-SaaS, Low, Moderate, and High baselines are available.
 
 !!! tip "Customer Responsibility Headings"
 

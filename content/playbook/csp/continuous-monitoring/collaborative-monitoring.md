@@ -11,7 +11,7 @@
 
 The FedRAMP High, Moderate and Low baselines require CSPs to develop a ConMon strategy that complies with the requirements defined in CA-7, Security Assessment and Authorization | Continuous Monitoring.
 
-FedRAMP does not currently have the capacity to actively monitor continuous monitoring for all Rev 5 FedRAMP Authorized services. Each agency that issues an ATO or Authorization to Use (ATU) for the CSO is responsible for performing oversight for their use of the system to ensure the security posture remains sufficient for its own use and supports an ongoing authorization.
+FedRAMP does not currently have the capacity to actively monitor continuous monitoring for all Rev 5 FedRAMP Certified services. Each agency that issues an ATO or Authorization to Use (ATU) for the CSO is responsible for performing oversight for their use of the system to ensure the security posture remains sufficient for its own use and supports an ongoing authorization.
 
 For CSOs that have more than one active ATO/ATU on file with FedRAMP, CA-7 requires the CSP to implement a Collaborative ConMon approach. Collaborative ConMon benefits both agencies and CSPs:
 

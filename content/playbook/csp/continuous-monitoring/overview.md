@@ -19,7 +19,7 @@ CSPs with more than one federal agency customer are required to implement a coll
 
 ### Operational Visibility
 
-CSPs demonstrate a mature and effective security program through the implementation of security controls (for example, system monitoring and event logging) and provide operational visibility by producing required deliverables and supporting evidence. Deliverables and supporting evidence are provided monthly, annually, every three years, and on an as-needed basis. Controls with minimally required frequencies for each continuous monitoring activity are identified in Column J of the [FedRAMP Security Controls Baseline workbook](https://www.fedramp.gov/resources/documents/FedRAMP_Security_Controls_Baseline.xlsx).
+CSPs demonstrate a mature and effective security program through the implementation of security controls (for example, system monitoring and event logging) and provide operational visibility by producing required deliverables and supporting evidence. Deliverables and supporting evidence are provided monthly, annually, every three years, and on an as-needed basis. Controls with minimally required frequencies for each continuous monitoring activity are identified in Column J of the FedRAMP Security Controls Baseline workbook.
 
 ### Change Control
 
@@ -27,7 +27,7 @@ Cloud systems are dynamic and are in a constant state of change. Configuration m
 
 ### Incident Response
 
-CSPs must demonstrate the ability to adequately respond to security incidents and emergency directives. As part of the FedRAMP authorization process, the CSP is required to submit and maintain an incident response plan. Requirements and guidance for incident communications are described in the [Incident Communication](incident-communication.md) section of this playbook.
+CSPs must demonstrate the ability to adequately respond to security incidents and emergency directives. As part of the FedRAMP Certification process, the CSP is required to submit and maintain an incident response plan. Requirements and guidance for incident communications are described in the [Incident Communication](incident-communication.md) section of this playbook.
 
 ## **Continuous Monitoring Roles & Responsibilities**
 

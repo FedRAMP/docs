@@ -9,7 +9,7 @@
     is actively transitioning away from these processes and materials.
 
 
-This section describes escalation triggers and actions when a CSP is not meeting ConMon requirements for its FedRAMP authorized CSO. It also includes recommended actions to take when a CSP fails to maintain an adequate ConMon capability for an authorized CSO.
+This section describes escalation triggers and actions when a CSP is not meeting ConMon requirements for its FedRAMP Certified CSO. It also includes recommended actions to take when a CSP fails to maintain an adequate ConMon capability for an authorized CSO.
 
 In addition to meeting FedRAMP ConMon requirements, CSPs are required to address additional conditions specified in the Agency ATO letter.[^1]
 
@@ -133,6 +133,6 @@ The FedRAMP PMO monitors agency packages to ensure that the service remains in g
 
 ##
 
-[^1]: Agency AOs are encouraged to use the [FedRAMP ATO Letter Template](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx) which includes these requirements. Additional requirements may be included in an agency ATO letter to address system-specific security concerns identified during an assessment.
+[^1]: Agency AOs are encouraged to use the FedRAMP ATO Letter Template which includes these requirements. Additional requirements may be included in an agency ATO letter to address system-specific security concerns identified during an assessment.
 
 [^2]: Agency AOs (or collaborative ConMon groups) should determine which escalation levels are appropriate.

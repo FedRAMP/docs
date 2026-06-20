@@ -49,30 +49,44 @@ agency already, or a federal agency may be working through the acquisition
 process. At this stage, a CSP should have a fully operational system and an
 executive team that is committed to the FedRAMP process. CSPs should begin
 engagement with FedRAMP by filling out a
-[CSP Information Form](https://docs.google.com/forms/d/e/1FAIpQLScU4_x5UK53d0PUUDsOdqWyzUvAN1-yFJ1NxffT7PkGkCiuPg/viewform?c=0&w=1).
+CSP Information Form.
 
 By completing this form, FedRAMP will generate a FedRAMP ID for the CSO and
 provide valuable resources in an automated follow-up email.
 
 ##### Common Agency Questions About Partnership
 
-Answers to the frequently asked questions below can be found under the
-"[Federal Agencies](https://help.fedramp.gov/hc/en-us/sections/27700650101403-Federal-Agencies)"
-section on the
-[FAQs](https://help.fedramp.gov/hc/en-us/categories/27695387528859-Frequently-Asked-Questions-FAQs)
-page of [FedRAMP's Help Center](https://help.fedramp.gov/hc/en-us). As a CSP, it
-is beneficial to review these and other
-[FAQs](https://help.fedramp.gov/hc/en-us/categories/27695387528859-Frequently-Asked-Questions-FAQs)
-on our Help Center to help in your preparedness when these topics arise with
-federal agency customers.
+The following questions and answers are sourced from FedRAMP's Legacy Help Center. As a CSP, reviewing these topics helps in your preparedness when they arise with federal agency customers.
 
-| [What does it mean to be an initial agency partner?](https://help.fedramp.gov/hc/en-us/articles/27703197616027-What-does-it-mean-to-be-an-initial-agency-partner)                                                                                                                                                                                |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[Is there an additional level of effort associated with being the initial authorizing agency?](https://help.fedramp.gov/hc/en-us/articles/27703206782619-Is-there-an-additional-level-of-effort-associated-with-being-the-initial-authorizing-agency)**                                                                                        |
-| **[As the initial authorizing agency, are we responsible for performing ConMon oversight on behalf of other leveraging agencies?](https://help.fedramp.gov/hc/en-us/articles/27703347140763-As-the-initial-authorizing-agency-are-we-responsible-for-performing-continuous-monitoring-ConMon-oversight-on-behalf-of-other-leveraging-agencies)** |
-| **[What happens if my agency decides to stop using the CSO?](https://help.fedramp.gov/hc/en-us/articles/27703498077979-What-happens-if-my-agency-decides-to-stop-using-the-cloud-service-offering-CSO)**                                                                                                                                         |
-| **[What happens if a CSO loses its agency customers?](https://help.fedramp.gov/hc/en-us/articles/27703601485083-What-happens-if-a-cloud-service-offering-CSO-loses-its-agency-customers)**                                                                                                                                                       |
-| **[Should my agency use FedRAMP to authorize a private cloud deployment?](https://help.fedramp.gov/hc/en-us/articles/27703635042459-Should-my-agency-use-FedRAMP-to-authorize-private-cloud-deployment)**                                                                                                                                        |
+###### What does it mean to be an initial agency partner?
+
+An Initial Agency Partner, also referred to as an initial authorizing agency or agency sponsor, refers to the first agency to grant an Authority to Operate (ATO) using FedRAMP standards and baselines for the Cloud Service Offering (CSO). The initial authorizing agency is not a government-wide risk acceptance. OMB Circular A-130 requires agencies to individually authorize operation of an information system and to explicitly accept the risk. Each agency that wishes to use the CSO will conduct its own risk review of the authorization package and grant its own ATO.
+
+###### Is there an additional level of effort associated with being the initial authorizing agency?
+
+It depends on the quality of the authorization package. Because the initial authorizing agency is the first agency to review the authorization package, the process for getting to an informed risk-based decision may take longer and require more effort if there are aspects of the authorization package that are unclear, incomplete, inaccurate, or inconsistent.
+
+The FedRAMP Program Management Office (PMO) provides guidance to Cloud Service Providers (CSPs) and third party Assessment Organizations (3PAOs) on how to deliver a high quality authorization package, but if the agency team is unable to determine the actual security posture of the cloud service offering (CSO) due to poor quality, the agency will provide feedback. The feedback may result in modifications to the package deliverables and/or additional testing, and additional review cycles.
+
+###### As the initial authorizing agency, are we responsible for performing ConMon oversight on behalf of other leveraging agencies?
+
+No. It is not the initial authorizing agency's responsibility to conduct ConMon oversight on behalf of all other agencies. OMB Circular A-130 requires federal agencies to implement the Risk Management Framework (RMF) described in [NIST SP 800-37](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf). The RMF process includes a Monitor step. The purpose of this step is to maintain ongoing situational awareness about the security posture of the system in support of risk management decisions. Each agency that issues an authority to operate (ATO) or authority to use (ATU) for a cloud offering must review the cloud service provider's (CSP's) ConMon activities to ensure the security posture remains sufficient for its own use and supports an ongoing authorization. This includes reviewing the monthly Plan of Action and Milestones (POA&M), approving deviation requests and significant change requests, and reviewing the results of the annual assessment. With the release of the FedRAMP Rev 5 baselines, security control CA-7 requires CSPs with more than one customer agency to implement collaborative ConMon. This approach is intended to streamline the ConMon process and potentially minimize duplicative efforts in a way that helps each agency still perform their due diligence related to ConMon. FedRAMP developed a recommended Collaborative ConMon approach, which is described in the [FedRAMP ConMon Playbook](../continuous-monitoring/intro.md). Collaborative ConMon benefits agencies by allowing them to share responsibility for ConMon oversight, and it benefits the CSP by creating a central forum for addressing questions and achieving consensus related to deviation requests, significant change requests, and the annual assessment, versus having to coordinate with each agency separately.
+
+###### What happens if my agency decides to stop using the CSO?
+
+Agencies should first notify the cloud service provider (CSP) that they plan to rescind their Authorization to Operate (ATO), as they no longer are using the service. After they have notified the CSP, the agency should send an email to [info@fedramp.gov](mailto:info@fedramp.gov), CCing their CSP, which notifies FedRAMP that the service is no longer in use at the agency and indicates the agency will rescind the ATO letter by a specific date.
+
+If a CSP loses its last agency customer, see the question below.
+
+###### What happens if a CSO loses its agency customers?
+
+FedRAMP Certified cloud service offerings (CSOs) without an active agency authorization to operate (ATO) who continue to meet all ongoing continuous monitoring (ConMon) activities while working to obtain a new ATO from a federal agency may remain in the FedRAMP Marketplace as FedRAMP Certified.
+
+Note: To ensure agencies are aware there is no federal continuous monitoring oversight happening with these systems, FedRAMP will add language within the "Additional Information" field of the CSO's Marketplace page stating, "This cloud service offering lacks continuous monitoring oversight from FedRAMP or any federal agency. Agencies considering using this service should review the Cloud Service Provider's security documentation in their secure repository, directly coordinate with the CSP, and conduct their own evaluation before making an Authority to Operate (ATO) decision. Once an agency issues an ATO, agencies should submit their ATO letters to FedRAMP."
+
+###### Should my agency use FedRAMP to authorize a private cloud deployment?
+
+FedRAMP does not apply to private cloud deployments. OMB M-24-15 defines the scope of FedRAMP as "cloud computing products and services (such as IaaS, Platform-as-a-Service (PaaS), and SaaS) that create, collect, process, store, or maintain Federal information on behalf of a Federal agency." The memorandum also describes categories of cloud computing products and services that are outside the scope of FedRAMP, including "Information systems that are only used for a single agency's operations, hosted on cloud infrastructure or platform, and are not offered as a shared service or do not operate with a shared responsibility model."
 
 
 #### Authorization Planning
@@ -97,15 +111,15 @@ Once the partnership is established, a CSP should:
         FedRAMP recommends the "Just-In-Time" approach, as it is a more iterative and agile approach that may prevent rework after 3PAO testing has occurred.
 
 - Work with your federal agency partner to complete an
-  [in-process request (IPR)](https://fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-In-Process-Request-Template.docx)
+  in-process request (IPR)
   and a
-  [work breakdown structure (WBS](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx)[)](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-WBS-Template.xlsx).
+  work breakdown structure (WBS].
   After the completion of the IPR and WBS, please send these documents to
-  FedRAMP for review via [intake@fedramp.gov](mailto:intake@fedramp.gov). At
+  FedRAMP for review via [info@fedramp.gov](mailto:info@fedramp.gov). At
   this point, the CSO is eligible to be listed as In Process on the FedRAMP
   Marketplace with agency approval.
 
-  - If you are working with a DoD agency toward FedRAMP authorization at the IL4
+  - If you are working with a DoD agency toward FedRAMP Certification at the IL4
     or IL5 level, please reach out to FedRAMP for an IPR specific to DISA.
 
 - After submitting the WBS and the IPR, FedRAMP will provision access to
@@ -113,7 +127,7 @@ Once the partnership is established, a CSP should:
   offerings must use their own organization's secure repository).
 
 - Upload a copy of the CSP's completed
-  [Kickoff meeting deck](https://www.fedramp.gov/resources/templates/FedRAMP-Agency-Authorization-Kickoff-Architecture-Briefing-Guidance.pdf)
+  Kickoff meeting deck
   to the secure repository.
 
 #### Kickoff Meeting
@@ -160,7 +174,7 @@ table above, it is recommended that the agency approve the SAP before the 3PAO
 initiates testing. During testing, it is critical that no changes are made to
 the CSO, and that it is frozen from a development perspective. Once the testing
 is complete, the 3PAO will develop a SAR, which details their findings and
-includes a recommendation for FedRAMP authorization. The CSP will then develop a
+includes a recommendation for FedRAMP Certification. The CSP will then develop a
 POA&M, based on the SAR findings, which outlines a plan for addressing the
 findings from testing. The SAR should clearly enumerate all risks identified
 during the security assessment.
@@ -169,7 +183,7 @@ Once this has been completed, the CSP and 3PAO complete a SAR debrief
 presentation. The presentation is uploaded to the CSP's secure repository for
 review prior to scheduling the SAR debrief meeting. FedRAMP provides guidance
 for developing SAR debrief presentation materials. Please reach out to
-[intake@fedramp.gov](mailto:intake@fedramp.gov) for a copy of the guidance.
+[info@fedramp.gov](mailto:info@fedramp.gov) for a copy of the guidance.
 
 The purpose of the SAR debrief is to help inform the federal agency's risk
 review of the CSO. During the SAR debrief, the 3PAO presents the results of the
@@ -205,39 +219,39 @@ understanding of:
 Once the assessment and associated deliverables are complete, the federal agency
 reviews them and either approves them or requests that additional testing take
 place. A final review is then conducted, and if the federal agency accepts the
-risk associated with the use of the system, they provide an [ATO letter signed by
-the federal agency AO](https://www.fedramp.gov/resources/templates/FedRAMP-ATO-Letter-Template.docx).
+risk associated with the use of the system, they provide an ATO letter signed by
+the federal agency AO.
 
-After the agency AO issues the ATO letter, FedRAMP performs a cursory review of the authorization package to determine suitability for government-wide reuse and makes a FedRAMP authorization decision. The scope of FedRAMP's review includes:
+After the agency AO issues the ATO letter, FedRAMP performs a cursory review of the authorization package to determine suitability for government-wide reuse and makes a FedRAMP Certification decision. The scope of FedRAMP's review includes:
 
 - A quality review to ensure the authorization package is complete and required deliverables were developed in accordance with FedRAMP guidance.
 - A risk review to ensure that all security deficiencies and weaknesses are correctly enumerated across package deliverables.
 
-Once the Agency ATO letter is received by FedRAMP, the following steps are performed to get to a FedRAMP Authorized designation:
+Once the Agency ATO letter is received by FedRAMP, the following steps are performed to get to a FedRAMP Certified designation:
 
 1. CSP and 3PAO upload current versions of package deliverables, including all assessment artifacts to a secure repository: FedRAMP's secure repository for Low and Moderate baseline packages. CSP's repository for High baseline packages.
 
-2. CSP completes and submits [FedRAMP Initial Authorization Package Checklist](https://www.fedramp.gov/resources/templates/FedRAMP-Initial-Authorization-Package-Checklist.xlsx) to [intake@fedramp.gov](mailto:info@fedramp.gov).
+2. CSP completes and submits FedRAMP Initial Authorization Package Checklist to [info@fedramp.gov](mailto:info@fedramp.gov).
 
 3. FedRAMP verifies that all package deliverables are uploaded.
 
 4. The package is placed in the FedRAMP review team's queue. Packages are reviewed in the order they are received.
 
-5. The FedRAMP review team performs a cursory review of the package. The review team reaches out to stakeholders with areas that require clarification or technical security gaps that may require remediation prior to authorization. This is typically done via email, but may require a meeting. Once requests for clarification and/or gaps have been addressed, the review team submits a final review report and authorization recommendation to FedRAMP leadership for approval. Once approved, the FedRAMP Marketplace designation is changed to "FedRAMP Authorized." A copy of the final review report is provided to all stakeholders and typically includes post-authorization actions that must be addressed by the CSP and/or 3PAO, and then reviewed by the partner agency.
+5. The FedRAMP review team performs a cursory review of the package. The review team reaches out to stakeholders with areas that require clarification or technical security gaps that may require remediation prior to authorization. This is typically done via email, but may require a meeting. Once requests for clarification and/or gaps have been addressed, the review team submits a final review report and authorization recommendation to FedRAMP leadership for approval. Once approved, the FedRAMP Marketplace designation is changed to "FedRAMP Certified." A copy of the final review report is provided to all stakeholders and typically includes post-authorization actions that must be addressed by the CSP and/or 3PAO, and then reviewed by the partner agency.
 
-Once a CSO receives a FedRAMP Authorized designation, the FedRAMP Marketplace
+Once a CSO receives a FedRAMP Certified designation, the FedRAMP Marketplace
 will be updated to reflect the designation. FedRAMP will make the CSO security
 package available, upon request and validation of the requestor, to the entire
 federal government for the purpose of issuing subsequent ATOs for the use of the
 service based on their own reviews of the CSO's security documentation. Due to
 the sensitivity of the materials, this information is highly controlled through
 the use of the
-[FedRAMP Package Access Request Form](https://www.fedramp.gov/resources/documents/Agency_Package_Request_Form.pdf)
+FedRAMP Package Access Request Form
 that must be routed through appropriate signatures within the federal
 government. Each form requires FedRAMP's approval to review the documents.
 
 !!! info "Agency Authorization to Operate"
-    Once a cloud service has achieved a FedRAMP Authorized designation, each subsequent federal agency customer must still provide their own ATO for the use of the service. Federal agencies have an easy path to this view of FedRAMP's reuse model; once the authorization is complete, any federal agency may review the security package, determine acceptability of risks associated with using the service, and issue their own ATO. If any federal agency customers are confused about this process, FedRAMP can support calls to discuss it. All signed agency ATO letters must be sent to FedRAMP. FedRAMP's [Quick Guide for Reusing Authorizations for Cloud Products](https://www.fedramp.gov/resources/documents/Reusing_Authorizations_for_Cloud_Products_Quick_Guide.pdf) outlines the step-by-step process for agencies to issue their own ATOs for FedRAMP Authorized CSOs.
+    Once a cloud service has achieved a FedRAMP Certified designation, each subsequent federal agency customer must still provide their own ATO for the use of the service. Federal agencies have an easy path to this view of FedRAMP's reuse model; once the authorization is complete, any federal agency may review the security package, determine acceptability of risks associated with using the service, and issue their own ATO. If any federal agency customers are confused about this process, FedRAMP can support calls to discuss it. All signed agency ATO letters must be sent to FedRAMP.
 
 ## Phase 3: Continuous Monitoring
 

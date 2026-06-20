@@ -9,7 +9,7 @@
     is actively transitioning away from these processes and materials.
 
 Security control CA-5 requires CSPs to develop a POA&M to document remediation plans for correcting risks (e.g., weaknesses, deficiencies, and vulnerabilities) identified during security assessments and ConMon activities.
-CSPs are required to use the [_FedRAMP POA&M Template_](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) to track and manage risks.
+CSPs are required to use the _FedRAMP POA&M Template_to track and manage risks.
 
 CSPs are required to submit a POA&M with the initial authorization package. Before authorizing the CSO, federal agency AOs will review the POA&M to understand the current risk posture. Depending on the federal agency AO's risk tolerance, the CSP may be required to remediate or mitigate open risks prior to authorization. General POA&M management guidance is provided in this section, but CSPs should also review the [FedRAMP Continuous Monitoring Playbook](../../csp/continuous-monitoring/intro.md).
 
@@ -50,11 +50,11 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 ### Do
 
-- **Do** follow the instructions in the Instructions tab of the [POA&M template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx) to ensure the POA&M is completed correctly. This will prevent delays during the review process.
+- **Do** follow the instructions in the Instructions tab of the POA&M template to ensure the POA&M is completed correctly. This will prevent delays during the review process.
 
-- **Do** remediate or mitigate all High risks identified during the security assessment. FedRAMP will not issue a "FedRAMP Authorized" designation on the FedRAMP Marketplace if there are open High risks.
+- **Do** remediate or mitigate all High risks identified during the security assessment. FedRAMP will not issue a "FedRAMP Certified" designation on the FedRAMP Marketplace if there are open High risks.
 
-- **Do** ensure that POA&M items can be easily mapped to the [_SAR Risk Exposure Table_](<https://www.fedramp.gov/resources/templates/SAR-Appendix-A-FedRAMP-Risk-Exposure-Table-(RET)-Template.xlsx>).
+- **Do** ensure that POA&M items can be easily mapped to the _SAR Risk Exposure Table_.
 
 - **Do** provide evidence of vendor interactions regarding the status of patches/fixes (e.g., vendor notifications, email exchanges, etc.).
 
@@ -62,6 +62,6 @@ CSPs are required to submit a POA&M with the initial authorization package. Befo
 
 ### Don't
 
-- **Don't** wait until the CSO is FedRAMP Authorized before checking in with vendors on the status of patches/fixes. CSPs should conduct ConMon activities, such as vendor check-ins, while the federal agency AO is reviewing the authorization package.
+- **Don't** wait until the CSO is FedRAMP Certified before checking in with vendors on the status of patches/fixes. CSPs should conduct ConMon activities, such as vendor check-ins, while the federal agency AO is reviewing the authorization package.
 
 - **Don't** put VDs and ORs in the POA&M's "Closed" tab. VDs and ORs are considered open risks that must be tracked by the CSP.

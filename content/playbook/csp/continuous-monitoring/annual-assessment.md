@@ -31,7 +31,7 @@ CSPs are required to test the Incident Response Plan (IRP) and Contingency Plan 
 
 ### Define the Assessment Scope
 
-The CSP and assessor work together to define the scope of the FedRAMP Rev 5 annual assessment using the [FedRAMP Annual Assessment Control Selection Worksheet](https://www.fedramp.gov/resources/documents/CSP_Annual_Assessment_Controls_Selection_Worksheet.xlsx). Guidance for completing the worksheet is provided in the template. The completed worksheet must be included in the SAP prepared and submitted by the assessor. The scope of a FedRAMP Rev 5 annual assessment includes:
+The CSP and assessor work together to define the scope of the FedRAMP Rev 5 annual assessment using the FedRAMP Annual Assessment Control Selection Worksheet. Guidance for completing the worksheet is provided in the template. The completed worksheet must be included in the SAP prepared and submitted by the assessor. The scope of a FedRAMP Rev 5 annual assessment includes:
 
 - FedRAMP-selected list of core controls (as defined in the control selection worksheet)
 - CSP-selected controls required to address system changes that have been implemented and/or changed by a CSP since their last assessment (this excludes those controls or portions of controls previously assessed under a significant change within the same annual period)
@@ -42,7 +42,7 @@ The CSP and assessor work together to define the scope of the FedRAMP Rev 5 annu
 
 ### Develop Security Assessment Plan (SAP)
 
-The assessor prepares and submits the SAP using the [FedRAMP Security Assessment (SAP)](<https://www.fedramp.gov/resources/templates/FedRAMP-Security-Assessment-Plan-(SAP)-Template.docx>) template. The SAP defines the planned process, procedures, and methodologies for testing. The scope of controls to be tested is based on the control selection process defined in the previous section.
+The assessor prepares and submits the SAP using the FedRAMP Security Assessment (SAP) template. The SAP defines the planned process, procedures, and methodologies for testing. The scope of controls to be tested is based on the control selection process defined in the previous section.
 
 ### Brief Agency Customers on Assessment Plan
 
@@ -58,22 +58,22 @@ When developing the assessment schedule, be sure to build in time for developing
 
 The assessor prepares and submits the SAR and supporting documents using the following templates:
 
-- [FedRAMP Security Assessment Report (SAR) Template](<https://www.fedramp.gov/resources/templates/FedRAMP-Security-Assessment-Report-(SAR)-Template.docx>)\*
+- FedRAMP Security Assessment Report (SAR) Template\*
 
-- [SAR Appendix A \- FedRAMP Risk Exposure Table (RET) Template](<https://www.fedramp.gov/resources/templates/SAR-Appendix-A-FedRAMP-Risk-Exposure-Table-(RET)-Template.xlsx>)
+- SAR Appendix A \- FedRAMP Risk Exposure Table (RET) Template
 
 - Depending on the impact categorization:
 
-    - [FedRAMP SAR Appendix B \- Low Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Low-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    - FedRAMP SAR Appendix B \- Low Security Requirements Traceability Matrix Template
 
-    - [FedRAMP SAR Appendix B \- Moderate Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-Moderate-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    - FedRAMP SAR Appendix B \- Moderate Security Requirements Traceability Matrix Template
 
-    - [FedRAMP SAR Appendix B \- High Security Requirements Traceability Matrix Template](https://www.fedramp.gov/resources/templates/FedRAMP-SAR-Appendix-B-High-Security-Requirements-Traceability-Matrix-Template.xlsx)
+    - FedRAMP SAR Appendix B \- High Security Requirements Traceability Matrix Template
 
 In accordance with the SAP, the SAR documents the actual process, procedures, and methodologies followed during the assessment, the assessment results, risks corrected during testing, and risks that remained at the conclusion of the assessment.
 
-\* For LI-SaaS cloud offerings, the control implementations, assessment test procedures, and assessment results are combined into one document using the [SSP Appendix A \- LI-SaaS FedRAMP Security Controls](https://www.fedramp.gov/resources/templates/SSP-Appendix-A-LI-SaaS-FedRAMP-Security-Controls.docx) template. To facilitate agency customer reviews, FedRAMP recommends aggregating the remaining risks using the RET template.
+\* For LI-SaaS cloud offerings, the control implementations, assessment test procedures, and assessment results are combined into one document using the SSP Appendix A \- LI-SaaS FedRAMP Security Controls template. To facilitate agency customer reviews, FedRAMP recommends aggregating the remaining risks using the RET template.
 
 ### Complete Plan of Action and Milestones (POA&M)
 
-The CSP prepares and submits the POA&M using the [FedRAMP Plan of Action and Milestone (POA&M) Template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx). The CSP documents residual risks identified in the SAR and defines a plan for remediation of those risks in the POA&M.
+The CSP prepares and submits the POA&M using the FedRAMP Plan of Action and Milestone (POA&M) Template. The CSP documents residual risks identified in the SAR and defines a plan for remediation of those risks in the POA&M.

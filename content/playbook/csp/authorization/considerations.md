@@ -9,8 +9,8 @@
     is actively transitioning away from these processes and materials.
 
 
-The only formal path to FedRAMP authorization that is available to
-most cloud service providers today is a Rev5 FedRAMP authorization performed
+The only formal path to FedRAMP Certification that is available to
+most cloud service providers today is a Rev5 FedRAMP Certification performed
 by a federal agency. FedRAMP is currently piloting a modern approach
 to assessment and authorization called [FedRAMP 20x](https://fedramp.gov/20x)
 but this path is not expected to be open to the public until FY26 Q4.
@@ -19,7 +19,7 @@ Below are additional things to consider while formulating your FedRAMP strategy.
 
 ## Existing or Potential Agency Partners
 
-The first step in achieving a FedRAMP authorization is for a CSP to establish a
+The first step in achieving a FedRAMP Certification is for a CSP to establish a
 partnership with a federal agency. Some CSPs may already have a federal agency
 that is interested in authorizing their CSO because they are either already
 using the system, in the process of procuring the system, or are using an
@@ -52,12 +52,12 @@ integrity and availability).
 |                            | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Low Impact Levels**      | The Low-impact level is most appropriate for CSOs for which the loss of confidentiality, integrity, and availability would result in limited adverse effects on a federal agency's operations, assets, or individuals. FedRAMP currently has two baselines for systems with Low-impact data: LI-SaaS baseline and Low baseline. The LI-SaaS baseline accounts for low-impact SaaS applications that do not store personal identifiable information (PII) beyond what is generally required for login capability (i.e., username, password, and email address). Required security documentation is consolidated, and the requisite number of security controls needing testing and verification are lowered relative to a standard Low baseline authorization. |
-| **Moderate Impact Levels** | Moderate-impact level systems account for nearly 80% of CSP services that receive FedRAMP authorization. It is most appropriate for CSOs for which the loss of confidentiality, integrity, and availability would result in serious adverse effects on a federal agency's operations, assets, or individuals. Serious adverse effects could include significant operational damage to federal agency assets, financial loss, or individual harm that is not loss of life or physical.                                                                                                                                                                                                                                                                         |
+| **Moderate Impact Levels** | Moderate-impact level systems account for nearly 80% of CSP services that receive FedRAMP Certification. It is most appropriate for CSOs for which the loss of confidentiality, integrity, and availability would result in serious adverse effects on a federal agency's operations, assets, or individuals. Serious adverse effects could include significant operational damage to federal agency assets, financial loss, or individual harm that is not loss of life or physical.                                                                                                                                                                                                                                                                         |
 | **High Impact Levels**     | High-impact data is usually in law enforcement and emergency services systems, financial systems, health systems, and any other system for which loss of confidentiality, integrity, or availability could be expected to have a severe or catastrophic adverse effect on organizational operations, organizational assets, or individuals. FedRAMP introduced the High baseline to account for the federal government's most sensitive, unclassified data in cloud computing environments, including data that involves the protection of life and against financial ruin.                                                                                                                                                                                   |
 
 **Security controls included in the High, Moderate, Low, and LI-SaaS baselines
 can be found within the
-[FedRAMP Security Controls Baseline](https://www.fedramp.gov/resources/documents/FedRAMP_Security_Controls_Baseline.xlsx)**.
+FedRAMP Security Controls Baseline**.
 
 !!! info "Categorization Template"
 
@@ -85,7 +85,7 @@ definitions when defining cloud deployment models.
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Government- Only Community** | The cloud holds only government data. Customers can be federal, state, local, tribal, territorial, federally funded research centers (FFRDCs), contractors working on behalf of the government, or lab entities.                                                                                                                                                                                                                                                                                                                                                                              |
 | **Public**                     | Public cloud deployments support both government and non-government customers. This aligns with the traditional model of cloud computing services.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Private**                    | Private cloud deployments intended for single organizations and implemented fully within federal facilities are not subject to the FedRAMP mandate and are the only exception to FedRAMP being mandatory for all federal agencies. For private clouds deployed in an IaaS/PaaS versus within a federal facility, the agency should use the FedRAMP process and baselines to authorize the cloud service; however, FedRAMP does not review packages for private clouds, grant a FedRAMP Authorized designation, or list them on the Marketplace because the concept of "reuse" does not apply. |
+| **Private**                    | Private cloud deployments intended for single organizations and implemented fully within federal facilities are not subject to the FedRAMP mandate and are the only exception to FedRAMP being mandatory for all federal agencies. For private clouds deployed in an IaaS/PaaS versus within a federal facility, the agency should use the FedRAMP process and baselines to authorize the cloud service; however, FedRAMP does not review packages for private clouds, grant a FedRAMP Certified designation, or list them on the Marketplace because the concept of "reuse" does not apply. |
 | **Hybrid**                     | Combination of cloud infrastructures (private, community, or public). Each cloud is a unique entity but is bound to other clouds to provide services to an organization (e.g., cloud bursting for load balancing between clouds).                                                                                                                                                                                                                                                                                                                                                             |
 
 ## **IaaS vs. PaaS vs. SaaS**
@@ -107,7 +107,7 @@ The "system stack" generally refers to the layers of services in the data center
 that are included in the CSO. The CSO must be authorized according to the
 appropriate FedRAMP baseline, meaning each component (IaaS, PaaS, and SaaS) must
 be authorized through either an inheritance model (a SaaS vendor leveraging a
-FedRAMP authorized PaaS) or a traditional authorization (Infrastructure,
+FedRAMP Certified PaaS) or a traditional authorization (Infrastructure,
 Platform, and Services are authorized as one).
 
 In a traditional authorization, a CSP has its system hosted in a non-FedRAMP­
@@ -126,7 +126,7 @@ existing ATOs can be leveraged depending on the system architecture.
 
 !!! warning "Warning"
 
-    To achieve a FedRAMP authorization, a CSP's service must reside on a FedRAMP Authorized infrastructure or stand up their own infrastructure.
+    To achieve a FedRAMP Certification, a CSP's service must reside on a FedRAMP Certified infrastructure or stand up their own infrastructure.
 
 ## **Level of Effort**
 
@@ -138,7 +138,7 @@ LOE can be broken down into the following categories:
 
 |                        | Definition                                                                                                                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Project Management** | Managing the FedRAMP authorization process and coordinating activities.                                                                                                              |
+| **Project Management** | Managing the FedRAMP Certification process and coordinating activities.                                                                                                              |
 | **Engineering**        | Making changes to the system in compliance with federal agency and FedRAMP controls.                                                                                                 |
 | **Documentation**      | Completion of all required documentation, including technical writing, review, and quality assurance of documentation submitted to FedRAMP and agencies.                             |
 | **Support**            | Costs associated with consultants and advisory services acquired to support the authorization, including appropriate technical expertise and assessment services provided by a 3PAO. |
@@ -152,7 +152,7 @@ overall LOE include:
 - End of life software.
 - Not having FIPS 140 validated encryption modules.
 - Using external services where federal data is stored or in-transit that are
-  not FedRAMP Authorized or are authorized at a system impact level lower than
+  not FedRAMP Certified or are authorized at a system impact level lower than
   the CSO going through the authorization process.
 - Not implementing multi-factor authentication appropriately.
 - Poor documentation lacking technical detail and immature management processes.
